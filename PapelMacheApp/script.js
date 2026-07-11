@@ -118,6 +118,18 @@ const chordData = {
         notes: ["E3", "G#3", "D4", "C4"],
         displayNotes: ["E", "G#", "D", "C"],
         noteTypes: ["triad", "triad", "seventh", "alt"]
+    },
+    "Bb79": {
+        name: "Bb7(9)",
+        notes: ["A#3", "D4", "F4", "G#4", "C4"],
+        displayNotes: ["Bb", "D", "F", "Ab", "C"],
+        noteTypes: ["triad", "triad", "triad", "seventh", "ninth"]
+    },
+    "Db79p": {
+        name: "Db7(9+)",
+        notes: ["C#3", "F3", "B3", "E4"],
+        displayNotes: ["Db", "F", "B", "E"],
+        noteTypes: ["triad", "triad", "seventh", "ninth"]
     }
 };
 
