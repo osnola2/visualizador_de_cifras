@@ -342,3 +342,69 @@ h1 {
 .note-pill.active.alt { background-color: rgba(236, 72, 153, 0.8); color: #fff; border-color: #ec4899; box-shadow: 0 0 10px rgba(236, 72, 153, 0.4); }
 . s o n g - i n f o   {   t e x t - a l i g n :   l e f t ;   }  
  
+@media (max-width: 899px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    .song-info {
+        text-align: center;
+    }
+    .controls-panel {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    .piano-panel {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: auto;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 1rem;
+        background: rgba(15, 23, 42, 0.95);
+        backdrop-filter: blur(10px);
+        border-top: 1px solid var(--glass-border);
+        border-radius: 16px 16px 0 0;
+        z-index: 100;
+        box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.5);
+        transform: none;
+    }
+    
+    .piano-keyboard {
+        width: 100%;
+        max-width: 400px;
+        height: 120px;
+        margin: 0 auto;
+    }
+    
+    #current-chord-name {
+        font-size: 1.5rem;
+        min-height: 1.8rem;
+    }
+    
+    .notes-display {
+        gap: 0.5rem;
+    }
+    
+    .note-pill {
+        padding: 0.3rem 0.8rem;
+        font-size: 0.9rem;
+    }
+    
+    .lyrics-panel {
+        max-width: 100%;
+        padding-top: 25vh;
+        padding-bottom: 250px;
+    }
+    
+    #lyrics-content {
+        font-size: 1rem;
+    }
+}
+
