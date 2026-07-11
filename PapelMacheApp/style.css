@@ -1,0 +1,342 @@
+:root {
+    --bg-dark: #0f172a;
+    --glass-bg: rgba(30, 41, 59, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --primary: #38bdf8;
+    --primary-glow: rgba(56, 189, 248, 0.4);
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+    --chord-highlight: #fbbf24;
+    --chord-hover: rgba(251, 191, 36, 0.2);
+    --key-white: #ffffff;
+    --key-black: #171717;
+    --key-active: #38bdf8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+/* Dynamic background */
+.background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle at 15% 50%, rgba(56, 189, 248, 0.15), transparent 25%),
+                radial-gradient(circle at 85% 30%, rgba(251, 191, 36, 0.1), transparent 25%);
+    z-index: -1;
+}
+
+header {
+    padding: 1.5rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--glass-border);
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+h1 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    background: linear-gradient(135deg, #fff, #94a3b8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+    color: var(--primary);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-top: 0.5rem;
+    font-weight: 500;
+}
+
+.subtitle span {
+    color: var(--text-muted);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+@media (min-width: 900px) {
+    .container {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
+
+.glass-panel {
+    background: var(--glass-bg);
+    backdrop-filter: blur(16px);
+    border: 1px solid var(--glass-border);
+    border-radius: 24px;
+    padding: 2rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.lyrics-panel {
+    flex: 1;
+    max-width: 55%;
+    overflow-x: auto;
+    padding-top: 35vh; /* Push first chord to the reading line */
+    padding-bottom: 60vh; /* Allow scrolling past the last chord */
+}
+
+#lyrics-content {
+    font-family: 'Inter', monospace;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-main);
+    white-space: pre-wrap; /* allow div wrapping */
+}
+
+.lyric-line {
+    transition: all 0.3s ease;
+    opacity: 0.3;
+    display: block;
+    min-height: 1.8rem;
+    padding-left: 10px;
+    border-left: 3px solid transparent;
+}
+
+.lyric-line.active-line {
+    opacity: 1;
+    color: #fff;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+    border-left: 3px solid var(--primary);
+    background: rgba(56, 189, 248, 0.05);
+}
+
+.chord {
+    color: var(--chord-color);
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-block;
+    padding: 0 4px;
+    border-radius: 4px;
+    position: relative;
+}
+
+.chord.active-chord {
+    color: var(--bg-dark);
+    background-color: var(--chord-hover);
+    transform: translateY(-2px) scale(1.1);
+    box-shadow: 0 4px 12px rgba(251, 191, 36, 0.5);
+}
+
+.chord:hover {
+    color: var(--bg-dark);
+    background-color: var(--chord-hover);
+    transform: translateY(-2px) scale(1.1);
+    box-shadow: 0 4px 12px rgba(251, 191, 36, 0.3);
+}
+
+.piano-panel {
+    flex: 1;
+    position: fixed;
+    right: 5%;
+    top: 130px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    z-index: 5;
+}
+
+#current-chord-name {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2rem;
+    min-height: 2.5rem;
+    color: var(--primary);
+    text-shadow: 0 0 20px var(--primary-glow);
+}
+
+.piano-keyboard {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    height: 160px;
+    background: #1e1e1e;
+    border-radius: 8px 8px 16px 16px;
+    padding: 10px 10px 15px 10px;
+    box-shadow: inset 0 -4px 0 #000, 0 10px 25px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: space-between;
+}
+
+.key {
+    border-radius: 0 0 4px 4px;
+    cursor: pointer;
+    transition: background-color 0.15s ease, box-shadow 0.15s ease;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 8px;
+    font-weight: bold;
+    font-size: 0.85rem;
+    color: transparent;
+}
+
+.key.white {
+    width: 6.8%;
+    height: 100%;
+    background: linear-gradient(to bottom, #fff 0%, #f0f0f0 100%);
+    box-shadow: inset 0 0 3px rgba(0,0,0,0.2), 0 3px 5px rgba(0,0,0,0.3);
+    z-index: 1;
+}
+
+.key.white.active {
+    background: var(--key-pressed);
+    box-shadow: inset 0 3px 5px rgba(0,0,0,0.4), 0 0 15px rgba(16, 185, 129, 0.5);
+    transform: translateY(2px);
+    color: var(--bg-dark);
+}
+
+.key.black {
+    position: absolute;
+    width: 4.5%;
+    height: 60%;
+    background: linear-gradient(to bottom, #333 0%, #000 100%);
+    box-shadow: inset 0 0 2px rgba(255,255,255,0.2), 2px 3px 5px rgba(0,0,0,0.4);
+    z-index: 2;
+    top: 10px;
+    border-radius: 0 0 3px 3px;
+}
+
+.key.black.active {
+    background: var(--key-pressed-dark);
+    box-shadow: inset 0 3px 5px rgba(0,0,0,0.5), 0 0 10px rgba(16, 185, 129, 0.3);
+    transform: translateY(2px);
+    color: white;
+    font-size: 0.75rem;
+    padding-bottom: 4px;
+}
+
+.notes-display {
+    display: flex;
+    gap: 1rem;
+}
+
+.note-pill {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    padding: 0.5rem 1.2rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    transition: all 0.3s ease;
+}
+
+.note-pill.active {
+    background: rgba(56, 189, 248, 0.1);
+    color: var(--primary);
+    border-color: var(--primary);
+    box-shadow: 0 0 15px var(--primary-glow);
+}
+
+.controls-panel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-controls {
+    margin-top: 0;
+}
+
+.speed-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(56, 189, 248, 0.05);
+    border: 1px solid var(--glass-border);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 250px;
+}
+
+.speed-control input[type="range"] {
+    flex: 1;
+    accent-color: var(--primary);
+    cursor: pointer;
+}
+
+.glass-btn {
+    background: rgba(56, 189, 248, 0.1);
+    border: 1px solid var(--glass-border);
+    color: var(--text-main);
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.glass-btn:hover {
+    background: rgba(56, 189, 248, 0.2);
+    box-shadow: 0 0 15px var(--primary-glow);
+    transform: translateY(-2px);
+}
+
+.glass-btn.active {
+    background: var(--primary);
+    color: var(--bg-dark);
+    box-shadow: 0 0 20px var(--primary-glow);
+}
+
+.glass-btn .icon {
+    font-size: 0.9rem;
+}
+
+
+/* Musical Theory Colors */
+.key.active.triad { background-color: #10b981 !important; color: #fff; border-color: #059669; box-shadow: 0 0 15px rgba(16, 185, 129, 0.6); }
+.note-pill.active.triad { background-color: rgba(16, 185, 129, 0.8); color: #fff; border-color: #10b981; box-shadow: 0 0 10px rgba(16, 185, 129, 0.4); }
+
+.key.active.seventh { background-color: #3b82f6 !important; color: #fff; border-color: #2563eb; box-shadow: 0 0 15px rgba(59, 130, 246, 0.6); }
+.note-pill.active.seventh { background-color: rgba(59, 130, 246, 0.8); color: #fff; border-color: #3b82f6; box-shadow: 0 0 10px rgba(59, 130, 246, 0.4); }
+
+.key.active.ninth { background-color: #8b5cf6 !important; color: #fff; border-color: #7c3aed; box-shadow: 0 0 15px rgba(139, 92, 246, 0.6); }
+.note-pill.active.ninth { background-color: rgba(139, 92, 246, 0.8); color: #fff; border-color: #8b5cf6; box-shadow: 0 0 10px rgba(139, 92, 246, 0.4); }
+
+.key.active.alt { background-color: #ec4899 !important; color: #fff; border-color: #db2777; box-shadow: 0 0 15px rgba(236, 72, 153, 0.6); }
+.note-pill.active.alt { background-color: rgba(236, 72, 153, 0.8); color: #fff; border-color: #ec4899; box-shadow: 0 0 10px rgba(236, 72, 153, 0.4); }
