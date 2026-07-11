@@ -319,6 +319,14 @@ document.addEventListener('DOMContentLoaded', () => {
     function autoScrollStep() {
         if (!isAutoScrolling) return;
         
+        // Stop cleanly if we reached the bottom of the page
+        if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) {
+            if (isAutoScrolling) {
+                autoscrollBtn.click();
+            }
+            return;
+        }
+
         // Base speed for 100 BPM is 0.4 pixels per frame
         const bpmRatio = parseInt(bpmInput.value) / 100;
         const baseSpeed = 0.4 * bpmRatio;
@@ -349,15 +357,24 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Pause scroll if user interacts manually (wheel or touch)
+    // Pause scroll only if user actively drags or scrolls manually (wheel or touchmove)
+    let touchStartY = null;
+    window.addEventListener('touchstart', (e) => {
+        if (e.touches && e.touches[0]) {
+            touchStartY = e.touches[0].clientY;
+        }
+    }, { passive: true });
+
     const pauseScroll = (e) => {
-        // Don't pause if interacting with controls
-        if (e.target.closest('.controls-panel')) return;
-        
+        if (e.target.closest('.controls-panel') || e.target.closest('.piano-panel')) return;
+        if (e.type === 'touchmove' && touchStartY !== null && e.touches && e.touches[0]) {
+            const deltaY = Math.abs(e.touches[0].clientY - touchStartY);
+            if (deltaY < 15) return; // Ignore slight finger jitter
+        }
         if (isAutoScrolling) {
             autoscrollBtn.click(); // toggle off
         }
     };
     window.addEventListener('wheel', pauseScroll, { passive: true });
-    window.addEventListener('touchstart', pauseScroll, { passive: true });
+    window.addEventListener('touchmove', pauseScroll, { passive: true });
 });
