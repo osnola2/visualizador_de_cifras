@@ -148,17 +148,19 @@ h1 {
 }
 
 .chord.active-chord {
-    color: var(--bg-dark);
-    background-color: var(--chord-hover);
-    transform: translateY(-2px) scale(1.1);
-    box-shadow: 0 4px 12px rgba(251, 191, 36, 0.5);
+    color: #0f172a;
+    background-color: #fbbf24;
+    transform: translateY(-2px) scale(1.15);
+    box-shadow: 0 4px 15px rgba(251, 191, 36, 0.8);
+    font-weight: 800;
 }
 
 .chord:hover {
-    color: var(--bg-dark);
-    background-color: var(--chord-hover);
-    transform: translateY(-2px) scale(1.1);
-    box-shadow: 0 4px 12px rgba(251, 191, 36, 0.3);
+    color: #0f172a;
+    background-color: #fbbf24;
+    transform: translateY(-2px) scale(1.15);
+    box-shadow: 0 4px 15px rgba(251, 191, 36, 0.6);
+    font-weight: 800;
 }
 
 .piano-panel {
