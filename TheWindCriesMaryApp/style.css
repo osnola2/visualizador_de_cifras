@@ -355,24 +355,34 @@ h1 {
     }
     .song-info {
         text-align: left;
-        max-width: 46%;
+        max-width: 52%;
         overflow: hidden;
     }
     header h1, header .song-title {
-        font-size: 1rem !important;
-        line-height: 1.2;
-        margin-bottom: 2px;
+        font-size: 0.95rem !important;
+        line-height: 1.2 !important;
+        margin: 0 !important;
+        color: #ffffff !important;
+        -webkit-text-fill-color: #ffffff !important;
+        background: none !important;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        display: block !important;
+        opacity: 1 !important;
     }
     header h2, header .song-artist, header .subtitle {
         font-size: 0.72rem !important;
-        line-height: 1.1;
-        margin-top: 0;
+        line-height: 1.1 !important;
+        margin: 0 !important;
+        color: #38bdf8 !important;
+        -webkit-text-fill-color: #38bdf8 !important;
+        background: none !important;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        display: block !important;
+        opacity: 1 !important;
     }
     .controls-panel {
         flex-wrap: nowrap;
@@ -440,7 +450,7 @@ h1 {
     
     .lyrics-panel {
         max-width: 100%;
-        padding-top: 25vh;
+        padding-top: 42vh;
         padding-bottom: 75vh;
     }
     
