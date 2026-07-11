@@ -315,24 +315,4 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Pause scroll only if user actively drags or scrolls manually (wheel or touchmove)
-    let touchStartY = null;
-    window.addEventListener('touchstart', (e) => {
-        if (e.touches && e.touches[0]) {
-            touchStartY = e.touches[0].clientY;
-        }
-    }, { passive: true });
-
-    const pauseScroll = (e) => {
-        if (e.target.closest('.controls-panel') || e.target.closest('.piano-panel')) return;
-        if (e.type === 'touchmove' && touchStartY !== null && e.touches && e.touches[0]) {
-            const deltaY = Math.abs(e.touches[0].clientY - touchStartY);
-            if (deltaY < 15) return; // Ignore slight finger jitter
-        }
-        if (isAutoScrolling) {
-            autoscrollBtn.click(); // toggle off
-        }
-    };
-    window.addEventListener('wheel', pauseScroll, { passive: true });
-    window.addEventListener('touchmove', pauseScroll, { passive: true });
 });
