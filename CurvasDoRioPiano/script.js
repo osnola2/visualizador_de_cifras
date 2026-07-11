@@ -222,6 +222,42 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }, { passive: true });
 
+    // Keyboard Navigation for Chords
+    window.addEventListener('keydown', (e) => {
+        if (allChords.length === 0) return;
+        
+        if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+            e.preventDefault(); // Prevent default browser scrolling
+            
+            const readingY = window.scrollY + window.innerHeight * 0.45;
+            let currentIndex = 0;
+            
+            // Find the currently active chord index
+            for (let i = 0; i < allChords.length; i++) {
+                if (readingY >= allChords[i].effectiveY - 2) { 
+                    currentIndex = i;
+                } else {
+                    break;
+                }
+            }
+            
+            let nextIndex = currentIndex;
+            if (e.key === 'ArrowDown') {
+                nextIndex = Math.min(currentIndex + 1, allChords.length - 1);
+            } else if (e.key === 'ArrowUp') {
+                // If we are slightly past the current chord but still on it, going up should go to the previous one
+                // If we are exactly on it, going up goes to previous. 
+                nextIndex = Math.max(currentIndex - 1, 0);
+            }
+            
+            const targetY = allChords[nextIndex].effectiveY - window.innerHeight * 0.45 + 5;
+            window.scrollTo({
+                top: Math.max(0, targetY),
+                behavior: 'smooth'
+            });
+        }
+    });
+
     // Smooth Auto-scroll
     const autoscrollBtn = document.getElementById('autoscroll-btn');
     const speedSlider = document.getElementById('speed-slider');
