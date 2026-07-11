@@ -15,7 +15,19 @@
             <h1 class="song-title">Curvas do Rio</h1>
             <h2 class="song-artist">Elomar</h2>
         </div>
-        <div class="title-glow"></div>
+        
+        <div class="controls-panel header-controls">
+            <button id="autoscroll-btn" class="glass-btn">
+                <span class="icon">▶</span> Auto-scroll
+            </button>
+            <div class="speed-control glass-panel">
+                <label for="bpm-input">BPM:</label>
+                <input type="number" id="bpm-input" min="40" max="240" step="1" value="100" style="width: 60px; background: transparent; color: white; border: 1px solid var(--glass-border); border-radius: 5px; padding: 2px 5px; text-align: center;">
+                
+                <label for="speed-slider" id="speed-label" style="margin-left: 15px;">Ajuste: 1.0x</label>
+                <input type="range" id="speed-slider" min="0.1" max="1.5" step="0.1" value="1.0">
+            </div>
+        </div>
     </header>
 
     <main class="container">
@@ -75,7 +87,10 @@ u volto prás curva do rio
         </section>
 
         <aside class="piano-panel glass-panel">
-            <h2 id="current-chord-name">Passe o mouse sobre um acorde</h2>
+            <div id="active-display" style="text-align: center; margin-bottom: 0.5rem; min-height: 3.5rem;">
+                <div id="active-display-chord" style="color: var(--primary); font-size: 1.5rem; font-weight: bold; margin-bottom: 0.2rem;"></div>
+                <div id="active-display-lyric" style="font-size: 1.1rem; font-style: italic; color: #fff;">Passe o mouse ou role a tela...</div>
+            </div>
             <div class="piano-keyboard">
                 <!-- White keys -->
                 <div class="key white" data-note="C3"></div>
@@ -106,16 +121,12 @@ u volto prás curva do rio
                 <div class="key black" data-note="G#4" style="left: 83.2%;"></div>
                 <div class="key black" data-note="A#4" style="left: 90.3%;"></div>
             </div>
-            <div class="notes-display">
-                <span class="note-pill" id="note-1">-</span>
-                <span class="note-pill" id="note-2">-</span>
-                <span class="note-pill" id="note-3">-</span>
-            </div>
             
-            <div class="controls-panel">
-                <button id="autoscroll-btn" class="glass-btn">
-                    <span class="icon">▶</span> Auto-scroll
-                </button>
+            <div class="chord-display">
+                <h3 id="current-chord-name" class="current-chord">Hover or scroll to play</h3>
+                <div class="chord-notes" id="chord-notes-container">
+                    <!-- Pills will be generated dynamically -->
+                </div>
             </div>
         </aside>
     </main>

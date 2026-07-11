@@ -6,10 +6,11 @@
     --primary-glow: rgba(56, 189, 248, 0.4);
     --text-main: #f8fafc;
     --text-muted: #94a3b8;
-    --chord-color: #fbbf24;
-    --chord-hover: #fcd34d;
-    --key-pressed: #10b981;
-    --key-pressed-dark: #059669;
+    --chord-highlight: #fbbf24;
+    --chord-hover: rgba(251, 191, 36, 0.2);
+    --key-white: #ffffff;
+    --key-black: #171717;
+    --key-active: #38bdf8;
 }
 
 * {
@@ -41,8 +42,10 @@ body {
 }
 
 header {
-    padding: 2rem;
-    text-align: center;
+    padding: 1.5rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-bottom: 1px solid var(--glass-border);
     background: rgba(15, 23, 42, 0.8);
     backdrop-filter: blur(10px);
@@ -101,8 +104,11 @@ h1 {
 }
 
 .lyrics-panel {
-    flex: 1.5;
+    flex: 1;
+    max-width: 55%;
     overflow-x: auto;
+    padding-top: 35vh; /* Push first chord to the reading line */
+    padding-bottom: 60vh; /* Allow scrolling past the last chord */
 }
 
 #lyrics-content {
@@ -157,12 +163,15 @@ h1 {
 
 .piano-panel {
     flex: 1;
-    position: sticky;
-    top: 120px;
+    position: fixed;
+    right: 5%;
+    top: 130px;
+    width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
+    z-index: 5;
 }
 
 #current-chord-name {
@@ -177,7 +186,7 @@ h1 {
     position: relative;
     width: 100%;
     max-width: 400px;
-    height: 180px;
+    height: 160px;
     background: #1e1e1e;
     border-radius: 8px 8px 16px 16px;
     padding: 10px 10px 15px 10px;
@@ -258,12 +267,14 @@ h1 {
 }
 
 .controls-panel {
-    margin-top: 1rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 1rem;
-    width: 100%;
+}
+
+.header-controls {
+    margin-top: 0;
 }
 
 .speed-control {
@@ -315,3 +326,17 @@ h1 {
 .glass-btn .icon {
     font-size: 0.9rem;
 }
+
+
+/* Musical Theory Colors */
+.key.active.triad { background-color: #10b981 !important; color: #fff; border-color: #059669; box-shadow: 0 0 15px rgba(16, 185, 129, 0.6); }
+.note-pill.active.triad { background-color: rgba(16, 185, 129, 0.8); color: #fff; border-color: #10b981; box-shadow: 0 0 10px rgba(16, 185, 129, 0.4); }
+
+.key.active.seventh { background-color: #3b82f6 !important; color: #fff; border-color: #2563eb; box-shadow: 0 0 15px rgba(59, 130, 246, 0.6); }
+.note-pill.active.seventh { background-color: rgba(59, 130, 246, 0.8); color: #fff; border-color: #3b82f6; box-shadow: 0 0 10px rgba(59, 130, 246, 0.4); }
+
+.key.active.ninth { background-color: #8b5cf6 !important; color: #fff; border-color: #7c3aed; box-shadow: 0 0 15px rgba(139, 92, 246, 0.6); }
+.note-pill.active.ninth { background-color: rgba(139, 92, 246, 0.8); color: #fff; border-color: #8b5cf6; box-shadow: 0 0 10px rgba(139, 92, 246, 0.4); }
+
+.key.active.alt { background-color: #ec4899 !important; color: #fff; border-color: #db2777; box-shadow: 0 0 15px rgba(236, 72, 153, 0.6); }
+.note-pill.active.alt { background-color: rgba(236, 72, 153, 0.8); color: #fff; border-color: #ec4899; box-shadow: 0 0 10px rgba(236, 72, 153, 0.4); }

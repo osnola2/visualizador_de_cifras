@@ -2,38 +2,39 @@ const chordData = {
     "B": {
         name: "B Major",
         notes: ["B3", "D#4", "F#4"],
-        displayNotes: ["B", "D#", "F#"]
+        displayNotes: ["B", "D#", "F#"],
+        noteTypes: ["triad", "triad", "triad"]
     },
     "C#": {
         name: "C# Major",
         notes: ["C#3", "F3", "G#3"],
-        displayNotes: ["C#", "F", "G#"]
+        displayNotes: ["C#", "F", "G#"],
+        noteTypes: ["triad", "triad", "triad"]
     },
     "D#m": {
         name: "D# Minor",
         notes: ["D#3", "F#3", "A#3"],
-        displayNotes: ["D#", "F#", "A#"]
+        displayNotes: ["D#", "F#", "A#"],
+        noteTypes: ["triad", "triad", "triad"]
     },
     "F#": {
         name: "F# Major",
         notes: ["F#3", "A#3", "C#4"],
-        displayNotes: ["F#", "A#", "C#"]
+        displayNotes: ["F#", "A#", "C#"],
+        noteTypes: ["triad", "triad", "triad"]
     },
     "G#m": {
         name: "G# Minor",
         notes: ["G#3", "B3", "D#4"],
-        displayNotes: ["G#", "B", "D#"]
+        displayNotes: ["G#", "B", "D#"],
+        noteTypes: ["triad", "triad", "triad"]
     }
 };
 
 document.addEventListener('DOMContentLoaded', () => {
     const chordElements = document.querySelectorAll('.chord');
     const titleElement = document.getElementById('current-chord-name');
-    const notePills = [
-        document.getElementById('note-1'),
-        document.getElementById('note-2'),
-        document.getElementById('note-3')
-    ];
+    const pillsContainer = document.getElementById('chord-notes-container');
     
     // Store all piano keys by note name
     const keys = {};
@@ -43,13 +44,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function resetPiano() {
         document.querySelectorAll('.key.active').forEach(key => {
-            key.classList.remove('active');
+            key.className = key.className.replace(/active|triad|seventh|ninth|alt/g, '').trim() + (key.dataset.note.includes('#') ? ' black' : ' white');
             key.textContent = ''; // Remove the letter
         });
-        notePills.forEach(pill => {
-            pill.textContent = '-';
-            pill.classList.remove('active');
-        });
+        pillsContainer.innerHTML = '';
         titleElement.textContent = "Hover or scroll to play";
         titleElement.style.opacity = '0.5';
     }
@@ -61,17 +59,23 @@ document.addEventListener('DOMContentLoaded', () => {
         // Update Title
         titleElement.textContent = data.name;
         titleElement.style.opacity = '1';
+        
+        // Clear old pills
+        pillsContainer.innerHTML = '';
 
         // Light up piano keys and add the note letter on top of the key
         data.notes.forEach((note, index) => {
+            const type = data.noteTypes ? data.noteTypes[index] : 'triad';
             if (keys[note]) {
-                keys[note].classList.add('active');
+                keys[note].classList.add('active', type);
                 keys[note].textContent = data.displayNotes[index]; // Shows the letter on the key
             }
-            if (notePills[index]) {
-                notePills[index].textContent = data.displayNotes[index];
-                notePills[index].classList.add('active');
-            }
+            
+            // Create pill
+            const pill = document.createElement('span');
+            pill.className = `note-pill active ${type}`;
+            pill.textContent = data.displayNotes[index];
+            pillsContainer.appendChild(pill);
         });
     }
 
@@ -163,6 +167,9 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
         allChords.sort((a, b) => a.effectiveY - b.effectiveY);
+        
+        // Trigger initial check so the first chord highlights immediately
+        window.dispatchEvent(new Event('scroll'));
     }, 500); // Wait a bit for layout to settle
 
     let currentPlayingChord = null;
@@ -179,6 +186,11 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
         
+        // If we haven't reached the first chord yet, default to the very first one
+        if (!activeChordData && allChords.length > 0) {
+            activeChordData = allChords[0];
+        }
+        
         if (activeChordData && activeChordData.chordName !== currentPlayingChord) {
             currentPlayingChord = activeChordData.chordName;
             resetPiano();
@@ -191,11 +203,20 @@ document.addEventListener('DOMContentLoaded', () => {
             // Highlight the lyric line corresponding to this chord
             document.querySelectorAll('.lyric-line.active-line').forEach(el => el.classList.remove('active-line'));
             const parentLine = activeChordData.element.closest('.lyric-line');
+            
+            const displayChord = document.getElementById('active-display-chord');
+            const displayLyric = document.getElementById('active-display-lyric');
+            
             if (parentLine) {
                 // Highlight the line right after the chord line (which contains the lyrics)
                 const lyricLine = parentLine.nextElementSibling;
                 if (lyricLine) {
                     lyricLine.classList.add('active-line');
+                    displayChord.textContent = activeChordData.element.textContent;
+                    displayLyric.textContent = lyricLine.textContent.trim() || "---";
+                } else {
+                    displayChord.textContent = activeChordData.element.textContent;
+                    displayLyric.textContent = "---";
                 }
             }
         }
@@ -203,15 +224,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Smooth Auto-scroll
     const autoscrollBtn = document.getElementById('autoscroll-btn');
+    const speedSlider = document.getElementById('speed-slider');
+    const speedLabel = document.getElementById('speed-label');
+    const bpmInput = document.getElementById('bpm-input');
+    
     let isAutoScrolling = false;
     let animationFrameId = null;
     let scrollAccumulator = 0;
 
+    // Update label when slider changes
+    speedSlider.addEventListener('input', () => {
+        const val = parseFloat(speedSlider.value);
+        speedLabel.textContent = `Ajuste: ${val.toFixed(1)}x`;
+    });
+
     function autoScrollStep() {
         if (!isAutoScrolling) return;
         
-        // Accumulate fractional pixels to ensure all browsers scroll correctly
-        scrollAccumulator += 0.4; // Speed adjustment
+        // Base speed for 100 BPM is 0.4 pixels per frame
+        const bpmRatio = parseInt(bpmInput.value) / 100;
+        const baseSpeed = 0.4 * bpmRatio;
+        
+        const currentSpeed = parseFloat(speedSlider.value) * baseSpeed;
+        scrollAccumulator += currentSpeed;
         
         if (scrollAccumulator >= 1) {
             const pixels = Math.floor(scrollAccumulator);
