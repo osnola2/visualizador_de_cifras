@@ -346,17 +346,20 @@ h1 {
 
 @media (max-width: 899px) {
     header {
+        display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        gap: 0.5rem;
-        padding: 0.4rem 0.6rem;
-        min-height: auto;
+        gap: 8px;
+        padding: 6px 10px;
+        width: 100%;
+        box-sizing: border-box;
     }
     .song-info {
+        flex: 1;
+        min-width: 0;
         text-align: left;
-        max-width: 52%;
-        overflow: hidden;
+        margin-right: 4px;
     }
     header h1, header .song-title {
         font-size: 0.95rem !important;
@@ -385,27 +388,29 @@ h1 {
         opacity: 1 !important;
     }
     .controls-panel {
+        display: flex;
+        flex-direction: row;
         flex-wrap: nowrap;
         justify-content: flex-end;
         align-items: center;
-        width: auto;
-        gap: 0.35rem;
+        flex-shrink: 0;
+        gap: 5px;
     }
     #autoscroll-btn {
-        padding: 0.35rem 0.55rem;
-        font-size: 0.75rem;
+        padding: 4px 8px;
+        font-size: 0.72rem;
         border-radius: 6px;
         white-space: nowrap;
     }
     .speed-control {
-        padding: 0.25rem 0.45rem;
-        font-size: 0.72rem;
+        padding: 3px 6px;
+        font-size: 0.7rem;
         border-radius: 6px;
-        gap: 0.2rem;
+        gap: 3px;
     }
     #bpm-input {
-        width: 40px !important;
-        font-size: 0.75rem;
+        width: 38px !important;
+        font-size: 0.72rem;
         padding: 1px 2px !important;
     }
     .piano-panel {
