@@ -94,6 +94,30 @@ const chordData = {
         notes: ["C3", "F3", "G3", "A#3", "D4"],
         displayNotes: ["C", "F", "G", "Bb", "D"],
         noteTypes: ["triad", "alt", "triad", "seventh", "ninth"]
+    },
+    "Am7M": {
+        name: "Am7M",
+        notes: ["A3", "C4", "E4", "G#4"],
+        displayNotes: ["A", "C", "E", "G#"],
+        noteTypes: ["triad", "triad", "triad", "seventh"]
+    },
+    "Em7911": {
+        name: "Em7(9/11)",
+        notes: ["E3", "G3", "B3", "D4", "F#4", "A4"],
+        displayNotes: ["E", "G", "B", "D", "F#", "A"],
+        noteTypes: ["triad", "triad", "triad", "seventh", "ninth", "alt"]
+    },
+    "E69m": {
+        name: "E6(9-)",
+        notes: ["E3", "G#3", "B3", "C#4", "F4"],
+        displayNotes: ["E", "G#", "B", "C#", "F"],
+        noteTypes: ["triad", "triad", "triad", "seventh", "ninth"]
+    },
+    "E713": {
+        name: "E7(13-)",
+        notes: ["E3", "G#3", "D4", "C4"],
+        displayNotes: ["E", "G#", "D", "C"],
+        noteTypes: ["triad", "triad", "seventh", "alt"]
     }
 };
 
