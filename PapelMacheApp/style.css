@@ -340,8 +340,8 @@ h1 {
 
 .key.active.alt { background-color: #ec4899 !important; color: #fff; border-color: #db2777; box-shadow: 0 0 15px rgba(236, 72, 153, 0.6); }
 .note-pill.active.alt { background-color: rgba(236, 72, 153, 0.8); color: #fff; border-color: #ec4899; box-shadow: 0 0 10px rgba(236, 72, 153, 0.4); }
-. s o n g - i n f o   {   t e x t - a l i g n :   l e f t ;   }  
- 
+.song-info { text-align: left; }
+
 @media (max-width: 899px) {
     header {
         flex-direction: column;
@@ -407,4 +407,3 @@ h1 {
         font-size: 1rem;
     }
 }
-
