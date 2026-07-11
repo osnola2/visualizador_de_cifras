@@ -70,6 +70,30 @@ const chordData = {
         notes: ["D3", "F#3", "A3", "C4", "E4", "G#4"],
         displayNotes: ["D", "F#", "A", "C", "E", "G#"],
         noteTypes: ["triad", "triad", "triad", "seventh", "ninth", "alt"]
+    },
+    "A79p13m": {
+        name: "A7(9+/13-)",
+        notes: ["A3", "C#4", "F4", "G4", "C4"],
+        displayNotes: ["A", "C#", "F", "G", "C"],
+        noteTypes: ["triad", "triad", "alt", "seventh", "ninth"]
+    },
+    "A79m13": {
+        name: "A7(9-/13)",
+        notes: ["A3", "C#4", "G4", "A#4", "F#4"],
+        displayNotes: ["A", "C#", "G", "Bb", "F#"],
+        noteTypes: ["triad", "triad", "seventh", "ninth", "alt"]
+    },
+    "D7913": {
+        name: "D7(9/13)",
+        notes: ["D3", "F#3", "C4", "E4", "B4"],
+        displayNotes: ["D", "F#", "C", "E", "B"],
+        noteTypes: ["triad", "triad", "seventh", "ninth", "alt"]
+    },
+    "C749": {
+        name: "C7(4/9)",
+        notes: ["C3", "F3", "G3", "A#3", "D4"],
+        displayNotes: ["C", "F", "G", "Bb", "D"],
+        noteTypes: ["triad", "alt", "triad", "seventh", "ninth"]
     }
 };
 
