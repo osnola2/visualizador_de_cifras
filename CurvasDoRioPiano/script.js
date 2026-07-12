@@ -357,3 +357,23 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    // Toggle Piano Logic
+    const togglePianoBtn = document.getElementById('toggle-piano-btn');
+    if (togglePianoBtn) {
+        togglePianoBtn.addEventListener('click', () => {
+            const panel = document.querySelector('.piano-panel');
+            if (panel) {
+                panel.classList.toggle('piano-hidden');
+                if (panel.classList.contains('piano-hidden')) {
+                    togglePianoBtn.style.opacity = '0.5';
+                } else {
+                    togglePianoBtn.style.opacity = '1';
+                }
+            }
+        });
+    }
+
+});
