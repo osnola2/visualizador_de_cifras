@@ -32,6 +32,13 @@ const chordData = {
 };
 
 document.addEventListener('DOMContentLoaded', () => {
+    const nextChordVisualizer = window.NextChordVisualizer
+        ? new window.NextChordVisualizer({ containerId: 'next-chord-section' })
+        : null;
+    if (nextChordVisualizer) {
+        nextChordVisualizer.mount('next-chord-section');
+    }
+
     const chordElements = document.querySelectorAll('.chord');
     const titleElement = document.getElementById('current-chord-name');
     const pillsContainer = document.getElementById('chord-notes-container');
@@ -48,11 +55,12 @@ document.addEventListener('DOMContentLoaded', () => {
             key.textContent = ''; // Remove the letter
         });
         pillsContainer.innerHTML = '';
+        if (nextChordVisualizer) nextChordVisualizer.clearKeys();
         titleElement.textContent = "Hover or scroll to play";
         titleElement.style.opacity = '0.5';
     }
 
-    function showChord(chordName) {
+    function showChord(chordName, nextChordName, nextLyric = null) {
         const data = chordData[chordName];
         if (!data) return;
 
@@ -62,6 +70,8 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Clear old pills
         pillsContainer.innerHTML = '';
+
+        let currentVoicedForNext = [];
 
         // Light up piano keys and add the note letter on top of the key
         data.notes.forEach((note, index) => {
@@ -76,7 +86,22 @@ document.addEventListener('DOMContentLoaded', () => {
             pill.className = `note-pill active ${type}`;
             pill.textContent = data.displayNotes[index];
             pillsContainer.appendChild(pill);
+
+            currentVoicedForNext.push({
+                note,
+                displayNote: data.displayNotes[index],
+                type
+            });
         });
+
+        if (nextChordVisualizer) {
+            if (nextChordName && chordData[nextChordName]) {
+                const nextData = chordData[nextChordName];
+                nextChordVisualizer.renderChord(nextData.name, nextData, nextChordVisualizer.currentInversionIndex, currentVoicedForNext, nextLyric);
+            } else {
+                nextChordVisualizer.renderChord('---', null, 0, null, null);
+            }
+        }
     }
 
     // Karaoke Mode: Split lyrics into lines
@@ -96,19 +121,31 @@ document.addEventListener('DOMContentLoaded', () => {
         return `<div class="lyric-line" data-associated-chord="${lastChord || ''}">${line}</div>`;
     }).join('');
 
+    function getLyricForChordElement(chordEl) {
+        if (!chordEl) return null;
+        const parentLine = chordEl.closest('.lyric-line');
+        let lyricEl = parentLine ? parentLine.nextElementSibling : null;
+        return lyricEl ? lyricEl.textContent.trim() : null;
+    }
+
     // Re-select chord elements if we want to keep hover (optional)
     const newChordElements = document.querySelectorAll('.chord');
     newChordElements.forEach(chord => {
         chord.addEventListener('mouseenter', (e) => {
             resetPiano();
-            showChord(e.target.dataset.chord);
+            const idxInSong = allChords.findIndex(c => c.element === chord);
+            const nextItem = (idxInSong >= 0 && idxInSong < allChords.length - 1) ? allChords[idxInSong + 1] : null;
+            const nextData = nextItem ? nextItem.chordName : null;
+            const nextLyric = nextItem ? getLyricForChordElement(nextItem.element) : null;
+            showChord(e.target.dataset.chord, nextData, nextLyric);
         });
         chord.addEventListener('mouseleave', () => {
             // Wait for scroll to re-evaluate, or just reset
             const activeLine = document.querySelector('.lyric-line.active-line');
             if (activeLine && activeLine.dataset.associatedChord) {
                 resetPiano();
-                showChord(activeLine.dataset.associatedChord);
+                // This will not show next chord when hovering off, but scroll will immediately pick it up anyway.
+                showChord(activeLine.dataset.associatedChord, null, null);
             } else {
                 resetPiano();
             }
@@ -194,7 +231,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if (activeChordData && activeChordData.chordName !== currentPlayingChord) {
             currentPlayingChord = activeChordData.chordName;
             resetPiano();
-            showChord(activeChordData.chordName);
+            const idxInSong = allChords.indexOf(activeChordData);
+            const nextItem = (idxInSong >= 0 && idxInSong < allChords.length - 1) ? allChords[idxInSong + 1] : null;
+            const nextData = nextItem ? nextItem.chordName : null;
+            const nextLyric = nextItem ? getLyricForChordElement(nextItem.element) : null;
+            showChord(activeChordData.chordName, nextData, nextLyric);
             
             // Highlight chord
             document.querySelectorAll('.chord.active-chord').forEach(c => c.classList.remove('active-chord'));
