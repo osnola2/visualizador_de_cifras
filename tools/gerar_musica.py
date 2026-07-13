@@ -21,39 +21,7 @@ def generate_folder_name(title):
     clean = "".join(word.capitalize() for word in clean.split())
     return f"{clean}App"
 
-def guess_chord_notes(chord_name):
-    # A very rudimentary mapping for basic chords
-    # In the future, this can be expanded with a robust dictionary
-    mapping = {
-        'C': (['C3', 'E3', 'G3'], ['C', 'E', 'G'], ['root', 'triad', 'triad']),
-        'Cm': (['C3', 'Eb3', 'G3'], ['C', 'Eb', 'G'], ['root', 'triad', 'triad']),
-        'D': (['D3', 'F#3', 'A3'], ['D', 'F#', 'A'], ['root', 'triad', 'triad']),
-        'Dm': (['D3', 'F3', 'A3'], ['D', 'F', 'A'], ['root', 'triad', 'triad']),
-        'Dm7': (['D3', 'F3', 'A3', 'C4'], ['D', 'F', 'A', 'C'], ['root', 'triad', 'triad', 'seventh']),
-        'E': (['E3', 'G#3', 'B3'], ['E', 'G#', 'B'], ['root', 'triad', 'triad']),
-        'Em': (['E3', 'G3', 'B3'], ['E', 'G', 'B'], ['root', 'triad', 'triad']),
-        'Em7': (['E3', 'G3', 'B3', 'D4'], ['E', 'G', 'B', 'D'], ['root', 'triad', 'triad', 'seventh']),
-        'F': (['F3', 'A3', 'C4'], ['F', 'A', 'C'], ['root', 'triad', 'triad']),
-        'Fm': (['F3', 'Ab3', 'C4'], ['F', 'Ab', 'C'], ['root', 'triad', 'triad']),
-        'G': (['G3', 'B3', 'D4'], ['G', 'B', 'D'], ['root', 'triad', 'triad']),
-        'Gm': (['G3', 'Bb3', 'D4'], ['G', 'Bb', 'D'], ['root', 'triad', 'triad']),
-        'A': (['A3', 'C#4', 'E4'], ['A', 'C#', 'E'], ['root', 'triad', 'triad']),
-        'Am': (['A3', 'C4', 'E4'], ['A', 'C', 'E'], ['root', 'triad', 'triad']),
-        'Am7': (['A3', 'C4', 'E4', 'G4'], ['A', 'C', 'E', 'G'], ['root', 'triad', 'triad', 'seventh']),
-        'B': (['B3', 'D#4', 'F#4'], ['B', 'D#', 'F#'], ['root', 'triad', 'triad']),
-        'Bm': (['B3', 'D4', 'F#4'], ['B', 'D', 'F#'], ['root', 'triad', 'triad'])
-    }
-    
-    # Try to match the exact chord, or strip extensions as a fallback
-    if chord_name in mapping:
-        return mapping[chord_name]
-        
-    base_chord = re.sub(r'[^A-Gm#b]', '', chord_name)
-    if base_chord in mapping:
-        return mapping[base_chord]
-        
-    # Default fallback
-    return (['C3', 'E3', 'G3'], ['C', 'E', 'G'], ['root', 'triad', 'triad'])
+from chord_parser import parse_chord as guess_chord_notes
 
 
 def fetch_and_parse(url):
