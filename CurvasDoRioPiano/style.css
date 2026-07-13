@@ -513,3 +513,27 @@ h1 {
         max-height: 85vh;
     }
 }
+
+
+/* Robust piano panel visibility fix v6 */
+.piano-panel {
+    max-height: calc(100vh - 110px);
+    overflow-y: auto !important;
+    scrollbar-width: none;
+}
+.piano-panel::-webkit-scrollbar {
+    display: none;
+}
+.piano-row {
+    align-items: stretch !important;
+}
+.inversion-column {
+    height: auto !important;
+    min-height: 110px;
+}
+@media (max-width: 899px) {
+    .piano-panel {
+        max-height: 80svh !important;
+        padding-bottom: calc(0.8rem + env(safe-area-inset-bottom, 20px) + 20px) !important;
+    }
+}
