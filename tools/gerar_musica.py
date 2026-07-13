@@ -156,18 +156,17 @@ def update_hub(title, artist, folder_name):
         return
         
     card_html = f'''
-            <!-- Auto-generated -->
-            <a href="{folder_name}/index.html" class="song-card">
-                <h2>{title}</h2>
-                <p>{artist}</p>
-                <div class="tags">
-                    <span class="tag">Piano</span>
-                </div>
-            </a>
-            <!-- End auto-generated -->'''
+            <a href="{folder_name}/index.html" class="song-link">
+                {title}
+                <span class="song-artist">{artist}</span>
+            </a>'''
             
-    # Insert before the end of the grid
-    hub_content = hub_content.replace('</main>', card_html + '\n        </main>')
+    # Insert before the end of the song-list
+    if '        </div>\n    </div>\n</body>' in hub_content:
+        hub_content = hub_content.replace('        </div>\n    </div>\n</body>', card_html + '\n        </div>\n    </div>\n</body>')
+    else:
+        # Fallback if exactly matching spaces fails
+        hub_content = hub_content.replace('</div>\n    </div>\n</body>', card_html + '\n        </div>\n    </div>\n</body>')
     
     with open(HUB_HTML, "w", encoding="utf-8") as f:
         f.write(hub_content)
