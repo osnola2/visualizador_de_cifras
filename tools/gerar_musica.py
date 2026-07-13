@@ -53,6 +53,8 @@ def is_tablature_line(line):
         return True
     if re.match(r'^\|\s*[hpb/\\~v]\s+[A-Za-z]', s):
         return True
+    if re.match(r'^[eEaAdDgGbBxX]{6}\.?$', s):
+        return True
     return False
 
 def parse_plaintext_tab(tab_content, song_title, song_artist):
@@ -66,10 +68,17 @@ def parse_plaintext_tab(tab_content, song_title, song_artist):
 
     lines = tab_content.split('\n')
     new_lines = []
+    song_started = False
     for line in lines:
         line = line.rstrip('\r')
         if is_tablature_line(line):
             continue
+        s = line.strip()
+        if not song_started:
+            if re.match(r'^\[.*\]$', s) or is_chord_line(line):
+                song_started = True
+            else:
+                continue
         if line.strip() == "":
             if not new_lines or new_lines[-1] != "":
                 new_lines.append("")
