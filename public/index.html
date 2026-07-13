@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizador de Cifras - Hub</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0f172a;
+            color: #fff;
+            margin: 0;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            color: #38bdf8;
+            margin-bottom: 2rem;
+        }
+        .song-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            width: 100%;
+            max-width: 600px;
+        }
+        .song-link {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 1.5rem;
+            background: rgba(255,255,255,0.05);
+            border-radius: 8px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: background 0.2s, transform 0.1s;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .song-link:hover {
+            background: rgba(255,255,255,0.1);
+            transform: translateY(-2px);
+            border-color: #38bdf8;
+        }
+        .song-artist {
+            font-size: 0.9rem;
+            color: #94a3b8;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Catálogo de Músicas</h1>
+    <div class="song-list" id="song-list-container">
+        <!-- Songs will be injected here -->
+    
+            <a href="viewer.html?song=AguasDeMarco" class="song-link">
+                Águas de Março
+                <span class="song-artist">Tom Jobim</span>
+            </a>
+    
+            <a href="viewer.html?song=BanhoDeFolhas" class="song-link">
+                Banho de Folhas
+                <span class="song-artist">Luedji Luna</span>
+            </a>
+    
+            <a href="viewer.html?song=BaratoTotal" class="song-link">
+                Barato Total
+                <span class="song-artist">Gal Costa</span>
+            </a>
+    
+            <a href="viewer.html?song=Borzeguim" class="song-link">
+                Borzeguim
+                <span class="song-artist">Tom Jobim</span>
+            </a>
+    
+            <a href="viewer.html?song=Boto" class="song-link">
+                Boto
+                <span class="song-artist">Tom Jobim</span>
+            </a>
+    
+            <a href="viewer.html?song=LagrimasNegras" class="song-link">
+                Lágrimas Negras
+                <span class="song-artist">Gal Costa</span>
+            </a>
+    
+            <a href="viewer.html?song=Lizete" class="song-link">
+                Lizete
+                <span class="song-artist">Jonathan Silva</span>
+            </a>
+    
+            <a href="viewer.html?song=NaturalMystic" class="song-link">
+                Natural Mystic
+                <span class="song-artist">Bob Marley</span>
+            </a>
+    
+            <a href="viewer.html?song=Oceano" class="song-link">
+                Oceano
+                <span class="song-artist">Djavan</span>
+            </a>
+    
+            <a href="viewer.html?song=PapelMache" class="song-link">
+                Papel Machê
+                <span class="song-artist">João Bosco</span>
+            </a>
+    
+            <a href="viewer.html?song=PraMachucarMeuCoracao" class="song-link">
+                Pra Machucar Meu Coração
+                <span class="song-artist">Edu Lobo</span>
+            </a>
+    
+            <a href="viewer.html?song=QuaseUmSegundo" class="song-link">
+                Quase Um Segundo
+                <span class="song-artist">Gal Costa</span>
+            </a>
+    
+            <a href="viewer.html?song=Tecoteco" class="song-link">
+                Teco-teco
+                <span class="song-artist">Gal Costa</span>
+            </a>
+    
+            <a href="viewer.html?song=TheWindCriesMary" class="song-link">
+                The Wind Cries Mary
+                <span class="song-artist">Jimi Hendrix</span>
+            </a>
+    
+            <a href="viewer.html?song=VentoBravo" class="song-link">
+                Vento Bravo
+                <span class="song-artist">Edu Lobo</span>
+            </a>
+    
+            <a href="viewer.html?song=ViolaForaDeModa" class="song-link">
+                Viola Fora de Moda
+                <span class="song-artist">Edu Lobo</span>
+            </a>
+    
+            <a href="viewer.html?song=VolverALos17" class="song-link">
+                Volver a Los 17
+                <span class="song-artist">Mercedes Sosa</span>
+            </a>
+    </div>
+</body>
+</html>

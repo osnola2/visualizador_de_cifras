@@ -1,4 +1,6 @@
-import urllib.request
+import os
+
+code = '''import urllib.request
 import re
 import sys
 import json
@@ -56,7 +58,7 @@ def fetch_and_parse(url):
 
     formatted_content = re.sub(r'<b>(.*?)</b>', chord_replacer, pre_content)
     
-    lines = formatted_content.split('\n')
+    lines = formatted_content.split('\\n')
     new_lines = []
     for line in lines:
         if line.strip() == "":
@@ -65,7 +67,7 @@ def fetch_and_parse(url):
             new_lines.append(line)
         else:
             new_lines.append(f'<span class="lyric-line">{line}</span>')
-    lyrics_content = '\n'.join(new_lines)
+    lyrics_content = '\\n'.join(new_lines)
     
     chord_data = {}
     for chord in sorted(unique_chords):
@@ -86,7 +88,7 @@ def fetch_and_parse(url):
     song_json = {
         "title": song_title,
         "artist": song_artist,
-        "lyricsHtml": "\n" + lyrics_content + "\n",
+        "lyricsHtml": "\\n" + lyrics_content + "\\n",
         "chordData": chord_data
     }
     
@@ -95,7 +97,7 @@ def fetch_and_parse(url):
         
     update_hub(song_title, song_artist, file_name)
     
-    print(f"\n Successfully processed '{song_title}' by {song_artist}!")
+    print(f"\\n Successfully processed '{song_title}' by {song_artist}!")
     print(f" Saved data to: {json_path}")
 
 def update_hub(title, artist, file_name):
@@ -108,16 +110,16 @@ def update_hub(title, artist, file_name):
     if f'viewer.html?song={file_name}' in hub_content:
         return
         
-    card_html = f'''
+    card_html = f\'\'\'
             <a href="viewer.html?song={file_name}" class="song-link">
                 {title}
                 <span class="song-artist">{artist}</span>
-            </a>'''
+            </a>\'\'\'
             
-    if '        </div>\n    </div>\n</body>' in hub_content:
-        hub_content = hub_content.replace('        </div>\n    </div>\n</body>', card_html + '\n        </div>\n    </div>\n</body>')
+    if '        </div>\\n    </div>\\n</body>' in hub_content:
+        hub_content = hub_content.replace('        </div>\\n    </div>\\n</body>', card_html + '\\n        </div>\\n    </div>\\n</body>')
     else:
-        hub_content = hub_content.replace('</div>\n</body>', card_html + '\n    </div>\n</body>')
+        hub_content = hub_content.replace('</div>\\n</body>', card_html + '\\n    </div>\\n</body>')
     
     with open(HUB_HTML, "w", encoding="utf-8") as f:
         f.write(hub_content)
@@ -128,3 +130,9 @@ if __name__ == "__main__":
         print("Usage: python gerar_musica.py <cifraclub_url>")
         sys.exit(1)
     fetch_and_parse(sys.argv[1])
+'''
+
+with open(r'C:\Users\User\Desktop\Python\Musica\tools\gerar_musica.py', 'w', encoding='utf-8') as f:
+    f.write(code)
+
+print("gerar_musica.py rewritten.")
