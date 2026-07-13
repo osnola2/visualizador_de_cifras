@@ -39,6 +39,22 @@ def is_chord_line(line):
             return False
     return True
 
+def is_tablature_line(line):
+    s = line.strip()
+    if not s:
+        return False
+    if re.match(r'^[a-gA-GX]?\s*\|[-xX0-9]', s):
+        return True
+    if '|-' in s and '-|' in s:
+        return True
+    if '---' in s or '|--' in s or '--|' in s:
+        return True
+    if s.startswith('***') or s == 'X':
+        return True
+    if re.match(r'^\|\s*[hpb/\\~v]\s+[A-Za-z]', s):
+        return True
+    return False
+
 def parse_plaintext_tab(tab_content, song_title, song_artist):
     unique_chords = set()
 
@@ -52,14 +68,20 @@ def parse_plaintext_tab(tab_content, song_title, song_artist):
     new_lines = []
     for line in lines:
         line = line.rstrip('\r')
+        if is_tablature_line(line):
+            continue
         if line.strip() == "":
-            new_lines.append("")
+            if not new_lines or new_lines[-1] != "":
+                new_lines.append("")
         elif is_chord_line(line):
             formatted = re.sub(r'\S+', replace_chord_token, line)
             new_lines.append(formatted)
         else:
             escaped = html_lib.escape(line)
             new_lines.append(f'<span class="lyric-line">{escaped}</span>')
+
+    while new_lines and new_lines[-1] == "":
+        new_lines.pop()
 
     lyrics_content = '\n'.join(new_lines)
 
