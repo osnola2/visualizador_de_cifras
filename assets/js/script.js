@@ -84,9 +84,26 @@ function initViewer() {
     function getLyricForChordElement(chordEl) {
         if (!chordEl) return null;
         let curr = chordEl.nextSibling;
+        let passedNewline = false;
+
         while (curr) {
-            if (curr.nodeType === 1 && curr.classList.contains('lyric-line')) {
-                return curr.textContent.trim();
+            if (curr.nodeType === 1) {
+                if (curr.classList.contains('lyric-line')) {
+                    const txt = curr.textContent.trim();
+                    if (txt) return txt;
+                }
+                if (curr.classList.contains('chord') && passedNewline) {
+                    break;
+                }
+            } else if (curr.nodeType === 3) {
+                const text = curr.nodeValue || '';
+                if (text.includes('\n')) {
+                    passedNewline = true;
+                }
+                const trimmed = text.trim();
+                if (trimmed.length > 0) {
+                    return trimmed;
+                }
             }
             curr = curr.nextSibling;
         }
@@ -312,17 +329,8 @@ function initViewer() {
         const displayLyric = document.getElementById('active-display-lyric');
         if (!activeChordEl || !displayChord || !displayLyric) return;
 
-        let lyricEl = null;
-        let curr = activeChordEl.nextSibling;
-        while (curr) {
-            if (curr.nodeType === 1 && curr.classList.contains('lyric-line')) {
-                lyricEl = curr;
-                break;
-            }
-            curr = curr.nextSibling;
-        }
-
-        const lyricText = lyricEl ? lyricEl.textContent.trim() : "Intro / Instrumental";
+        const foundLyric = getLyricForChordElement(activeChordEl);
+        const lyricText = foundLyric ? foundLyric : "Intro / Instrumental";
         displayLyric.textContent = lyricText || "---";
 
         const activeRect = activeChordEl.getBoundingClientRect();
