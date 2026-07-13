@@ -7,7 +7,7 @@ import unicodedata
 
 BASE_DIR = r"C:\Users\User\Desktop\Python\Musica"
 DATA_DIR = os.path.join(BASE_DIR, "data", "songs")
-HUB_HTML = os.path.join(BASE_DIR, "public", "index.html")
+HUB_HTML = os.path.join(BASE_DIR, "index.html")
 
 def remove_accents(input_str):
     nfkd_form = unicodedata.normalize('NFKD', input_str)

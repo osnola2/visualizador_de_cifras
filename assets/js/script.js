@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const scriptEl = document.createElement('script');
-    scriptEl.src = `../data/songs/${songId}.js`;
+    scriptEl.src = `data/songs/${songId}.js`;
     scriptEl.onload = () => {
         if (!window.SONG_DATA) {
             document.getElementById('song-title-el').textContent = 'Erro ao carregar';
