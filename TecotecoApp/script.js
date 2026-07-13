@@ -15,7 +15,7 @@ const chordData = {
         name: "B7(9)",
         notes: ["B3", "D#4", "F#4", "A4", "C#5"],
         displayNotes: ["B", "D#", "F#", "A", "C#"],
-        noteTypes: ["root", "triad", "triad", "seventh", "tension"]
+        noteTypes: ["root", "triad", "triad", "seventh", "ninth"]
     },
     "Bb7": {
         name: "Bb7",
@@ -51,7 +51,7 @@ const chordData = {
         name: "C#7(9)",
         notes: ["C#3", "F3", "G#3", "B3", "D#4"],
         displayNotes: ["C#", "F", "G#", "B", "D#"],
-        noteTypes: ["root", "triad", "triad", "seventh", "tension"]
+        noteTypes: ["root", "triad", "triad", "seventh", "ninth"]
     },
     "C#m7(5-)": {
         name: "C#m7(5-)",

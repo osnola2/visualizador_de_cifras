@@ -27,7 +27,7 @@ const chordData = {
         name: "Bb7(13)",
         notes: ["A#3", "D4", "F4", "G#4", "C5", "G5"],
         displayNotes: ["Bb", "D", "F", "Ab", "C", "G"],
-        noteTypes: ["root", "triad", "triad", "seventh", "tension", "tension"]
+        noteTypes: ["root", "triad", "triad", "seventh", "ninth", "ninth"]
     },
     "Bb7/D": {
         name: "Bb7/D",
@@ -45,7 +45,7 @@ const chordData = {
         name: "C7(9)",
         notes: ["C3", "E3", "G3", "A#3", "D4"],
         displayNotes: ["C", "E", "G", "A#", "D"],
-        noteTypes: ["root", "triad", "triad", "seventh", "tension"]
+        noteTypes: ["root", "triad", "triad", "seventh", "ninth"]
     },
     "D/E": {
         name: "D/E",
@@ -75,7 +75,7 @@ const chordData = {
         name: "Eb7M(9)",
         notes: ["D#3", "G3", "A#3", "D4", "F4"],
         displayNotes: ["Eb", "G", "Bb", "D", "F"],
-        noteTypes: ["root", "triad", "triad", "seventh", "tension"]
+        noteTypes: ["root", "triad", "triad", "seventh", "ninth"]
     },
     "Em7": {
         name: "Em7",
@@ -87,7 +87,7 @@ const chordData = {
         name: "Fm7(9)",
         notes: ["F3", "G#3", "C4", "D#4", "G4"],
         displayNotes: ["F", "Ab", "C", "Eb", "G"],
-        noteTypes: ["root", "triad", "triad", "seventh", "tension"]
+        noteTypes: ["root", "triad", "triad", "seventh", "ninth"]
     },
     "Gm": {
         name: "Gm",
