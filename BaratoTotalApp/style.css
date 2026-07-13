@@ -596,8 +596,8 @@ header {
     z-index: 999 !important;
 }
 .piano-panel {
-    top: 130px !important; /* Desktop stick below header */
-    max-height: calc(100vh - 150px) !important;
+    top: 220px !important; /* Desktop stick below tall headers */
+    max-height: calc(100vh - 240px) !important;
 }
 @media (max-width: 899px) {
     .piano-panel {
