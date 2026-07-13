@@ -5,32 +5,48 @@ document.addEventListener('DOMContentLoaded', () => {
     const songId = urlParams.get('song');
 
     if (!songId) {
-        document.getElementById('song-title-el').textContent = 'Nenhuma musica selecionada';
+        document.getElementById('song-title-el').textContent = 'Nenhuma música selecionada';
         document.getElementById('song-artist-el').textContent = '';
         return;
     }
 
-    const scriptEl = document.createElement('script');
-    scriptEl.src = `data/songs/${songId}.js`;
-    scriptEl.onload = () => {
+    let isLoaded = false;
+    function loadSongData() {
+        if (isLoaded) return;
         if (!window.SONG_DATA) {
             document.getElementById('song-title-el').textContent = 'Erro ao carregar';
-            document.getElementById('song-artist-el').textContent = 'Dados da musica nao encontrados.';
+            document.getElementById('song-artist-el').textContent = 'Dados da música não encontrados.';
             return;
         }
+        isLoaded = true;
         const data = window.SONG_DATA;
         document.getElementById('song-title-el').textContent = data.title;
         document.getElementById('song-artist-el').textContent = data.artist;
         document.getElementById('lyrics-content').innerHTML = data.lyricsHtml;
-        chordData = data.chordData;
+        chordData = data.chordData || {};
         
         initViewer();
-    };
+    }
+
+    const scriptEl = document.createElement('script');
+    scriptEl.onload = loadSongData;
     scriptEl.onerror = () => {
-        document.getElementById('song-title-el').textContent = 'Erro ao carregar';
-        document.getElementById('song-artist-el').textContent = 'Arquivo da musica nao encontrado no catalogo.';
+        if (!isLoaded) {
+            document.getElementById('song-title-el').textContent = 'Erro ao carregar';
+            document.getElementById('song-artist-el').textContent = 'Arquivo da música não encontrado no catálogo.';
+        }
     };
+    scriptEl.src = `data/songs/${songId}.js`;
     document.head.appendChild(scriptEl);
+
+    // Fallback de segurança para carregamento em protocolo file://
+    const checkInterval = setInterval(() => {
+        if (window.SONG_DATA && !isLoaded) {
+            clearInterval(checkInterval);
+            loadSongData();
+        }
+    }, 40);
+    setTimeout(() => clearInterval(checkInterval), 4000);
 });
 
 function initViewer() {
