@@ -305,6 +305,29 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+
+    // Keyboard Navigation for chords
+    document.addEventListener('keydown', (e) => {
+        if (typeof allChords === 'undefined' || allChords.length === 0) return;
+        
+        let currentIdx = allChords.findIndex(c => c.element === currentPlayingChordEl);
+        if (currentIdx === -1) currentIdx = 0;
+
+        if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
+            e.preventDefault();
+            if (currentIdx < allChords.length - 1) {
+                const nextY = allChords[currentIdx + 1].effectiveY - 319;
+                window.scrollTo({ top: nextY, behavior: 'auto' });
+            }
+        } else if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
+            e.preventDefault();
+            if (currentIdx > 0) {
+                const prevY = allChords[currentIdx - 1].effectiveY - 321;
+                window.scrollTo({ top: prevY, behavior: 'auto' });
+            }
+        }
+    });
+
     // Auto-scroll logic
     const autoscrollBtn = document.getElementById('autoscroll-btn');
     const speedSlider = document.getElementById('speed-slider');

@@ -316,7 +316,7 @@
 
             // Exibe a continuação da letra do próximo acorde
             if (notesContainerEl) {
-                notesContainerEl.textContent = nextLyric ? `"${nextLyric}"` : '---';
+                notesContainerEl.textContent = nextLyric ? nextLyric : '---';
             }
         }
     }

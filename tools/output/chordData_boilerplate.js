@@ -5,26 +5,32 @@ const chordData = {
         displayNotes: ["C", "E", "G"], // TODO: Fill correct display
         noteTypes: ["triad", "triad", "triad"]
     },
-    "Am/F": {
-        name: "Am/F",
+    "Am7": {
+        name: "Am7",
         notes: ["C3", "E3", "G3"], // TODO: Fill correct notes
         displayNotes: ["C", "E", "G"], // TODO: Fill correct display
         noteTypes: ["triad", "triad", "triad"]
     },
-    "Am/G": {
-        name: "Am/G",
+    "Bm7(5-)": {
+        name: "Bm7(5-)",
         notes: ["C3", "E3", "G3"], // TODO: Fill correct notes
         displayNotes: ["C", "E", "G"], // TODO: Fill correct display
         noteTypes: ["triad", "triad", "triad"]
     },
-    "C": {
-        name: "C",
+    "C7(9)": {
+        name: "C7(9)",
         notes: ["C3", "E3", "G3"], // TODO: Fill correct notes
         displayNotes: ["C", "E", "G"], // TODO: Fill correct display
         noteTypes: ["triad", "triad", "triad"]
     },
-    "Dm": {
-        name: "Dm",
+    "D7": {
+        name: "D7",
+        notes: ["C3", "E3", "G3"], // TODO: Fill correct notes
+        displayNotes: ["C", "E", "G"], // TODO: Fill correct display
+        noteTypes: ["triad", "triad", "triad"]
+    },
+    "D7(9)": {
+        name: "D7(9)",
         notes: ["C3", "E3", "G3"], // TODO: Fill correct notes
         displayNotes: ["C", "E", "G"], // TODO: Fill correct display
         noteTypes: ["triad", "triad", "triad"]
@@ -41,14 +47,8 @@ const chordData = {
         displayNotes: ["C", "E", "G"], // TODO: Fill correct display
         noteTypes: ["triad", "triad", "triad"]
     },
-    "G/B": {
-        name: "G/B",
-        notes: ["C3", "E3", "G3"], // TODO: Fill correct notes
-        displayNotes: ["C", "E", "G"], // TODO: Fill correct display
-        noteTypes: ["triad", "triad", "triad"]
-    },
-    "G7": {
-        name: "G7",
+    "F6(9)": {
+        name: "F6(9)",
         notes: ["C3", "E3", "G3"], // TODO: Fill correct notes
         displayNotes: ["C", "E", "G"], // TODO: Fill correct display
         noteTypes: ["triad", "triad", "triad"]

@@ -46,6 +46,18 @@ def fetch_and_parse(url, output_dir):
 
     formatted_content = re.sub(r'<b>(.*?)</b>', chord_replacer, pre_content)
     
+    # Wrap lyric lines in <span class="lyric-line">
+    lines = formatted_content.split('\n')
+    new_lines = []
+    for line in lines:
+        if line.strip() == "":
+            new_lines.append(line)
+        elif '<span class="chord"' in line:
+            new_lines.append(line)
+        else:
+            new_lines.append(f'<span class="lyric-line">{line}</span>')
+    formatted_content = '\n'.join(new_lines)
+    
     # Generate chordData boilerplate
     chord_data_js = "const chordData = {\n"
     for idx, chord in enumerate(sorted(unique_chords)):
