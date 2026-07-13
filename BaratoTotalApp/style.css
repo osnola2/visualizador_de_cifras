@@ -603,7 +603,13 @@ header {
 }
 @media (max-height: 850px) and (min-width: 900px) {
     .piano-panel {
-        zoom: 0.85; /* Shrinks the entire panel on short screens so it fits entirely */
+        padding: 1rem !important;
+    }
+    .next-chord-header {
+        margin-top: 0.4rem !important;
+    }
+    .piano-row {
+        margin-top: 0.2rem !important;
     }
 }
 @media (max-width: 899px) {
