@@ -481,11 +481,7 @@ h2.song-artist {
     }
 }
 
-/* Responsive Desktop Fix for Short Screens v7 */
-.piano-panel {
-    max-height: calc(100vh - 120px);
-    overflow-y: auto !important;
-    /* Custom thin scrollbar instead of hiding it */
+/* Custom thin scrollbar instead of hiding it */
     scrollbar-width: thin;
     scrollbar-color: var(--primary) rgba(255,255,255,0.05);
 }
@@ -531,5 +527,43 @@ h2.song-artist {
     .piano-panel {
         max-height: 80svh !important;
         padding-bottom: calc(0.8rem + env(safe-area-inset-bottom, 20px) + 20px) !important;
+    }
+}
+
+/* Responsive Desktop Fix without Scroll Trap v8 */
+.piano-panel {
+    max-height: calc(100vh - 120px);
+    overflow: hidden !important; /* PREVENTS MOUSE WHEEL SCROLL TRAP */
+}
+.piano-row {
+    align-items: stretch !important;
+}
+.piano-keyboard {
+    height: min(115px, 15vh) !important;
+}
+.inversion-column {
+    height: auto !important;
+    min-height: min(115px, 15vh) !important;
+}
+.key {
+    padding-bottom: min(8px, 2vh) !important;
+    font-size: min(0.75rem, 1.5vh) !important;
+}
+.inv-side-btn {
+    padding: min(0.38rem, 1vh) 0.2rem !important;
+    font-size: min(0.72rem, 1.2vh) !important;
+}
+
+@media (max-width: 899px) {
+    .piano-panel {
+        max-height: 80svh !important;
+        overflow-y: auto !important; /* Mobile needs it if it overflows, no mouse wheel trap issue */
+        padding-bottom: calc(0.8rem + env(safe-area-inset-bottom, 20px) + 20px) !important;
+    }
+    .piano-keyboard {
+        height: 110px !important; /* restore mobile height */
+    }
+    .inversion-column {
+        min-height: 110px !important;
     }
 }
