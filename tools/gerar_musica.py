@@ -137,10 +137,10 @@ def fetch_and_parse(url):
     # Add to Hub index.html
     update_hub(song_title, song_artist, folder_name)
     
-    print(f"\n✅ Scaffold complete for '{song_title}' by {song_artist}!")
-    print(f"📁 Folder created: {output_dir}")
-    print(f"🎹 Found {len(unique_chords)} unique chords. Chord mapping was automatically guessed where possible.")
-    print(f"⚙️ Don't forget to review the notes in {folder_name}/script.js")
+    print(f"\n Scaffold complete for '{song_title}' by {song_artist}!")
+    print(f" Folder created: {output_dir}")
+    print(f" Found {len(unique_chords)} unique chords. Chord mapping was automatically guessed where possible.")
+    print(f" Don't forget to review the notes in {folder_name}/script.js")
 
 
 def update_hub(title, artist, folder_name):
@@ -171,7 +171,7 @@ def update_hub(title, artist, folder_name):
     
     with open(HUB_HTML, "w", encoding="utf-8") as f:
         f.write(hub_content)
-    print("🏠 Added new song to Hub (index.html)")
+    print(" Added new song to Hub (index.html)")
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:

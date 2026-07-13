@@ -164,10 +164,11 @@ def parse_chord(chord_symbol):
         # Calculate true octave taking negative intervals into account
         # absolute_semitones can be negative
         octave = base_octave + (absolute_semitones // 12)
-        note_name = get_note_name(absolute_semitones, use_flats)
+        note_name_display = get_note_name(absolute_semitones, use_flats)
+        note_name_dom = get_note_name(absolute_semitones, False)
         
-        notes_with_octave.append(f"{note_name}{octave}")
-        display_notes.append(note_name)
+        notes_with_octave.append(f"{note_name_dom}{octave}")
+        display_notes.append(note_name_display)
         note_types.append(intervals[interval])
         
     return notes_with_octave, display_notes, note_types
