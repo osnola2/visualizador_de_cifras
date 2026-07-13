@@ -141,7 +141,8 @@ h2.song-artist {
 
 .lyrics-panel {
     flex: 1;
-    max-width: 58%;
+    width: 100%;
+    max-width: 100%;
     overflow: visible;
     padding: 30vh 2rem 40vh 2rem;
 }
@@ -150,10 +151,7 @@ h2.song-artist {
     font-family: 'Inter', monospace;
     font-size: 1.15rem;
     line-height: 2.2;
-    color: var(--text-main);
-    white-space: pre-wrap;
-    word-break: break-word;
-    overflow-wrap: break-word;
+    border-left: 3px solid var(--primary);
 }
 
 .chord {
@@ -194,12 +192,15 @@ h2.song-artist {
 }
 
 .piano-panel {
-    flex: 0 0 410px;
-    position: sticky;
+    position: fixed;
+    right: 2%;
     top: 100px;
+    width: 32vw;
+    max-width: 420px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 100;
 }
 
 .piano-keyboard {
@@ -523,12 +524,7 @@ h2.song-artist {
     }
 }
 
-@media (max-width: 899px) {
-    .piano-panel {
-        max-height: 80svh !important;
-        padding-bottom: calc(0.8rem + env(safe-area-inset-bottom, 20px) + 20px) !important;
-    }
-}
+
 
 /* Responsive Desktop Fix without Scroll Trap v8 */
 .piano-panel {
@@ -556,15 +552,35 @@ h2.song-artist {
 
 @media (max-width: 899px) {
     .piano-panel {
-        max-height: 80svh !important;
-        overflow-y: auto !important; /* Mobile needs it if it overflows, no mouse wheel trap issue */
-        padding-bottom: calc(0.8rem + env(safe-area-inset-bottom, 20px) + 20px) !important;
+        max-height: 33vh !important;
+        overflow-y: auto !important;
+        padding: 0.5rem 0.5rem calc(0.5rem + env(safe-area-inset-bottom, 10px)) !important;
+        border-radius: 20px 20px 0 0 !important;
     }
     .piano-keyboard {
-        height: 110px !important; /* restore mobile height */
+        height: 60px !important;
+        margin: 0.2rem 0 !important;
     }
     .inversion-column {
-        min-height: 110px !important;
+        min-height: 60px !important;
+    }
+    .inv-side-btn {
+        padding: 2px !important;
+        font-size: 0.65rem !important;
+    }
+    #active-display-chord {
+        font-size: 1rem !important;
+        margin-bottom: 0 !important;
+    }
+    #active-display-lyric {
+        font-size: 0.85rem !important;
+    }
+    .current-chord h3, .next-chord h3 {
+        font-size: 0.9rem !important;
+    }
+    .key {
+        padding-bottom: 2px !important;
+        font-size: 0.65rem !important;
     }
 }
 

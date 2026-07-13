@@ -1,16 +1,16 @@
 :root {
     --bg-dark: #0f172a;
-    --glass-bg: rgba(30, 41, 59, 0.75);
+    --glass-bg: rgba(30, 41, 59, 0.78);
     --glass-border: rgba(255, 255, 255, 0.12);
-    --primary: #10b981; /* Reggae green accent */
-    --primary-glow: rgba(16, 185, 129, 0.4);
+    --primary: #f43f5e; /* MPB warm coral accent */
+    --primary-glow: rgba(244, 63, 94, 0.4);
     --text-main: #f8fafc;
     --text-muted: #94a3b8;
-    --chord-highlight: #f59e0b; /* Reggae gold accent */
-    --chord-hover: rgba(245, 158, 11, 0.25);
+    --chord-highlight: #fbbf24; /* Warm amber gold */
+    --chord-hover: rgba(251, 191, 36, 0.25);
     --key-white: #ffffff;
     --key-black: #171717;
-    --key-active: #10b981;
+    --key-active: #f43f5e;
 }
 
 * {
@@ -35,8 +35,8 @@ body {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: radial-gradient(circle at 15% 50%, rgba(16, 185, 129, 0.15), transparent 25%),
-                radial-gradient(circle at 85% 30%, rgba(245, 158, 11, 0.12), transparent 25%);
+    background: radial-gradient(circle at 20% 40%, rgba(244, 63, 94, 0.14), transparent 30%),
+                radial-gradient(circle at 80% 60%, rgba(251, 191, 36, 0.12), transparent 30%);
     z-index: -1;
 }
 
@@ -46,7 +46,7 @@ header {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid var(--glass-border);
-    background: rgba(15, 23, 42, 0.85);
+    background: rgba(15, 23, 42, 0.88);
     backdrop-filter: blur(12px);
     position: sticky;
     top: 0;
@@ -81,7 +81,7 @@ h2.song-artist {
 }
 
 .glass-btn {
-    background: rgba(16, 185, 129, 0.2);
+    background: rgba(244, 63, 94, 0.2);
     border: 1px solid var(--primary);
     color: var(--text-main);
     padding: 0.6rem 1.2rem;
@@ -95,13 +95,13 @@ h2.song-artist {
 }
 
 .glass-btn:hover {
-    background: rgba(16, 185, 129, 0.4);
+    background: rgba(244, 63, 94, 0.4);
     box-shadow: 0 0 15px var(--primary-glow);
 }
 
 .glass-btn.active {
     background: var(--primary);
-    color: #000;
+    color: #fff;
     box-shadow: 0 0 20px var(--primary-glow);
 }
 
@@ -141,7 +141,8 @@ h2.song-artist {
 
 .lyrics-panel {
     flex: 1;
-    max-width: 58%;
+    width: 100%;
+    max-width: 100%;
     overflow: visible;
     padding: 30vh 2rem 40vh 2rem;
 }
@@ -150,10 +151,7 @@ h2.song-artist {
     font-family: 'Inter', monospace;
     font-size: 1.15rem;
     line-height: 2.2;
-    color: var(--text-main);
-    white-space: pre-wrap;
-    word-break: break-word;
-    overflow-wrap: break-word;
+    border-left: 3px solid var(--primary);
 }
 
 .chord {
@@ -175,7 +173,7 @@ h2.song-artist {
 
 .chord.active-chord {
     background: var(--primary);
-    color: #000 !important;
+    color: #fff !important;
     border-color: var(--primary);
     box-shadow: 0 0 15px var(--primary-glow);
     transform: scale(1.1);
@@ -194,12 +192,15 @@ h2.song-artist {
 }
 
 .piano-panel {
-    flex: 0 0 410px;
-    position: sticky;
+    position: fixed;
+    right: 2%;
     top: 100px;
+    width: 32vw;
+    max-width: 420px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 100;
 }
 
 .piano-keyboard {
@@ -318,7 +319,7 @@ h2.song-artist {
     h1.song-title {
         font-size: 1.15rem !important;
         margin: 0 !important;
-        color: #10b981 !important;
+        color: #f43f5e !important;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -327,7 +328,7 @@ h2.song-artist {
     h2.song-artist {
         font-size: 0.78rem !important;
         margin: 0 !important;
-        color: #f59e0b !important;
+        color: #fbbf24 !important;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -523,12 +524,7 @@ h2.song-artist {
     }
 }
 
-@media (max-width: 899px) {
-    .piano-panel {
-        max-height: 80svh !important;
-        padding-bottom: calc(0.8rem + env(safe-area-inset-bottom, 20px) + 20px) !important;
-    }
-}
+
 
 /* Responsive Desktop Fix without Scroll Trap v8 */
 .piano-panel {
@@ -556,15 +552,35 @@ h2.song-artist {
 
 @media (max-width: 899px) {
     .piano-panel {
-        max-height: 80svh !important;
-        overflow-y: auto !important; /* Mobile needs it if it overflows, no mouse wheel trap issue */
-        padding-bottom: calc(0.8rem + env(safe-area-inset-bottom, 20px) + 20px) !important;
+        max-height: 33vh !important;
+        overflow-y: auto !important;
+        padding: 0.5rem 0.5rem calc(0.5rem + env(safe-area-inset-bottom, 10px)) !important;
+        border-radius: 20px 20px 0 0 !important;
     }
     .piano-keyboard {
-        height: 110px !important; /* restore mobile height */
+        height: 60px !important;
+        margin: 0.2rem 0 !important;
     }
     .inversion-column {
-        min-height: 110px !important;
+        min-height: 60px !important;
+    }
+    .inv-side-btn {
+        padding: 2px !important;
+        font-size: 0.65rem !important;
+    }
+    #active-display-chord {
+        font-size: 1rem !important;
+        margin-bottom: 0 !important;
+    }
+    #active-display-lyric {
+        font-size: 0.85rem !important;
+    }
+    .current-chord h3, .next-chord h3 {
+        font-size: 0.9rem !important;
+    }
+    .key {
+        padding-bottom: 2px !important;
+        font-size: 0.65rem !important;
     }
 }
 
