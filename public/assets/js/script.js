@@ -1,6 +1,6 @@
 let chordData = {};
 
-document.addEventListener('DOMContentLoaded', async () => {
+document.addEventListener('DOMContentLoaded', () => {
     const urlParams = new URLSearchParams(window.location.search);
     const songId = urlParams.get('song');
 
@@ -10,21 +10,27 @@ document.addEventListener('DOMContentLoaded', async () => {
         return;
     }
 
-    try {
-        const response = await fetch(`../data/songs/${songId}.json`);
-        if (!response.ok) throw new Error('Musica nao encontrada');
-        const data = await response.json();
-        
+    const scriptEl = document.createElement('script');
+    scriptEl.src = `../data/songs/${songId}.js`;
+    scriptEl.onload = () => {
+        if (!window.SONG_DATA) {
+            document.getElementById('song-title-el').textContent = 'Erro ao carregar';
+            document.getElementById('song-artist-el').textContent = 'Dados da musica nao encontrados.';
+            return;
+        }
+        const data = window.SONG_DATA;
         document.getElementById('song-title-el').textContent = data.title;
         document.getElementById('song-artist-el').textContent = data.artist;
         document.getElementById('lyrics-content').innerHTML = data.lyricsHtml;
         chordData = data.chordData;
         
         initViewer();
-    } catch (e) {
+    };
+    scriptEl.onerror = () => {
         document.getElementById('song-title-el').textContent = 'Erro ao carregar';
-        document.getElementById('song-artist-el').textContent = e.message;
-    }
+        document.getElementById('song-artist-el').textContent = 'Arquivo da musica nao encontrado no catalogo.';
+    };
+    document.head.appendChild(scriptEl);
 });
 
 function initViewer() {

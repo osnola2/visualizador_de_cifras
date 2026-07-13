@@ -1,0 +1,151 @@
+window.SONG_DATA = {
+    "title": "Lizete",
+    "artist": "Jonathan Silva",
+    "lyricsHtml": "\n<span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Mãe</span>\n                   <span class=\"chord\" data-chord=\"Am\">Am</span>\n<span class=\"lyric-line\">Me acorde amanhã as 7</span>\n                     <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Preciso encontrar Lizete</span>\n                       <span class=\"chord\" data-chord=\"B\">B</span>  \n<span class=\"lyric-line\">A pobre endoideceu de amor</span>\n\n<span class=\"lyric-line\">Que horror</span>\n<span class=\"chord\" data-chord=\"C\">C</span>                                 <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Pudera, foi se envolver com a Rebeca</span>\n                    <span class=\"chord\" data-chord=\"F\">F</span>\n<span class=\"lyric-line\">Tentaram relação aberta</span>\n                     <span class=\"chord\" data-chord=\"B\">B</span>\n<span class=\"lyric-line\">Parece que não funcionou</span>\n<span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Mãe</span>\n                    <span class=\"chord\" data-chord=\"Am\">Am</span>\n<span class=\"lyric-line\">Lizete tá meio alterada</span>\n                         <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Não acha graça mais em nada</span>\n                       <span class=\"chord\" data-chord=\"B\">B</span>\n<span class=\"lyric-line\">Não acredita mais no amor</span>\n\n<span class=\"lyric-line\">Cansou</span>\n<span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">O amor</span>\n                       <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Não tem uma receita certa</span>\n                    <span class=\"chord\" data-chord=\"F\">F</span>\n<span class=\"lyric-line\">Não é uma estrada reta</span>\n                     <span class=\"chord\" data-chord=\"B\">B</span>\n<span class=\"lyric-line\">Tem seus espinhos e flor</span>\n<span class=\"chord\" data-chord=\"C\">C</span>      <span class=\"chord\" data-chord=\"D\">D</span>\n<span class=\"lyric-line\">Mãe falou</span>\n         <span class=\"chord\" data-chord=\"Em\">Em</span>                <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">Se uma ferida não quer estancar</span>\n       <span class=\"chord\" data-chord=\"C\">C</span>     <span class=\"chord\" data-chord=\"D\">D</span>\n<span class=\"lyric-line\">Só um novo amor</span>\n            <span class=\"chord\" data-chord=\"B\">B</span>\n<span class=\"lyric-line\">Pode cicatrizar</span>\n<span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\">Mãe</span>\n                   <span class=\"chord\" data-chord=\"Am\">Am</span>\n<span class=\"lyric-line\">Sabe encontrei Lizete</span>\n                    <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">As 5 horas lá na Glete</span>\n                <span class=\"chord\" data-chord=\"B\">B</span>\n<span class=\"lyric-line\">A caminho do metrô</span>\n\n<span class=\"lyric-line\">Me olhou</span>\n<span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">Gostei</span>\n                 <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Elogiei o seu cabelo</span>\n                        <span class=\"chord\" data-chord=\"F\">F</span>\n<span class=\"lyric-line\">O meu rosto ficou vermelho</span>\n                     <span class=\"chord\" data-chord=\"B\">B</span>\n<span class=\"lyric-line\">Será que ela desconfiou?</span>\n<span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Mãe</span>\n                       <span class=\"chord\" data-chord=\"Am\">Am</span>\n<span class=\"lyric-line\">Vou me juntar com a Lizete</span>\n                 <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Mudar pra sua kitnet</span>\n                  <span class=\"chord\" data-chord=\"B\">B</span>\n<span class=\"lyric-line\">Ali no bairro do Limão</span>\n\n<span class=\"lyric-line\">Então</span>\n     <span class=\"chord\" data-chord=\"C\">C</span>                       <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Nós duas ouvindo discos na vitrola</span>\n                       <span class=\"chord\" data-chord=\"F\">F</span>\n<span class=\"lyric-line\">De Charles Mingos a Cartola</span>\n                    <span class=\"chord\" data-chord=\"B\">B</span>\n<span class=\"lyric-line\">Do jeito que você falou</span>\n<span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">Mãe, mãe, mãe, mãe</span>\n<span class=\"chord\" data-chord=\"B\">B</span>\n<span class=\"lyric-line\">Mãe, mãe</span>\n<span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">Mãe, mãe, mãe, mãe</span>\n<span class=\"chord\" data-chord=\"B\">B</span>\n<span class=\"lyric-line\">Mãe, mãe</span>\n",
+    "chordData": {
+        "F": {
+            "name": "F",
+            "notes": [
+                "F3",
+                "A3",
+                "C4"
+            ],
+            "displayNotes": [
+                "F",
+                "A",
+                "C"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "D": {
+            "name": "D",
+            "notes": [
+                "D3",
+                "F#3",
+                "A3"
+            ],
+            "displayNotes": [
+                "D",
+                "F#",
+                "A"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "E": {
+            "name": "E",
+            "notes": [
+                "E3",
+                "G#3",
+                "B3"
+            ],
+            "displayNotes": [
+                "E",
+                "G#",
+                "B"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Am": {
+            "name": "Am",
+            "notes": [
+                "A3",
+                "C4",
+                "E4"
+            ],
+            "displayNotes": [
+                "A",
+                "C",
+                "E"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "G": {
+            "name": "G",
+            "notes": [
+                "G3",
+                "B3",
+                "D4"
+            ],
+            "displayNotes": [
+                "G",
+                "B",
+                "D"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Em": {
+            "name": "Em",
+            "notes": [
+                "E3",
+                "G3",
+                "B3"
+            ],
+            "displayNotes": [
+                "E",
+                "G",
+                "B"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "C": {
+            "name": "C",
+            "notes": [
+                "C3",
+                "E3",
+                "G3"
+            ],
+            "displayNotes": [
+                "C",
+                "E",
+                "G"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "B": {
+            "name": "B",
+            "notes": [
+                "B3",
+                "D#4",
+                "F#4"
+            ],
+            "displayNotes": [
+                "B",
+                "D#",
+                "F#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        }
+    }
+};

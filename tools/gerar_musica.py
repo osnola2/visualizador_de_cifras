@@ -79,6 +79,7 @@ def fetch_and_parse(url):
 
     file_name = generate_file_name(song_title)
     json_path = os.path.join(DATA_DIR, f"{file_name}.json")
+    js_path = os.path.join(DATA_DIR, f"{file_name}.js")
     
     if not os.path.exists(DATA_DIR):
         os.makedirs(DATA_DIR)
@@ -93,10 +94,13 @@ def fetch_and_parse(url):
     with open(json_path, "w", encoding="utf-8") as f:
         json.dump(song_json, f, ensure_ascii=False, indent=4)
         
+    with open(js_path, "w", encoding="utf-8") as f:
+        f.write("window.SONG_DATA = " + json.dumps(song_json, ensure_ascii=False, indent=4) + ";\n")
+        
     update_hub(song_title, song_artist, file_name)
     
     print(f"\n Successfully processed '{song_title}' by {song_artist}!")
-    print(f" Saved data to: {json_path}")
+    print(f" Saved data to: {json_path} and {js_path}")
 
 def update_hub(title, artist, file_name):
     if not os.path.exists(HUB_HTML):

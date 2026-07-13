@@ -1,0 +1,202 @@
+window.SONG_DATA = {
+    "title": "Lágrimas Negras",
+    "artist": "Gal Costa",
+    "lyricsHtml": "\n[Intro] <span class=\"chord\" data-chord=\"Am7\">Am7</span>  <span class=\"chord\" data-chord=\"D7(9)\">D7(9)</span>  <span class=\"chord\" data-chord=\"Am7\">Am7</span>  <span class=\"chord\" data-chord=\"D7(9)\">D7(9)</span>\n\n<span class=\"chord\" data-chord=\"Am7\">Am7</span>                <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>         \n<span class=\"lyric-line\">Na frente do cortejo o meu beijo</span>\n<span class=\"chord\" data-chord=\"F6(9)\">F6(9)</span>                 <span class=\"chord\" data-chord=\"Bm7(5-)\">Bm7(5-)</span>     <span class=\"chord\" data-chord=\"E7\">E7</span>\n<span class=\"lyric-line\">Muito forte como aço, meu abraço</span>\n<span class=\"chord\" data-chord=\"Am7\">Am7</span>            <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>\n<span class=\"lyric-line\">São poços de petróleo</span>\n       <span class=\"chord\" data-chord=\"D7\">D7</span>                  \n<span class=\"lyric-line\">A luz negra dos seus olhos</span>\n\n<span class=\"chord\" data-chord=\"F6(9)\">F6(9)</span>            <span class=\"chord\" data-chord=\"Dm7\">Dm7</span> \n<span class=\"lyric-line\">Lágrimas negras caem</span>\n<span class=\"chord\" data-chord=\"Bm7(5-)\">Bm7(5-)</span> <span class=\"chord\" data-chord=\"E7\">E7</span> <span class=\"chord\" data-chord=\"Am7\">Am7</span>  \n<span class=\"lyric-line\">Saem,      doem</span>\n\n<span class=\"chord\" data-chord=\"Am7\">Am7</span>                <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>\n<span class=\"lyric-line\">Por entre flores e estrelas</span>\n<span class=\"chord\" data-chord=\"F6(9)\">F6(9)</span>        \n<span class=\"lyric-line\">Você usa uma delas como brinco</span>\n<span class=\"chord\" data-chord=\"Bm7(5-)\">Bm7(5-)</span>        <span class=\"chord\" data-chord=\"E7\">E7</span>\n<span class=\"lyric-line\">Pendurada na orelha</span>\n<span class=\"chord\" data-chord=\"Am7\">Am7</span>                <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>         <span class=\"chord\" data-chord=\"D7(9)\">D7(9)</span>\n<span class=\"lyric-line\">Eu astronauta da saudade com a boca toda vermelha</span>\n\n<span class=\"chord\" data-chord=\"F6(9)\">F6(9)</span>            <span class=\"chord\" data-chord=\"Dm7\">Dm7</span> \n<span class=\"lyric-line\">Lágrimas negras caem</span>\n<span class=\"chord\" data-chord=\"Bm7(5-)\">Bm7(5-)</span> <span class=\"chord\" data-chord=\"E7\">E7</span> <span class=\"chord\" data-chord=\"Am7\">Am7</span>  \n<span class=\"lyric-line\">Saem,      doem</span>\n\n<span class=\"chord\" data-chord=\"Am7\">Am7</span>                 <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>\n<span class=\"lyric-line\">São como pedras de um moinho</span>\n<span class=\"chord\" data-chord=\"F6(9)\">F6(9)</span>      <span class=\"chord\" data-chord=\"Dm7\">Dm7</span>   <span class=\"chord\" data-chord=\"Am7\">Am7</span>\n<span class=\"lyric-line\">Que moem, roem, moem</span>\n\n<span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>        <span class=\"chord\" data-chord=\"F6(9)\">F6(9)</span>  <span class=\"chord\" data-chord=\"Dm7\">Dm7</span>  <span class=\"chord\" data-chord=\"Am7\">Am7</span>\n<span class=\"lyric-line\">E você baby vai, vem, vai</span>\n   <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>     <span class=\"chord\" data-chord=\"F6(9)\">F6(9)</span>  <span class=\"chord\" data-chord=\"Dm7\">Dm7</span>  <span class=\"chord\" data-chord=\"Am7\">Am7</span>             \n<span class=\"lyric-line\">E você baby vem, vai, vem</span>\n  <span class=\"chord\" data-chord=\"Am7\">Am7</span>                 <span class=\"chord\" data-chord=\"D7(9)\">D7(9)</span>\n<span class=\"lyric-line\">Belezas são coisas acesas por dentro</span>\n<span class=\"chord\" data-chord=\"F6(9)\">F6(9)</span>        <span class=\"chord\" data-chord=\"Dm7\">Dm7</span>        <span class=\"chord\" data-chord=\"Bm7(5-)\">Bm7(5-)</span>   <span class=\"chord\" data-chord=\"E7\">E7</span>      <span class=\"chord\" data-chord=\"Am\">Am</span>\n<span class=\"lyric-line\">Tristezas são belezas apagadas pelo sofrimento</span>\n",
+    "chordData": {
+        "D7(9)": {
+            "name": "D7(9)",
+            "notes": [
+                "D3",
+                "F#3",
+                "A3",
+                "C4",
+                "E4"
+            ],
+            "displayNotes": [
+                "D",
+                "F#",
+                "A",
+                "C",
+                "E"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh",
+                "ninth"
+            ]
+        },
+        "Bm7(5-)": {
+            "name": "Bm7(5-)",
+            "notes": [
+                "B3",
+                "D4",
+                "F#4",
+                "A4"
+            ],
+            "displayNotes": [
+                "B",
+                "D",
+                "F#",
+                "A"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "C7(9)": {
+            "name": "C7(9)",
+            "notes": [
+                "C3",
+                "E3",
+                "G3",
+                "A#3",
+                "D4"
+            ],
+            "displayNotes": [
+                "C",
+                "E",
+                "G",
+                "A#",
+                "D"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh",
+                "ninth"
+            ]
+        },
+        "F6(9)": {
+            "name": "F6(9)",
+            "notes": [
+                "F3",
+                "A3",
+                "C4",
+                "D4",
+                "G4"
+            ],
+            "displayNotes": [
+                "F",
+                "A",
+                "C",
+                "D",
+                "G"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh",
+                "ninth"
+            ]
+        },
+        "Am": {
+            "name": "Am",
+            "notes": [
+                "A3",
+                "C4",
+                "E4"
+            ],
+            "displayNotes": [
+                "A",
+                "C",
+                "E"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Am7": {
+            "name": "Am7",
+            "notes": [
+                "A3",
+                "C4",
+                "E4",
+                "G4"
+            ],
+            "displayNotes": [
+                "A",
+                "C",
+                "E",
+                "G"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "Dm7": {
+            "name": "Dm7",
+            "notes": [
+                "D3",
+                "F3",
+                "A3",
+                "C4"
+            ],
+            "displayNotes": [
+                "D",
+                "F",
+                "A",
+                "C"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "D7": {
+            "name": "D7",
+            "notes": [
+                "D3",
+                "F#3",
+                "A3",
+                "C4"
+            ],
+            "displayNotes": [
+                "D",
+                "F#",
+                "A",
+                "C"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "E7": {
+            "name": "E7",
+            "notes": [
+                "E3",
+                "G#3",
+                "B3",
+                "D4"
+            ],
+            "displayNotes": [
+                "E",
+                "G#",
+                "B",
+                "D"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        }
+    }
+};

@@ -1,0 +1,73 @@
+window.SONG_DATA = {
+    "title": "Vento Bravo",
+    "artist": "Edu Lobo",
+    "lyricsHtml": "\n<span class=\"chord\" data-chord=\"Cm47\">Cm4/7</span>                                <span class=\"chord\" data-chord=\"Eb69\">Eb6/9</span>\n<span class=\"lyric-line\">Era um cerco bravo, era um palmeiral,</span>\n<span class=\"chord\" data-chord=\"Cm47\">Cm4/7</span>                                 <span class=\"chord\" data-chord=\"Eb69\">Eb6/9</span>\n<span class=\"lyric-line\">Limite do escravo entre o bem e o mal</span>\n<span class=\"chord\" data-chord=\"Cm47\">Cm4/7</span>                       <span class=\"chord\" data-chord=\"Eb69\">Eb6/9</span>\n<span class=\"lyric-line\">Era a lei da coroa imperial</span>\n<span class=\"chord\" data-chord=\"Cm47\">Cm4/7</span>\n<span class=\"lyric-line\">Calmaria negra de pantanal</span>\n<span class=\"chord\" data-chord=\"F7\">F7</span>\n<span class=\"lyric-line\">Mas o vento vira e, do vendaval,</span>\n        <span class=\"chord\" data-chord=\"Cm47\">Cm4/7</span>\n<span class=\"lyric-line\">Surge o vento bravo, o vento bravo</span>\n\n<span class=\"chord\" data-chord=\"Cm47\">Cm4/7</span>                        <span class=\"chord\" data-chord=\"Eb69\">Eb6/9</span>\n<span class=\"lyric-line\">Era argola, ferro, chibata e pau</span>\n<span class=\"chord\" data-chord=\"Cm47\">Cm4/7</span>                             <span class=\"chord\" data-chord=\"Eb69\">Eb6/9</span>\n<span class=\"lyric-line\">Era a morte, o medo, o rancor e o mal</span>\n<span class=\"chord\" data-chord=\"Cm47\">Cm4/7</span>                 <span class=\"chord\" data-chord=\"Eb69\">Eb6/9</span>        \n<span class=\"lyric-line\">Era a lei da coroa imperial</span>\n<span class=\"chord\" data-chord=\"Cm47\">Cm4/7</span>\n<span class=\"lyric-line\">Calmaria negra de pantanal</span>\n<span class=\"chord\" data-chord=\"F7\">F7</span>\n<span class=\"lyric-line\">Mas o tempo muda e do temporal</span>\n        <span class=\"chord\" data-chord=\"Cm47\">Cm4/7</span>\n<span class=\"lyric-line\">Surge o vento bravo, o vento bravo</span>\n<span class=\"chord\" data-chord=\"Cm47\">Cm4/7</span>                        <span class=\"chord\" data-chord=\"Eb69\">Eb6/9</span>\n<span class=\"lyric-line\">Vento virador, no clarão do mar,</span>\n<span class=\"chord\" data-chord=\"Cm47\">Cm4/7</span>                        <span class=\"chord\" data-chord=\"Eb69\">Eb6/9</span>\n<span class=\"lyric-line\">Vem sem raça e cor, quem viver, verá</span>\n<span class=\"chord\" data-chord=\"Cm47\">Cm4/7</span>                       <span class=\"chord\" data-chord=\"Eb69\">Eb6/9</span>\n<span class=\"lyric-line\">Vindo a viração vai se anunciar</span>\n<span class=\"chord\" data-chord=\"Cm47\">Cm4/7</span>\n<span class=\"lyric-line\">Na sua voragem, quem vai ficar</span>\n<span class=\"chord\" data-chord=\"F7\">F7</span>\n<span class=\"lyric-line\">Quando a palma verde se avermelhar</span>\n        <span class=\"chord\" data-chord=\"Cm47\">Cm4/7</span>\n<span class=\"lyric-line\">É o vento bravo, o vento bravo.</span>\n",
+    "chordData": {
+        "Eb69": {
+            "name": "Eb69",
+            "notes": [
+                "D#3",
+                "G3",
+                "A#3",
+                "C4",
+                "F4"
+            ],
+            "displayNotes": [
+                "Eb",
+                "G",
+                "Bb",
+                "C",
+                "F"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh",
+                "ninth"
+            ]
+        },
+        "Cm47": {
+            "name": "Cm47",
+            "notes": [
+                "C3",
+                "D#3",
+                "G3",
+                "A#3"
+            ],
+            "displayNotes": [
+                "C",
+                "D#",
+                "G",
+                "A#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "F7": {
+            "name": "F7",
+            "notes": [
+                "F3",
+                "A3",
+                "C4",
+                "D#4"
+            ],
+            "displayNotes": [
+                "F",
+                "A",
+                "C",
+                "Eb"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        }
+    }
+};

@@ -1,0 +1,67 @@
+window.SONG_DATA = {
+    "title": "Banho de Folhas",
+    "artist": "Luedji Luna",
+    "lyricsHtml": "\n<span class=\"chord\" data-chord=\"F#m\">F#m</span>               <span class=\"chord\" data-chord=\"Bm7\">Bm7</span>      \n<span class=\"lyric-line\">Foi em uma quarta-feira</span>\n<span class=\"chord\" data-chord=\"C#m7\">C#m7</span>              <span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">Saí pra te procurar</span>\n                  <span class=\"chord\" data-chord=\"Bm7\">Bm7</span>  \n<span class=\"lyric-line\">Andei a cidade inteira</span>\n<span class=\"chord\" data-chord=\"C#m7\">C#m7</span>\n<span class=\"lyric-line\">Mas, cadê você?</span>\n<span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">Cadê você?</span>\n\n<span class=\"lyric-line\">[Parte 1]</span>\n\n           <span class=\"chord\" data-chord=\"Bm7\">Bm7</span>  \n<span class=\"lyric-line\">A cidade é grande</span>\n            <span class=\"chord\" data-chord=\"C#m7\">C#m7</span>\n<span class=\"lyric-line\">As pessoas muitas</span>\n        <span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">E eu por aí</span>\n\n<span class=\"lyric-line\">Sem te encontrar</span>\n            <span class=\"chord\" data-chord=\"Bm7\">Bm7</span>  <span class=\"chord\" data-chord=\"C#m7\">C#m7</span>\n<span class=\"lyric-line\">Vou pedir a oxalá</span>\n            <span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">Oxalá quem guia</span>\n               <span class=\"chord\" data-chord=\"Bm7\">Bm7</span>  <span class=\"chord\" data-chord=\"C#m7\">C#m7</span>\n<span class=\"lyric-line\">Oxalá quem te mandou</span>\n\n<span class=\"lyric-line\">[Refrão]</span>\n\n<span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">Tanta volta pra nenhuma resposta</span>\n                           <span class=\"chord\" data-chord=\"Bm7\">Bm7</span>\n<span class=\"lyric-line\">Tanta volta pra nenhuma resposta</span>\n                           <span class=\"chord\" data-chord=\"C#m7\">C#m7</span>\n<span class=\"lyric-line\">Tanta volta pra nenhuma resposta</span>\n                            <span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">Tanta volta pra a nenhuma resposta</span>\n\n<span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">Nenhuma resposta</span>\n\n<span class=\"lyric-line\">[Parte 2]</span>\n\n                    <span class=\"chord\" data-chord=\"Bm7\">Bm7</span>           <span class=\"chord\" data-chord=\"C#m7\">C#m7</span>\n<span class=\"lyric-line\">Mas um punhado de folhas sagradas</span>\n<span class=\"chord\" data-chord=\"F#m\">F#m</span>                                  <span class=\"chord\" data-chord=\"Bm7\">Bm7</span>  <span class=\"chord\" data-chord=\"C#m7\">C#m7</span>\n<span class=\"lyric-line\">Pra me curar, pra me afastar de todo mal</span>\n\n<span class=\"lyric-line\">[Refrão]</span>\n\n<span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">Para-raio, bete branca, assa peixe</span>\n        <span class=\"chord\" data-chord=\"Bm7\">Bm7</span>        <span class=\"chord\" data-chord=\"C#m7\">C#m7</span>\n<span class=\"lyric-line\">Abre caminho, patchuli</span>\n\n<span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">Para-raio, bete branca, assa peixe</span>\n        <span class=\"chord\" data-chord=\"Bm7\">Bm7</span>        <span class=\"chord\" data-chord=\"C#m7\">C#m7</span>\n<span class=\"lyric-line\">Abre caminho, patchuli</span>\n\n<span class=\"chord\" data-chord=\"F#m\">F#m</span>               <span class=\"chord\" data-chord=\"Bm7\">Bm7</span>      \n<span class=\"lyric-line\">Foi em uma quarta-feira</span>\n<span class=\"chord\" data-chord=\"C#m7\">C#m7</span>              <span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">Saí pra te procurar</span>\n                  <span class=\"chord\" data-chord=\"Bm7\">Bm7</span>  \n<span class=\"lyric-line\">Andei a cidade inteira</span>\n<span class=\"chord\" data-chord=\"C#m7\">C#m7</span>\n<span class=\"lyric-line\">Mas, cadê você?</span>\n<span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">Cadê você?</span>\n\n<span class=\"lyric-line\">[Parte 1]</span>\n\n           <span class=\"chord\" data-chord=\"Bm7\">Bm7</span>  \n<span class=\"lyric-line\">A cidade é grande</span>\n            <span class=\"chord\" data-chord=\"C#m7\">C#m7</span>\n<span class=\"lyric-line\">As pessoas muitas</span>\n        <span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">E eu por aí</span>\n\n<span class=\"lyric-line\">Sem te encontrar</span>\n            <span class=\"chord\" data-chord=\"Bm7\">Bm7</span>  <span class=\"chord\" data-chord=\"C#m7\">C#m7</span>\n<span class=\"lyric-line\">Vou pedir a oxalá</span>\n            <span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">Oxalá quem guia</span>\n               <span class=\"chord\" data-chord=\"Bm7\">Bm7</span>  <span class=\"chord\" data-chord=\"C#m7\">C#m7</span>\n<span class=\"lyric-line\">Oxalá quem te mandou</span>\n\n<span class=\"lyric-line\">[Refrão]</span>\n\n<span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">Tanta volta pra nenhuma resposta</span>\n                           <span class=\"chord\" data-chord=\"Bm7\">Bm7</span>\n<span class=\"lyric-line\">Tanta volta pra nenhuma resposta</span>\n                           <span class=\"chord\" data-chord=\"C#m7\">C#m7</span>\n<span class=\"lyric-line\">Tanta volta pra nenhuma resposta</span>\n                            <span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">Tanta volta pra a nenhuma resposta</span>\n\n<span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">Tanta volta pra nenhuma resposta</span>\n                           <span class=\"chord\" data-chord=\"Bm7\">Bm7</span>\n<span class=\"lyric-line\">Tanta volta pra nenhuma resposta</span>\n                           <span class=\"chord\" data-chord=\"C#m7\">C#m7</span>\n<span class=\"lyric-line\">Tanta volta pra nenhuma resposta</span>\n\n<span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">Nenhuma resposta</span>\n\n<span class=\"lyric-line\">[Parte 2]</span>\n\n                    <span class=\"chord\" data-chord=\"Bm7\">Bm7</span>           <span class=\"chord\" data-chord=\"C#m7\">C#m7</span>\n<span class=\"lyric-line\">Mas um punhado de folhas sagradas</span>\n<span class=\"chord\" data-chord=\"F#m\">F#m</span>                                  <span class=\"chord\" data-chord=\"Bm7\">Bm7</span>  <span class=\"chord\" data-chord=\"C#m7\">C#m7</span>\n<span class=\"lyric-line\">Pra me curar, pra me afastar de todo mal</span>\n\n<span class=\"lyric-line\">[Refrão]</span>\n\n<span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">Para-raio, bete branca, assa peixe</span>\n        <span class=\"chord\" data-chord=\"Bm7\">Bm7</span>        <span class=\"chord\" data-chord=\"C#m7\">C#m7</span>\n<span class=\"lyric-line\">Abre caminho, patchuli</span>\n\n<span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">Para-raio (para-raio)</span>\n                <span class=\"chord\" data-chord=\"Bm7\">Bm7</span>\n<span class=\"lyric-line\">Para afastar o mau</span>\n<span class=\"chord\" data-chord=\"C#m7\">C#m7</span>               <span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">Para afastar a inveja</span>\n               <span class=\"chord\" data-chord=\"Bm7\">Bm7</span>\n<span class=\"lyric-line\">Para atrair o amor</span>\n<span class=\"chord\" data-chord=\"C#m7\">C#m7</span>                  <span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">Para atrair o que for bom</span>\n          <span class=\"chord\" data-chord=\"Bm7\">Bm7</span>            <span class=\"chord\" data-chord=\"C#m7\">C#m7</span>\n<span class=\"lyric-line\">O que for bom, bom, bom, bom</span>\n          <span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">O que for bom, o que for bom</span>\n          <span class=\"chord\" data-chord=\"Bm7\">Bm7</span>            <span class=\"chord\" data-chord=\"C#m7\">C#m7</span>\n<span class=\"lyric-line\">O que for bom, bom, bom, bom</span>\n",
+    "chordData": {
+        "C#m7": {
+            "name": "C#m7",
+            "notes": [
+                "C#3",
+                "E3",
+                "G#3",
+                "B3"
+            ],
+            "displayNotes": [
+                "C#",
+                "E",
+                "G#",
+                "B"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "F#m": {
+            "name": "F#m",
+            "notes": [
+                "F#3",
+                "A3",
+                "C#4"
+            ],
+            "displayNotes": [
+                "F#",
+                "A",
+                "C#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Bm7": {
+            "name": "Bm7",
+            "notes": [
+                "B3",
+                "D4",
+                "F#4",
+                "A4"
+            ],
+            "displayNotes": [
+                "B",
+                "D",
+                "F#",
+                "A"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        }
+    }
+};
