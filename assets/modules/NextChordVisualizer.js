@@ -93,13 +93,13 @@
             }).join('');
 
             container.innerHTML = `
-                <div class="next-chord-header" style="text-align: center; margin-top: 0.2rem; display: flex; justify-content: center; align-items: center; gap: 8px;">
-                    <span class="next-badge" style="background: rgba(245, 158, 11, 0.18); color: #f59e0b; border: 1px solid rgba(245, 158, 11, 0.4); padding: 0.15rem 0.5rem; border-radius: 8px; font-size: 0.65rem; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase;">
+                <div class="next-chord-header" style="text-align: center; margin-top: 0.1rem; display: flex; justify-content: center; align-items: center; gap: 6px;">
+                    <span class="next-badge" style="background: rgba(245, 158, 11, 0.18); color: #f59e0b; border: 1px solid rgba(245, 158, 11, 0.4); padding: 0.1rem 0.4rem; border-radius: 6px; font-size: 0.65rem; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase;">
                         🟡 Próx:
                     </span>
-                    <h3 id="${this.titleId}" style="margin: 0; color: #f59e0b; font-size: 1rem; font-weight: 800;">---</h3>
+                    <h3 id="${this.titleId}" style="margin: 0; color: #f59e0b; font-size: 0.95rem; font-weight: 800;">---</h3>
                 </div>
-                <div class="piano-row" style="margin-top: 0.2rem;">
+                <div class="piano-row" style="margin-top: 0.1rem;">
                     <div id="${this.pianoId}" class="piano-keyboard">
                         ${keysHtml}
                     </div>
@@ -109,7 +109,7 @@
                         <button class="inv-side-btn" data-inv="2">2ª Inv</button>
                     </div>
                 </div>
-                <div id="${this.notesId}" class="next-chord-lyric" style="text-align: center; font-size: 0.9rem; font-style: italic; color: #fef08a; margin-top: 0.2rem; min-height: 1.3rem; padding: 0.2rem 0.5rem; background: rgba(245, 158, 11, 0.1); border-radius: 6px; border: 1px solid rgba(245, 158, 11, 0.25);">---</div>
+                <div id="${this.notesId}" class="next-chord-lyric" style="text-align: center; font-size: 0.85rem; font-style: italic; color: #fef08a; margin-top: 0.15rem; min-height: 1.1rem; padding: 0.15rem 0.4rem; background: rgba(245, 158, 11, 0.1); border-radius: 6px; border: 1px solid rgba(245, 158, 11, 0.25);">---</div>
             `;
 
             this.setupInversionListeners();

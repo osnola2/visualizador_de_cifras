@@ -231,26 +231,35 @@
 }
 
 @media (max-width: 899px) {
+    .piano-row {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin: 0 !important;
+        gap: 6px !important;
+    }
     .piano-keyboard {
         height: 48px !important;
         min-height: 48px !important;
         max-height: 48px !important;
-        margin: 0.08rem auto !important;
+        margin: 0 !important;
         padding: 2px 4px 4px 4px !important;
     }
     .inversion-column {
         height: 48px !important;
         min-height: 48px !important;
         max-height: 48px !important;
-        justify-content: center !important;
-        gap: 2px !important;
+        margin: 0 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-between !important;
     }
     .key {
         padding-bottom: 2px !important;
         font-size: 0.52rem !important;
     }
     .inv-side-btn {
-        padding: 2px 0 !important;
+        padding: 1px 0 !important;
         font-size: 0.58rem !important;
         line-height: 1 !important;
         border-radius: 4px !important;
