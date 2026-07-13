@@ -51,12 +51,20 @@
                 <div id="active-display-lyric" style="font-size: 1.05rem; font-style: italic; color: #fff;">Passe o mouse ou role a tela...</div>
             </div>
 
+            <!-- Instrument Toggle -->
+            <div style="display: flex; justify-content: center; margin-bottom: 0.6rem;">
+                <div style="display: inline-flex; background: rgba(0, 0, 0, 0.45); border: 1px solid var(--glass-border); border-radius: 20px; padding: 3px; gap: 4px;">
+                    <button id="btn-inst-piano" class="inst-btn active" style="background: var(--primary); color: #0f172a; border: none; border-radius: 16px; padding: 4px 12px; font-size: 0.8rem; font-weight: 700; cursor: pointer; transition: all 0.2s;">🎹 Teclado</button>
+                    <button id="btn-inst-guitar" class="inst-btn" style="background: transparent; color: #cbd5e1; border: none; border-radius: 16px; padding: 4px 12px; font-size: 0.8rem; font-weight: 700; cursor: pointer; transition: all 0.2s;">🎸 Violão</button>
+                </div>
+            </div>
+
             <!-- 1. Piano Acorde Atual -->
             <div style="display: flex; justify-content: center; align-items: center; margin: 0.2rem 0 0.1rem; padding: 0 4px; gap: 8px;">
                 <span style="font-size: 0.65rem; font-weight: 700; color: #34d399; letter-spacing: 0.5px; text-transform: uppercase;">🟢 Atual:</span>
                 <h3 id="current-chord-name" style="font-size: 1rem; color: #fff; margin: 0; font-weight: 700;">---</h3>
             </div>
-            <div class="piano-row">
+            <div class="piano-row" id="piano-view-row">
                 <div class="piano-keyboard" id="piano-current">
                     <!-- White keys -->
                     <div class="key white key-current" data-note="C3"></div>
@@ -94,10 +102,15 @@
                 </div>
             </div>
 
-            <!-- 2. Módulo Próximo Acorde (NextChordVisualizer) -->
+            <!-- Guitar Current View -->
+            <div id="guitar-current-view" style="display: none; padding: 0.2rem 0;"></div>
+
+            <!-- 2. Módulo Próximo Acorde (NextChordVisualizer / Guitar) -->
             <div id="next-chord-section" style="width: 100%; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 0.3rem; margin-top: 0.3rem;"></div>
+            <div id="guitar-next-view" style="display: none; width: 100%; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 0.3rem; margin-top: 0.3rem;"></div>
     </aside>
 
+    <script src="assets/modules/GuitarChordVisualizer.js?v=35"></script>
     <script src="assets/modules/NextChordVisualizer.js?v=35"></script>
     <script src="assets/js/script.js?v=35"></script>
 </body>
