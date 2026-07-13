@@ -58,7 +58,8 @@ def parse_chord(chord_symbol):
         is_minor = True
     if 'aug' in suffix or '+' in suffix and '11+' not in suffix and '9+' not in suffix:
         is_aug = True
-    if 'sus4' in suffix or ('sus' in suffix and 'sus2' not in suffix):
+    if ('sus4' in suffix or ('sus' in suffix and 'sus2' not in suffix) or
+        '(4/' in suffix or '(4)' in suffix or '/4' in suffix or suffix.startswith('4/')):
         is_sus4 = True
     if 'sus2' in suffix:
         is_sus2 = True

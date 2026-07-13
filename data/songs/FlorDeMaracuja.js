@@ -73,14 +73,14 @@ window.SONG_DATA = {
             "name": "C7(4/9)",
             "notes": [
                 "C3",
-                "E3",
+                "F3",
                 "G3",
                 "A#3",
                 "D4"
             ],
             "displayNotes": [
                 "C",
-                "E",
+                "F",
                 "G",
                 "A#",
                 "D"
@@ -268,14 +268,14 @@ window.SONG_DATA = {
             "name": "G7(4/9)",
             "notes": [
                 "G3",
-                "B3",
+                "C4",
                 "D4",
                 "F4",
                 "A4"
             ],
             "displayNotes": [
                 "G",
-                "B",
+                "C",
                 "D",
                 "F",
                 "A"
