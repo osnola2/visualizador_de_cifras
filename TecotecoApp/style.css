@@ -596,8 +596,15 @@ header {
     z-index: 999 !important;
 }
 .piano-panel {
-    top: 220px !important; /* Desktop stick below tall headers */
-    max-height: calc(100vh - 240px) !important;
+    top: 180px !important; /* Safe distance below tall headers */
+    max-height: calc(100vh - 190px) !important;
+    overflow-y: auto !important; /* Allows scrolling to see the bottom instead of chopping it off */
+    scrollbar-width: thin;
+}
+@media (max-height: 850px) and (min-width: 900px) {
+    .piano-panel {
+        zoom: 0.85; /* Shrinks the entire panel on short screens so it fits entirely */
+    }
 }
 @media (max-width: 899px) {
     .piano-panel {
