@@ -238,7 +238,7 @@
         align-items: center !important;
         justify-content: center !important;
         width: 100% !important;
-        margin: 0 !important;
+        margin: 0.35rem 0 !important;
         gap: 3px !important;
     }
     .piano-keyboard {

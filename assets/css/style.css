@@ -404,8 +404,12 @@ h2.song-artist {
         flex-wrap: nowrap !important;
         justify-content: center !important;
         align-items: center !important;
-        margin: 0 !important;
+        margin: 0.35rem 0 !important;
         gap: 3px !important;
+    }
+    #next-chord-section {
+        margin-top: 0.45rem !important;
+        padding-top: 0.45rem !important;
     }
     .piano-keyboard {
         flex: 1 1 auto !important;
