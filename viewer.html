@@ -12,10 +12,8 @@
     <div class="background-overlay"></div>
     
     <header class="app-header">
-        <div class="song-info">
-            <a href="index.html" style="color: var(--primary); text-decoration: none; font-size: 0.8rem; font-weight: 600; display: inline-block; margin-bottom: 2px;">⬅ Voltar ao Hub</a>
-            <h1 class="song-title"><span id="song-title-el">Carregando...</span></h1>
-            <h2 class="song-artist"><span id="song-artist-el">Aguarde...</span></h2>
+        <div class="header-left" style="display: flex; align-items: center;">
+            <a href="index.html" class="glass-btn" style="color: var(--primary); text-decoration: none; font-size: 0.95rem; font-weight: 700; display: inline-flex; align-items: center; gap: 6px; padding: 0.45rem 1rem;">⬅ Voltar ao Hub</a>
         </div>
         
         <div class="controls-panel header-controls">
@@ -43,6 +41,10 @@
 
     <main class="container">
         <section class="lyrics-panel glass-panel">
+            <div class="page-song-header" style="margin-bottom: 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid var(--glass-border);">
+                <h1 class="song-title" style="font-family: 'Outfit', sans-serif; font-size: 2.4rem; font-weight: 800; color: #f8fafc; margin: 0 0 0.3rem 0; line-height: 1.15;"><span id="song-title-el">Carregando...</span></h1>
+                <h2 class="song-artist" style="color: var(--primary); font-size: 1.2rem; font-weight: 600; margin: 0;"><span id="song-artist-el">Aguarde...</span></h2>
+            </div>
             <pre id="lyrics-content">
 
 </pre>

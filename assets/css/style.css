@@ -40,7 +40,7 @@ body {
 }
 
 header {
-    padding: 1.2rem 5%;
+    padding: 0.6rem 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -597,8 +597,8 @@ header {
     z-index: 999 !important;
 }
 .piano-panel {
-    top: 180px !important; /* Safe distance below tall headers */
-    max-height: calc(100vh - 190px) !important;
+    top: 75px !important; /* Compact header height safe distance */
+    max-height: calc(100vh - 85px) !important;
     overflow-y: auto !important; /* Allows scrolling to see the bottom instead of chopping it off */
     scrollbar-width: thin;
 }
