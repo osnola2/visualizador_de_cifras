@@ -107,10 +107,9 @@
                         <button class="inv-side-btn active" data-inv="0">Padrão</button>
                         <button class="inv-side-btn" data-inv="1">1ª Inv</button>
                         <button class="inv-side-btn" data-inv="2">2ª Inv</button>
-                        <button class="inv-side-btn" data-inv="3">Aberto</button>
                     </div>
                 </div>
-                <div id="${this.notesId}" class="next-chord-lyric" style="text-align: center; font-size: 1.02rem; font-style: italic; color: #fef08a; margin-top: 0.6rem; min-height: 1.6rem; padding: 0.35rem 0.65rem; background: rgba(245, 158, 11, 0.1); border-radius: 8px; border: 1px solid rgba(245, 158, 11, 0.25);">---</div>
+                <div id="${this.notesId}" class="next-chord-lyric" style="text-align: center; font-size: 0.9rem; font-style: italic; color: #fef08a; margin-top: 0.2rem; min-height: 1.3rem; padding: 0.2rem 0.5rem; background: rgba(245, 158, 11, 0.1); border-radius: 6px; border: 1px solid rgba(245, 158, 11, 0.25);">---</div>
             `;
 
             this.setupInversionListeners();

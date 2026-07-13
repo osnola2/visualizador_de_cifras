@@ -408,17 +408,17 @@ h2.song-artist {
         flex: 1 !important;
         width: calc(100% - 62px) !important;
         max-width: 100% !important;
-        height: 62px !important;
-        min-height: 62px !important;
-        max-height: 62px !important;
-        margin: 0.15rem 0 !important;
+        height: 58px !important;
+        min-height: 58px !important;
+        max-height: 58px !important;
+        margin: 0.1rem 0 !important;
     }
     .inversion-column {
         width: 56px !important;
         min-width: 56px !important;
-        height: 62px !important;
-        min-height: 62px !important;
-        max-height: 62px !important;
+        height: 58px !important;
+        min-height: 58px !important;
+        max-height: 58px !important;
     }
     .lyrics-panel {
         max-width: 100% !important;
