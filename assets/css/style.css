@@ -378,8 +378,8 @@ h2.song-artist {
         right: 0 !important;
         width: 100% !important;
         max-width: 100% !important;
-        height: 40vh !important;
-        max-height: 40vh !important;
+        height: auto !important;
+        max-height: 45vh !important;
         overflow-y: auto !important;
         z-index: 999999 !important;
         display: flex !important;
@@ -390,7 +390,7 @@ h2.song-artist {
         transform: none !important;
         -webkit-transform: none !important;
         margin: 0 !important;
-        padding: 0.5rem 0.5rem 1rem !important;
+        padding: 0.4rem 0.4rem calc(0.5rem + env(safe-area-inset-bottom, 8px)) !important;
         background: #0f172a !important;
         border-top: 2px solid var(--primary) !important;
         border-radius: 16px 16px 0 0 !important;
@@ -406,24 +406,32 @@ h2.song-artist {
     }
     .piano-keyboard {
         flex: 1 !important;
-        width: calc(100% - 65px) !important;
+        width: calc(100% - 62px) !important;
         max-width: 100% !important;
-        height: 95px !important;
-        margin: 0.2rem 0 !important;
+        height: 70px !important;
+        min-height: 70px !important;
+        margin: 0.15rem 0 !important;
     }
     .inversion-column {
-        width: 58px !important;
-        min-width: 58px !important;
-        height: 95px !important;
-        min-height: 95px !important;
+        width: 56px !important;
+        min-width: 56px !important;
+        height: 70px !important;
+        min-height: 70px !important;
     }
     .lyrics-panel {
-        max-width: 100%;
-        padding-top: 0.8rem;
-        padding-bottom: 45vh;
+        max-width: 100% !important;
+        width: 100% !important;
+        padding: 0.8rem 0.6rem 47vh 0.6rem !important;
+        overflow-x: hidden !important;
     }
     #lyrics-content {
-        font-size: 1.05rem;
+        font-size: 0.92rem !important;
+        line-height: 2.1 !important;
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch !important;
+        padding-bottom: 2rem !important;
+        width: 100% !important;
+        max-width: 100% !important;
     }
 }
 
@@ -585,26 +593,19 @@ h2.song-artist {
 }
 
 @media (max-width: 899px) {
-    .piano-keyboard {
-        height: 90px !important;
-        margin: 0.4rem 0 !important;
-    }
-    .inversion-column {
-        min-height: 90px !important;
-    }
     .inv-side-btn {
-        padding: 2px !important;
+        padding: 1px !important;
         font-size: 0.65rem !important;
     }
     #active-display-chord {
-        font-size: 1rem !important;
+        font-size: 1.15rem !important;
         margin-bottom: 0 !important;
     }
     #active-display-lyric {
         font-size: 0.85rem !important;
     }
     .current-chord h3, .next-chord h3 {
-        font-size: 0.9rem !important;
+        font-size: 0.85rem !important;
     }
     .key {
         padding-bottom: 2px !important;
