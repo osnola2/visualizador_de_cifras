@@ -400,31 +400,34 @@ h2.song-artist {
         width: 100% !important;
         max-width: 100% !important;
         display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
         justify-content: center !important;
         align-items: center !important;
         margin: 0 !important;
         gap: 6px !important;
     }
     .piano-keyboard {
-        flex: 1 !important;
-        width: calc(100% - 62px) !important;
-        max-width: 100% !important;
+        flex: 1 1 auto !important;
+        width: calc(100% - 56px) !important;
+        max-width: calc(100% - 56px) !important;
         height: 48px !important;
         min-height: 48px !important;
         max-height: 48px !important;
         margin: 0 !important;
     }
     .inversion-column {
-        width: 56px !important;
-        min-width: 56px !important;
+        flex: 0 0 50px !important;
+        width: 50px !important;
+        min-width: 50px !important;
+        max-width: 50px !important;
         height: 48px !important;
         min-height: 48px !important;
         max-height: 48px !important;
         margin: 0 !important;
         display: flex !important;
         flex-direction: column !important;
-        justify-content: center !important;
-        gap: 1px !important;
+        justify-content: space-between !important;
     }
     .lyrics-panel {
         max-width: 100% !important;

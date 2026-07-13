@@ -233,12 +233,18 @@
 @media (max-width: 899px) {
     .piano-row {
         display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
         align-items: center !important;
         justify-content: center !important;
+        width: 100% !important;
         margin: 0 !important;
         gap: 6px !important;
     }
     .piano-keyboard {
+        flex: 1 1 auto !important;
+        width: calc(100% - 56px) !important;
+        max-width: calc(100% - 56px) !important;
         height: 48px !important;
         min-height: 48px !important;
         max-height: 48px !important;
@@ -246,14 +252,17 @@
         padding: 2px 4px 4px 4px !important;
     }
     .inversion-column {
+        flex: 0 0 50px !important;
+        width: 50px !important;
+        min-width: 50px !important;
+        max-width: 50px !important;
         height: 48px !important;
         min-height: 48px !important;
         max-height: 48px !important;
         margin: 0 !important;
         display: flex !important;
         flex-direction: column !important;
-        justify-content: center !important;
-        gap: 1px !important;
+        justify-content: space-between !important;
     }
     .key {
         padding-bottom: 2px !important;
@@ -263,6 +272,7 @@
         padding: 2px 0 !important;
         font-size: 0.58rem !important;
         line-height: 1 !important;
-        border-radius: 3px !important;
+        border-radius: 4px !important;
+        width: 100% !important;
     }
 }
