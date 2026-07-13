@@ -9,7 +9,7 @@ const chordData = {
         name: "A7/11+",
         notes: ["A3", "C#4", "E4", "G4", "B4", "D#5"],
         displayNotes: ["A", "C#", "E", "G", "B", "D#"],
-        noteTypes: ["root", "triad", "triad", "seventh", "tension", "tension"]
+        noteTypes: ["root", "triad", "triad", "seventh", "ninth", "alt"]
     },
     "Am7": {
         name: "Am7",
@@ -27,7 +27,7 @@ const chordData = {
         name: "Bb7/11+",
         notes: ["A#3", "D4", "F4", "G#4", "C5", "E5"],
         displayNotes: ["Bb", "D", "F", "Ab", "C", "E"],
-        noteTypes: ["root", "triad", "triad", "seventh", "tension", "tension"]
+        noteTypes: ["root", "triad", "triad", "seventh", "ninth", "alt"]
     },
     "Bbm7": {
         name: "Bbm7",
@@ -45,7 +45,7 @@ const chordData = {
         name: "C#6/9/11+",
         notes: ["C#3", "F3", "G#3", "A#3", "D#4", "G4"],
         displayNotes: ["C#", "F", "G#", "A#", "D#", "G"],
-        noteTypes: ["root", "triad", "triad", "seventh", "tension", "tension"]
+        noteTypes: ["root", "triad", "triad", "seventh", "ninth", "alt"]
     },
     "C/D": {
         name: "C/D",
@@ -75,7 +75,7 @@ const chordData = {
         name: "Db7/9",
         notes: ["C#3", "F3", "G#3", "B3", "D#4"],
         displayNotes: ["Db", "F", "Ab", "B", "Eb"],
-        noteTypes: ["root", "triad", "triad", "seventh", "tension"]
+        noteTypes: ["root", "triad", "triad", "seventh", "ninth"]
     },
     "E5-/7": {
         name: "E5-/7",
@@ -87,7 +87,7 @@ const chordData = {
         name: "E6/9/11+",
         notes: ["E3", "G#3", "B3", "C#4", "F#4", "A#4"],
         displayNotes: ["E", "G#", "B", "C#", "F#", "A#"],
-        noteTypes: ["root", "triad", "triad", "seventh", "tension", "tension"]
+        noteTypes: ["root", "triad", "triad", "seventh", "ninth", "alt"]
     },
     "Eb4/7": {
         name: "Eb4/7",
@@ -105,7 +105,7 @@ const chordData = {
         name: "F6/9/11+",
         notes: ["F3", "A3", "C4", "D4", "G4", "B4"],
         displayNotes: ["F", "A", "C", "D", "G", "B"],
-        noteTypes: ["root", "triad", "triad", "seventh", "tension", "tension"]
+        noteTypes: ["root", "triad", "triad", "seventh", "ninth", "alt"]
     },
     "G/A": {
         name: "G/A",

@@ -99,34 +99,34 @@ def parse_chord(chord_symbol):
     if '9' in suffix or '2' in suffix:
         if 'maj9' in suffix:
             intervals[11] = 'seventh'
-            intervals[14] = 'tension' # maj9
+            intervals[14] = 'ninth' # maj9
         elif 'b9' in suffix or '9-' in suffix:
-            intervals[13] = 'tension' # min9
+            intervals[13] = 'alt' # min9
         elif '#9' in suffix or '9+' in suffix:
-            intervals[15] = 'tension' # aug9
+            intervals[15] = 'alt' # aug9
         else:
-            intervals[14] = 'tension' # maj9
+            intervals[14] = 'ninth' # maj9
             
     # Add chords (if not handled above)
     if 'add9' in suffix or 'add2' in suffix:
-        intervals[14] = 'tension'
+        intervals[14] = 'ninth'
     if 'add11' in suffix or 'add4' in suffix:
-        intervals[17] = 'tension'
+        intervals[17] = 'alt'
         
     # Elevenths and Thirteenths
     if '11' in suffix:
-        intervals[14] = 'tension' # implicit 9
+        intervals[14] = 'ninth' # implicit 9
         if '#11' in suffix or '11+' in suffix:
-            intervals[18] = 'tension'
+            intervals[18] = 'alt'
         else:
-            intervals[17] = 'tension'
+            intervals[17] = 'alt'
     
     if '13' in suffix:
-        intervals[14] = 'tension' # implicit 9
+        intervals[14] = 'ninth' # implicit 9
         if 'b13' in suffix or '13-' in suffix:
-            intervals[20] = 'tension'
+            intervals[20] = 'alt'
         else:
-            intervals[21] = 'tension'
+            intervals[21] = 'alt'
             
     # Other Alterations fallback
     if 'b5' in suffix and 6 not in intervals:
