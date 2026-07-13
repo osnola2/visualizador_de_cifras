@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizador de Cifras - Violão</title>
+    <link rel="stylesheet" href="assets/css/style.css?v=1">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Outfit:wght@600;800&display=swap" rel="stylesheet">
+    <style>
+        .switch-mode-btn {
+            background: rgba(56, 189, 248, 0.15);
+            color: #38bdf8;
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            padding: 0.45rem 1rem;
+            border-radius: 8px;
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.2s ease;
+        }
+        .switch-mode-btn:hover {
+            background: rgba(56, 189, 248, 0.3);
+            color: #fff;
+            transform: translateY(-1px);
+        }
+    </style>
+</head>
+<body>
+    <div class="background-overlay"></div>
+    
+    <header class="app-header">
+        <div class="header-left" style="display: flex; align-items: center; gap: 12px;">
+            <a href="index.html" class="glass-btn" style="color: var(--primary); text-decoration: none; font-size: 0.95rem; font-weight: 700; display: inline-flex; align-items: center; gap: 6px; padding: 0.45rem 1rem;">⬅ Voltar ao Hub</a>
+            <a id="btn-to-piano" href="viewer.html" class="switch-mode-btn">🎹 Mudar para Teclado</a>
+        </div>
+        
+        <div class="controls-panel header-controls">
+            <button id="autoscroll-btn" class="glass-btn">
+                <span class="icon">▶</span> Auto-scroll
+            </button>
+            <div class="speed-control glass-panel">
+                <label for="bpm-input">BPM:</label>
+                <input type="number" id="bpm-input" min="40" max="240" step="1" value="95" style="width: 55px; background: transparent; color: white; border: 1px solid var(--glass-border); border-radius: 5px; padding: 2px 5px; text-align: center;">
+                
+                <label for="speed-slider" id="speed-label" style="margin-left: 10px;">Ajuste: 1.0x</label>
+                <input type="range" id="speed-slider" min="0.1" max="1.5" step="0.1" value="1.0">
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="lyrics-panel glass-panel">
+            <div class="page-song-header" style="margin-bottom: 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid var(--glass-border);">
+                <h1 class="song-title" style="font-family: 'Outfit', sans-serif; font-size: 2.4rem; font-weight: 800; color: #f8fafc; margin: 0 0 0.3rem 0; line-height: 1.15;"><span id="song-title-el">Carregando...</span></h1>
+                <h2 class="song-artist" style="color: var(--primary); font-size: 1.2rem; font-weight: 600; margin: 0;"><span id="song-artist-el">Aguarde...</span></h2>
+            </div>
+            <pre id="lyrics-content"></pre>
+        </section>
+    </main>
+
+    <aside class="piano-panel glass-panel" style="min-width: 320px;">
+        <div style="text-align: center; margin-bottom: 1rem;">
+            <div id="active-display-chord" style="color: var(--primary); font-size: 1.6rem; font-weight: bold; margin-bottom: 0.1rem;"></div>
+            <div id="active-display-lyric" style="font-size: 1.05rem; font-style: italic; color: #fff;">Passe o mouse ou role a tela...</div>
+        </div>
+
+        <!-- 1. Acorde Atual no Violão -->
+        <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 1rem; margin-bottom: 1.2rem;">
+            <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 0.6rem; gap: 8px;">
+                <span style="font-size: 0.72rem; font-weight: 700; color: #34d399; letter-spacing: 0.8px; text-transform: uppercase;">🟢 ACORDE ATUAL:</span>
+                <h3 id="current-chord-name" style="font-size: 1.2rem; color: #fff; margin: 0; font-weight: 800;">---</h3>
+            </div>
+            <div id="guitar-current-view"></div>
+        </div>
+
+        <!-- 2. Próximo Acorde no Violão -->
+        <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 1rem;">
+            <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 0.6rem; gap: 8px;">
+                <span style="font-size: 0.72rem; font-weight: 700; color: #38bdf8; letter-spacing: 0.8px; text-transform: uppercase;">🔵 PRÓXIMO ACORDE</span>
+            </div>
+            <div id="guitar-next-view"></div>
+        </div>
+    </aside>
+
+    <script src="assets/modules/GuitarChordVisualizer.js?v=1"></script>
+    <script src="assets/js/script-violao.js?v=1"></script>
+</body>
+</html>

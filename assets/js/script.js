@@ -4,6 +4,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const urlParams = new URLSearchParams(window.location.search);
     const songId = urlParams.get('song');
 
+    const btnToGuitar = document.getElementById('btn-to-guitar');
+    if (btnToGuitar && songId) {
+        btnToGuitar.href = `viewer-violao.html?song=${songId}`;
+    }
+
     if (!songId) {
         document.getElementById('song-title-el').textContent = 'Nenhuma musica selecionada';
         document.getElementById('song-artist-el').textContent = '';
