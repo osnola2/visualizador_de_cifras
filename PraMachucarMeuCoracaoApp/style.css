@@ -481,31 +481,24 @@ h2.song-artist {
     }
 }
 
-
-/* Fix piano panel height visibility */
+/* Responsive Desktop Fix for Short Screens v7 */
 .piano-panel {
-    max-height: calc(100vh - 110px);
-    overflow-y: auto;
-    scrollbar-width: none;
-}
-.piano-panel::-webkit-scrollbar {
-    display: none;
-}
-@media (max-width: 899px) {
-    .piano-panel {
-        max-height: 85vh;
-    }
-}
-
-
-/* Robust piano panel visibility fix v6 */
-.piano-panel {
-    max-height: calc(100vh - 110px);
+    max-height: calc(100vh - 120px);
     overflow-y: auto !important;
-    scrollbar-width: none;
+    /* Custom thin scrollbar instead of hiding it */
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary) rgba(255,255,255,0.05);
 }
 .piano-panel::-webkit-scrollbar {
-    display: none;
+    width: 6px;
+}
+.piano-panel::-webkit-scrollbar-track {
+    background: rgba(255,255,255,0.02);
+    border-radius: 10px;
+}
+.piano-panel::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 10px;
 }
 .piano-row {
     align-items: stretch !important;
@@ -514,6 +507,26 @@ h2.song-artist {
     height: auto !important;
     min-height: 110px;
 }
+
+/* If screen height is very short, shrink the pianos so they don't get cut off */
+@media (max-height: 750px) {
+    .piano-keyboard {
+        height: 85px !important;
+    }
+    .inversion-column {
+        min-height: 85px;
+    }
+    .piano-panel {
+        padding: 1rem !important;
+    }
+    .current-chord {
+        margin-bottom: 0.3rem;
+    }
+    #active-display-chord {
+        font-size: 1.1rem !important;
+    }
+}
+
 @media (max-width: 899px) {
     .piano-panel {
         max-height: 80svh !important;
