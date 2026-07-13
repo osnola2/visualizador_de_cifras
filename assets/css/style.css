@@ -385,8 +385,8 @@ h2.song-artist {
     }
     .lyrics-panel {
         max-width: 100%;
-        padding-top: 42vh;
-        padding-bottom: 75vh;
+        padding-top: 0.8rem;
+        padding-bottom: 55dvh;
     }
     #lyrics-content {
         font-size: 1.05rem;
@@ -596,12 +596,17 @@ header {
     top: 0 !important;
     z-index: 999 !important;
 }
-.piano-panel {
-    top: 75px !important; /* Compact header height safe distance */
-    max-height: calc(100vh - 85px) !important;
-    overflow-y: auto !important; /* Allows scrolling to see the bottom instead of chopping it off */
-    scrollbar-width: thin;
+
+@media (min-width: 900px) {
+    .piano-panel {
+        position: sticky !important;
+        top: 75px !important; /* Compact header height safe distance */
+        max-height: calc(100vh - 85px) !important;
+        overflow-y: auto !important; /* Allows scrolling to see the bottom instead of chopping it off */
+        scrollbar-width: thin;
+    }
 }
+
 @media (max-height: 850px) and (min-width: 900px) {
     .piano-panel {
         padding: 1rem !important;
@@ -613,6 +618,7 @@ header {
         margin-top: 0.2rem !important;
     }
 }
+
 @media (max-width: 899px) {
     .piano-panel {
         position: fixed !important;
@@ -622,14 +628,20 @@ header {
         right: 0 !important;
         width: 100% !important;
         max-width: 100vw !important;
-        max-height: 50vh !important;
-        z-index: 9999 !important;
+        max-height: 52dvh !important;
+        z-index: 99999 !important;
         display: flex !important;
         visibility: visible !important;
+        opacity: 1 !important;
+        transform: translate3d(0, 0, 0) !important;
+        -webkit-transform: translate3d(0, 0, 0) !important;
+        box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.85) !important;
+        padding: 0.5rem 0.5rem calc(0.5rem + env(safe-area-inset-bottom, 15px)) !important;
     }
     .piano-panel.piano-hidden {
-        transform: translateY(150%) !important;
+        transform: translate3d(0, 150%, 0) !important;
+        -webkit-transform: translate3d(0, 150%, 0) !important;
         visibility: hidden !important;
-        display: flex !important;
+        pointer-events: none !important;
     }
 }
