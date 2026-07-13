@@ -24,10 +24,10 @@ def parse_chord(chord_symbol):
     """
     # 1. Extract Bass if present
     bass = None
-    if '/' in chord_symbol:
-        parts = chord_symbol.split('/')
-        chord_symbol = parts[0]
-        bass = parts[1]
+    bass_match = re.search(r'/([A-G][#b]?)$', chord_symbol)
+    if bass_match:
+        bass = bass_match.group(1)
+        chord_symbol = chord_symbol[:bass_match.start()]
 
     # 2. Extract Root
     root_match = re.match(r'^([A-G][#b]?)', chord_symbol)
@@ -56,7 +56,7 @@ def parse_chord(chord_symbol):
     if 'dim' in suffix or 'º' in suffix or '°' in suffix:
         is_dim = True
         is_minor = True
-    if 'aug' in suffix or '+' in suffix:
+    if 'aug' in suffix or '+' in suffix and '11+' not in suffix and '9+' not in suffix:
         is_aug = True
     if 'sus4' in suffix or ('sus' in suffix and 'sus2' not in suffix):
         is_sus4 = True
@@ -76,35 +76,38 @@ def parse_chord(chord_symbol):
     # Fifths
     if is_dim or 'b5' in suffix:
         intervals[6] = 'triad' # Dim 5th
-    elif is_aug or '#5' in suffix:
+    elif is_aug or '#5' in suffix or '5+' in suffix:
         intervals[8] = 'triad' # Aug 5th
     else:
         intervals[7] = 'triad' # Perf 5th
 
     # 4. Analyze Sevenths & Extensions
-    # Sevenths
+    # Sevenths and Sixths
     if 'maj7' in suffix or 'M7' in suffix or '7M' in suffix:
         intervals[11] = 'seventh'
+    elif '6' in suffix:
+        intervals[9] = 'seventh' # Treat 6th as the 7th block for coloring
     elif '7' in suffix or '9' in suffix or '11' in suffix or '13' in suffix:
         # If it's diminished 7th
         if 'dim7' in suffix or 'º7' in suffix or '°7' in suffix:
             intervals[9] = 'seventh' # Diminished 7th (enharmonic to maj 6)
         else:
-            intervals[10] = 'seventh' # Minor 7th (dominant)
+            if 'add9' not in suffix and 'add11' not in suffix:
+                intervals[10] = 'seventh' # Minor 7th (dominant)
             
     # Ninths
-    if '9' in suffix:
+    if '9' in suffix or '2' in suffix:
         if 'maj9' in suffix:
             intervals[11] = 'seventh'
             intervals[14] = 'tension' # maj9
-        elif 'b9' in suffix:
+        elif 'b9' in suffix or '9-' in suffix:
             intervals[13] = 'tension' # min9
-        elif '#9' in suffix:
+        elif '#9' in suffix or '9+' in suffix:
             intervals[15] = 'tension' # aug9
         else:
             intervals[14] = 'tension' # maj9
             
-    # Add chords
+    # Add chords (if not handled above)
     if 'add9' in suffix or 'add2' in suffix:
         intervals[14] = 'tension'
     if 'add11' in suffix or 'add4' in suffix:
@@ -113,31 +116,25 @@ def parse_chord(chord_symbol):
     # Elevenths and Thirteenths
     if '11' in suffix:
         intervals[14] = 'tension' # implicit 9
-        if '#11' in suffix:
+        if '#11' in suffix or '11+' in suffix:
             intervals[18] = 'tension'
         else:
             intervals[17] = 'tension'
     
     if '13' in suffix:
         intervals[14] = 'tension' # implicit 9
-        if 'b13' in suffix:
+        if 'b13' in suffix or '13-' in suffix:
             intervals[20] = 'tension'
         else:
             intervals[21] = 'tension'
             
-    # Other Alterations
+    # Other Alterations fallback
     if 'b5' in suffix and 6 not in intervals:
         if 7 in intervals: del intervals[7]
         intervals[6] = 'triad'
-    if '#5' in suffix and 8 not in intervals:
+    if ('#5' in suffix or '5+' in suffix) and 8 not in intervals:
         if 7 in intervals: del intervals[7]
         intervals[8] = 'triad'
-    if 'b9' in suffix:
-        intervals[13] = 'tension'
-    if '#9' in suffix:
-        intervals[15] = 'tension'
-    if '#11' in suffix:
-        intervals[18] = 'tension'
 
     # 5. Bass note processing
     if bass:
