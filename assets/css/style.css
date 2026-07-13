@@ -368,23 +368,23 @@ h2.song-artist {
         right: 0 !important;
         width: 100% !important;
         max-width: 100% !important;
-        height: auto !important;
-        max-height: 48vh !important;
-        max-height: 48dvh !important;
+        height: 40vh !important;
+        max-height: 40vh !important;
         overflow-y: auto !important;
         z-index: 999999 !important;
         display: flex !important;
+        flex-direction: column !important;
+        justify-content: flex-start !important;
         visibility: visible !important;
         opacity: 1 !important;
         transform: none !important;
         -webkit-transform: none !important;
         margin: 0 !important;
-        padding: 0.6rem 0.6rem calc(0.6rem + env(safe-area-inset-bottom, 12px)) !important;
-        background: rgba(15, 23, 42, 0.98) !important;
-        backdrop-filter: blur(12px) !important;
+        padding: 0.5rem 0.5rem 1rem !important;
+        background: #0f172a !important;
         border-top: 2px solid var(--primary) !important;
-        border-radius: 20px 20px 0 0 !important;
-        box-shadow: 0 -15px 40px rgba(0, 0, 0, 0.95) !important;
+        border-radius: 16px 16px 0 0 !important;
+        box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.9) !important;
     }
     .piano-keyboard {
         width: 100%;
@@ -395,7 +395,7 @@ h2.song-artist {
     .lyrics-panel {
         max-width: 100%;
         padding-top: 0.8rem;
-        padding-bottom: 55dvh;
+        padding-bottom: 45vh;
     }
     #lyrics-content {
         font-size: 1.05rem;
