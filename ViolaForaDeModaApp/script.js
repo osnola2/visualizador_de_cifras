@@ -56,7 +56,6 @@ const chordData = {
 };
 
 
-
 document.addEventListener('DOMContentLoaded', () => {
     const nextChordVisualizer = window.NextChordVisualizer
         ? new window.NextChordVisualizer({ containerId: 'next-chord-section' })
