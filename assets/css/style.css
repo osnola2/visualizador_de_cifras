@@ -379,7 +379,7 @@ h2.song-artist {
         width: 100% !important;
         max-width: 100% !important;
         height: auto !important;
-        max-height: 48vh !important;
+        max-height: 56vh !important;
         overflow-y: auto !important;
         z-index: 999999 !important;
         display: flex !important;
@@ -423,7 +423,8 @@ h2.song-artist {
         margin: 0 !important;
         display: flex !important;
         flex-direction: column !important;
-        justify-content: space-between !important;
+        justify-content: center !important;
+        gap: 1px !important;
     }
     .lyrics-panel {
         max-width: 100% !important;
