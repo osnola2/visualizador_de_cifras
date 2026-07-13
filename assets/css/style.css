@@ -596,11 +596,18 @@ header {
 
 @media (min-width: 900px) {
     .piano-panel {
-        position: sticky !important;
-        top: 75px !important; /* Compact header height safe distance */
+        position: fixed !important;
+        right: 2% !important;
+        top: 75px !important;
+        width: 33% !important;
+        max-width: 440px !important;
         max-height: calc(100vh - 85px) !important;
-        overflow-y: auto !important; /* Allows scrolling to see the bottom instead of chopping it off */
+        overflow-y: auto !important;
         scrollbar-width: thin;
+    }
+    .lyrics-panel {
+        width: 63% !important;
+        max-width: 63% !important;
     }
 }
 
