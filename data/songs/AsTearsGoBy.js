@@ -1,0 +1,214 @@
+window.SONG_DATA = {
+    "title": "As Tears Go By",
+    "artist": "The Rolling Stones",
+    "lyricsHtml": "\n<span class=\"lyric-line\">[Intro]</span>\n<span class=\"chord\" data-chord=\"G5\">G5</span>   <span class=\"chord\" data-chord=\"A\">A</span> <span class=\"chord\" data-chord=\"Asus4\">Asus4</span> <span class=\"chord\" data-chord=\"A\">A</span>   <span class=\"chord\" data-chord=\"C\">C</span> <span class=\"chord\" data-chord=\"Cadd9\">Cadd9</span> <span class=\"chord\" data-chord=\"C\">C</span>   <span class=\"chord\" data-chord=\"D\">D</span> <span class=\"chord\" data-chord=\"Dsus4\">Dsus4</span> <span class=\"chord\" data-chord=\"D\">D</span>\n\n<span class=\"lyric-line\">[Verse]</span>\n<span class=\"chord\" data-chord=\"G\">G</span>           <span class=\"chord\" data-chord=\"A\">A</span>              <span class=\"chord\" data-chord=\"C\">C</span>  <span class=\"chord\" data-chord=\"D\">D</span> <span class=\"chord\" data-chord=\"Dsus4\">Dsus4</span> <span class=\"chord\" data-chord=\"D\">D</span>\n<span class=\"lyric-line\">  It is the evening of the da-ay</span>\n<span class=\"chord\" data-chord=\"G\">G</span>           <span class=\"chord\" data-chord=\"A\">A</span>                  <span class=\"chord\" data-chord=\"C\">C</span>   <span class=\"chord\" data-chord=\"D\">D</span>\n<span class=\"lyric-line\">  I sit and watch the children pla-ay</span>\n<span class=\"chord\" data-chord=\"C\">C</span>               <span class=\"chord\" data-chord=\"D\">D</span>\n<span class=\"lyric-line\">  Smiling faces I can see</span>\n<span class=\"chord\" data-chord=\"G\">G</span>     <span class=\"chord\" data-chord=\"G/F#\">G/F#</span>    <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">  but not for me</span>\n<span class=\"chord\" data-chord=\"C\">C</span>                             <span class=\"chord\" data-chord=\"D\">D</span> <span class=\"chord\" data-chord=\"D/A\">D/A</span>\n<span class=\"lyric-line\">  I sit and watch as tears go b--y</span>\n\n<span class=\"lyric-line\">[Verse 2]</span>\n<span class=\"chord\" data-chord=\"G\">G</span>           <span class=\"chord\" data-chord=\"A\">A</span>              <span class=\"chord\" data-chord=\"C\">C</span>   <span class=\"chord\" data-chord=\"D\">D</span> <span class=\"chord\" data-chord=\"Dsus4\">Dsus4</span> <span class=\"chord\" data-chord=\"D\">D</span>\n<span class=\"lyric-line\">  My riches can&#x27;t buy everythi-ing</span>\n<span class=\"chord\" data-chord=\"G\">G</span>           <span class=\"chord\" data-chord=\"A\">A</span>                 <span class=\"chord\" data-chord=\"C\">C</span>  <span class=\"chord\" data-chord=\"D\">D</span>\n<span class=\"lyric-line\">  I want to hear the children si-ing</span>\n<span class=\"chord\" data-chord=\"C\">C</span>            <span class=\"chord\" data-chord=\"D\">D</span>\n<span class=\"lyric-line\">  all I hear is the sound</span>\n<span class=\"chord\" data-chord=\"G\">G</span>    <span class=\"chord\" data-chord=\"G/F#\">G/F#</span>         <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">  of rain falling on the ground</span>\n<span class=\"chord\" data-chord=\"C\">C</span>                             <span class=\"chord\" data-chord=\"D\">D</span> <span class=\"chord\" data-chord=\"D/A\">D/A</span>\n<span class=\"lyric-line\">  I sit and watch as tears go b--y</span>\n\n<span class=\"lyric-line\">[Interlude]</span>\n<span class=\"chord\" data-chord=\"G\">G</span>  <span class=\"chord\" data-chord=\"A\">A</span>  <span class=\"chord\" data-chord=\"C\">C</span>  <span class=\"chord\" data-chord=\"D\">D</span> <span class=\"chord\" data-chord=\"Dsus4\">Dsus4</span> <span class=\"chord\" data-chord=\"D\">D</span>\n<span class=\"chord\" data-chord=\"G\">G</span>  <span class=\"chord\" data-chord=\"A\">A</span>  <span class=\"chord\" data-chord=\"C\">C</span>  <span class=\"chord\" data-chord=\"D\">D</span>\n<span class=\"chord\" data-chord=\"C\">C</span>  <span class=\"chord\" data-chord=\"D\">D</span>  <span class=\"chord\" data-chord=\"G\">G</span> <span class=\"chord\" data-chord=\"G/F#\">G/F#</span> <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"chord\" data-chord=\"C\">C</span>     <span class=\"chord\" data-chord=\"D\">D</span> <span class=\"chord\" data-chord=\"D/A\">D/A</span>\n\n<span class=\"lyric-line\">[Verse 3]</span>\n<span class=\"chord\" data-chord=\"G\">G</span>           <span class=\"chord\" data-chord=\"A\">A</span>              <span class=\"chord\" data-chord=\"C\">C</span>  <span class=\"chord\" data-chord=\"D\">D</span> <span class=\"chord\" data-chord=\"Dsus4\">Dsus4</span> <span class=\"chord\" data-chord=\"D\">D</span>\n<span class=\"lyric-line\">  It is the evening of the da-ay</span>\n<span class=\"chord\" data-chord=\"G\">G</span>           <span class=\"chord\" data-chord=\"A\">A</span>                  <span class=\"chord\" data-chord=\"C\">C</span>   <span class=\"chord\" data-chord=\"D\">D</span>\n<span class=\"lyric-line\">  I sit and watch the children pla-ay</span>\n<span class=\"chord\" data-chord=\"C\">C</span>                <span class=\"chord\" data-chord=\"D\">D</span>\n<span class=\"lyric-line\">  doing things I used to do</span>\n<span class=\"chord\" data-chord=\"G\">G</span>      <span class=\"chord\" data-chord=\"G/F#\">G/F#</span>      <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">  they think are new</span>\n<span class=\"chord\" data-chord=\"C\">C</span>                             <span class=\"chord\" data-chord=\"D\">D</span> <span class=\"chord\" data-chord=\"D/A\">D/A</span>\n<span class=\"lyric-line\">  I sit and watch as tears go b--y</span>\n\n<span class=\"lyric-line\">[Outro]</span>\n<span class=\"chord\" data-chord=\"G\">G</span>             <span class=\"chord\" data-chord=\"A\">A</span>           <span class=\"chord\" data-chord=\"C\">C</span>   <span class=\"chord\" data-chord=\"D\">D</span> <span class=\"chord\" data-chord=\"Dsus4\">Dsus4</span> <span class=\"chord\" data-chord=\"D\">D</span>\n<span class=\"lyric-line\">  Hmm Hmm Hmm Hmm Hmm Hmm Hmm Hmm</span>\n\n<span class=\"lyric-line\">(repeat and fade)</span>\n",
+    "chordData": {
+        "A": {
+            "name": "A",
+            "notes": [
+                "A3",
+                "C#4",
+                "E4"
+            ],
+            "displayNotes": [
+                "A",
+                "C#",
+                "E"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Asus4": {
+            "name": "Asus4",
+            "notes": [
+                "A3",
+                "D4",
+                "E4"
+            ],
+            "displayNotes": [
+                "A",
+                "D",
+                "E"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "C": {
+            "name": "C",
+            "notes": [
+                "C3",
+                "E3",
+                "G3"
+            ],
+            "displayNotes": [
+                "C",
+                "E",
+                "G"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Cadd9": {
+            "name": "Cadd9",
+            "notes": [
+                "C3",
+                "E3",
+                "G3",
+                "D4"
+            ],
+            "displayNotes": [
+                "C",
+                "E",
+                "G",
+                "D"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "ninth"
+            ]
+        },
+        "D": {
+            "name": "D",
+            "notes": [
+                "D3",
+                "F#3",
+                "A3"
+            ],
+            "displayNotes": [
+                "D",
+                "F#",
+                "A"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "D/A": {
+            "name": "D/A",
+            "notes": [
+                "A3",
+                "D4",
+                "F#4",
+                "A4"
+            ],
+            "displayNotes": [
+                "A",
+                "D",
+                "F#",
+                "A"
+            ],
+            "noteTypes": [
+                "bass",
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Dsus4": {
+            "name": "Dsus4",
+            "notes": [
+                "D3",
+                "G3",
+                "A3"
+            ],
+            "displayNotes": [
+                "D",
+                "G",
+                "A"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Em": {
+            "name": "Em",
+            "notes": [
+                "E3",
+                "G3",
+                "B3"
+            ],
+            "displayNotes": [
+                "E",
+                "G",
+                "B"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "G": {
+            "name": "G",
+            "notes": [
+                "G3",
+                "B3",
+                "D4"
+            ],
+            "displayNotes": [
+                "G",
+                "B",
+                "D"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "G/F#": {
+            "name": "G/F#",
+            "notes": [
+                "F#3",
+                "G3",
+                "B3",
+                "D4"
+            ],
+            "displayNotes": [
+                "F#",
+                "G",
+                "B",
+                "D"
+            ],
+            "noteTypes": [
+                "bass",
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "G5": {
+            "name": "G5",
+            "notes": [
+                "G3",
+                "B3",
+                "D4"
+            ],
+            "displayNotes": [
+                "G",
+                "B",
+                "D"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        }
+    }
+};
