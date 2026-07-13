@@ -552,17 +552,17 @@ h2.song-artist {
 
 @media (max-width: 899px) {
     .piano-panel {
-        max-height: 33vh !important;
+        max-height: 50vh !important;
         overflow-y: auto !important;
         padding: 0.5rem 0.5rem calc(0.5rem + env(safe-area-inset-bottom, 10px)) !important;
         border-radius: 20px 20px 0 0 !important;
     }
     .piano-keyboard {
-        height: 60px !important;
-        margin: 0.2rem 0 !important;
+        height: 90px !important;
+        margin: 0.4rem 0 !important;
     }
     .inversion-column {
-        min-height: 60px !important;
+        min-height: 90px !important;
     }
     .inv-side-btn {
         padding: 2px !important;
@@ -584,10 +584,11 @@ h2.song-artist {
     }
 }
 
-/* Fix: Retract Header and optimize sticky top v9 */
+/* Fix: Make header sticky always v10 */
 header {
-    position: relative !important; /* Retract the header when scrolling */
-    z-index: 10;
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 999 !important;
 }
 .piano-panel {
     top: 20px !important; /* Stick near the top of the viewport once header scrolls away */
