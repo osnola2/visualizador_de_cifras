@@ -497,3 +497,19 @@ h1 {
         visibility: hidden;
     }
 }
+
+
+/* Fix piano panel height visibility */
+.piano-panel {
+    max-height: calc(100vh - 110px);
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+.piano-panel::-webkit-scrollbar {
+    display: none;
+}
+@media (max-width: 899px) {
+    .piano-panel {
+        max-height: 85vh;
+    }
+}
