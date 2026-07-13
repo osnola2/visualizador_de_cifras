@@ -239,12 +239,12 @@
         justify-content: center !important;
         width: 100% !important;
         margin: 0 !important;
-        gap: 6px !important;
+        gap: 3px !important;
     }
     .piano-keyboard {
         flex: 1 1 auto !important;
-        width: calc(100% - 56px) !important;
-        max-width: calc(100% - 56px) !important;
+        width: calc(100% - 53px) !important;
+        max-width: calc(100% - 53px) !important;
         height: 48px !important;
         min-height: 48px !important;
         max-height: 48px !important;
@@ -262,7 +262,8 @@
         margin: 0 !important;
         display: flex !important;
         flex-direction: column !important;
-        justify-content: space-between !important;
+        justify-content: center !important;
+        gap: 1px !important;
     }
     .key {
         padding-bottom: 2px !important;
