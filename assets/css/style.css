@@ -334,13 +334,18 @@ h2.song-artist {
         text-overflow: ellipsis;
         display: block !important;
     }
+    header {
+        flex-wrap: wrap !important;
+        max-width: 100vw !important;
+        overflow-x: hidden !important;
+    }
     .controls-panel {
         display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
+        flex-wrap: wrap !important;
         justify-content: flex-end;
         align-items: center;
-        flex-shrink: 0;
+        max-width: 100%;
         gap: 5px;
     }
     #autoscroll-btn {
