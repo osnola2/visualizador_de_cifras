@@ -1,22 +1,7 @@
 const chordData = {
-    "Am": {
-        name: "Am",
-        notes: ["A3", "C4", "E4"],
-        displayNotes: ["A", "C", "E"],
-        noteTypes: ["triad", "triad", "triad"]
-    },
-    "Dm": {
-        name: "Dm",
-        notes: ["D3", "F3", "A3"],
-        displayNotes: ["D", "F", "A"],
-        noteTypes: ["triad", "triad", "triad"]
-    },
-    "G": {
-        name: "G",
-        notes: ["G3", "B3", "D4"],
-        displayNotes: ["G", "B", "D"],
-        noteTypes: ["triad", "triad", "triad"]
-    }
+    "Am": {"name": "Am", "notes": ["A3", "C4", "E4"], "displayNotes": ["A", "C", "E"], "noteTypes": ["root", "triad", "triad"]},
+    "G": {"name": "G", "notes": ["G3", "B3", "D4"], "displayNotes": ["G", "B", "D"], "noteTypes": ["root", "triad", "triad"]},
+    "Dm": {"name": "Dm", "notes": ["D3", "F3", "A3"], "displayNotes": ["D", "F", "A"], "noteTypes": ["root", "triad", "triad"]},
 };
 
 

@@ -1,22 +1,7 @@
 const chordData = {
-    "Bm7": {
-        name: "Bm7",
-        notes: ["B3", "D4", "F#4", "A4"],
-        displayNotes: ["B", "D", "F#", "A"],
-        noteTypes: ["root", "triad", "triad", "seventh"]
-    },
-    "C#m7": {
-        name: "C#m7",
-        notes: ["C#3", "E3", "G#3", "B3"],
-        displayNotes: ["C#", "E", "G#", "B"],
-        noteTypes: ["root", "triad", "triad", "seventh"]
-    },
-    "F#m": {
-        name: "F#m",
-        notes: ["F#3", "A3", "C#4"],
-        displayNotes: ["F#", "A", "C#"],
-        noteTypes: ["root", "triad", "triad"]
-    }
+    "C#m7": {"name": "C#m7", "notes": ["C#3", "E3", "G#3", "B3"], "displayNotes": ["C#", "E", "G#", "B"], "noteTypes": ["root", "triad", "triad", "seventh"]},
+    "F#m": {"name": "F#m", "notes": ["F#3", "A3", "C#4"], "displayNotes": ["F#", "A", "C#"], "noteTypes": ["root", "triad", "triad"]},
+    "Bm7": {"name": "Bm7", "notes": ["B3", "D4", "F#4", "A4"], "displayNotes": ["B", "D", "F#", "A"], "noteTypes": ["root", "triad", "triad", "seventh"]},
 };
 
 

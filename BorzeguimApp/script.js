@@ -1,130 +1,25 @@
 const chordData = {
-    "B7(5-/9)": {
-        name: "B7(5-/9)",
-        notes: ["B3", "D4", "F#4", "A4", "C#5"],
-        displayNotes: ["B", "D", "F#", "A", "C#"],
-        noteTypes: ["root", "triad", "triad", "seventh", "ninth"]
-    },
-    "Bb7(13)": {
-        name: "Bb7(13)",
-        notes: ["A#3", "D4", "F4", "G#4", "C5", "G5"],
-        displayNotes: ["Bb", "D", "F", "Ab", "C", "G"],
-        noteTypes: ["root", "triad", "triad", "seventh", "ninth", "alt"]
-    },
-    "C7(9)": {
-        name: "C7(9)",
-        notes: ["C3", "E3", "G3", "A#3", "D4"],
-        displayNotes: ["C", "E", "G", "A#", "D"],
-        noteTypes: ["root", "triad", "triad", "seventh", "ninth"]
-    },
-    "C7(9+)": {
-        name: "C7(9+)",
-        notes: ["C3", "E3", "G3", "A#3", "D#4"],
-        displayNotes: ["C", "E", "G", "A#", "D#"],
-        noteTypes: ["root", "triad", "triad", "seventh", "alt"]
-    },
-    "Cm7(9)": {
-        name: "Cm7(9)",
-        notes: ["C3", "D#3", "G3", "A#3", "D4"],
-        displayNotes: ["C", "D#", "G", "A#", "D"],
-        noteTypes: ["root", "triad", "triad", "seventh", "ninth"]
-    },
-    "D5+/Eb": {
-        name: "D5+/Eb",
-        notes: ["D#3", "D4", "F#4", "A#4"],
-        displayNotes: ["D#", "D", "F#", "A#"],
-        noteTypes: ["bass", "root", "triad", "triad"]
-    },
-    "Dm7": {
-        name: "Dm7",
-        notes: ["D3", "F3", "A3", "C4"],
-        displayNotes: ["D", "F", "A", "C"],
-        noteTypes: ["root", "triad", "triad", "seventh"]
-    },
-    "Eb": {
-        name: "Eb",
-        notes: ["D#3", "G3", "A#3"],
-        displayNotes: ["Eb", "G", "Bb"],
-        noteTypes: ["root", "triad", "triad"]
-    },
-    "Eb7(9)": {
-        name: "Eb7(9)",
-        notes: ["D#3", "G3", "A#3", "C#4", "F4"],
-        displayNotes: ["Eb", "G", "Bb", "Db", "F"],
-        noteTypes: ["root", "triad", "triad", "seventh", "ninth"]
-    },
-    "Eb7(9-/11+)": {
-        name: "Eb7(9-/11+)",
-        notes: ["D#3", "F#3", "A#3", "C#4", "E4", "F4", "A4"],
-        displayNotes: ["Eb", "Gb", "Bb", "Db", "E", "F", "A"],
-        noteTypes: ["root", "triad", "triad", "seventh", "alt", "ninth", "alt"]
-    },
-    "Eb7M": {
-        name: "Eb7M",
-        notes: ["D#3", "G3", "A#3", "D4"],
-        displayNotes: ["Eb", "G", "Bb", "D"],
-        noteTypes: ["root", "triad", "triad", "seventh"]
-    },
-    "Ebm7M": {
-        name: "Ebm7M",
-        notes: ["D#3", "F#3", "A#3", "D4"],
-        displayNotes: ["Eb", "Gb", "Bb", "D"],
-        noteTypes: ["root", "triad", "triad", "seventh"]
-    },
-    "F#7(13)": {
-        name: "F#7(13)",
-        notes: ["F#3", "A#3", "C#4", "E4", "G#4", "D#5"],
-        displayNotes: ["F#", "A#", "C#", "E", "G#", "D#"],
-        noteTypes: ["root", "triad", "triad", "seventh", "ninth", "alt"]
-    },
-    "F#m7": {
-        name: "F#m7",
-        notes: ["F#3", "A3", "C#4", "E4"],
-        displayNotes: ["F#", "A", "C#", "E"],
-        noteTypes: ["root", "triad", "triad", "seventh"]
-    },
-    "F#m7(9)": {
-        name: "F#m7(9)",
-        notes: ["F#3", "A3", "C#4", "E4", "G#4"],
-        displayNotes: ["F#", "A", "C#", "E", "G#"],
-        noteTypes: ["root", "triad", "triad", "seventh", "ninth"]
-    },
-    "F5+/B": {
-        name: "F5+/B",
-        notes: ["B3", "F4", "A4", "C#5"],
-        displayNotes: ["B", "F", "A", "Db"],
-        noteTypes: ["bass", "root", "triad", "triad"]
-    },
-    "Fm7": {
-        name: "Fm7",
-        notes: ["F3", "G#3", "C4", "D#4"],
-        displayNotes: ["F", "Ab", "C", "Eb"],
-        noteTypes: ["root", "triad", "triad", "seventh"]
-    },
-    "Fm7(9)": {
-        name: "Fm7(9)",
-        notes: ["F3", "G#3", "C4", "D#4", "G4"],
-        displayNotes: ["F", "Ab", "C", "Eb", "G"],
-        noteTypes: ["root", "triad", "triad", "seventh", "ninth"]
-    },
-    "Gm7": {
-        name: "Gm7",
-        notes: ["G3", "A#3", "D4", "F4"],
-        displayNotes: ["G", "A#", "D", "F"],
-        noteTypes: ["root", "triad", "triad", "seventh"]
-    },
-    "Gm7(9)": {
-        name: "Gm7(9)",
-        notes: ["G3", "A#3", "D4", "F4", "A4"],
-        displayNotes: ["G", "A#", "D", "F", "A"],
-        noteTypes: ["root", "triad", "triad", "seventh", "ninth"]
-    },
-    "G°": {
-        name: "G°",
-        notes: ["G3", "A#3", "C#4"],
-        displayNotes: ["G", "A#", "C#"],
-        noteTypes: ["root", "triad", "triad"]
-    }
+    "G°": {"name": "G\u00b0", "notes": ["G3", "A#3", "C#4"], "displayNotes": ["G", "A#", "C#"], "noteTypes": ["root", "triad", "triad"]},
+    "F5+/B": {"name": "F5+/B", "notes": ["B3", "F4", "A4", "C#5"], "displayNotes": ["B", "F", "A", "Db"], "noteTypes": ["bass", "root", "triad", "triad"]},
+    "Eb": {"name": "Eb", "notes": ["D#3", "G3", "A#3"], "displayNotes": ["Eb", "G", "Bb"], "noteTypes": ["root", "triad", "triad"]},
+    "Ebm7M": {"name": "Ebm7M", "notes": ["D#3", "F#3", "A#3", "D4"], "displayNotes": ["Eb", "Gb", "Bb", "D"], "noteTypes": ["root", "triad", "triad", "seventh"]},
+    "Cm7(9)": {"name": "Cm7(9)", "notes": ["C3", "D#3", "G3", "A#3", "D4"], "displayNotes": ["C", "D#", "G", "A#", "D"], "noteTypes": ["root", "triad", "triad", "seventh", "ninth"]},
+    "Fm7(9)": {"name": "Fm7(9)", "notes": ["F3", "G#3", "C4", "D#4", "G4"], "displayNotes": ["F", "Ab", "C", "Eb", "G"], "noteTypes": ["root", "triad", "triad", "seventh", "ninth"]},
+    "B7(5-/9)": {"name": "B7(5-/9)", "notes": ["B3", "D4", "F#4", "A4", "C#5"], "displayNotes": ["B", "D", "F#", "A", "C#"], "noteTypes": ["root", "triad", "triad", "seventh", "ninth"]},
+    "Gm7(9)": {"name": "Gm7(9)", "notes": ["G3", "A#3", "D4", "F4", "A4"], "displayNotes": ["G", "A#", "D", "F", "A"], "noteTypes": ["root", "triad", "triad", "seventh", "ninth"]},
+    "C7(9)": {"name": "C7(9)", "notes": ["C3", "E3", "G3", "A#3", "D4"], "displayNotes": ["C", "E", "G", "A#", "D"], "noteTypes": ["root", "triad", "triad", "seventh", "ninth"]},
+    "F#7(13)": {"name": "F#7(13)", "notes": ["F#3", "A#3", "C#4", "E4", "G#4", "D#5"], "displayNotes": ["F#", "A#", "C#", "E", "G#", "D#"], "noteTypes": ["root", "triad", "triad", "seventh", "ninth", "alt"]},
+    "Gm7": {"name": "Gm7", "notes": ["G3", "A#3", "D4", "F4"], "displayNotes": ["G", "A#", "D", "F"], "noteTypes": ["root", "triad", "triad", "seventh"]},
+    "Bb7(13)": {"name": "Bb7(13)", "notes": ["A#3", "D4", "F4", "G#4", "C5", "G5"], "displayNotes": ["Bb", "D", "F", "Ab", "C", "G"], "noteTypes": ["root", "triad", "triad", "seventh", "ninth", "alt"]},
+    "Dm7": {"name": "Dm7", "notes": ["D3", "F3", "A3", "C4"], "displayNotes": ["D", "F", "A", "C"], "noteTypes": ["root", "triad", "triad", "seventh"]},
+    "F#m7(9)": {"name": "F#m7(9)", "notes": ["F#3", "A3", "C#4", "E4", "G#4"], "displayNotes": ["F#", "A", "C#", "E", "G#"], "noteTypes": ["root", "triad", "triad", "seventh", "ninth"]},
+    "Eb7(9)": {"name": "Eb7(9)", "notes": ["D#3", "G3", "A#3", "C#4", "F4"], "displayNotes": ["Eb", "G", "Bb", "Db", "F"], "noteTypes": ["root", "triad", "triad", "seventh", "ninth"]},
+    "F#m7": {"name": "F#m7", "notes": ["F#3", "A3", "C#4", "E4"], "displayNotes": ["F#", "A", "C#", "E"], "noteTypes": ["root", "triad", "triad", "seventh"]},
+    "Fm7": {"name": "Fm7", "notes": ["F3", "G#3", "C4", "D#4"], "displayNotes": ["F", "Ab", "C", "Eb"], "noteTypes": ["root", "triad", "triad", "seventh"]},
+    "C7(9+)": {"name": "C7(9+)", "notes": ["C3", "E3", "G3", "A#3", "D#4"], "displayNotes": ["C", "E", "G", "A#", "D#"], "noteTypes": ["root", "triad", "triad", "seventh", "alt"]},
+    "D5+/Eb": {"name": "D5+/Eb", "notes": ["D#3", "D4", "F#4", "A#4"], "displayNotes": ["D#", "D", "F#", "A#"], "noteTypes": ["bass", "root", "triad", "triad"]},
+    "Eb7M": {"name": "Eb7M", "notes": ["D#3", "G3", "A#3", "D4"], "displayNotes": ["Eb", "G", "Bb", "D"], "noteTypes": ["root", "triad", "triad", "seventh"]},
+    "Eb7(9-/11+)": {"name": "Eb7(9-/11+)", "notes": ["D#3", "F#3", "A#3", "C#4", "E4", "F4", "A4"], "displayNotes": ["Eb", "Gb", "Bb", "Db", "E", "F", "A"], "noteTypes": ["root", "triad", "triad", "seventh", "alt", "ninth", "alt"]},
 };
 
 

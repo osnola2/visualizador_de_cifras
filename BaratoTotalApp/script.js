@@ -1,52 +1,12 @@
 const chordData = {
-    "A": {
-        name: "A",
-        notes: ["A3", "C#4", "E4"],
-        displayNotes: ["A", "C#", "E"],
-        noteTypes: ["root", "triad", "triad"]
-    },
-    "Ab7": {
-        name: "Ab7",
-        notes: ["G#3", "C4", "D#4", "F#4"],
-        displayNotes: ["Ab", "C", "Eb", "Gb"],
-        noteTypes: ["root", "triad", "triad", "seventh"]
-    },
-    "B7": {
-        name: "B7",
-        notes: ["B3", "D#4", "F#4", "A4"],
-        displayNotes: ["B", "D#", "F#", "A"],
-        noteTypes: ["root", "triad", "triad", "seventh"]
-    },
-    "C#4/7": {
-        name: "C#4/7",
-        notes: ["C3", "C#3", "F3", "G#3"],
-        displayNotes: ["C", "C#", "F", "G#"],
-        noteTypes: ["bass", "root", "triad", "triad"]
-    },
-    "C#7": {
-        name: "C#7",
-        notes: ["C#3", "F3", "G#3", "B3"],
-        displayNotes: ["C#", "F", "G#", "B"],
-        noteTypes: ["root", "triad", "triad", "seventh"]
-    },
-    "F#": {
-        name: "F#",
-        notes: ["F#3", "A#3", "C#4"],
-        displayNotes: ["F#", "A#", "C#"],
-        noteTypes: ["root", "triad", "triad"]
-    },
-    "F#6": {
-        name: "F#6",
-        notes: ["F#3", "A#3", "C#4"],
-        displayNotes: ["F#", "A#", "C#"],
-        noteTypes: ["root", "triad", "triad"]
-    },
-    "F#7": {
-        name: "F#7",
-        notes: ["F#3", "A#3", "C#4", "E4"],
-        displayNotes: ["F#", "A#", "C#", "E"],
-        noteTypes: ["root", "triad", "triad", "seventh"]
-    }
+    "Ab7": {"name": "Ab7", "notes": ["G#3", "C4", "D#4", "F#4"], "displayNotes": ["Ab", "C", "Eb", "Gb"], "noteTypes": ["root", "triad", "triad", "seventh"]},
+    "F#7": {"name": "F#7", "notes": ["F#3", "A#3", "C#4", "E4"], "displayNotes": ["F#", "A#", "C#", "E"], "noteTypes": ["root", "triad", "triad", "seventh"]},
+    "F#": {"name": "F#", "notes": ["F#3", "A#3", "C#4"], "displayNotes": ["F#", "A#", "C#"], "noteTypes": ["root", "triad", "triad"]},
+    "C#4/7": {"name": "C#4/7", "notes": ["C#3", "F3", "G#3", "B3"], "displayNotes": ["C#", "F", "G#", "B"], "noteTypes": ["root", "triad", "triad", "seventh"]},
+    "F#6": {"name": "F#6", "notes": ["F#3", "A#3", "C#4", "D#4"], "displayNotes": ["F#", "A#", "C#", "D#"], "noteTypes": ["root", "triad", "triad", "seventh"]},
+    "B7": {"name": "B7", "notes": ["B3", "D#4", "F#4", "A4"], "displayNotes": ["B", "D#", "F#", "A"], "noteTypes": ["root", "triad", "triad", "seventh"]},
+    "C#7": {"name": "C#7", "notes": ["C#3", "F3", "G#3", "B3"], "displayNotes": ["C#", "F", "G#", "B"], "noteTypes": ["root", "triad", "triad", "seventh"]},
+    "A": {"name": "A", "notes": ["A3", "C#4", "E4"], "displayNotes": ["A", "C#", "E"], "noteTypes": ["root", "triad", "triad"]},
 };
 
 

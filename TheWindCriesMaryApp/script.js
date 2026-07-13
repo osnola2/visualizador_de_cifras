@@ -1,52 +1,12 @@
 const chordData = {
-    "Eb": {
-        name: "Eb Major",
-        notes: ["D#3", "G3", "A#3"],
-        displayNotes: ["Eb", "G", "Bb"],
-        noteTypes: ["triad", "triad", "triad"]
-    },
-    "E": {
-        name: "E Major",
-        notes: ["E3", "G#3", "B3"],
-        displayNotes: ["E", "G#", "B"],
-        noteTypes: ["triad", "triad", "triad"]
-    },
-    "F": {
-        name: "F Major",
-        notes: ["F3", "A3", "C4"],
-        displayNotes: ["F", "A", "C"],
-        noteTypes: ["triad", "triad", "triad"]
-    },
-    "C": {
-        name: "C Major",
-        notes: ["C4", "E4", "G4"],
-        displayNotes: ["C", "E", "G"],
-        noteTypes: ["triad", "triad", "triad"]
-    },
-    "Bb": {
-        name: "Bb Major",
-        notes: ["A#3", "D4", "F4"],
-        displayNotes: ["Bb", "D", "F"],
-        noteTypes: ["triad", "triad", "triad"]
-    },
-    "G": {
-        name: "G Major",
-        notes: ["G3", "B3", "D4"],
-        displayNotes: ["G", "B", "D"],
-        noteTypes: ["triad", "triad", "triad"]
-    },
-    "Ab": {
-        name: "Ab Major",
-        notes: ["G#3", "C4", "D#4"],
-        displayNotes: ["Ab", "C", "Eb"],
-        noteTypes: ["triad", "triad", "triad"]
-    },
-    "Db": {
-        name: "Db Major",
-        notes: ["C#4", "F4", "G#4"],
-        displayNotes: ["Db", "F", "Ab"],
-        noteTypes: ["triad", "triad", "triad"]
-    }
+    "F": {"name": "F", "notes": ["F3", "A3", "C4"], "displayNotes": ["F", "A", "C"], "noteTypes": ["root", "triad", "triad"]},
+    "Eb": {"name": "Eb", "notes": ["D#3", "G3", "A#3"], "displayNotes": ["Eb", "G", "Bb"], "noteTypes": ["root", "triad", "triad"]},
+    "Db": {"name": "Db", "notes": ["C#3", "F3", "G#3"], "displayNotes": ["Db", "F", "Ab"], "noteTypes": ["root", "triad", "triad"]},
+    "Ab": {"name": "Ab", "notes": ["G#3", "C4", "D#4"], "displayNotes": ["Ab", "C", "Eb"], "noteTypes": ["root", "triad", "triad"]},
+    "E": {"name": "E", "notes": ["E3", "G#3", "B3"], "displayNotes": ["E", "G#", "B"], "noteTypes": ["root", "triad", "triad"]},
+    "G": {"name": "G", "notes": ["G3", "B3", "D4"], "displayNotes": ["G", "B", "D"], "noteTypes": ["root", "triad", "triad"]},
+    "C": {"name": "C", "notes": ["C3", "E3", "G3"], "displayNotes": ["C", "E", "G"], "noteTypes": ["root", "triad", "triad"]},
+    "Bb": {"name": "Bb", "notes": ["A#3", "D4", "F4"], "displayNotes": ["Bb", "D", "F"], "noteTypes": ["root", "triad", "triad"]},
 };
 
 

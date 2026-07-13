@@ -1,52 +1,12 @@
 const chordData = {
-    "Am": {
-        name: "Am",
-        notes: ["A3", "C4", "E4"],
-        displayNotes: ["A", "C", "E"],
-        noteTypes: ["root", "triad", "triad"]
-    },
-    "B": {
-        name: "B",
-        notes: ["B3", "D#4", "F#4"],
-        displayNotes: ["B", "D#", "F#"],
-        noteTypes: ["root", "triad", "triad"]
-    },
-    "C": {
-        name: "C",
-        notes: ["C3", "E3", "G3"],
-        displayNotes: ["C", "E", "G"],
-        noteTypes: ["root", "triad", "triad"]
-    },
-    "D": {
-        name: "D",
-        notes: ["D3", "F#3", "A3"],
-        displayNotes: ["D", "F#", "A"],
-        noteTypes: ["root", "triad", "triad"]
-    },
-    "E": {
-        name: "E",
-        notes: ["E3", "G#3", "B3"],
-        displayNotes: ["E", "G#", "B"],
-        noteTypes: ["root", "triad", "triad"]
-    },
-    "Em": {
-        name: "Em",
-        notes: ["E3", "G3", "B3"],
-        displayNotes: ["E", "G", "B"],
-        noteTypes: ["root", "triad", "triad"]
-    },
-    "F": {
-        name: "F",
-        notes: ["F3", "A3", "C4"],
-        displayNotes: ["F", "A", "C"],
-        noteTypes: ["root", "triad", "triad"]
-    },
-    "G": {
-        name: "G",
-        notes: ["G3", "B3", "D4"],
-        displayNotes: ["G", "B", "D"],
-        noteTypes: ["root", "triad", "triad"]
-    }
+    "F": {"name": "F", "notes": ["F3", "A3", "C4"], "displayNotes": ["F", "A", "C"], "noteTypes": ["root", "triad", "triad"]},
+    "D": {"name": "D", "notes": ["D3", "F#3", "A3"], "displayNotes": ["D", "F#", "A"], "noteTypes": ["root", "triad", "triad"]},
+    "E": {"name": "E", "notes": ["E3", "G#3", "B3"], "displayNotes": ["E", "G#", "B"], "noteTypes": ["root", "triad", "triad"]},
+    "Am": {"name": "Am", "notes": ["A3", "C4", "E4"], "displayNotes": ["A", "C", "E"], "noteTypes": ["root", "triad", "triad"]},
+    "G": {"name": "G", "notes": ["G3", "B3", "D4"], "displayNotes": ["G", "B", "D"], "noteTypes": ["root", "triad", "triad"]},
+    "Em": {"name": "Em", "notes": ["E3", "G3", "B3"], "displayNotes": ["E", "G", "B"], "noteTypes": ["root", "triad", "triad"]},
+    "C": {"name": "C", "notes": ["C3", "E3", "G3"], "displayNotes": ["C", "E", "G"], "noteTypes": ["root", "triad", "triad"]},
+    "B": {"name": "B", "notes": ["B3", "D#4", "F#4"], "displayNotes": ["B", "D#", "F#"], "noteTypes": ["root", "triad", "triad"]},
 };
 
 
