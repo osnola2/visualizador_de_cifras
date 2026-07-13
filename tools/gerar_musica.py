@@ -43,6 +43,10 @@ def is_tablature_line(line):
     s = line.strip()
     if not s:
         return False
+    if re.match(r'^Parte\s+\d+\s+de\s+\d+$', s, re.IGNORECASE):
+        return True
+    if re.match(r'^\[Tab\s*-.*\]$', s, re.IGNORECASE):
+        return True
     if re.match(r'^[a-gA-GX]?\s*\|[-xX0-9]', s):
         return True
     if '|-' in s and '-|' in s:
