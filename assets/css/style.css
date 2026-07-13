@@ -379,7 +379,7 @@ h2.song-artist {
         width: 100% !important;
         max-width: 100% !important;
         height: auto !important;
-        max-height: 52vh !important;
+        max-height: 60vh !important;
         overflow-y: auto !important;
         z-index: 999999 !important;
         display: flex !important;
@@ -390,7 +390,7 @@ h2.song-artist {
         transform: none !important;
         -webkit-transform: none !important;
         margin: 0 !important;
-        padding: 0.4rem 0.4rem calc(0.5rem + env(safe-area-inset-bottom, 8px)) !important;
+        padding: 0.35rem 0.35rem calc(0.4rem + env(safe-area-inset-bottom, 8px)) !important;
         background: #0f172a !important;
         border-top: 2px solid var(--primary) !important;
         border-radius: 16px 16px 0 0 !important;
@@ -408,17 +408,19 @@ h2.song-artist {
         flex: 1 !important;
         width: calc(100% - 62px) !important;
         max-width: 100% !important;
-        height: 58px !important;
-        min-height: 58px !important;
-        max-height: 58px !important;
-        margin: 0.1rem 0 !important;
+        height: 48px !important;
+        min-height: 48px !important;
+        max-height: 48px !important;
+        margin: 0.08rem 0 !important;
     }
     .inversion-column {
         width: 56px !important;
         min-width: 56px !important;
-        height: 58px !important;
-        min-height: 58px !important;
-        max-height: 58px !important;
+        height: 48px !important;
+        min-height: 48px !important;
+        max-height: 48px !important;
+        justify-content: center !important;
+        gap: 2px !important;
     }
     .lyrics-panel {
         max-width: 100% !important;

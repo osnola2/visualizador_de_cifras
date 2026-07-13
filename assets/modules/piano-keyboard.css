@@ -232,23 +232,27 @@
 
 @media (max-width: 899px) {
     .piano-keyboard {
-        height: 58px !important;
-        min-height: 58px !important;
-        max-height: 58px !important;
-        margin: 0.1rem auto !important;
-        padding: 3px 5px 5px 5px !important;
+        height: 48px !important;
+        min-height: 48px !important;
+        max-height: 48px !important;
+        margin: 0.08rem auto !important;
+        padding: 2px 4px 4px 4px !important;
     }
     .inversion-column {
-        height: 58px !important;
-        min-height: 58px !important;
-        max-height: 58px !important;
+        height: 48px !important;
+        min-height: 48px !important;
+        max-height: 48px !important;
+        justify-content: center !important;
+        gap: 2px !important;
     }
     .key {
         padding-bottom: 2px !important;
-        font-size: 0.55rem !important;
+        font-size: 0.52rem !important;
     }
     .inv-side-btn {
         padding: 2px 0 !important;
-        font-size: 0.62rem !important;
+        font-size: 0.58rem !important;
+        line-height: 1 !important;
+        border-radius: 4px !important;
     }
 }
