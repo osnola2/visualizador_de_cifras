@@ -69,9 +69,51 @@ document.addEventListener('DOMContentLoaded', () => {
     const chordElements = document.querySelectorAll('.chord');
 
     let currentTriadVoicingIndex = 0;
-    let currentDisplayedChordId = 'Am';
+    let currentTensionVoicingIndex = 0;
+    let currentDisplayedChordId = null;
+
+    const triadVoicingNames = ["Padrão", "1ª Inversão", "2ª Inversão"];
+    const tensionVoicingNames = ["Padrão", "Agudo (+8ª)", "Grave (-8ª)"];
+
+    const voicingTriadLabels = document.querySelectorAll('.voicing-triad-label');
+    const voicingTensionLabels = document.querySelectorAll('.voicing-tension-label');
+
+    const headerVoicingTriadBtn = document.getElementById('header-voicing-triad-btn');
+    const pianoVoicingTriadBtn = document.getElementById('piano-voicing-triad-btn');
+    const headerVoicingTensionBtn = document.getElementById('header-voicing-tension-btn');
+    const pianoVoicingTensionBtn = document.getElementById('piano-voicing-tension-btn');
+
+    function toggleTriadVoicing() {
+        currentTriadVoicingIndex = (currentTriadVoicingIndex + 1) % 3;
+        voicingTriadLabels.forEach(lbl => lbl.textContent = triadVoicingNames[currentTriadVoicingIndex]);
+        if (currentDisplayedChordId) showChord(currentDisplayedChordId, currentNextChordId);
+    }
+
+    function toggleTensionVoicing() {
+        currentTensionVoicingIndex = (currentTensionVoicingIndex + 1) % 3;
+        voicingTensionLabels.forEach(lbl => lbl.textContent = tensionVoicingNames[currentTensionVoicingIndex]);
+        if (currentDisplayedChordId) showChord(currentDisplayedChordId, currentNextChordId);
+    }
+
+    if (headerVoicingTriadBtn) headerVoicingTriadBtn.addEventListener('click', toggleTriadVoicing);
+    if (pianoVoicingTriadBtn) pianoVoicingTriadBtn.addEventListener('click', toggleTriadVoicing);
+    if (headerVoicingTensionBtn) headerVoicingTensionBtn.addEventListener('click', toggleTensionVoicing);
+    if (pianoVoicingTensionBtn) pianoVoicingTensionBtn.addEventListener('click', toggleTensionVoicing);
+    
     let currentNextChordId = null;
     let currentNextLyric = null;
+
+    function getLyricForChordElement(chordEl) {
+        if (!chordEl) return null;
+        let curr = chordEl.nextSibling;
+        while (curr) {
+            if (curr.nodeType === 1 && curr.classList.contains('lyric-line')) {
+                return curr.textContent.trim();
+            }
+            curr = curr.nextSibling;
+        }
+        return null;
+    }
 
     const invButtons = document.querySelectorAll('#current-inversion-controls .inv-side-btn');
     invButtons.forEach(btn => {
@@ -79,42 +121,10 @@ document.addEventListener('DOMContentLoaded', () => {
             invButtons.forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
             currentTriadVoicingIndex = parseInt(btn.getAttribute('data-inv'), 10) || 0;
-            showChord(currentDisplayedChordId, currentNextChordId, currentNextLyric);
+            voicingTriadLabels.forEach(lbl => lbl.textContent = triadVoicingNames[currentTriadVoicingIndex] || "Padrão");
+            if (currentDisplayedChordId) showChord(currentDisplayedChordId, currentNextChordId, currentNextLyric);
         });
     });
-
-    const noteMap = { 'C':0, 'C#':1, 'Db':1, 'D':2, 'D#':3, 'Eb':3, 'E':4, 'F':5, 'F#':6, 'Gb':6, 'G':7, 'G#':8, 'Ab':8, 'A':9, 'A#':10, 'Bb':10, 'B':11 };
-    const revMap = ['C','C#','D','D#','E','F','F#','G','G#','A','A#','B'];
-
-    function noteToMidi(noteStr) {
-        const octave = parseInt(noteStr.slice(-1), 10);
-        const name = noteStr.slice(0, -1);
-        return (octave - 3) * 12 + noteMap[name];
-    }
-
-    function midiToNote(midi) {
-        const octave = Math.floor(midi / 12) + 3;
-        const name = revMap[midi % 12];
-        return `${name}${octave}`;
-    }
-
-    function applyInversionToNotes(notes, invIdx) {
-        if (!notes || notes.length === 0 || invIdx === 0) return notes;
-        let midiList = notes.map(n => ({ note: n, midi: noteToMidi(n) })).sort((a,b) => a.midi - b.midi);
-        for (let s = 0; s < invIdx && s < 3; s++) {
-            if (midiList.length > 0 && midiList[0].midi + 12 <= 23) {
-                const low = midiList[0];
-                midiList = midiList.slice(1).concat([{ note: midiToNote(low.midi + 12), midi: low.midi + 12 }]);
-            }
-        }
-        if (invIdx === 3 && midiList.length >= 3) {
-            const mid = midiList[1];
-            if (mid.midi + 12 <= 23) {
-                midiList[1] = { note: midiToNote(mid.midi + 12), midi: mid.midi + 12 };
-            }
-        }
-        return midiList.map(m => m.note);
-    }
 
     function resetPiano() {
         document.querySelectorAll('.piano-keyboard .key').forEach(k => {
@@ -122,7 +132,9 @@ document.addEventListener('DOMContentLoaded', () => {
             k.textContent = '';
         });
         const notesContainer = document.getElementById('chord-notes-container');
+        const nextNotesContainer = document.getElementById('next-chord-notes-container');
         if (notesContainer) notesContainer.innerHTML = '';
+        if (nextNotesContainer) nextNotesContainer.innerHTML = '';
         if (nextChordVisualizer) nextChordVisualizer.clearKeys();
     }
 
@@ -136,49 +148,100 @@ document.addEventListener('DOMContentLoaded', () => {
         currentNextLyric = nextLyric || null;
         
         const chordTitle = document.getElementById('current-chord-name');
+        const nextTitle = document.getElementById('next-chord-name');
         const notesContainer = document.getElementById('chord-notes-container');
+        const nextNotesContainer = document.getElementById('next-chord-notes-container');
 
         if (chordTitle) chordTitle.textContent = data.name;
 
-        const voicedNotes = applyInversionToNotes(data.notes, currentTriadVoicingIndex);
-        let currentVoicedForNext = [];
+        const noteMap = { 'C':0, 'C#':1, 'Db':1, 'D':2, 'D#':3, 'Eb':3, 'E':4, 'F':5, 'F#':6, 'Gb':6, 'G':7, 'G#':8, 'Ab':8, 'A':9, 'A#':10, 'Bb':10, 'B':11 };
+        const revMap = ['C','C#','D','D#','E','F','F#','G','G#','A','A#','B'];
 
-        voicedNotes.forEach((note, index) => {
-            const type = data.noteTypes ? (data.noteTypes[index] || 'triad') : 'triad';
-            const keyEl = document.querySelector(`#piano-current .key[data-note="${note}"]`);
-            if (keyEl) {
-                keyEl.classList.add('active', type);
-                keyEl.textContent = data.displayNotes[index] || note.slice(0, -1);
-            }
+        function noteToMidi(noteStr) {
+            const octave = parseInt(noteStr.slice(-1), 10);
+            const name = noteStr.slice(0, -1);
+            return (octave - 3) * 12 + noteMap[name];
+        }
 
-            if (notesContainer) {
-                const pill = document.createElement('span');
-                pill.className = `note-pill active ${type}`;
-                pill.textContent = data.displayNotes[index] || note.slice(0, -1);
-                notesContainer.appendChild(pill);
-            }
-            currentVoicedForNext.push({
+        function midiToNote(midi) {
+            const octave = Math.floor(midi / 12) + 3;
+            const name = revMap[midi % 12];
+            return `${name}${octave}`;
+        }
+
+        function computeVoicedNotes(cData) {
+            let items = cData.notes.map((note, index) => ({
                 note,
-                displayNote: data.displayNotes[index] || note.slice(0, -1),
-                type
-            });
+                display: cData.displayNotes ? cData.displayNotes[index] : note.slice(0, -1),
+                type: cData.noteTypes ? (cData.noteTypes[index] || 'triad') : 'triad'
+            }));
+
+            let triadItems = items
+                .filter(it => it.type === 'triad')
+                .map(it => ({ ...it, midi: noteToMidi(it.note) }))
+                .sort((a, b) => a.midi - b.midi);
+
+            let tensionItems = items
+                .filter(it => it.type !== 'triad')
+                .map(it => ({ ...it, midi: noteToMidi(it.note) }))
+                .sort((a, b) => a.midi - b.midi);
+
+            for (let step = 0; step < currentTriadVoicingIndex && step < 3; step++) {
+                if (triadItems.length > 0) {
+                    const lowest = triadItems[0];
+                    if (lowest.midi + 12 <= 23) {
+                        triadItems = triadItems.slice(1).concat([{
+                            ...lowest,
+                            midi: lowest.midi + 12,
+                            note: midiToNote(lowest.midi + 12)
+                        }]);
+                    }
+                    triadItems.sort((a, b) => a.midi - b.midi);
+                }
+            }
+            if (currentTriadVoicingIndex === 3 && triadItems.length >= 3) {
+                const mid = triadItems[1];
+                if (mid.midi + 12 <= 23) {
+                    triadItems[1] = {
+                        ...mid,
+                        midi: mid.midi + 12,
+                        note: midiToNote(mid.midi + 12)
+                    };
+                }
+            }
+
+            if (currentTensionVoicingIndex === 1 && tensionItems.length > 0) {
+                tensionItems = tensionItems.map(item => {
+                    const nextMidi = item.midi + 12;
+                    return nextMidi <= 23 ? { ...item, midi: nextMidi, note: midiToNote(nextMidi) } : item;
+                });
+            } else if (currentTensionVoicingIndex === 2 && tensionItems.length > 0) {
+                tensionItems = tensionItems.map(item => {
+                    const prevMidi = item.midi - 12;
+                    return prevMidi >= 0 ? { ...item, midi: prevMidi, note: midiToNote(prevMidi) } : item;
+                });
+            }
+
+            return triadItems.concat(tensionItems);
+        }
+
+        const currentVoiced = computeVoicedNotes(data);
+        currentVoiced.forEach(item => {
+            const keyEl = document.querySelector(`#piano-current .key[data-note="${item.note}"]`);
+            if (keyEl) {
+                keyEl.classList.add('active', item.type);
+                keyEl.textContent = item.display;
+            }
         });
 
         if (nextChordVisualizer) {
             if (nextChordId && chordData[nextChordId]) {
                 const nextData = chordData[nextChordId];
-                nextChordVisualizer.renderChord(nextData.name, nextData, nextChordVisualizer.currentInversionIndex, currentVoicedForNext, currentNextLyric);
+                nextChordVisualizer.renderChord(nextData.name, nextData, nextChordVisualizer.currentInversionIndex, currentVoiced, currentNextLyric);
             } else {
                 nextChordVisualizer.renderChord('---', null, 0, null, null);
             }
         }
-    }
-
-    function getLyricForChordElement(chordEl) {
-        if (!chordEl) return null;
-        const parentLine = chordEl.closest('.lyric-line');
-        let lyricEl = parentLine ? parentLine.nextElementSibling : null;
-        return lyricEl ? lyricEl.textContent.trim() : null;
     }
 
     chordElements.forEach(el => {

@@ -57,160 +57,243 @@ document.addEventListener('DOMContentLoaded', () => {
         nextChordVisualizer.mount('next-chord-section');
     }
 
+    const keys = document.querySelectorAll('.key');
+    const chordTitle = document.getElementById('current-chord-name');
+    const notesContainer = document.getElementById('chord-notes-container');
     const chordElements = document.querySelectorAll('.chord');
-    const titleElement = document.getElementById('current-chord-name');
-    const pillsContainer = document.getElementById('chord-notes-container');
+
+    let currentTriadVoicingIndex = 0;
+    let currentTensionVoicingIndex = 0;
+    let currentDisplayedChordId = null;
+
+    const triadVoicingNames = ["Padrão", "1ª Inversão", "2ª Inversão"];
+    const tensionVoicingNames = ["Padrão", "Agudo (+8ª)", "Grave (-8ª)"];
+
+    const voicingTriadLabels = document.querySelectorAll('.voicing-triad-label');
+    const voicingTensionLabels = document.querySelectorAll('.voicing-tension-label');
+
+    const headerVoicingTriadBtn = document.getElementById('header-voicing-triad-btn');
+    const pianoVoicingTriadBtn = document.getElementById('piano-voicing-triad-btn');
+    const headerVoicingTensionBtn = document.getElementById('header-voicing-tension-btn');
+    const pianoVoicingTensionBtn = document.getElementById('piano-voicing-tension-btn');
+
+    function toggleTriadVoicing() {
+        currentTriadVoicingIndex = (currentTriadVoicingIndex + 1) % 3;
+        voicingTriadLabels.forEach(lbl => lbl.textContent = triadVoicingNames[currentTriadVoicingIndex]);
+        if (currentDisplayedChordId) showChord(currentDisplayedChordId, currentNextChordId);
+    }
+
+    function toggleTensionVoicing() {
+        currentTensionVoicingIndex = (currentTensionVoicingIndex + 1) % 3;
+        voicingTensionLabels.forEach(lbl => lbl.textContent = tensionVoicingNames[currentTensionVoicingIndex]);
+        if (currentDisplayedChordId) showChord(currentDisplayedChordId, currentNextChordId);
+    }
+
+    if (headerVoicingTriadBtn) headerVoicingTriadBtn.addEventListener('click', toggleTriadVoicing);
+    if (pianoVoicingTriadBtn) pianoVoicingTriadBtn.addEventListener('click', toggleTriadVoicing);
+    if (headerVoicingTensionBtn) headerVoicingTensionBtn.addEventListener('click', toggleTensionVoicing);
+    if (pianoVoicingTensionBtn) pianoVoicingTensionBtn.addEventListener('click', toggleTensionVoicing);
     
-    // Store all piano keys by note name
-    const keys = {};
-    document.querySelectorAll('.key').forEach(key => {
-        keys[key.dataset.note] = key;
+    let currentNextChordId = null;
+    let currentNextLyric = null;
+
+    function getLyricForChordElement(chordEl) {
+        if (!chordEl) return null;
+        let curr = chordEl.nextSibling;
+        while (curr) {
+            if (curr.nodeType === 1 && curr.classList.contains('lyric-line')) {
+                return curr.textContent.trim();
+            }
+            curr = curr.nextSibling;
+        }
+        return null;
+    }
+
+    const invButtons = document.querySelectorAll('#current-inversion-controls .inv-side-btn');
+    invButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            invButtons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            currentTriadVoicingIndex = parseInt(btn.getAttribute('data-inv'), 10) || 0;
+            voicingTriadLabels.forEach(lbl => lbl.textContent = triadVoicingNames[currentTriadVoicingIndex] || "Padrão");
+            if (currentDisplayedChordId) showChord(currentDisplayedChordId, currentNextChordId, currentNextLyric);
+        });
     });
 
     function resetPiano() {
-        document.querySelectorAll('.key.active').forEach(key => {
-            key.className = key.className.replace(/active|triad|seventh|ninth|alt/g, '').trim() + (key.dataset.note.includes('#') ? ' black' : ' white');
-            key.textContent = ''; // Remove the letter
+        document.querySelectorAll('.piano-keyboard .key').forEach(k => {
+            k.className = k.className.replace(/active|next-active|next-key|triad|seventh|ninth|alt/g, '').trim();
+            k.textContent = '';
         });
-        pillsContainer.innerHTML = '';
+        const notesContainer = document.getElementById('chord-notes-container');
+        const nextNotesContainer = document.getElementById('next-chord-notes-container');
+        if (notesContainer) notesContainer.innerHTML = '';
+        if (nextNotesContainer) nextNotesContainer.innerHTML = '';
         if (nextChordVisualizer) nextChordVisualizer.clearKeys();
-        titleElement.textContent = "Hover or scroll to play";
-        titleElement.style.opacity = '0.5';
     }
 
-    function showChord(chordName, nextChordName, nextLyric = null) {
-        const data = chordData[chordName];
+    function showChord(chordId, nextChordId, nextLyric = null) {
+        resetPiano();
+        const data = chordData[chordId];
         if (!data) return;
 
-        // Update Title
-        titleElement.textContent = data.name;
-        titleElement.style.opacity = '1';
+        currentDisplayedChordId = chordId;
+        currentNextChordId = nextChordId || null;
+        currentNextLyric = nextLyric || null;
         
-        // Clear old pills
-        pillsContainer.innerHTML = '';
+        const chordTitle = document.getElementById('current-chord-name');
+        const nextTitle = document.getElementById('next-chord-name');
+        const notesContainer = document.getElementById('chord-notes-container');
+        const nextNotesContainer = document.getElementById('next-chord-notes-container');
 
-        let currentVoicedForNext = [];
+        if (chordTitle) chordTitle.textContent = data.name;
 
-        // Light up piano keys and add the note letter on top of the key
-        data.notes.forEach((note, index) => {
-            const type = data.noteTypes ? data.noteTypes[index] : 'triad';
-            if (keys[note]) {
-                keys[note].classList.add('active', type);
-                keys[note].textContent = data.displayNotes[index]; // Shows the letter on the key
-            }
-            
-            // Create pill
-            const pill = document.createElement('span');
-            pill.className = `note-pill active ${type}`;
-            pill.textContent = data.displayNotes[index];
-            pillsContainer.appendChild(pill);
+        const noteMap = { 'C':0, 'C#':1, 'Db':1, 'D':2, 'D#':3, 'Eb':3, 'E':4, 'F':5, 'F#':6, 'Gb':6, 'G':7, 'G#':8, 'Ab':8, 'A':9, 'A#':10, 'Bb':10, 'B':11 };
+        const revMap = ['C','C#','D','D#','E','F','F#','G','G#','A','A#','B'];
 
-            currentVoicedForNext.push({
+        function noteToMidi(noteStr) {
+            const octave = parseInt(noteStr.slice(-1), 10);
+            const name = noteStr.slice(0, -1);
+            return (octave - 3) * 12 + noteMap[name];
+        }
+
+        function midiToNote(midi) {
+            const octave = Math.floor(midi / 12) + 3;
+            const name = revMap[midi % 12];
+            return `${name}${octave}`;
+        }
+
+        function computeVoicedNotes(cData) {
+            let items = cData.notes.map((note, index) => ({
                 note,
-                displayNote: data.displayNotes[index],
-                type
-            });
+                display: cData.displayNotes ? cData.displayNotes[index] : note.slice(0, -1),
+                type: cData.noteTypes ? (cData.noteTypes[index] || 'triad') : 'triad'
+            }));
+
+            let triadItems = items
+                .filter(it => it.type === 'triad')
+                .map(it => ({ ...it, midi: noteToMidi(it.note) }))
+                .sort((a, b) => a.midi - b.midi);
+
+            let tensionItems = items
+                .filter(it => it.type !== 'triad')
+                .map(it => ({ ...it, midi: noteToMidi(it.note) }))
+                .sort((a, b) => a.midi - b.midi);
+
+            for (let step = 0; step < currentTriadVoicingIndex && step < 3; step++) {
+                if (triadItems.length > 0) {
+                    const lowest = triadItems[0];
+                    if (lowest.midi + 12 <= 23) {
+                        triadItems = triadItems.slice(1).concat([{
+                            ...lowest,
+                            midi: lowest.midi + 12,
+                            note: midiToNote(lowest.midi + 12)
+                        }]);
+                    }
+                    triadItems.sort((a, b) => a.midi - b.midi);
+                }
+            }
+            if (currentTriadVoicingIndex === 3 && triadItems.length >= 3) {
+                const mid = triadItems[1];
+                if (mid.midi + 12 <= 23) {
+                    triadItems[1] = {
+                        ...mid,
+                        midi: mid.midi + 12,
+                        note: midiToNote(mid.midi + 12)
+                    };
+                }
+            }
+
+            if (currentTensionVoicingIndex === 1 && tensionItems.length > 0) {
+                tensionItems = tensionItems.map(item => {
+                    const nextMidi = item.midi + 12;
+                    return nextMidi <= 23 ? { ...item, midi: nextMidi, note: midiToNote(nextMidi) } : item;
+                });
+            } else if (currentTensionVoicingIndex === 2 && tensionItems.length > 0) {
+                tensionItems = tensionItems.map(item => {
+                    const prevMidi = item.midi - 12;
+                    return prevMidi >= 0 ? { ...item, midi: prevMidi, note: midiToNote(prevMidi) } : item;
+                });
+            }
+
+            return triadItems.concat(tensionItems);
+        }
+
+        const currentVoiced = computeVoicedNotes(data);
+        currentVoiced.forEach(item => {
+            const keyEl = document.querySelector(`#piano-current .key[data-note="${item.note}"]`);
+            if (keyEl) {
+                keyEl.classList.add('active', item.type);
+                keyEl.textContent = item.display;
+            }
         });
 
         if (nextChordVisualizer) {
-            if (nextChordName && chordData[nextChordName]) {
-                const nextData = chordData[nextChordName];
-                nextChordVisualizer.renderChord(nextData.name, nextData, nextChordVisualizer.currentInversionIndex, currentVoicedForNext, nextLyric);
+            if (nextChordId && chordData[nextChordId]) {
+                const nextData = chordData[nextChordId];
+                nextChordVisualizer.renderChord(nextData.name, nextData, nextChordVisualizer.currentInversionIndex, currentVoiced, currentNextLyric);
             } else {
                 nextChordVisualizer.renderChord('---', null, 0, null, null);
             }
         }
     }
 
-    // Karaoke Mode: Split lyrics into lines
-    const lyricsContent = document.getElementById('lyrics-content');
-    const rawLines = lyricsContent.innerHTML.split('\n');
-    let lastChord = null;
-
-    lyricsContent.innerHTML = rawLines.map(line => {
-        const tempDiv = document.createElement('div');
-        tempDiv.innerHTML = line;
-        const chordsInLine = tempDiv.querySelectorAll('.chord');
-        
-        if (chordsInLine.length > 0) {
-            lastChord = chordsInLine[0].dataset.chord;
-        }
-
-        return `<div class="lyric-line" data-associated-chord="${lastChord || ''}">${line}</div>`;
-    }).join('');
-
-    function getLyricForChordElement(chordEl) {
-        if (!chordEl) return null;
-        const parentLine = chordEl.closest('.lyric-line');
-        let lyricEl = parentLine ? parentLine.nextElementSibling : null;
-        return lyricEl ? lyricEl.textContent.trim() : null;
-    }
-
-    // Re-select chord elements if we want to keep hover (optional)
-    const newChordElements = document.querySelectorAll('.chord');
-    newChordElements.forEach(chord => {
-        chord.addEventListener('mouseenter', (e) => {
-            resetPiano();
-            const idxInSong = allChords.findIndex(c => c.element === chord);
+    chordElements.forEach(el => {
+        el.addEventListener('mouseenter', () => {
+            const cId = el.getAttribute('data-chord');
+            const idxInSong = allChords.findIndex(c => c.element === el);
             const nextItem = (idxInSong >= 0 && idxInSong < allChords.length - 1) ? allChords[idxInSong + 1] : null;
             const nextData = nextItem ? nextItem.chordName : null;
             const nextLyric = nextItem ? getLyricForChordElement(nextItem.element) : null;
-            showChord(e.target.dataset.chord, nextData, nextLyric);
+            showChord(cId, nextData, nextLyric);
+            if (typeof highlightRightPanelLyric === 'function') highlightRightPanelLyric(el);
         });
-        chord.addEventListener('mouseleave', () => {
-            // Wait for scroll to re-evaluate, or just reset
-            const activeLine = document.querySelector('.lyric-line.active-line');
-            if (activeLine && activeLine.dataset.associatedChord) {
-                resetPiano();
-                // This will not show next chord when hovering off, but scroll will immediately pick it up anyway.
-                showChord(activeLine.dataset.associatedChord, null, null);
-            } else {
-                resetPiano();
-            }
+
+        el.addEventListener('click', () => {
+            const cId = el.getAttribute('data-chord');
+            const idxInSong = allChords.findIndex(c => c.element === el);
+            const nextItem = (idxInSong >= 0 && idxInSong < allChords.length - 1) ? allChords[idxInSong + 1] : null;
+            const nextData = nextItem ? nextItem.chordName : null;
+            const nextLyric = nextItem ? getLyricForChordElement(nextItem.element) : null;
+            showChord(cId, nextData, nextLyric);
+            if (typeof highlightRightPanelLyric === 'function') highlightRightPanelLyric(el);
         });
     });
 
-    // Removed IntersectionObserver for text lines. Lyric highlighting is now driven by chords.
-
-    // Initialize with opacity 0.5
-    titleElement.style.opacity = '0.5';
-
-    // Advanced Chord Tracking (Sequential even on same line)
-    // We map all chords and assign them an 'effectiveY'.
-    // Chords on the left get a slightly smaller effectiveY, so they trigger first as we scroll down.
     let allChords = [];
     setTimeout(() => {
-        // Group chords by their vertical position (same line)
-        const chordsByLine = {};
-        Array.from(document.querySelectorAll('.chord')).forEach(chord => {
-            const rect = chord.getBoundingClientRect();
-            // Round to nearest 10 to ensure chords on the same visual line are grouped together
-            const absoluteTop = Math.round((rect.top + window.scrollY) / 10) * 10;
+        const chordElementsList = Array.from(document.querySelectorAll('.chord'));
+        let chordsByLine = {};
+        let lineTops = [];
+        
+        chordElementsList.forEach(el => {
+            const rect = el.getBoundingClientRect();
+            const exactTop = rect.top + window.scrollY;
+            const lineKey = Math.round(exactTop / 10) * 10;
             
-            if (!chordsByLine[absoluteTop]) chordsByLine[absoluteTop] = [];
-            chordsByLine[absoluteTop].push({
-                element: chord,
-                chordName: chord.dataset.chord,
-                absoluteLeft: rect.left + window.scrollX,
-                exactTop: rect.top + window.scrollY
+            if (!chordsByLine[lineKey]) {
+                chordsByLine[lineKey] = [];
+                lineTops.push(lineKey);
+            }
+            chordsByLine[lineKey].push({
+                element: el,
+                chordName: el.getAttribute('data-chord'),
+                exactTop: exactTop,
+                absoluteLeft: rect.left + window.scrollX
             });
         });
 
-        const lineTops = Object.keys(chordsByLine).map(Number).sort((a, b) => a - b);
-        
+        lineTops.sort((a, b) => a - b);
+
         for (let i = 0; i < lineTops.length; i++) {
             const currentTop = lineTops[i];
-            // Calculate available scroll space until the next chord line (default to 80px for the last line)
             const nextTop = i < lineTops.length - 1 ? lineTops[i+1] : currentTop + 80;
             const availableSpace = nextTop - currentTop; 
             
             const chords = chordsByLine[currentTop];
-            // Sort chords on this line from left to right
             chords.sort((a, b) => a.absoluteLeft - b.absoluteLeft);
             
             for (let j = 0; j < chords.length; j++) {
-                // Distribute chords evenly across the vertical scroll space between lines
-                // We multiply by 0.8 to ensure the last chord triggers a bit before the next line begins
                 const fraction = j / chords.length; 
                 const yOffset = fraction * availableSpace * 0.8; 
                 
@@ -222,12 +305,52 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
         allChords.sort((a, b) => a.effectiveY - b.effectiveY);
-        
-        // Trigger initial check so the first chord highlights immediately
         window.dispatchEvent(new Event('scroll'));
-    }, 500); // Wait a bit for layout to settle
+    }, 400);
 
-    let currentPlayingChord = null;
+    function highlightRightPanelLyric(activeChordEl) {
+        const displayChord = document.getElementById('active-display-chord');
+        const displayLyric = document.getElementById('active-display-lyric');
+        if (!activeChordEl || !displayChord || !displayLyric) return;
+
+        let lyricEl = null;
+        let curr = activeChordEl.nextSibling;
+        while (curr) {
+            if (curr.nodeType === 1 && curr.classList.contains('lyric-line')) {
+                lyricEl = curr;
+                break;
+            }
+            curr = curr.nextSibling;
+        }
+
+        const lyricText = lyricEl ? lyricEl.textContent.trim() : "Intro / Instrumental";
+        displayLyric.textContent = lyricText || "---";
+
+        const activeRect = activeChordEl.getBoundingClientRect();
+        const allChords = Array.from(document.querySelectorAll('.chord'));
+        const chordsOnLine = allChords.filter(c => {
+            const r = c.getBoundingClientRect();
+            return Math.abs(r.top - activeRect.top) < 28;
+        }).sort((a, b) => a.getBoundingClientRect().left - b.getBoundingClientRect().left);
+
+        if (chordsOnLine.length <= 1) {
+            displayChord.innerHTML = activeChordEl.textContent.trim();
+        } else {
+            const sequenceHtml = chordsOnLine.map(c => {
+                const name = c.textContent.trim();
+                const isActive = (c === activeChordEl);
+                if (isActive) {
+                    return `<span style="background: #fbbf24; color: #0f172a; padding: 3px 12px; border-radius: 8px; font-weight: 800; box-shadow: 0 0 15px rgba(251, 191, 36, 0.7); transform: scale(1.12); display: inline-block;">${name}</span>`;
+                } else {
+                    return `<span style="opacity: 0.5; font-weight: 600; padding: 2px 6px;">${name}</span>`;
+                }
+            }).join(`<span style="opacity: 0.35; margin: 0 6px;">→</span>`);
+            displayChord.innerHTML = sequenceHtml;
+        }
+
+    }
+
+    let currentPlayingChordEl = null;
     window.addEventListener('scroll', () => {
         if (allChords.length === 0) return;
         
@@ -235,7 +358,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (window.scrollY < 40) {
             activeChordData = allChords[0];
         } else {
-            const readingY = window.scrollY + 140;
+            const readingY = window.scrollY + 320;
             for (let i = 0; i < allChords.length; i++) {
                 if (readingY >= allChords[i].effectiveY) {
                     activeChordData = allChords[i];
@@ -245,13 +368,12 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
         
-        // If we haven't reached the first chord yet, default to the very first one
         if (!activeChordData && allChords.length > 0) {
             activeChordData = allChords[0];
         }
         
-        if (activeChordData && activeChordData.chordName !== currentPlayingChord) {
-            currentPlayingChord = activeChordData.chordName;
+        if (activeChordData && activeChordData.element !== currentPlayingChordEl) {
+            currentPlayingChordEl = activeChordData.element;
             resetPiano();
             const idxInSong = allChords.indexOf(activeChordData);
             const nextItem = (idxInSong >= 0 && idxInSong < allChords.length - 1) ? allChords[idxInSong + 1] : null;
@@ -259,69 +381,47 @@ document.addEventListener('DOMContentLoaded', () => {
             const nextLyric = nextItem ? getLyricForChordElement(nextItem.element) : null;
             showChord(activeChordData.chordName, nextData, nextLyric);
             
-            // Highlight chord
             document.querySelectorAll('.chord.active-chord').forEach(c => c.classList.remove('active-chord'));
             activeChordData.element.classList.add('active-chord');
 
-            // Highlight the lyric line corresponding to this chord
             document.querySelectorAll('.lyric-line.active-line').forEach(el => el.classList.remove('active-line'));
-            const parentLine = activeChordData.element.closest('.lyric-line');
-            
-            const displayChord = document.getElementById('active-display-chord');
-            const displayLyric = document.getElementById('active-display-lyric');
-            
-            if (parentLine) {
-                // Highlight the line right after the chord line (which contains the lyrics)
-                const lyricLine = parentLine.nextElementSibling;
-                if (lyricLine) {
-                    lyricLine.classList.add('active-line');
-                    displayChord.textContent = activeChordData.element.textContent;
-                    displayLyric.textContent = lyricLine.textContent.trim() || "---";
-                } else {
-                    displayChord.textContent = activeChordData.element.textContent;
-                    displayLyric.textContent = "---";
-                }
-            }
-        }
-    }, { passive: true });
-
-    // Keyboard Navigation for Chords
-    window.addEventListener('keydown', (e) => {
-        if (allChords.length === 0) return;
-        
-        if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
-            e.preventDefault(); // Prevent default browser scrolling
-            
-            const readingY = window.scrollY + window.innerHeight * 0.45;
-            let currentIndex = 0;
-            
-            // Find the currently active chord index
-            for (let i = 0; i < allChords.length; i++) {
-                if (readingY >= allChords[i].effectiveY - 2) { 
-                    currentIndex = i;
-                } else {
+            let curr = activeChordData.element.nextSibling;
+            while (curr) {
+                if (curr.nodeType === 1 && curr.classList.contains('lyric-line')) {
+                    curr.classList.add('active-line');
                     break;
                 }
+                curr = curr.nextSibling;
             }
-            
-            let nextIndex = currentIndex;
-            if (e.key === 'ArrowDown') {
-                nextIndex = Math.min(currentIndex + 1, allChords.length - 1);
-            } else if (e.key === 'ArrowUp') {
-                // If we are slightly past the current chord but still on it, going up should go to the previous one
-                // If we are exactly on it, going up goes to previous. 
-                nextIndex = Math.max(currentIndex - 1, 0);
-            }
-            
-            const targetY = allChords[nextIndex].effectiveY - window.innerHeight * 0.45 + 5;
-            window.scrollTo({
-                top: Math.max(0, targetY),
-                behavior: 'smooth'
-            });
+
+            highlightRightPanelLyric(activeChordData.element);
         }
     });
 
-    // Smooth Auto-scroll
+
+    // Keyboard Navigation for chords
+    document.addEventListener('keydown', (e) => {
+        if (typeof allChords === 'undefined' || allChords.length === 0) return;
+        
+        let currentIdx = allChords.findIndex(c => c.element === currentPlayingChordEl);
+        if (currentIdx === -1) currentIdx = 0;
+
+        if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
+            e.preventDefault();
+            if (currentIdx < allChords.length - 1) {
+                const nextY = allChords[currentIdx + 1].effectiveY - 319;
+                window.scrollTo({ top: nextY, behavior: 'auto' });
+            }
+        } else if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
+            e.preventDefault();
+            if (currentIdx > 0) {
+                const prevY = allChords[currentIdx - 1].effectiveY - 321;
+                window.scrollTo({ top: prevY, behavior: 'auto' });
+            }
+        }
+    });
+
+    // Auto-scroll logic
     const autoscrollBtn = document.getElementById('autoscroll-btn');
     const speedSlider = document.getElementById('speed-slider');
     const speedLabel = document.getElementById('speed-label');
@@ -331,7 +431,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let animationFrameId = null;
     let scrollAccumulator = 0;
 
-    // Update label when slider changes
     speedSlider.addEventListener('input', () => {
         const val = parseFloat(speedSlider.value);
         speedLabel.textContent = `Ajuste: ${val.toFixed(1)}x`;
@@ -340,18 +439,25 @@ document.addEventListener('DOMContentLoaded', () => {
     function autoScrollStep() {
         if (!isAutoScrolling) return;
         
-        // Stop cleanly if we reached the bottom of the page
-        if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) {
+        const allLyrics = document.querySelectorAll('.lyric-line');
+        const lastLyric = allLyrics.length > 0 ? allLyrics[allLyrics.length - 1] : null;
+        if (lastLyric) {
+            const rect = lastLyric.getBoundingClientRect();
+            if (rect.top <= 300) {
+                if (isAutoScrolling) {
+                    autoscrollBtn.click();
+                }
+                return;
+            }
+        } else if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) {
             if (isAutoScrolling) {
                 autoscrollBtn.click();
             }
             return;
         }
 
-        // Base speed for 100 BPM is 0.4 pixels per frame
         const bpmRatio = parseInt(bpmInput.value) / 100;
         const baseSpeed = 0.4 * bpmRatio;
-        
         const currentSpeed = parseFloat(speedSlider.value) * baseSpeed;
         scrollAccumulator += currentSpeed;
         
@@ -377,7 +483,6 @@ document.addEventListener('DOMContentLoaded', () => {
             cancelAnimationFrame(animationFrameId);
         }
     });
-
 });
 
 document.addEventListener('DOMContentLoaded', () => {

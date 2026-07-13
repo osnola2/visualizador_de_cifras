@@ -145,65 +145,81 @@
             });
         }
 
-        /**
-         * Calcula as notas vozeadas (oitavadas) para o próximo acorde.
-         */
         computeVoicedNotes(chordObj, inversionIndex = 0) {
             if (!chordObj || !chordObj.notes) return [];
-            const rawNotes = chordObj.notes;
-            const rawDisplayNotes = chordObj.displayNotes || rawNotes;
-            const rawNoteTypes = chordObj.noteTypes || rawNotes.map(() => 'triad');
-            const len = rawNotes.length;
 
-            let rotatedNotes = [...rawNotes];
-            let rotatedDisplayNotes = [...rawDisplayNotes];
-            let rotatedNoteTypes = [...rawNoteTypes];
+            const noteMap = { 'C':0, 'C#':1, 'Db':1, 'D':2, 'D#':3, 'Eb':3, 'E':4, 'F':5, 'F#':6, 'Gb':6, 'G':7, 'G#':8, 'Ab':8, 'A':9, 'A#':10, 'Bb':10, 'B':11 };
+            const revMap = ['C','C#','D','D#','E','F','F#','G','G#','A','A#','B'];
 
-            if (len >= 3) {
-                const shift = inversionIndex % len;
-                rotatedNotes = [
-                    ...rawNotes.slice(shift),
-                    ...rawNotes.slice(0, shift)
-                ];
-                rotatedDisplayNotes = [
-                    ...rawDisplayNotes.slice(shift),
-                    ...rawDisplayNotes.slice(0, shift)
-                ];
-                rotatedNoteTypes = [
-                    ...rawNoteTypes.slice(shift),
-                    ...rawNoteTypes.slice(0, shift)
-                ];
+            function noteToMidi(noteStr) {
+                const octave = parseInt(noteStr.slice(-1), 10);
+                const name = noteStr.slice(0, -1);
+                return (octave - 3) * 12 + noteMap[name];
             }
 
-            let voiced = [];
-            let currentOctave = 3;
-            let lastPitchClass = -1;
+            function midiToNote(midi) {
+                const octave = Math.floor(midi / 12) + 3;
+                const name = revMap[midi % 12];
+                return `${name}${octave}`;
+            }
 
-            rotatedNotes.forEach((noteName, idx) => {
-                const baseNote = noteName.replace(/[0-9]/g, '');
-                let pitchClass = CHROMATIC_SCALE.indexOf(baseNote);
+            let items = chordObj.notes.map((note, index) => ({
+                note,
+                displayNote: chordObj.displayNotes ? chordObj.displayNotes[index] : note.slice(0, -1),
+                type: chordObj.noteTypes ? (chordObj.noteTypes[index] || 'triad') : 'triad'
+            }));
 
-                if (pitchClass !== -1) {
-                    if (idx > 0 && pitchClass < lastPitchClass) {
-                        currentOctave++;
+            let triadItems = items
+                .filter(it => ['root', 'triad'].includes(it.type))
+                .map(it => ({ ...it, midi: noteToMidi(it.note) }))
+                .sort((a, b) => a.midi - b.midi);
+
+            let tensionItems = items
+                .filter(it => !['root', 'triad', 'bass'].includes(it.type))
+                .map(it => ({ ...it, midi: noteToMidi(it.note) }))
+                .sort((a, b) => a.midi - b.midi);
+                
+            let bassItems = items
+                .filter(it => it.type === 'bass')
+                .map(it => ({ ...it, midi: noteToMidi(it.note) }))
+                .sort((a, b) => a.midi - b.midi);
+
+            for (let step = 0; step < inversionIndex && step < 3; step++) {
+                if (triadItems.length > 0) {
+                    const lowest = triadItems[0];
+                    if (lowest.midi + 12 <= 23) {
+                        triadItems = triadItems.slice(1).concat([{
+                            ...lowest,
+                            midi: lowest.midi + 12,
+                            note: midiToNote(lowest.midi + 12)
+                        }]);
+                        triadItems.sort((a, b) => a.midi - b.midi);
+                    } else {
+                        const highest = triadItems[triadItems.length - 1];
+                        if (highest.midi - 12 >= 0) {
+                            triadItems = [{
+                                ...highest,
+                                midi: highest.midi - 12,
+                                note: midiToNote(highest.midi - 12)
+                            }].concat(triadItems.slice(0, -1));
+                            triadItems.sort((a, b) => a.midi - b.midi);
+                        }
                     }
-                    if (currentOctave > 4) currentOctave = 4;
-                    voiced.push({
-                        note: `${baseNote}${currentOctave}`,
-                        displayNote: rotatedDisplayNotes[idx] || baseNote,
-                        type: rotatedNoteTypes[idx] || 'triad'
-                    });
-                    lastPitchClass = pitchClass;
-                } else {
-                    voiced.push({
-                        note: noteName,
-                        displayNote: rotatedDisplayNotes[idx] || noteName,
-                        type: rotatedNoteTypes[idx] || 'triad'
-                    });
                 }
-            });
+            }
+            
+            if (inversionIndex === 3 && triadItems.length >= 3) {
+                const mid = triadItems[1];
+                if (mid.midi + 12 <= 23) {
+                    triadItems[1] = {
+                        ...mid,
+                        midi: mid.midi + 12,
+                        note: midiToNote(mid.midi + 12)
+                    };
+                }
+            }
 
-            return voiced;
+            return bassItems.concat(triadItems).concat(tensionItems);
         }
 
         /**
