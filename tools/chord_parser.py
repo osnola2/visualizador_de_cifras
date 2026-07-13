@@ -152,17 +152,21 @@ def parse_chord(chord_symbol):
     # 6. Build the final arrays
     sorted_intervals = sorted(list(intervals.keys()))
     
+    # Ensure the lowest note is at least C3 (absolute 0)
+    # so it renders on the 2-octave piano visualizer.
+    min_absolute_semitone = root_idx + sorted_intervals[0]
+    octave_shift = 1 if min_absolute_semitone < 0 else 0
+    
     notes_with_octave = []
     display_notes = []
     note_types = []
     
-    base_octave = 3
+    base_octave = 3 + octave_shift
     
     for interval in sorted_intervals:
         absolute_semitones = root_idx + interval
         
         # Calculate true octave taking negative intervals into account
-        # absolute_semitones can be negative
         octave = base_octave + (absolute_semitones // 12)
         note_name_display = get_note_name(absolute_semitones, use_flats)
         note_name_dom = get_note_name(absolute_semitones, False)

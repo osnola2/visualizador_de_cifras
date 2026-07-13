@@ -37,7 +37,7 @@ const chordData = {
     },
     "C/E": {
         name: "C/E",
-        notes: ["E2", "C3", "E3", "G3"],
+        notes: ["E3", "C4", "E4", "G4"],
         displayNotes: ["E", "C", "E", "G"],
         noteTypes: ["bass", "root", "triad", "triad"]
     },
@@ -49,13 +49,13 @@ const chordData = {
     },
     "D/E": {
         name: "D/E",
-        notes: ["E2", "D3", "F#3", "A3"],
+        notes: ["E3", "D4", "F#4", "A4"],
         displayNotes: ["E", "D", "F#", "A"],
         noteTypes: ["bass", "root", "triad", "triad"]
     },
     "D/F#": {
         name: "D/F#",
-        notes: ["F#2", "D3", "F#3", "A3"],
+        notes: ["F#3", "D4", "F#4", "A4"],
         displayNotes: ["F#", "D", "F#", "A"],
         noteTypes: ["bass", "root", "triad", "triad"]
     },
