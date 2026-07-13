@@ -229,3 +229,26 @@
     color: #000;
     box-shadow: 0 0 12px rgba(245, 158, 11, 0.65);
 }
+
+@media (max-width: 899px) {
+    .piano-keyboard {
+        height: 62px !important;
+        min-height: 62px !important;
+        max-height: 62px !important;
+        margin: 0.15rem auto !important;
+        padding: 4px 6px 6px 6px !important;
+    }
+    .inversion-column {
+        height: 62px !important;
+        min-height: 62px !important;
+        max-height: 62px !important;
+    }
+    .key {
+        padding-bottom: 2px !important;
+        font-size: 0.55rem !important;
+    }
+    .inv-side-btn {
+        padding: 1px 0 !important;
+        font-size: 0.6rem !important;
+    }
+}
