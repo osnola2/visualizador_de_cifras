@@ -476,9 +476,7 @@ function initViewer() {
             cancelAnimationFrame(animationFrameId);
         }
     });
-});
 
-document.addEventListener('DOMContentLoaded', () => {
 
     // Toggle Piano Logic
     const togglePianoBtn = document.getElementById('toggle-piano-btn');
