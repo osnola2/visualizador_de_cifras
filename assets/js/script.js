@@ -5,48 +5,32 @@ document.addEventListener('DOMContentLoaded', () => {
     const songId = urlParams.get('song');
 
     if (!songId) {
-        document.getElementById('song-title-el').textContent = 'Nenhuma música selecionada';
+        document.getElementById('song-title-el').textContent = 'Nenhuma musica selecionada';
         document.getElementById('song-artist-el').textContent = '';
         return;
     }
 
-    let isLoaded = false;
-    function loadSongData() {
-        if (isLoaded) return;
+    const scriptEl = document.createElement('script');
+    scriptEl.src = `data/songs/${songId}.js`;
+    scriptEl.onload = () => {
         if (!window.SONG_DATA) {
             document.getElementById('song-title-el').textContent = 'Erro ao carregar';
-            document.getElementById('song-artist-el').textContent = 'Dados da música não encontrados.';
+            document.getElementById('song-artist-el').textContent = 'Dados da musica nao encontrados.';
             return;
         }
-        isLoaded = true;
         const data = window.SONG_DATA;
         document.getElementById('song-title-el').textContent = data.title;
         document.getElementById('song-artist-el').textContent = data.artist;
         document.getElementById('lyrics-content').innerHTML = data.lyricsHtml;
-        chordData = data.chordData || {};
+        chordData = data.chordData;
         
         initViewer();
-    }
-
-    const scriptEl = document.createElement('script');
-    scriptEl.onload = loadSongData;
-    scriptEl.onerror = () => {
-        if (!isLoaded) {
-            document.getElementById('song-title-el').textContent = 'Erro ao carregar';
-            document.getElementById('song-artist-el').textContent = 'Arquivo da música não encontrado no catálogo.';
-        }
     };
-    scriptEl.src = `data/songs/${songId}.js`;
+    scriptEl.onerror = () => {
+        document.getElementById('song-title-el').textContent = 'Erro ao carregar';
+        document.getElementById('song-artist-el').textContent = 'Arquivo da musica nao encontrado no catalogo.';
+    };
     document.head.appendChild(scriptEl);
-
-    // Fallback de segurança para carregamento em protocolo file://
-    const checkInterval = setInterval(() => {
-        if (window.SONG_DATA && !isLoaded) {
-            clearInterval(checkInterval);
-            loadSongData();
-        }
-    }, 40);
-    setTimeout(() => clearInterval(checkInterval), 4000);
 });
 
 function initViewer() {
@@ -65,51 +49,6 @@ function initViewer() {
     let currentTriadVoicingIndex = 0;
     let currentTensionVoicingIndex = 0;
     let currentDisplayedChordId = null;
-    let currentNextChordId = null;
-    let currentNextLyric = null;
-    let currentInstrument = 'piano';
-
-    const btnPiano = document.getElementById('btn-inst-piano');
-    const btnGuitar = document.getElementById('btn-inst-guitar');
-    const pianoRow = document.getElementById('piano-view-row');
-    const guitarCurrentView = document.getElementById('guitar-current-view');
-    const nextPianoSection = document.getElementById('next-chord-section');
-    const guitarNextView = document.getElementById('guitar-next-view');
-
-    function setInstrument(inst) {
-        currentInstrument = inst;
-        if (btnPiano && btnGuitar) {
-            if (inst === 'piano') {
-                btnPiano.classList.add('active');
-                btnPiano.style.background = 'var(--primary)';
-                btnPiano.style.color = '#0f172a';
-                btnGuitar.classList.remove('active');
-                btnGuitar.style.background = 'transparent';
-                btnGuitar.style.color = '#cbd5e1';
-                if (pianoRow) pianoRow.style.display = 'flex';
-                if (nextPianoSection) nextPianoSection.style.display = 'block';
-                if (guitarCurrentView) guitarCurrentView.style.display = 'none';
-                if (guitarNextView) guitarNextView.style.display = 'none';
-            } else {
-                btnGuitar.classList.add('active');
-                btnGuitar.style.background = 'var(--primary)';
-                btnGuitar.style.color = '#0f172a';
-                btnPiano.classList.remove('active');
-                btnPiano.style.background = 'transparent';
-                btnPiano.style.color = '#cbd5e1';
-                if (pianoRow) pianoRow.style.display = 'none';
-                if (nextPianoSection) nextPianoSection.style.display = 'none';
-                if (guitarCurrentView) guitarCurrentView.style.display = 'block';
-                if (guitarNextView) guitarNextView.style.display = 'block';
-            }
-        }
-        if (currentDisplayedChordId) {
-            showChord(currentDisplayedChordId, currentNextChordId, currentNextLyric);
-        }
-    }
-
-    if (btnPiano) btnPiano.addEventListener('click', () => setInstrument('piano'));
-    if (btnGuitar) btnGuitar.addEventListener('click', () => setInstrument('guitar'));
 
     const triadVoicingNames = ["Padrão", "1ª Inversão", "2ª Inversão"];
     const tensionVoicingNames = ["Padrão", "Agudo (+8ª)", "Grave (-8ª)"];
@@ -311,29 +250,6 @@ function initViewer() {
                 nextChordVisualizer.renderChord(nextData.name, nextData, nextChordVisualizer.currentInversionIndex, currentVoiced, currentNextLyric);
             } else {
                 nextChordVisualizer.renderChord('---', null, 0, null, null);
-            }
-        }
-
-        if (window.GuitarChordVisualizer) {
-            const gCurrEl = document.getElementById('guitar-current-view');
-            const gNextEl = document.getElementById('guitar-next-view');
-            if (gCurrEl) {
-                gCurrEl.innerHTML = window.GuitarChordVisualizer.renderGuitarFretboardSVG(data.name);
-            }
-            if (gNextEl) {
-                if (nextChordId && chordData[nextChordId]) {
-                    const nextData = chordData[nextChordId];
-                    gNextEl.innerHTML = `
-                        <div style="display: flex; justify-content: center; align-items: center; margin: 0.2rem 0 0.2rem; gap: 8px;">
-                            <span style="font-size: 0.65rem; font-weight: 700; color: #38bdf8; letter-spacing: 0.5px; text-transform: uppercase;">🔵 Próximo:</span>
-                            <span style="font-size: 0.95rem; color: #fff; font-weight: 700;">${nextData.name}</span>
-                        </div>
-                        ${window.GuitarChordVisualizer.renderGuitarFretboardSVG(nextData.name)}
-                        ${nextLyric ? `<div style="text-align: center; font-size: 0.82rem; color: #cbd5e1; margin-top: 0.3rem; font-style: italic;">"${nextLyric}"</div>` : ''}
-                    `;
-                } else {
-                    gNextEl.innerHTML = '';
-                }
             }
         }
     }
