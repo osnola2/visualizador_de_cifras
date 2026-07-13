@@ -93,13 +93,13 @@
             }).join('');
 
             container.innerHTML = `
-                <div class="next-chord-header" style="text-align: center; margin-top: 0.8rem;">
-                    <span class="next-badge" style="background: rgba(245, 158, 11, 0.18); color: #f59e0b; border: 1px solid rgba(245, 158, 11, 0.4); padding: 0.25rem 0.8rem; border-radius: 12px; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase;">
-                        🟡 Próximo Acorde
+                <div class="next-chord-header" style="text-align: center; margin-top: 0.2rem; display: flex; justify-content: center; align-items: center; gap: 8px;">
+                    <span class="next-badge" style="background: rgba(245, 158, 11, 0.18); color: #f59e0b; border: 1px solid rgba(245, 158, 11, 0.4); padding: 0.15rem 0.5rem; border-radius: 8px; font-size: 0.65rem; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase;">
+                        🟡 Próx:
                     </span>
-                    <h3 id="${this.titleId}" style="margin: 0.35rem 0 0.15rem 0; color: #f59e0b; font-size: 1.15rem; font-weight: 800;">---</h3>
+                    <h3 id="${this.titleId}" style="margin: 0; color: #f59e0b; font-size: 1rem; font-weight: 800;">---</h3>
                 </div>
-                <div class="piano-row">
+                <div class="piano-row" style="margin-top: 0.2rem;">
                     <div id="${this.pianoId}" class="piano-keyboard">
                         ${keysHtml}
                     </div>

@@ -200,6 +200,7 @@ h2.song-artist {
     flex-direction: column;
     align-items: center;
     z-index: 100;
+    padding-bottom: 2rem !important; /* Ensure extra space at the bottom for scroll clearance */
 }
 
 .piano-keyboard {
