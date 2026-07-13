@@ -56,6 +56,8 @@ const chordData = {
 };
 
 
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const nextChordVisualizer = window.NextChordVisualizer
         ? new window.NextChordVisualizer({ containerId: 'next-chord-section' })
@@ -178,12 +180,17 @@ document.addEventListener('DOMContentLoaded', () => {
             }));
 
             let triadItems = items
-                .filter(it => it.type === 'triad')
+                .filter(it => ['root', 'triad'].includes(it.type))
                 .map(it => ({ ...it, midi: noteToMidi(it.note) }))
                 .sort((a, b) => a.midi - b.midi);
 
             let tensionItems = items
-                .filter(it => it.type !== 'triad')
+                .filter(it => !['root', 'triad', 'bass'].includes(it.type))
+                .map(it => ({ ...it, midi: noteToMidi(it.note) }))
+                .sort((a, b) => a.midi - b.midi);
+                
+            let bassItems = items
+                .filter(it => it.type === 'bass')
                 .map(it => ({ ...it, midi: noteToMidi(it.note) }))
                 .sort((a, b) => a.midi - b.midi);
 
@@ -196,8 +203,18 @@ document.addEventListener('DOMContentLoaded', () => {
                             midi: lowest.midi + 12,
                             note: midiToNote(lowest.midi + 12)
                         }]);
+                        triadItems.sort((a, b) => a.midi - b.midi);
+                    } else {
+                        const highest = triadItems[triadItems.length - 1];
+                        if (highest.midi - 12 >= 0) {
+                            triadItems = [{
+                                ...highest,
+                                midi: highest.midi - 12,
+                                note: midiToNote(highest.midi - 12)
+                            }].concat(triadItems.slice(0, -1));
+                            triadItems.sort((a, b) => a.midi - b.midi);
+                        }
                     }
-                    triadItems.sort((a, b) => a.midi - b.midi);
                 }
             }
             if (currentTriadVoicingIndex === 3 && triadItems.length >= 3) {
@@ -223,7 +240,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             }
 
-            return triadItems.concat(tensionItems);
+            return bassItems.concat(triadItems).concat(tensionItems);
         }
 
         const currentVoiced = computeVoicedNotes(data);
