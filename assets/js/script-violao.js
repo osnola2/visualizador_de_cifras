@@ -238,7 +238,7 @@ function initViolaoViewer() {
     });
 
     window.addEventListener('scroll', () => {
-        if (isAutoScrolling || allChords.length === 0) return;
+        if (allChords.length === 0) return;
         
         let activeChordData = null;
         if (window.scrollY < 40) {
@@ -283,6 +283,28 @@ function initViolaoViewer() {
         }
     });
 
+    // Keyboard Navigation for chords
+    document.addEventListener('keydown', (e) => {
+        if (typeof allChords === 'undefined' || allChords.length === 0) return;
+        
+        let currentIdx = allChords.findIndex(c => c.element === currentPlayingChordEl);
+        if (currentIdx === -1) currentIdx = 0;
+
+        if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
+            e.preventDefault();
+            if (currentIdx < allChords.length - 1) {
+                const nextY = allChords[currentIdx + 1].effectiveY - 319;
+                window.scrollTo({ top: nextY, behavior: 'auto' });
+            }
+        } else if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
+            e.preventDefault();
+            if (currentIdx > 0) {
+                const prevY = allChords[currentIdx - 1].effectiveY - 321;
+                window.scrollTo({ top: prevY, behavior: 'auto' });
+            }
+        }
+    });
+
     // Auto-scroll logic
     const autoscrollBtn = document.getElementById('autoscroll-btn');
     const speedSlider = document.getElementById('speed-slider');
@@ -314,56 +336,34 @@ function initViolaoViewer() {
     function autoScrollStep() {
         if (!isAutoScrolling) return;
 
-        const effectiveBpm = baseBpm * speedMultiplier;
-        const pixelsPerMinute = effectiveBpm * 15;
-        const pixelsPerSecond = pixelsPerMinute / 60;
-        const pixelsPerFrame = pixelsPerSecond / 60;
+        const allLyrics = document.querySelectorAll('.lyric-line');
+        const lastLyric = allLyrics.length > 0 ? allLyrics[allLyrics.length - 1] : null;
+        if (lastLyric) {
+            const rect = lastLyric.getBoundingClientRect();
+            if (rect.top <= 300) {
+                if (isAutoScrolling) {
+                    autoscrollBtn.click();
+                }
+                return;
+            }
+        } else if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) {
+            if (isAutoScrolling) {
+                autoscrollBtn.click();
+            }
+            return;
+        }
 
-        scrollAccumulator += pixelsPerFrame;
+        const effectiveBpm = bpmInput && !isNaN(parseInt(bpmInput.value)) ? parseInt(bpmInput.value) : baseBpm;
+        const bpmRatio = effectiveBpm / 100;
+        const baseSpeed = 0.4 * bpmRatio;
+        const currentSpeed = speedMultiplier * baseSpeed;
+
+        scrollAccumulator += currentSpeed;
 
         if (scrollAccumulator >= 1) {
             const pixels = Math.floor(scrollAccumulator);
             window.scrollBy({ top: pixels, behavior: 'instant' });
             scrollAccumulator -= pixels;
-        }
-
-        const viewportCenterY = window.innerHeight * 0.38;
-        let closestChordEl = null;
-        let minDistance = Infinity;
-
-        allChords.forEach((item) => {
-            const rect = item.element.getBoundingClientRect();
-            const elCenterY = rect.top + rect.height / 2;
-            const distance = Math.abs(elCenterY - viewportCenterY);
-
-            if (distance < minDistance) {
-                minDistance = distance;
-                closestChordEl = item.element;
-            }
-        });
-
-        if (closestChordEl && minDistance < 250 && closestChordEl !== currentPlayingChordEl) {
-            currentPlayingChordEl = closestChordEl;
-            chordElements.forEach(el => el.classList.remove('active-chord'));
-            closestChordEl.classList.add('active-chord');
-
-            const idxInSong = allChords.findIndex(c => c.element === closestChordEl);
-            const nextItem = (idxInSong >= 0 && idxInSong < allChords.length - 1) ? allChords[idxInSong + 1] : null;
-            const nextData = nextItem ? nextItem.chordName : null;
-            const nextLyric = nextItem ? getLyricForChordElement(nextItem.element) : null;
-
-            showChord(closestChordEl.getAttribute('data-chord'), nextData, nextLyric);
-            highlightRightPanelLyric(closestChordEl);
-
-            document.querySelectorAll('.lyric-line.active-line').forEach(el => el.classList.remove('active-line'));
-            let curr = closestChordEl.nextSibling;
-            while (curr) {
-                if (curr.nodeType === 1 && curr.classList.contains('lyric-line')) {
-                    curr.classList.add('active-line');
-                    break;
-                }
-                curr = curr.nextSibling;
-            }
         }
 
         animationFrameId = requestAnimationFrame(autoScrollStep);
