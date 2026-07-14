@@ -1,0 +1,98 @@
+window.SONG_DATA = {
+    "title": "Curvas do Rio",
+    "artist": "Elomar Figueira Melo",
+    "composer": "Elomar",
+    "lyricsHtml": "\n[Intro] <span class=\"chord\" data-chord=\"B\">B</span>  <span class=\"chord\" data-chord=\"C#\">C#</span>  <span class=\"chord\" data-chord=\"G#m\">G#m</span>\n\n            <span class=\"chord\" data-chord=\"B\">B</span>\n<span class=\"lyric-line\">Vô corrê trecho</span>\n                 <span class=\"chord\" data-chord=\"C#\">C#</span>              <span class=\"chord\" data-chord=\"G#m\">G#m</span>\n<span class=\"lyric-line\">Vô percurá u'a terra preu pudê trabaiá</span>\n            <span class=\"chord\" data-chord=\"B\">B</span>               <span class=\"chord\" data-chord=\"C#\">C#</span>\n<span class=\"lyric-line\">Pra vê se dêxo  essa minha pobre</span>\n               <span class=\"chord\" data-chord=\"D#m\">D#m</span>\n<span class=\"lyric-line\">Terra véia discansá</span>\n          <span class=\"chord\" data-chord=\"G#m\">G#m</span>        <span class=\"chord\" data-chord=\"C#\">C#</span>       <span class=\"chord\" data-chord=\"G#m\">G#m</span>\n<span class=\"lyric-line\">Foi na Monarca  a primeira dirrubada</span>\n         <span class=\"chord\" data-chord=\"D#m\">D#m</span>            <span class=\"chord\" data-chord=\"C#\">C#</span>           <span class=\"chord\" data-chord=\"D#m\">D#m</span>\n<span class=\"lyric-line\">Dêrna d'intão  é sol e fogo é tái d'inxada</span>\n     <span class=\"chord\" data-chord=\"B\">B</span>  <span class=\"chord\" data-chord=\"C#\">C#</span>         <span class=\"chord\" data-chord=\"G#m\">G#m</span>\n<span class=\"lyric-line\">Me ispera, assunta bem  inté</span>\n                     <span class=\"chord\" data-chord=\"F#\">F#</span>\n<span class=\"lyric-line\">A boca das água qui vem</span>\n    <span class=\"chord\" data-chord=\"G#m\">G#m</span>        <span class=\"chord\" data-chord=\"F#\">F#</span>    <span class=\"chord\" data-chord=\"G#m\">G#m</span>\n<span class=\"lyric-line\">Num chora, conforma muié</span>\n      <span class=\"chord\" data-chord=\"B\">B</span>       <span class=\"chord\" data-chord=\"F#\">F#</span>        <span class=\"chord\" data-chord=\"G#m\">G#m</span>\n<span class=\"lyric-line\">Eu volto se assim deus quisé</span>\n\n( <span class=\"chord\" data-chord=\"B\">B</span>  <span class=\"chord\" data-chord=\"F#\">F#</span>  <span class=\"chord\" data-chord=\"G#m\">G#m</span> )\n\n           <span class=\"chord\" data-chord=\"B\">B</span>\n<span class=\"lyric-line\">Tá um aperto  mais qui tempão</span>\n     <span class=\"chord\" data-chord=\"C#\">C#</span>                <span class=\"chord\" data-chord=\"G#m\">G#m</span>\n<span class=\"lyric-line\">De Deus no sertão catinguêro</span>\n            <span class=\"chord\" data-chord=\"B\">B</span>\n<span class=\"lyric-line\">Vô dea um fora  só dano um pulo agora</span>\n         <span class=\"chord\" data-chord=\"C#\">C#</span>           <span class=\"chord\" data-chord=\"D#m\">D#m</span>\n<span class=\"lyric-line\">In Son Palo Triâng' Minêro</span>\n        <span class=\"chord\" data-chord=\"G#m\">G#m</span>          <span class=\"chord\" data-chord=\"C#\">C#</span>         <span class=\"chord\" data-chord=\"G#m\">G#m</span>\n<span class=\"lyric-line\">É duro moço  esse mosquêro na cozinha</span>\n        <span class=\"chord\" data-chord=\"D#m\">D#m</span>       <span class=\"chord\" data-chord=\"C#\">C#</span>                   <span class=\"chord\" data-chord=\"D#m\">D#m</span>\n<span class=\"lyric-line\">A corda pua  e a cuia sem um grão de farinha</span>\n   <span class=\"chord\" data-chord=\"B\">B</span>  <span class=\"chord\" data-chord=\"C#\">C#</span>      <span class=\"chord\" data-chord=\"G#m\">G#m</span>                                   <span class=\"chord\" data-chord=\"F#\">F#</span>\n<span class=\"lyric-line\">A bença, afiloteus  te dêxo intregue nas guarda de Deus</span>\n     <span class=\"chord\" data-chord=\"G#m\">G#m</span>     <span class=\"chord\" data-chord=\"F#\">F#</span>   <span class=\"chord\" data-chord=\"G#m\">G#m</span>         <span class=\"chord\" data-chord=\"B\">B</span>  <span class=\"chord\" data-chord=\"F#\">F#</span>             <span class=\"chord\" data-chord=\"G#m\">G#m</span>\n<span class=\"lyric-line\">Nocênça, ai sôdade viu  Pai volta prás curva do rio</span>\n\n( <span class=\"chord\" data-chord=\"B\">B</span>  <span class=\"chord\" data-chord=\"F#\">F#</span>  <span class=\"chord\" data-chord=\"G#m\">G#m</span> )\n\n             <span class=\"chord\" data-chord=\"B\">B</span>\n<span class=\"lyric-line\">Ah mais cê veja  num me resta</span>\n             <span class=\"chord\" data-chord=\"C#\">C#</span>           <span class=\"chord\" data-chord=\"G#m\">G#m</span>\n<span class=\"lyric-line\">Mais creto prac um furnecimento</span>\n         <span class=\"chord\" data-chord=\"B\">B</span>                    <span class=\"chord\" data-chord=\"C#\">C#</span>\n<span class=\"lyric-line\">Só eu caino  nas mãos do véi Brolino</span>\n                  <span class=\"chord\" data-chord=\"D#m\">D#m</span>\n<span class=\"lyric-line\">Mêrmo a deis pur cento</span>\n        <span class=\"chord\" data-chord=\"G#m\">G#m</span>      <span class=\"chord\" data-chord=\"C#\">C#</span>             <span class=\"chord\" data-chord=\"G#m\">G#m</span>\n<span class=\"lyric-line\">É duro moço  retirá prum trecho alei</span>\n             <span class=\"chord\" data-chord=\"D#m\">D#m</span>            <span class=\"chord\" data-chord=\"C#\">C#</span>          <span class=\"chord\" data-chord=\"D#m\">D#m</span>\n<span class=\"lyric-line\">C'ua pele no osso e as alma nos bolso do véi</span>\n     <span class=\"chord\" data-chord=\"B\">B</span>  <span class=\"chord\" data-chord=\"C#\">C#</span>         <span class=\"chord\" data-chord=\"G#m\">G#m</span>                           <span class=\"chord\" data-chord=\"F#\">F#</span>\n<span class=\"lyric-line\">Me ispera, assunta viu  sô imbuzêro nas bêra do rio</span>\n   <span class=\"chord\" data-chord=\"G#m\">G#m</span>        <span class=\"chord\" data-chord=\"F#\">F#</span>      <span class=\"chord\" data-chord=\"G#m\">G#m</span>  <span class=\"chord\" data-chord=\"B\">B</span>             <span class=\"chord\" data-chord=\"F#\">F#</span>        <span class=\"chord\" data-chord=\"G#m\">G#m</span>\n<span class=\"lyric-line\">Conforma, num chora mulé  eu volto se assim Deus quisé</span>\n  <span class=\"chord\" data-chord=\"G#m\">G#m</span>        <span class=\"chord\" data-chord=\"F#\">F#</span>       <span class=\"chord\" data-chord=\"G#m\">G#m</span>       <span class=\"chord\" data-chord=\"B\">B</span>         <span class=\"chord\" data-chord=\"F#\">F#</span>   <span class=\"chord\" data-chord=\"G#m\">G#m</span>\n<span class=\"lyric-line\">Num dêxa o rancho vazio  eu volto prás curva do rio</span>\n\n[Final] <span class=\"chord\" data-chord=\"B\">B</span>  <span class=\"chord\" data-chord=\"F#\">F#</span>  <span class=\"chord\" data-chord=\"G#m\">G#m</span> \n",
+    "chordData": {
+        "B": {
+            "name": "B",
+            "notes": [
+                "B3",
+                "D#4",
+                "F#4"
+            ],
+            "displayNotes": [
+                "B",
+                "D#",
+                "F#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "C#": {
+            "name": "C#",
+            "notes": [
+                "C#3",
+                "F3",
+                "G#3"
+            ],
+            "displayNotes": [
+                "C#",
+                "F",
+                "G#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "D#m": {
+            "name": "D#m",
+            "notes": [
+                "D#3",
+                "F#3",
+                "A#3"
+            ],
+            "displayNotes": [
+                "D#",
+                "F#",
+                "A#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "F#": {
+            "name": "F#",
+            "notes": [
+                "F#3",
+                "A#3",
+                "C#4"
+            ],
+            "displayNotes": [
+                "F#",
+                "A#",
+                "C#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "G#m": {
+            "name": "G#m",
+            "notes": [
+                "G#3",
+                "B3",
+                "D#4"
+            ],
+            "displayNotes": [
+                "G#",
+                "B",
+                "D#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        }
+    }
+};
