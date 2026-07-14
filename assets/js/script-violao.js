@@ -27,7 +27,11 @@ document.addEventListener('DOMContentLoaded', () => {
         isLoaded = true;
         const data = window.SONG_DATA;
         document.getElementById('song-title-el').textContent = data.title;
-        document.getElementById('song-artist-el').textContent = data.artist;
+        if (data.composer && data.composer !== data.artist) {
+            document.getElementById('song-artist-el').innerHTML = `${data.artist} <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: ${data.composer})</span>`;
+        } else {
+            document.getElementById('song-artist-el').textContent = data.artist;
+        }
         document.getElementById('lyrics-content').innerHTML = data.lyricsHtml;
         chordData = data.chordData || {};
         

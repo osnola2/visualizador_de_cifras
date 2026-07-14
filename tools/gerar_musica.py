@@ -235,12 +235,12 @@ def fetch_and_parse(url):
     with open(js_path, "w", encoding="utf-8") as f:
         f.write("window.SONG_DATA = " + json.dumps(song_json, ensure_ascii=False, indent=4) + ";\n")
         
-    update_hub(song_title, song_artist, file_name)
+    update_hub(song_title, song_artist, file_name, song_composer)
     
     print(f"\n Successfully processed '{song_title}' by {song_artist}!")
     print(f" Saved data to: {json_path} and {js_path}")
 
-def update_hub(title, artist, file_name):
+def update_hub(title, artist, file_name, composer=""):
     if not os.path.exists(HUB_HTML):
         return
         
@@ -255,6 +255,7 @@ def update_hub(title, artist, file_name):
         f_name = match.group(1).strip()
         s_title = match.group(2).strip()
         s_artist = match.group(3).strip()
+        s_artist = re.sub(r'<[^>]+>', '', s_artist).strip()
         if f_name not in seen:
             seen.add(f_name)
             songs.append((f_name, s_title, s_artist))
@@ -269,9 +270,24 @@ def update_hub(title, artist, file_name):
     
     cards_html = []
     for f_name, s_title, s_artist in songs:
+        json_file = os.path.join(DATA_DIR, f"{f_name}.json")
+        s_composer = ""
+        if os.path.exists(json_file):
+            try:
+                with open(json_file, "r", encoding="utf-8") as jf:
+                    jdata = json.load(jf)
+                    s_artist = jdata.get("artist", s_artist)
+                    s_composer = jdata.get("composer", "")
+            except Exception:
+                pass
+        
+        display_artist = s_artist
+        if s_composer and s_composer != s_artist:
+            display_artist = f'{s_artist} <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: {s_composer})</span>'
+            
         cards_html.append(f'''            <a href="viewer.html?song={f_name}" class="song-link">
                 {s_title}
-                <span class="song-artist">{s_artist}</span>
+                <span class="song-artist">{display_artist}</span>
             </a>''')
             
     cards_block = "\n    \n".join(cards_html)
