@@ -1,0 +1,149 @@
+window.SONG_DATA = {
+    "title": "Na linha da mão",
+    "artist": "Lello Di Sarno",
+    "composer": "Lello Di Sarno",
+    "lyricsHtml": "\n       <span class=\"chord\" data-chord=\"Cm7\">Cm7</span>        <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>        <span class=\"chord\" data-chord=\"Cm7\">Cm7</span>       <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>\n<span class=\"lyric-line\">Não vai, não vou, não vai, não vou</span>\n   <span class=\"chord\" data-chord=\"Cm7\">Cm7</span>                                <span class=\"chord\" data-chord=\"Bb\">Bb</span>\n<span class=\"lyric-line\">Atrás da mandinga de quem saravá</span>\n<span class=\"chord\" data-chord=\"D7\">D7</span>                    <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>\n<span class=\"lyric-line\">Não gosta de amor</span>\n<span class=\"chord\" data-chord=\"Bb7\">Bb7</span>              <span class=\"chord\" data-chord=\"F\">F</span>   <span class=\"chord\" data-chord=\"Cm7\">Cm7</span>              <span class=\"chord\" data-chord=\"Bb\">Bb</span>\n<span class=\"lyric-line\">Nem ninguém vai me impedir</span>\n          <span class=\"chord\" data-chord=\"F7\">F7</span>                                <span class=\"chord\" data-chord=\"Bb\">Bb</span>\n<span class=\"lyric-line\">De fazer cafuné na minha nega neném</span>\n<span class=\"chord\" data-chord=\"D7\">D7</span>                           <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>\n<span class=\"lyric-line\">Cantar pra ela dormir</span>\n<span class=\"chord\" data-chord=\"F7\">F7</span>                                                                               <span class=\"chord\" data-chord=\"Bb\">Bb</span>\n<span class=\"lyric-line\">Vem que eu sou corpo fechado eu tenho sete vidas meu irmão</span>\n<span class=\"chord\" data-chord=\"F7\">F7</span>                                                                                <span class=\"chord\" data-chord=\"Bb\">Bb</span>\n<span class=\"lyric-line\">Vem que eu sou filho de Oxóssi neto da Dona Cida negrão</span>\n      <span class=\"chord\" data-chord=\"Bb7\">Bb7</span>                                 <span class=\"chord\" data-chord=\"F\">F</span>\n<span class=\"lyric-line\">A bença minha mãe Quelé, candomblé</span>\n               <span class=\"chord\" data-chord=\"Bb7\">Bb7</span>                              <span class=\"chord\" data-chord=\"F\">F</span>\n<span class=\"lyric-line\">Minha  raça tem samba no pé, ô mulher</span>\n<span class=\"chord\" data-chord=\"Cm7\">Cm7</span>                                          <span class=\"chord\" data-chord=\"D7\">D7</span>                           <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>\n<span class=\"lyric-line\">Vem que eu tenho a faca e ginga  na linha da mão</span>\n<span class=\"lyric-line\">(e a faca e a mandinga na linha da mão)</span>\n",
+    "chordData": {
+        "Bb": {
+            "name": "Bb",
+            "notes": [
+                "A#3",
+                "D4",
+                "F4"
+            ],
+            "displayNotes": [
+                "Bb",
+                "D",
+                "F"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Bb7": {
+            "name": "Bb7",
+            "notes": [
+                "A#3",
+                "D4",
+                "F4",
+                "G#4"
+            ],
+            "displayNotes": [
+                "Bb",
+                "D",
+                "F",
+                "Ab"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "Cm7": {
+            "name": "Cm7",
+            "notes": [
+                "C3",
+                "D#3",
+                "G3",
+                "A#3"
+            ],
+            "displayNotes": [
+                "C",
+                "D#",
+                "G",
+                "A#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "D7": {
+            "name": "D7",
+            "notes": [
+                "D3",
+                "F#3",
+                "A3",
+                "C4"
+            ],
+            "displayNotes": [
+                "D",
+                "F#",
+                "A",
+                "C"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "F": {
+            "name": "F",
+            "notes": [
+                "F3",
+                "A3",
+                "C4"
+            ],
+            "displayNotes": [
+                "F",
+                "A",
+                "C"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "F7": {
+            "name": "F7",
+            "notes": [
+                "F3",
+                "A3",
+                "C4",
+                "D#4"
+            ],
+            "displayNotes": [
+                "F",
+                "A",
+                "C",
+                "Eb"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "Gm7": {
+            "name": "Gm7",
+            "notes": [
+                "G3",
+                "A#3",
+                "D4",
+                "F4"
+            ],
+            "displayNotes": [
+                "G",
+                "A#",
+                "D",
+                "F"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        }
+    }
+};
