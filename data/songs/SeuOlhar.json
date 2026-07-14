@@ -1,0 +1,245 @@
+{
+    "title": "Seu Olhar",
+    "artist": "Ceumar",
+    "composer": "Arnaldo Antunes / Paulo Tatit",
+    "lyricsHtml": "\n[Intro] <span class=\"chord\" data-chord=\"D\">D</span>  <span class=\"chord\" data-chord=\"D/F#\">D/F#</span>  <span class=\"chord\" data-chord=\"G\">G</span> \n \n<span class=\"chord\" data-chord=\"D\">D</span>                   <span class=\"chord\" data-chord=\"A\">A</span>                <span class=\"chord\" data-chord=\"A/G\">A/G</span> \n<span class=\"lyric-line\">O seu olhar lá fora, o seu olhar no céu </span>\n<span class=\"chord\" data-chord=\"C#º\">C#º</span>           <span class=\"chord\" data-chord=\"F#7\">F#7</span> <span class=\"chord\" data-chord=\"G\">G</span>                <span class=\"chord\" data-chord=\"Gm6\">Gm6</span> \n<span class=\"lyric-line\">O seu olhar demora, o seu olhar no meu </span>\n<span class=\"chord\" data-chord=\"Bm\">Bm</span>      <span class=\"chord\" data-chord=\"Bm/Bb\">Bm/Bb</span>       <span class=\"chord\" data-chord=\"D/A\">D/A</span>     <span class=\"chord\" data-chord=\"E/G#\">E/G#</span> <span class=\"chord\" data-chord=\"D\">D</span>  <span class=\"chord\" data-chord=\"D/F#\">D/F#</span>    <span class=\"chord\" data-chord=\"Gm6\">Gm6</span> \n<span class=\"lyric-line\">O seu olhar, o seu olhar melhora, melhora o meu </span>\n<span class=\"chord\" data-chord=\"D\">D</span>                <span class=\"chord\" data-chord=\"A\">A</span>             <span class=\"chord\" data-chord=\"A/G\">A/G</span> \n<span class=\"lyric-line\">Onde a brasa mora e devora o breu </span>\n<span class=\"chord\" data-chord=\"C#º\">C#º</span>          <span class=\"chord\" data-chord=\"F#7\">F#7</span> <span class=\"chord\" data-chord=\"G\">G</span>                <span class=\"chord\" data-chord=\"Gm6\">Gm6</span> \n<span class=\"lyric-line\">Como a chuva molha o que se escondeu </span>\n<span class=\"chord\" data-chord=\"Bm\">Bm</span>      <span class=\"chord\" data-chord=\"Bm/Bb\">Bm/Bb</span>         <span class=\"chord\" data-chord=\"D/A\">D/A</span>    <span class=\"chord\" data-chord=\"E/G#\">E/G#</span>  <span class=\"chord\" data-chord=\"D\">D</span>  <span class=\"chord\" data-chord=\"D/F#\">D/F#</span>    <span class=\"chord\" data-chord=\"Gm6\">Gm6</span> \n<span class=\"lyric-line\">O seu olhar , o seu olhar melhora, melhora o meu </span>\n\n( <span class=\"chord\" data-chord=\"D\">D</span>  <span class=\"chord\" data-chord=\"D/F#\">D/F#</span>  <span class=\"chord\" data-chord=\"G\">G</span>  <span class=\"chord\" data-chord=\"Gm6\">Gm6</span> )\n( <span class=\"chord\" data-chord=\"D\">D</span>  <span class=\"chord\" data-chord=\"D/F#\">D/F#</span>  <span class=\"chord\" data-chord=\"G\">G</span>  <span class=\"chord\" data-chord=\"Gm6\">Gm6</span> )\n( <span class=\"chord\" data-chord=\"Bm\">Bm</span>  <span class=\"chord\" data-chord=\"Bm/Bb\">Bm/Bb</span>  <span class=\"chord\" data-chord=\"D/A\">D/A</span>  <span class=\"chord\" data-chord=\"E/G#\">E/G#</span> )\n\n<span class=\"chord\" data-chord=\"D\">D</span>                 <span class=\"chord\" data-chord=\"A\">A</span>                <span class=\"chord\" data-chord=\"A/G\">A/G</span> \n<span class=\"lyric-line\">O seu olhar agora, o seu olhar nasceu </span>\n<span class=\"chord\" data-chord=\"C#º\">C#º</span>             <span class=\"chord\" data-chord=\"F#7\">F#7</span>  <span class=\"chord\" data-chord=\"G\">G</span>               <span class=\"chord\" data-chord=\"Gm6\">Gm6</span> \n<span class=\"lyric-line\">O seu olhar me olha, o seu olhar é seu </span>\n<span class=\"chord\" data-chord=\"Bm\">Bm</span>      <span class=\"chord\" data-chord=\"Bm/Bb\">Bm/Bb</span>        <span class=\"chord\" data-chord=\"D/A\">D/A</span>     <span class=\"chord\" data-chord=\"E/G#\">E/G#</span> <span class=\"chord\" data-chord=\"D\">D</span>  <span class=\"chord\" data-chord=\"D/F#\">D/F#</span>    <span class=\"chord\" data-chord=\"Gm6\">Gm6</span> \n<span class=\"lyric-line\">O seu olhar, seu olhar melhora, melhora o meu</span>\n",
+    "chordData": {
+        "A": {
+            "name": "A",
+            "notes": [
+                "A3",
+                "C#4",
+                "E4"
+            ],
+            "displayNotes": [
+                "A",
+                "C#",
+                "E"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "A/G": {
+            "name": "A/G",
+            "notes": [
+                "G3",
+                "A3",
+                "C#4",
+                "E4"
+            ],
+            "displayNotes": [
+                "G",
+                "A",
+                "C#",
+                "E"
+            ],
+            "noteTypes": [
+                "bass",
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Bm": {
+            "name": "Bm",
+            "notes": [
+                "B3",
+                "D4",
+                "F#4"
+            ],
+            "displayNotes": [
+                "B",
+                "D",
+                "F#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Bm/Bb": {
+            "name": "Bm/Bb",
+            "notes": [
+                "A#3",
+                "B3",
+                "D4",
+                "F#4"
+            ],
+            "displayNotes": [
+                "A#",
+                "B",
+                "D",
+                "F#"
+            ],
+            "noteTypes": [
+                "bass",
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "C#º": {
+            "name": "C#º",
+            "notes": [
+                "C#3",
+                "E3",
+                "G3"
+            ],
+            "displayNotes": [
+                "C#",
+                "E",
+                "G"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "D": {
+            "name": "D",
+            "notes": [
+                "D3",
+                "F#3",
+                "A3"
+            ],
+            "displayNotes": [
+                "D",
+                "F#",
+                "A"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "D/A": {
+            "name": "D/A",
+            "notes": [
+                "A3",
+                "D4",
+                "F#4",
+                "A4"
+            ],
+            "displayNotes": [
+                "A",
+                "D",
+                "F#",
+                "A"
+            ],
+            "noteTypes": [
+                "bass",
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "D/F#": {
+            "name": "D/F#",
+            "notes": [
+                "F#3",
+                "D4",
+                "F#4",
+                "A4"
+            ],
+            "displayNotes": [
+                "F#",
+                "D",
+                "F#",
+                "A"
+            ],
+            "noteTypes": [
+                "bass",
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "E/G#": {
+            "name": "E/G#",
+            "notes": [
+                "G#3",
+                "E4",
+                "G#4",
+                "B4"
+            ],
+            "displayNotes": [
+                "G#",
+                "E",
+                "G#",
+                "B"
+            ],
+            "noteTypes": [
+                "bass",
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "F#7": {
+            "name": "F#7",
+            "notes": [
+                "F#3",
+                "A#3",
+                "C#4",
+                "E4"
+            ],
+            "displayNotes": [
+                "F#",
+                "A#",
+                "C#",
+                "E"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "G": {
+            "name": "G",
+            "notes": [
+                "G3",
+                "B3",
+                "D4"
+            ],
+            "displayNotes": [
+                "G",
+                "B",
+                "D"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Gm6": {
+            "name": "Gm6",
+            "notes": [
+                "G3",
+                "A#3",
+                "D4",
+                "E4"
+            ],
+            "displayNotes": [
+                "G",
+                "A#",
+                "D",
+                "E"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        }
+    }
+}
