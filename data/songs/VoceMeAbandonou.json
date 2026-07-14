@@ -1,0 +1,185 @@
+{
+    "title": "Você me abandonou",
+    "artist": "Velha Guarda Da Portela",
+    "composer": "Alberto Lonato",
+    "lyricsHtml": "\n    <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">Você me abandonou</span>\n  <span class=\"chord\" data-chord=\"F\">F</span>    <span class=\"chord\" data-chord=\"E7\">E7</span>                     <span class=\"chord\" data-chord=\"Am\">Am</span>\n<span class=\"lyric-line\">Ô ô eu não vou chorar</span>\n<span class=\"chord\" data-chord=\"Dm\">Dm</span>               <span class=\"chord\" data-chord=\"G7\">G7</span>         <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">Mas hei de me vingar</span>\n                         <span class=\"chord\" data-chord=\"F\">F</span>\n<span class=\"lyric-line\">Não vou te ferir</span>\n<span class=\"lyric-line\">              G7                     C   C#°</span>\n<span class=\"lyric-line\">Eu não vou te envenenar</span>\n         <span class=\"chord\" data-chord=\"Dm\">Dm</span>                            <span class=\"chord\" data-chord=\"A7\">A7</span>               <span class=\"chord\" data-chord=\"Dm\">Dm</span>\n<span class=\"lyric-line\">O castigo que eu vou te dar é o desprezo</span>\n<span class=\"lyric-line\">G7                             C    (C#°)</span>\n<span class=\"lyric-line\">    Eu te mato devagar</span>\n          <span class=\"chord\" data-chord=\"Dm\">Dm</span>                  <span class=\"chord\" data-chord=\"G7\">G7</span>             <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">O desprezo é uma arma perigosa</span>\n    <span class=\"chord\" data-chord=\"Bm7/5-\">Bm7/5-</span>                 <span class=\"chord\" data-chord=\"E7\">E7</span>            <span class=\"chord\" data-chord=\"Am\">Am</span>\n<span class=\"lyric-line\">É pior do que uma seta venenosa</span>\n           <span class=\"chord\" data-chord=\"F\">F</span>                   <span class=\"chord\" data-chord=\"G7\">G7</span>                    <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">O desprezo para quem sabe sentir</span>\n                <span class=\"chord\" data-chord=\"A7\">A7</span>                 <span class=\"chord\" data-chord=\"D7\">D7</span>\n<span class=\"lyric-line\">Muitas vezes faz chorar</span>\n              <span class=\"chord\" data-chord=\"G7\">G7</span>                  <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">Outras vezes faz sorrir</span>\n",
+    "chordData": {
+        "A7": {
+            "name": "A7",
+            "notes": [
+                "A3",
+                "C#4",
+                "E4",
+                "G4"
+            ],
+            "displayNotes": [
+                "A",
+                "C#",
+                "E",
+                "G"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "Am": {
+            "name": "Am",
+            "notes": [
+                "A3",
+                "C4",
+                "E4"
+            ],
+            "displayNotes": [
+                "A",
+                "C",
+                "E"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Bm7/5-": {
+            "name": "Bm7/5-",
+            "notes": [
+                "B3",
+                "D4",
+                "F4",
+                "A4"
+            ],
+            "displayNotes": [
+                "B",
+                "D",
+                "F",
+                "A"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "C": {
+            "name": "C",
+            "notes": [
+                "C3",
+                "E3",
+                "G3"
+            ],
+            "displayNotes": [
+                "C",
+                "E",
+                "G"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "D7": {
+            "name": "D7",
+            "notes": [
+                "D3",
+                "F#3",
+                "A3",
+                "C4"
+            ],
+            "displayNotes": [
+                "D",
+                "F#",
+                "A",
+                "C"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "Dm": {
+            "name": "Dm",
+            "notes": [
+                "D3",
+                "F3",
+                "A3"
+            ],
+            "displayNotes": [
+                "D",
+                "F",
+                "A"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "E7": {
+            "name": "E7",
+            "notes": [
+                "E3",
+                "G#3",
+                "B3",
+                "D4"
+            ],
+            "displayNotes": [
+                "E",
+                "G#",
+                "B",
+                "D"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "F": {
+            "name": "F",
+            "notes": [
+                "F3",
+                "A3",
+                "C4"
+            ],
+            "displayNotes": [
+                "F",
+                "A",
+                "C"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "G7": {
+            "name": "G7",
+            "notes": [
+                "G3",
+                "B3",
+                "D4",
+                "F4"
+            ],
+            "displayNotes": [
+                "G",
+                "B",
+                "D",
+                "F"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        }
+    }
+}
