@@ -1,0 +1,227 @@
+window.SONG_DATA = {
+    "title": "Favela",
+    "artist": "Padeirinho",
+    "composer": "Padeirinho/Jorginho Pessanha",
+    "lyricsHtml": "\n<span class=\"chord\" data-chord=\"Am\">Am</span>       <span class=\"chord\" data-chord=\"E7\">E7</span>             <span class=\"chord\" data-chord=\"Am\">Am</span>             <span class=\"chord\" data-chord=\"E7\">E7</span>                    <span class=\"chord\" data-chord=\"Am\">Am</span>\n<span class=\"lyric-line\">Numa vasta extensão onde não há plantação</span>\n                  <span class=\"chord\" data-chord=\"F7\">F7</span>                     <span class=\"chord\" data-chord=\"E7\">E7</span>    <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">Nem ninguém morando lá</span>\n<span class=\"chord\" data-chord=\"Dm\">Dm</span>     <span class=\"chord\" data-chord=\"G7\">G7</span>                     <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">Cada um pobre que passa por ali</span>\n      <span class=\"chord\" data-chord=\"B7\">B7</span>                                      <span class=\"chord\" data-chord=\"E7\">E7</span>\n<span class=\"lyric-line\">Só pensa em construir seu lar</span>\n\n     <span class=\"chord\" data-chord=\"Am\">Am</span>                               <span class=\"chord\" data-chord=\"G7\">G7</span>\n<span class=\"lyric-line\">E quando o primeiro começa</span>\n                        <span class=\"chord\" data-chord=\"Am\">Am</span>                             <span class=\"chord\" data-chord=\"C7\">C7</span>\n<span class=\"lyric-line\">Os outros depressa procuram marcar</span>\n<span class=\"lyric-line\">F7                             E7               Am   1ªE7  2ªA7</span>\n<span class=\"lyric-line\">Seu pedacinho de terra pra morar</span>\n\n<span class=\"chord\" data-chord=\"Dm\">Dm</span> <span class=\"chord\" data-chord=\"G7\">G7</span>            <span class=\"chord\" data-chord=\"C\">C</span>                  <span class=\"chord\" data-chord=\"C7\">C7</span>         <span class=\"chord\" data-chord=\"F\">F</span>\n<span class=\"lyric-line\">E assim a região sofre modificação</span>\n                                                               <span class=\"chord\" data-chord=\"E7\">E7</span>    <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">Fica sendo chamada de Nova Aquarela</span>\n<span class=\"chord\" data-chord=\"Dm\">Dm</span> <span class=\"chord\" data-chord=\"E7\">E7</span>        <span class=\"chord\" data-chord=\"Am\">Am</span>               <span class=\"chord\" data-chord=\"C7\">C7</span>                    <span class=\"chord\" data-chord=\"Bb7\">Bb7</span> <span class=\"chord\" data-chord=\"E7\">E7</span> <span class=\"chord\" data-chord=\"Am\">Am</span>\n<span class=\"lyric-line\">É ai que o lugar então passa a se chamar favela</span>\n",
+    "chordData": {
+        "A7": {
+            "name": "A7",
+            "notes": [
+                "A3",
+                "C#4",
+                "E4",
+                "G4"
+            ],
+            "displayNotes": [
+                "A",
+                "C#",
+                "E",
+                "G"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "Am": {
+            "name": "Am",
+            "notes": [
+                "A3",
+                "C4",
+                "E4"
+            ],
+            "displayNotes": [
+                "A",
+                "C",
+                "E"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "B7": {
+            "name": "B7",
+            "notes": [
+                "B3",
+                "D#4",
+                "F#4",
+                "A4"
+            ],
+            "displayNotes": [
+                "B",
+                "D#",
+                "F#",
+                "A"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "Bb7": {
+            "name": "Bb7",
+            "notes": [
+                "A#3",
+                "D4",
+                "F4",
+                "G#4"
+            ],
+            "displayNotes": [
+                "Bb",
+                "D",
+                "F",
+                "Ab"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "C": {
+            "name": "C",
+            "notes": [
+                "C3",
+                "E3",
+                "G3"
+            ],
+            "displayNotes": [
+                "C",
+                "E",
+                "G"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "C7": {
+            "name": "C7",
+            "notes": [
+                "C3",
+                "E3",
+                "G3",
+                "A#3"
+            ],
+            "displayNotes": [
+                "C",
+                "E",
+                "G",
+                "A#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "Dm": {
+            "name": "Dm",
+            "notes": [
+                "D3",
+                "F3",
+                "A3"
+            ],
+            "displayNotes": [
+                "D",
+                "F",
+                "A"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "E7": {
+            "name": "E7",
+            "notes": [
+                "E3",
+                "G#3",
+                "B3",
+                "D4"
+            ],
+            "displayNotes": [
+                "E",
+                "G#",
+                "B",
+                "D"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "F": {
+            "name": "F",
+            "notes": [
+                "F3",
+                "A3",
+                "C4"
+            ],
+            "displayNotes": [
+                "F",
+                "A",
+                "C"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "F7": {
+            "name": "F7",
+            "notes": [
+                "F3",
+                "A3",
+                "C4",
+                "D#4"
+            ],
+            "displayNotes": [
+                "F",
+                "A",
+                "C",
+                "Eb"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "G7": {
+            "name": "G7",
+            "notes": [
+                "G3",
+                "B3",
+                "D4",
+                "F4"
+            ],
+            "displayNotes": [
+                "G",
+                "B",
+                "D",
+                "F"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        }
+    }
+};
