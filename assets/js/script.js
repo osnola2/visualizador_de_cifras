@@ -241,7 +241,13 @@ function initViewer() {
                 });
             }
 
-            return bassItems.concat(triadItems).concat(tensionItems);
+            const allItems = bassItems.concat(triadItems).concat(tensionItems);
+            return allItems.map(item => {
+                let m = item.midi;
+                while (m < 0) m += 12;
+                while (m > 23) m -= 12;
+                return { ...item, midi: m, note: midiToNote(m) };
+            });
         }
 
         const currentVoiced = computeVoicedNotes(data);
