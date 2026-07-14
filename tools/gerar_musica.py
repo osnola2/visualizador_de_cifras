@@ -138,7 +138,8 @@ def fetch_jina_markdown(url):
         return None
 
     tab_content = code_match.group(1)
-    return parse_plaintext_tab(tab_content, song_title, song_artist)
+    t, a, l, c = parse_plaintext_tab(tab_content, song_title, song_artist)
+    return t, a, "", l, c
 
 def fetch_and_parse(url):
     print(f"Fetching {url} ...")
@@ -149,7 +150,7 @@ def fetch_and_parse(url):
         if not result:
             print("Failed to extract tab from Ultimate Guitar.")
             return
-        song_title, song_artist, lyrics_content, chord_data = result
+        song_title, song_artist, song_composer, lyrics_content, chord_data = result
     else:
         req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
         try:
@@ -160,7 +161,7 @@ def fetch_and_parse(url):
             result = fetch_jina_markdown(url)
             if not result:
                 return
-            song_title, song_artist, lyrics_content, chord_data = result
+            song_title, song_artist, song_composer, lyrics_content, chord_data = result
             html = None
 
         if html is not None:
@@ -169,6 +170,9 @@ def fetch_and_parse(url):
             
             song_title = title_match.group(1).strip() if title_match else "Unknown Title"
             song_artist = artist_match.group(1).strip() if artist_match else "Unknown Artist"
+            
+            composer_match = re.search(r'<p class="cifra-composer">.*?de\s*(.*?)(?:\.|<a)', html, re.IGNORECASE)
+            song_composer = composer_match.group(1).strip() if composer_match else ""
             
             pre_match = re.search(r'<pre>(.*?)</pre>', html, re.DOTALL | re.IGNORECASE)
             if not pre_match:
@@ -220,6 +224,7 @@ def fetch_and_parse(url):
     song_json = {
         "title": song_title,
         "artist": song_artist,
+        "composer": song_composer,
         "lyricsHtml": "\n" + lyrics_content + "\n",
         "chordData": chord_data
     }
