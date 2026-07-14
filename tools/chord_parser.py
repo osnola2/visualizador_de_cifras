@@ -56,7 +56,7 @@ def parse_chord(chord_symbol):
     if 'dim' in suffix or 'º' in suffix or '°' in suffix:
         is_dim = True
         is_minor = True
-    if 'aug' in suffix or '+' in suffix and '11+' not in suffix and '9+' not in suffix:
+    if 'aug' in suffix or ('+' in suffix and '7+' not in suffix and '+7' not in suffix and '11+' not in suffix and '9+' not in suffix):
         is_aug = True
     if ('sus4' in suffix or ('sus' in suffix and 'sus2' not in suffix) or
         '(4/' in suffix or '(4)' in suffix or '/4' in suffix or suffix.startswith('4/')):
@@ -75,16 +75,16 @@ def parse_chord(chord_symbol):
         intervals[4] = 'triad' # Maj 3rd
         
     # Fifths
-    if is_dim or 'b5' in suffix:
+    if is_dim or 'b5' in suffix or '5-' in suffix or '5b' in suffix:
         intervals[6] = 'triad' # Dim 5th
-    elif is_aug or '#5' in suffix or '5+' in suffix:
+    elif (is_aug and '7+' not in suffix and '+7' not in suffix) or '#5' in suffix or '5+' in suffix:
         intervals[8] = 'triad' # Aug 5th
     else:
         intervals[7] = 'triad' # Perf 5th
 
     # 4. Analyze Sevenths & Extensions
     # Sevenths and Sixths
-    if 'maj7' in suffix or 'M7' in suffix or '7M' in suffix:
+    if 'maj7' in suffix or 'M7' in suffix or '7M' in suffix or '7+' in suffix or '+7' in suffix:
         intervals[11] = 'seventh'
     elif '6' in suffix:
         intervals[9] = 'seventh' # Treat 6th as the 7th block for coloring
