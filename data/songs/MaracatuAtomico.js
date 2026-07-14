@@ -1,0 +1,137 @@
+window.SONG_DATA = {
+    "title": "Maracatu Atômico",
+    "artist": "Gilberto Gil",
+    "composer": "Jorge Mautner / Nelson Jacobina",
+    "lyricsHtml": "\n[Intro] <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>  <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>\n\n<span class=\"chord\" data-chord=\"Gm7\">Gm7</span>  <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>  <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>  <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>\n<span class=\"lyric-line\">       Manamaué ô</span>\n<span class=\"chord\" data-chord=\"Gm7\">Gm7</span>  <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>  <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>  <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>\n<span class=\"lyric-line\">       Manamaué ô</span>\n<span class=\"chord\" data-chord=\"Gm7\">Gm7</span>  <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>  <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>  <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>\n<span class=\"lyric-line\">       Manamaué ô</span>\n<span class=\"chord\" data-chord=\"Gm7\">Gm7</span>  <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>  <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>  <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span> <span class=\"chord\" data-chord=\"Gm7\">Gm7</span> <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>\n<span class=\"lyric-line\">       Manamaué ô</span>\n\n<span class=\"chord\" data-chord=\"Gm7\">Gm7</span>             <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>      <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>        <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>\n<span class=\"lyric-line\">Atrás do arranha-céu tem o céu, tem o céu</span>\n     <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>          <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>     <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>   <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>\n<span class=\"lyric-line\">E depois tem outro céu sem estrelas</span>\n    <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>           <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>       <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>         <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>\n<span class=\"lyric-line\">Em cima do guarda-chuva tem a chuva, tem a chuva</span>\n    <span class=\"chord\" data-chord=\"Em7(5-)\">Em7(5-)</span> <span class=\"chord\" data-chord=\"A7\">A7</span>      <span class=\"chord\" data-chord=\"Dm7\">Dm7</span>                  <span class=\"chord\" data-chord=\"Bb7M\">Bb7M</span>      <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>\n<span class=\"lyric-line\">Que tem   gotas tão lindas que até dá vontade de comê-las</span>\n\n<span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>  <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>  <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>\n<span class=\"lyric-line\">  Manamaué ô</span>\n<span class=\"chord\" data-chord=\"Gm7\">Gm7</span>  <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>  <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>  <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>\n<span class=\"lyric-line\">       Manamaué ô</span>\n<span class=\"chord\" data-chord=\"Gm7\">Gm7</span>  <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>  <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>  <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>\n<span class=\"lyric-line\">       Manamaué ô</span>\n<span class=\"chord\" data-chord=\"Gm7\">Gm7</span>  <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>  <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>  <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span> <span class=\"chord\" data-chord=\"Gm7\">Gm7</span> <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>\n<span class=\"lyric-line\">       Manamaué ô</span>\n\n   <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>           <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>      <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>        <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>\n<span class=\"lyric-line\">No meio do couve-flor tem a flor, tem a flor</span>\n     <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>           <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>      <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>        <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>\n<span class=\"lyric-line\">Que além de ser uma flor tem sabor</span>\n<span class=\"chord\" data-chord=\"Gm7\">Gm7</span>             <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>      <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>        <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>\n<span class=\"lyric-line\">Dentro do porta-luvas tem a luva, tem a luva</span>\n        <span class=\"chord\" data-chord=\"Em7(5-)\">Em7(5-)</span> <span class=\"chord\" data-chord=\"A7\">A7</span>    <span class=\"chord\" data-chord=\"Dm7\">Dm7</span>             <span class=\"chord\" data-chord=\"Bb7M\">Bb7M</span>        <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>\n<span class=\"lyric-line\">Que alguém de  unhas negras e tão afiadas se esqueceu de por</span>\n\n<span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>  <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>  <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>\n<span class=\"lyric-line\">  Manamaué ô</span>\n<span class=\"chord\" data-chord=\"Gm7\">Gm7</span>  <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>  <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>  <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>\n<span class=\"lyric-line\">       Manamaué ô</span>\n<span class=\"chord\" data-chord=\"Gm7\">Gm7</span>  <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>  <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>  <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>\n<span class=\"lyric-line\">       Manamaué ô</span>\n<span class=\"chord\" data-chord=\"Gm7\">Gm7</span>  <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>  <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>  <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span> <span class=\"chord\" data-chord=\"Gm7\">Gm7</span> <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>\n<span class=\"lyric-line\">       Manamaué ô</span>\n\n   <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>           <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>      <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>        <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>\n<span class=\"lyric-line\">No fundo do pára-raio tem o raio, tem o raio</span>\n     <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>         <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>          <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>        <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>\n<span class=\"lyric-line\">Que caiu da nuvem negra do temporal</span>\n<span class=\"chord\" data-chord=\"Gm7\">Gm7</span>         <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>        <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>         <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>\n<span class=\"lyric-line\">Todo quadro-negro é todo negro é todo negro</span>\n      <span class=\"chord\" data-chord=\"Em7(5-)\">Em7(5-)</span>    <span class=\"chord\" data-chord=\"A7\">A7</span>   <span class=\"chord\" data-chord=\"Dm7\">Dm7</span>             <span class=\"chord\" data-chord=\"Bb7M\">Bb7M</span>      <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>\n<span class=\"lyric-line\">Eu escrevo seu nome nele só pra demonstrar o meu apego</span>\n\n<span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>  <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>  <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>\n<span class=\"lyric-line\">  Manamaué ô</span>\n<span class=\"chord\" data-chord=\"Gm7\">Gm7</span>  <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>  <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>  <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>\n<span class=\"lyric-line\">       Manamaué ô</span>\n<span class=\"chord\" data-chord=\"Gm7\">Gm7</span>  <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>  <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>  <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>\n<span class=\"lyric-line\">       Manamaué ô</span>\n<span class=\"chord\" data-chord=\"Gm7\">Gm7</span>  <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>  <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>  <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span> <span class=\"chord\" data-chord=\"Gm7\">Gm7</span> <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>\n<span class=\"lyric-line\">       Manamaué ô</span>\n\n  <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>           <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>        <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>        <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>\n<span class=\"lyric-line\">O bico do beija-flor, beija-flor, beija-flor</span>\n  <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>        <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>            <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>        <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>\n<span class=\"lyric-line\">E toda fauna flora grita de amor</span>\n       <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>           <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>           <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>        <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>\n<span class=\"lyric-line\">Quem segura o porta-estandarte tem a arte tem a arte</span>\n    <span class=\"chord\" data-chord=\"Em7(5-)\">Em7(5-)</span> <span class=\"chord\" data-chord=\"A7\">A7</span>      <span class=\"chord\" data-chord=\"Dm7\">Dm7</span>          <span class=\"chord\" data-chord=\"Bb7M\">Bb7M</span>    <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>   <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>\n<span class=\"lyric-line\">E aqui   passa com raça eletrônico o maracatu atômico</span>\n",
+    "chordData": {
+        "A7": {
+            "name": "A7",
+            "notes": [
+                "A3",
+                "C#4",
+                "E4",
+                "G4"
+            ],
+            "displayNotes": [
+                "A",
+                "C#",
+                "E",
+                "G"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "Bb7M": {
+            "name": "Bb7M",
+            "notes": [
+                "A#3",
+                "D4",
+                "F4",
+                "A4"
+            ],
+            "displayNotes": [
+                "Bb",
+                "D",
+                "F",
+                "A"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "C7(9)": {
+            "name": "C7(9)",
+            "notes": [
+                "C3",
+                "E3",
+                "G3",
+                "A#3",
+                "D4"
+            ],
+            "displayNotes": [
+                "C",
+                "E",
+                "G",
+                "A#",
+                "D"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh",
+                "ninth"
+            ]
+        },
+        "Dm7": {
+            "name": "Dm7",
+            "notes": [
+                "D3",
+                "F3",
+                "A3",
+                "C4"
+            ],
+            "displayNotes": [
+                "D",
+                "F",
+                "A",
+                "C"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "Em7(5-)": {
+            "name": "Em7(5-)",
+            "notes": [
+                "E3",
+                "G3",
+                "B3",
+                "D4"
+            ],
+            "displayNotes": [
+                "E",
+                "G",
+                "B",
+                "D"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "Gm7": {
+            "name": "Gm7",
+            "notes": [
+                "G3",
+                "A#3",
+                "D4",
+                "F4"
+            ],
+            "displayNotes": [
+                "G",
+                "A#",
+                "D",
+                "F"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        }
+    }
+};
