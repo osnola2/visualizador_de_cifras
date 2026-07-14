@@ -1,0 +1,98 @@
+{
+    "title": "Negro Amor",
+    "artist": "Gal Costa",
+    "composer": "Caetano Veloso / Bob Dylan / Péricles Cavalcante",
+    "lyricsHtml": "\n<span class=\"chord\" data-chord=\"E\">E</span>                                            <span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">Vá, se mande, junte tudo que você puder levar</span>\n<span class=\"chord\" data-chord=\"E\">E</span>                                           <span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">Ande tudo que parece seu é bom que agarre já</span>\n    <span class=\"chord\" data-chord=\"Bm\">Bm</span>           <span class=\"chord\" data-chord=\"D\">D</span>          <span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">Seu filho feio e louco ficou só</span>\n   <span class=\"chord\" data-chord=\"Bm\">Bm</span>          <span class=\"chord\" data-chord=\"D\">D</span>            <span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">Chorando feito fogo à luz do sol</span>\n     <span class=\"chord\" data-chord=\"C#\">C#</span>                                <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\">Pois alquimistas já estão no corredor</span>\n  <span class=\"chord\" data-chord=\"Bm\">Bm</span>           <span class=\"chord\" data-chord=\"D\">D</span>           <span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">E não tem mais nada, negro amor</span>\n<span class=\"chord\" data-chord=\"E\">E</span>                                  <span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">A estrada é pra você um jogo e ainda essência</span>\n<span class=\"chord\" data-chord=\"E\">E</span>                                    <span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">Junte tudo que você conseguiu por coincidência</span>\n  <span class=\"chord\" data-chord=\"Bm\">Bm</span>          <span class=\"chord\" data-chord=\"D\">D</span>           <span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">E o pintor de rua que anda só</span>\n  <span class=\"chord\" data-chord=\"Bm\">Bm</span>        <span class=\"chord\" data-chord=\"D\">D</span>             <span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">Desenha maluquice em seu lençol</span>\n<span class=\"chord\" data-chord=\"C#\">C#</span>                          <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\">Sob seus pés o céu também rachou</span>\n<span class=\"chord\" data-chord=\"Bm\">Bm</span>             <span class=\"chord\" data-chord=\"D\">D</span>           <span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">E não tem mais nada, negro amor</span>\n<span class=\"chord\" data-chord=\"E\">E</span>                                     <span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">Seus marinheiros mareados abandonam o mar</span>\n<span class=\"chord\" data-chord=\"E\">E</span>                                          <span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">Seus guerreiros desarmados não vão mais lutar</span>\n    <span class=\"chord\" data-chord=\"Bm\">Bm</span>       <span class=\"chord\" data-chord=\"D\">D</span>             <span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">Seu namorado já vai dando o fora</span>\n  <span class=\"chord\" data-chord=\"Bm\">Bm</span>            <span class=\"chord\" data-chord=\"D\">D</span>        <span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">Levando os cobertores, e agora?</span>\n <span class=\"chord\" data-chord=\"C#\">C#</span>                         <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\">Até o tapete sem você voou</span>\n  <span class=\"chord\" data-chord=\"Bm\">Bm</span>           <span class=\"chord\" data-chord=\"D\">D</span>           <span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">E não tem mais nada, negro amor</span>\n   <span class=\"chord\" data-chord=\"E\">E</span>                                  <span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">As pedras do caminho, deixe para trás</span>\n  <span class=\"chord\" data-chord=\"E\">E</span>                                        <span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">Esqueça os mortos, que eles não levantam mais</span>\n  <span class=\"chord\" data-chord=\"Bm\">Bm</span>          <span class=\"chord\" data-chord=\"D\">D</span>        <span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">O vagabundo esmola pela rua</span>\n   <span class=\"chord\" data-chord=\"Bm\">Bm</span>            <span class=\"chord\" data-chord=\"D\">D</span>            <span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">Vestindo a mesma roupa que foi sua</span>\n<span class=\"chord\" data-chord=\"C#\">C#</span>                                                   <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\">Risque outro fósforo, outra vida, outra luz, outra cor</span>\n<span class=\"chord\" data-chord=\"Bm\">Bm</span>             <span class=\"chord\" data-chord=\"D\">D</span>           <span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">E não tem mais nada, negro amor</span>\n",
+    "chordData": {
+        "A": {
+            "name": "A",
+            "notes": [
+                "A3",
+                "C#4",
+                "E4"
+            ],
+            "displayNotes": [
+                "A",
+                "C#",
+                "E"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Bm": {
+            "name": "Bm",
+            "notes": [
+                "B3",
+                "D4",
+                "F#4"
+            ],
+            "displayNotes": [
+                "B",
+                "D",
+                "F#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "C#": {
+            "name": "C#",
+            "notes": [
+                "C#3",
+                "F3",
+                "G#3"
+            ],
+            "displayNotes": [
+                "C#",
+                "F",
+                "G#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "D": {
+            "name": "D",
+            "notes": [
+                "D3",
+                "F#3",
+                "A3"
+            ],
+            "displayNotes": [
+                "D",
+                "F#",
+                "A"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "E": {
+            "name": "E",
+            "notes": [
+                "E3",
+                "G#3",
+                "B3"
+            ],
+            "displayNotes": [
+                "E",
+                "G#",
+                "B"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        }
+    }
+}
