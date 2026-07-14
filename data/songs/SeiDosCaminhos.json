@@ -1,0 +1,122 @@
+{
+    "title": "Sei Dos Caminhos",
+    "artist": "Itamar Assumpção",
+    "composer": "Itamar Assumpção / Alice Ruiz",
+    "lyricsHtml": "\n(intro) <span class=\"chord\" data-chord=\"A\">A</span>  <span class=\"chord\" data-chord=\"E/G#\">E/G#</span>  <span class=\"chord\" data-chord=\"G\">G</span>  <span class=\"chord\" data-chord=\"D/F#\">D/F#</span>\n\n<span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">Sei dos caminhos que chegam, sei dos que se afastam</span>\n<span class=\"chord\" data-chord=\"E/G#\">E/G#</span>\n<span class=\"lyric-line\">Conheço como começa,  como termina o que faço</span>\n<span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">Só não sei como chegar</span>\n<span class=\"chord\" data-chord=\"D/F#\">D/F#</span>\n<span class=\"lyric-line\">Ao nosso próximo passo</span>\n\n<span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">Sei dos caminhos que chegam, sei dos que se afastam</span>\n<span class=\"chord\" data-chord=\"E/G#\">E/G#</span>\n<span class=\"lyric-line\">Conheço como começa,  como termina o que faço</span>\n<span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">Só não sei como chegar</span>\n<span class=\"chord\" data-chord=\"D/F#\">D/F#</span>\n<span class=\"lyric-line\">Ao nosso próximo passo</span>\n\n<span class=\"chord\" data-chord=\"A\">A</span>                             <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\">Ontem, meu bem, contei até cem</span>\n<span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">Hoje já não sei</span>\n<span class=\"chord\" data-chord=\"D\">D</span>\n<span class=\"lyric-line\">Hoje já não sei</span>\n<span class=\"chord\" data-chord=\"A\">A</span>                              <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\">Ontem, meu bem, contei até três</span>\n<span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">Hoje eu só pensei</span>\n<span class=\"chord\" data-chord=\"D\">D</span>\n<span class=\"lyric-line\">Hoje eu só pensei</span>\n\n<span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">Sei que me encontro sozinho, sei também quando me acho</span>\n<span class=\"chord\" data-chord=\"E/G#\">E/G#</span>\n<span class=\"lyric-line\">Sei tudo o que você acha, o buraco é mais embaixo</span>\n<span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">Foi um achado te achar</span>\n<span class=\"chord\" data-chord=\"D/F#\">D/F#</span>\n<span class=\"lyric-line\">Perdido acho diacho</span>\n\n<span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">Sei que me encontro sozinho, sei também quando me acho</span>\n<span class=\"chord\" data-chord=\"E/G#\">E/G#</span>\n<span class=\"lyric-line\">Sei tudo o que você acha, o buraco é mais embaixo</span>\n<span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">Foi um achado te achar</span>\n<span class=\"chord\" data-chord=\"D/F#\">D/F#</span>\n<span class=\"lyric-line\">Perdido acho diacho</span>\n\n<span class=\"chord\" data-chord=\"A\">A</span>                               <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\">Meu bem, porque não vens que tens</span>\n<span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">Ontem eu pensei</span>\n<span class=\"chord\" data-chord=\"D\">D</span>\n<span class=\"lyric-line\">Ontem eu pensei</span>\n\n<span class=\"chord\" data-chord=\"A\">A</span>                                  <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\">Meu bem, porque não vens de uma vez</span>\n<span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">Hoje eu só pensei</span>\n<span class=\"chord\" data-chord=\"D\">D</span>\n<span class=\"lyric-line\">Hoje eu só pensei</span>\n\n<span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">Sei dos caminhos que chegam, sei dos que se afastam</span>\n<span class=\"chord\" data-chord=\"E/G#\">E/G#</span>\n<span class=\"lyric-line\">Conheço como começa,  como termina o que faço</span>\n<span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">Só não sei como chegar</span>\n<span class=\"chord\" data-chord=\"D/F#\">D/F#</span>\n<span class=\"lyric-line\">Ao nosso próximo passo</span>\n",
+    "chordData": {
+        "A": {
+            "name": "A",
+            "notes": [
+                "A3",
+                "C#4",
+                "E4"
+            ],
+            "displayNotes": [
+                "A",
+                "C#",
+                "E"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "D": {
+            "name": "D",
+            "notes": [
+                "D3",
+                "F#3",
+                "A3"
+            ],
+            "displayNotes": [
+                "D",
+                "F#",
+                "A"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "D/F#": {
+            "name": "D/F#",
+            "notes": [
+                "F#3",
+                "D4",
+                "F#4",
+                "A4"
+            ],
+            "displayNotes": [
+                "F#",
+                "D",
+                "F#",
+                "A"
+            ],
+            "noteTypes": [
+                "bass",
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "E": {
+            "name": "E",
+            "notes": [
+                "E3",
+                "G#3",
+                "B3"
+            ],
+            "displayNotes": [
+                "E",
+                "G#",
+                "B"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "E/G#": {
+            "name": "E/G#",
+            "notes": [
+                "G#3",
+                "E4",
+                "G#4",
+                "B4"
+            ],
+            "displayNotes": [
+                "G#",
+                "E",
+                "G#",
+                "B"
+            ],
+            "noteTypes": [
+                "bass",
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "G": {
+            "name": "G",
+            "notes": [
+                "G3",
+                "B3",
+                "D4"
+            ],
+            "displayNotes": [
+                "G",
+                "B",
+                "D"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        }
+    }
+}
