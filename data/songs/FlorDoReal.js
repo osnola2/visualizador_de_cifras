@@ -1,0 +1,185 @@
+window.SONG_DATA = {
+    "title": "Flor do Real",
+    "artist": "sessa",
+    "composer": "Sessa",
+    "lyricsHtml": "\n[Intro] <span class=\"chord\" data-chord=\"Fm7\">Fm7</span>  <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>  <span class=\"chord\" data-chord=\"Fm7\">Fm7</span>  <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>\n        <span class=\"chord\" data-chord=\"Fm7\">Fm7</span>  <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>  <span class=\"chord\" data-chord=\"Fm7\">Fm7</span>  <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>\n\n<span class=\"chord\" data-chord=\"Fm7\">Fm7</span>         <span class=\"chord\" data-chord=\"Cm\">Cm</span>            <span class=\"chord\" data-chord=\"Fm7\">Fm7</span>    <span class=\"chord\" data-chord=\"Cm7\">Cm7</span>\n<span class=\"lyric-line\">Saber pela pele é a minha crença</span>\n             <span class=\"chord\" data-chord=\"Fm7\">Fm7</span>         <span class=\"chord\" data-chord=\"Cm7\">Cm7</span>\n<span class=\"lyric-line\">O acaso é a flor do real</span>\n             <span class=\"chord\" data-chord=\"Fm\">Fm</span>          <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>\n<span class=\"lyric-line\">O acaso é a flor do real</span>\n\n<span class=\"chord\" data-chord=\"Fm7\">Fm7</span>  <span class=\"chord\" data-chord=\"Fm\">Fm</span>       <span class=\"chord\" data-chord=\"Cm7\">Cm7</span>\n<span class=\"lyric-line\">Saber pela garganta</span>\n  <span class=\"chord\" data-chord=\"Fm7\">Fm7</span>   <span class=\"chord\" data-chord=\"Fm\">Fm</span>        <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>\n<span class=\"lyric-line\">De quem canta bem</span>\n<span class=\"chord\" data-chord=\"Fm7\">Fm7</span>\n<span class=\"lyric-line\">É bom</span>\n<span class=\"chord\" data-chord=\"Gm7\">Gm7</span>             <span class=\"chord\" data-chord=\"Fm7\">Fm7</span>    <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>\n<span class=\"lyric-line\">Foda é o prazer do som</span>\n\n<span class=\"chord\" data-chord=\"Fm7\">Fm7</span>                       <span class=\"chord\" data-chord=\"Bbm\">Bbm</span>  \n<span class=\"lyric-line\">Deixa a minha boca morar na sua boca</span>\n<span class=\"chord\" data-chord=\"Eb7\">Eb7</span>\n<span class=\"lyric-line\">  Deixa o meu sexo morar no seu</span>\n<span class=\"chord\" data-chord=\"Fm7\">Fm7</span>                                     <span class=\"chord\" data-chord=\"Eb7\">Eb7</span> \n<span class=\"lyric-line\">Deixa a minha mão morar nas suas pernas</span>\n\n<span class=\"lyric-line\">E o meu quadril anexo ao seu</span>\n\n<span class=\"chord\" data-chord=\"Fm7\">Fm7</span>   \n<span class=\"lyric-line\">Euforia</span>\n<span class=\"chord\" data-chord=\"Bbm7\">Bbm7</span>\n<span class=\"lyric-line\">Euforia</span>\n<span class=\"chord\" data-chord=\"Fm7\">Fm7</span>\n<span class=\"lyric-line\">Eu faria</span>\n<span class=\"chord\" data-chord=\"Bbm\">Bbm</span>     <span class=\"chord\" data-chord=\"Eb7\">Eb7</span>   <span class=\"chord\" data-chord=\"Eb\">Eb</span>\n<span class=\"lyric-line\">Tudo por você</span>\n\n<span class=\"chord\" data-chord=\"Fm7\">Fm7</span>        <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>            <span class=\"chord\" data-chord=\"Fm7\">Fm7</span>    <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>\n<span class=\"lyric-line\">Viver pela pele é a minha crença</span>\n            <span class=\"chord\" data-chord=\"Fm7\">Fm7</span>            <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>\n<span class=\"lyric-line\">O acaso é a flor do real</span>\n            <span class=\"chord\" data-chord=\"Fm7\">Fm7</span>          <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>\n<span class=\"lyric-line\">O acaso é a flor do real</span>\n\n<span class=\"chord\" data-chord=\"Fm7\">Fm7</span>        <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>            <span class=\"chord\" data-chord=\"Fm7\">Fm7</span>           <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>\n<span class=\"lyric-line\">Viver nas entranhas de quem nos assanha</span>\n<span class=\"chord\" data-chord=\"Fm7\">Fm7</span>                          \n<span class=\"lyric-line\">É bom</span>\n     <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>           <span class=\"chord\" data-chord=\"Fm7\">Fm7</span> <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>\n<span class=\"lyric-line\">Foda é o prazer do som</span>\n\n<span class=\"chord\" data-chord=\"Fm7\">Fm7</span>                          <span class=\"chord\" data-chord=\"Bbm\">Bbm</span> \n<span class=\"lyric-line\">Deixa a minha boca morar na sua boca</span>\n<span class=\"chord\" data-chord=\"Eb7\">Eb7</span>\n<span class=\"lyric-line\">  Deixa o meu sexo morar no seu</span>\n<span class=\"chord\" data-chord=\"Fm7\">Fm7</span>                         <span class=\"chord\" data-chord=\"Fm\">Fm</span>\n<span class=\"lyric-line\">Deixa a minha mão morar nas suas pernas</span>\n<span class=\"chord\" data-chord=\"Eb7\">Eb7</span>\n<span class=\"lyric-line\">    E o meu quadril anexo ao seu</span>\n\n<span class=\"chord\" data-chord=\"Fm7\">Fm7</span>\n<span class=\"lyric-line\">Euforia</span>\n\n<span class=\"lyric-line\">Euforia</span>\n\n<span class=\"lyric-line\">Eu faria</span>\n<span class=\"chord\" data-chord=\"Fm\">Fm</span>         <span class=\"chord\" data-chord=\"Eb\">Eb</span>  <span class=\"chord\" data-chord=\"Eb7\">Eb7</span>\n<span class=\"lyric-line\">Tudo por você</span>\n\n<span class=\"chord\" data-chord=\"Fm7\">Fm7</span>\n<span class=\"lyric-line\">Euforia</span>\n<span class=\"chord\" data-chord=\"Bbm7\">Bbm7</span>\n<span class=\"lyric-line\">Euforia</span>\n<span class=\"chord\" data-chord=\"Fm\">Fm</span>\n<span class=\"lyric-line\">Eu faria</span>\n           <span class=\"chord\" data-chord=\"Eb\">Eb</span>  <span class=\"chord\" data-chord=\"Eb7\">Eb7</span>\n<span class=\"lyric-line\">Tudo por você</span>\n\n<span class=\"chord\" data-chord=\"Fm7\">Fm7</span> \n<span class=\"lyric-line\">Euforia</span>\n\n<span class=\"lyric-line\">Euforia</span>\n\n<span class=\"lyric-line\">Eu faria</span>\n\n<span class=\"lyric-line\">Tudo por você</span>\n\n<span class=\"chord\" data-chord=\"Fm7\">Fm7</span> \n<span class=\"lyric-line\">Euforia</span>\n\n<span class=\"lyric-line\">Euforia</span>\n\n<span class=\"lyric-line\">Eu faria</span>\n\n<span class=\"lyric-line\">Tudo por você</span>\n\n <span class=\"chord\" data-chord=\"Fm\">Fm</span>   <span class=\"chord\" data-chord=\"Fm7\">Fm7</span>  <span class=\"chord\" data-chord=\"Fm\">Fm</span>  <span class=\"chord\" data-chord=\"Fm7\">Fm7</span>\n<span class=\"lyric-line\">Viver</span>\n",
+    "chordData": {
+        "Bbm": {
+            "name": "Bbm",
+            "notes": [
+                "A#3",
+                "C#4",
+                "F4"
+            ],
+            "displayNotes": [
+                "Bb",
+                "Db",
+                "F"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Bbm7": {
+            "name": "Bbm7",
+            "notes": [
+                "A#3",
+                "C#4",
+                "F4",
+                "G#4"
+            ],
+            "displayNotes": [
+                "Bb",
+                "Db",
+                "F",
+                "Ab"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "Cm": {
+            "name": "Cm",
+            "notes": [
+                "C3",
+                "D#3",
+                "G3"
+            ],
+            "displayNotes": [
+                "C",
+                "D#",
+                "G"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Cm7": {
+            "name": "Cm7",
+            "notes": [
+                "C3",
+                "D#3",
+                "G3",
+                "A#3"
+            ],
+            "displayNotes": [
+                "C",
+                "D#",
+                "G",
+                "A#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "Eb": {
+            "name": "Eb",
+            "notes": [
+                "D#3",
+                "G3",
+                "A#3"
+            ],
+            "displayNotes": [
+                "Eb",
+                "G",
+                "Bb"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Eb7": {
+            "name": "Eb7",
+            "notes": [
+                "D#3",
+                "G3",
+                "A#3",
+                "C#4"
+            ],
+            "displayNotes": [
+                "Eb",
+                "G",
+                "Bb",
+                "Db"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "Fm": {
+            "name": "Fm",
+            "notes": [
+                "F3",
+                "G#3",
+                "C4"
+            ],
+            "displayNotes": [
+                "F",
+                "Ab",
+                "C"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Fm7": {
+            "name": "Fm7",
+            "notes": [
+                "F3",
+                "G#3",
+                "C4",
+                "D#4"
+            ],
+            "displayNotes": [
+                "F",
+                "Ab",
+                "C",
+                "Eb"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "Gm7": {
+            "name": "Gm7",
+            "notes": [
+                "G3",
+                "A#3",
+                "D4",
+                "F4"
+            ],
+            "displayNotes": [
+                "G",
+                "A#",
+                "D",
+                "F"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        }
+    }
+};
