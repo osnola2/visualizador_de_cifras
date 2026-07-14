@@ -75,6 +75,7 @@ def parse_sambacifras(url):
 
     for p_html in p_matches:
         clean_p = re.sub(r'<[^>]+>', '', p_html)
+        clean_p = html_lib.unescape(clean_p)
         clean_p = clean_p.replace('\xa0', ' ').replace('&nbsp;', ' ')
         line = clean_p.rstrip()
         
