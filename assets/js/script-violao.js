@@ -146,7 +146,7 @@ function initViolaoViewer() {
         if (currentChordNameEl) currentChordNameEl.textContent = data.name;
 
         if (window.GuitarChordVisualizer && guitarCurrentView) {
-            guitarCurrentView.innerHTML = window.GuitarChordVisualizer.renderGuitarFretboardSVG(data.name, { width: 155, height: 150 });
+            guitarCurrentView.innerHTML = window.GuitarChordVisualizer.renderGuitarFretboardSVG(data.name, { width: 120, height: 115 });
         }
 
         if (window.GuitarChordVisualizer && guitarNextView) {
