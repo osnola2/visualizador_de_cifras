@@ -1,0 +1,118 @@
+window.SONG_DATA = {
+    "title": "Iarinhas",
+    "artist": "Luiza Lian",
+    "lyricsHtml": "\n<span class=\"chord\" data-chord=\"G\">G</span>                         <span class=\"chord\" data-chord=\"Bm\">Bm</span>             <span class=\"chord\" data-chord=\"C\">C</span>       <span class=\"chord\" data-chord=\"G\">G</span> \r\n<span class=\"lyric-line\">Essa rua tem o nome de um rio que a cidade sufocou\r</span>\n<span class=\"chord\" data-chord=\"G\">G</span>                         <span class=\"chord\" data-chord=\"Bm\">Bm</span>          <span class=\"chord\" data-chord=\"C\">C</span>         <span class=\"chord\" data-chord=\"G\">G</span> \r\n<span class=\"lyric-line\">Essa rua tem o nome de um rio que a cidade sufocou\r</span>\n<span class=\"chord\" data-chord=\"G\">G</span>                         <span class=\"chord\" data-chord=\"Bm\">Bm</span>          <span class=\"chord\" data-chord=\"C\">C</span>        <span class=\"chord\" data-chord=\"G\">G</span> \r\n<span class=\"lyric-line\">Essa rua tem o nome de um rio que a cidade sufocou\r</span>\n<span class=\"chord\" data-chord=\"G\">G</span>                         <span class=\"chord\" data-chord=\"Bm\">Bm</span>          <span class=\"chord\" data-chord=\"C\">C</span>         <span class=\"chord\" data-chord=\"G\">G</span> \r\n<span class=\"lyric-line\">Essa rua tem o nome de um rio que a cidade sufocou\r</span>\n\r\n<span class=\"chord\" data-chord=\"Em\">Em</span>                    <span class=\"chord\" data-chord=\"Bm\">Bm</span>  \r\n<span class=\"lyric-line\">A vontade do rio de voltar\r</span>\n            <span class=\"chord\" data-chord=\"C\">C</span>              <span class=\"chord\" data-chord=\"G\">G</span>\r\n<span class=\"lyric-line\">Às vezes sacode de algum lugar\r</span>\n     <span class=\"chord\" data-chord=\"Em\">Em</span>                 <span class=\"chord\" data-chord=\"Bm\">Bm</span>\r\n<span class=\"lyric-line\">Ele dorme até a chuva chegar\r</span>\n             <span class=\"chord\" data-chord=\"Am\">Am</span>            <span class=\"chord\" data-chord=\"G\">G</span>\r\n<span class=\"lyric-line\">Mas a tempestade vem anunciar\r</span>\n          <span class=\"chord\" data-chord=\"Em\">Em</span>                <span class=\"chord\" data-chord=\"Bm\">Bm</span>\r\n<span class=\"lyric-line\">E uma enchente lembra a população\r</span>\n             <span class=\"chord\" data-chord=\"C\">C</span>              <span class=\"chord\" data-chord=\"G\">G</span>\r\n<span class=\"lyric-line\">Que o que é rua antes era vazão\r</span>\n          <span class=\"chord\" data-chord=\"Em\">Em</span>                <span class=\"chord\" data-chord=\"Bm\">Bm</span>\r\n<span class=\"lyric-line\">E uma enchente lembra a população\r</span>\n             <span class=\"chord\" data-chord=\"C\">C</span>              <span class=\"chord\" data-chord=\"G\">G</span>\r\n<span class=\"lyric-line\">Que o que é rua antes era vazão\r</span>\n\r\n<span class=\"chord\" data-chord=\"G\">G</span>       <span class=\"chord\" data-chord=\"A7\">A7</span>      <span class=\"chord\" data-chord=\"C\">C</span>     <span class=\"chord\" data-chord=\"Em\">Em</span>\r\n<span class=\"lyric-line\">Alô Tapajós, Tamanduateí\r</span>\n<span class=\"chord\" data-chord=\"G\">G</span>                         <span class=\"chord\" data-chord=\"A7\">A7</span>\r\n<span class=\"lyric-line\">Minhas Iarinhas andam cantando\r</span>\n         <span class=\"chord\" data-chord=\"Am\">Am</span>            <span class=\"chord\" data-chord=\"G\">G</span>\r\n<span class=\"lyric-line\">Suas ladainhas para mim\r</span>\n          <span class=\"chord\" data-chord=\"G\">G</span>               <span class=\"chord\" data-chord=\"A7\">A7</span>\r\n<span class=\"lyric-line\">Minhas Iarinhas andam cantando\r</span>\n         <span class=\"chord\" data-chord=\"C\">C</span>           <span class=\"chord\" data-chord=\"G\">G</span>\r\n<span class=\"lyric-line\">Suas ladainhas para mim\r</span>\n\r\n<span class=\"chord\" data-chord=\"G\">G</span>                         <span class=\"chord\" data-chord=\"Bm\">Bm</span>           <span class=\"chord\" data-chord=\"C\">C</span>       <span class=\"chord\" data-chord=\"G\">G</span> \r\n<span class=\"lyric-line\">Essa rua tem o nome de um rio que a cidade sufocou\r</span>\n<span class=\"chord\" data-chord=\"G\">G</span>                         <span class=\"chord\" data-chord=\"Bm\">Bm</span>           <span class=\"chord\" data-chord=\"C\">C</span>       <span class=\"chord\" data-chord=\"G\">G</span> \r\n<span class=\"lyric-line\">Essa rua tem o nome de um rio que a cidade sufocou\r</span>\n\r\n<span class=\"chord\" data-chord=\"Em\">Em</span>                    <span class=\"chord\" data-chord=\"Bm\">Bm</span>  \r\n<span class=\"lyric-line\">A vontade do rio de voltar\r</span>\n            <span class=\"chord\" data-chord=\"C\">C</span>              <span class=\"chord\" data-chord=\"G\">G</span>\r\n<span class=\"lyric-line\">Às vezes sacode de algum lugar\r</span>\n     <span class=\"chord\" data-chord=\"Em\">Em</span>                 <span class=\"chord\" data-chord=\"Bm\">Bm</span>\r\n<span class=\"lyric-line\">Ele dorme até a chuva chegar\r</span>\n             <span class=\"chord\" data-chord=\"Am\">Am</span>            <span class=\"chord\" data-chord=\"G\">G</span>\r\n<span class=\"lyric-line\">Mas a tempestade vem anunciar\r</span>\n          <span class=\"chord\" data-chord=\"Em\">Em</span>                <span class=\"chord\" data-chord=\"Bm\">Bm</span>\r\n<span class=\"lyric-line\">E uma enchente lembra a população\r</span>\n             <span class=\"chord\" data-chord=\"C\">C</span>              <span class=\"chord\" data-chord=\"G\">G</span>\r\n<span class=\"lyric-line\">Que o que é rua antes era vazão\r</span>\n          <span class=\"chord\" data-chord=\"Em\">Em</span>                <span class=\"chord\" data-chord=\"Bm\">Bm</span>\r\n<span class=\"lyric-line\">E uma enchente lembra a população\r</span>\n             <span class=\"chord\" data-chord=\"C\">C</span>              <span class=\"chord\" data-chord=\"G\">G</span>\r\n<span class=\"lyric-line\">Que o que é rua antes era vazão\r</span>\n\r\n\r\n<span class=\"chord\" data-chord=\"G\">G</span>       <span class=\"chord\" data-chord=\"A7\">A7</span>         <span class=\"chord\" data-chord=\"C\">C</span>        <span class=\"chord\" data-chord=\"Em\">Em</span>\r\n<span class=\"lyric-line\">Alô Tietê, Água Preta, Iquiririm\r</span>\n          <span class=\"chord\" data-chord=\"G\">G</span>              <span class=\"chord\" data-chord=\"A7\">A7</span>\r\n<span class=\"lyric-line\">Minhas Iarinhas andam cantando\r</span>\n         <span class=\"chord\" data-chord=\"C\">C</span>          <span class=\"chord\" data-chord=\"G\">G</span>\r\n<span class=\"lyric-line\">Suas ladainhas para mim\r</span>\n           <span class=\"chord\" data-chord=\"G\">G</span>             <span class=\"chord\" data-chord=\"A7\">A7</span>\r\n<span class=\"lyric-line\">Minhas Iarinhas andam cantando\r</span>\n         <span class=\"chord\" data-chord=\"C\">C</span>          <span class=\"chord\" data-chord=\"G\">G</span>\r\n<span class=\"lyric-line\">Suas ladainhas para mim\r</span>\n\r\n<span class=\"chord\" data-chord=\"G\">G</span>       <span class=\"chord\" data-chord=\"A7\">A7</span>      <span class=\"chord\" data-chord=\"C\">C</span>     <span class=\"chord\" data-chord=\"Em\">Em</span> \r\n<span class=\"lyric-line\">Alô Tapajós, Tamanduateí\r</span>\n          <span class=\"chord\" data-chord=\"G\">G</span>              <span class=\"chord\" data-chord=\"A7\">A7</span>\r\n<span class=\"lyric-line\">Minhas Iarinhas andam cantando\r</span>\n         <span class=\"chord\" data-chord=\"C\">C</span>          <span class=\"chord\" data-chord=\"G\">G</span>\r\n<span class=\"lyric-line\">Suas ladainhas para mim\r</span>\n          <span class=\"chord\" data-chord=\"G\">G</span>       <span class=\"chord\" data-chord=\"A7\">A7</span>\r\n<span class=\"lyric-line\">Minhas Iarinhas andam cantando\r</span>\n         <span class=\"chord\" data-chord=\"C\">C</span>          <span class=\"chord\" data-chord=\"G\">G</span>\r\n<span class=\"lyric-line\">Suas ladainhas para mim</span>\n",
+    "chordData": {
+        "A7": {
+            "name": "A7",
+            "notes": [
+                "A3",
+                "C#4",
+                "E4",
+                "G4"
+            ],
+            "displayNotes": [
+                "A",
+                "C#",
+                "E",
+                "G"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "Am": {
+            "name": "Am",
+            "notes": [
+                "A3",
+                "C4",
+                "E4"
+            ],
+            "displayNotes": [
+                "A",
+                "C",
+                "E"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Bm": {
+            "name": "Bm",
+            "notes": [
+                "B3",
+                "D4",
+                "F#4"
+            ],
+            "displayNotes": [
+                "B",
+                "D",
+                "F#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "C": {
+            "name": "C",
+            "notes": [
+                "C3",
+                "E3",
+                "G3"
+            ],
+            "displayNotes": [
+                "C",
+                "E",
+                "G"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Em": {
+            "name": "Em",
+            "notes": [
+                "E3",
+                "G3",
+                "B3"
+            ],
+            "displayNotes": [
+                "E",
+                "G",
+                "B"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "G": {
+            "name": "G",
+            "notes": [
+                "G3",
+                "B3",
+                "D4"
+            ],
+            "displayNotes": [
+                "G",
+                "B",
+                "D"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        }
+    }
+};
