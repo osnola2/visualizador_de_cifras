@@ -33,11 +33,18 @@ def is_chord_line(line):
     tokens = stripped.split()
     if not tokens:
         return False
+    has_chord = False
     for token in tokens:
-        clean_token = token.strip('(),.')
-        if not CHORD_REGEX.match(clean_token):
-            return False
-    return True
+        clean_token = token.strip('(),.[]')
+        if not clean_token:
+            continue
+        if CHORD_REGEX.match(clean_token):
+            has_chord = True
+            continue
+        if re.match(r'^\d+x?$', clean_token, re.IGNORECASE) or clean_token in ('|', '||', '/', '-', 'bis', 'x', ':', 'e', '+') or re.match(r'^[|/\-:]+$', clean_token):
+            continue
+        return False
+    return has_chord
 
 def is_tablature_line(line):
     s = line.strip()
@@ -66,9 +73,14 @@ def parse_plaintext_tab(tab_content, song_title, song_artist):
 
     def replace_chord_token(match):
         ch = match.group(0)
-        clean_ch = ch.strip('(),.')
-        unique_chords.add(clean_ch)
-        return f'<span class="chord" data-chord="{clean_ch}">{clean_ch}</span>'
+        clean_ch = ch.strip('(),.[]')
+        if clean_ch and CHORD_REGEX.match(clean_ch):
+            unique_chords.add(clean_ch)
+            idx = ch.find(clean_ch)
+            prefix = html_lib.escape(ch[:idx])
+            suffix = html_lib.escape(ch[idx + len(clean_ch):])
+            return f'{prefix}<span class="chord" data-chord="{clean_ch}">{clean_ch}</span>{suffix}'
+        return html_lib.escape(ch)
 
     lines = tab_content.split('\n')
     new_lines = []
@@ -192,11 +204,14 @@ def parse_sambacifras(url):
         if is_chord_line(line):
             def replace_chord_token(match):
                 ch = match.group(0)
-                clean_ch = ch.strip('(),.')
-                if clean_ch:
+                clean_ch = ch.strip('(),.[]')
+                if clean_ch and CHORD_REGEX.match(clean_ch):
                     unique_chords.add(clean_ch)
-                    return f'<span class="chord" data-chord="{clean_ch}">{clean_ch}</span>'
-                return ch
+                    idx = ch.find(clean_ch)
+                    prefix = html_lib.escape(ch[:idx])
+                    suffix = html_lib.escape(ch[idx + len(clean_ch):])
+                    return f'{prefix}<span class="chord" data-chord="{clean_ch}">{clean_ch}</span>{suffix}'
+                return html_lib.escape(ch)
             formatted = re.sub(r'\S+', replace_chord_token, line)
             new_lines.append(formatted)
         else:
