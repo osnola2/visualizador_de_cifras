@@ -31,6 +31,13 @@
         'Bb': { frets: [-1, 1, 3, 3, 3, 1], baseFret: 1, barre: 1 },
         'Eb': { frets: [-1, 6, 8, 8, 8, 6], baseFret: 6, barre: 6 },
         'Ab': { frets: [4, 6, 6, 5, 4, 4], baseFret: 4, barre: 4 },
+        'C#': { frets: [-1, 4, 6, 6, 6, 4], baseFret: 4, barre: 4 },
+        'Db': { frets: [-1, 4, 6, 6, 6, 4], baseFret: 4, barre: 4 },
+        'D#': { frets: [-1, 6, 8, 8, 8, 6], baseFret: 6, barre: 6 },
+        'F#': { frets: [2, 4, 4, 3, 2, 2], baseFret: 2, barre: 2 },
+        'Gb': { frets: [2, 4, 4, 3, 2, 2], baseFret: 2, barre: 2 },
+        'G#': { frets: [4, 6, 6, 5, 4, 4], baseFret: 4, barre: 4 },
+        'A#': { frets: [-1, 1, 3, 3, 3, 1], baseFret: 1, barre: 1 },
 
         // Menores
         'Cm': { frets: [-1, 3, 5, 5, 4, 3], baseFret: 3, barre: 3 },
@@ -40,6 +47,16 @@
         'Gm': { frets: [3, 5, 5, 3, 3, 3], baseFret: 3, barre: 3 },
         'Am': { frets: [-1, 0, 2, 2, 1, 0], baseFret: 1 },
         'Bm': { frets: [-1, 2, 4, 4, 3, 2], baseFret: 2, barre: 2 },
+        'C#m': { frets: [-1, 4, 6, 6, 5, 4], baseFret: 4, barre: 4 },
+        'Dbm': { frets: [-1, 4, 6, 6, 5, 4], baseFret: 4, barre: 4 },
+        'D#m': { frets: [-1, 6, 8, 8, 7, 6], baseFret: 6, barre: 6 },
+        'Ebm': { frets: [-1, 6, 8, 8, 7, 6], baseFret: 6, barre: 6 },
+        'F#m': { frets: [2, 4, 4, 2, 2, 2], baseFret: 2, barre: 2 },
+        'Gbm': { frets: [2, 4, 4, 2, 2, 2], baseFret: 2, barre: 2 },
+        'G#m': { frets: [4, 6, 6, 4, 4, 4], baseFret: 4, barre: 4 },
+        'Abm': { frets: [4, 6, 6, 4, 4, 4], baseFret: 4, barre: 4 },
+        'A#m': { frets: [-1, 1, 3, 3, 2, 1], baseFret: 1, barre: 1 },
+        'Bbm': { frets: [-1, 1, 3, 3, 2, 1], baseFret: 1, barre: 1 },
 
         // Sétimas da Dominante (7)
         'C7': { frets: [-1, 3, 2, 3, 1, 0], baseFret: 1 },
@@ -49,6 +66,16 @@
         'G7': { frets: [3, 2, 0, 0, 0, 1], baseFret: 1 },
         'A7': { frets: [-1, 0, 2, 0, 2, 0], baseFret: 1 },
         'B7': { frets: [-1, 2, 1, 2, 0, 2], baseFret: 1 },
+        'C#7': { frets: [-1, 4, 6, 4, 6, 4], baseFret: 4, barre: 4 },
+        'Db7': { frets: [-1, 4, 6, 4, 6, 4], baseFret: 4, barre: 4 },
+        'D#7': { frets: [-1, 6, 8, 6, 8, 6], baseFret: 6, barre: 6 },
+        'Eb7': { frets: [-1, 6, 8, 6, 8, 6], baseFret: 6, barre: 6 },
+        'F#7': { frets: [2, 4, 2, 3, 2, 2], baseFret: 2, barre: 2 },
+        'Gb7': { frets: [2, 4, 2, 3, 2, 2], baseFret: 2, barre: 2 },
+        'G#7': { frets: [4, 6, 4, 5, 4, 4], baseFret: 4, barre: 4 },
+        'Ab7': { frets: [4, 6, 4, 5, 4, 4], baseFret: 4, barre: 4 },
+        'A#7': { frets: [-1, 1, 3, 1, 3, 1], baseFret: 1, barre: 1 },
+        'Bb7': { frets: [-1, 1, 3, 1, 3, 1], baseFret: 1, barre: 1 },
 
         // Sétimas Maiores (7M / maj7)
         'C7M': { frets: [-1, 3, 2, 0, 0, 0], baseFret: 1 },
@@ -58,6 +85,16 @@
         'G7M': { frets: [3, 2, 0, 0, 0, 2], baseFret: 1 },
         'A7M': { frets: [-1, 0, 2, 1, 2, 0], baseFret: 1 },
         'B7M': { frets: [-1, 2, 4, 3, 4, 2], baseFret: 2, barre: 2 },
+        'C#7M': { frets: [-1, 4, 6, 5, 6, 4], baseFret: 4, barre: 4 },
+        'Db7M': { frets: [-1, 4, 6, 5, 6, 4], baseFret: 4, barre: 4 },
+        'D#7M': { frets: [-1, 6, 8, 7, 8, 6], baseFret: 6, barre: 6 },
+        'Eb7M': { frets: [-1, 6, 8, 7, 8, 6], baseFret: 6, barre: 6 },
+        'F#7M': { frets: [2, -1, 3, 3, 2, -1], baseFret: 2 },
+        'Gb7M': { frets: [2, -1, 3, 3, 2, -1], baseFret: 2 },
+        'G#7M': { frets: [4, -1, 5, 5, 4, -1], baseFret: 4 },
+        'Ab7M': { frets: [4, -1, 5, 5, 4, -1], baseFret: 4 },
+        'A#7M': { frets: [-1, 1, 3, 2, 3, 1], baseFret: 1, barre: 1 },
+        'Bb7M': { frets: [-1, 1, 3, 2, 3, 1], baseFret: 1, barre: 1 },
 
         // Menores com 7 (m7)
         'Cm7': { frets: [-1, 3, 5, 3, 4, 3], baseFret: 3, barre: 3 },
@@ -65,30 +102,76 @@
         'Em7': { frets: [0, 2, 2, 0, 3, 0], baseFret: 1 },
         'Fm7': { frets: [1, 3, 1, 1, 1, 1], baseFret: 1, barre: 1 },
         'F#m7': { frets: [2, 4, 2, 2, 2, 2], baseFret: 2, barre: 2 },
+        'Gbm7': { frets: [2, 4, 2, 2, 2, 2], baseFret: 2, barre: 2 },
         'Gm7': { frets: [3, 5, 3, 3, 3, 3], baseFret: 3, barre: 3 },
         'G#m7': { frets: [4, 6, 4, 4, 4, 4], baseFret: 4, barre: 4 },
+        'Abm7': { frets: [4, 6, 4, 4, 4, 4], baseFret: 4, barre: 4 },
         'Am7': { frets: [-1, 0, 2, 0, 1, 0], baseFret: 1 },
         'Bm7': { frets: [-1, 2, 4, 2, 3, 2], baseFret: 2, barre: 2 },
+        'C#m7': { frets: [-1, 4, 6, 4, 5, 4], baseFret: 4, barre: 4 },
+        'Dbm7': { frets: [-1, 4, 6, 4, 5, 4], baseFret: 4, barre: 4 },
+        'D#m7': { frets: [-1, 6, 8, 6, 7, 6], baseFret: 6, barre: 6 },
+        'Ebm7': { frets: [-1, 6, 8, 6, 7, 6], baseFret: 6, barre: 6 },
+        'A#m7': { frets: [-1, 1, 3, 1, 2, 1], baseFret: 1, barre: 1 },
+        'Bbm7': { frets: [-1, 1, 3, 1, 2, 1], baseFret: 1, barre: 1 },
 
-        // Específicos bossa / MPB / Águas de Março / Asa Branca / Na Asa do Vento / Flor de Maracujá
-        'B/A': { frets: [-1, 0, 4, 4, 4, -1], baseFret: 1 },
+        // Meio-diminutos / m7(5-) e Diminutos / dim7
+        'Cm7(5-)': { frets: [-1, 3, 4, 3, 4, -1], baseFret: 3 },
+        'C#m7(5-)': { frets: [-1, 4, 5, 4, 5, -1], baseFret: 4 },
+        'Dm7(5-)': { frets: [-1, -1, 0, 1, 1, 1], baseFret: 1 },
+        'D#m7(5-)': { frets: [-1, 6, 7, 6, 7, -1], baseFret: 6 },
+        'Em7(5-)': { frets: [0, 1, 2, 0, 3, 0], baseFret: 1 },
+        'Fm7(5-)': { frets: [1, -1, 1, 1, 0, -1], baseFret: 1 },
+        'F#m7(5-)': { frets: [2, -1, 2, 2, 1, -1], baseFret: 1 },
+        'Gm7(5-)': { frets: [3, -1, 3, 3, 2, -1], baseFret: 1 },
+        'G#m7(5-)': { frets: [4, -1, 4, 4, 3, -1], baseFret: 3 },
+        'Am7(5-)': { frets: [-1, 0, 1, 2, 1, 3], baseFret: 1 },
+        'Bm7(5-)': { frets: [-1, 2, 3, 2, 3, -1], baseFret: 1 },
+        'G#dim7': { frets: [4, -1, 3, 4, 3, -1], baseFret: 3 },
+        'Bdim7': { frets: [-1, 2, 3, 1, 3, -1], baseFret: 1 },
+
+        // Suspensos / 4/7 / 6 / m6 e Acordes Específicos
+        'C4/7': { frets: [-1, 3, 3, 3, 1, -1], baseFret: 1 },
+        'C#4/7': { frets: [-1, 4, 6, 4, 7, 4], baseFret: 4, barre: 4 },
+        'D4/7': { frets: [-1, -1, 0, 2, 1, 3], baseFret: 1 },
+        'D#4/7': { frets: [-1, 6, 8, 6, 9, 6], baseFret: 6, barre: 6 },
+        'E4/7': { frets: [0, 2, 0, 2, 0, 0], baseFret: 1 },
+        'F4/7': { frets: [1, 3, 1, 3, 1, 1], baseFret: 1, barre: 1 },
+        'F#4/7': { frets: [2, 4, 2, 4, 2, 2], baseFret: 2, barre: 2 },
+        'G4/7': { frets: [3, 3, 0, 0, 1, 1], baseFret: 1 },
+        'A4/7': { frets: [-1, 0, 2, 0, 3, 0], baseFret: 1 },
+        'B4/7': { frets: [-1, 2, 2, 2, 0, 2], baseFret: 1 },
+        'C6': { frets: [-1, 3, 2, 2, 1, 0], baseFret: 1 },
+        'D6': { frets: [-1, -1, 0, 2, 0, 2], baseFret: 1 },
+        'E6': { frets: [0, 2, 2, 1, 2, 0], baseFret: 1 },
+        'F6': { frets: [1, 3, 3, 2, 3, 1], baseFret: 1 },
+        'F#6': { frets: [2, -1, 1, 3, 2, -1], baseFret: 1 },
+        'G6': { frets: [3, 2, 0, 0, 0, 0], baseFret: 1 },
+        'A6': { frets: [-1, 0, 2, 2, 2, 2], baseFret: 1 },
+        'B6': { frets: [-1, 2, 4, 1, 4, -1], baseFret: 1 },
         'G#m6': { frets: [4, -1, 3, 4, 4, -1], baseFret: 3 },
+        'Em6': { frets: [0, 2, 2, 0, 2, 0], baseFret: 1 },
         'Em6/G': { frets: [3, -1, 2, 0, 2, 0], baseFret: 1 },
+        'B/A': { frets: [-1, 0, 4, 4, 4, -1], baseFret: 1 },
         'B7M(9)/F#': { frets: [2, -1, 1, 3, 2, -1], baseFret: 1 },
         'F7(11+)': { frets: [1, -1, 1, 2, 0, -1], baseFret: 1 },
         'E7M(13)': { frets: [0, -1, 1, 1, 2, -1], baseFret: 1 },
-        'Em6': { frets: [0, 2, 2, 0, 2, 0], baseFret: 1 },
         'B7M(9)': { frets: [-1, 2, 1, 3, 2, -1], baseFret: 1 },
         'B6(9)/F': { frets: [1, -1, 1, 1, 2, -1], baseFret: 1 },
         'B6(9)': { frets: [-1, 2, 1, 1, 2, -1], baseFret: 1 },
         'B7(9)': { frets: [-1, 2, 1, 2, 2, -1], baseFret: 1 },
         'F/D#': { frets: [-1, 6, 7, 5, 6, -1], baseFret: 5 },
         'D/C': { frets: [-1, 3, 4, 2, 3, -1], baseFret: 2 },
-        'B6': { frets: [-1, 2, 4, 1, 4, -1], baseFret: 1 },
         'Bb9/F': { frets: [1, -1, 0, 1, 1, -1], baseFret: 1 },
         'B7(13)': { frets: [-1, 2, 1, 2, 4, -1], baseFret: 1 },
         'D#/B': { frets: [-1, 2, 1, 3, 4, -1], baseFret: 1 },
-        'C/B': { frets: [-1, 2, 2, 0, 1, 0], baseFret: 1 }
+        'C/B': { frets: [-1, 2, 2, 0, 1, 0], baseFret: 1 },
+        'D/F#': { frets: [2, 0, 0, 2, 3, 2], baseFret: 1 },
+        'E/G#': { frets: [4, -1, 2, 4, 5, -1], baseFret: 2 },
+        'F/A': { frets: [-1, 0, 3, 2, 1, 1], baseFret: 1 },
+        'G/B': { frets: [-1, 2, 0, 0, 0, 3], baseFret: 1 },
+        'A/C#': { frets: [-1, 4, 2, 2, 2, -1], baseFret: 1 },
+        'Bm/A': { frets: [-1, 0, 4, 4, 3, 2], baseFret: 2 }
     };
 
     /**
@@ -98,17 +181,57 @@
         if (!chordName || chordName === '---') return null;
         if (CHORD_SHAPES[chordName]) return CHORD_SHAPES[chordName];
 
-        // Tenta remover baixos ou tensões extras para encontrar uma forma aproximada compatível
-        const rootMatch = chordName.match(/^[A-G][#b]?/);
+        // Normalizar enharmônicos e verificar novamente se existe exato
+        const normalized = chordName
+            .replace(/^Db/, 'C#')
+            .replace(/^Eb/, 'D#')
+            .replace(/^Gb/, 'F#')
+            .replace(/^Ab/, 'G#')
+            .replace(/^Bb/, 'A#');
+        if (CHORD_SHAPES[normalized]) return CHORD_SHAPES[normalized];
+
+        // Se for um acorde invertido / com baixo no formato X/Y, tentar primeiro no dicionário, depois pegar só o acorde base X
+        const baseChord = chordName.includes('/') ? chordName.split('/')[0] : chordName;
+        if (CHORD_SHAPES[baseChord]) return CHORD_SHAPES[baseChord];
+
+        const rootMatch = baseChord.match(/^[A-G][#b]?/);
         if (!rootMatch) return null;
         const root = rootMatch[0];
 
-        if (chordName.includes('m7')) return CHORD_SHAPES[root + 'm7'] || CHORD_SHAPES[root + 'm'] || CHORD_SHAPES[root];
-        if (chordName.includes('7M') || chordName.includes('maj7')) return CHORD_SHAPES[root + '7M'] || CHORD_SHAPES[root];
-        if (chordName.includes('7')) return CHORD_SHAPES[root + '7'] || CHORD_SHAPES[root];
-        if (chordName.includes('m')) return CHORD_SHAPES[root + 'm'] || CHORD_SHAPES[root];
+        const enharmonicMap = { 'Db': 'C#', 'Eb': 'D#', 'Gb': 'F#', 'Ab': 'G#', 'Bb': 'A#', 'C#': 'Db', 'D#': 'Eb', 'F#': 'Gb', 'G#': 'Ab', 'A#': 'Bb' };
+        const altRoot = enharmonicMap[root] || root;
 
-        return CHORD_SHAPES[root] || null;
+        const check = (suffix) => CHORD_SHAPES[root + suffix] || CHORD_SHAPES[altRoot + suffix];
+
+        if (baseChord.includes('m7(5-)') || baseChord.includes('m7b5') || baseChord.includes('°') || baseChord.includes('dim')) {
+            return check('m7(5-)') || check('dim7') || check('m7') || check('m') || check('');
+        }
+        if (baseChord.includes('dim7')) {
+            return check('dim7') || check('m7(5-)') || check('m7') || check('m') || check('');
+        }
+        if (baseChord.includes('m7') || baseChord.includes('m9') || baseChord.includes('m11') || baseChord.includes('m13')) {
+            return check('m7') || check('m') || check('');
+        }
+        if (baseChord.includes('7M') || baseChord.includes('maj7')) {
+            return check('7M') || check('') || check('7');
+        }
+        if (baseChord.includes('4/7') || baseChord.includes('sus4') || baseChord.includes('7(4)')) {
+            return check('4/7') || check('7') || check('');
+        }
+        if (baseChord.includes('7')) {
+            return check('7') || check('');
+        }
+        if (baseChord.includes('m6')) {
+            return check('m6') || check('m7') || check('m') || check('');
+        }
+        if (baseChord.includes('m')) {
+            return check('m') || check('');
+        }
+        if (baseChord.includes('6')) {
+            return check('6') || check('') || check('7M');
+        }
+
+        return check('') || null;
     }
 
     /**
