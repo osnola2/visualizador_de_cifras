@@ -211,6 +211,21 @@ h2.song-artist {
     padding-bottom: 2rem !important; /* Ensure extra space at the bottom for scroll clearance */
 }
 
+/* Container de acordes de violão no desktop vs celular */
+.guitar-chords-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.8rem;
+}
+.guitar-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 0.7rem 0.9rem;
+    width: 100%;
+}
+
 .piano-keyboard {
     position: relative;
     width: 100%;
@@ -413,6 +428,51 @@ h2.song-artist {
     #next-chord-section {
         margin-top: 0.45rem !important;
         padding-top: 0.45rem !important;
+    }
+    .guitar-chords-container {
+        flex-direction: row !important;
+        align-items: stretch !important;
+        justify-content: center !important;
+        gap: 8px !important;
+        margin-top: 0.1rem !important;
+        width: 100% !important;
+    }
+    .guitar-card {
+        flex: 1 1 50% !important;
+        width: 50% !important;
+        max-width: 50% !important;
+        padding: 0.35rem 0.4rem !important;
+        margin-bottom: 0 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+    }
+    .guitar-card-header {
+        margin-bottom: 0.15rem !important;
+        gap: 4px !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+    }
+    .guitar-card-header span {
+        font-size: 0.6rem !important;
+        letter-spacing: 0.4px !important;
+    }
+    .guitar-card-header h3 {
+        font-size: 0.9rem !important;
+    }
+    .guitar-card svg {
+        max-width: 84px !important;
+        max-height: 80px !important;
+    }
+    .piano-top-display {
+        margin-bottom: 0.3rem !important;
+    }
+    .piano-top-display #active-display-chord {
+        font-size: 1.25rem !important;
+    }
+    .piano-top-display #active-display-lyric {
+        font-size: 0.82rem !important;
     }
     .piano-keyboard {
         flex: 1 1 auto !important;
