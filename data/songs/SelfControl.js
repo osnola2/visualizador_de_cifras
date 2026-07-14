@@ -1,0 +1,116 @@
+window.SONG_DATA = {
+    "title": "Self Control",
+    "artist": "Laura Branigan",
+    "composer": "",
+    "lyricsHtml": "\n<span class=\"lyric-line\">[Intro]</span>\n<span class=\"chord\" data-chord=\"F#m\">F#m</span> <span class=\"chord\" data-chord=\"C#m\">C#m</span>\n\n<span class=\"lyric-line\">[Verse]</span>\n         <span class=\"chord\" data-chord=\"F#m\">F#m</span>         <span class=\"chord\" data-chord=\"C#m\">C#m</span>\n<span class=\"lyric-line\">Oh, the night is my world</span>\n      <span class=\"chord\" data-chord=\"F#m\">F#m</span>           <span class=\"chord\" data-chord=\"C#m\">C#m</span>\n<span class=\"lyric-line\">City light painted girl</span>\n        <span class=\"chord\" data-chord=\"E\">E</span>            <span class=\"chord\" data-chord=\"Bm\">Bm</span>\n<span class=\"lyric-line\">In the day nothing matters</span>\n          <span class=\"chord\" data-chord=\"D\">D</span>                <span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">It&#x27;s the night time that flatters</span>\n\n         <span class=\"chord\" data-chord=\"F#m\">F#m</span>        <span class=\"chord\" data-chord=\"C#m\">C#m</span>\n<span class=\"lyric-line\">In the night, no control</span>\n            <span class=\"chord\" data-chord=\"F#m\">F#m</span>                  <span class=\"chord\" data-chord=\"C#m\">C#m</span>\n<span class=\"lyric-line\">Through the wall something&#x27;s breaking</span>\n          <span class=\"chord\" data-chord=\"E\">E</span>               <span class=\"chord\" data-chord=\"Bm\">Bm</span>\n<span class=\"lyric-line\">Wearing white as you&#x27;re walkin&#x27;</span>\n           <span class=\"chord\" data-chord=\"D\">D</span>           <span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">Down the street of my soul</span>\n\n<span class=\"lyric-line\">[Pre-Chorus]</span>\n<span class=\"chord\" data-chord=\"F#m\">F#m</span>                           <span class=\"chord\" data-chord=\"C#m\">C#m</span>\n<span class=\"lyric-line\">You take my self, you take my self control</span>\n<span class=\"chord\" data-chord=\"F#m\">F#m</span>                    <span class=\"chord\" data-chord=\"C#m\">C#m</span>\n<span class=\"lyric-line\">You got me livin&#x27; only for the night</span>\n<span class=\"chord\" data-chord=\"E\">E</span>                              <span class=\"chord\" data-chord=\"Bm\">Bm</span>\n<span class=\"lyric-line\">Before the morning comes, the story&#x27;s told</span>\n<span class=\"chord\" data-chord=\"D\">D</span>                              <span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">You take my self, you take my self control</span>\n\n         <span class=\"chord\" data-chord=\"F#m\">F#m</span>           <span class=\"chord\" data-chord=\"C#m\">C#m</span>\n<span class=\"lyric-line\">Another night, another day goes by</span>\n<span class=\"chord\" data-chord=\"F#m\">F#m</span>                     <span class=\"chord\" data-chord=\"C#m\">C#m</span>\n<span class=\"lyric-line\">I never stop myself to wonder why</span>\n<span class=\"chord\" data-chord=\"E\">E</span>                        <span class=\"chord\" data-chord=\"Bm\">Bm</span>\n<span class=\"lyric-line\">You help me to forget to play my role</span>\n<span class=\"chord\" data-chord=\"D\">D</span>                              <span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">You take my self, you take my self control</span>\n\n<span class=\"lyric-line\">[Chorus]</span>\n<span class=\"chord\" data-chord=\"F#m\">F#m</span>   <span class=\"chord\" data-chord=\"C#m\">C#m</span>                             <span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">I, I live among the creatures of the night</span>\n   <span class=\"chord\" data-chord=\"C#m\">C#m</span>                             <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\">I haven&#x27;t got the will to try and fight</span>\n  <span class=\"chord\" data-chord=\"Bm\">Bm</span>                          <span class=\"chord\" data-chord=\"D\">D</span>\n<span class=\"lyric-line\">Against a new tomorrow, so I guess I&#x27;ll just believe it</span>\n        <span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">That tomorrow never comes</span>\n\n       <span class=\"chord\" data-chord=\"F#m\">F#m</span>         <span class=\"chord\" data-chord=\"C#m\">C#m</span>                        <span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">A safe night, I&#x27;m living in the forest of my dream</span>\n  <span class=\"chord\" data-chord=\"C#m\">C#m</span>                                <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\">I know the night is not as it would seem</span>\n   <span class=\"chord\" data-chord=\"Bm\">Bm</span>                                <span class=\"chord\" data-chord=\"D\">D</span>\n<span class=\"lyric-line\">I must believe in something, so I&#x27;ll make myself believe it</span>\n            <span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">That this night will never go</span>\n\n<span class=\"lyric-line\">[Bridge]</span>\n        <span class=\"chord\" data-chord=\"F#m\">F#m</span>       <span class=\"chord\" data-chord=\"C#m\">C#m</span>       <span class=\"chord\" data-chord=\"F#m\">F#m</span>       <span class=\"chord\" data-chord=\"C#m\">C#m</span>\n<span class=\"lyric-line\">Oh-oh-oh, oh-oh-oh, oh-oh-oh, oh-oh-oh</span>\n        <span class=\"chord\" data-chord=\"F#m\">F#m</span>       <span class=\"chord\" data-chord=\"C#m\">C#m</span>       <span class=\"chord\" data-chord=\"F#m\">F#m</span>       <span class=\"chord\" data-chord=\"C#m\">C#m</span>\n<span class=\"lyric-line\">Oh-oh-oh, oh-oh-oh, oh-oh-oh, oh-oh-oh</span>\n\n<span class=\"lyric-line\">[Verse]</span>\n         <span class=\"chord\" data-chord=\"F#m\">F#m</span>         <span class=\"chord\" data-chord=\"C#m\">C#m</span>\n<span class=\"lyric-line\">Oh, the night is my world</span>\n      <span class=\"chord\" data-chord=\"F#m\">F#m</span>           <span class=\"chord\" data-chord=\"C#m\">C#m</span>\n<span class=\"lyric-line\">City light painted girl</span>\n        <span class=\"chord\" data-chord=\"E\">E</span>            <span class=\"chord\" data-chord=\"Bm\">Bm</span>\n<span class=\"lyric-line\">In the day nothing matters</span>\n          <span class=\"chord\" data-chord=\"D\">D</span>                <span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">It&#x27;s the night time that flatters</span>\n\n<span class=\"lyric-line\">[Chorus]</span>\n<span class=\"chord\" data-chord=\"F#m\">F#m</span>   <span class=\"chord\" data-chord=\"C#m\">C#m</span>                             <span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">I, I live among the creatures of the night</span>\n   <span class=\"chord\" data-chord=\"C#m\">C#m</span>                             <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\">I haven&#x27;t got the will to try and fight</span>\n  <span class=\"chord\" data-chord=\"Bm\">Bm</span>                          <span class=\"chord\" data-chord=\"D\">D</span>\n<span class=\"lyric-line\">Against a new tomorrow, so I guess I&#x27;ll just believe it</span>\n        <span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">That tomorrow never knows</span>\n\n       <span class=\"chord\" data-chord=\"F#m\">F#m</span>         <span class=\"chord\" data-chord=\"C#m\">C#m</span>                        <span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">A safe night, I&#x27;m living in the forest of my dream</span>\n  <span class=\"chord\" data-chord=\"C#m\">C#m</span>                                <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\">I know the night is not as it would seem</span>\n   <span class=\"chord\" data-chord=\"Bm\">Bm</span>                                <span class=\"chord\" data-chord=\"D\">D</span>\n<span class=\"lyric-line\">I must believe in something, so I&#x27;ll make myself believe it</span>\n            <span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">That this night will never go</span>\n\n<span class=\"lyric-line\">[Outro]</span>\n        <span class=\"chord\" data-chord=\"F#m\">F#m</span>       <span class=\"chord\" data-chord=\"C#m\">C#m</span>       <span class=\"chord\" data-chord=\"F#m\">F#m</span>       <span class=\"chord\" data-chord=\"C#m\">C#m</span>\n<span class=\"lyric-line\">Oh-oh-oh, oh-oh-oh, oh-oh-oh, oh-oh-oh, oh-oh-oh</span>\n<span class=\"chord\" data-chord=\"F#m\">F#m</span>                           <span class=\"chord\" data-chord=\"C#m\">C#m</span>\n<span class=\"lyric-line\">You take my self, you take my self control</span>\n<span class=\"chord\" data-chord=\"F#m\">F#m</span>                           <span class=\"chord\" data-chord=\"C#m\">C#m</span>\n<span class=\"lyric-line\">You take my self, you take my self control</span>\n<span class=\"chord\" data-chord=\"F#m\">F#m</span>                           <span class=\"chord\" data-chord=\"C#m\">C#m</span>\n<span class=\"lyric-line\">You take my self, you take my self control</span>\n<span class=\"chord\" data-chord=\"F#m\">F#m</span>                           <span class=\"chord\" data-chord=\"C#m\">C#m</span>\n<span class=\"lyric-line\">You take my self, you take my self control</span>\n<span class=\"chord\" data-chord=\"F#m\">F#m</span>                           <span class=\"chord\" data-chord=\"C#m\">C#m</span>\n<span class=\"lyric-line\">You take my self, you take my self control</span>\n<span class=\"chord\" data-chord=\"F#m\">F#m</span>                           <span class=\"chord\" data-chord=\"C#m\">C#m</span>\n<span class=\"lyric-line\">You take my self, you take my self control</span>\n<span class=\"chord\" data-chord=\"F#m\">F#m</span>                           <span class=\"chord\" data-chord=\"C#m\">C#m</span>\n<span class=\"lyric-line\">You take my self, you take my self control</span>\n<span class=\"chord\" data-chord=\"F#m\">F#m</span>                           <span class=\"chord\" data-chord=\"C#m\">C#m</span>\n<span class=\"lyric-line\">You take my self, you take my self control</span>\n<span class=\"chord\" data-chord=\"F#m\">F#m</span>                           <span class=\"chord\" data-chord=\"C#m\">C#m</span>\n<span class=\"lyric-line\">You take my self, you take my self control [fade out]</span>\n\n<span class=\"lyric-line\">Used Chords:</span>\n\n<span class=\"lyric-line\">Any comments post me at tordajav@yahoo.com</span>\n",
+    "chordData": {
+        "A": {
+            "name": "A",
+            "notes": [
+                "A3",
+                "C#4",
+                "E4"
+            ],
+            "displayNotes": [
+                "A",
+                "C#",
+                "E"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Bm": {
+            "name": "Bm",
+            "notes": [
+                "B3",
+                "D4",
+                "F#4"
+            ],
+            "displayNotes": [
+                "B",
+                "D",
+                "F#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "C#m": {
+            "name": "C#m",
+            "notes": [
+                "C#3",
+                "E3",
+                "G#3"
+            ],
+            "displayNotes": [
+                "C#",
+                "E",
+                "G#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "D": {
+            "name": "D",
+            "notes": [
+                "D3",
+                "F#3",
+                "A3"
+            ],
+            "displayNotes": [
+                "D",
+                "F#",
+                "A"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "E": {
+            "name": "E",
+            "notes": [
+                "E3",
+                "G#3",
+                "B3"
+            ],
+            "displayNotes": [
+                "E",
+                "G#",
+                "B"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "F#m": {
+            "name": "F#m",
+            "notes": [
+                "F#3",
+                "A3",
+                "C#4"
+            ],
+            "displayNotes": [
+                "F#",
+                "A",
+                "C#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        }
+    }
+};
