@@ -1,0 +1,635 @@
+:root {
+    --bg-dark: #0f172a;
+    --glass-bg: rgba(30, 41, 59, 0.78);
+    --glass-border: rgba(255, 255, 255, 0.12);
+    --primary: #f43f5e; /* MPB warm coral accent */
+    --primary-glow: rgba(244, 63, 94, 0.4);
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+    --chord-highlight: #fbbf24; /* Warm amber gold */
+    --chord-hover: rgba(251, 191, 36, 0.25);
+    --key-white: #ffffff;
+    --key-black: #171717;
+    --key-active: #f43f5e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle at 20% 40%, rgba(244, 63, 94, 0.14), transparent 30%),
+                radial-gradient(circle at 80% 60%, rgba(251, 191, 36, 0.12), transparent 30%);
+    z-index: -1;
+}
+
+header {
+    padding: 1.2rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--glass-border);
+    background: rgba(15, 23, 42, 0.88);
+    backdrop-filter: blur(12px);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.song-info {
+    min-width: 0;
+    flex: 1;
+}
+
+h1.song-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: #f8fafc;
+    margin: 0;
+}
+
+h2.song-artist {
+    color: var(--chord-highlight);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 0.2rem;
+}
+
+.controls-panel {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.glass-btn {
+    background: rgba(244, 63, 94, 0.2);
+    border: 1px solid var(--primary);
+    color: var(--text-main);
+    padding: 0.6rem 1.2rem;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.glass-btn:hover {
+    background: rgba(244, 63, 94, 0.4);
+    box-shadow: 0 0 15px var(--primary-glow);
+}
+
+.glass-btn.active {
+    background: var(--primary);
+    color: #fff;
+    box-shadow: 0 0 20px var(--primary-glow);
+}
+
+.speed-control {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2.5rem;
+    max-width: 1350px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+@media (min-width: 900px) {
+    .container {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+}
+
+.glass-panel {
+    background: var(--glass-bg);
+    backdrop-filter: blur(16px);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    padding: 1.5rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.lyrics-panel {
+    flex: 1;
+    width: 100%;
+    max-width: 100%;
+    overflow: visible;
+    padding: 30vh 2rem 40vh 2rem;
+}
+
+#lyrics-content {
+    font-family: 'Inter', monospace;
+    font-size: 1.15rem;
+    line-height: 2.2;
+    border-left: 3px solid var(--primary);
+}
+
+.chord {
+    color: var(--chord-highlight);
+    font-weight: 700;
+    cursor: pointer;
+    padding: 0.1rem 0.4rem;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    display: inline-block;
+    border: 1px solid transparent;
+}
+
+.chord:hover {
+    background: var(--chord-hover);
+    border-color: var(--chord-highlight);
+    transform: translateY(-2px);
+}
+
+.chord.active-chord {
+    background: var(--primary);
+    color: #fff !important;
+    border-color: var(--primary);
+    box-shadow: 0 0 15px var(--primary-glow);
+    transform: scale(1.1);
+}
+
+.lyric-line {
+    display: block;
+    padding: 0.15rem 0.5rem;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.lyric-line.active-line {
+    background: rgba(255, 255, 255, 0.08);
+    border-left: 3px solid var(--primary);
+}
+
+.piano-panel {
+    position: fixed;
+    right: 2%;
+    top: 100px;
+    width: 32vw;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 100;
+    padding-bottom: 2rem !important; /* Ensure extra space at the bottom for scroll clearance */
+}
+
+.piano-keyboard {
+    position: relative;
+    width: 100%;
+    max-width: 360px;
+    height: 150px;
+    background: #1e1e1e;
+    border-radius: 8px 8px 16px 16px;
+    padding: 10px 10px 15px 10px;
+    box-shadow: inset 0 -4px 0 #000, 0 10px 25px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.key {
+    border-radius: 0 0 4px 4px;
+    cursor: pointer;
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 8px;
+    font-weight: bold;
+    font-size: 0.8rem;
+    color: transparent;
+}
+
+.key.white {
+    width: 6.8%;
+    height: 100%;
+    background: linear-gradient(to bottom, #fff 0%, #f0f0f0 100%);
+    box-shadow: inset 0 0 3px rgba(0,0,0,0.2), 0 3px 5px rgba(0,0,0,0.3);
+    z-index: 1;
+}
+
+.key.black {
+    position: absolute;
+    width: 4.5%;
+    height: 60%;
+    background: linear-gradient(to bottom, #333 0%, #000 100%);
+    box-shadow: inset 0 0 2px rgba(255,255,255,0.2), 2px 3px 5px rgba(0,0,0,0.4);
+    z-index: 2;
+    top: 10px;
+    border-radius: 0 0 3px 3px;
+}
+
+.chord-display {
+    text-align: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.current-chord {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.6rem;
+    color: var(--chord-highlight);
+    margin-bottom: 0.8rem;
+    min-height: 2rem;
+}
+
+.chord-notes {
+    display: flex;
+    justify-content: center;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+}
+
+.note-pill {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--glass-border);
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+/* Musical Theory Colors */
+.key.active { background: #10b981 !important; color: #fff !important; border-color: #059669 !important; box-shadow: 0 0 15px rgba(16, 185, 129, 0.6) !important; }
+.key.active.triad, .key.active.root { background: #10b981 !important; color: #fff !important; border-color: #059669 !important; box-shadow: 0 0 15px rgba(16, 185, 129, 0.6) !important; }
+.note-pill.active.triad, .note-pill.active.root { background-color: rgba(16, 185, 129, 0.8); color: #fff; border-color: #10b981; box-shadow: 0 0 10px rgba(16, 185, 129, 0.4); }
+
+.key.active.seventh { background: #3b82f6 !important; color: #fff !important; border-color: #2563eb !important; box-shadow: 0 0 15px rgba(59, 130, 246, 0.6) !important; }
+.note-pill.active.seventh { background-color: rgba(59, 130, 246, 0.8); color: #fff; border-color: #3b82f6; box-shadow: 0 0 10px rgba(59, 130, 246, 0.4); }
+
+.key.active.ninth { background: #8b5cf6 !important; color: #fff !important; border-color: #7c3aed !important; box-shadow: 0 0 15px rgba(139, 92, 246, 0.6) !important; }
+.note-pill.active.ninth { background-color: rgba(139, 92, 246, 0.8); color: #fff; border-color: #8b5cf6; box-shadow: 0 0 10px rgba(139, 92, 246, 0.4); }
+
+.key.active.alt { background: #ec4899 !important; color: #fff !important; border-color: #db2777 !important; box-shadow: 0 0 15px rgba(236, 72, 153, 0.6) !important; }
+.note-pill.active.alt { background-color: rgba(236, 72, 153, 0.8); color: #fff; border-color: #ec4899; box-shadow: 0 0 10px rgba(236, 72, 153, 0.4); }
+
+.key.next-active { background: #f59e0b !important; color: #000 !important; border-color: #d97706 !important; box-shadow: 0 0 15px rgba(245, 158, 11, 0.7) !important; }
+.note-pill.next-active { background-color: rgba(245, 158, 11, 0.85) !important; color: #000 !important; border-color: #f59e0b !important; box-shadow: 0 0 10px rgba(245, 158, 11, 0.4) !important; font-weight: 700; }
+
+.key {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 8px;
+    font-weight: 700;
+    font-size: 0.75rem;
+}
+
+/* Mobile responsive optimization */
+@media (max-width: 899px) {
+    header {
+        padding: 0.6rem 3%;
+        flex-wrap: nowrap;
+        gap: 0.5rem;
+    }
+    .song-info {
+        flex: 1;
+        min-width: 0;
+    }
+    h1.song-title {
+        font-size: 1.15rem !important;
+        margin: 0 !important;
+        color: #f43f5e !important;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: block !important;
+    }
+    h2.song-artist {
+        font-size: 0.78rem !important;
+        margin: 0 !important;
+        color: #fbbf24 !important;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: block !important;
+    }
+    .controls-panel {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: center;
+        flex-shrink: 0;
+        gap: 5px;
+    }
+    #autoscroll-btn {
+        padding: 5px 10px;
+        font-size: 0.75rem;
+        border-radius: 6px;
+        white-space: nowrap;
+    }
+    .speed-control {
+        padding: 3px 6px;
+        font-size: 0.72rem;
+        border-radius: 6px;
+        gap: 4px;
+    }
+    #bpm-input {
+        width: 42px !important;
+        font-size: 0.75rem;
+        padding: 2px !important;
+    }
+    .piano-panel {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: auto;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0.8rem;
+        background: rgba(15, 23, 42, 0.96);
+        backdrop-filter: blur(12px);
+        border-top: 1px solid var(--glass-border);
+        border-radius: 16px 16px 0 0;
+        z-index: 100;
+        box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.6);
+    }
+    .piano-keyboard {
+        width: 100%;
+        max-width: 380px;
+        height: 110px;
+        margin: 0.5rem auto;
+    }
+    .lyrics-panel {
+        max-width: 100%;
+        padding-top: 42vh;
+        padding-bottom: 75vh;
+    }
+    #lyrics-content {
+        font-size: 1.05rem;
+    }
+}
+
+/* Next chord keys on piano keyboard */
+.key.next-key {
+    background: rgba(251, 191, 36, 0.55) !important;
+    border: 2px dashed #fbbf24 !important;
+    box-shadow: 0 0 15px rgba(251, 191, 36, 0.6);
+}
+.key.active.next-key {
+    background: linear-gradient(180deg, #10b981 50%, #fbbf24 50%) !important;
+    border: 2px solid #fbbf24 !important;
+    box-shadow: 0 0 18px rgba(251, 191, 36, 0.8);
+}
+
+/* Inversion selector pills */
+.inv-pill-btn {
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: #cbd5e1;
+    padding: 4px 11px;
+    border-radius: 16px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.inv-pill-btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+}
+.inv-pill-btn.active {
+    background: #fbbf24;
+    border-color: #fbbf24;
+    color: #0f172a;
+    font-weight: 800;
+    box-shadow: 0 0 10px rgba(251, 191, 36, 0.5);
+}
+
+.piano-keyboard {
+    height: 115px !important;
+    margin: 0.3rem auto !important;
+}
+
+.key.next-active {
+    background: #fbbf24 !important;
+    color: #0f172a !important;
+    border: 1px solid #d97706 !important;
+    box-shadow: 0 0 15px rgba(251, 191, 36, 0.7);
+}
+
+.note-pill.next-active {
+    background: rgba(251, 191, 36, 0.2);
+    color: #fbbf24;
+    border: 1px solid rgba(251, 191, 36, 0.5);
+    font-weight: 700;
+}
+
+/* Fix wrapping of active chord display sequence causing height changes */
+#active-display-chord {
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    max-width: 100%;
+    scrollbar-width: none; /* Firefox */
+}
+#active-display-chord::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+}
+
+/* Hide piano toggle state */
+.piano-panel {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+}
+.piano-panel.piano-hidden {
+    transform: translateY(120%);
+    opacity: 0;
+    pointer-events: none;
+}
+@media (min-width: 900px) {
+    .piano-panel.piano-hidden {
+        display: none !important; /* On desktop, free up space */
+    }
+}
+@media (max-width: 899px) {
+    .piano-panel.piano-hidden {
+        /* On mobile, keep fixed position but push it out of screen */
+        transform: translateY(150%); 
+        visibility: hidden;
+    }
+}
+
+/* Custom thin scrollbar instead of hiding it */
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary) rgba(255,255,255,0.05);
+}
+.piano-panel::-webkit-scrollbar {
+    width: 6px;
+}
+.piano-panel::-webkit-scrollbar-track {
+    background: rgba(255,255,255,0.02);
+    border-radius: 10px;
+}
+.piano-panel::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 10px;
+}
+.piano-row {
+    align-items: stretch !important;
+}
+.inversion-column {
+    height: auto !important;
+    min-height: 110px;
+}
+
+/* If screen height is very short, shrink the pianos so they don't get cut off */
+@media (max-height: 750px) {
+    .piano-keyboard {
+        height: 85px !important;
+    }
+    .inversion-column {
+        min-height: 85px;
+    }
+    .piano-panel {
+        padding: 1rem !important;
+    }
+    .current-chord {
+        margin-bottom: 0.3rem;
+    }
+    #active-display-chord {
+        font-size: 1.1rem !important;
+    }
+}
+
+
+
+/* Responsive Desktop Fix without Scroll Trap v8 */
+.piano-panel {
+    max-height: calc(100vh - 120px);
+    overflow: hidden !important; /* PREVENTS MOUSE WHEEL SCROLL TRAP */
+}
+.piano-row {
+    align-items: stretch !important;
+}
+.piano-keyboard {
+    height: min(115px, 15vh) !important;
+}
+.inversion-column {
+    height: auto !important;
+    min-height: min(115px, 15vh) !important;
+}
+.key {
+    padding-bottom: min(8px, 2vh) !important;
+    font-size: min(0.75rem, 1.5vh) !important;
+}
+.inv-side-btn {
+    padding: min(0.38rem, 1vh) 0.2rem !important;
+    font-size: min(0.72rem, 1.2vh) !important;
+}
+
+@media (max-width: 899px) {
+    .piano-panel {
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        max-height: 50vh !important;
+        overflow-y: auto !important;
+        padding: 0.5rem 0.5rem calc(0.5rem + env(safe-area-inset-bottom, 10px)) !important;
+        border-radius: 20px 20px 0 0 !important;
+        margin: 0 !important;
+    }
+    .piano-keyboard {
+        height: 90px !important;
+        margin: 0.4rem 0 !important;
+    }
+    .inversion-column {
+        min-height: 90px !important;
+    }
+    .inv-side-btn {
+        padding: 2px !important;
+        font-size: 0.65rem !important;
+    }
+    #active-display-chord {
+        font-size: 1rem !important;
+        margin-bottom: 0 !important;
+    }
+    #active-display-lyric {
+        font-size: 0.85rem !important;
+    }
+    .current-chord h3, .next-chord h3 {
+        font-size: 0.9rem !important;
+    }
+    .key {
+        padding-bottom: 2px !important;
+        font-size: 0.65rem !important;
+    }
+}
+
+/* Fix: Make header sticky always v10 */
+header {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 999 !important;
+}
+.piano-panel {
+    top: 180px !important; /* Safe distance below tall headers */
+    max-height: calc(100vh - 190px) !important;
+    overflow-y: auto !important; /* Allows scrolling to see the bottom instead of chopping it off */
+    scrollbar-width: thin;
+}
+@media (max-height: 850px) and (min-width: 900px) {
+    .piano-panel {
+        padding: 1rem !important;
+    }
+    .next-chord-header {
+        margin-top: 0.4rem !important;
+    }
+    .piano-row {
+        margin-top: 0.2rem !important;
+    }
+}
+@media (max-width: 899px) {
+    .piano-panel {
+        position: fixed !important;
+        top: auto !important;
+        bottom: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+        max-width: 100vw !important;
+        max-height: 50vh !important;
+        z-index: 9999 !important;
+        display: flex !important;
+        visibility: visible !important;
+    }
+    .piano-panel.piano-hidden {
+        transform: translateY(150%) !important;
+        visibility: hidden !important;
+        display: flex !important;
+    }
+}

@@ -1,0 +1,83 @@
+window.SONG_DATA = {
+    "title": "Cobra Rasteira",
+    "artist": "Metá Metá",
+    "composer": "Kiko Dinucci",
+    "lyricsHtml": "\n<span class=\"chord\" data-chord=\"Dm\">Dm</span>  <span class=\"chord\" data-chord=\"Gm\">Gm</span>              <span class=\"chord\" data-chord=\"Dm\">Dm</span>\n<span class=\"lyric-line\">Nem todo trajeto é reto</span>\n      <span class=\"chord\" data-chord=\"A7\">A7</span>        <span class=\"chord\" data-chord=\"Dm\">Dm</span>\n<span class=\"lyric-line\">Nem o mar é regular</span>\n\n                  <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">Estrada, caminho torto</span>\n                   <span class=\"chord\" data-chord=\"Dm\">Dm</span>\n<span class=\"lyric-line\">Me perco pra encontrar</span>\n                  <span class=\"chord\" data-chord=\"Gm\">Gm</span>\n<span class=\"lyric-line\">Abrindo talho na vida</span>\n                  <span class=\"chord\" data-chord=\"F\">F</span>\n<span class=\"lyric-line\">Até que eu possa passar</span>\n                   <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">Como um moinho que roda</span>\n                     <span class=\"chord\" data-chord=\"Dm\">Dm</span>\n<span class=\"lyric-line\">Traçando a linha sem fim</span>\n                  <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">E desbravando o futuro</span>\n                    <span class=\"chord\" data-chord=\"Dm\">Dm</span>\n<span class=\"lyric-line\">Girando em volta de mim</span>\n\n            <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">Correndo o mundo</span>\n          <span class=\"chord\" data-chord=\"Dm\">Dm</span>\n<span class=\"lyric-line\">(Cobra rasteira)</span>\n             <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">Me engoli de vez</span>\n           <span class=\"chord\" data-chord=\"Dm\">Dm</span>\n<span class=\"lyric-line\">(Cobra rasteira)</span>\n        <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">Ô, giramundo</span>\n          <span class=\"chord\" data-chord=\"Dm\">Dm</span>\n<span class=\"lyric-line\">(Cobra rasteira)</span>\n         <span class=\"chord\" data-chord=\"A7\">A7</span>         <span class=\"chord\" data-chord=\"Dm\">Dm</span>\n<span class=\"lyric-line\">Assim o chão se fez</span>\n\n     <span class=\"chord\" data-chord=\"Gm\">Gm</span>             <span class=\"chord\" data-chord=\"Dm\">Dm</span>\n<span class=\"lyric-line\">Nem todo trajeto é reto</span>\n       <span class=\"chord\" data-chord=\"A7\">A7</span>       <span class=\"chord\" data-chord=\"Dm\">Dm</span>\n<span class=\"lyric-line\">Nem o mar é regular</span>\n",
+    "chordData": {
+        "A7": {
+            "name": "A7",
+            "notes": [
+                "A3",
+                "C#4",
+                "E4",
+                "G4"
+            ],
+            "displayNotes": [
+                "A",
+                "C#",
+                "E",
+                "G"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "Dm": {
+            "name": "Dm",
+            "notes": [
+                "D3",
+                "F3",
+                "A3"
+            ],
+            "displayNotes": [
+                "D",
+                "F",
+                "A"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "F": {
+            "name": "F",
+            "notes": [
+                "F3",
+                "A3",
+                "C4"
+            ],
+            "displayNotes": [
+                "F",
+                "A",
+                "C"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Gm": {
+            "name": "Gm",
+            "notes": [
+                "G3",
+                "A#3",
+                "D4"
+            ],
+            "displayNotes": [
+                "G",
+                "A#",
+                "D"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        }
+    }
+};
