@@ -285,6 +285,8 @@ def fetch_and_parse(url):
             pre_content = re.sub(r'<span class="cnt">.*?</span>', '', pre_content, flags=re.DOTALL)
             pre_content = re.sub(r'<span class="tablatura">', '', pre_content)
             pre_content = re.sub(r'</span>', '', pre_content)
+            # Remove guitar position annotations like "(na 5ª casa)" that confuse chord detection
+            pre_content = re.sub(r'\s*\(na\s+\d+[ªº]?\s*casa\)', '', pre_content, flags=re.IGNORECASE)
             
             unique_chords = set()
             def chord_replacer(match):
@@ -303,7 +305,23 @@ def fetch_and_parse(url):
                 elif '<span class="chord"' in line:
                     new_lines.append(line)
                 else:
-                    new_lines.append(f'<span class="lyric-line">{line}</span>')
+                    # Check if this is a chord line that wasn't wrapped in <b> tags
+                    plain = re.sub(r'<[^>]+>', '', line)
+                    if is_chord_line(plain):
+                        def bare_chord_replacer(match):
+                            ch = match.group(0)
+                            clean_ch = ch.strip('(),.[]')
+                            if clean_ch and CHORD_REGEX.match(clean_ch):
+                                unique_chords.add(clean_ch)
+                                idx = ch.find(clean_ch)
+                                prefix = html_lib.escape(ch[:idx])
+                                suffix = html_lib.escape(ch[idx + len(clean_ch):])
+                                return f'{prefix}<span class="chord" data-chord="{clean_ch}">{clean_ch}</span>{suffix}'
+                            return html_lib.escape(ch)
+                        formatted = re.sub(r'\S+', bare_chord_replacer, line)
+                        new_lines.append(formatted)
+                    else:
+                        new_lines.append(f'<span class="lyric-line">{line}</span>')
             lyrics_content = '\n'.join(new_lines)
             
             chord_data = {}

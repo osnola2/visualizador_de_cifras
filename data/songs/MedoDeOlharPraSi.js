@@ -2,7 +2,7 @@ window.SONG_DATA = {
     "title": "Medo de Olhar Pra Si",
     "artist": "Leo Cavalcanti",
     "composer": "Leo Cavalcanti",
-    "lyricsHtml": "\n<span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Pare de sofrer de antemão - não se julgue um cão -</span>\n<span class=\"chord\" data-chord=\"Am\">Am</span>\n<span class=\"lyric-line\">    Saiba que é difícil, sempre no início</span>\n<span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">dá muito medo de olhar</span>\n        <span class=\"chord\" data-chord=\"B7\">B7</span>    ( <span class=\"chord\" data-chord=\"C7\">C7</span> <span class=\"chord\" data-chord=\"B7\">B7</span> )\n<span class=\"lyric-line\">pra si mesmo</span>\n\n<span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Saiba que o ego é ilusão - é um falso chão -</span>\n<span class=\"chord\" data-chord=\"Am\">Am</span>\n<span class=\"lyric-line\">    O verdadeiro ofício é se livrar do vicio</span>\n<span class=\"chord\" data-chord=\"G\">G</span>                                  <span class=\"chord\" data-chord=\"B7\">B7</span>   ( <span class=\"chord\" data-chord=\"C7\">C7</span> <span class=\"chord\" data-chord=\"B7\">B7</span> )\n<span class=\"lyric-line\">     de se por um titulo e viver a esmo</span>\n\n<span class=\"lyric-line\">Am7 (na 5ª casa)                            Em</span>\n<span class=\"lyric-line\">Pra que se machucar com tão inútil contradição</span>\n<span class=\"lyric-line\">Am7 (na 5ª casa)                      Em</span>\n<span class=\"lyric-line\">Esse jogo insaciável de apego e aversão</span>\n<span class=\"lyric-line\">Am7 (na 5ª casa)                      Em</span>\n<span class=\"lyric-line\">Se desvalorizar é o mesmo que se super-amar</span>\n<span class=\"lyric-line\">Am7 (na 5ª casa)</span>\n<span class=\"lyric-line\">Ambos querem excluir o resto do mundo</span>\n            <span class=\"chord\" data-chord=\"B7\">B7</span>\n<span class=\"lyric-line\">Enquanto o seu tesouro fica preso lá no fundo</span>\n",
+    "lyricsHtml": "\n<span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Pare de sofrer de antemão - não se julgue um cão -</span>\n<span class=\"chord\" data-chord=\"Am\">Am</span>\n<span class=\"lyric-line\">    Saiba que é difícil, sempre no início</span>\n<span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">dá muito medo de olhar</span>\n        <span class=\"chord\" data-chord=\"B7\">B7</span>    ( <span class=\"chord\" data-chord=\"C7\">C7</span> <span class=\"chord\" data-chord=\"B7\">B7</span> )\n<span class=\"lyric-line\">pra si mesmo</span>\n\n<span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Saiba que o ego é ilusão - é um falso chão -</span>\n<span class=\"chord\" data-chord=\"Am\">Am</span>\n<span class=\"lyric-line\">    O verdadeiro ofício é se livrar do vicio</span>\n<span class=\"chord\" data-chord=\"G\">G</span>                                  <span class=\"chord\" data-chord=\"B7\">B7</span>   ( <span class=\"chord\" data-chord=\"C7\">C7</span> <span class=\"chord\" data-chord=\"B7\">B7</span> )\n<span class=\"lyric-line\">     de se por um titulo e viver a esmo</span>\n\n<span class=\"chord\" data-chord=\"Am7\">Am7</span>                            <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Pra que se machucar com tão inútil contradição</span>\n<span class=\"chord\" data-chord=\"Am7\">Am7</span>                      <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Esse jogo insaciável de apego e aversão</span>\n<span class=\"chord\" data-chord=\"Am7\">Am7</span>                      <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Se desvalorizar é o mesmo que se super-amar</span>\n<span class=\"chord\" data-chord=\"Am7\">Am7</span>\n<span class=\"lyric-line\">Ambos querem excluir o resto do mundo</span>\n            <span class=\"chord\" data-chord=\"B7\">B7</span>\n<span class=\"lyric-line\">Enquanto o seu tesouro fica preso lá no fundo</span>\n",
     "chordData": {
         "Am": {
             "name": "Am",
@@ -20,6 +20,27 @@ window.SONG_DATA = {
                 "root",
                 "triad",
                 "triad"
+            ]
+        },
+        "Am7": {
+            "name": "Am7",
+            "notes": [
+                "A3",
+                "C4",
+                "E4",
+                "G4"
+            ],
+            "displayNotes": [
+                "A",
+                "C",
+                "E",
+                "G"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
             ]
         },
         "B7": {
