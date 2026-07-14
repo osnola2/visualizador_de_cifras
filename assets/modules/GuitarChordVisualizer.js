@@ -261,7 +261,7 @@
         const topY = 40;
         const fretSpacing = 32;
 
-        let svg = `<svg viewBox="0 0 ${width} ${height}" style="width: 100%; max-width: ${width}px; height: auto; display: block; margin: 0 auto; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));">`;
+        let svg = `<svg viewBox="0 0 190 185" style="width: 100%; max-width: ${width}px; height: auto; max-height: ${height}px; display: block; margin: 0 auto; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));">`;
 
         // Indicador de casa (ex: 3ª casa)
         if (baseFret > 1) {

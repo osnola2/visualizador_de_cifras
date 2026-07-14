@@ -146,21 +146,21 @@ function initViolaoViewer() {
         if (currentChordNameEl) currentChordNameEl.textContent = data.name;
 
         if (window.GuitarChordVisualizer && guitarCurrentView) {
-            guitarCurrentView.innerHTML = window.GuitarChordVisualizer.renderGuitarFretboardSVG(data.name, { width: 220, height: 195 });
+            guitarCurrentView.innerHTML = window.GuitarChordVisualizer.renderGuitarFretboardSVG(data.name, { width: 155, height: 150 });
         }
 
         if (window.GuitarChordVisualizer && guitarNextView) {
             if (nextChordId && chordData[nextChordId]) {
                 const nextData = chordData[nextChordId];
                 guitarNextView.innerHTML = `
-                    <div style="text-align: center; margin-bottom: 0.4rem;">
-                        <span style="font-size: 1.05rem; font-weight: 800; color: #fff;">${nextData.name}</span>
-                        ${nextLyric ? `<div style="font-size: 0.82rem; color: #cbd5e1; margin-top: 0.2rem; font-style: italic;">"${nextLyric}"</div>` : ''}
+                    <div style="text-align: center; margin-bottom: 0.2rem;">
+                        <span style="font-size: 1.0rem; font-weight: 800; color: #fff;">${nextData.name}</span>
+                        ${nextLyric ? `<div style="font-size: 0.78rem; color: #cbd5e1; margin-top: 0.1rem; font-style: italic;">"${nextLyric}"</div>` : ''}
                     </div>
-                    ${window.GuitarChordVisualizer.renderGuitarFretboardSVG(nextData.name, { width: 180, height: 165 })}
+                    ${window.GuitarChordVisualizer.renderGuitarFretboardSVG(nextData.name, { width: 120, height: 115 })}
                 `;
             } else {
-                guitarNextView.innerHTML = '<div style="text-align:center; color:#64748b; font-size:0.85rem; padding:1rem 0;">Fim da música</div>';
+                guitarNextView.innerHTML = '<div style="text-align:center; color:#64748b; font-size:0.85rem; padding:0.6rem 0;">Fim da música</div>';
             }
         }
     }
