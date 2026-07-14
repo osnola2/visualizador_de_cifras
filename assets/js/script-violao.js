@@ -62,6 +62,7 @@ function initViolaoViewer() {
     let currentDisplayedChordId = null;
     let currentNextChordId = null;
     let currentNextLyric = null;
+    let currentPlayingChordEl = null;
 
     const chordElements = document.querySelectorAll('.chord');
     const activeDisplayChord = document.getElementById('active-display-chord');
@@ -70,10 +71,67 @@ function initViolaoViewer() {
     const guitarCurrentView = document.getElementById('guitar-current-view');
     const guitarNextView = document.getElementById('guitar-next-view');
 
+    function getLyricForChordElement(chordEl) {
+        if (!chordEl) return null;
+        let curr = chordEl.nextSibling;
+        let passedNewline = false;
+
+        while (curr) {
+            if (curr.nodeType === 1) {
+                if (curr.classList.contains('lyric-line')) {
+                    const txt = curr.textContent.trim();
+                    if (txt) return txt;
+                }
+                if (curr.classList.contains('chord') && passedNewline) {
+                    break;
+                }
+            } else if (curr.nodeType === 3) {
+                const text = curr.nodeValue || '';
+                if (text.includes('\n')) {
+                    passedNewline = true;
+                }
+                const trimmed = text.trim();
+                if (trimmed.length > 0) {
+                    return trimmed;
+                }
+            }
+            curr = curr.nextSibling;
+        }
+        return null;
+    }
+
+    function highlightRightPanelLyric(activeChordEl) {
+        if (!activeChordEl || !activeDisplayChord || !activeDisplayLyric) return;
+
+        const foundLyric = getLyricForChordElement(activeChordEl);
+        const lyricText = foundLyric ? foundLyric : "Intro / Instrumental";
+        activeDisplayLyric.textContent = lyricText || "---";
+
+        const activeRect = activeChordEl.getBoundingClientRect();
+        const allChordsList = Array.from(document.querySelectorAll('.chord'));
+        const chordsOnLine = allChordsList.filter(c => {
+            const r = c.getBoundingClientRect();
+            return Math.abs(r.top - activeRect.top) < 28;
+        }).sort((a, b) => a.getBoundingClientRect().left - b.getBoundingClientRect().left);
+
+        if (chordsOnLine.length <= 1) {
+            activeDisplayChord.innerHTML = activeChordEl.textContent.trim();
+        } else {
+            const sequenceHtml = chordsOnLine.map(c => {
+                const name = c.textContent.trim();
+                const isActive = (c === activeChordEl);
+                if (isActive) {
+                    return `<span style="background: #fbbf24; color: #0f172a; padding: 3px 12px; border-radius: 8px; font-weight: 800; box-shadow: 0 0 15px rgba(251, 191, 36, 0.7); transform: scale(1.12); display: inline-block;">${name}</span>`;
+                } else {
+                    return `<span style="opacity: 0.5; font-weight: 600; padding: 2px 6px;">${name}</span>`;
+                }
+            }).join(`<span style="opacity: 0.35; margin: 0 6px;">→</span>`);
+            activeDisplayChord.innerHTML = sequenceHtml;
+        }
+    }
+
     function showChord(chordId, nextChordId, nextLyric) {
         if (!chordId || !chordData[chordId]) {
-            if (activeDisplayChord) activeDisplayChord.textContent = '';
-            if (activeDisplayLyric) activeDisplayLyric.textContent = 'Passe o mouse ou role a tela...';
             if (currentChordNameEl) currentChordNameEl.textContent = '---';
             if (guitarCurrentView) guitarCurrentView.innerHTML = '';
             if (guitarNextView) guitarNextView.innerHTML = '';
@@ -81,12 +139,10 @@ function initViolaoViewer() {
         }
 
         currentDisplayedChordId = chordId;
-        currentNextChordId = nextChordId;
-        currentNextLyric = nextLyric;
+        currentNextChordId = nextChordId || null;
+        currentNextLyric = nextLyric || null;
 
         const data = chordData[chordId];
-        if (activeDisplayChord) activeDisplayChord.textContent = data.name;
-        if (activeDisplayLyric) activeDisplayLyric.textContent = '';
         if (currentChordNameEl) currentChordNameEl.textContent = data.name;
 
         if (window.GuitarChordVisualizer && guitarCurrentView) {
@@ -109,13 +165,122 @@ function initViolaoViewer() {
         }
     }
 
+    let allChords = [];
+    setTimeout(() => {
+        const chordElementsList = Array.from(document.querySelectorAll('.chord'));
+        let chordsByLine = {};
+        let lineTops = [];
+        
+        chordElementsList.forEach(el => {
+            const rect = el.getBoundingClientRect();
+            const exactTop = rect.top + window.scrollY;
+            const lineKey = Math.round(exactTop / 10) * 10;
+            
+            if (!chordsByLine[lineKey]) {
+                chordsByLine[lineKey] = [];
+                lineTops.push(lineKey);
+            }
+            chordsByLine[lineKey].push({
+                element: el,
+                chordName: el.getAttribute('data-chord'),
+                exactTop: exactTop,
+                absoluteLeft: rect.left + window.scrollX
+            });
+        });
+
+        lineTops.sort((a, b) => a - b);
+
+        for (let i = 0; i < lineTops.length; i++) {
+            const currentTop = lineTops[i];
+            const nextTop = i < lineTops.length - 1 ? lineTops[i+1] : currentTop + 80;
+            const availableSpace = nextTop - currentTop; 
+            
+            const chords = chordsByLine[currentTop];
+            chords.sort((a, b) => a.absoluteLeft - b.absoluteLeft);
+            
+            for (let j = 0; j < chords.length; j++) {
+                const fraction = j / chords.length; 
+                const yOffset = fraction * availableSpace * 0.8; 
+                
+                allChords.push({
+                    element: chords[j].element,
+                    chordName: chords[j].chordName,
+                    effectiveY: chords[j].exactTop + yOffset
+                });
+            }
+        }
+        allChords.sort((a, b) => a.effectiveY - b.effectiveY);
+        window.dispatchEvent(new Event('scroll'));
+    }, 400);
+
     chordElements.forEach(el => {
         el.addEventListener('mouseenter', () => {
             if (!isAutoScrolling) {
-                const chordId = el.getAttribute('data-chord');
-                showChord(chordId, null, null);
+                const cId = el.getAttribute('data-chord');
+                const idxInSong = allChords.findIndex(c => c.element === el);
+                const nextItem = (idxInSong >= 0 && idxInSong < allChords.length - 1) ? allChords[idxInSong + 1] : null;
+                const nextData = nextItem ? nextItem.chordName : null;
+                const nextLyric = nextItem ? getLyricForChordElement(nextItem.element) : null;
+                showChord(cId, nextData, nextLyric);
+                highlightRightPanelLyric(el);
             }
         });
+
+        el.addEventListener('click', () => {
+            const cId = el.getAttribute('data-chord');
+            const idxInSong = allChords.findIndex(c => c.element === el);
+            const nextItem = (idxInSong >= 0 && idxInSong < allChords.length - 1) ? allChords[idxInSong + 1] : null;
+            const nextData = nextItem ? nextItem.chordName : null;
+            const nextLyric = nextItem ? getLyricForChordElement(nextItem.element) : null;
+            showChord(cId, nextData, nextLyric);
+            highlightRightPanelLyric(el);
+        });
+    });
+
+    window.addEventListener('scroll', () => {
+        if (isAutoScrolling || allChords.length === 0) return;
+        
+        let activeChordData = null;
+        if (window.scrollY < 40) {
+            activeChordData = allChords[0];
+        } else {
+            const readingY = window.scrollY + 320;
+            for (let i = 0; i < allChords.length; i++) {
+                if (readingY >= allChords[i].effectiveY) {
+                    activeChordData = allChords[i];
+                } else {
+                    break;
+                }
+            }
+        }
+        
+        if (!activeChordData && allChords.length > 0) {
+            activeChordData = allChords[0];
+        }
+        
+        if (activeChordData && activeChordData.element !== currentPlayingChordEl) {
+            currentPlayingChordEl = activeChordData.element;
+            const idxInSong = allChords.indexOf(activeChordData);
+            const nextItem = (idxInSong >= 0 && idxInSong < allChords.length - 1) ? allChords[idxInSong + 1] : null;
+            const nextData = nextItem ? nextItem.chordName : null;
+            const nextLyric = nextItem ? getLyricForChordElement(nextItem.element) : null;
+            showChord(activeChordData.chordName, nextData, nextLyric);
+            
+            document.querySelectorAll('.chord.active-chord').forEach(c => c.classList.remove('active-chord'));
+            activeChordData.element.classList.add('active-chord');
+
+            document.querySelectorAll('.lyric-line.active-line').forEach(el => el.classList.remove('active-line'));
+            let curr = activeChordData.element.nextSibling;
+            while (curr) {
+                if (curr.nodeType === 1 && curr.classList.contains('lyric-line')) {
+                    curr.classList.add('active-line');
+                    break;
+                }
+                curr = curr.nextSibling;
+            }
+
+            highlightRightPanelLyric(activeChordData.element);
+        }
     });
 
     // Auto-scroll logic
@@ -162,58 +327,42 @@ function initViolaoViewer() {
             scrollAccumulator -= pixels;
         }
 
-        // Highlight center chord during autoscroll
         const viewportCenterY = window.innerHeight * 0.38;
         let closestChordEl = null;
         let minDistance = Infinity;
-        let closestIndex = -1;
 
-        chordElements.forEach((el, index) => {
-            const rect = el.getBoundingClientRect();
+        allChords.forEach((item) => {
+            const rect = item.element.getBoundingClientRect();
             const elCenterY = rect.top + rect.height / 2;
             const distance = Math.abs(elCenterY - viewportCenterY);
 
             if (distance < minDistance) {
                 minDistance = distance;
-                closestChordEl = el;
-                closestIndex = index;
+                closestChordEl = item.element;
             }
         });
 
-        if (closestChordEl && minDistance < 250) {
+        if (closestChordEl && minDistance < 250 && closestChordEl !== currentPlayingChordEl) {
+            currentPlayingChordEl = closestChordEl;
             chordElements.forEach(el => el.classList.remove('active-chord'));
             closestChordEl.classList.add('active-chord');
 
-            const chordId = closestChordEl.getAttribute('data-chord');
-            let nextChordId = null;
-            let nextLyricText = null;
+            const idxInSong = allChords.findIndex(c => c.element === closestChordEl);
+            const nextItem = (idxInSong >= 0 && idxInSong < allChords.length - 1) ? allChords[idxInSong + 1] : null;
+            const nextData = nextItem ? nextItem.chordName : null;
+            const nextLyric = nextItem ? getLyricForChordElement(nextItem.element) : null;
 
-            if (closestIndex !== -1 && closestIndex + 1 < chordElements.length) {
-                const nextEl = chordElements[closestIndex + 1];
-                nextChordId = nextEl.getAttribute('data-chord');
+            showChord(closestChordEl.getAttribute('data-chord'), nextData, nextLyric);
+            highlightRightPanelLyric(closestChordEl);
 
-                let currNode = closestChordEl.nextSibling;
-                let lyricCollected = '';
-                while (currNode && currNode !== nextEl) {
-                    if (currNode.nodeType === Node.TEXT_NODE) {
-                        lyricCollected += currNode.textContent;
-                    } else if (currNode.nodeType === Node.ELEMENT_NODE) {
-                        if (currNode.classList && currNode.classList.contains('lyric-line')) {
-                            lyricCollected += ' ' + currNode.textContent;
-                        } else {
-                            lyricCollected += ' ' + currNode.innerText;
-                        }
-                    }
-                    currNode = currNode.nextSibling;
+            document.querySelectorAll('.lyric-line.active-line').forEach(el => el.classList.remove('active-line'));
+            let curr = closestChordEl.nextSibling;
+            while (curr) {
+                if (curr.nodeType === 1 && curr.classList.contains('lyric-line')) {
+                    curr.classList.add('active-line');
+                    break;
                 }
-                const cleaned = lyricCollected.replace(/\s+/g, ' ').trim();
-                if (cleaned) {
-                    nextLyricText = cleaned.length > 45 ? cleaned.substring(0, 45) + '...' : cleaned;
-                }
-            }
-
-            if (chordId !== currentDisplayedChordId || nextChordId !== currentNextChordId) {
-                showChord(chordId, nextChordId, nextLyricText);
+                curr = curr.nextSibling;
             }
         }
 
