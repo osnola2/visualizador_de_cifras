@@ -141,6 +141,84 @@ def fetch_jina_markdown(url):
     t, a, l, c = parse_plaintext_tab(tab_content, song_title, song_artist)
     return t, a, "", l, c
 
+def parse_sambacifras(url):
+    print(f"Parsing Samba Cifras URL: {url} ...")
+    req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+    try:
+        response = urllib.request.urlopen(req)
+        raw = response.read()
+        html = raw.decode('utf-8', errors='replace')
+    except Exception as e:
+        print(f"Error fetching Samba Cifras URL ({e})")
+        return None
+
+    title_match = re.search(r'<h1[^>]*>(.*?)</h1>', html, re.IGNORECASE | re.DOTALL)
+    song_title = title_match.group(1).strip() if title_match else "Unknown Title"
+
+    song_artist = "Unknown Artist"
+    art_m = re.search(r'<article[^>]*class=["\'][^"\']*sambista-([^/"\']+)["\'][^>]*>', html, re.IGNORECASE)
+    if art_m:
+        slug = art_m.group(1).split()[0]
+        song_artist = " ".join(w.capitalize() for w in slug.split("-"))
+
+    song_composer = ""
+    m = re.search(r'<div[^>]*class="[^"]*entry-content[^"]*"[^>]*>(.*?)(?:<footer|<div class="entry-|$)', html, re.IGNORECASE | re.DOTALL)
+    if not m:
+        print("Could not find entry-content container in Samba Cifras page.")
+        return None
+
+    content = m.group(1)
+    p_matches = re.findall(r'<p[^>]*>(.*?)</p>', content, re.IGNORECASE | re.DOTALL)
+
+    unique_chords = set()
+    new_lines = []
+
+    for p_html in p_matches:
+        clean_p = re.sub(r'<[^>]+>', '', p_html)
+        clean_p = clean_p.replace('\xa0', ' ').replace('&nbsp;', ' ')
+        line = clean_p.rstrip()
+        
+        if not line.strip():
+            if new_lines and new_lines[-1] != "":
+                new_lines.append("")
+            continue
+        
+        if line.strip().startswith('(') and line.strip().endswith(')') and len(new_lines) == 0:
+            if not song_composer:
+                song_composer = line.strip().strip('()')
+            continue
+            
+        if is_chord_line(line):
+            def replace_chord_token(match):
+                ch = match.group(0)
+                clean_ch = ch.strip('(),.')
+                if clean_ch:
+                    unique_chords.add(clean_ch)
+                    return f'<span class="chord" data-chord="{clean_ch}">{clean_ch}</span>'
+                return ch
+            formatted = re.sub(r'\S+', replace_chord_token, line)
+            new_lines.append(formatted)
+        else:
+            escaped = html_lib.escape(line)
+            new_lines.append(f'<span class="lyric-line">{escaped}</span>')
+
+    while new_lines and new_lines[-1] == "":
+        new_lines.pop()
+
+    lyrics_content = '\n'.join(new_lines)
+
+    chord_data = {}
+    for chord in sorted(unique_chords):
+        notes, display, types = guess_chord_notes(chord)
+        chord_data[chord] = {
+            "name": chord,
+            "notes": notes,
+            "displayNotes": display,
+            "noteTypes": types
+        }
+
+    return song_title, song_artist, song_composer, lyrics_content, chord_data
+
 def fetch_and_parse(url):
     print(f"Fetching {url} ...")
     
@@ -151,6 +229,14 @@ def fetch_and_parse(url):
             print("Failed to extract tab from Ultimate Guitar.")
             return
         song_title, song_artist, song_composer, lyrics_content, chord_data = result
+        html = None
+    elif "sambacifras.com.br" in url:
+        result = parse_sambacifras(url)
+        if not result:
+            print("Failed to extract tab from Samba Cifras.")
+            return
+        song_title, song_artist, song_composer, lyrics_content, chord_data = result
+        html = None
     else:
         req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
         try:
