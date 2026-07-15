@@ -1,0 +1,188 @@
+{
+    "title": "Bom dia tristeza",
+    "artist": "Adoniran Barbosa",
+    "composer": "Adoniran Barbosa/Vinicius de Moraes",
+    "lyricsHtml": "\n<span class=\"chord\" data-chord=\"Dm\">Dm</span>    <span class=\"chord\" data-chord=\"A7\">A7</span>      <span class=\"chord\" data-chord=\"Dm\">Dm</span>              <span class=\"chord\" data-chord=\"A7\">A7</span>      <span class=\"chord\" data-chord=\"Dm\">Dm</span>               <span class=\"chord\" data-chord=\"Bb7\">Bb7</span>                <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">Bom dia tristeza, que tarde tristeza, você veio hoje me ver</span>\n                      <span class=\"chord\" data-chord=\"Gm\">Gm</span>  <span class=\"chord\" data-chord=\"A7\">A7</span>             <span class=\"chord\" data-chord=\"Gm\">Gm</span>                           <span class=\"chord\" data-chord=\"Em7/5-\">Em7/5-</span>  <span class=\"chord\" data-chord=\"A7\">A7</span>          <span class=\"chord\" data-chord=\"Dm\">Dm</span>\n<span class=\"lyric-line\">Já estava ficando até meio triste de estar tanto tempo longe de você</span>\n                        <span class=\"chord\" data-chord=\"C7\">C7</span>                          <span class=\"chord\" data-chord=\"F\">F</span>      <span class=\"chord\" data-chord=\"Em7/5-\">Em7/5-</span>  <span class=\"chord\" data-chord=\"A7\">A7</span>                     <span class=\"chord\" data-chord=\"Am7/5-\">Am7/5-</span>  <span class=\"chord\" data-chord=\"D7\">D7</span>\n<span class=\"lyric-line\">Se chegue tristeza, se sente comigo aqui       nesta mesa de bar</span>\n                        <span class=\"chord\" data-chord=\"Gm\">Gm</span>   <span class=\"chord\" data-chord=\"A7\">A7</span>                     <span class=\"chord\" data-chord=\"Dm\">Dm</span>           <span class=\"chord\" data-chord=\"Bb7\">Bb7</span>               <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">Beba do meu copo, me de o seu ombro que é para eu chorar</span>\n                       <span class=\"chord\" data-chord=\"Bb7\">Bb7</span>   <span class=\"chord\" data-chord=\"A7\">A7</span>                 <span class=\"chord\" data-chord=\"Dm\">Dm</span>\n<span class=\"lyric-line\">Chorar de tristeza, tristeza de amar</span>\n",
+    "chordData": {
+        "A7": {
+            "name": "A7",
+            "notes": [
+                "A3",
+                "C#4",
+                "E4",
+                "G4"
+            ],
+            "displayNotes": [
+                "A",
+                "C#",
+                "E",
+                "G"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "Am7/5-": {
+            "name": "Am7/5-",
+            "notes": [
+                "A3",
+                "C4",
+                "D#4",
+                "G4"
+            ],
+            "displayNotes": [
+                "A",
+                "C",
+                "D#",
+                "G"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "Bb7": {
+            "name": "Bb7",
+            "notes": [
+                "A#3",
+                "D4",
+                "F4",
+                "G#4"
+            ],
+            "displayNotes": [
+                "Bb",
+                "D",
+                "F",
+                "Ab"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "C7": {
+            "name": "C7",
+            "notes": [
+                "C3",
+                "E3",
+                "G3",
+                "A#3"
+            ],
+            "displayNotes": [
+                "C",
+                "E",
+                "G",
+                "A#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "D7": {
+            "name": "D7",
+            "notes": [
+                "D3",
+                "F#3",
+                "A3",
+                "C4"
+            ],
+            "displayNotes": [
+                "D",
+                "F#",
+                "A",
+                "C"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "Dm": {
+            "name": "Dm",
+            "notes": [
+                "D3",
+                "F3",
+                "A3"
+            ],
+            "displayNotes": [
+                "D",
+                "F",
+                "A"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Em7/5-": {
+            "name": "Em7/5-",
+            "notes": [
+                "E3",
+                "G3",
+                "A#3",
+                "D4"
+            ],
+            "displayNotes": [
+                "E",
+                "G",
+                "A#",
+                "D"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "F": {
+            "name": "F",
+            "notes": [
+                "F3",
+                "A3",
+                "C4"
+            ],
+            "displayNotes": [
+                "F",
+                "A",
+                "C"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Gm": {
+            "name": "Gm",
+            "notes": [
+                "G3",
+                "A#3",
+                "D4"
+            ],
+            "displayNotes": [
+                "G",
+                "A#",
+                "D"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        }
+    }
+}

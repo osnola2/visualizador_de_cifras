@@ -1,0 +1,146 @@
+{
+    "title": "Apaga o fogo Mané",
+    "artist": "Adoniran Barbosa",
+    "composer": "Adoniran Barbosa",
+    "lyricsHtml": "\n<span class=\"chord\" data-chord=\"Dm\">Dm</span>                                 <span class=\"chord\" data-chord=\"D7\">D7</span>                        <span class=\"chord\" data-chord=\"Gm\">Gm</span>\n<span class=\"lyric-line\">Inês saiu dizendo que ia comprar um pavio pro lampião</span>\n                                                  <span class=\"chord\" data-chord=\"A7\">A7</span>             <span class=\"chord\" data-chord=\"Dm\">Dm</span>    <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">Pode me esperar Mané que eu já volto já</span>\n                    <span class=\"chord\" data-chord=\"Dm\">Dm</span>                 <span class=\"chord\" data-chord=\"D7\">D7</span>                    <span class=\"chord\" data-chord=\"Gm\">Gm</span>\n<span class=\"lyric-line\">Acendi o fogão, botei a água pra esquentar</span>\n                     <span class=\"chord\" data-chord=\"C7\">C7</span>                                      <span class=\"chord\" data-chord=\"F\">F</span>      <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">E fui pro portão só pra ver Inês chegar</span>\n          <span class=\"chord\" data-chord=\"Dm\">Dm</span>      <span class=\"chord\" data-chord=\"D7\">D7</span>            <span class=\"chord\" data-chord=\"Gm\">Gm</span>\n<span class=\"lyric-line\">Anoiteceu e ela não voltou</span>\n                              <span class=\"chord\" data-chord=\"Em7/5-\">Em7/5-</span>      <span class=\"chord\" data-chord=\"A7\">A7</span>                         <span class=\"chord\" data-chord=\"Dm\">Dm</span>       <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">Fui pra rua feito louco pra saber o que aconteceu</span>\n                          <span class=\"chord\" data-chord=\"Dm\">Dm</span>                                  <span class=\"chord\" data-chord=\"D7\">D7</span>               <span class=\"chord\" data-chord=\"Gm\">Gm</span>\n<span class=\"lyric-line\">Procurei na Central, procurei no Hospital e no xadrez</span>\n                               <span class=\"chord\" data-chord=\"C7\">C7</span>                                  <span class=\"chord\" data-chord=\"F\">F</span>\n<span class=\"lyric-line\">Andei a cidade inteira e não encontrei Inês</span>\n                    <span class=\"chord\" data-chord=\"D7\">D7</span>                 <span class=\"chord\" data-chord=\"Gm\">Gm</span>                             <span class=\"chord\" data-chord=\"C7\">C7</span>                <span class=\"chord\" data-chord=\"F\">F</span>     <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">Voltei pra casa triste demais o que Inês me fez não se faz</span>\n           <span class=\"chord\" data-chord=\"Dm\">Dm</span>            <span class=\"chord\" data-chord=\"D7\">D7</span>            <span class=\"chord\" data-chord=\"Gm\">Gm</span>\n<span class=\"lyric-line\">E no chão bem perto do fogão</span>\n         <span class=\"chord\" data-chord=\"Em7/5-\">Em7/5-</span>      <span class=\"chord\" data-chord=\"A7\">A7</span>                 <span class=\"chord\" data-chord=\"Dm\">Dm</span>\n<span class=\"lyric-line\">Encontrei um papel escrito assim</span>\n                           <span class=\"chord\" data-chord=\"Gm\">Gm</span>                     <span class=\"chord\" data-chord=\"A7\">A7</span>                    <span class=\"chord\" data-chord=\"Dm\">Dm</span>\n<span class=\"lyric-line\">Pode apagar o fogo mané que eu não volto mais</span>\n                           <span class=\"chord\" data-chord=\"Gm\">Gm</span>                     <span class=\"chord\" data-chord=\"A7\">A7</span>                    <span class=\"chord\" data-chord=\"Dm\">Dm</span>\n<span class=\"lyric-line\">Pode apagar o fogo mané que eu não volto mais</span>\n",
+    "chordData": {
+        "A7": {
+            "name": "A7",
+            "notes": [
+                "A3",
+                "C#4",
+                "E4",
+                "G4"
+            ],
+            "displayNotes": [
+                "A",
+                "C#",
+                "E",
+                "G"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "C7": {
+            "name": "C7",
+            "notes": [
+                "C3",
+                "E3",
+                "G3",
+                "A#3"
+            ],
+            "displayNotes": [
+                "C",
+                "E",
+                "G",
+                "A#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "D7": {
+            "name": "D7",
+            "notes": [
+                "D3",
+                "F#3",
+                "A3",
+                "C4"
+            ],
+            "displayNotes": [
+                "D",
+                "F#",
+                "A",
+                "C"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "Dm": {
+            "name": "Dm",
+            "notes": [
+                "D3",
+                "F3",
+                "A3"
+            ],
+            "displayNotes": [
+                "D",
+                "F",
+                "A"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Em7/5-": {
+            "name": "Em7/5-",
+            "notes": [
+                "E3",
+                "G3",
+                "A#3",
+                "D4"
+            ],
+            "displayNotes": [
+                "E",
+                "G",
+                "A#",
+                "D"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "F": {
+            "name": "F",
+            "notes": [
+                "F3",
+                "A3",
+                "C4"
+            ],
+            "displayNotes": [
+                "F",
+                "A",
+                "C"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Gm": {
+            "name": "Gm",
+            "notes": [
+                "G3",
+                "A#3",
+                "D4"
+            ],
+            "displayNotes": [
+                "G",
+                "A#",
+                "D"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        }
+    }
+}
