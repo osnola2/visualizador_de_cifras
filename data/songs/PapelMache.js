@@ -546,5 +546,6 @@ window.SONG_DATA = {
                 "alt"
             ]
         }
-    }
+    },
+    "composer": "Capinam"
 };
