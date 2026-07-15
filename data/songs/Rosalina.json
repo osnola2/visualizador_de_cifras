@@ -2,8 +2,26 @@
     "title": "Rosalina",
     "artist": "Lello Di Sarno",
     "composer": "Lello Di Sarno/Noah Guper",
-    "lyricsHtml": "\n<span class=\"lyric-line\">Cm7                                             B°                                      Cm7</span>\n<span class=\"lyric-line\">Dizem que Rosalina quando passa, enche de calor a praça</span>\n<span class=\"lyric-line\">                                      B°                                             Cm7</span>\n<span class=\"lyric-line\">Todos querem ver a graça, seus olhos de manjericão</span>\n<span class=\"lyric-line\">            B°              Cm7             B°             Cm7</span>\n<span class=\"lyric-line\">Eu fui ver, não vi não, eu fui ver, não vi não</span>\n<span class=\"chord\" data-chord=\"Cm7\">Cm7</span>                        <span class=\"chord\" data-chord=\"Cm5-\">Cm5-</span>                                 <span class=\"chord\" data-chord=\"Cm7\">Cm7</span>\n<span class=\"lyric-line\">Pois bem naquele dia em que eu fui procurar</span>\n      <span class=\"chord\" data-chord=\"Cm5-\">Cm5-</span>                           <span class=\"chord\" data-chord=\"Cm7\">Cm7</span>                             <span class=\"chord\" data-chord=\"Cm5-\">Cm5-</span>                       <span class=\"chord\" data-chord=\"G7\">G7</span>\n<span class=\"lyric-line\">Rosalina não estava por lá, ninguém sabe o mal que lhe acometeu</span>\n<span class=\"chord\" data-chord=\"Cm7\">Cm7</span>        <span class=\"chord\" data-chord=\"Cm5-\">Cm5-</span>                            <span class=\"chord\" data-chord=\"Cm7\">Cm7</span>                     <span class=\"chord\" data-chord=\"Cm5-\">Cm5-</span>                       <span class=\"chord\" data-chord=\"Cm7\">Cm7</span>\n<span class=\"lyric-line\">Foi Sebastião que lhe abandonou, então seu mundo se desmoronou</span>\n                  <span class=\"chord\" data-chord=\"G#7\">G#7</span> <span class=\"chord\" data-chord=\"G7\">G7</span>      <span class=\"chord\" data-chord=\"Cm7\">Cm7</span>\n<span class=\"lyric-line\">E do coração ela morreu</span>\n<span class=\"lyric-line\">             B°                  Cm7             B°                  Cm7</span>\n<span class=\"lyric-line\">Eu fui ver, mas não deu, eu fui ver, mas não deu</span>\n",
+    "lyricsHtml": "\n<span class=\"chord\" data-chord=\"Cm7\">Cm7</span>                                             <span class=\"chord\" data-chord=\"B°\">B°</span>                                      <span class=\"chord\" data-chord=\"Cm7\">Cm7</span>\n<span class=\"lyric-line\">Dizem que Rosalina quando passa, enche de calor a praça</span>\n                                      <span class=\"chord\" data-chord=\"B°\">B°</span>                                             <span class=\"chord\" data-chord=\"Cm7\">Cm7</span>\n<span class=\"lyric-line\">Todos querem ver a graça, seus olhos de manjericão</span>\n            <span class=\"chord\" data-chord=\"B°\">B°</span>              <span class=\"chord\" data-chord=\"Cm7\">Cm7</span>             <span class=\"chord\" data-chord=\"B°\">B°</span>             <span class=\"chord\" data-chord=\"Cm7\">Cm7</span>\n<span class=\"lyric-line\">Eu fui ver, não vi não, eu fui ver, não vi não</span>\n<span class=\"chord\" data-chord=\"Cm7\">Cm7</span>                        <span class=\"chord\" data-chord=\"Cm5-\">Cm5-</span>                                 <span class=\"chord\" data-chord=\"Cm7\">Cm7</span>\n<span class=\"lyric-line\">Pois bem naquele dia em que eu fui procurar</span>\n      <span class=\"chord\" data-chord=\"Cm5-\">Cm5-</span>                           <span class=\"chord\" data-chord=\"Cm7\">Cm7</span>                             <span class=\"chord\" data-chord=\"Cm5-\">Cm5-</span>                       <span class=\"chord\" data-chord=\"G7\">G7</span>\n<span class=\"lyric-line\">Rosalina não estava por lá, ninguém sabe o mal que lhe acometeu</span>\n<span class=\"chord\" data-chord=\"Cm7\">Cm7</span>        <span class=\"chord\" data-chord=\"Cm5-\">Cm5-</span>                            <span class=\"chord\" data-chord=\"Cm7\">Cm7</span>                     <span class=\"chord\" data-chord=\"Cm5-\">Cm5-</span>                       <span class=\"chord\" data-chord=\"Cm7\">Cm7</span>\n<span class=\"lyric-line\">Foi Sebastião que lhe abandonou, então seu mundo se desmoronou</span>\n                  <span class=\"chord\" data-chord=\"G#7\">G#7</span> <span class=\"chord\" data-chord=\"G7\">G7</span>      <span class=\"chord\" data-chord=\"Cm7\">Cm7</span>\n<span class=\"lyric-line\">E do coração ela morreu</span>\n             <span class=\"chord\" data-chord=\"B°\">B°</span>                  <span class=\"chord\" data-chord=\"Cm7\">Cm7</span>             <span class=\"chord\" data-chord=\"B°\">B°</span>                  <span class=\"chord\" data-chord=\"Cm7\">Cm7</span>\n<span class=\"lyric-line\">Eu fui ver, mas não deu, eu fui ver, mas não deu</span>\n",
     "chordData": {
+        "B°": {
+            "name": "B°",
+            "notes": [
+                "B3",
+                "D4",
+                "F4"
+            ],
+            "displayNotes": [
+                "B",
+                "D",
+                "F"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
         "Cm5-": {
             "name": "Cm5-",
             "notes": [

@@ -22,7 +22,7 @@ def generate_file_name(title):
 
 from chord_parser import parse_chord as guess_chord_notes
 
-CHORD_REGEX = re.compile(r'^[A-G][b#]?(?:m|maj|min|dim|aug|sus|add|M|\d|\+|-|/\d+[-+b#]?|\([-+b#\d]+\))*(?:/[A-G][b#]?)?$')
+CHORD_REGEX = re.compile(r'^[A-G][b#]?(?:m|maj|min|dim|aug|sus|add|M|\d|\+|-|°|º|ø|/\d+[-+b#]?|\([-+b#/\dA-Za-z°ºø]+\))*(?:/[A-G][b#]?)?$')
 
 def is_chord_line(line):
     stripped = line.strip()
