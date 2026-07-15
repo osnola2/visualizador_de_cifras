@@ -1,0 +1,107 @@
+window.SONG_DATA = {
+    "title": "O Homem Deu Nome a Todos Animais",
+    "artist": "Zé Ramalho",
+    "composer": "Bob Dylan",
+    "lyricsHtml": "\n<span class=\"chord\" data-chord=\"Am\">Am</span>               <span class=\"chord\" data-chord=\"Am7M\">Am7M</span>\n<span class=\"lyric-line\">O homem deu nome a todos animais</span>\n     <span class=\"chord\" data-chord=\"Dm\">Dm</span>    <span class=\"chord\" data-chord=\"E7\">E7</span>         <span class=\"chord\" data-chord=\"Am\">Am</span>  <span class=\"chord\" data-chord=\"E7\">E7</span>\n<span class=\"lyric-line\">Desde o início, desde o início</span>\n<span class=\"chord\" data-chord=\"Am\">Am</span>              <span class=\"chord\" data-chord=\"Am7M\">Am7M</span>\n<span class=\"lyric-line\">O homem deu nome a todos animais</span>\n     <span class=\"chord\" data-chord=\"Dm\">Dm</span>    <span class=\"chord\" data-chord=\"E7\">E7</span>        <span class=\"chord\" data-chord=\"Am\">Am</span>     <span class=\"chord\" data-chord=\"E7\">E7</span>\n<span class=\"lyric-line\">Desde o início, há muito tempo atrás</span>\n\n<span class=\"chord\" data-chord=\"Am\">Am</span>             <span class=\"chord\" data-chord=\"E7\">E7</span>\n<span class=\"lyric-line\">Viu um animal com tal poder</span>\n            <span class=\"chord\" data-chord=\"Am\">Am</span>\n<span class=\"lyric-line\">Garras afiadas e um porte</span>\n<span class=\"chord\" data-chord=\"A7\">A7</span>               <span class=\"chord\" data-chord=\"Dm\">Dm</span>\n<span class=\"lyric-line\">Quando rugia, tremia o chão</span>\n       <span class=\"chord\" data-chord=\"Am\">Am</span>      <span class=\"chord\" data-chord=\"E7\">E7</span>    <span class=\"chord\" data-chord=\"Am\">Am</span>\n<span class=\"lyric-line\">Disse com razão: chamar-se-á leão</span>\n\n<span class=\"chord\" data-chord=\"Am\">Am</span>              <span class=\"chord\" data-chord=\"Am7M\">Am7M</span>\n<span class=\"lyric-line\">O homem deu nome a todos animais</span>\n   <span class=\"chord\" data-chord=\"Dm\">Dm</span>       <span class=\"chord\" data-chord=\"E7\">E7</span>      <span class=\"chord\" data-chord=\"Am\">Am</span>    <span class=\"chord\" data-chord=\"E7\">E7</span>\n<span class=\"lyric-line\">Desde o início, desde o início</span>\n<span class=\"chord\" data-chord=\"Am\">Am</span>             <span class=\"chord\" data-chord=\"Am7M\">Am7M</span>\n<span class=\"lyric-line\">O homem deu nome a todos animais</span>\n    <span class=\"chord\" data-chord=\"Dm\">Dm</span>      <span class=\"chord\" data-chord=\"E7\">E7</span>        <span class=\"chord\" data-chord=\"Am\">Am</span>    <span class=\"chord\" data-chord=\"E7\">E7</span>\n<span class=\"lyric-line\">Desde o início, há muito tempo atrás</span>\n\n<span class=\"chord\" data-chord=\"Am\">Am</span>              <span class=\"chord\" data-chord=\"E7\">E7</span>\n<span class=\"lyric-line\">Viu um animal que era tão manso</span>\n                <span class=\"chord\" data-chord=\"Am\">Am</span>\n<span class=\"lyric-line\">Puro, lindo, nenhum mal fará</span>\n\n<span class=\"chord\" data-chord=\"A7\">A7</span>                <span class=\"chord\" data-chord=\"Dm\">Dm</span>\n<span class=\"lyric-line\">Mas seu predador, que não é bobo</span>\n\n       <span class=\"chord\" data-chord=\"Am\">Am</span>      <span class=\"chord\" data-chord=\"E7\">E7</span>        <span class=\"chord\" data-chord=\"Am\">Am</span>\n<span class=\"lyric-line\">Vou chamar de lobo e sempre o caçará</span>\n        <span class=\"chord\" data-chord=\"E7\">E7</span>\n<span class=\"lyric-line\">Era a ovelha</span>\n<span class=\"chord\" data-chord=\"Am\">Am</span>             <span class=\"chord\" data-chord=\"Am7M\">Am7M</span>\n<span class=\"lyric-line\">O homem deu nome a todos animais</span>\n    <span class=\"chord\" data-chord=\"Dm\">Dm</span>      <span class=\"chord\" data-chord=\"E7\">E7</span>         <span class=\"chord\" data-chord=\"Am\">Am</span>  <span class=\"chord\" data-chord=\"E7\">E7</span>\n<span class=\"lyric-line\">Desde o início, desde o início</span>\n<span class=\"chord\" data-chord=\"Am\">Am</span>              <span class=\"chord\" data-chord=\"Am7M\">Am7M</span>\n<span class=\"lyric-line\">O homem deu nome a todos animais</span>\n    <span class=\"chord\" data-chord=\"Dm\">Dm</span>      <span class=\"chord\" data-chord=\"E7\">E7</span>       <span class=\"chord\" data-chord=\"Am\">Am</span>     <span class=\"chord\" data-chord=\"E7\">E7</span>\n<span class=\"lyric-line\">Desde o início, há muito tempo atrás</span>\n\n<span class=\"chord\" data-chord=\"Am\">Am</span>               <span class=\"chord\" data-chord=\"E7\">E7</span>\n<span class=\"lyric-line\">Viu outro animal se alimentar</span>\n                <span class=\"chord\" data-chord=\"Am\">Am</span>\n<span class=\"lyric-line\">No peito da mãe, seu leite a sugar</span>\n<span class=\"chord\" data-chord=\"A7\">A7</span>                <span class=\"chord\" data-chord=\"Dm\">Dm</span>\n<span class=\"lyric-line\">Viu que aquela fêmea não é fraca</span>\n         <span class=\"chord\" data-chord=\"Am\">Am</span>     <span class=\"chord\" data-chord=\"E7\">E7</span>      <span class=\"chord\" data-chord=\"Am\">Am</span>     <span class=\"chord\" data-chord=\"E7\">E7</span>\n<span class=\"lyric-line\">D'outras se destaca e a chamou de vaca</span>\n<span class=\"chord\" data-chord=\"Am\">Am</span>              <span class=\"chord\" data-chord=\"Am7M\">Am7M</span>\n<span class=\"lyric-line\">O homem deu nome a todos animais</span>\n    <span class=\"chord\" data-chord=\"Dm\">Dm</span>      <span class=\"chord\" data-chord=\"E7\">E7</span>      <span class=\"chord\" data-chord=\"Am\">Am</span>      <span class=\"chord\" data-chord=\"E7\">E7</span>\n<span class=\"lyric-line\">Desde o início, desde o início</span>\n<span class=\"chord\" data-chord=\"Am\">Am</span>             <span class=\"chord\" data-chord=\"Am7M\">Am7M</span>\n<span class=\"lyric-line\">O homem deu nome a todos animais</span>\n     <span class=\"chord\" data-chord=\"Dm\">Dm</span>    <span class=\"chord\" data-chord=\"E7\">E7</span>         <span class=\"chord\" data-chord=\"Am\">Am</span>    <span class=\"chord\" data-chord=\"E7\">E7</span>\n<span class=\"lyric-line\">Desde o início, há muito tempo atrás</span>\n<span class=\"chord\" data-chord=\"Am\">Am</span>               <span class=\"chord\" data-chord=\"E7\">E7</span>\n<span class=\"lyric-line\">Viu uma criatura se arrastando</span>\n               <span class=\"chord\" data-chord=\"Am\">Am</span>\n<span class=\"lyric-line\">No chão, sibilando lentamente</span>\n\n<span class=\"chord\" data-chord=\"A7\">A7</span>             <span class=\"chord\" data-chord=\"Dm\">Dm</span>\n<span class=\"lyric-line\">Só não percebeu foi o veneno</span>\n          <span class=\"chord\" data-chord=\"Am\">Am</span>     <span class=\"chord\" data-chord=\"E7\">E7</span>  <span class=\"chord\" data-chord=\"Am\">Am</span>  <span class=\"chord\" data-chord=\"E7\">E7</span>\n<span class=\"lyric-line\">Dentro de seu dente</span>\n<span class=\"chord\" data-chord=\"Am\">Am</span>              <span class=\"chord\" data-chord=\"Am7M\">Am7M</span>\n<span class=\"lyric-line\">O homem deu nome a todos animais</span>\n     <span class=\"chord\" data-chord=\"Dm\">Dm</span>    <span class=\"chord\" data-chord=\"E7\">E7</span>      <span class=\"chord\" data-chord=\"Am\">Am</span>      <span class=\"chord\" data-chord=\"E7\">E7</span>\n<span class=\"lyric-line\">Desde o início, desde o início</span>\n<span class=\"chord\" data-chord=\"Am\">Am</span>              <span class=\"chord\" data-chord=\"Am7M\">Am7M</span>\n<span class=\"lyric-line\">O homem deu nome a todos animais</span>\n     <span class=\"chord\" data-chord=\"Dm\">Dm</span>    <span class=\"chord\" data-chord=\"E7\">E7</span>        <span class=\"chord\" data-chord=\"Am\">Am</span>      <span class=\"chord\" data-chord=\"E7\">E7</span>\n<span class=\"lyric-line\">Desde o início, há muito tempo atrás</span>\n",
+    "chordData": {
+        "A7": {
+            "name": "A7",
+            "notes": [
+                "A3",
+                "C#4",
+                "E4",
+                "G4"
+            ],
+            "displayNotes": [
+                "A",
+                "C#",
+                "E",
+                "G"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "Am": {
+            "name": "Am",
+            "notes": [
+                "A3",
+                "C4",
+                "E4"
+            ],
+            "displayNotes": [
+                "A",
+                "C",
+                "E"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Am7M": {
+            "name": "Am7M",
+            "notes": [
+                "A3",
+                "C4",
+                "E4",
+                "G#4"
+            ],
+            "displayNotes": [
+                "A",
+                "C",
+                "E",
+                "G#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "Dm": {
+            "name": "Dm",
+            "notes": [
+                "D3",
+                "F3",
+                "A3"
+            ],
+            "displayNotes": [
+                "D",
+                "F",
+                "A"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "E7": {
+            "name": "E7",
+            "notes": [
+                "E3",
+                "G#3",
+                "B3",
+                "D4"
+            ],
+            "displayNotes": [
+                "E",
+                "G#",
+                "B",
+                "D"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        }
+    }
+};
