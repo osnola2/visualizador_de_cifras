@@ -1,0 +1,44 @@
+{
+    "title": "Antonico",
+    "artist": "Ismael Silva",
+    "composer": "Ismael Silva",
+    "lyricsHtml": "\n<span class=\"chord\" data-chord=\"Am\">Am</span>                                                  <span class=\"chord\" data-chord=\"Dm\">Dm</span>\n<span class=\"lyric-line\">Ôh Antonico, vou lhe pedir um favor                    Bm7/5-          E7          Am     E7</span>\n<span class=\"lyric-line\">Que só depende da sua boa vontade             Am                      F#m7/5-    Em</span>\n<span class=\"lyric-line\">É necessário uma viração pro Nestor                      F#                                    F7 E7</span>\n<span class=\"lyric-line\">Que está vivendo em grande dificuldade                  Am                                           Dm</span>\n<span class=\"lyric-line\">Ele está mesmo dançando na corda bamba                Bm7/5-           E7        Em7/5- A7</span>\n<span class=\"lyric-line\">Ele é aquele que na escola de samba            Dm                                     Am</span>\n<span class=\"lyric-line\">Toca cuíca, toca surdo e tamborim                 Bm7/5-          E7             Am</span>\n<span class=\"lyric-line\">Faça por ele como se fosse por mim</span>\n            <span class=\"chord\" data-chord=\"Am\">Am</span>                                    <span class=\"chord\" data-chord=\"Dm\">Dm</span>\n<span class=\"lyric-line\">Até muamba já fizeram pro rapaz                   E7                                                Am   E7</span>\n<span class=\"lyric-line\">Porque no samba ninguém faz o que ele faz                    Am                F#7/5-                   Em</span>\n<span class=\"lyric-line\">Mas hei de vê-lo muito bem, se Deus quiser            B7                                 E7</span>\n<span class=\"lyric-line\">E agradeço pelo que você fizer</span>\n",
+    "chordData": {
+        "Am": {
+            "name": "Am",
+            "notes": [
+                "A3",
+                "C4",
+                "E4"
+            ],
+            "displayNotes": [
+                "A",
+                "C",
+                "E"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Dm": {
+            "name": "Dm",
+            "notes": [
+                "D3",
+                "F3",
+                "A3"
+            ],
+            "displayNotes": [
+                "D",
+                "F",
+                "A"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        }
+    }
+}

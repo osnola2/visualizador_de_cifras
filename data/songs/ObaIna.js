@@ -1,0 +1,167 @@
+window.SONG_DATA = {
+    "title": "Obá Iná",
+    "artist": "Douglas Germano",
+    "composer": "Douglas Germano",
+    "lyricsHtml": "\n                     <span class=\"chord\" data-chord=\"Em7\">Em7</span>\n<span class=\"lyric-line\">Abram caminho para o rei</span>\n                         <span class=\"chord\" data-chord=\"E°\">E°</span>\n<span class=\"lyric-line\">Sorriam em vez de se curvar</span>\n                       <span class=\"chord\" data-chord=\"C°\">C°</span>\n<span class=\"lyric-line\">Ele é justiça ele é a lei</span>\n                      <span class=\"chord\" data-chord=\"G°\">G°</span>\n<span class=\"lyric-line\">Que fez pra nos levantar</span>\n                           <span class=\"chord\" data-chord=\"Bb°\">Bb°</span>\n<span class=\"lyric-line\">Pra nos por em pé, nos erguer</span>\n                         <span class=\"chord\" data-chord=\"Em7\">Em7</span>\n<span class=\"lyric-line\">E lançar pra Orun nosso olhar</span>\n                        <span class=\"chord\" data-chord=\"E°\">E°</span>\n<span class=\"lyric-line\">Não há justiça se há sofrer</span>\n                        <span class=\"chord\" data-chord=\"C°\">C°</span>\n<span class=\"lyric-line\">Não há justiça se há temor</span>\n<span class=\"chord\" data-chord=\"C#°\">C#°</span>          <span class=\"chord\" data-chord=\"C°\">C°</span>\n<span class=\"lyric-line\">E se a gente sempre se curvar</span>\n\n<span class=\"chord\" data-chord=\"Em7\">Em7</span>  <span class=\"chord\" data-chord=\"Em7/D\">Em7/D</span>      <span class=\"chord\" data-chord=\"Em7\">Em7</span>    <span class=\"chord\" data-chord=\"Em7/B\">Em7/B</span>      <span class=\"chord\" data-chord=\"Em7\">Em7</span>\n<span class=\"lyric-line\">          Kaô Kabecilê, Xangô, Obá Iná</span>\n<span class=\"chord\" data-chord=\"Em7\">Em7</span>  <span class=\"chord\" data-chord=\"Em7/D\">Em7/D</span>      <span class=\"chord\" data-chord=\"Em7\">Em7</span>    <span class=\"chord\" data-chord=\"Em7/B\">Em7/B</span>      <span class=\"chord\" data-chord=\"Em7\">Em7</span>\n<span class=\"lyric-line\">          Kaô Kabecilê, Xangô, Obá Iná</span>\n<span class=\"chord\" data-chord=\"Em7\">Em7</span>  <span class=\"chord\" data-chord=\"Em7/D\">Em7/D</span>      <span class=\"chord\" data-chord=\"Em7\">Em7</span>    <span class=\"chord\" data-chord=\"Em7/B\">Em7/B</span>      <span class=\"chord\" data-chord=\"Em7\">Em7</span>\n<span class=\"lyric-line\">          Kaô Kabecilê, Xangô, Obá Iná</span>\n<span class=\"chord\" data-chord=\"Em7\">Em7</span>  <span class=\"chord\" data-chord=\"Em7/D\">Em7/D</span>      <span class=\"chord\" data-chord=\"Em7\">Em7</span>    <span class=\"chord\" data-chord=\"Em7/B\">Em7/B</span>      <span class=\"chord\" data-chord=\"Em7\">Em7</span>\n<span class=\"lyric-line\">          Kaô Kabecilê, Xangô, Obá Iná</span>\n\n                     <span class=\"chord\" data-chord=\"Em7\">Em7</span>\n<span class=\"lyric-line\">Abram caminho para o rei</span>\n                        <span class=\"chord\" data-chord=\"E°\">E°</span>\n<span class=\"lyric-line\">Que se anuncia em um trovão</span>\n                        <span class=\"chord\" data-chord=\"C°\">C°</span>\n<span class=\"lyric-line\">E bravo escreve o que errei</span>\n                  <span class=\"chord\" data-chord=\"G°\">G°</span>\n<span class=\"lyric-line\">Cuspindo fogo no chão</span>\n                      <span class=\"chord\" data-chord=\"Bb°\">Bb°</span>\n<span class=\"lyric-line\">Labareda pra me consertar</span>\n                          <span class=\"chord\" data-chord=\"Em7\">Em7</span>\n<span class=\"lyric-line\">Fogo pra me aquecer de perdão</span>\n                      <span class=\"chord\" data-chord=\"E°\">E°</span>\n<span class=\"lyric-line\">Não há justiça sem ceder</span>\n                     <span class=\"chord\" data-chord=\"C°\">C°</span>\n<span class=\"lyric-line\">Não há justiça sem amor</span>\n<span class=\"chord\" data-chord=\"C#°\">C#°</span>          <span class=\"chord\" data-chord=\"C°\">C°</span>\n<span class=\"lyric-line\">E se a gente nunca se entregar</span>\n\n<span class=\"chord\" data-chord=\"Em7\">Em7</span>  <span class=\"chord\" data-chord=\"Em7/D\">Em7/D</span>      <span class=\"chord\" data-chord=\"Em7\">Em7</span>    <span class=\"chord\" data-chord=\"Em7/B\">Em7/B</span>      <span class=\"chord\" data-chord=\"Em7\">Em7</span>\n<span class=\"lyric-line\">          Kaô Kabecilê, Xangô, Obá Iná</span>\n<span class=\"chord\" data-chord=\"Em7\">Em7</span>  <span class=\"chord\" data-chord=\"Em7/D\">Em7/D</span>      <span class=\"chord\" data-chord=\"Em7\">Em7</span>    <span class=\"chord\" data-chord=\"Em7/B\">Em7/B</span>      <span class=\"chord\" data-chord=\"Em7\">Em7</span>\n<span class=\"lyric-line\">          Kaô Kabecilê, Xangô, Obá Iná</span>\n<span class=\"chord\" data-chord=\"Em7\">Em7</span>  <span class=\"chord\" data-chord=\"Em7/D\">Em7/D</span>      <span class=\"chord\" data-chord=\"Em7\">Em7</span>    <span class=\"chord\" data-chord=\"Em7/B\">Em7/B</span>      <span class=\"chord\" data-chord=\"Em7\">Em7</span>\n<span class=\"lyric-line\">          Kaô Kabecilê, Xangô, Obá Iná</span>\n<span class=\"chord\" data-chord=\"Em7\">Em7</span>  <span class=\"chord\" data-chord=\"Em7/D\">Em7/D</span>      <span class=\"chord\" data-chord=\"Em7\">Em7</span>    <span class=\"chord\" data-chord=\"Em7/B\">Em7/B</span>      <span class=\"chord\" data-chord=\"Em7\">Em7</span>\n<span class=\"lyric-line\">          Kaô Kabecilê, Xangô, Obá Iná</span>\n",
+    "chordData": {
+        "Bb°": {
+            "name": "Bb°",
+            "notes": [
+                "A#3",
+                "C#4",
+                "E4"
+            ],
+            "displayNotes": [
+                "Bb",
+                "Db",
+                "E"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "C#°": {
+            "name": "C#°",
+            "notes": [
+                "C#3",
+                "E3",
+                "G3"
+            ],
+            "displayNotes": [
+                "C#",
+                "E",
+                "G"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "C°": {
+            "name": "C°",
+            "notes": [
+                "C3",
+                "D#3",
+                "F#3"
+            ],
+            "displayNotes": [
+                "C",
+                "D#",
+                "F#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Em7": {
+            "name": "Em7",
+            "notes": [
+                "E3",
+                "G3",
+                "B3",
+                "D4"
+            ],
+            "displayNotes": [
+                "E",
+                "G",
+                "B",
+                "D"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "Em7/B": {
+            "name": "Em7/B",
+            "notes": [
+                "B3",
+                "E4",
+                "G4",
+                "B4",
+                "D5"
+            ],
+            "displayNotes": [
+                "B",
+                "E",
+                "G",
+                "B",
+                "D"
+            ],
+            "noteTypes": [
+                "bass",
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "Em7/D": {
+            "name": "Em7/D",
+            "notes": [
+                "D3",
+                "E3",
+                "G3",
+                "B3",
+                "D4"
+            ],
+            "displayNotes": [
+                "D",
+                "E",
+                "G",
+                "B",
+                "D"
+            ],
+            "noteTypes": [
+                "bass",
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "E°": {
+            "name": "E°",
+            "notes": [
+                "E3",
+                "G3",
+                "A#3"
+            ],
+            "displayNotes": [
+                "E",
+                "G",
+                "A#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "G°": {
+            "name": "G°",
+            "notes": [
+                "G3",
+                "A#3",
+                "C#4"
+            ],
+            "displayNotes": [
+                "G",
+                "A#",
+                "C#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        }
+    }
+};

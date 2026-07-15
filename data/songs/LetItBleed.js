@@ -1,0 +1,137 @@
+window.SONG_DATA = {
+    "title": "Let It Bleed",
+    "artist": "The Rolling Stones",
+    "composer": "",
+    "lyricsHtml": "\n<span class=\"lyric-line\">[Intro]</span>\n<span class=\"chord\" data-chord=\"C\">C</span> <span class=\"chord\" data-chord=\"Csus4\">Csus4</span> <span class=\"chord\" data-chord=\"C\">C</span> <span class=\"chord\" data-chord=\"Csus4\">Csus4</span> <span class=\"chord\" data-chord=\"C\">C</span> <span class=\"chord\" data-chord=\"F\">F</span> <span class=\"chord\" data-chord=\"Fsus4\">Fsus4</span> <span class=\"chord\" data-chord=\"F\">F</span> <span class=\"chord\" data-chord=\"G\">G</span> <span class=\"chord\" data-chord=\"C\">C</span>\n\n<span class=\"lyric-line\">[Chorus]</span>\n         <span class=\"chord\" data-chord=\"C\">C</span>                       <span class=\"chord\" data-chord=\"F\">F</span>\n<span class=\"lyric-line\">Well, we all need someone we can lean on</span>\n           <span class=\"chord\" data-chord=\"G\">G</span>       <span class=\"chord\" data-chord=\"G7\">G7</span>                     <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">And if you want it, well, you can lean on me</span>\n         <span class=\"chord\" data-chord=\"C\">C</span>                       <span class=\"chord\" data-chord=\"F\">F</span>\n<span class=\"lyric-line\">Yeah, we all need someone we can lean on</span>\n           <span class=\"chord\" data-chord=\"G\">G</span>       <span class=\"chord\" data-chord=\"G7\">G7</span>                     <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">And if you want it, well, you can lean on me</span>\n\n<span class=\"lyric-line\">[Verse 1]</span>\n             <span class=\"chord\" data-chord=\"E\">E</span>                            <span class=\"chord\" data-chord=\"F\">F</span>\n<span class=\"lyric-line\">She said &quot;My breasts, they will always be open, baby</span>\n<span class=\"chord\" data-chord=\"G\">G</span>                <span class=\"chord\" data-chord=\"G7\">G7</span>                   <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">You can rest your weary head right on me</span>\n               <span class=\"chord\" data-chord=\"E\">E</span>                       <span class=\"chord\" data-chord=\"F\">F</span>\n<span class=\"lyric-line\">And there will always be a space in my parking lot</span>\n         <span class=\"chord\" data-chord=\"G\">G</span>                           <span class=\"chord\" data-chord=\"G7\">G7</span>\n<span class=\"lyric-line\">When you need a little coke and sympathy&quot;</span>\n\n<span class=\"lyric-line\">[Chorus]</span>\n         <span class=\"chord\" data-chord=\"C\">C</span>                       <span class=\"chord\" data-chord=\"F\">F</span>\n<span class=\"lyric-line\">Yeah, we all need someone we can dream on</span>\n           <span class=\"chord\" data-chord=\"G\">G</span>             <span class=\"chord\" data-chord=\"G7\">G7</span>                      <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">And if you want it, baby, well, you can dream on me</span>\n         <span class=\"chord\" data-chord=\"C\">C</span>                       <span class=\"chord\" data-chord=\"F\">F</span>\n<span class=\"lyric-line\">Yeah, we all need someone we can cream on, yeah!</span>\n           <span class=\"chord\" data-chord=\"G\">G</span>       <span class=\"chord\" data-chord=\"G7\">G7</span>                      <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">And if you want to, well, you can cream on me</span>\n\n<span class=\"lyric-line\">[Verse 2]</span>\n      <span class=\"chord\" data-chord=\"E\">E</span>                             <span class=\"chord\" data-chord=\"F\">F</span>\n<span class=\"lyric-line\">I was dreaming of a steel guitar engagement</span>\n         <span class=\"chord\" data-chord=\"G\">G</span>                 <span class=\"chord\" data-chord=\"G7\">G7</span>               <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">When you drunk my health in scented jasmine tea</span>\n        <span class=\"chord\" data-chord=\"E\">E</span>                            <span class=\"chord\" data-chord=\"F\">F</span>\n<span class=\"lyric-line\">But you knifed me in my dirty filthy basement</span>\n          <span class=\"chord\" data-chord=\"G\">G</span>                                                 <span class=\"chord\" data-chord=\"G7\">G7</span>\n<span class=\"lyric-line\">With that jaded, faded, junky nurse, oh, what pleasant company, ha!</span>\n\n<span class=\"lyric-line\">[Chorus]</span>\n   <span class=\"chord\" data-chord=\"C\">C</span>                       <span class=\"chord\" data-chord=\"F\">F</span>\n<span class=\"lyric-line\">We all need someone we can feed on, yeah!</span>\n           <span class=\"chord\" data-chord=\"G\">G</span>       <span class=\"chord\" data-chord=\"G7\">G7</span>               <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">And if you want to, you can feed on me, hey!</span>\n<span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">Take my arm, take my leg</span>\n<span class=\"chord\" data-chord=\"F\">F</span>\n<span class=\"lyric-line\">Oh, baby, don&#x27;t you take my head</span>\n\n<span class=\"lyric-line\">[Instrumental]</span>\n<span class=\"chord\" data-chord=\"G\">G</span>  <span class=\"chord\" data-chord=\"C\">C</span>\n\n<span class=\"lyric-line\">[Chorus]</span>\n         <span class=\"chord\" data-chord=\"C\">C</span>                       <span class=\"chord\" data-chord=\"F\">F</span>\n<span class=\"lyric-line\">Yeah, we all need someone we can bleed on, yeah!</span>\n           <span class=\"chord\" data-chord=\"G\">G</span>             <span class=\"chord\" data-chord=\"G7\">G7</span>                      <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">And if you want it, baby, well, you can bleed on me</span>\n         <span class=\"chord\" data-chord=\"C\">C</span>                       <span class=\"chord\" data-chord=\"F\">F</span>\n<span class=\"lyric-line\">Yeah, we all need someone we can bleed on</span>\n                       <span class=\"chord\" data-chord=\"G\">G</span>             <span class=\"chord\" data-chord=\"G7\">G7</span>                     <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">Yeah, yeah, and if you want it, baby, why don&#x27;t ya bleed on me? (All over, </span>\n<span class=\"lyric-line\">woooh!)</span>\n\n<span class=\"lyric-line\">[Instrumental]</span>\n<span class=\"chord\" data-chord=\"C\">C</span> <span class=\"chord\" data-chord=\"F\">F</span> <span class=\"chord\" data-chord=\"G\">G</span> <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"chord\" data-chord=\"C\">C</span> <span class=\"chord\" data-chord=\"F\">F</span> <span class=\"chord\" data-chord=\"G\">G</span> <span class=\"chord\" data-chord=\"C\">C</span>\n\n<span class=\"lyric-line\">[Verse 3]</span>\n      <span class=\"chord\" data-chord=\"C\">C</span>                         <span class=\"chord\" data-chord=\"F\">F</span>\n<span class=\"lyric-line\">Aaah! Get it on a rider, woooh! Get it on a rider</span>\n<span class=\"chord\" data-chord=\"G\">G</span>                 <span class=\"chord\" data-chord=\"G7\">G7</span>                      <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">Get it on a rider, you can bleed all over me, yeah!</span>\n<span class=\"chord\" data-chord=\"C\">C</span>                         <span class=\"chord\" data-chord=\"F\">F</span>\n<span class=\"lyric-line\">Get it on a rider, woooh! Get it on a rider, yeah!</span>\n<span class=\"chord\" data-chord=\"G\">G</span>                   <span class=\"chord\" data-chord=\"G7\">G7</span>                     <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">You can be my rider, you can come all over me, aaah!</span>\n<span class=\"chord\" data-chord=\"C\">C</span>                      <span class=\"chord\" data-chord=\"F\">F</span>\n<span class=\"lyric-line\">Get it on rider, babe, get it on rider</span>\n<span class=\"chord\" data-chord=\"G\">G</span>               <span class=\"chord\" data-chord=\"G7\">G7</span>                     <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">Get it on rider, you can come all over me, yeah! Oooh!</span>\n       <span class=\"chord\" data-chord=\"G\">G</span>                <span class=\"chord\" data-chord=\"G7\">G7</span>                     <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">Wooah! Little old rider, let her come all over me, yeah, yeah!</span>\n",
+    "chordData": {
+        "C": {
+            "name": "C",
+            "notes": [
+                "C3",
+                "E3",
+                "G3"
+            ],
+            "displayNotes": [
+                "C",
+                "E",
+                "G"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Csus4": {
+            "name": "Csus4",
+            "notes": [
+                "C3",
+                "F3",
+                "G3"
+            ],
+            "displayNotes": [
+                "C",
+                "F",
+                "G"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "E": {
+            "name": "E",
+            "notes": [
+                "E3",
+                "G#3",
+                "B3"
+            ],
+            "displayNotes": [
+                "E",
+                "G#",
+                "B"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "F": {
+            "name": "F",
+            "notes": [
+                "F3",
+                "A3",
+                "C4"
+            ],
+            "displayNotes": [
+                "F",
+                "A",
+                "C"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Fsus4": {
+            "name": "Fsus4",
+            "notes": [
+                "F3",
+                "A#3",
+                "C4"
+            ],
+            "displayNotes": [
+                "F",
+                "Bb",
+                "C"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "G": {
+            "name": "G",
+            "notes": [
+                "G3",
+                "B3",
+                "D4"
+            ],
+            "displayNotes": [
+                "G",
+                "B",
+                "D"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "G7": {
+            "name": "G7",
+            "notes": [
+                "G3",
+                "B3",
+                "D4",
+                "F4"
+            ],
+            "displayNotes": [
+                "G",
+                "B",
+                "D",
+                "F"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        }
+    }
+};
