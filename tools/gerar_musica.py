@@ -270,11 +270,11 @@ def fetch_and_parse(url):
             title_match = re.search(r'<h1[^>]*>(.*?)</h1>', html, re.IGNORECASE)
             artist_match = re.search(r'<h2[^>]*>.*?<a[^>]*>(.*?)</a>.*?</h2>', html, re.IGNORECASE)
             
-            song_title = title_match.group(1).strip() if title_match else "Unknown Title"
-            song_artist = artist_match.group(1).strip() if artist_match else "Unknown Artist"
+            song_title = html_lib.unescape(title_match.group(1).strip()) if title_match else "Unknown Title"
+            song_artist = html_lib.unescape(artist_match.group(1).strip()) if artist_match else "Unknown Artist"
             
             composer_match = re.search(r'<p class="cifra-composer">.*?de\s*(.*?)(?:\.|<a)', html, re.IGNORECASE)
-            song_composer = composer_match.group(1).strip() if composer_match else ""
+            song_composer = html_lib.unescape(composer_match.group(1).strip()) if composer_match else ""
             
             pre_match = re.search(r'<pre>(.*?)</pre>', html, re.DOTALL | re.IGNORECASE)
             if not pre_match:
