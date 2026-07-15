@@ -547,5 +547,5 @@ window.SONG_DATA = {
             ]
         }
     },
-    "composer": "Capinam"
+    "composer": "Joao Bosco / Capinam"
 };
