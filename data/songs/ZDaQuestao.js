@@ -1,0 +1,176 @@
+window.SONG_DATA = {
+    "title": "Z da Questão",
+    "artist": "Itamar Assumpção",
+    "composer": "",
+    "lyricsHtml": "\n<span class=\"lyric-line\">[Intro]\r</span>\n\r\n\n\r\n<span class=\"chord\" data-chord=\"E\">E</span>               <span class=\"chord\" data-chord=\"G\">G</span>                              <span class=\"chord\" data-chord=\"A\">A</span>         <span class=\"chord\" data-chord=\"A4\">A4</span>  <span class=\"chord\" data-chord=\"A\">A</span>  <span class=\"chord\" data-chord=\"A4\">A4</span>  <span class=\"chord\" data-chord=\"A\">A</span>\r\n<span class=\"lyric-line\">Fiz essa canção com versos vulgares, melhores não sei pra dar-lhes\r</span>\n<span class=\"chord\" data-chord=\"E\">E</span>              <span class=\"chord\" data-chord=\"G\">G</span>                 <span class=\"chord\" data-chord=\"A\">A</span>         <span class=\"chord\" data-chord=\"A4\">A4</span>  <span class=\"chord\" data-chord=\"A\">A</span>  <span class=\"chord\" data-chord=\"A4\">A4</span>  <span class=\"chord\" data-chord=\"A\">A</span>\r\n<span class=\"lyric-line\">Sou poeta não vim, só entregar-me, só vim cantar-lhe\r</span>\n\r\n\n\r\n<span class=\"chord\" data-chord=\"E\">E</span>                 <span class=\"chord\" data-chord=\"Cº\">Cº</span>                          <span class=\"chord\" data-chord=\"A\">A</span>\r\n<span class=\"lyric-line\">Eu não sou Romeu, nem Ulisses, nem de longe o mago de Oz\r</span>\n\r\n\n\r\n<span class=\"chord\" data-chord=\"E\">E</span>                           <span class=\"chord\" data-chord=\"G\">G</span>                     <span class=\"chord\" data-chord=\"A\">A</span>      <span class=\"chord\" data-chord=\"A4\">A4</span>  <span class=\"chord\" data-chord=\"A\">A</span>  <span class=\"chord\" data-chord=\"A4\">A4</span>  <span class=\"chord\" data-chord=\"A\">A</span>\r\n<span class=\"lyric-line\">Nem Zeus nem Jesus, nenhum Deus, em Eros nem Platão, nem Sócrates\r</span>\n\r\n\n\r\n<span class=\"chord\" data-chord=\"E\">E</span>                    <span class=\"chord\" data-chord=\"G\">G</span>                      <span class=\"chord\" data-chord=\"A\">A</span>      <span class=\"chord\" data-chord=\"A4\">A4</span>  <span class=\"chord\" data-chord=\"A\">A</span>  <span class=\"chord\" data-chord=\"A4\">A4</span>  <span class=\"chord\" data-chord=\"A\">A</span>\r\n<span class=\"lyric-line\">Às vezes me afundo, fico reclamando de tudo, de todo mundo\r</span>\n<span class=\"chord\" data-chord=\"E\">E</span>                  <span class=\"chord\" data-chord=\"G\">G</span>                           <span class=\"chord\" data-chord=\"A\">A</span>     <span class=\"chord\" data-chord=\"A4\">A4</span>  <span class=\"chord\" data-chord=\"A\">A</span>  <span class=\"chord\" data-chord=\"A4\">A4</span>  <span class=\"chord\" data-chord=\"A\">A</span>\r\n<span class=\"lyric-line\">Bate um desespero ver alguém matar alguém por meros 30 dinheiros\r</span>\n\r\n\n\r\n<span class=\"chord\" data-chord=\"E\">E</span>                 <span class=\"chord\" data-chord=\"Cº\">Cº</span>                               <span class=\"chord\" data-chord=\"A\">A</span>\r\n<span class=\"lyric-line\">Fato corriqueiro, mas não me acostumo nem gosto do cheiro\r</span>\n\r\n\n\r\n<span class=\"chord\" data-chord=\"E\">E</span>                 <span class=\"chord\" data-chord=\"G\">G</span>                        <span class=\"chord\" data-chord=\"A\">A</span>      <span class=\"chord\" data-chord=\"A4\">A4</span>  <span class=\"chord\" data-chord=\"A\">A</span>  <span class=\"chord\" data-chord=\"A4\">A4</span>  <span class=\"chord\" data-chord=\"A\">A</span>\r\n<span class=\"lyric-line\">Complicado o que sou assim aqui Viena ou Milão\r</span>\n\r\n\n\r\n<span class=\"lyric-line\">Na penha São Paulo na estrela vésper, n'algum lugar do Japão\r</span>\n\r\n( <span class=\"chord\" data-chord=\"G\">G</span>  <span class=\"chord\" data-chord=\"D\">D</span>  <span class=\"chord\" data-chord=\"E\">E</span>  <span class=\"chord\" data-chord=\"Eb\">Eb</span>  <span class=\"chord\" data-chord=\"D\">D</span>  <span class=\"chord\" data-chord=\"Eb\">Eb</span>  <span class=\"chord\" data-chord=\"D\">D</span>  <span class=\"chord\" data-chord=\"A\">A</span>  <span class=\"chord\" data-chord=\"A4\">A4</span>  <span class=\"chord\" data-chord=\"A\">A</span>  <span class=\"chord\" data-chord=\"A4\">A4</span>  <span class=\"chord\" data-chord=\"A\">A</span> ) \r\n\r\n\n\r\n<span class=\"chord\" data-chord=\"E\">E</span>                  <span class=\"chord\" data-chord=\"G\">G</span>                        <span class=\"chord\" data-chord=\"A\">A</span>   <span class=\"chord\" data-chord=\"A4\">A4</span>  <span class=\"chord\" data-chord=\"A\">A</span>  <span class=\"chord\" data-chord=\"A4\">A4</span>  <span class=\"chord\" data-chord=\"A\">A</span>\r\n<span class=\"lyric-line\">Shyiwacê wa shita ni teral no rana no chita me\r</span>\n<span class=\"chord\" data-chord=\"E\">E</span>                 <span class=\"chord\" data-chord=\"G\">G</span>                            <span class=\"chord\" data-chord=\"A\">A</span>   <span class=\"chord\" data-chord=\"A4\">A4</span>  <span class=\"chord\" data-chord=\"A\">A</span>  <span class=\"chord\" data-chord=\"A4\">A4</span>  <span class=\"chord\" data-chord=\"A\">A</span>\r\n<span class=\"lyric-line\">Ser ou não feliz, existe um ditado por aí que diz\r</span>\n\r\n\n\r\n<span class=\"chord\" data-chord=\"E\">E</span>             <span class=\"chord\" data-chord=\"Cº\">Cº</span>                                <span class=\"chord\" data-chord=\"A\">A</span>\r\n<span class=\"lyric-line\">A felicidade fica bem debaixo do nosso próprio nariz\r</span>\n\r\n\n\r\n( <span class=\"chord\" data-chord=\"E\">E</span>  <span class=\"chord\" data-chord=\"G\">G</span>  <span class=\"chord\" data-chord=\"A\">A</span>  <span class=\"chord\" data-chord=\"A4\">A4</span>  <span class=\"chord\" data-chord=\"A\">A</span>  <span class=\"chord\" data-chord=\"A4\">A4</span>  <span class=\"chord\" data-chord=\"A\">A</span> )\r\n\r\n<span class=\"chord\" data-chord=\"D7+\">D7+</span>                  <span class=\"chord\" data-chord=\"G7+\">G7+</span>\r\n<span class=\"lyric-line\">Meu amor, porque que todo o tempo\r</span>\n<span class=\"chord\" data-chord=\"D7+\">D7+</span>                    <span class=\"chord\" data-chord=\"G7+\">G7+</span>\r\n<span class=\"lyric-line\">Você toma conta do meu pensamento\r</span>\n<span class=\"chord\" data-chord=\"D7+\">D7+</span>                 <span class=\"chord\" data-chord=\"G7+\">G7+</span>\r\n<span class=\"lyric-line\">Até nos lugares que ando e frequento\r</span>\n<span class=\"chord\" data-chord=\"D7+\">D7+</span>                     <span class=\"chord\" data-chord=\"G7+\">G7+</span>\r\n<span class=\"lyric-line\">O teu cheiro chega vindo com o vento\r</span>\n<span class=\"chord\" data-chord=\"D7+\">D7+</span> \r\n<span class=\"lyric-line\">Fica ardendo, me comendo lá no fundo\r</span>\n<span class=\"chord\" data-chord=\"G7+\">G7+</span>\r\n<span class=\"lyric-line\">Cada segundo, cada minuto, cada momento\r</span>\n<span class=\"chord\" data-chord=\"D7+\">D7+</span>                  <span class=\"chord\" data-chord=\"G7+\">G7+</span>\r\n<span class=\"lyric-line\">Sei lá eu porque te quero tanto\r</span>\n<span class=\"chord\" data-chord=\"D7+\">D7+</span>                          <span class=\"chord\" data-chord=\"G7+\">G7+</span>\r\n<span class=\"lyric-line\">Só sei que vai dar pra lá do infinito\r</span>\n<span class=\"chord\" data-chord=\"D7+\">D7+</span>                  <span class=\"chord\" data-chord=\"G7+\">G7+</span>\r\n<span class=\"lyric-line\">É bem parecido com o fim do mundo\r</span>\n<span class=\"chord\" data-chord=\"D7+\">D7+</span>                      <span class=\"chord\" data-chord=\"G7+\">G7+</span>\r\n<span class=\"lyric-line\">O teu nome sobre os muros deixo escrito\r</span>\n<span class=\"chord\" data-chord=\"D7+\">D7+</span> \r\n<span class=\"lyric-line\">Fica ardendo, me comendo lá no fundo\r</span>\n<span class=\"chord\" data-chord=\"G7+\">G7+</span>\r\n<span class=\"lyric-line\">Cada segundo, cada minuto, cada momento\r</span>\n<span class=\"chord\" data-chord=\"D7+\">D7+</span>                           <span class=\"chord\" data-chord=\"G7+\">G7+</span>\r\n<span class=\"lyric-line\">Quanto mais te evito mais eu te encontro\r</span>\n<span class=\"chord\" data-chord=\"D7+\">D7+</span>                         <span class=\"chord\" data-chord=\"G7+\">G7+</span>\r\n<span class=\"lyric-line\">Quanto mais eu fujo mais eu te desejo\r</span>\n<span class=\"chord\" data-chord=\"D7+\">D7+</span>               <span class=\"chord\" data-chord=\"G7+\">G7+</span>\r\n<span class=\"lyric-line\">Posso até ficar ficando doido\r</span>\n<span class=\"chord\" data-chord=\"D7+\">D7+</span>                       <span class=\"chord\" data-chord=\"G7+\">G7+</span>\r\n<span class=\"lyric-line\">Mas meu coração está bem lúcido\r</span>\n<span class=\"chord\" data-chord=\"D7+\">D7+</span> \r\n<span class=\"lyric-line\">Fica ardendo, me comendo lá no fundo\r</span>\n<span class=\"chord\" data-chord=\"G7+\">G7+</span>\r\n<span class=\"lyric-line\">Cada segundo, cada minuto, cada momento</span>\n",
+    "chordData": {
+        "A": {
+            "name": "A",
+            "notes": [
+                "A3",
+                "C#4",
+                "E4"
+            ],
+            "displayNotes": [
+                "A",
+                "C#",
+                "E"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "A4": {
+            "name": "A4",
+            "notes": [
+                "A3",
+                "C#4",
+                "E4"
+            ],
+            "displayNotes": [
+                "A",
+                "C#",
+                "E"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Cº": {
+            "name": "Cº",
+            "notes": [
+                "C3",
+                "D#3",
+                "F#3"
+            ],
+            "displayNotes": [
+                "C",
+                "D#",
+                "F#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "D": {
+            "name": "D",
+            "notes": [
+                "D3",
+                "F#3",
+                "A3"
+            ],
+            "displayNotes": [
+                "D",
+                "F#",
+                "A"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "D7+": {
+            "name": "D7+",
+            "notes": [
+                "D3",
+                "F#3",
+                "A3",
+                "C#4"
+            ],
+            "displayNotes": [
+                "D",
+                "F#",
+                "A",
+                "C#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "E": {
+            "name": "E",
+            "notes": [
+                "E3",
+                "G#3",
+                "B3"
+            ],
+            "displayNotes": [
+                "E",
+                "G#",
+                "B"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Eb": {
+            "name": "Eb",
+            "notes": [
+                "D#3",
+                "G3",
+                "A#3"
+            ],
+            "displayNotes": [
+                "Eb",
+                "G",
+                "Bb"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "G": {
+            "name": "G",
+            "notes": [
+                "G3",
+                "B3",
+                "D4"
+            ],
+            "displayNotes": [
+                "G",
+                "B",
+                "D"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "G7+": {
+            "name": "G7+",
+            "notes": [
+                "G3",
+                "B3",
+                "D4",
+                "F#4"
+            ],
+            "displayNotes": [
+                "G",
+                "B",
+                "D",
+                "F#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        }
+    }
+};
