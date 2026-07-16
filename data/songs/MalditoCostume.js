@@ -1,0 +1,323 @@
+window.SONG_DATA = {
+    "title": "Maldito Costume",
+    "artist": "Ceumar",
+    "composer": "Ceumar",
+    "lyricsHtml": "\n[Intro] <span class=\"chord\" data-chord=\"D9\">D9</span>  <span class=\"chord\" data-chord=\"D4\">D4</span>  <span class=\"chord\" data-chord=\"Gm/Bb\">Gm/Bb</span>  <span class=\"chord\" data-chord=\"D4/A\">D4/A</span>  <span class=\"chord\" data-chord=\"D/A\">D/A</span> \n        <span class=\"chord\" data-chord=\"E9/G#\">E9/G#</span>  <span class=\"chord\" data-chord=\"E/G\">E/G</span>  <span class=\"chord\" data-chord=\"A7/G\">A7/G</span>  <span class=\"chord\" data-chord=\"D/F#\">D/F#</span>\n\n           <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">Eu juro acabar com esse costume</span>\n         <span class=\"chord\" data-chord=\"D/A\">D/A</span>\n<span class=\"lyric-line\">Que você tem</span>\n           <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">Eu juro acabar com esse costume</span>\n         <span class=\"chord\" data-chord=\"D/A\">D/A</span>\n<span class=\"lyric-line\">Que você tem</span>\n           <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">Falando de mim dizendo horrores</span>\n            <span class=\"chord\" data-chord=\"D/A\">D/A</span>\n<span class=\"lyric-line\">Me querendo bem</span>\n           <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">Falando de mim dizendo horrores</span>\n            <span class=\"chord\" data-chord=\"D/A\">D/A</span>\n<span class=\"lyric-line\">Me querendo bem</span>\n        <span class=\"chord\" data-chord=\"A\">A</span>           <span class=\"chord\" data-chord=\"A7\">A7</span>   <span class=\"chord\" data-chord=\"D/A\">D/A</span>\n<span class=\"lyric-line\">Ai, o amor é um capitoso vinho!</span>\n        <span class=\"chord\" data-chord=\"A\">A</span>           <span class=\"chord\" data-chord=\"A7\">A7</span>   <span class=\"chord\" data-chord=\"D/A\">D/A</span>\n<span class=\"lyric-line\">Ai, o amor é um capitoso vinho!</span>\n             <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">Que nos embriaga</span>\n\n                               <span class=\"chord\" data-chord=\"D/A\">D/A</span>\n<span class=\"lyric-line\">Que nos embriaga com um só pinguinho</span>\n             <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">Que nos embriaga</span>\n\n                              <span class=\"chord\" data-chord=\"D/A\">D/A</span>\n<span class=\"lyric-line\">Que nos embriaga com um só pinguinho</span>\n\n             <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">Você há de saber que</span>\n                         <span class=\"chord\" data-chord=\"D/A\">D/A</span>\n<span class=\"lyric-line\">Este costume não te fica bem</span>\n             <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">Você há de saber que</span>\n                         <span class=\"chord\" data-chord=\"D/A\">D/A</span>\n<span class=\"lyric-line\">Este costume não te fica bem</span>\n            <span class=\"chord\" data-chord=\"A7\">A7</span>                              <span class=\"chord\" data-chord=\"D/A\">D/A</span>\n<span class=\"lyric-line\">Porque toda gente sabe a paixão que você me tem</span>\n            <span class=\"chord\" data-chord=\"A7\">A7</span>                              <span class=\"chord\" data-chord=\"D/A\">D/A</span>\n<span class=\"lyric-line\">Porque toda gente sabe a paixão que você me tem</span>\n        <span class=\"chord\" data-chord=\"A\">A</span>           <span class=\"chord\" data-chord=\"A7\">A7</span>   <span class=\"chord\" data-chord=\"D/A\">D/A</span>\n<span class=\"lyric-line\">Ai, o amor é um capitoso vinho!</span>\n        <span class=\"chord\" data-chord=\"A\">A</span>           <span class=\"chord\" data-chord=\"A7\">A7</span>   <span class=\"chord\" data-chord=\"D/A\">D/A</span>\n<span class=\"lyric-line\">Ai, o amor é um capitoso vinho!</span>\n             <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">Que nos embriaga</span>\n                               <span class=\"chord\" data-chord=\"D/A\">D/A</span>\n<span class=\"lyric-line\">Que nos embriaga com um só pinguinho</span>\n             <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">Que nos embriaga</span>\n\n                              <span class=\"chord\" data-chord=\"D/A\">D/A</span>\n<span class=\"lyric-line\">Que nos embriaga com um só pinguinho</span>\n\n <span class=\"chord\" data-chord=\"D\">D</span>  <span class=\"chord\" data-chord=\"A7\">A7</span>  <span class=\"chord\" data-chord=\"D\">D</span>  <span class=\"chord\" data-chord=\"A7\">A7</span>  <span class=\"chord\" data-chord=\"D\">D</span>  <span class=\"chord\" data-chord=\"A7\">A7</span>  <span class=\"chord\" data-chord=\"D\">D</span>\n\n                 <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">Todo mal que procuras dizer</span>\n                         <span class=\"chord\" data-chord=\"D/A\">D/A</span>\n<span class=\"lyric-line\">Do meu nome nenhum valor tem</span>\n                <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">Todo mal que procuras dizer</span>\n                         <span class=\"chord\" data-chord=\"D/A\">D/A</span>\n<span class=\"lyric-line\">Do meu nome nenhum valor tem</span>\n                <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">A mulher quando gosta deve ser feliz</span>\n             <span class=\"chord\" data-chord=\"D/A\">D/A</span>\n<span class=\"lyric-line\">E atacar seu bem</span>\n                <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">A mulher quando gosta deve ser feliz</span>\n             <span class=\"chord\" data-chord=\"D/A\">D/A</span>\n<span class=\"lyric-line\">E atacar seu bem</span>\n        <span class=\"chord\" data-chord=\"A\">A</span>           <span class=\"chord\" data-chord=\"A7\">A7</span>   <span class=\"chord\" data-chord=\"D/A\">D/A</span>\n<span class=\"lyric-line\">Ai, o amor é um capitoso vinho!</span>\n        <span class=\"chord\" data-chord=\"A\">A</span>           <span class=\"chord\" data-chord=\"A7\">A7</span>   <span class=\"chord\" data-chord=\"D/A\">D/A</span>\n<span class=\"lyric-line\">Ai, o amor é um capitoso vinho!</span>\n             <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">Que nos embriaga</span>\n\n                              <span class=\"chord\" data-chord=\"D/4\">D/4</span>\n<span class=\"lyric-line\">Que nos embriaga com um só pinguinho</span>\n             <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">Que nos embriaga</span>\n\n                              <span class=\"chord\" data-chord=\"D/4\">D/4</span>\n<span class=\"lyric-line\">Que nos embriaga com um só pinguinho</span>\n        <span class=\"chord\" data-chord=\"A\">A</span>           <span class=\"chord\" data-chord=\"A7\">A7</span>   <span class=\"chord\" data-chord=\"D/A\">D/A</span>\n<span class=\"lyric-line\">Ai, o amor é um capitoso vinho!</span>\n        <span class=\"chord\" data-chord=\"A\">A</span>            <span class=\"chord\" data-chord=\"A7\">A7</span>  <span class=\"chord\" data-chord=\"D/A\">D/A</span>\n<span class=\"lyric-line\">Ai, o amor é um capitoso vinho!</span>\n             <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">Que nos embriaga</span>\n\n                              <span class=\"chord\" data-chord=\"D/A\">D/A</span>\n<span class=\"lyric-line\">Que nos embriaga com um só pinguinho</span>\n             <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">Que nos embriaga</span>\n\n                              <span class=\"chord\" data-chord=\"D/A\">D/A</span>\n<span class=\"lyric-line\">Que nos embriaga com um só pinguinho</span>\n   <span class=\"chord\" data-chord=\"A\">A</span>     <span class=\"chord\" data-chord=\"D/A\">D/A</span>\n<span class=\"lyric-line\">Sinhô, Sinhô</span>\n\n<span class=\"chord\" data-chord=\"A9\">A9</span>         <span class=\"chord\" data-chord=\"A\">A</span>       <span class=\"chord\" data-chord=\"A4\">A4</span>      <span class=\"chord\" data-chord=\"A7\">A7</span>   <span class=\"chord\" data-chord=\"D\">D</span>\n<span class=\"lyric-line\">Sinhô,  Sinhô,  Sinhô,  Sinhô - ô</span>\n<span class=\"chord\" data-chord=\"A7\">A7</span>       <span class=\"chord\" data-chord=\"D/A\">D/A</span>\n<span class=\"lyric-line\">Sinhô, Sinhô</span>\n<span class=\"chord\" data-chord=\"A9\">A9</span>         <span class=\"chord\" data-chord=\"A\">A</span>       <span class=\"chord\" data-chord=\"A4\">A4</span>      <span class=\"chord\" data-chord=\"A7\">A7</span>     <span class=\"chord\" data-chord=\"D\">D</span>\n<span class=\"lyric-line\">Sinhô,  Sinhô,  Sinhô,  Sinhô, Sinhô</span>\n",
+    "chordData": {
+        "A": {
+            "name": "A",
+            "notes": [
+                "A3",
+                "C#4",
+                "E4"
+            ],
+            "displayNotes": [
+                "A",
+                "C#",
+                "E"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "A4": {
+            "name": "A4",
+            "notes": [
+                "A3",
+                "C#4",
+                "E4"
+            ],
+            "displayNotes": [
+                "A",
+                "C#",
+                "E"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "A7": {
+            "name": "A7",
+            "notes": [
+                "A3",
+                "C#4",
+                "E4",
+                "G4"
+            ],
+            "displayNotes": [
+                "A",
+                "C#",
+                "E",
+                "G"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "A7/G": {
+            "name": "A7/G",
+            "notes": [
+                "G3",
+                "A3",
+                "C#4",
+                "E4",
+                "G4"
+            ],
+            "displayNotes": [
+                "G",
+                "A",
+                "C#",
+                "E",
+                "G"
+            ],
+            "noteTypes": [
+                "bass",
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "A9": {
+            "name": "A9",
+            "notes": [
+                "A3",
+                "C#4",
+                "E4",
+                "G4",
+                "B4"
+            ],
+            "displayNotes": [
+                "A",
+                "C#",
+                "E",
+                "G",
+                "B"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh",
+                "ninth"
+            ]
+        },
+        "D": {
+            "name": "D",
+            "notes": [
+                "D3",
+                "F#3",
+                "A3"
+            ],
+            "displayNotes": [
+                "D",
+                "F#",
+                "A"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "D/4": {
+            "name": "D/4",
+            "notes": [
+                "D3",
+                "G3",
+                "A3"
+            ],
+            "displayNotes": [
+                "D",
+                "G",
+                "A"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "D/A": {
+            "name": "D/A",
+            "notes": [
+                "A3",
+                "D4",
+                "F#4",
+                "A4"
+            ],
+            "displayNotes": [
+                "A",
+                "D",
+                "F#",
+                "A"
+            ],
+            "noteTypes": [
+                "bass",
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "D/F#": {
+            "name": "D/F#",
+            "notes": [
+                "F#3",
+                "D4",
+                "F#4",
+                "A4"
+            ],
+            "displayNotes": [
+                "F#",
+                "D",
+                "F#",
+                "A"
+            ],
+            "noteTypes": [
+                "bass",
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "D4": {
+            "name": "D4",
+            "notes": [
+                "D3",
+                "F#3",
+                "A3"
+            ],
+            "displayNotes": [
+                "D",
+                "F#",
+                "A"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "D4/A": {
+            "name": "D4/A",
+            "notes": [
+                "A3",
+                "D4",
+                "F#4",
+                "A4"
+            ],
+            "displayNotes": [
+                "A",
+                "D",
+                "F#",
+                "A"
+            ],
+            "noteTypes": [
+                "bass",
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "D9": {
+            "name": "D9",
+            "notes": [
+                "D3",
+                "F#3",
+                "A3",
+                "C4",
+                "E4"
+            ],
+            "displayNotes": [
+                "D",
+                "F#",
+                "A",
+                "C",
+                "E"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh",
+                "ninth"
+            ]
+        },
+        "E/G": {
+            "name": "E/G",
+            "notes": [
+                "G3",
+                "E4",
+                "G#4",
+                "B4"
+            ],
+            "displayNotes": [
+                "G",
+                "E",
+                "G#",
+                "B"
+            ],
+            "noteTypes": [
+                "bass",
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "E9/G#": {
+            "name": "E9/G#",
+            "notes": [
+                "G#3",
+                "E4",
+                "G#4",
+                "B4",
+                "D5",
+                "F#5"
+            ],
+            "displayNotes": [
+                "G#",
+                "E",
+                "G#",
+                "B",
+                "D",
+                "F#"
+            ],
+            "noteTypes": [
+                "bass",
+                "root",
+                "triad",
+                "triad",
+                "seventh",
+                "ninth"
+            ]
+        },
+        "Gm/Bb": {
+            "name": "Gm/Bb",
+            "notes": [
+                "A#3",
+                "G4",
+                "A#4",
+                "D5"
+            ],
+            "displayNotes": [
+                "A#",
+                "G",
+                "A#",
+                "D"
+            ],
+            "noteTypes": [
+                "bass",
+                "root",
+                "triad",
+                "triad"
+            ]
+        }
+    }
+};
