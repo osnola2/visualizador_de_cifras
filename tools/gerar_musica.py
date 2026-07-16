@@ -371,6 +371,16 @@ def update_hub(title, artist, file_name, composer=""):
     
     songs = []
     seen = set()
+    catalog_path = os.path.join(BASE_DIR, "data", "catalog.json")
+    if os.path.exists(catalog_path):
+        try:
+            with open(catalog_path, "r", encoding="utf-8") as cf:
+                for s in json.load(cf):
+                    if s.get("id") not in seen:
+                        seen.add(s["id"])
+                        songs.append((s["id"], s.get("title", s["id"]), s.get("artist", "")))
+        except Exception:
+            pass
     for match in card_pattern.finditer(hub_content):
         f_name = match.group(1).strip()
         s_title = match.group(2).strip()
@@ -418,6 +428,11 @@ def update_hub(title, artist, file_name, composer=""):
     with open(HUB_HTML, "w", encoding="utf-8") as f:
         f.write(new_hub)
     print(" Updated Hub (index.html) in alphabetical order")
+    try:
+        from tools.generate_catalog import generate_catalog
+        generate_catalog()
+    except Exception as e:
+        print(f" Warning: Failed to generate catalog: {e}")
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:

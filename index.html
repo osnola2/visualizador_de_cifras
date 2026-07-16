@@ -3,603 +3,412 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visualizador de Cifras - Hub</title>
+    <title>Visualizador de Cifras - Catálogo Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #0f172a;
-            color: #fff;
+        :root {
+            --bg-primary: #0f172a;
+            --bg-secondary: #1e293b;
+            --bg-card: rgba(30, 41, 59, 0.65);
+            --border-color: rgba(255, 255, 255, 0.1);
+            --accent-cyan: #38bdf8;
+            --accent-purple: #a855f7;
+            --accent-green: #10b981;
+            --accent-yellow: #f59e0b;
+            --accent-orange: #f97316;
+            --accent-red: #ef4444;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+        }
+
+        * {
+            box-sizing: border-box;
             margin: 0;
-            padding: 2rem;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-primary);
+            background-image: 
+                radial-gradient(at 10% 20%, rgba(56, 189, 248, 0.1) 0px, transparent 50%),
+                radial-gradient(at 90% 80%, rgba(168, 85, 247, 0.12) 0px, transparent 50%);
+            background-attachment: fixed;
+            color: var(--text-main);
+            min-height: 100vh;
+            padding: 2.5rem 1.5rem 4rem;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
-        h1 {
-            color: #38bdf8;
-            margin-bottom: 2rem;
+
+        .hub-container {
+            width: 100%;
+            max-width: 900px;
         }
+
+        .hub-header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        .hub-header h1 {
+            font-size: 2.75rem;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            background: linear-gradient(135deg, #38bdf8, #818cf8, #c084fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+        }
+
+        .hub-subtitle {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        /* Toolbar / Glass Box */
+        .controls-toolbar {
+            background: var(--bg-card);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 1.5rem;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.4);
+        }
+
+        .search-box {
+            position: relative;
+            margin-bottom: 1.25rem;
+        }
+
+        .search-box input {
+            width: 100%;
+            background: rgba(15, 23, 42, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 10px;
+            padding: 0.85rem 1rem 0.85rem 2.8rem;
+            color: #fff;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: all 0.2s ease;
+        }
+
+        .search-box input:focus {
+            outline: none;
+            border-color: var(--accent-cyan);
+            box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
+        }
+
+        .search-box::before {
+            content: "🔍";
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1rem;
+            opacity: 0.7;
+        }
+
+        .controls-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 1.25rem;
+        }
+
+        @media (max-width: 650px) {
+            .controls-row {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .control-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+        }
+
+        .control-group label {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .control-group select {
+            background: rgba(15, 23, 42, 0.85);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 8px;
+            padding: 0.65rem 0.9rem;
+            color: #fff;
+            font-size: 0.95rem;
+            font-family: inherit;
+            cursor: pointer;
+            transition: border-color 0.2s;
+        }
+
+        .control-group select:focus {
+            outline: none;
+            border-color: var(--accent-cyan);
+        }
+
+        .quick-filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .quick-filter-btn {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-muted);
+            padding: 0.45rem 0.85rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+        }
+
+        .quick-filter-btn:hover {
+            background: rgba(255, 255, 255, 0.08);
+            color: #fff;
+            transform: translateY(-1px);
+        }
+
+        .quick-filter-btn.active {
+            background: rgba(56, 189, 248, 0.18);
+            border-color: var(--accent-cyan);
+            color: var(--accent-cyan);
+            font-weight: 600;
+        }
+
+        .btn-count {
+            font-size: 0.8em;
+            opacity: 0.8;
+        }
+
+        /* Song List & Groups */
         .song-list {
             display: flex;
             flex-direction: column;
-            gap: 1rem;
+            gap: 0.85rem;
             width: 100%;
-            max-width: 600px;
         }
+
+        .group-section {
+            margin-bottom: 2rem;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .group-header {
+            display: flex;
+            align-items: center;
+            gap: 0.65rem;
+            padding: 0.75rem 1rem;
+            background: rgba(30, 41, 59, 0.45);
+            border-left: 4px solid var(--accent-cyan);
+            border-radius: 6px;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            font-size: 1.15rem;
+            color: #fff;
+        }
+
+        .group-count {
+            margin-left: auto;
+            font-size: 0.82rem;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.2rem 0.6rem;
+            border-radius: 12px;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+
+        .group-cards {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        /* Song Link Card */
         .song-link {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 1rem 1.5rem;
-            background: rgba(255,255,255,0.05);
-            border-radius: 8px;
+            padding: 1rem 1.4rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
             text-decoration: none;
             color: #fff;
-            font-size: 1.2rem;
-            font-weight: bold;
-            transition: background 0.2s, transform 0.1s;
-            border: 1px solid rgba(255,255,255,0.1);
+            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
         }
+
         .song-link:hover {
-            background: rgba(255,255,255,0.1);
-            transform: translateY(-2px);
-            border-color: #38bdf8;
+            background: rgba(56, 189, 248, 0.08);
+            transform: translateY(-3px) scale(1.005);
+            border-color: var(--accent-cyan);
+            box-shadow: 0 10px 25px -5px rgba(56, 189, 248, 0.2);
         }
+
+        .song-info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+
+        .song-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--text-main);
+        }
+
         .song-artist {
             font-size: 0.9rem;
-            color: #94a3b8;
-            font-weight: normal;
+            color: var(--text-muted);
+            font-weight: 400;
+        }
+
+        .song-composer {
+            font-size: 0.85em;
+            opacity: 0.85;
+            font-weight: 400;
+        }
+
+        /* Badges */
+        .song-badges {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-shrink: 0;
+        }
+
+        .chord-badge {
+            font-size: 0.82rem;
+            font-weight: 700;
+            padding: 0.35rem 0.75rem;
+            border-radius: 20px;
+            border: 1px solid transparent;
+            white-space: nowrap;
+        }
+
+        .badge-beginner {
+            background: rgba(16, 185, 129, 0.15);
+            color: #34d399;
+            border-color: rgba(16, 185, 129, 0.3);
+        }
+
+        .badge-intermediate {
+            background: rgba(245, 158, 11, 0.15);
+            color: #fbbf24;
+            border-color: rgba(245, 158, 11, 0.3);
+        }
+
+        .badge-advanced {
+            background: rgba(249, 115, 22, 0.15);
+            color: #fb923c;
+            border-color: rgba(249, 115, 22, 0.3);
+        }
+
+        .badge-expert {
+            background: rgba(239, 68, 68, 0.15);
+            color: #f87171;
+            border-color: rgba(239, 68, 68, 0.3);
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: rgba(30, 41, 59, 0.3);
+            border-radius: 12px;
+            border: 1px dashed var(--border-color);
+        }
+
+        .empty-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .empty-state h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-main);
+        }
+
+        .empty-state p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(6px); }
+            to { opacity: 1; transform: translateY(0); }
         }
     </style>
 </head>
 <body>
-    <h1>Catálogo de Músicas</h1>
-    <div class="song-list" id="song-list-container">
-        <!-- Songs will be injected here -->
-            <a href="viewer.html?song=ANivelDe" class="song-link">
-                A Nível De...
-                <span class="song-artist">João Bosco <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Aldir Blanc / Joao Bosco)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=ATerceiraMargemDoRio" class="song-link">
-                A Terceira Margem do Rio
-                <span class="song-artist">Caetano Veloso <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Caetano Veloso / Milton Nascimento)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=Achou" class="song-link">
-                Achou
-                <span class="song-artist">Ceumar <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Dante Ozzetti / Luiz Tatit)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=AguasDeMarco" class="song-link">
-                Águas de Março
-                <span class="song-artist">Tom Jobim</span>
-            </a>
-    
-            <a href="viewer.html?song=Antonico" class="song-link">
-                Antonico
-                <span class="song-artist">Ismael Silva</span>
-            </a>
-    
-            <a href="viewer.html?song=Anunciacao" class="song-link">
-                Anunciação
-                <span class="song-artist">Alceu Valença</span>
-            </a>
-    
-            <a href="viewer.html?song=ApagaOFogoMane" class="song-link">
-                Apaga o fogo Mané
-                <span class="song-artist">Adoniran Barbosa</span>
-            </a>
-    
-            <a href="viewer.html?song=AsTearsGoBy" class="song-link">
-                As Tears Go By
-                <span class="song-artist">The Rolling Stones</span>
-            </a>
-    
-            <a href="viewer.html?song=AsaBranca" class="song-link">
-                Asa Branca
-                <span class="song-artist">Luiz Gonzaga e Humberto Teixeira</span>
-            </a>
-    
-            <a href="viewer.html?song=AteALua" class="song-link">
-                Até A Lua
-                <span class="song-artist">Tião Carvalho <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Ana Maria Carvalho)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=BanhoDeFolhas" class="song-link">
-                Banho de Folhas
-                <span class="song-artist">Luedji Luna</span>
-            </a>
-    
-            <a href="viewer.html?song=BanhoDeManjericao" class="song-link">
-                Banho de manjericão
-                <span class="song-artist">Paulo Cesar Pinheiro <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: João Nogueira/Paulo César Pinheiro)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=BaratoTotal" class="song-link">
-                Barato Total
-                <span class="song-artist">Gilberto Gil</span>
-            </a>
-    
-            <a href="viewer.html?song=BomDiaTristeza" class="song-link">
-                Bom dia tristeza
-                <span class="song-artist">Adoniran Barbosa <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Adoniran Barbosa/Vinicius de Moraes)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=Borzeguim" class="song-link">
-                Borzeguim
-                <span class="song-artist">Tom Jobim</span>
-            </a>
-    
-            <a href="viewer.html?song=Boto" class="song-link">
-                Boto
-                <span class="song-artist">Tom Jobim</span>
-            </a>
-    
-            <a href="viewer.html?song=Cajuina" class="song-link">
-                Cajuína
-                <span class="song-artist">Caetano Veloso</span>
-            </a>
-    
-            <a href="viewer.html?song=Caravana" class="song-link">
-                Caravana
-                <span class="song-artist">Geraldo Azevedo <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Geraldo Azevedo / Alçeu Valença)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=ChaoDeGiz" class="song-link">
-                Chão de Giz
-                <span class="song-artist">Zé Ramalho <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Ze Ramalho)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=CirandaParaJanaina" class="song-link">
-                Ciranda Para Janaína
-                <span class="song-artist">Kiko Dinucci <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Kiko Dinucci / Jonathan Silva)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=CobraRasteira" class="song-link">
-                Cobra Rasteira
-                <span class="song-artist">Metá Metá <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Kiko Dinucci)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=Conselheiro" class="song-link">
-                Conselheiro
-                <span class="song-artist">Paulo Cesar Pinheiro <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Batatinha/Paulo César Pinheiro)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=Cruel" class="song-link">
-                Cruel
-                <span class="song-artist">Luiz Melodia <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Sergio Sampaio)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=CurvasDoRio" class="song-link">
-                Curvas do Rio
-                <span class="song-artist">Elomar Figueira Melo <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Elomar)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=DancaDaSolidao" class="song-link">
-                Dança da Solidão
-                <span class="song-artist">Paulinho da Viola</span>
-            </a>
-    
-            <a href="viewer.html?song=Dindinha" class="song-link">
-                Dindinha
-                <span class="song-artist">Ceumar <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Zeca Baleiro)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=Elegia" class="song-link">
-                Elegia
-                <span class="song-artist">Péricles Cavalcanti</span>
-            </a>
-    
-            <a href="viewer.html?song=EstacioEuEVoce" class="song-link">
-                Estácio, Eu e Você
-                <span class="song-artist">Luiz Melodia</span>
-            </a>
-    
-            <a href="viewer.html?song=Estrela" class="song-link">
-                Estrela
-                <span class="song-artist">Elton Medeiros / Eduardo Gudin / Roberto Riberti</span>
-            </a>
-    
-            <a href="viewer.html?song=Fadas" class="song-link">
-                Fadas
-                <span class="song-artist">Luiz Melodia <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Luíz Melodia)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=FalsasJuras" class="song-link">
-                Falsas juras
-                <span class="song-artist">Velha Guarda Da Portela <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Casquinha/Candeia)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=Favela" class="song-link">
-                Favela
-                <span class="song-artist">Padeirinho <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Padeirinho/Jorginho Pessanha)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=FlorDeMaracuja" class="song-link">
-                Flor de Maracujá
-                <span class="song-artist">João Donato</span>
-            </a>
-    
-            <a href="viewer.html?song=FlorDoReal" class="song-link">
-                Flor do Real
-                <span class="song-artist">sessa <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Sessa)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=GataMagica" class="song-link">
-                Gata Mágica
-                <span class="song-artist">sessa <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Sessa)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=GothamCity" class="song-link">
-                Gotham City
-                <span class="song-artist">Jards Macalé <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Capinan / Jards Macale)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=Iarinhas" class="song-link">
-                Iarinhas
-                <span class="song-artist">Luiza Lian <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Luiza Lian / Leda Cartum)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=JaciEMareCheia" class="song-link">
-                Jaci e Maré Cheia
-                <span class="song-artist">Douglas Germano</span>
-            </a>
-    
-            <a href="viewer.html?song=LagrimasNegras" class="song-link">
-                Lágrimas Negras
-                <span class="song-artist">Jorge Mautner e Nelson Jacobina</span>
-            </a>
-    
-            <a href="viewer.html?song=Lama" class="song-link">
-                Lama
-                <span class="song-artist">Mauro Duarte</span>
-            </a>
-    
-            <a href="viewer.html?song=LaranjaMadura" class="song-link">
-                Laranja madura
-                <span class="song-artist">Ataulfo Alves</span>
-            </a>
-    
-            <a href="viewer.html?song=LencoNoPescoco" class="song-link">
-                Lenço no pescoço
-                <span class="song-artist">Wilson Batista</span>
-            </a>
-    
-            <a href="viewer.html?song=LetItBleed" class="song-link">
-                Let It Bleed
-                <span class="song-artist">The Rolling Stones</span>
-            </a>
-    
-            <a href="viewer.html?song=Lizete" class="song-link">
-                Lizete
-                <span class="song-artist">Jonathan Silva</span>
-            </a>
-    
-            <a href="viewer.html?song=Magrelinha" class="song-link">
-                Magrelinha
-                <span class="song-artist">Luiz Melodia <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Luíz Melodia)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=MalditoCostume" class="song-link">
-                Maldito Costume
-                <span class="song-artist">Ceumar</span>
-            </a>
-    
-            <a href="viewer.html?song=ManGaveNamesToAllTheAnimals" class="song-link">
-                Man Gave Names To All The Animals
-                <span class="song-artist">Bob Dylan</span>
-            </a>
-    
-            <a href="viewer.html?song=MaracatuAtomico" class="song-link">
-                Maracatu Atômico
-                <span class="song-artist">Gilberto Gil <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Jorge Mautner / Nelson Jacobina)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=MedoDeOlharPraSi" class="song-link">
-                Medo de Olhar Pra Si
-                <span class="song-artist">Leo Cavalcanti</span>
-            </a>
-    
-            <a href="viewer.html?song=NaAsaDoVento" class="song-link">
-                Na Asa do Vento
-                <span class="song-artist">João do Vale e Luiz Vieira</span>
-            </a>
-    
-            <a href="viewer.html?song=NaLinhaDaMao" class="song-link">
-                Na linha da mão
-                <span class="song-artist">Lello Di Sarno</span>
-            </a>
-    
-            <a href="viewer.html?song=NaturalMystic" class="song-link">
-                Natural Mystic
-                <span class="song-artist">Bob Marley</span>
-            </a>
-    
-            <a href="viewer.html?song=NegroAmor" class="song-link">
-                Negro Amor
-                <span class="song-artist">Gal Costa <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Caetano Veloso / Bob Dylan / Péricles Cavalcante)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=NegroGato" class="song-link">
-                Negro Gato
-                <span class="song-artist">Luiz Melodia <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Getúlio Cortes)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=NuvemNegra" class="song-link">
-                Nuvem Negra
-                <span class="song-artist">Gal Costa <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Djavan)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=OBondeSaoJanuario" class="song-link">
-                O Bonde São Januário
-                <span class="song-artist">Wilson Batista <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Ataulfo Alves/Wilson Batista)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=OHomemDeuNomeATodosAnimais" class="song-link">
-                O Homem Deu Nome a Todos Animais
-                <span class="song-artist">Zé Ramalho <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Bob Dylan)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=OMeuBlocoEUmaNacao" class="song-link">
-                O meu bloco é uma nação
-                <span class="song-artist">Lello Di Sarno</span>
-            </a>
-    
-            <a href="viewer.html?song=ObaIna" class="song-link">
-                Obá Iná
-                <span class="song-artist">Douglas Germano</span>
-            </a>
-    
-            <a href="viewer.html?song=Oceano" class="song-link">
-                Oceano
-                <span class="song-artist">Djavan</span>
-            </a>
-    
-            <a href="viewer.html?song=PapelMache" class="song-link">
-                Papel Machê
-                <span class="song-artist">João Bosco <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Joao Bosco / Capinam)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=ParaVerAsMeninas" class="song-link">
-                Para Ver As Meninas
-                <span class="song-artist">Paulinho da Viola</span>
-            </a>
-    
-            <a href="viewer.html?song=Pecadinhos" class="song-link">
-                Pecadinhos
-                <span class="song-artist">Ceumar <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Zeca Baleiro / Tata Fernandes)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=PedraDeResponsa" class="song-link">
-                Pedra de Responsa
-                <span class="song-artist">Chico César <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Chico César / Zeca Baleiro)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=PeralticeDeMenino" class="song-link">
-                Peraltice de menino
-                <span class="song-artist">Lello Di Sarno</span>
-            </a>
-    
-            <a href="viewer.html?song=PetrolinaJuazeiro" class="song-link">
-                Petrolina Juazeiro
-                <span class="song-artist">Alceu Valença <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Geraldo Azevedo / Jorge De Altinho / Moraes Moreira / Francisco Agra)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=Ponteio" class="song-link">
-                Ponteio
-                <span class="song-artist">Edu Lobo <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Jose Carlos Capinam / Edú Lobo)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=PraMachucarMeuCoracao" class="song-link">
-                Pra Machucar Meu Coração
-                <span class="song-artist">Edu Lobo</span>
-            </a>
-    
-            <a href="viewer.html?song=Pressentimento" class="song-link">
-                Pressentimento
-                <span class="song-artist">Herminio Bello De Carvalho <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Elton Medeiros/Hermínio Bello de Carvalho)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=Pyata" class="song-link">
-                Pyatã
-                <span class="song-artist">Lello Di Sarno</span>
-            </a>
-    
-            <a href="viewer.html?song=QuandoOAmorAcontece" class="song-link">
-                Quando o Amor Acontece
-                <span class="song-artist">João Bosco <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: João Bosco / Abel Silva)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=QuaseUmSegundo" class="song-link">
-                Quase Um Segundo
-                <span class="song-artist">Herbert Vianna</span>
-            </a>
-    
-            <a href="viewer.html?song=RespeitemMeusCabelosBrancos" class="song-link">
-                Respeitem meus cabelos, Brancos
-                <span class="song-artist">Chico César <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Chico Cesar)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=Rosalina" class="song-link">
-                Rosalina
-                <span class="song-artist">Lello Di Sarno <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Lello Di Sarno/Noah Guper)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=Sabia" class="song-link">
-                Sabiá
-                <span class="song-artist">Alceu Valença <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Luiz Gonzaga / Zé Dantas)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=SalveAVelhaGuarda" class="song-link">
-                Salve a Velha Guarda
-                <span class="song-artist">Lello Di Sarno <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Lello Di Sarno/Gabriel Toledo/Hélio Rubi)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=SambaBandido" class="song-link">
-                Samba bandido
-                <span class="song-artist">Lello Di Sarno</span>
-            </a>
-    
-            <a href="viewer.html?song=SambaDaUtopia" class="song-link">
-                Samba da Utopia
-                <span class="song-artist">Jonathan Silva</span>
-            </a>
-    
-            <a href="viewer.html?song=SambaDoBuracoDoMetro" class="song-link">
-                Samba do buraco do metrô
-                <span class="song-artist">Lello Di Sarno <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Lello Di Sarno/Bi/Tico Macumba)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=Sandra" class="song-link">
-                Sandra
-                <span class="song-artist">Gilberto Gil</span>
-            </a>
-    
-            <a href="viewer.html?song=SantoDeCasa" class="song-link">
-                Santo de Casa
-                <span class="song-artist">Itamar Assumpção <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Itamar Assumpcao)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=SaoGenesio" class="song-link">
-                São Genésio
-                <span class="song-artist">Ceumar <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Tata Fernandes)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=SeAcasoVoceChegasse" class="song-link">
-                Se acaso você chegasse
-                <span class="song-artist">Lupicinio Rodrigues <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Lupicínio Rodrigues/Felisberto Martins)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=SeVoceJurar" class="song-link">
-                Se você jurar
-                <span class="song-artist">Ismael Silva <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Ismael Silva/Nilton Bastos/Francisco Alves)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=SeiDosCaminhos" class="song-link">
-                Sei Dos Caminhos
-                <span class="song-artist">Itamar Assumpção <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Itamar Assumpção / Alice Ruiz)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=SelfControl" class="song-link">
-                Self Control
-                <span class="song-artist">Laura Branigan</span>
-            </a>
-    
-            <a href="viewer.html?song=SeuOlhar" class="song-link">
-                Seu Olhar
-                <span class="song-artist">Ceumar <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Arnaldo Antunes / Paulo Tatit)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=Solidao" class="song-link">
-                Solidão
-                <span class="song-artist">Alceu Valença <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Alceu Valenca)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=SoyLocoPorTiAmerica" class="song-link">
-                Soy Loco Por Ti, America
-                <span class="song-artist">Caetano Veloso <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Gilberto Gil / Capinan)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=Tecoteco" class="song-link">
-                Teco-teco
-                <span class="song-artist">Milton Villela e de Pereira Costa</span>
-            </a>
-    
-            <a href="viewer.html?song=Temporais" class="song-link">
-                Temporais
-                <span class="song-artist">Lello Di Sarno</span>
-            </a>
-    
-            <a href="viewer.html?song=TheWindCriesMary" class="song-link">
-                The Wind Cries Mary
-                <span class="song-artist">Jimi Hendrix</span>
-            </a>
-    
-            <a href="viewer.html?song=Traste" class="song-link">
-                Traste
-                <span class="song-artist">Talisma <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Talismã)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=TudoQueVocePodiaSer" class="song-link">
-                Tudo Que Você Podia Ser
-                <span class="song-artist">Milton Nascimento <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Marcio Borges / Lo Borges)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=UltimoDesejo" class="song-link">
-                Último desejo
-                <span class="song-artist">Noel Rosa</span>
-            </a>
-    
-            <a href="viewer.html?song=UmGirassolDaCorDeSeuCabelo" class="song-link">
-                Um Girassol da Cor de Seu Cabelo
-                <span class="song-artist">Lô Borges <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Márcio Borges / Lô Borges)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=ValeQuantoPesa" class="song-link">
-                Vale Quanto Pesa
-                <span class="song-artist">Luiz Melodia <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Luíz Melodia)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=VejaMargarida" class="song-link">
-                Veja Margarida
-                <span class="song-artist">Geraldo Azevedo <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Vital Farias)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=VentoBravo" class="song-link">
-                Vento Bravo
-                <span class="song-artist">Paulo César Pinheiro e Edu Lobo</span>
-            </a>
-    
-            <a href="viewer.html?song=VideVersoMeuEndereco" class="song-link">
-                Vide verso meu endereço
-                <span class="song-artist">Adoniran Barbosa</span>
-            </a>
-    
-            <a href="viewer.html?song=VilaEsperanca" class="song-link">
-                Vila Esperança
-                <span class="song-artist">Adoniran Barbosa <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Adoniran Barbosa/Marcos César)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=ViolaForaDeModa" class="song-link">
-                Viola Fora de Moda
-                <span class="song-artist">Edu Lobo</span>
-            </a>
-    
-            <a href="viewer.html?song=VoceMeAbandonou" class="song-link">
-                Você me abandonou
-                <span class="song-artist">Velha Guarda Da Portela <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Alberto Lonato)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=VocePassaEuAchoGraca" class="song-link">
-                Você passa, eu acho graça
-                <span class="song-artist">Ataulfo Alves <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Ataulfo Alves/Carlos Imperial)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=VolverALos17" class="song-link">
-                Volver a Los 17
-                <span class="song-artist">Mercedes Sosa</span>
-            </a>
-    
-            <a href="viewer.html?song=WildHorses" class="song-link">
-                Wild Horses
-                <span class="song-artist">The Rolling Stones</span>
-            </a>
-    
-            <a href="viewer.html?song=XoteDasMeninas" class="song-link">
-                Xote Das Meninas
-                <span class="song-artist">Alceu Valença <span style="font-size: 0.85em; opacity: 0.85; font-weight: 400;">(Comp: Luiz Gonzaga / Zé Dantas)</span></span>
-            </a>
-    
-            <a href="viewer.html?song=YouCantAlwaysGetWhatYouWant" class="song-link">
-                You Cant Always Get What You Want
-                <span class="song-artist">The Rolling Stones</span>
-            </a>
-    
-            <a href="viewer.html?song=ZDaQuestao" class="song-link">
-                Z da Questão
-                <span class="song-artist">Itamar Assumpção</span>
-            </a>
+    <div class="hub-container">
+        <header class="hub-header">
+            <h1>Catálogo de Cifras</h1>
+            <p class="hub-subtitle" id="total-count-badge">Carregando catálogo de músicas...</p>
+        </header>
+
+        <section class="controls-toolbar">
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Buscar por título, artista, compositor ou ID...">
+            </div>
+
+            <div class="controls-row">
+                <div class="control-group">
+                    <label for="group-select">Agrupar por:</label>
+                    <select id="group-select">
+                        <option value="none">🔤 Nenhum (Lista Geral)</option>
+                        <option value="chords-range">📊 Faixa de Acordes (Iniciante / Avançado)</option>
+                        <option value="artist">👤 Artista / Intérprete</option>
+                        <option value="letter">🔠 Letra Inicial (A-Z)</option>
+                    </select>
+                </div>
+
+                <div class="control-group">
+                    <label for="sort-select">Ordenar por:</label>
+                    <select id="sort-select">
+                        <option value="title-asc">🔤 Ordem Alfabética (A-Z)</option>
+                        <option value="title-desc">🔤 Ordem Alfabética (Z-A)</option>
+                        <option value="chords-asc">🔢 Menos Acordes (Menor complexidade)</option>
+                        <option value="chords-desc">🔢 Mais Acordes (Maior complexidade)</option>
+                        <option value="artist-asc">👤 Artista (A-Z)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="quick-filters">
+                <button class="quick-filter-btn active" data-filter="all">Todos <span class="btn-count"></span></button>
+                <button class="quick-filter-btn" data-filter="beginner">🟢 Iniciante (1-5) <span class="btn-count"></span></button>
+                <button class="quick-filter-btn" data-filter="intermediate">🟡 Intermediário (6-10) <span class="btn-count"></span></button>
+                <button class="quick-filter-btn" data-filter="advanced">🟠 Avançado (11-15) <span class="btn-count"></span></button>
+                <button class="quick-filter-btn" data-filter="expert">🔴 Expert (16+) <span class="btn-count"></span></button>
+            </div>
+        </section>
+
+        <div class="song-list" id="song-list-container">
+            <!-- Songs will be injected here -->
+        </div>
     </div>
+
+    <!-- Scripts do Catálogo -->
+    <script src="data/catalog.js"></script>
+    <script src="assets/js/hub.js"></script>
 </body>
 </html>
