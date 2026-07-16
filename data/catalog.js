@@ -218,6 +218,13 @@ const SONGS_CATALOG = [
         "chordsCount": 8
     },
     {
+        "id": "FarinhaDoDesprezo",
+        "title": "Farinha do Desprezo",
+        "artist": "Jards Macalé",
+        "composer": "Capinan / Jards Macale",
+        "chordsCount": 11
+    },
+    {
         "id": "Favela",
         "title": "Favela",
         "artist": "Padeirinho",
@@ -316,6 +323,13 @@ const SONGS_CATALOG = [
         "chordsCount": 10
     },
     {
+        "id": "MalSecreto",
+        "title": "Mal Secreto",
+        "artist": "Jards Macalé",
+        "composer": "Waly Salomão / Jards Macalé",
+        "chordsCount": 12
+    },
+    {
         "id": "MalditoCostume",
         "title": "Maldito Costume",
         "artist": "Ceumar",
@@ -376,6 +390,13 @@ const SONGS_CATALOG = [
         "title": "Natural Mystic",
         "artist": "Bob Marley",
         "composer": "",
+        "chordsCount": 3
+    },
+    {
+        "id": "NegraMelodia",
+        "title": "Negra Melodia",
+        "artist": "Jards Macalé",
+        "composer": "Waly Salomão / Jards Macalé",
         "chordsCount": 3
     },
     {
@@ -692,6 +713,13 @@ const SONGS_CATALOG = [
         "artist": "Luiz Melodia",
         "composer": "Luíz Melodia",
         "chordsCount": 9
+    },
+    {
+        "id": "VaporBarato",
+        "title": "Vapor Barato",
+        "artist": "Jards Macalé",
+        "composer": "Waly Salomão / Jards Macalé",
+        "chordsCount": 5
     },
     {
         "id": "VejaMargarida",
