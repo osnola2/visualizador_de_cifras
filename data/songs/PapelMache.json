@@ -80,13 +80,13 @@
             "notes": [
                 "C3",
                 "E3",
-                "G3",
+                "G#3",
                 "B3"
             ],
             "displayNotes": [
                 "C",
                 "E",
-                "G",
+                "G#",
                 "B"
             ],
             "noteTypes": [
@@ -446,14 +446,14 @@
             "notes": [
                 "C#3",
                 "F3",
-                "G#3",
+                "A3",
                 "B3",
                 "D#4"
             ],
             "displayNotes": [
                 "Db",
                 "F",
-                "Ab",
+                "A",
                 "B",
                 "Eb"
             ],

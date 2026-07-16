@@ -131,13 +131,13 @@ window.SONG_DATA = {
             "notes": [
                 "F#3",
                 "A3",
-                "C#4",
+                "C4",
                 "E4"
             ],
             "displayNotes": [
                 "F#",
                 "A",
-                "C#",
+                "C",
                 "E"
             ],
             "noteTypes": [
@@ -169,13 +169,13 @@ window.SONG_DATA = {
             "name": "F#4/7",
             "notes": [
                 "F#3",
-                "A#3",
+                "B3",
                 "C#4",
                 "E4"
             ],
             "displayNotes": [
                 "F#",
-                "A#",
+                "B",
                 "C#",
                 "E"
             ],

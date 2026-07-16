@@ -56,13 +56,13 @@ window.SONG_DATA = {
             "notes": [
                 "E3",
                 "G3",
-                "B3",
+                "A#3",
                 "D4"
             ],
             "displayNotes": [
                 "E",
                 "G",
-                "B",
+                "A#",
                 "D"
             ],
             "noteTypes": [
@@ -163,13 +163,13 @@ window.SONG_DATA = {
             "name": "Eb4/7",
             "notes": [
                 "D#3",
-                "G3",
+                "G#3",
                 "A#3",
                 "C#4"
             ],
             "displayNotes": [
                 "Eb",
-                "G",
+                "Ab",
                 "Bb",
                 "Db"
             ],
@@ -418,13 +418,13 @@ window.SONG_DATA = {
             "name": "D#4/7",
             "notes": [
                 "D#3",
-                "G3",
+                "G#3",
                 "A#3",
                 "C#4"
             ],
             "displayNotes": [
                 "D#",
-                "G",
+                "G#",
                 "A#",
                 "C#"
             ],

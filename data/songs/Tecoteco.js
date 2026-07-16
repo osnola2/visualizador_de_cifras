@@ -215,13 +215,13 @@ window.SONG_DATA = {
             "notes": [
                 "C#3",
                 "E3",
-                "G#3",
+                "G3",
                 "B3"
             ],
             "displayNotes": [
                 "C#",
                 "E",
-                "G#",
+                "G",
                 "B"
             ],
             "noteTypes": [

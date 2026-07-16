@@ -47,13 +47,13 @@ window.SONG_DATA = {
             "notes": [
                 "B3",
                 "D4",
-                "F#4",
+                "F4",
                 "A4"
             ],
             "displayNotes": [
                 "B",
                 "D",
-                "F#",
+                "F",
                 "A"
             ],
             "noteTypes": [

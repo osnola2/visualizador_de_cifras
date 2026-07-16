@@ -56,7 +56,7 @@ def parse_chord(chord_symbol):
     if 'dim' in suffix or 'º' in suffix or '°' in suffix:
         is_dim = True
         is_minor = True
-    if 'aug' in suffix or ('+' in suffix and '7+' not in suffix and '+7' not in suffix and '11+' not in suffix and '9+' not in suffix):
+    if 'aug' in suffix or ('+' in suffix and '7+' not in suffix and '+7' not in suffix and '11+' not in suffix and '9+' not in suffix) or re.search(r'(?:7M5|759|m5\+|5\+|^5\+|$#5)', suffix):
         is_aug = True
     if ('sus4' in suffix or ('sus' in suffix and 'sus2' not in suffix) or
         '(4/' in suffix or '(4)' in suffix or '/4' in suffix or suffix.startswith('4/')):
@@ -77,7 +77,7 @@ def parse_chord(chord_symbol):
     # Fifths
     if is_dim or 'b5' in suffix or '5-' in suffix or '5b' in suffix:
         intervals[6] = 'triad' # Dim 5th
-    elif (is_aug and '7+' not in suffix and '+7' not in suffix) or '#5' in suffix or '5+' in suffix:
+    elif (is_aug and '7+' not in suffix and '+7' not in suffix) or '#5' in suffix or '5+' in suffix or '+5' in suffix or '5#' in suffix or '7M5' in suffix or '759' in suffix:
         intervals[8] = 'triad' # Aug 5th
     else:
         intervals[7] = 'triad' # Perf 5th
@@ -133,7 +133,7 @@ def parse_chord(chord_symbol):
     if 'b5' in suffix and 6 not in intervals:
         if 7 in intervals: del intervals[7]
         intervals[6] = 'triad'
-    if ('#5' in suffix or '5+' in suffix) and 8 not in intervals:
+    if ('#5' in suffix or '5+' in suffix or '+5' in suffix or '5#' in suffix or '7M5' in suffix or '759' in suffix or (is_aug and '7+' not in suffix and '+7' not in suffix)) and 8 not in intervals:
         if 7 in intervals: del intervals[7]
         intervals[8] = 'triad'
 
