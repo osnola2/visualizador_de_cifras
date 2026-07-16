@@ -343,6 +343,20 @@
         "chordsCount": 6
     },
     {
+        "id": "MelodiaSentimental",
+        "title": "Melodia Sentimental",
+        "artist": "Heitor Villa-Lobos",
+        "composer": "Dora Vasconcelos / Heitor Vila-lobos",
+        "chordsCount": 18
+    },
+    {
+        "id": "MovimentoDosBarcos",
+        "title": "Movimento Dos Barcos",
+        "artist": "Jards Macalé",
+        "composer": "Capinam / Jards Macalé",
+        "chordsCount": 14
+    },
+    {
         "id": "NaAsaDoVento",
         "title": "Na Asa do Vento",
         "artist": "João do Vale e Luiz Vieira",
