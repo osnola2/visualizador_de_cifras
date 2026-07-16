@@ -84,6 +84,64 @@ h2.song-artist {
     gap: 1rem;
 }
 
+/* Painel de Controles Flutuante no Canto Direito Superior - Reduzido em 50% */
+.controls-panel.floating-controls,
+.controls-panel.header-controls {
+    position: fixed !important;
+    top: 12px !important;
+    right: 16px !important;
+    z-index: 10000 !important;
+    background: rgba(15, 23, 42, 0.92) !important;
+    backdrop-filter: blur(16px) !important;
+    -webkit-backdrop-filter: blur(16px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.18) !important;
+    border-radius: 14px !important;
+    padding: 4px 10px !important;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45), 0 0 15px rgba(244, 63, 94, 0.15) !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+    transition: all 0.3s ease !important;
+    transform: scale(0.72) !important;
+    transform-origin: top right !important;
+}
+
+.controls-panel.floating-controls:hover,
+.controls-panel.header-controls:hover {
+    border-color: rgba(255, 255, 255, 0.3) !important;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6), 0 0 20px rgba(244, 63, 94, 0.25) !important;
+}
+
+/* Ajustes compactos para os elementos internos do painel flutuante */
+.controls-panel.floating-controls .glass-btn,
+.controls-panel.header-controls .glass-btn {
+    padding: 0.35rem 0.7rem !important;
+    font-size: 0.85rem !important;
+    border-radius: 8px !important;
+    gap: 0.35rem !important;
+}
+
+.controls-panel.floating-controls #toggle-piano-btn,
+.controls-panel.header-controls #toggle-piano-btn {
+    padding: 0.35rem !important;
+}
+
+.controls-panel.floating-controls .speed-control,
+.controls-panel.header-controls .speed-control {
+    padding: 0.3rem 0.7rem !important;
+    font-size: 0.85rem !important;
+    border-radius: 8px !important;
+    gap: 6px !important;
+}
+
+.controls-panel.floating-controls #bpm-input,
+.controls-panel.header-controls #bpm-input {
+    width: 46px !important;
+    padding: 1px 4px !important;
+    font-size: 0.85rem !important;
+}
+
 .glass-btn {
     background: rgba(244, 63, 94, 0.2);
     border: 1px solid var(--primary);
@@ -362,31 +420,46 @@ h2.song-artist {
         max-width: 100vw !important;
         overflow-x: hidden !important;
     }
+    .controls-panel.floating-controls,
+    .controls-panel.header-controls,
     .controls-panel {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap !important;
+        position: fixed !important;
+        top: 8px !important;
+        right: 8px !important;
+        z-index: 10000 !important;
+        background: rgba(15, 23, 42, 0.95) !important;
+        backdrop-filter: blur(16px) !important;
+        -webkit-backdrop-filter: blur(16px) !important;
+        border: 1px solid rgba(255, 255, 255, 0.18) !important;
+        border-radius: 12px !important;
+        padding: 3px 8px !important;
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
         justify-content: flex-end;
         align-items: center;
         max-width: 100%;
-        gap: 5px;
+        gap: 4px !important;
+        box-shadow: 0 6px 24px rgba(0, 0, 0, 0.5) !important;
+        transform: scale(0.72) !important;
+        transform-origin: top right !important;
     }
     #autoscroll-btn {
-        padding: 5px 10px;
-        font-size: 0.75rem;
-        border-radius: 6px;
-        white-space: nowrap;
+        padding: 3px 7px !important;
+        font-size: 0.7rem !important;
+        border-radius: 5px !important;
+        white-space: nowrap !important;
     }
     .speed-control {
-        padding: 3px 6px;
-        font-size: 0.72rem;
-        border-radius: 6px;
-        gap: 4px;
+        padding: 2px 5px !important;
+        font-size: 0.68rem !important;
+        border-radius: 5px !important;
+        gap: 3px !important;
     }
     #bpm-input {
-        width: 42px !important;
-        font-size: 0.75rem;
-        padding: 2px !important;
+        width: 38px !important;
+        font-size: 0.7rem !important;
+        padding: 1px !important;
     }
     .piano-panel {
         position: fixed !important;
