@@ -387,4 +387,20 @@ function initViolaoViewer() {
             }
         });
     }
+
+    // Toggle Guitar Diagram Panel Logic
+    const toggleGuitarBtn = document.getElementById('toggle-guitar-btn') || document.getElementById('toggle-piano-btn');
+    if (toggleGuitarBtn) {
+        toggleGuitarBtn.addEventListener('click', () => {
+            const panel = document.querySelector('.piano-panel');
+            if (panel) {
+                panel.classList.toggle('piano-hidden');
+                if (panel.classList.contains('piano-hidden')) {
+                    toggleGuitarBtn.style.opacity = '0.5';
+                } else {
+                    toggleGuitarBtn.style.opacity = '1';
+                }
+            }
+        });
+    }
 }
