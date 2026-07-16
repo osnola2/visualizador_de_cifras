@@ -128,7 +128,7 @@ window.SONG_DATA = {
             "name": "B7(13-)",
             "notes": [
                 "B3",
-                "D4",
+                "D#4",
                 "F#4",
                 "A4",
                 "C#5",
@@ -136,7 +136,7 @@ window.SONG_DATA = {
             ],
             "displayNotes": [
                 "B",
-                "D",
+                "D#",
                 "F#",
                 "A",
                 "C#",
@@ -182,7 +182,7 @@ window.SONG_DATA = {
             "name": "B7(9/13-)",
             "notes": [
                 "B3",
-                "D4",
+                "D#4",
                 "F#4",
                 "A4",
                 "C#5",
@@ -190,7 +190,7 @@ window.SONG_DATA = {
             ],
             "displayNotes": [
                 "B",
-                "D",
+                "D#",
                 "F#",
                 "A",
                 "C#",
@@ -248,13 +248,13 @@ window.SONG_DATA = {
             "name": "C#7(5-)",
             "notes": [
                 "C#3",
-                "E3",
+                "F3",
                 "G3",
                 "B3"
             ],
             "displayNotes": [
                 "C#",
-                "E",
+                "F",
                 "G",
                 "B"
             ],
@@ -482,14 +482,14 @@ window.SONG_DATA = {
             "name": "E7(9-)",
             "notes": [
                 "E3",
-                "G3",
+                "G#3",
                 "B3",
                 "D4",
                 "F4"
             ],
             "displayNotes": [
                 "E",
-                "G",
+                "G#",
                 "B",
                 "D",
                 "F"

@@ -8,7 +8,7 @@ window.SONG_DATA = {
             "name": "A7(13-)",
             "notes": [
                 "A3",
-                "C4",
+                "C#4",
                 "E4",
                 "G4",
                 "B4",
@@ -16,7 +16,7 @@ window.SONG_DATA = {
             ],
             "displayNotes": [
                 "A",
-                "C",
+                "C#",
                 "E",
                 "G",
                 "B",

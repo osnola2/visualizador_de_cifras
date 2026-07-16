@@ -80,14 +80,14 @@ window.SONG_DATA = {
             "name": "B7(9-)",
             "notes": [
                 "B3",
-                "D4",
+                "D#4",
                 "F#4",
                 "A4",
                 "C5"
             ],
             "displayNotes": [
                 "B",
-                "D",
+                "D#",
                 "F#",
                 "A",
                 "C"
@@ -269,7 +269,7 @@ window.SONG_DATA = {
             "name": "E7(9-/13)",
             "notes": [
                 "E3",
-                "G3",
+                "G#3",
                 "B3",
                 "D4",
                 "F4",
@@ -278,7 +278,7 @@ window.SONG_DATA = {
             ],
             "displayNotes": [
                 "E",
-                "G",
+                "G#",
                 "B",
                 "D",
                 "F",

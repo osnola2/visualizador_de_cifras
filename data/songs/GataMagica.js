@@ -77,7 +77,7 @@ window.SONG_DATA = {
             "name": "F#7(13-)",
             "notes": [
                 "F#3",
-                "A3",
+                "A#3",
                 "C#4",
                 "E4",
                 "G#4",
@@ -85,7 +85,7 @@ window.SONG_DATA = {
             ],
             "displayNotes": [
                 "F#",
-                "A",
+                "A#",
                 "C#",
                 "E",
                 "G#",

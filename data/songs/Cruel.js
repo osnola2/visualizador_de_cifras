@@ -176,14 +176,14 @@ window.SONG_DATA = {
             "name": "E7(9-)",
             "notes": [
                 "E3",
-                "G3",
+                "G#3",
                 "B3",
                 "D4",
                 "F4"
             ],
             "displayNotes": [
                 "E",
-                "G",
+                "G#",
                 "B",
                 "D",
                 "F"

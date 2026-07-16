@@ -7,19 +7,21 @@ window.SONG_DATA = {
             "name": "A79p13m",
             "notes": [
                 "A3",
-                "C4",
+                "C#4",
                 "E4",
                 "G4",
                 "B4",
-                "F#5"
+                "C5",
+                "F5"
             ],
             "displayNotes": [
                 "A",
-                "C",
+                "C#",
                 "E",
                 "G",
                 "B",
-                "F#"
+                "C",
+                "F"
             ],
             "noteTypes": [
                 "root",
@@ -27,6 +29,7 @@ window.SONG_DATA = {
                 "triad",
                 "seventh",
                 "ninth",
+                "alt",
                 "alt"
             ]
         },
@@ -58,21 +61,21 @@ window.SONG_DATA = {
                 "F3",
                 "G#3",
                 "B3",
-                "D#4"
+                "E4"
             ],
             "displayNotes": [
                 "Db",
                 "F",
                 "Ab",
                 "B",
-                "Eb"
+                "E"
             ],
             "noteTypes": [
                 "root",
                 "triad",
                 "triad",
                 "seventh",
-                "ninth"
+                "alt"
             ]
         },
         "C7M5": {
@@ -152,7 +155,7 @@ window.SONG_DATA = {
                 "B3",
                 "D4",
                 "F#4",
-                "C#5"
+                "C5"
             ],
             "displayNotes": [
                 "E",
@@ -160,7 +163,7 @@ window.SONG_DATA = {
                 "B",
                 "D",
                 "F#",
-                "C#"
+                "C"
             ],
             "noteTypes": [
                 "root",
@@ -199,19 +202,19 @@ window.SONG_DATA = {
             "name": "A79m13",
             "notes": [
                 "A3",
-                "C4",
+                "C#4",
                 "E4",
                 "G4",
                 "B4",
-                "F#5"
+                "F5"
             ],
             "displayNotes": [
                 "A",
-                "C",
+                "C#",
                 "E",
                 "G",
                 "B",
-                "F#"
+                "F"
             ],
             "noteTypes": [
                 "root",
@@ -325,24 +328,24 @@ window.SONG_DATA = {
             "name": "E69m",
             "notes": [
                 "E3",
-                "G3",
+                "G#3",
                 "B3",
                 "C#4",
-                "F#4"
+                "F4"
             ],
             "displayNotes": [
                 "E",
-                "G",
+                "G#",
                 "B",
                 "C#",
-                "F#"
+                "F"
             ],
             "noteTypes": [
                 "root",
                 "triad",
                 "triad",
                 "seventh",
-                "ninth"
+                "alt"
             ]
         },
         "C7M": {
@@ -527,7 +530,7 @@ window.SONG_DATA = {
                 "E4",
                 "G4",
                 "B4",
-                "F#5"
+                "F5"
             ],
             "displayNotes": [
                 "A",
@@ -535,7 +538,7 @@ window.SONG_DATA = {
                 "E",
                 "G",
                 "B",
-                "F#"
+                "F"
             ],
             "noteTypes": [
                 "root",

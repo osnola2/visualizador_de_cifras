@@ -130,13 +130,13 @@ window.SONG_DATA = {
             "name": "F#5-/7",
             "notes": [
                 "F#3",
-                "A3",
+                "A#3",
                 "C4",
                 "E4"
             ],
             "displayNotes": [
                 "F#",
-                "A",
+                "A#",
                 "C",
                 "E"
             ],

@@ -51,7 +51,7 @@ def parse_chord(chord_symbol):
     is_sus2 = False
     
     # Extract qualities
-    if re.search(r'm(?!aj)', suffix) or '-' in suffix:
+    if re.match(r'^(?:m(?!aj)|min|\-)', suffix, re.IGNORECASE) or re.search(r'/m(?!aj)', suffix, re.IGNORECASE):
         is_minor = True
     if 'dim' in suffix or 'º' in suffix or '°' in suffix:
         is_dim = True
@@ -101,9 +101,12 @@ def parse_chord(chord_symbol):
         if 'maj9' in suffix:
             intervals[11] = 'seventh'
             intervals[14] = 'ninth' # maj9
-        elif 'b9' in suffix or '9-' in suffix:
-            intervals[13] = 'alt' # min9
-        elif '#9' in suffix or '9+' in suffix:
+        elif 'b9' in suffix or '9-' in suffix or '-9' in suffix or '9b' in suffix or re.search(r'9m(?!\d)', suffix) or re.search(r'm9(?!\d)', suffix):
+            if not re.match(r'^m9', suffix):
+                intervals[13] = 'alt' # min9
+            else:
+                intervals[14] = 'ninth'
+        elif '#9' in suffix or '9+' in suffix or '+9' in suffix or '9#' in suffix or '9p' in suffix or 'p9' in suffix:
             intervals[15] = 'alt' # aug9
         else:
             intervals[14] = 'ninth' # maj9
@@ -124,7 +127,7 @@ def parse_chord(chord_symbol):
     
     if '13' in suffix:
         intervals[14] = 'ninth' # implicit 9
-        if 'b13' in suffix or '13-' in suffix:
+        if re.search(r'(?:b13|13-|13b|-13|13m|m13|^713$)', suffix):
             intervals[20] = 'alt'
         else:
             intervals[21] = 'alt'
