@@ -1,0 +1,194 @@
+{
+    "title": "Vale Quanto Pesa",
+    "artist": "Luiz Melodia",
+    "composer": "Luíz Melodia",
+    "lyricsHtml": "\n[Intro] <span class=\"chord\" data-chord=\"Am7\">Am7</span>  <span class=\"chord\" data-chord=\"D7(9)\">D7(9)</span>  <span class=\"chord\" data-chord=\"Am7\">Am7</span>  <span class=\"chord\" data-chord=\"D7(9)\">D7(9)</span>\n        <span class=\"chord\" data-chord=\"Am7\">Am7</span>  <span class=\"chord\" data-chord=\"D7(9)\">D7(9)</span>  <span class=\"chord\" data-chord=\"Am7\">Am7</span>  <span class=\"chord\" data-chord=\"D7(9)\">D7(9)</span>\n\n<span class=\"chord\" data-chord=\"Am7\">Am7</span>           <span class=\"chord\" data-chord=\"D7(9)\">D7(9)</span>            <span class=\"chord\" data-chord=\"Am7\">Am7</span>  <span class=\"chord\" data-chord=\"D7(9)\">D7(9)</span>\n<span class=\"lyric-line\">Quanto você ganha pra me enganar</span>\n<span class=\"chord\" data-chord=\"Am7\">Am7</span>           <span class=\"chord\" data-chord=\"D7(9)\">D7(9)</span>             <span class=\"chord\" data-chord=\"Am7\">Am7</span>  <span class=\"chord\" data-chord=\"D7(9)\">D7(9)</span>\n<span class=\"lyric-line\">Quanto você paga pra me ver sofrer</span>\n<span class=\"chord\" data-chord=\"Am7\">Am7</span>             <span class=\"chord\" data-chord=\"D7(9)\">D7(9)</span>             <span class=\"chord\" data-chord=\"Am7\">Am7</span>\n<span class=\"lyric-line\">E quanto você força pra me derreter</span>\n      <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>             <span class=\"chord\" data-chord=\"G7\">G7</span>\n<span class=\"lyric-line\">Sou forte feito cobra coral</span>\n  <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>                     <span class=\"chord\" data-chord=\"G7\">G7</span>\n<span class=\"lyric-line\">Semente brota em qualquer local</span>\n    <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>               <span class=\"chord\" data-chord=\"G7\">G7</span>        <span class=\"chord\" data-chord=\"D\">D</span>       <span class=\"chord\" data-chord=\"D4\">D4</span>  <span class=\"chord\" data-chord=\"D\">D</span>\n<span class=\"lyric-line\">Um velho novo cartão postal, cartão postal</span>\n  <span class=\"chord\" data-chord=\"F\">F</span>                                               <span class=\"chord\" data-chord=\"G7\">G7</span>\n<span class=\"lyric-line\">Aquela madrugada deu em nada, deu em muito, deu em sol</span>\n  <span class=\"chord\" data-chord=\"F\">F</span>                                                  <span class=\"chord\" data-chord=\"G7\">G7</span>\n<span class=\"lyric-line\">Aquele seu desejo me deu medo, me deu força, me deu mal</span>\n<span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>       <span class=\"chord\" data-chord=\"F7(9)\">F7(9)</span>\n<span class=\"lyric-line\">Ai de mim, de nós dois</span>\n<span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>       <span class=\"chord\" data-chord=\"F7(9)\">F7(9)</span>\n<span class=\"lyric-line\">Ai de mim, de nós dois</span>\n<span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>                         <span class=\"chord\" data-chord=\"F7(9)\">F7(9)</span>\n<span class=\"lyric-line\">Vale quanto pesa, reza a lesa de nós dois</span>\n<span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>      <span class=\"chord\" data-chord=\"F7(9)\">F7(9)</span>\n<span class=\"lyric-line\">Ai de mim, de nós dois</span>\n<span class=\"chord\" data-chord=\"G\">G</span>                                              <span class=\"chord\" data-chord=\"D\">D</span>\n<span class=\"lyric-line\">Temos um passado já marcado não podemos mentir</span>\n<span class=\"chord\" data-chord=\"G\">G</span>                                             <span class=\"chord\" data-chord=\"D\">D</span>\n<span class=\"lyric-line\">Beijos demorados afirmados não podemos mentir</span>\n<span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>      <span class=\"chord\" data-chord=\"F7(9)\">F7(9)</span>\n<span class=\"lyric-line\">Ai de mim, de nós dois</span>\n<span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>      <span class=\"chord\" data-chord=\"F7(9)\">F7(9)</span>\n<span class=\"lyric-line\">Ai de mim, de nós dois</span>\n<span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>                         <span class=\"chord\" data-chord=\"F7(9)\">F7(9)</span>\n<span class=\"lyric-line\">Vale quanto pesa, reza a lesa de nós dois</span>\n<span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>      <span class=\"chord\" data-chord=\"F7(9)\">F7(9)</span>\n<span class=\"lyric-line\">Ai de mim, de nós dois</span>\n",
+    "chordData": {
+        "Am7": {
+            "name": "Am7",
+            "notes": [
+                "A3",
+                "C4",
+                "E4",
+                "G4"
+            ],
+            "displayNotes": [
+                "A",
+                "C",
+                "E",
+                "G"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "C7(9)": {
+            "name": "C7(9)",
+            "notes": [
+                "C3",
+                "E3",
+                "G3",
+                "A#3",
+                "D4"
+            ],
+            "displayNotes": [
+                "C",
+                "E",
+                "G",
+                "A#",
+                "D"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh",
+                "ninth"
+            ]
+        },
+        "D": {
+            "name": "D",
+            "notes": [
+                "D3",
+                "F#3",
+                "A3"
+            ],
+            "displayNotes": [
+                "D",
+                "F#",
+                "A"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "D4": {
+            "name": "D4",
+            "notes": [
+                "D3",
+                "F#3",
+                "A3"
+            ],
+            "displayNotes": [
+                "D",
+                "F#",
+                "A"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "D7(9)": {
+            "name": "D7(9)",
+            "notes": [
+                "D3",
+                "F#3",
+                "A3",
+                "C4",
+                "E4"
+            ],
+            "displayNotes": [
+                "D",
+                "F#",
+                "A",
+                "C",
+                "E"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh",
+                "ninth"
+            ]
+        },
+        "F": {
+            "name": "F",
+            "notes": [
+                "F3",
+                "A3",
+                "C4"
+            ],
+            "displayNotes": [
+                "F",
+                "A",
+                "C"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "F7(9)": {
+            "name": "F7(9)",
+            "notes": [
+                "F3",
+                "A3",
+                "C4",
+                "D#4",
+                "G4"
+            ],
+            "displayNotes": [
+                "F",
+                "A",
+                "C",
+                "Eb",
+                "G"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh",
+                "ninth"
+            ]
+        },
+        "G": {
+            "name": "G",
+            "notes": [
+                "G3",
+                "B3",
+                "D4"
+            ],
+            "displayNotes": [
+                "G",
+                "B",
+                "D"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "G7": {
+            "name": "G7",
+            "notes": [
+                "G3",
+                "B3",
+                "D4",
+                "F4"
+            ],
+            "displayNotes": [
+                "G",
+                "B",
+                "D",
+                "F"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        }
+    }
+}
