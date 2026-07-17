@@ -1,0 +1,269 @@
+window.SONG_DATA = {
+    "title": "78 Rotações",
+    "artist": "Jards Macalé",
+    "composer": "Capinan / Jards Macale",
+    "lyricsHtml": "\n<span class=\"chord\" data-chord=\"Em7(9)\">Em7(9)</span>    <span class=\"chord\" data-chord=\"A7(13)\">A7(13)</span>  <span class=\"chord\" data-chord=\"Dm7(9)\">Dm7(9)</span>   <span class=\"chord\" data-chord=\"G7(13)\">G7(13)</span>   <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span> <span class=\"chord\" data-chord=\"B7(9)\">B7(9)</span>\r\n<span class=\"lyric-line\">Com as mãos frias, mas com o coração queimando\r</span>\n<span class=\"chord\" data-chord=\"Em7(9)\">Em7(9)</span>    <span class=\"chord\" data-chord=\"A7(13)\">A7(13)</span>  <span class=\"chord\" data-chord=\"Dm7(9)\">Dm7(9)</span>   <span class=\"chord\" data-chord=\"G7(13)\">G7(13)</span>   <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>    <span class=\"chord\" data-chord=\"B7(9)\">B7(9)</span>\r\n<span class=\"lyric-line\">Com as mãos frias, mas com o coração\r</span>\n\r\n<span class=\"chord\" data-chord=\"F#m7\">F#m7</span>     <span class=\"chord\" data-chord=\"B7(9)\">B7(9)</span>         <span class=\"chord\" data-chord=\"F#m7\">F#m7</span>     <span class=\"chord\" data-chord=\"B7(9)\">B7(9)</span>\r\n<span class=\"lyric-line\">Tô amando, tô passando, tô gravando\r</span>\n<span class=\"chord\" data-chord=\"F#m7\">F#m7</span>      <span class=\"chord\" data-chord=\"B7(9)\">B7(9)</span>         <span class=\"chord\" data-chord=\"F#m7\">F#m7</span>     <span class=\"chord\" data-chord=\"B7(9)\">B7(9)</span>\r\n<span class=\"lyric-line\">Tô gravando, tô passando, tô amando\r</span>\n    <span class=\"chord\" data-chord=\"G\">G</span>    <span class=\"chord\" data-chord=\"G#º\">G#º</span>           <span class=\"chord\" data-chord=\"A7(11+)\">A7(11+)</span> <span class=\"chord\" data-chord=\"G#7(13)\">G#7(13)</span> <span class=\"chord\" data-chord=\"A7(13)\">A7(13)</span>\r\n<span class=\"lyric-line\">Em setenta e oito por segundo rotações\r</span>\n<span class=\"chord\" data-chord=\"F#m7\">F#m7</span>     <span class=\"chord\" data-chord=\"B7(9)\">B7(9)</span>\r\n<span class=\"lyric-line\">Vou seguindo por segundo\r</span>\n<span class=\"chord\" data-chord=\"F#m7\">F#m7</span>      <span class=\"chord\" data-chord=\"B7(9)\">B7(9)</span>\r\n<span class=\"lyric-line\">Vou sorrindo por segundo\r</span>\n<span class=\"chord\" data-chord=\"F#m7\">F#m7</span>      <span class=\"chord\" data-chord=\"B7(9)\">B7(9)</span>          <span class=\"chord\" data-chord=\"F#m7\">F#m7</span>    <span class=\"chord\" data-chord=\"B7(9)\">B7(9)</span>\r\n<span class=\"lyric-line\">Vou servindo por segundo, devagar\r</span>\n\r\n<span class=\"chord\" data-chord=\"F#m7\">F#m7</span>    <span class=\"chord\" data-chord=\"B7(9)\">B7(9)</span>        <span class=\"chord\" data-chord=\"F#m7\">F#m7</span>     <span class=\"chord\" data-chord=\"B7(9)\">B7(9)</span>\r\n<span class=\"lyric-line\">Grave um disco devagar\r</span>\n<span class=\"chord\" data-chord=\"F#m7\">F#m7</span>    <span class=\"chord\" data-chord=\"B7(9)\">B7(9)</span>       <span class=\"chord\" data-chord=\"F#m7\">F#m7</span>     <span class=\"chord\" data-chord=\"B7(9)\">B7(9)</span>\r\n<span class=\"lyric-line\">Grave um nome devagar\r</span>\n<span class=\"chord\" data-chord=\"F#m7\">F#m7</span>          <span class=\"chord\" data-chord=\"B7(9)\">B7(9)</span>\r\n<span class=\"lyric-line\">Um long play devagar, quase parando\r</span>\n<span class=\"chord\" data-chord=\"F#m7\">F#m7</span>         <span class=\"chord\" data-chord=\"B7(9)\">B7(9)</span>\r\n<span class=\"lyric-line\">Um long day devagar, quase parando\r</span>\n<span class=\"chord\" data-chord=\"F#m7\">F#m7</span>          <span class=\"chord\" data-chord=\"B7(9)\">B7(9)</span>\r\n<span class=\"lyric-line\">Um long love devagar, quase parando\r</span>\n    <span class=\"chord\" data-chord=\"G\">G</span>    <span class=\"chord\" data-chord=\"G#º\">G#º</span>           <span class=\"chord\" data-chord=\"A7(11+)\">A7(11+)</span> <span class=\"chord\" data-chord=\"G#7(13)\">G#7(13)</span> <span class=\"chord\" data-chord=\"A7(13)\">A7(13)</span>\r\n<span class=\"lyric-line\">Em setenta e oito por segundo rotações\r</span>\n<span class=\"chord\" data-chord=\"Em7(9)\">Em7(9)</span>    <span class=\"chord\" data-chord=\"A7(13)\">A7(13)</span>  <span class=\"chord\" data-chord=\"Dm7(9)\">Dm7(9)</span>   <span class=\"chord\" data-chord=\"G7(13)\">G7(13)</span>   <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span> <span class=\"chord\" data-chord=\"B7(9)\">B7(9)</span>\r\n<span class=\"lyric-line\">Com as mãos frias, mas com o coração queimando\r</span>\n<span class=\"chord\" data-chord=\"Em7(9)\">Em7(9)</span>    <span class=\"chord\" data-chord=\"A7(13)\">A7(13)</span>  <span class=\"chord\" data-chord=\"Dm7(9)\">Dm7(9)</span>   <span class=\"chord\" data-chord=\"G7(13)\">G7(13)</span>   <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span> <span class=\"chord\" data-chord=\"B7(9)\">B7(9)</span>\r\n<span class=\"lyric-line\">Com as mãos frias, mas com o coração queimando\r</span>\n\r\n<span class=\"chord\" data-chord=\"F#m7\">F#m7</span>    <span class=\"chord\" data-chord=\"B7(9)\">B7(9)</span>\r\n<span class=\"lyric-line\">Grave um nome devagar\r</span>\n             <span class=\"chord\" data-chord=\"F#m7\">F#m7</span>      <span class=\"chord\" data-chord=\"B7(9)\">B7(9)</span>\r\n<span class=\"lyric-line\">Um long play devagar, quase parando\r</span>\n             <span class=\"chord\" data-chord=\"F#m7\">F#m7</span>      <span class=\"chord\" data-chord=\"B7(9)\">B7(9)</span>\r\n<span class=\"lyric-line\">Um long day devagar, quase parando\r</span>\n             <span class=\"chord\" data-chord=\"F#m7\">F#m7</span>      <span class=\"chord\" data-chord=\"B7(9)\">B7(9)</span>\r\n<span class=\"lyric-line\">Um long love devagar, quase parando\r</span>\n    <span class=\"chord\" data-chord=\"G\">G</span>    <span class=\"chord\" data-chord=\"G#º\">G#º</span>           <span class=\"chord\" data-chord=\"A7(11+)\">A7(11+)</span> <span class=\"chord\" data-chord=\"G#7(13)\">G#7(13)</span> <span class=\"chord\" data-chord=\"A7(13)\">A7(13)</span>\r\n<span class=\"lyric-line\">Em setenta e oito por segundo rotações\r</span>\n\r\n<span class=\"chord\" data-chord=\"Em7(9)\">Em7(9)</span>    <span class=\"chord\" data-chord=\"A7(13)\">A7(13)</span>  <span class=\"chord\" data-chord=\"Dm7(9)\">Dm7(9)</span>   <span class=\"chord\" data-chord=\"G7(13)\">G7(13)</span>   <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span> <span class=\"chord\" data-chord=\"B7(9)\">B7(9)</span>\r\n<span class=\"lyric-line\">Com as mãos frias, mas com o coração queimando\r</span>\n<span class=\"chord\" data-chord=\"Em7(9)\">Em7(9)</span>    <span class=\"chord\" data-chord=\"A7(13)\">A7(13)</span>  <span class=\"chord\" data-chord=\"Dm7(9)\">Dm7(9)</span>   <span class=\"chord\" data-chord=\"G7(13)\">G7(13)</span>   <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span> <span class=\"chord\" data-chord=\"B7(9)\">B7(9)</span>\r\n<span class=\"lyric-line\">Com as mãos frias, mas com o coração queimando\r</span>\n<span class=\"chord\" data-chord=\"Em7(9)\">Em7(9)</span>    <span class=\"chord\" data-chord=\"A7(13)\">A7(13)</span>  <span class=\"chord\" data-chord=\"Dm7(9)\">Dm7(9)</span>   <span class=\"chord\" data-chord=\"G7(13)\">G7(13)</span>   <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span> <span class=\"chord\" data-chord=\"B7(9)\">B7(9)</span>\r\n<span class=\"lyric-line\">Com as mãos frias, mas com o coração queimando\r</span>\n<span class=\"chord\" data-chord=\"Em7(9)\">Em7(9)</span>    <span class=\"chord\" data-chord=\"A7(13)\">A7(13)</span>  <span class=\"chord\" data-chord=\"Dm7(9)\">Dm7(9)</span>   <span class=\"chord\" data-chord=\"G7(13)\">G7(13)</span>   <span class=\"chord\" data-chord=\"C7(9)\">C7(9)</span>    <span class=\"chord\" data-chord=\"B7(9)\">B7(9)</span>\r\n<span class=\"lyric-line\">Com as mãos frias, mas com o coração\r</span>\n\r\n<span class=\"chord\" data-chord=\"F#m7\">F#m7</span>             <span class=\"chord\" data-chord=\"B7(9)\">B7(9)</span>\r\n<span class=\"lyric-line\">Com o coração, com o coração\r</span>\n<span class=\"chord\" data-chord=\"F#m7\">F#m7</span>             <span class=\"chord\" data-chord=\"B7(9)\">B7(9)</span>\r\n<span class=\"lyric-line\">Com o coração, com o coração\r</span>\n<span class=\"chord\" data-chord=\"F#m7\">F#m7</span>             <span class=\"chord\" data-chord=\"B7(9)\">B7(9)</span>\r\n<span class=\"lyric-line\">Com o coração, com o coração\r</span>\n<span class=\"chord\" data-chord=\"F#m7\">F#m7</span>             <span class=\"chord\" data-chord=\"B7(9)\">B7(9)</span>\r\n<span class=\"lyric-line\">Com o coração, com o coração\r</span>\n<span class=\"chord\" data-chord=\"F#m7\">F#m7</span>             <span class=\"chord\" data-chord=\"B7(9)\">B7(9)</span>\r\n<span class=\"lyric-line\">Com o coração, com o coração\r</span>\n<span class=\"chord\" data-chord=\"F#m7\">F#m7</span>             <span class=\"chord\" data-chord=\"B7(9)\">B7(9)</span>\r\n<span class=\"lyric-line\">Com o coração, com o coração\r</span>\n<span class=\"chord\" data-chord=\"F#m7\">F#m7</span>             <span class=\"chord\" data-chord=\"B7(9)\">B7(9)</span>\r\n<span class=\"lyric-line\">Com o coração, com o coração</span>\n",
+    "chordData": {
+        "A7(11+)": {
+            "name": "A7(11+)",
+            "notes": [
+                "A3",
+                "C#4",
+                "E4",
+                "G4",
+                "B4",
+                "D#5"
+            ],
+            "displayNotes": [
+                "A",
+                "C#",
+                "E",
+                "G",
+                "B",
+                "D#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh",
+                "ninth",
+                "alt"
+            ]
+        },
+        "A7(13)": {
+            "name": "A7(13)",
+            "notes": [
+                "A3",
+                "C#4",
+                "E4",
+                "G4",
+                "B4",
+                "F#5"
+            ],
+            "displayNotes": [
+                "A",
+                "C#",
+                "E",
+                "G",
+                "B",
+                "F#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh",
+                "ninth",
+                "alt"
+            ]
+        },
+        "B7(9)": {
+            "name": "B7(9)",
+            "notes": [
+                "B3",
+                "D#4",
+                "F#4",
+                "A4",
+                "C#5"
+            ],
+            "displayNotes": [
+                "B",
+                "D#",
+                "F#",
+                "A",
+                "C#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh",
+                "ninth"
+            ]
+        },
+        "C7(9)": {
+            "name": "C7(9)",
+            "notes": [
+                "C3",
+                "E3",
+                "G3",
+                "A#3",
+                "D4"
+            ],
+            "displayNotes": [
+                "C",
+                "E",
+                "G",
+                "A#",
+                "D"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh",
+                "ninth"
+            ]
+        },
+        "Dm7(9)": {
+            "name": "Dm7(9)",
+            "notes": [
+                "D3",
+                "F3",
+                "A3",
+                "C4",
+                "E4"
+            ],
+            "displayNotes": [
+                "D",
+                "F",
+                "A",
+                "C",
+                "E"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh",
+                "ninth"
+            ]
+        },
+        "Em7(9)": {
+            "name": "Em7(9)",
+            "notes": [
+                "E3",
+                "G3",
+                "B3",
+                "D4",
+                "F#4"
+            ],
+            "displayNotes": [
+                "E",
+                "G",
+                "B",
+                "D",
+                "F#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh",
+                "ninth"
+            ]
+        },
+        "F#m7": {
+            "name": "F#m7",
+            "notes": [
+                "F#3",
+                "A3",
+                "C#4",
+                "E4"
+            ],
+            "displayNotes": [
+                "F#",
+                "A",
+                "C#",
+                "E"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "G": {
+            "name": "G",
+            "notes": [
+                "G3",
+                "B3",
+                "D4"
+            ],
+            "displayNotes": [
+                "G",
+                "B",
+                "D"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "G#7(13)": {
+            "name": "G#7(13)",
+            "notes": [
+                "G#3",
+                "C4",
+                "D#4",
+                "F#4",
+                "A#4",
+                "F5"
+            ],
+            "displayNotes": [
+                "G#",
+                "C",
+                "D#",
+                "F#",
+                "A#",
+                "F"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh",
+                "ninth",
+                "alt"
+            ]
+        },
+        "G#º": {
+            "name": "G#º",
+            "notes": [
+                "G#3",
+                "B3",
+                "D4"
+            ],
+            "displayNotes": [
+                "G#",
+                "B",
+                "D"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "G7(13)": {
+            "name": "G7(13)",
+            "notes": [
+                "G3",
+                "B3",
+                "D4",
+                "F4",
+                "A4",
+                "E5"
+            ],
+            "displayNotes": [
+                "G",
+                "B",
+                "D",
+                "F",
+                "A",
+                "E"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh",
+                "ninth",
+                "alt"
+            ]
+        }
+    }
+};

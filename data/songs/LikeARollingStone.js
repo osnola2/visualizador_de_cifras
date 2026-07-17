@@ -1,0 +1,125 @@
+window.SONG_DATA = {
+    "title": "Like A Rolling Stone",
+    "artist": "Bob Dylan",
+    "composer": "",
+    "lyricsHtml": "\n<span class=\"lyric-line\">[Chords]</span>\n<span class=\"lyric-line\">Fmaj7/C  x33210</span>\n<span class=\"lyric-line\">Dm7      xx0211</span>\n\n<span class=\"lyric-line\">[Intro]</span>\n<span class=\"chord\" data-chord=\"C\">C</span>  <span class=\"chord\" data-chord=\"Fmaj7/C\">Fmaj7/C</span>   <span class=\"chord\" data-chord=\"C\">C</span>   <span class=\"chord\" data-chord=\"Fmaj7/C\">Fmaj7/C</span>   <span class=\"chord\" data-chord=\"C\">C</span>   <span class=\"chord\" data-chord=\"Fmaj7/C\">Fmaj7/C</span>   <span class=\"chord\" data-chord=\"C\">C</span>    <span class=\"chord\" data-chord=\"Fmaj7/C\">Fmaj7/C</span>\n\n<span class=\"lyric-line\">[Verse]</span>\n<span class=\"chord\" data-chord=\"C\">C</span>                    <span class=\"chord\" data-chord=\"Dm7\">Dm7</span>\n<span class=\"lyric-line\">Once upon a time you dressed so fine</span>\n    <span class=\"chord\" data-chord=\"Em\">Em</span>                    <span class=\"chord\" data-chord=\"F\">F</span>            <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">You threw the bums a dime in your prime,   didn&#x27;t you?</span>\n<span class=\"chord\" data-chord=\"C\">C</span>                      <span class=\"chord\" data-chord=\"Dm7\">Dm7</span>\n<span class=\"lyric-line\">  People&#x27;d call, say, &quot;Beware doll,</span>\n       <span class=\"chord\" data-chord=\"Em\">Em</span>                         <span class=\"chord\" data-chord=\"F\">F</span>             <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">you&#x27;re bound to fall&quot; You thought they were all  a kiddin&#x27; you</span>\n\n<span class=\"chord\" data-chord=\"F\">F</span>             <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">  You used to   laugh about</span>\n<span class=\"chord\" data-chord=\"F\">F</span>                    <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">  Everybody that was   hangin&#x27; out</span>\n\n<span class=\"chord\" data-chord=\"F\">F</span>         <span class=\"chord\" data-chord=\"Em\">Em</span>   <span class=\"chord\" data-chord=\"Dm7\">Dm7</span>         <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\"> Now you don&#x27;t talk so loud</span>\n<span class=\"chord\" data-chord=\"F\">F</span>         <span class=\"chord\" data-chord=\"Em\">Em</span>   <span class=\"chord\" data-chord=\"Dm7\">Dm7</span>          <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\"> Now you don&#x27;t seem so proud</span>\n     <span class=\"chord\" data-chord=\"Dm7\">Dm7</span>                      <span class=\"chord\" data-chord=\"F\">F</span>           <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">About having to be scrounging   your next meal</span>\n\n<span class=\"lyric-line\">[Chorus]</span>\n                <span class=\"chord\" data-chord=\"C\">C</span>  <span class=\"chord\" data-chord=\"F\">F</span>  <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">How does it feel</span>\n                <span class=\"chord\" data-chord=\"C\">C</span>  <span class=\"chord\" data-chord=\"F\">F</span>  <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">How does it feel</span>\n                    <span class=\"chord\" data-chord=\"C\">C</span>  <span class=\"chord\" data-chord=\"F\">F</span>  <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">To be without a home</span>\n                       <span class=\"chord\" data-chord=\"C\">C</span>  <span class=\"chord\" data-chord=\"F\">F</span>  <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">Like a complete unknown</span>\n                     <span class=\"chord\" data-chord=\"C\">C</span>  <span class=\"chord\" data-chord=\"F\">F</span>  <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">Like a rolling stone</span>\n\n<span class=\"lyric-line\">[Instrumental]</span>\n<span class=\"chord\" data-chord=\"C\">C</span>  <span class=\"chord\" data-chord=\"F\">F</span>  <span class=\"chord\" data-chord=\"G\">G</span>\n\n<span class=\"lyric-line\">[Verse]</span>\n           <span class=\"chord\" data-chord=\"C\">C</span>            <span class=\"chord\" data-chord=\"Dm7\">Dm7</span>                   <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Aww, You&#x27;ve gone to the finest school all right, Miss Lonely</span>\n        <span class=\"chord\" data-chord=\"F\">F</span>                         <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">But you know you only used to get   juiced in it</span>\n  <span class=\"chord\" data-chord=\"C\">C</span>                        <span class=\"chord\" data-chord=\"Dm7\">Dm7</span>                    <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Nobody has ever taught you how to live out on the street</span>\n               <span class=\"chord\" data-chord=\"F\">F</span>                 <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">And now you&#x27;re gonna have to get   used to it</span>\n\n<span class=\"chord\" data-chord=\"F\">F</span>                    <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">  You said you&#x27;d never  compromise</span>\n<span class=\"chord\" data-chord=\"F\">F</span>                                    <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">  With the mystery tramp, but now you  realize</span>\n\n<span class=\"chord\" data-chord=\"F\">F</span>         <span class=\"chord\" data-chord=\"Em\">Em</span>         <span class=\"chord\" data-chord=\"Dm7\">Dm7</span>     <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\"> He&#x27;s not selling any  alibis</span>\n<span class=\"chord\" data-chord=\"F\">F</span>                      <span class=\"chord\" data-chord=\"Em\">Em</span>      <span class=\"chord\" data-chord=\"Dm7\">Dm7</span>       <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\"> As you stare into the vacuum  of his eyes</span>\n    <span class=\"chord\" data-chord=\"Dm7\">Dm7</span>               <span class=\"chord\" data-chord=\"F\">F</span>        <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">And say do you want to  make a deal?</span>\n\n<span class=\"lyric-line\">[Chorus]</span>\n                <span class=\"chord\" data-chord=\"C\">C</span>  <span class=\"chord\" data-chord=\"F\">F</span>  <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">How does it feel</span>\n                <span class=\"chord\" data-chord=\"C\">C</span>  <span class=\"chord\" data-chord=\"F\">F</span>  <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">How does it feel</span>\n                 <span class=\"chord\" data-chord=\"C\">C</span>  <span class=\"chord\" data-chord=\"F\">F</span>  <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">To be on your own</span>\n                      <span class=\"chord\" data-chord=\"C\">C</span>  <span class=\"chord\" data-chord=\"F\">F</span>  <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">With no direction home</span>\n                  <span class=\"chord\" data-chord=\"C\">C</span>  <span class=\"chord\" data-chord=\"F\">F</span>  <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">A complete unknown</span>\n                    <span class=\"chord\" data-chord=\"C\">C</span>  <span class=\"chord\" data-chord=\"F\">F</span>  <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">Like a rolling stone</span>\n\n<span class=\"lyric-line\">[Instrumental]</span>\n<span class=\"chord\" data-chord=\"C\">C</span>  <span class=\"chord\" data-chord=\"F\">F</span>  <span class=\"chord\" data-chord=\"G\">G</span>\n\n<span class=\"lyric-line\">[Verse]</span>\n        <span class=\"chord\" data-chord=\"C\">C</span>              <span class=\"chord\" data-chord=\"Dm7\">Dm7</span>                    <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Aww, You never turned around to see the frowns</span>\n                        <span class=\"chord\" data-chord=\"F\">F</span>                        <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">On the jugglers and the clowns when they all did   tricks for you</span>\n    <span class=\"chord\" data-chord=\"C\">C</span>                        <span class=\"chord\" data-chord=\"Dm7\">Dm7</span>\n<span class=\"lyric-line\">You never understood that it ain&#x27;t no good</span>\n    <span class=\"chord\" data-chord=\"Em\">Em</span>                  <span class=\"chord\" data-chord=\"F\">F</span>               <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">You shouldn&#x27;t let other people get your   kicks for you</span>\n\n<span class=\"chord\" data-chord=\"F\">F</span>                                                <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">  You used to ride on the chrome horse with your   diplomat</span>\n<span class=\"chord\" data-chord=\"F\">F</span>                               <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">  Who carried on his shoulder a   Siamese cat</span>\n\n<span class=\"chord\" data-chord=\"F\">F</span>             <span class=\"chord\" data-chord=\"Em\">Em</span>            <span class=\"chord\" data-chord=\"Dm7\">Dm7</span>      <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\"> Ain&#x27;t it hard  when you discover that</span>\n<span class=\"chord\" data-chord=\"F\">F</span>          <span class=\"chord\" data-chord=\"Em\">Em</span>      <span class=\"chord\" data-chord=\"Dm7\">Dm7</span>         <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\"> He really wasn&#x27;t  where it&#x27;s at</span>\n     <span class=\"chord\" data-chord=\"Dm7\">Dm7</span>                         <span class=\"chord\" data-chord=\"F\">F</span>          <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">After he took from you everything  he could steal</span>\n\n<span class=\"lyric-line\">[Chorus]</span>\n                <span class=\"chord\" data-chord=\"C\">C</span>  <span class=\"chord\" data-chord=\"F\">F</span>  <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">How does it feel</span>\n                <span class=\"chord\" data-chord=\"C\">C</span>  <span class=\"chord\" data-chord=\"F\">F</span>  <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">How does it feel</span>\n                       <span class=\"chord\" data-chord=\"C\">C</span>  <span class=\"chord\" data-chord=\"F\">F</span>  <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">To have you on your own</span>\n                      <span class=\"chord\" data-chord=\"C\">C</span>  <span class=\"chord\" data-chord=\"F\">F</span>  <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">With no direction home</span>\n                      <span class=\"chord\" data-chord=\"C\">C</span>  <span class=\"chord\" data-chord=\"F\">F</span>  <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">Like a complete unknown</span>\n                    <span class=\"chord\" data-chord=\"C\">C</span>  <span class=\"chord\" data-chord=\"F\">F</span>  <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">Like a rolling stone</span>\n\n<span class=\"lyric-line\">[Instrumental]</span>\n<span class=\"chord\" data-chord=\"C\">C</span>  <span class=\"chord\" data-chord=\"F\">F</span>  <span class=\"chord\" data-chord=\"G\">G</span>\n\n<span class=\"lyric-line\">[Verse]</span>\n   <span class=\"chord\" data-chord=\"C\">C</span>                 <span class=\"chord\" data-chord=\"Dm7\">Dm7</span>                 <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Aww, Princess on the steeple and all the pretty people</span>\n            <span class=\"chord\" data-chord=\"F\">F</span>                            <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">They&#x27;re all drinkin&#x27;, thinkin&#x27; that they   got it made</span>\n<span class=\"chord\" data-chord=\"C\">C</span>                <span class=\"chord\" data-chord=\"Dm7\">Dm7</span>          <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\"> Exchanging all precious gifts</span>\n                 <span class=\"chord\" data-chord=\"F\">F</span>                      <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">But you&#x27;d better take your diamond ring, you&#x27;d better pawn it babe</span>\n\n<span class=\"chord\" data-chord=\"F\">F</span>               <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">  You used to be so amused</span>\n<span class=\"chord\" data-chord=\"F\">F</span>                    <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">  At Napoleon in rags and the language that he used</span>\n\n<span class=\"chord\" data-chord=\"F\">F</span>                  <span class=\"chord\" data-chord=\"Em\">Em</span>             <span class=\"chord\" data-chord=\"Dm7\">Dm7</span>         <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\"> Go to him now, he calls you, you can&#x27;t refuse</span>\n<span class=\"chord\" data-chord=\"F\">F</span>                   <span class=\"chord\" data-chord=\"Em\">Em</span>              <span class=\"chord\" data-chord=\"Dm7\">Dm7</span>            <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\"> When you ain&#x27;t got nothing, you got nothing to lose</span>\n       <span class=\"chord\" data-chord=\"Dm7\">Dm7</span>                       <span class=\"chord\" data-chord=\"F\">F</span>           <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\"> You&#x27;re invisible now, you got no secrets to conceal</span>\n\n<span class=\"lyric-line\">[Chorus]</span>\n                <span class=\"chord\" data-chord=\"C\">C</span>  <span class=\"chord\" data-chord=\"F\">F</span>  <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">How does it feel</span>\n                <span class=\"chord\" data-chord=\"C\">C</span>  <span class=\"chord\" data-chord=\"F\">F</span>  <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">How does it feel</span>\n                 <span class=\"chord\" data-chord=\"C\">C</span>  <span class=\"chord\" data-chord=\"F\">F</span>  <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">To be on your own</span>\n                      <span class=\"chord\" data-chord=\"C\">C</span>  <span class=\"chord\" data-chord=\"F\">F</span>  <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">With no direction home</span>\n                      <span class=\"chord\" data-chord=\"C\">C</span>  <span class=\"chord\" data-chord=\"F\">F</span>  <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">Like a complete unknown</span>\n                    <span class=\"chord\" data-chord=\"C\">C</span>  <span class=\"chord\" data-chord=\"F\">F</span>  <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">Like a rolling stone</span>\n\n<span class=\"lyric-line\">[Instrumental]</span>\n<span class=\"chord\" data-chord=\"C\">C</span>  <span class=\"chord\" data-chord=\"F\">F</span>  <span class=\"chord\" data-chord=\"G\">G</span>\n",
+    "chordData": {
+        "C": {
+            "name": "C",
+            "notes": [
+                "C3",
+                "E3",
+                "G3"
+            ],
+            "displayNotes": [
+                "C",
+                "E",
+                "G"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Dm7": {
+            "name": "Dm7",
+            "notes": [
+                "D3",
+                "F3",
+                "A3",
+                "C4"
+            ],
+            "displayNotes": [
+                "D",
+                "F",
+                "A",
+                "C"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "Em": {
+            "name": "Em",
+            "notes": [
+                "E3",
+                "G3",
+                "B3"
+            ],
+            "displayNotes": [
+                "E",
+                "G",
+                "B"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "F": {
+            "name": "F",
+            "notes": [
+                "F3",
+                "A3",
+                "C4"
+            ],
+            "displayNotes": [
+                "F",
+                "A",
+                "C"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Fmaj7/C": {
+            "name": "Fmaj7/C",
+            "notes": [
+                "C3",
+                "F3",
+                "A3",
+                "C4",
+                "E4"
+            ],
+            "displayNotes": [
+                "C",
+                "F",
+                "A",
+                "C",
+                "E"
+            ],
+            "noteTypes": [
+                "bass",
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "G": {
+            "name": "G",
+            "notes": [
+                "G3",
+                "B3",
+                "D4"
+            ],
+            "displayNotes": [
+                "G",
+                "B",
+                "D"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        }
+    }
+};

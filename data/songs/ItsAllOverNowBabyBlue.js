@@ -1,0 +1,122 @@
+window.SONG_DATA = {
+    "title": "Its All Over Now Baby Blue",
+    "artist": "Bob Dylan",
+    "composer": "",
+    "lyricsHtml": "\n<span class=\"chord\" data-chord=\"C\">C</span>      032010\n<span class=\"lyric-line\">Cadd4  033010 (add the little finger on the 4th string)</span>\n<span class=\"lyric-line\">G      220000 (actually an Em7, but this is what he plays for G)</span>\n<span class=\"chord\" data-chord=\"F\">F</span>      003211\n<span class=\"lyric-line\">Dm     200231 (use the thumb to fret the 6th string)</span>\n<span class=\"lyric-line\">E      x22100 (or maybe E7: x22130)</span>\n\n<span class=\"lyric-line\">(Note: be sure to strum the 6th string to keep the distinctive</span>\n<span class=\"lyric-line\">droning C note going.)</span>\n\n<span class=\"lyric-line\">[Intro]</span>\n\n<span class=\"chord\" data-chord=\"C\">C</span> <span class=\"chord\" data-chord=\"Cadd4\">Cadd4</span>\n<span class=\"lyric-line\">(hammering onto the 4th string at the 2nd fret)</span>\n\n<span class=\"lyric-line\">[Verse 1]</span>\n\n<span class=\"chord\" data-chord=\"G\">G</span>                                           <span class=\"chord\" data-chord=\"F\">F</span>          <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">You must leave now, take what you need, you think will last</span>\n        <span class=\"chord\" data-chord=\"G\">G</span>                          <span class=\"chord\" data-chord=\"F\">F</span>      <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">But whatever you wish to keep, you better grab it fast</span>\n<span class=\"chord\" data-chord=\"Dm\">Dm</span>                 <span class=\"chord\" data-chord=\"F\">F</span>               <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">Yonder stands your orphan with his gun</span>\n<span class=\"chord\" data-chord=\"Dm\">Dm</span>            <span class=\"chord\" data-chord=\"F\">F</span>           <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">Crying like a fire in the sun</span>\n<span class=\"chord\" data-chord=\"E7\">E7</span>                      <span class=\"chord\" data-chord=\"F\">F</span>      <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">Look out the saints are coming through</span>\n    <span class=\"chord\" data-chord=\"Dm\">Dm</span>            <span class=\"chord\" data-chord=\"F\">F</span>         <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">And it&#x27;s all over now, Baby Blue.</span>\n\n<span class=\"lyric-line\">[Verse 2]</span>\n\n<span class=\"chord\" data-chord=\"G\">G</span>                            <span class=\"chord\" data-chord=\"F\">F</span>      <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">The highway is for gamblers, better use your sense.</span>\n<span class=\"chord\" data-chord=\"G\">G</span>                           <span class=\"chord\" data-chord=\"F\">F</span>      <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">Take what you have gathered from coincidence.</span>\n    <span class=\"chord\" data-chord=\"Dm\">Dm</span>           <span class=\"chord\" data-chord=\"F\">F</span>                 <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">The empty-handed painter from your streets</span>\n   <span class=\"chord\" data-chord=\"Dm\">Dm</span>            <span class=\"chord\" data-chord=\"F\">F</span>                <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">Is drawing crazy patterns on your sheets.</span>\n<span class=\"chord\" data-chord=\"E7\">E7</span>                       <span class=\"chord\" data-chord=\"F\">F</span>     <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">The sky, too, is folding under you</span>\n    <span class=\"chord\" data-chord=\"Dm\">Dm</span>            <span class=\"chord\" data-chord=\"F\">F</span>         <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">And it&#x27;s all over now, Baby Blue.</span>\n\n<span class=\"lyric-line\">[Verse 3]</span>\n\n<span class=\"chord\" data-chord=\"G\">G</span>                         <span class=\"chord\" data-chord=\"F\">F</span>        <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">All your seasick sailors, they are rowing home.</span>\n     <span class=\"chord\" data-chord=\"G\">G</span>                    <span class=\"chord\" data-chord=\"F\">F</span>           <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">Your empty handed armies, they&#x27;re all going home.</span>\n     <span class=\"chord\" data-chord=\"Dm\">Dm</span>        <span class=\"chord\" data-chord=\"F\">F</span>                   <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">Your lover who just walked out the door</span>\n    <span class=\"chord\" data-chord=\"Dm\">Dm</span>            <span class=\"chord\" data-chord=\"F\">F</span>                 <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">Has taken all his blankets from the floor.</span>\n    <span class=\"chord\" data-chord=\"E7\">E7</span>                    <span class=\"chord\" data-chord=\"F\">F</span>      <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">The carpet, too, is moving under you</span>\n    <span class=\"chord\" data-chord=\"Dm\">Dm</span>            <span class=\"chord\" data-chord=\"F\">F</span>         <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">And it&#x27;s all over now, Baby Blue.</span>\n\n<span class=\"lyric-line\">[Harmonica Solo]</span>\n\n<span class=\"chord\" data-chord=\"G\">G</span>     <span class=\"chord\" data-chord=\"F\">F</span>   <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"chord\" data-chord=\"G\">G</span>     <span class=\"chord\" data-chord=\"F\">F</span>   <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"chord\" data-chord=\"Dm\">Dm</span>    <span class=\"chord\" data-chord=\"F\">F</span>   <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"chord\" data-chord=\"Dm\">Dm</span>    <span class=\"chord\" data-chord=\"F\">F</span>   <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"chord\" data-chord=\"E7\">E7</span>    <span class=\"chord\" data-chord=\"F\">F</span>   <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"chord\" data-chord=\"Dm\">Dm</span>    <span class=\"chord\" data-chord=\"F\">F</span>   <span class=\"chord\" data-chord=\"C\">C</span>\n\n<span class=\"lyric-line\">[Verse 4]</span>\n\n           <span class=\"chord\" data-chord=\"G\">G</span>                           <span class=\"chord\" data-chord=\"F\">F</span>              <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">Leave your stepping stones behind, now something that calls for you.</span>\n   <span class=\"chord\" data-chord=\"G\">G</span>                              <span class=\"chord\" data-chord=\"F\">F</span>        <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">Forget the dead you&#x27;ve left, they will not follow you.</span>\n    <span class=\"chord\" data-chord=\"Dm\">Dm</span>             <span class=\"chord\" data-chord=\"F\">F</span>               <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">The vagabond who&#x27;s rapping at your door</span>\n   <span class=\"chord\" data-chord=\"Dm\">Dm</span>              <span class=\"chord\" data-chord=\"F\">F</span>                     <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">Is standing in the clothes that you once wore.</span>\n<span class=\"chord\" data-chord=\"E7\">E7</span>                       <span class=\"chord\" data-chord=\"F\">F</span>      <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">Strike another match, go start anew</span>\n    <span class=\"chord\" data-chord=\"Dm\">Dm</span>            <span class=\"chord\" data-chord=\"F\">F</span>         <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">And it&#x27;s all over now, Baby Blue.</span>\n",
+    "chordData": {
+        "C": {
+            "name": "C",
+            "notes": [
+                "C3",
+                "E3",
+                "G3"
+            ],
+            "displayNotes": [
+                "C",
+                "E",
+                "G"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Cadd4": {
+            "name": "Cadd4",
+            "notes": [
+                "C3",
+                "E3",
+                "G3",
+                "F4"
+            ],
+            "displayNotes": [
+                "C",
+                "E",
+                "G",
+                "F"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "alt"
+            ]
+        },
+        "Dm": {
+            "name": "Dm",
+            "notes": [
+                "D3",
+                "F3",
+                "A3"
+            ],
+            "displayNotes": [
+                "D",
+                "F",
+                "A"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "E7": {
+            "name": "E7",
+            "notes": [
+                "E3",
+                "G#3",
+                "B3",
+                "D4"
+            ],
+            "displayNotes": [
+                "E",
+                "G#",
+                "B",
+                "D"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "F": {
+            "name": "F",
+            "notes": [
+                "F3",
+                "A3",
+                "C4"
+            ],
+            "displayNotes": [
+                "F",
+                "A",
+                "C"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "G": {
+            "name": "G",
+            "notes": [
+                "G3",
+                "B3",
+                "D4"
+            ],
+            "displayNotes": [
+                "G",
+                "B",
+                "D"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        }
+    }
+};

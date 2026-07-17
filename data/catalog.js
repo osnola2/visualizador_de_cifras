@@ -1,6 +1,20 @@
 // Gerado automaticamente por tools/generate_catalog.py
 const SONGS_CATALOG = [
     {
+        "id": "14Anos",
+        "title": "14 Anos",
+        "artist": "Jards Macalé",
+        "composer": "Paulinho da Viola",
+        "chordsCount": 14
+    },
+    {
+        "id": "78Rotacoes",
+        "title": "78 Rotações",
+        "artist": "Jards Macalé",
+        "composer": "Capinan / Jards Macale",
+        "chordsCount": 11
+    },
+    {
         "id": "ANivelDe",
         "title": "A Nível De...",
         "artist": "João Bosco",
@@ -260,10 +274,38 @@ const SONGS_CATALOG = [
         "chordsCount": 3
     },
     {
+        "id": "HotelDasEstrelas",
+        "title": "Hotel Das Estrelas",
+        "artist": "Jards Macalé",
+        "composer": "Duda / Jards Macalé",
+        "chordsCount": 7
+    },
+    {
+        "id": "Hurricane",
+        "title": "Hurricane",
+        "artist": "Bob Dylan",
+        "composer": "",
+        "chordsCount": 6
+    },
+    {
         "id": "Iarinhas",
         "title": "Iarinhas",
         "artist": "Luiza Lian",
         "composer": "Luiza Lian / Leda Cartum",
+        "chordsCount": 6
+    },
+    {
+        "id": "ItAintMeBabe",
+        "title": "It Aint Me Babe",
+        "artist": "Bob Dylan",
+        "composer": "",
+        "chordsCount": 5
+    },
+    {
+        "id": "ItsAllOverNowBabyBlue",
+        "title": "Its All Over Now Baby Blue",
+        "artist": "Bob Dylan",
+        "composer": "",
         "chordsCount": 6
     },
     {
@@ -307,6 +349,13 @@ const SONGS_CATALOG = [
         "artist": "The Rolling Stones",
         "composer": "",
         "chordsCount": 7
+    },
+    {
+        "id": "LikeARollingStone",
+        "title": "Like A Rolling Stone",
+        "artist": "Bob Dylan",
+        "composer": "",
+        "chordsCount": 6
     },
     {
         "id": "Lizete",
@@ -363,6 +412,13 @@ const SONGS_CATALOG = [
         "artist": "Heitor Villa-Lobos",
         "composer": "Dora Vasconcelos / Heitor Vila-lobos",
         "chordsCount": 18
+    },
+    {
+        "id": "MeuAmorMeAgarraGemeTremeChoraMata",
+        "title": "Meu Amor Me Agarra & Geme & Treme & Chora & Mata",
+        "artist": "Jards Macalé",
+        "composer": "Capinan / Jards Macale",
+        "chordsCount": 9
     },
     {
         "id": "MovimentoDosBarcos",
@@ -671,6 +727,13 @@ const SONGS_CATALOG = [
         "artist": "Lello Di Sarno",
         "composer": "Lello Di Sarno",
         "chordsCount": 8
+    },
+    {
+        "id": "TheEmptyBoatComGalCosta",
+        "title": "The Empty Boat (Com Gal Costa)",
+        "artist": "Jards Macalé",
+        "composer": "Caetano Veloso",
+        "chordsCount": 2
     },
     {
         "id": "TheWindCriesMary",
