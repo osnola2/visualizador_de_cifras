@@ -1,44 +1,236 @@
-window.SONG_DATA = {
+const SONG_DATA = {
     "title": "Antonico",
     "artist": "Ismael Silva",
     "composer": "Ismael Silva",
-    "lyricsHtml": "\n<span class=\"chord\" data-chord=\"Am\">Am</span>                                                  <span class=\"chord\" data-chord=\"Dm\">Dm</span>\n<span class=\"lyric-line\">Ôh Antonico, vou lhe pedir um favor                    Bm7/5-          E7          Am     E7</span>\n<span class=\"lyric-line\">Que só depende da sua boa vontade             Am                      F#m7/5-    Em</span>\n<span class=\"lyric-line\">É necessário uma viração pro Nestor                      F#                                    F7 E7</span>\n<span class=\"lyric-line\">Que está vivendo em grande dificuldade                  Am                                           Dm</span>\n<span class=\"lyric-line\">Ele está mesmo dançando na corda bamba                Bm7/5-           E7        Em7/5- A7</span>\n<span class=\"lyric-line\">Ele é aquele que na escola de samba            Dm                                     Am</span>\n<span class=\"lyric-line\">Toca cuíca, toca surdo e tamborim                 Bm7/5-          E7             Am</span>\n<span class=\"lyric-line\">Faça por ele como se fosse por mim</span>\n            <span class=\"chord\" data-chord=\"Am\">Am</span>                                    <span class=\"chord\" data-chord=\"Dm\">Dm</span>\n<span class=\"lyric-line\">Até muamba já fizeram pro rapaz                   E7                                                Am   E7</span>\n<span class=\"lyric-line\">Porque no samba ninguém faz o que ele faz                    Am                F#7/5-                   Em</span>\n<span class=\"lyric-line\">Mas hei de vê-lo muito bem, se Deus quiser            B7                                 E7</span>\n<span class=\"lyric-line\">E agradeço pelo que você fizer</span>\n",
+    "lyricsHtml": "\n<span class=\"chord\" data-chord=\"Am\">Am</span>                                                  <span class=\"chord\" data-chord=\"Dm\">Dm</span>\n<span class=\"lyric-line\">Ôh Antonico, vou lhe pedir um favor</span>\n<span class=\"chord\" data-chord=\"Bm7/5-\">Bm7/5-</span>          <span class=\"chord\" data-chord=\"E7\">E7</span>          <span class=\"chord\" data-chord=\"Am\">Am</span>     <span class=\"chord\" data-chord=\"E7\">E7</span>\n<span class=\"lyric-line\">Que só depende da sua boa vontade</span>\n<span class=\"chord\" data-chord=\"Am\">Am</span>                      <span class=\"chord\" data-chord=\"F#m7/5-\">F#m7/5-</span>    <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">É necessário uma viração pro Nestor</span>\n<span class=\"chord\" data-chord=\"F#\">F#</span>                                    <span class=\"chord\" data-chord=\"F7\">F7</span> <span class=\"chord\" data-chord=\"E7\">E7</span>\n<span class=\"lyric-line\">Que está vivendo em grande dificuldade</span>\n<span class=\"chord\" data-chord=\"Am\">Am</span>                                           <span class=\"chord\" data-chord=\"Dm\">Dm</span>\n<span class=\"lyric-line\">Ele está mesmo dançando na corda bamba</span>\n<span class=\"chord\" data-chord=\"Bm7/5-\">Bm7/5-</span>           <span class=\"chord\" data-chord=\"E7\">E7</span>        <span class=\"chord\" data-chord=\"Em7/5-\">Em7/5-</span> <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">Ele é aquele que na escola de samba</span>\n<span class=\"chord\" data-chord=\"Dm\">Dm</span>                                     <span class=\"chord\" data-chord=\"Am\">Am</span>\n<span class=\"lyric-line\">Toca cuíca, toca surdo e tamborim</span>\n<span class=\"chord\" data-chord=\"Bm7/5-\">Bm7/5-</span>          <span class=\"chord\" data-chord=\"E7\">E7</span>             <span class=\"chord\" data-chord=\"Am\">Am</span>\n<span class=\"lyric-line\">Faça por ele como se fosse por mim</span>\n\n<span class=\"chord\" data-chord=\"Am\">Am</span>                                    <span class=\"chord\" data-chord=\"Dm\">Dm</span>\n<span class=\"lyric-line\">Até muamba já fizeram pro rapaz</span>\n<span class=\"chord\" data-chord=\"E7\">E7</span>                                                <span class=\"chord\" data-chord=\"Am\">Am</span>   <span class=\"chord\" data-chord=\"E7\">E7</span>\n<span class=\"lyric-line\">Porque no samba ninguém faz o que ele faz</span>\n<span class=\"chord\" data-chord=\"Am\">Am</span>                <span class=\"chord\" data-chord=\"F#7/5-\">F#7/5-</span>                   <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Mas hei de vê-lo muito bem, se Deus quiser</span>\n<span class=\"chord\" data-chord=\"B7\">B7</span>                                 <span class=\"chord\" data-chord=\"E7\">E7</span>\n<span class=\"lyric-line\">E agradeço pelo que você fizer</span>\n",
     "chordData": {
-        "Am": {
-            "name": "Am",
-            "notes": [
+        "Am": [
+            [
                 "A3",
                 "C4",
                 "E4"
             ],
-            "displayNotes": [
+            [
                 "A",
                 "C",
                 "E"
             ],
-            "noteTypes": [
+            [
                 "root",
                 "triad",
                 "triad"
             ]
-        },
-        "Dm": {
-            "name": "Dm",
-            "notes": [
+        ],
+        "Dm": [
+            [
                 "D3",
                 "F3",
                 "A3"
             ],
-            "displayNotes": [
+            [
                 "D",
                 "F",
                 "A"
             ],
-            "noteTypes": [
+            [
                 "root",
                 "triad",
                 "triad"
             ]
-        }
+        ],
+        "Bm7/5-": [
+            [
+                "B3",
+                "D4",
+                "F4",
+                "A4"
+            ],
+            [
+                "B",
+                "D",
+                "F",
+                "A"
+            ],
+            [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        ],
+        "E7": [
+            [
+                "E3",
+                "G#3",
+                "B3",
+                "D4"
+            ],
+            [
+                "E",
+                "G#",
+                "B",
+                "D"
+            ],
+            [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        ],
+        "F#m7/5-": [
+            [
+                "F#3",
+                "A3",
+                "C4",
+                "E4"
+            ],
+            [
+                "F#",
+                "A",
+                "C",
+                "E"
+            ],
+            [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        ],
+        "Em": [
+            [
+                "E3",
+                "G3",
+                "B3"
+            ],
+            [
+                "E",
+                "G",
+                "B"
+            ],
+            [
+                "root",
+                "triad",
+                "triad"
+            ]
+        ],
+        "F#": [
+            [
+                "F#3",
+                "A#3",
+                "C#4"
+            ],
+            [
+                "F#",
+                "A#",
+                "C#"
+            ],
+            [
+                "root",
+                "triad",
+                "triad"
+            ]
+        ],
+        "F7": [
+            [
+                "F3",
+                "A3",
+                "C4",
+                "D#4"
+            ],
+            [
+                "F",
+                "A",
+                "C",
+                "Eb"
+            ],
+            [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        ],
+        "Em7/5-": [
+            [
+                "E3",
+                "G3",
+                "A#3",
+                "D4"
+            ],
+            [
+                "E",
+                "G",
+                "A#",
+                "D"
+            ],
+            [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        ],
+        "A7": [
+            [
+                "A3",
+                "C#4",
+                "E4",
+                "G4"
+            ],
+            [
+                "A",
+                "C#",
+                "E",
+                "G"
+            ],
+            [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        ],
+        "F#7/5-": [
+            [
+                "F#3",
+                "A#3",
+                "C4",
+                "E4"
+            ],
+            [
+                "F#",
+                "A#",
+                "C",
+                "E"
+            ],
+            [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        ],
+        "B7": [
+            [
+                "B3",
+                "D#4",
+                "F#4",
+                "A4"
+            ],
+            [
+                "B",
+                "D#",
+                "F#",
+                "A"
+            ],
+            [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        ]
     }
 };
