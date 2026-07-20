@@ -200,37 +200,39 @@ def parse_sambacifras(url):
     new_lines = []
 
     for p_html in p_matches:
+        p_html = re.sub(r'<br\s*/?>', '\n', p_html, flags=re.IGNORECASE)
         clean_p = re.sub(r'<[^>]+>', '', p_html)
         clean_p = html_lib.unescape(clean_p)
         clean_p = clean_p.replace('\xa0', ' ').replace('&nbsp;', ' ')
-        line = clean_p.rstrip()
         
-        if not line.strip():
-            if new_lines and new_lines[-1] != "":
-                new_lines.append("")
-            continue
-        
-        if line.strip().startswith('(') and line.strip().endswith(')') and len(new_lines) == 0:
-            if not song_composer:
-                song_composer = line.strip().strip('()')
-            continue
+        for line in clean_p.split('\n'):
+            line = line.rstrip()
+            if not line.strip():
+                if new_lines and new_lines[-1] != "":
+                    new_lines.append("")
+                continue
             
-        if is_chord_line(line):
-            def replace_chord_token(match):
-                ch = match.group(0)
-                clean_ch = clean_chord_token(ch)
-                if clean_ch and CHORD_REGEX.match(clean_ch):
-                    unique_chords.add(clean_ch)
-                    idx = ch.find(clean_ch)
-                    prefix = html_lib.escape(ch[:idx])
-                    suffix = html_lib.escape(ch[idx + len(clean_ch):])
-                    return f'{prefix}<span class="chord" data-chord="{clean_ch}">{clean_ch}</span>{suffix}'
-                return html_lib.escape(ch)
-            formatted = re.sub(r'\S+', replace_chord_token, line)
-            new_lines.append(formatted)
-        else:
-            escaped = html_lib.escape(line)
-            new_lines.append(f'<span class="lyric-line">{escaped}</span>')
+            if line.strip().startswith('(') and line.strip().endswith(')') and len(new_lines) == 0:
+                if not song_composer:
+                    song_composer = line.strip().strip('()')
+                continue
+                
+            if is_chord_line(line):
+                def replace_chord_token(match):
+                    ch = match.group(0)
+                    clean_ch = clean_chord_token(ch)
+                    if clean_ch and CHORD_REGEX.match(clean_ch):
+                        unique_chords.add(clean_ch)
+                        idx = ch.find(clean_ch)
+                        prefix = html_lib.escape(ch[:idx])
+                        suffix = html_lib.escape(ch[idx + len(clean_ch):])
+                        return f'{prefix}<span class="chord" data-chord="{clean_ch}">{clean_ch}</span>{suffix}'
+                    return html_lib.escape(ch)
+                formatted = re.sub(r'\S+', replace_chord_token, line)
+                new_lines.append(formatted)
+            else:
+                escaped = html_lib.escape(line)
+                new_lines.append(f'<span class="lyric-line">{escaped}</span>')
 
     while new_lines and new_lines[-1] == "":
         new_lines.pop()
@@ -250,72 +252,70 @@ def parse_sambacifras(url):
     return song_title, song_artist, song_composer, lyrics_content, chord_data
 
 def parse_bananacifras(url):
-    print(f"Parsing Banana Cifras URL via Jina AI proxy: {url} ...")
-    proxy_url = "https://r.jina.ai/" + url
-    req = urllib.request.Request(proxy_url, headers={'User-Agent': 'Mozilla/5.0'})
+    print(f"Parsing Banana Cifras URL via Jina HTML proxy: {url} ...")
+    jina_url = "https://r.jina.ai/" + url
+    req = urllib.request.Request(jina_url, headers={'User-Agent': 'Mozilla/5.0', 'X-Return-Format': 'html'})
     try:
         response = urllib.request.urlopen(req)
-        text = response.read().decode('utf-8', errors='replace')
+        raw = response.read()
+        html = raw.decode('utf-8', errors='replace')
     except Exception as e:
-        print(f"Error fetching from Jina AI proxy ({e})")
+        print(f"Error fetching Jina URL ({e})")
         return None
 
+    title_match = re.search(r'<title>(.*?)</title>', html, re.IGNORECASE)
     song_title = "Unknown Title"
     song_artist = "Unknown Artist"
-    song_composer = ""
-
-    title_match = re.search(r'Title:\s*(.*?)\s*(?:\n|$)', text, re.IGNORECASE)
     if title_match:
-        full = title_match.group(1).strip()
-        full = re.sub(r'\s*(CIFRA|CHORDS|TAB|TABS)\s*', ' - ', full, flags=re.IGNORECASE)
-        parts = [p.strip() for p in full.split('-') if p.strip()]
-        if len(parts) >= 2:
-            song_title = parts[0]
-            song_artist = parts[1]
+        t_clean = title_match.group(1)
+        m = re.search(r'^(.*?)\s+CHORDS\s+(?:by\s+)?(.*?)(\s+-\s+.*)?$', t_clean, re.IGNORECASE)
+        if m:
+            song_title = m.group(1).strip()
+            song_artist = m.group(2).strip()
+            song_artist = re.sub(r'\s*-\s*Banana.*$', '', song_artist, flags=re.IGNORECASE).strip()
         else:
-            song_title = full
+            song_title = t_clean.split('CHORDS')[0].strip()
 
-    # Find where song chords/lyrics start
-    body_idx = text.find('Capo No')
-    if body_idx != -1:
-        body = text[body_idx + len('Capo No'):].strip()
-    else:
-        body_idx = text.find('Intro:')
-        if body_idx != -1:
-            body = text[body_idx:].strip()
-        else:
-            body = text
+    pre_match = re.search(r'<pre id="song-pre"[^>]*>(.*?)</pre>', html, re.IGNORECASE | re.DOTALL)
+    if not pre_match:
+        print("Could not find <pre id=\"song-pre\"> inside Banana Cifras HTML, falling back to markdown...")
+        return fetch_jina_markdown(url)
 
+    pre_content = pre_match.group(1)
     unique_chords = set()
 
-    def chord_replacer(match):
-        ch = match.group(1).strip()
-        clean_ch = clean_chord_token(ch)
-        if clean_ch and CHORD_REGEX.match(clean_ch):
-            unique_chords.add(clean_ch)
-            return f'<span class="chord" data-chord="{clean_ch}">{clean_ch}</span> '
-        return match.group(0)
-
-    # In Banana Cifras Jina markdown, chords are formatted as _Chord_ (e.g. _Em7_, _G#4(add9)_) or **Chord**
-    formatted = re.sub(r'_([A-G][^_]{1,20})_', chord_replacer, body)
-    formatted = re.sub(r'\*\*([A-G][^\*]{1,20})\*\*', chord_replacer, formatted)
-
-    # Split by double spaces or newlines into distinct lines
-    raw_lines = re.split(r' {2,}|\n+', formatted)
+    lines = pre_content.split('\n')
     new_lines = []
-    for l in raw_lines:
-        l = l.strip()
-        if not l:
+
+    for line in lines:
+        line = line.rstrip('\r\n')
+        plain = re.sub(r'<[^>]+>', '', line).strip()
+        if not plain:
             if new_lines and new_lines[-1] != "":
                 new_lines.append("")
             continue
-        
-        # Check if line contains only chords / parentheticals like (2x)
-        plain = re.sub(r'<[^>]+>', '', l).strip()
-        if not plain or all(CHORD_REGEX.match(clean_chord_token(tok)) or re.match(r'^\(\d+x\)$', tok.strip(), re.I) for tok in plain.split()):
-            new_lines.append(l)
+
+        if is_tablature_line(plain) or re.search(r'^[eBGDAEbebgda]?\s*\|[-0-9~/hb\s]{4,}', plain) or '---|' in plain or '|---' in plain:
+            continue
+
+        if '<i>' in line or '</i>' in line:
+            line_clean = re.sub(r'</?[ub]>', '', line)
+            
+            def replace_i_chord(match):
+                ch = match.group(1).strip()
+                clean_ch = clean_chord_token(ch)
+                if clean_ch and CHORD_REGEX.match(clean_ch):
+                    unique_chords.add(clean_ch)
+                    return f'<span class="chord" data-chord="{clean_ch}">{clean_ch}</span>'
+                return html_lib.escape(ch)
+
+            formatted = re.sub(r'<i>(.*?)</i>', replace_i_chord, line_clean, flags=re.IGNORECASE)
+            new_lines.append(formatted)
         else:
-            new_lines.append(f'<span class="lyric-line">{l}</span>')
+            line_clean = re.sub(r'<[^>]+>', '', line)
+            line_clean = html_lib.unescape(line_clean)
+            escaped = html_lib.escape(line_clean)
+            new_lines.append(f'<span class="lyric-line">{escaped}</span>')
 
     while new_lines and new_lines[-1] == "":
         new_lines.pop()
@@ -332,7 +332,8 @@ def parse_bananacifras(url):
             "noteTypes": types
         }
 
-    return song_title, song_artist, song_composer, lyrics_content, chord_data
+    return song_title, song_artist, "", lyrics_content, chord_data
+
 
 def fetch_and_parse(url):
     print(f"Fetching {url} ...")

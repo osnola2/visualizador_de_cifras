@@ -183,6 +183,13 @@ const SONGS_CATALOG = [
         "chordsCount": 9
     },
     {
+        "id": "Contrastes",
+        "title": "Contrastes",
+        "artist": "Luiz Melodia",
+        "composer": "Ismael Silva/Francisco Alves",
+        "chordsCount": 9
+    },
+    {
         "id": "CopoVazio",
         "title": "Copo Vazio",
         "artist": "Gilberto Gil",
@@ -615,6 +622,13 @@ const SONGS_CATALOG = [
         "artist": "Alceu Valença",
         "composer": "Geraldo Azevedo / Jorge De Altinho / Moraes Moreira / Francisco Agra",
         "chordsCount": 11
+    },
+    {
+        "id": "Poema",
+        "title": "Poema",
+        "artist": "Ney Matogrosso",
+        "composer": "",
+        "chordsCount": 10
     },
     {
         "id": "Ponteio",

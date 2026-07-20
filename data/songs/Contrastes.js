@@ -1,0 +1,179 @@
+window.SONG_DATA = {
+    "title": "Contrastes",
+    "artist": "Luiz Melodia",
+    "composer": "Ismael Silva/Francisco Alves",
+    "lyricsHtml": "\n<span class=\"chord\" data-chord=\"D\">D</span>\n             <span class=\"chord\" data-chord=\"A7\">A7</span>             <span class=\"chord\" data-chord=\"D\">D</span>                 <span class=\"chord\" data-chord=\"B7\">B7</span>       <span class=\"chord\" data-chord=\"Em\">Em</span>   <span class=\"chord\" data-chord=\"B7\">B7</span>   <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Existe muita tristeza na rua da alegria</span>\n                              <span class=\"chord\" data-chord=\"A7\">A7</span>                                     <span class=\"chord\" data-chord=\"D\">D</span>   <span class=\"chord\" data-chord=\"A7\">A7</span>  <span class=\"chord\" data-chord=\"D\">D</span>\n<span class=\"lyric-line\">Existe muita desordem na rua da harmonia</span>\n         <span class=\"chord\" data-chord=\"A7\">A7</span>                       <span class=\"chord\" data-chord=\"D\">D</span> <span class=\"chord\" data-chord=\"D7\">D7</span>                                           <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">Analisando essa estória cada vez mais me embaraço</span>\n<span class=\"chord\" data-chord=\"Gm\">Gm</span>                                  <span class=\"chord\" data-chord=\"D\">D</span>  <span class=\"chord\" data-chord=\"B7\">B7</span>\n<span class=\"lyric-line\">Quanto mais longe do circo</span>\n<span class=\"chord\" data-chord=\"Em\">Em</span>              <span class=\"chord\" data-chord=\"A7\">A7</span>             <span class=\"chord\" data-chord=\"D\">D</span>        <span class=\"chord\" data-chord=\"F#m\">F#m</span> <span class=\"chord\" data-chord=\"Fm\">Fm</span> <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">mais eu encontro palhaço</span>\n                    <span class=\"chord\" data-chord=\"B7\">B7</span>                 <span class=\"chord\" data-chord=\"Em\">Em</span>    <span class=\"chord\" data-chord=\"A7\">A7</span>                               <span class=\"chord\" data-chord=\"D\">D</span>\n<span class=\"lyric-line\">Cada vez mais me embaraço analisando essa estória</span>\n  <span class=\"chord\" data-chord=\"B7\">B7</span>                    <span class=\"chord\" data-chord=\"Em\">Em</span>     <span class=\"chord\" data-chord=\"A7\">A7</span>                                  <span class=\"chord\" data-chord=\"D\">D</span>    <span class=\"chord\" data-chord=\"A7\">A7</span>   <span class=\"chord\" data-chord=\"D\">D</span>\n<span class=\"lyric-line\">Existe muito fracasso dentro do largo da Glória</span>\n           <span class=\"chord\" data-chord=\"A7\">A7</span>                    <span class=\"chord\" data-chord=\"D\">D</span>  <span class=\"chord\" data-chord=\"D7\">D7</span>                                           <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">Analisando essa estória cada vez mais me embaraço</span>\n<span class=\"chord\" data-chord=\"Gm\">Gm</span>                                  <span class=\"chord\" data-chord=\"D\">D</span>  <span class=\"chord\" data-chord=\"B7\">B7</span>\n<span class=\"lyric-line\">Quanto mais longe do circo</span>\n<span class=\"chord\" data-chord=\"Em\">Em</span>              <span class=\"chord\" data-chord=\"A7\">A7</span>             <span class=\"chord\" data-chord=\"D\">D</span>\n<span class=\"lyric-line\">mais eu encontro palhaço</span>\n",
+    "chordData": {
+        "A7": {
+            "name": "A7",
+            "notes": [
+                "A3",
+                "C#4",
+                "E4",
+                "G4"
+            ],
+            "displayNotes": [
+                "A",
+                "C#",
+                "E",
+                "G"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "B7": {
+            "name": "B7",
+            "notes": [
+                "B3",
+                "D#4",
+                "F#4",
+                "A4"
+            ],
+            "displayNotes": [
+                "B",
+                "D#",
+                "F#",
+                "A"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "D": {
+            "name": "D",
+            "notes": [
+                "D3",
+                "F#3",
+                "A3"
+            ],
+            "displayNotes": [
+                "D",
+                "F#",
+                "A"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "D7": {
+            "name": "D7",
+            "notes": [
+                "D3",
+                "F#3",
+                "A3",
+                "C4"
+            ],
+            "displayNotes": [
+                "D",
+                "F#",
+                "A",
+                "C"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "Em": {
+            "name": "Em",
+            "notes": [
+                "E3",
+                "G3",
+                "B3"
+            ],
+            "displayNotes": [
+                "E",
+                "G",
+                "B"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "F#m": {
+            "name": "F#m",
+            "notes": [
+                "F#3",
+                "A3",
+                "C#4"
+            ],
+            "displayNotes": [
+                "F#",
+                "A",
+                "C#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Fm": {
+            "name": "Fm",
+            "notes": [
+                "F3",
+                "G#3",
+                "C4"
+            ],
+            "displayNotes": [
+                "F",
+                "Ab",
+                "C"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "G": {
+            "name": "G",
+            "notes": [
+                "G3",
+                "B3",
+                "D4"
+            ],
+            "displayNotes": [
+                "G",
+                "B",
+                "D"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Gm": {
+            "name": "Gm",
+            "notes": [
+                "G3",
+                "A#3",
+                "D4"
+            ],
+            "displayNotes": [
+                "G",
+                "A#",
+                "D"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        }
+    }
+};
