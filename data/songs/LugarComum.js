@@ -1,0 +1,194 @@
+window.SONG_DATA = {
+    "title": "Lugar Comum",
+    "artist": "Gilberto Gil",
+    "composer": "Gilberto Gil / Joao Donato",
+    "lyricsHtml": "\n<span class=\"chord\" data-chord=\"G7+\">G7+</span>      <span class=\"chord\" data-chord=\"Am7\">Am7</span>   <span class=\"chord\" data-chord=\"D7\">D7</span>     <span class=\"chord\" data-chord=\"G7+\">G7+</span>\n<span class=\"lyric-line\">Beira do mar, lugar comum</span>\n            <span class=\"chord\" data-chord=\"Am7\">Am7</span>\n<span class=\"lyric-line\">Começo do caminhar</span>\n<span class=\"chord\" data-chord=\"D7/9\">D7/9</span>                <span class=\"chord\" data-chord=\"G7+\">G7+</span>\n<span class=\"lyric-line\">Pra beira de outro lugar</span>\n         <span class=\"chord\" data-chord=\"Am7\">Am7</span>   <span class=\"chord\" data-chord=\"D7\">D7</span>       <span class=\"chord\" data-chord=\"G7+\">G7+</span>\n<span class=\"lyric-line\">Beira do mar, todo mar é um</span>\n            <span class=\"chord\" data-chord=\"Am7\">Am7</span>\n<span class=\"lyric-line\">Começo do caminhar</span>\n<span class=\"chord\" data-chord=\"D7/9\">D7/9</span>                 <span class=\"chord\" data-chord=\"G7+\">G7+</span> <span class=\"chord\" data-chord=\"C#7/9\">C#7/9</span>\n<span class=\"lyric-line\">Pra dentro do fundo azul</span>\n         <span class=\"chord\" data-chord=\"C7+\">C7+</span>  <span class=\"chord\" data-chord=\"D7\">D7</span>       <span class=\"chord\" data-chord=\"Bm\">Bm</span>   <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">A água bateu, o vento soprou</span>\n         <span class=\"chord\" data-chord=\"Am7\">Am7</span>     <span class=\"chord\" data-chord=\"D7\">D7</span>        <span class=\"chord\" data-chord=\"G7+\">G7+</span> <span class=\"chord\" data-chord=\"C#7/9\">C#7/9</span>\n<span class=\"lyric-line\">O fogo do sol, O sal do senhor</span>\n          <span class=\"chord\" data-chord=\"C7+\">C7+</span>  <span class=\"chord\" data-chord=\"D7\">D7</span>        <span class=\"chord\" data-chord=\"G7+\">G7+</span> <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Tudo isso vem, tudo isso vai</span>\n           <span class=\"chord\" data-chord=\"Am7\">Am7</span>                <span class=\"chord\" data-chord=\"F\">F</span> <span class=\"chord\" data-chord=\"D7\">D7</span>\n<span class=\"lyric-line\">Pro mesmo lugar de onde tudo sai</span>\n",
+    "chordData": {
+        "Am7": {
+            "name": "Am7",
+            "notes": [
+                "A3",
+                "C4",
+                "E4",
+                "G4"
+            ],
+            "displayNotes": [
+                "A",
+                "C",
+                "E",
+                "G"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "Bm": {
+            "name": "Bm",
+            "notes": [
+                "B3",
+                "D4",
+                "F#4"
+            ],
+            "displayNotes": [
+                "B",
+                "D",
+                "F#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "C#7/9": {
+            "name": "C#7/9",
+            "notes": [
+                "C#3",
+                "F3",
+                "G#3",
+                "B3",
+                "D#4"
+            ],
+            "displayNotes": [
+                "C#",
+                "F",
+                "G#",
+                "B",
+                "D#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh",
+                "ninth"
+            ]
+        },
+        "C7+": {
+            "name": "C7+",
+            "notes": [
+                "C3",
+                "E3",
+                "G3",
+                "B3"
+            ],
+            "displayNotes": [
+                "C",
+                "E",
+                "G",
+                "B"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "D7": {
+            "name": "D7",
+            "notes": [
+                "D3",
+                "F#3",
+                "A3",
+                "C4"
+            ],
+            "displayNotes": [
+                "D",
+                "F#",
+                "A",
+                "C"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "D7/9": {
+            "name": "D7/9",
+            "notes": [
+                "D3",
+                "F#3",
+                "A3",
+                "C4",
+                "E4"
+            ],
+            "displayNotes": [
+                "D",
+                "F#",
+                "A",
+                "C",
+                "E"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh",
+                "ninth"
+            ]
+        },
+        "Em": {
+            "name": "Em",
+            "notes": [
+                "E3",
+                "G3",
+                "B3"
+            ],
+            "displayNotes": [
+                "E",
+                "G",
+                "B"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "F": {
+            "name": "F",
+            "notes": [
+                "F3",
+                "A3",
+                "C4"
+            ],
+            "displayNotes": [
+                "F",
+                "A",
+                "C"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "G7+": {
+            "name": "G7+",
+            "notes": [
+                "G3",
+                "B3",
+                "D4",
+                "F#4"
+            ],
+            "displayNotes": [
+                "G",
+                "B",
+                "D",
+                "F#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        }
+    }
+};

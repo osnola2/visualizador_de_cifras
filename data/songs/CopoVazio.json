@@ -1,0 +1,311 @@
+{
+    "title": "Copo Vazio",
+    "artist": "Gilberto Gil",
+    "composer": "Gilberto Gil",
+    "lyricsHtml": "\n<span class=\"chord\" data-chord=\"A7(9)\">A7(9)</span>                  <span class=\"chord\" data-chord=\"D\">D</span>   <span class=\"chord\" data-chord=\"C#7\">C#7</span>              <span class=\"chord\" data-chord=\"F#m7\">F#m7</span>   <span class=\"chord\" data-chord=\"B7(9)\">B7(9)</span>              <span class=\"chord\" data-chord=\"E7\">E7</span>\n<span class=\"lyric-line\">É    sempre bom lembrar      Que um copo vazio        Está cheio de ar</span>\n<span class=\"chord\" data-chord=\"A7(9)\">A7(9)</span>                  <span class=\"chord\" data-chord=\"D\">D</span>   <span class=\"chord\" data-chord=\"C#7\">C#7</span>            <span class=\"chord\" data-chord=\"F#m7\">F#m7</span>              <span class=\"chord\" data-chord=\"B7(9)\">B7(9)</span>                 <span class=\"chord\" data-chord=\"E7\">E7</span>\n<span class=\"lyric-line\">É    sempre bom lembrar      Que o ar sombrio de um rosto      Está cheio de um ar vazio</span>\n<span class=\"chord\" data-chord=\"C#7\">C#7</span>            <span class=\"chord\" data-chord=\"D\">D</span>                <span class=\"chord\" data-chord=\"E7\">E7</span>              <span class=\"chord\" data-chord=\"A7(9)\">A7(9)</span>                     <span class=\"chord\" data-chord=\"D\">D</span>               <span class=\"chord\" data-chord=\"C#7\">C#7</span>\n<span class=\"lyric-line\">Vazio daquilo que no ar do copo  Ocupa um lugar      É sempre bom lembrar, guardar de cor</span>\n           <span class=\"chord\" data-chord=\"F#m7\">F#m7</span>                   <span class=\"chord\" data-chord=\"B7\">B7</span>          <span class=\"chord\" data-chord=\"E7\">E7</span>    <span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">Que o ar vazio de um rosto sombri__o Está cheio de dor</span>\n<span class=\"chord\" data-chord=\"A7(9)\">A7(9)</span>                  <span class=\"chord\" data-chord=\"D\">D</span>   <span class=\"chord\" data-chord=\"C#7\">C#7</span>              <span class=\"chord\" data-chord=\"F#m7\">F#m7</span>   <span class=\"chord\" data-chord=\"B7(9)\">B7(9)</span>              <span class=\"chord\" data-chord=\"E7\">E7</span>\n<span class=\"lyric-line\">É    sempre bom lembrar      Que um copo vazio        Está cheio de ar</span>\n<span class=\"chord\" data-chord=\"D7\">D7</span>  <span class=\"chord\" data-chord=\"C#7\">C#7</span>                                  <span class=\"chord\" data-chord=\"F#m7\">F#m7</span>\n<span class=\"lyric-line\">      Que o ar no copo Ocupa o lugar do vinho</span>\n<span class=\"chord\" data-chord=\"D7\">D7</span>  <span class=\"chord\" data-chord=\"C#7\">C#7</span>                                       <span class=\"chord\" data-chord=\"F#madd9\">F#madd9</span>\n<span class=\"lyric-line\">      Que o vinho busca ocupar o lugar da dor</span>\n<span class=\"chord\" data-chord=\"C7\">C7</span>  <span class=\"chord\" data-chord=\"B7\">B7</span>                                   <span class=\"chord\" data-chord=\"E6/9\">E6/9</span>\n<span class=\"lyric-line\">       Que a dor ocupa a metade da verdade     A verdadeira natureza interior</span>\n<span class=\"chord\" data-chord=\"B7\">B7</span>                                <span class=\"chord\" data-chord=\"E7(9)\">E7(9)</span>   <span class=\"chord\" data-chord=\"C#7\">C#7</span>                                     <span class=\"chord\" data-chord=\"F#7(9)\">F#7(9)</span>\n<span class=\"lyric-line\">  Uma metade cheia Uma metade vazia         Uma metade tristeza Uma metade alegria</span>\n<span class=\"chord\" data-chord=\"D\">D</span>                    <span class=\"chord\" data-chord=\"E7\">E7</span>                   <span class=\"chord\" data-chord=\"A7(9)\">A7(9)</span>\n<span class=\"lyric-line\">A magia da verdade inteira Todo-poderoso amor</span>\n\n<span class=\"chord\" data-chord=\"D\">D</span>               <span class=\"chord\" data-chord=\"E7\">E7</span>                  <span class=\"chord\" data-chord=\"A7(9)\">A7(9)</span>\n<span class=\"lyric-line\">A magia da verdade inteira Todo-podero___so amor</span>\n                    <span class=\"chord\" data-chord=\"D\">D</span>   <span class=\"chord\" data-chord=\"C#7\">C#7</span>              <span class=\"chord\" data-chord=\"F#m7\">F#m7</span>   <span class=\"chord\" data-chord=\"B7\">B7</span>        <span class=\"chord\" data-chord=\"E7\">E7</span>      <span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">É sempre bom lembrar      Que um copo vazio     Está cheio de ar</span>\n",
+    "chordData": {
+        "A": {
+            "name": "A",
+            "notes": [
+                "A3",
+                "C#4",
+                "E4"
+            ],
+            "displayNotes": [
+                "A",
+                "C#",
+                "E"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "A7(9)": {
+            "name": "A7(9)",
+            "notes": [
+                "A3",
+                "C#4",
+                "E4",
+                "G4",
+                "B4"
+            ],
+            "displayNotes": [
+                "A",
+                "C#",
+                "E",
+                "G",
+                "B"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh",
+                "ninth"
+            ]
+        },
+        "B7": {
+            "name": "B7",
+            "notes": [
+                "B3",
+                "D#4",
+                "F#4",
+                "A4"
+            ],
+            "displayNotes": [
+                "B",
+                "D#",
+                "F#",
+                "A"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "B7(9)": {
+            "name": "B7(9)",
+            "notes": [
+                "B3",
+                "D#4",
+                "F#4",
+                "A4",
+                "C#5"
+            ],
+            "displayNotes": [
+                "B",
+                "D#",
+                "F#",
+                "A",
+                "C#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh",
+                "ninth"
+            ]
+        },
+        "C#7": {
+            "name": "C#7",
+            "notes": [
+                "C#3",
+                "F3",
+                "G#3",
+                "B3"
+            ],
+            "displayNotes": [
+                "C#",
+                "F",
+                "G#",
+                "B"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "C7": {
+            "name": "C7",
+            "notes": [
+                "C3",
+                "E3",
+                "G3",
+                "A#3"
+            ],
+            "displayNotes": [
+                "C",
+                "E",
+                "G",
+                "A#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "D": {
+            "name": "D",
+            "notes": [
+                "D3",
+                "F#3",
+                "A3"
+            ],
+            "displayNotes": [
+                "D",
+                "F#",
+                "A"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "D7": {
+            "name": "D7",
+            "notes": [
+                "D3",
+                "F#3",
+                "A3",
+                "C4"
+            ],
+            "displayNotes": [
+                "D",
+                "F#",
+                "A",
+                "C"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "E6/9": {
+            "name": "E6/9",
+            "notes": [
+                "E3",
+                "G#3",
+                "B3",
+                "C#4",
+                "F#4"
+            ],
+            "displayNotes": [
+                "E",
+                "G#",
+                "B",
+                "C#",
+                "F#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh",
+                "ninth"
+            ]
+        },
+        "E7": {
+            "name": "E7",
+            "notes": [
+                "E3",
+                "G#3",
+                "B3",
+                "D4"
+            ],
+            "displayNotes": [
+                "E",
+                "G#",
+                "B",
+                "D"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "E7(9)": {
+            "name": "E7(9)",
+            "notes": [
+                "E3",
+                "G#3",
+                "B3",
+                "D4",
+                "F#4"
+            ],
+            "displayNotes": [
+                "E",
+                "G#",
+                "B",
+                "D",
+                "F#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh",
+                "ninth"
+            ]
+        },
+        "F#7(9)": {
+            "name": "F#7(9)",
+            "notes": [
+                "F#3",
+                "A#3",
+                "C#4",
+                "E4",
+                "G#4"
+            ],
+            "displayNotes": [
+                "F#",
+                "A#",
+                "C#",
+                "E",
+                "G#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh",
+                "ninth"
+            ]
+        },
+        "F#m7": {
+            "name": "F#m7",
+            "notes": [
+                "F#3",
+                "A3",
+                "C#4",
+                "E4"
+            ],
+            "displayNotes": [
+                "F#",
+                "A",
+                "C#",
+                "E"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "F#madd9": {
+            "name": "F#madd9",
+            "notes": [
+                "F#3",
+                "A3",
+                "C#4",
+                "G#4"
+            ],
+            "displayNotes": [
+                "F#",
+                "A",
+                "C#",
+                "G#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "ninth"
+            ]
+        }
+    }
+}

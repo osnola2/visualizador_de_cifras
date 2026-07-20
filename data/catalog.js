@@ -85,6 +85,13 @@ const SONGS_CATALOG = [
         "chordsCount": 8
     },
     {
+        "id": "BackInBahia",
+        "title": "Back In Bahia",
+        "artist": "Gilberto Gil",
+        "composer": "Gilberto Gil",
+        "chordsCount": 3
+    },
+    {
         "id": "BanhoDeFolhas",
         "title": "Banho de Folhas",
         "artist": "Luedji Luna",
@@ -141,6 +148,13 @@ const SONGS_CATALOG = [
         "chordsCount": 12
     },
     {
+        "id": "CerebroEletronico",
+        "title": "Cérebro Eletrônico",
+        "artist": "Gilberto Gil",
+        "composer": "Gilberto Gil",
+        "chordsCount": 7
+    },
+    {
         "id": "ChaoDeGiz",
         "title": "Chão de Giz",
         "artist": "Zé Ramalho",
@@ -167,6 +181,13 @@ const SONGS_CATALOG = [
         "artist": "Paulo Cesar Pinheiro",
         "composer": "Batatinha/Paulo César Pinheiro",
         "chordsCount": 9
+    },
+    {
+        "id": "CopoVazio",
+        "title": "Copo Vazio",
+        "artist": "Gilberto Gil",
+        "composer": "Gilberto Gil",
+        "chordsCount": 14
     },
     {
         "id": "Cruel",
@@ -204,6 +225,13 @@ const SONGS_CATALOG = [
         "chordsCount": 14
     },
     {
+        "id": "Esoterico",
+        "title": "Esotérico",
+        "artist": "Gilberto Gil",
+        "composer": "Gilberto Gil",
+        "chordsCount": 12
+    },
+    {
         "id": "EstacioEuEVoce",
         "title": "Estácio, Eu e Você",
         "artist": "Luiz Melodia",
@@ -216,6 +244,13 @@ const SONGS_CATALOG = [
         "artist": "Elton Medeiros / Eduardo Gudin / Roberto Riberti",
         "composer": "",
         "chordsCount": 18
+    },
+    {
+        "id": "Expresso2222",
+        "title": "Expresso 2222",
+        "artist": "Gilberto Gil",
+        "composer": "Gilberto Gil",
+        "chordsCount": 8
     },
     {
         "id": "Fadas",
@@ -330,6 +365,13 @@ const SONGS_CATALOG = [
         "chordsCount": 9
     },
     {
+        "id": "LamentoSertanejo",
+        "title": "Lamento Sertanejo",
+        "artist": "Gilberto Gil",
+        "composer": "Gilberto Gil / Dominguinhos",
+        "chordsCount": 22
+    },
+    {
         "id": "LaranjaMadura",
         "title": "Laranja madura",
         "artist": "Ataulfo Alves",
@@ -363,6 +405,13 @@ const SONGS_CATALOG = [
         "artist": "Jonathan Silva",
         "composer": "",
         "chordsCount": 8
+    },
+    {
+        "id": "LugarComum",
+        "title": "Lugar Comum",
+        "artist": "Gilberto Gil",
+        "composer": "Gilberto Gil / Joao Donato",
+        "chordsCount": 9
     },
     {
         "id": "Magrelinha",
@@ -510,6 +559,13 @@ const SONGS_CATALOG = [
         "artist": "Djavan",
         "composer": "",
         "chordsCount": 24
+    },
+    {
+        "id": "Oriente",
+        "title": "Oriente",
+        "artist": "Gilberto Gil",
+        "composer": "Gilberto Gil",
+        "chordsCount": 21
     },
     {
         "id": "PapelMache",
@@ -776,6 +832,13 @@ const SONGS_CATALOG = [
         "artist": "Luiz Melodia",
         "composer": "Luíz Melodia",
         "chordsCount": 9
+    },
+    {
+        "id": "VamosFugir",
+        "title": "Vamos Fugir",
+        "artist": "Gilberto Gil",
+        "composer": "Gilberto Gil / Liminha",
+        "chordsCount": 4
     },
     {
         "id": "VaporBarato",
