@@ -7,6 +7,8 @@ import unicodedata
 import html as html_lib
 
 BASE_DIR = r"C:\Users\User\Desktop\Python\Musica"
+if BASE_DIR not in sys.path:
+    sys.path.insert(0, BASE_DIR)
 DATA_DIR = os.path.join(BASE_DIR, "data", "songs")
 HUB_HTML = os.path.join(BASE_DIR, "index.html")
 
@@ -24,6 +26,18 @@ from chord_parser import parse_chord as guess_chord_notes
 
 CHORD_REGEX = re.compile(r'^[A-G][b#]?(?:m|maj|min|dim|aug|sus|add|M|\d|\+|-|°|º|ø|/\d+[-+b#]?|\([-+b#/\dA-Za-z°ºø]+\))*(?:/[A-G][b#]?)?$')
 
+def clean_chord_token(tok):
+    if not tok:
+        return ""
+    if CHORD_REGEX.match(tok):
+        return tok
+    if tok.startswith('(') and tok.endswith(')') and CHORD_REGEX.match(tok[1:-1]):
+        return tok[1:-1]
+    stripped = tok.strip('(),.[]')
+    if CHORD_REGEX.match(stripped):
+        return stripped
+    return tok.strip('(),.[]')
+
 def is_chord_line(line):
     stripped = line.strip()
     if not stripped:
@@ -35,7 +49,7 @@ def is_chord_line(line):
         return False
     has_chord = False
     for token in tokens:
-        clean_token = token.strip('(),.[]')
+        clean_token = clean_chord_token(token)
         if not clean_token:
             continue
         if CHORD_REGEX.match(clean_token):
@@ -73,7 +87,7 @@ def parse_plaintext_tab(tab_content, song_title, song_artist):
 
     def replace_chord_token(match):
         ch = match.group(0)
-        clean_ch = ch.strip('(),.[]')
+        clean_ch = clean_chord_token(ch)
         if clean_ch and CHORD_REGEX.match(clean_ch):
             unique_chords.add(clean_ch)
             idx = ch.find(clean_ch)
@@ -204,7 +218,7 @@ def parse_sambacifras(url):
         if is_chord_line(line):
             def replace_chord_token(match):
                 ch = match.group(0)
-                clean_ch = ch.strip('(),.[]')
+                clean_ch = clean_chord_token(ch)
                 if clean_ch and CHORD_REGEX.match(clean_ch):
                     unique_chords.add(clean_ch)
                     idx = ch.find(clean_ch)
@@ -235,6 +249,91 @@ def parse_sambacifras(url):
 
     return song_title, song_artist, song_composer, lyrics_content, chord_data
 
+def parse_bananacifras(url):
+    print(f"Parsing Banana Cifras URL via Jina AI proxy: {url} ...")
+    proxy_url = "https://r.jina.ai/" + url
+    req = urllib.request.Request(proxy_url, headers={'User-Agent': 'Mozilla/5.0'})
+    try:
+        response = urllib.request.urlopen(req)
+        text = response.read().decode('utf-8', errors='replace')
+    except Exception as e:
+        print(f"Error fetching from Jina AI proxy ({e})")
+        return None
+
+    song_title = "Unknown Title"
+    song_artist = "Unknown Artist"
+    song_composer = ""
+
+    title_match = re.search(r'Title:\s*(.*?)\s*(?:\n|$)', text, re.IGNORECASE)
+    if title_match:
+        full = title_match.group(1).strip()
+        full = re.sub(r'\s*(CIFRA|CHORDS|TAB|TABS)\s*', ' - ', full, flags=re.IGNORECASE)
+        parts = [p.strip() for p in full.split('-') if p.strip()]
+        if len(parts) >= 2:
+            song_title = parts[0]
+            song_artist = parts[1]
+        else:
+            song_title = full
+
+    # Find where song chords/lyrics start
+    body_idx = text.find('Capo No')
+    if body_idx != -1:
+        body = text[body_idx + len('Capo No'):].strip()
+    else:
+        body_idx = text.find('Intro:')
+        if body_idx != -1:
+            body = text[body_idx:].strip()
+        else:
+            body = text
+
+    unique_chords = set()
+
+    def chord_replacer(match):
+        ch = match.group(1).strip()
+        clean_ch = clean_chord_token(ch)
+        if clean_ch and CHORD_REGEX.match(clean_ch):
+            unique_chords.add(clean_ch)
+            return f'<span class="chord" data-chord="{clean_ch}">{clean_ch}</span> '
+        return match.group(0)
+
+    # In Banana Cifras Jina markdown, chords are formatted as _Chord_ (e.g. _Em7_, _G#4(add9)_) or **Chord**
+    formatted = re.sub(r'_([A-G][^_]{1,20})_', chord_replacer, body)
+    formatted = re.sub(r'\*\*([A-G][^\*]{1,20})\*\*', chord_replacer, formatted)
+
+    # Split by double spaces or newlines into distinct lines
+    raw_lines = re.split(r' {2,}|\n+', formatted)
+    new_lines = []
+    for l in raw_lines:
+        l = l.strip()
+        if not l:
+            if new_lines and new_lines[-1] != "":
+                new_lines.append("")
+            continue
+        
+        # Check if line contains only chords / parentheticals like (2x)
+        plain = re.sub(r'<[^>]+>', '', l).strip()
+        if not plain or all(CHORD_REGEX.match(clean_chord_token(tok)) or re.match(r'^\(\d+x\)$', tok.strip(), re.I) for tok in plain.split()):
+            new_lines.append(l)
+        else:
+            new_lines.append(f'<span class="lyric-line">{l}</span>')
+
+    while new_lines and new_lines[-1] == "":
+        new_lines.pop()
+
+    lyrics_content = '\n'.join(new_lines)
+
+    chord_data = {}
+    for chord in sorted(unique_chords):
+        notes, display, types = guess_chord_notes(chord)
+        chord_data[chord] = {
+            "name": chord,
+            "notes": notes,
+            "displayNotes": display,
+            "noteTypes": types
+        }
+
+    return song_title, song_artist, song_composer, lyrics_content, chord_data
+
 def fetch_and_parse(url):
     print(f"Fetching {url} ...")
     
@@ -243,6 +342,13 @@ def fetch_and_parse(url):
         result = fetch_jina_markdown(url)
         if not result:
             print("Failed to extract tab from Ultimate Guitar.")
+            return
+        song_title, song_artist, song_composer, lyrics_content, chord_data = result
+        html = None
+    elif "bananacifras.com" in url:
+        result = parse_bananacifras(url)
+        if not result:
+            print("Failed to extract tab from Banana Cifras.")
             return
         song_title, song_artist, song_composer, lyrics_content, chord_data = result
         html = None
@@ -310,7 +416,7 @@ def fetch_and_parse(url):
                     if is_chord_line(plain):
                         def bare_chord_replacer(match):
                             ch = match.group(0)
-                            clean_ch = ch.strip('(),.[]')
+                            clean_ch = clean_chord_token(ch)
                             if clean_ch and CHORD_REGEX.match(clean_ch):
                                 unique_chords.add(clean_ch)
                                 idx = ch.find(clean_ch)

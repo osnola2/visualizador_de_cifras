@@ -449,6 +449,13 @@ const SONGS_CATALOG = [
         "chordsCount": 6
     },
     {
+        "id": "MatitaPere",
+        "title": "Matita Perê",
+        "artist": "Tom Jobim",
+        "composer": "",
+        "chordsCount": 30
+    },
+    {
         "id": "MedoDeOlharPraSi",
         "title": "Medo de Olhar Pra Si",
         "artist": "Leo Cavalcanti",
