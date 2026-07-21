@@ -67,6 +67,10 @@ function initCavaquinhoViewer() {
     let currentNextChordId = null;
     let currentNextLyric = null;
     let currentPlayingChordEl = null;
+    let currentAltPositionIndex = 0;
+    let lastDisplayedChordName = null;
+    let currentNextAltPositionIndex = 0;
+    let lastDisplayedNextChordName = null;
 
     const chordElements = document.querySelectorAll('.chord');
     const activeDisplayChord = document.getElementById('active-display-chord');
@@ -139,6 +143,10 @@ function initCavaquinhoViewer() {
             if (currentChordNameEl) currentChordNameEl.textContent = '---';
             if (cavaquinhoCurrentView) cavaquinhoCurrentView.innerHTML = '';
             if (cavaquinhoNextView) cavaquinhoNextView.innerHTML = '';
+            const posControlsEl = document.getElementById('cavaquinho-pos-controls');
+            if (posControlsEl) posControlsEl.style.display = 'none';
+            const nextPosControlsEl = document.getElementById('cavaquinho-next-pos-controls');
+            if (nextPosControlsEl) nextPosControlsEl.style.display = 'none';
             return;
         }
 
@@ -153,22 +161,94 @@ function initCavaquinhoViewer() {
         const svgW = isMobile ? 84 : 120;
         const svgH = isMobile ? 80 : 115;
 
-        if (window.CavaquinhoChordVisualizer && cavaquinhoCurrentView) {
-            cavaquinhoCurrentView.innerHTML = window.CavaquinhoChordVisualizer.renderCavaquinhoFretboardSVG(data.name, { width: svgW, height: svgH });
+        if (data.name !== lastDisplayedChordName) {
+            lastDisplayedChordName = data.name;
+            currentAltPositionIndex = 0;
         }
+
+        let currentShapeOverride = null;
+        let alternatives = [];
+        if (window.CavaquinhoChordVisualizer && typeof window.CavaquinhoChordVisualizer.getAlternativeShapes === 'function') {
+            alternatives = window.CavaquinhoChordVisualizer.getAlternativeShapes(data.name);
+            if (alternatives.length > 0) {
+                if (currentAltPositionIndex >= alternatives.length) {
+                    currentAltPositionIndex = 0;
+                }
+                currentShapeOverride = alternatives[currentAltPositionIndex];
+            }
+        }
+
+        const posControlsEl = document.getElementById('cavaquinho-pos-controls');
+        const posBadgeEl = document.getElementById('cavaquinho-pos-badge');
+        const posLabelEl = document.getElementById('cavaquinho-pos-label');
+
+        if (posControlsEl) {
+            if (alternatives && alternatives.length > 1) {
+                posControlsEl.style.display = 'block';
+                if (posBadgeEl) {
+                    posBadgeEl.textContent = `${currentAltPositionIndex + 1}/${alternatives.length}`;
+                }
+                if (posLabelEl && currentShapeOverride) {
+                    posLabelEl.textContent = currentShapeOverride.label || `Posição ${currentAltPositionIndex + 1}`;
+                }
+            } else {
+                posControlsEl.style.display = 'none';
+            }
+        }
+
+        if (window.CavaquinhoChordVisualizer && cavaquinhoCurrentView) {
+            cavaquinhoCurrentView.innerHTML = window.CavaquinhoChordVisualizer.renderCavaquinhoFretboardSVG(data.name, { width: svgW, height: svgH, shapeOverride: currentShapeOverride });
+        }
+
+        const nextPosControlsEl = document.getElementById('cavaquinho-next-pos-controls');
+        const nextPosBadgeEl = document.getElementById('cavaquinho-next-pos-badge');
+        const nextPosLabelEl = document.getElementById('cavaquinho-next-pos-label');
 
         if (window.CavaquinhoChordVisualizer && cavaquinhoNextView) {
             if (nextChordId && chordData[nextChordId]) {
                 const nextData = chordData[nextChordId];
+
+                if (nextData.name !== lastDisplayedNextChordName) {
+                    lastDisplayedNextChordName = nextData.name;
+                    currentNextAltPositionIndex = 0;
+                }
+
+                let nextShapeOverride = null;
+                let nextAlternatives = [];
+                if (typeof window.CavaquinhoChordVisualizer.getAlternativeShapes === 'function') {
+                    nextAlternatives = window.CavaquinhoChordVisualizer.getAlternativeShapes(nextData.name);
+                    if (nextAlternatives.length > 0) {
+                        if (currentNextAltPositionIndex >= nextAlternatives.length) {
+                            currentNextAltPositionIndex = 0;
+                        }
+                        nextShapeOverride = nextAlternatives[currentNextAltPositionIndex];
+                    }
+                }
+
+                if (nextPosControlsEl) {
+                    if (nextAlternatives && nextAlternatives.length > 1) {
+                        nextPosControlsEl.style.display = 'block';
+                        if (nextPosBadgeEl) {
+                            nextPosBadgeEl.textContent = `${currentNextAltPositionIndex + 1}/${nextAlternatives.length}`;
+                        }
+                        if (nextPosLabelEl && nextShapeOverride) {
+                            nextPosLabelEl.textContent = nextShapeOverride.label || `Posição ${currentNextAltPositionIndex + 1}`;
+                        }
+                    } else {
+                        nextPosControlsEl.style.display = 'none';
+                    }
+                }
+
                 cavaquinhoNextView.innerHTML = `
                     <div style="text-align: center; margin-bottom: 0.15rem;">
                         <span style="font-size: ${isMobile ? '0.85rem' : '1.0rem'}; font-weight: 800; color: #fff;">${nextData.name}</span>
                         ${nextLyric ? `<div style="font-size: ${isMobile ? '0.7rem' : '0.78rem'}; color: #cbd5e1; margin-top: 0.1rem; font-style: italic;">"${nextLyric}"</div>` : ''}
                     </div>
-                    ${window.CavaquinhoChordVisualizer.renderCavaquinhoFretboardSVG(nextData.name, { width: svgW, height: svgH })}
+                    ${window.CavaquinhoChordVisualizer.renderCavaquinhoFretboardSVG(nextData.name, { width: svgW, height: svgH, shapeOverride: nextShapeOverride })}
                 `;
             } else {
                 cavaquinhoNextView.innerHTML = '<div style="text-align:center; color:#64748b; font-size:0.85rem; padding:0.6rem 0;">Fim da música</div>';
+                if (nextPosControlsEl) nextPosControlsEl.style.display = 'none';
             }
         }
     }
@@ -388,6 +468,80 @@ function initCavaquinhoViewer() {
                 autoscrollBtn.classList.remove('active');
                 autoscrollBtn.innerHTML = '<span class="icon">▶</span> Auto-scroll';
                 cancelAnimationFrame(animationFrameId);
+            }
+        });
+    }
+
+    // Lógica do botão de Variar Posição / Inversão do Acorde
+    const btnVaryPos = document.getElementById('btn-vary-cavaquinho-pos');
+    if (btnVaryPos) {
+        btnVaryPos.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if (!currentDisplayedChordId || !chordData[currentDisplayedChordId]) return;
+            const data = chordData[currentDisplayedChordId];
+            if (!window.CavaquinhoChordVisualizer || typeof window.CavaquinhoChordVisualizer.getAlternativeShapes !== 'function') return;
+
+            const alternatives = window.CavaquinhoChordVisualizer.getAlternativeShapes(data.name);
+            if (alternatives && alternatives.length > 1) {
+                currentAltPositionIndex = (currentAltPositionIndex + 1) % alternatives.length;
+
+                const isMobile = window.innerWidth < 900;
+                const svgW = isMobile ? 84 : 120;
+                const svgH = isMobile ? 80 : 115;
+                const chosenShape = alternatives[currentAltPositionIndex];
+
+                if (cavaquinhoCurrentView) {
+                    cavaquinhoCurrentView.innerHTML = window.CavaquinhoChordVisualizer.renderCavaquinhoFretboardSVG(data.name, { width: svgW, height: svgH, shapeOverride: chosenShape });
+                }
+
+                const posBadgeEl = document.getElementById('cavaquinho-pos-badge');
+                const posLabelEl = document.getElementById('cavaquinho-pos-label');
+                if (posBadgeEl) {
+                    posBadgeEl.textContent = `${currentAltPositionIndex + 1}/${alternatives.length}`;
+                }
+                if (posLabelEl && chosenShape) {
+                    posLabelEl.textContent = chosenShape.label || `Posição ${currentAltPositionIndex + 1}`;
+                }
+            }
+        });
+    }
+
+    // Lógica do botão de Variar Posição para o PRÓXIMO Acorde
+    const btnVaryNextPos = document.getElementById('btn-vary-cavaquinho-next-pos');
+    if (btnVaryNextPos) {
+        btnVaryNextPos.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if (!currentNextChordId || !chordData[currentNextChordId]) return;
+            const nextData = chordData[currentNextChordId];
+            if (!window.CavaquinhoChordVisualizer || typeof window.CavaquinhoChordVisualizer.getAlternativeShapes !== 'function') return;
+
+            const alternatives = window.CavaquinhoChordVisualizer.getAlternativeShapes(nextData.name);
+            if (alternatives && alternatives.length > 1) {
+                currentNextAltPositionIndex = (currentNextAltPositionIndex + 1) % alternatives.length;
+
+                const isMobile = window.innerWidth < 900;
+                const svgW = isMobile ? 84 : 120;
+                const svgH = isMobile ? 80 : 115;
+                const chosenShape = alternatives[currentNextAltPositionIndex];
+
+                if (cavaquinhoNextView) {
+                    cavaquinhoNextView.innerHTML = `
+                        <div style="text-align: center; margin-bottom: 0.15rem;">
+                            <span style="font-size: ${isMobile ? '0.85rem' : '1.0rem'}; font-weight: 800; color: #fff;">${nextData.name}</span>
+                            ${currentNextLyric ? `<div style="font-size: ${isMobile ? '0.7rem' : '0.78rem'}; color: #cbd5e1; margin-top: 0.1rem; font-style: italic;">"${currentNextLyric}"</div>` : ''}
+                        </div>
+                        ${window.CavaquinhoChordVisualizer.renderCavaquinhoFretboardSVG(nextData.name, { width: svgW, height: svgH, shapeOverride: chosenShape })}
+                    `;
+                }
+
+                const nextPosBadgeEl = document.getElementById('cavaquinho-next-pos-badge');
+                const nextPosLabelEl = document.getElementById('cavaquinho-next-pos-label');
+                if (nextPosBadgeEl) {
+                    nextPosBadgeEl.textContent = `${currentNextAltPositionIndex + 1}/${alternatives.length}`;
+                }
+                if (nextPosLabelEl && chosenShape) {
+                    nextPosLabelEl.textContent = chosenShape.label || `Posição ${currentNextAltPositionIndex + 1}`;
+                }
             }
         });
     }

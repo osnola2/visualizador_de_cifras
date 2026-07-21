@@ -234,7 +234,7 @@
      * Renderiza o SVG do braço do cavaquinho (4 cordas: D-G-B-D)
      */
     function renderCavaquinhoFretboardSVG(chordName, options = {}) {
-        const shape = resolveChordShape(chordName);
+        const shape = options.shapeOverride || resolveChordShape(chordName);
         const width = options.width || 190;
         const height = options.height || 185;
         const numFrets = 4;
@@ -325,8 +325,279 @@
         return svg;
     }
 
+    const ALT_SHAPES = {
+        // Maiores
+        'C': [
+            { frets: [2, 0, 1, 2], baseFret: 1, label: '1ª Inversão (Baixo Mi)' },
+            { frets: [5, 5, 5, 5], baseFret: 5, barre: 5, label: '2ª Inversão (Casa 5)' },
+            { frets: [10, 9, 8, 10], baseFret: 8, label: 'Pos. Fundamental (Casa 8)' }
+        ],
+        'C#': [
+            { frets: [3, 1, 2, 3], baseFret: 1, label: 'Forma de E (Casa 1)' },
+            { frets: [6, 6, 6, 6], baseFret: 6, barre: 6, label: '2ª Inversão (Casa 6)' },
+            { frets: [11, 10, 9, 11], baseFret: 9, label: 'Pos. Fundamental (Casa 9)' }
+        ],
+        'Db': [
+            { frets: [3, 1, 2, 3], baseFret: 1, label: 'Forma de E (Casa 1)' },
+            { frets: [6, 6, 6, 6], baseFret: 6, barre: 6, label: '2ª Inversão (Casa 6)' },
+            { frets: [11, 10, 9, 11], baseFret: 9, label: 'Pos. Fundamental (Casa 9)' }
+        ],
+        'D': [
+            { frets: [4, 2, 3, 4], baseFret: 1, label: '1ª Inversão (Casa 2)' },
+            { frets: [0, 2, 3, 4], baseFret: 1, label: 'Fundamental Aberta' },
+            { frets: [7, 7, 7, 7], baseFret: 7, barre: 7, label: '2ª Inversão (Casa 7)' },
+            { frets: [12, 11, 10, 12], baseFret: 10, label: 'Pos. Fundamental (Casa 10)' }
+        ],
+        'Eb': [
+            { frets: [1, 0, 4, 1], baseFret: 1, label: 'Grave / Aberto' },
+            { frets: [5, 3, 4, 5], baseFret: 3, label: 'Pos. Média (Casa 3)' },
+            { frets: [8, 8, 8, 8], baseFret: 8, barre: 8, label: '2ª Inversão (Casa 8)' }
+        ],
+        'D#': [
+            { frets: [1, 0, 4, 1], baseFret: 1, label: 'Grave / Aberto' },
+            { frets: [5, 3, 4, 5], baseFret: 3, label: 'Pos. Média (Casa 3)' },
+            { frets: [8, 8, 8, 8], baseFret: 8, barre: 8, label: '2ª Inversão (Casa 8)' }
+        ],
+        'E': [
+            { frets: [2, 1, 0, 2], baseFret: 1, label: '1ª Inversão Aberta' },
+            { frets: [6, 4, 5, 6], baseFret: 4, label: 'Pos. Fundamental (Casa 4)' },
+            { frets: [9, 9, 9, 9], baseFret: 9, barre: 9, label: '2ª Inversão (Casa 9)' }
+        ],
+        'F': [
+            { frets: [3, 2, 1, 3], baseFret: 1, label: 'Pos. Fundamental (Casa 1)' },
+            { frets: [7, 5, 6, 7], baseFret: 5, label: '1ª Inversão (Casa 5)' },
+            { frets: [10, 10, 10, 10], baseFret: 10, barre: 10, label: '2ª Inversão (Casa 10)' }
+        ],
+        'F#': [
+            { frets: [4, 3, 2, 4], baseFret: 2, label: 'Pos. Fundamental (Casa 2)' },
+            { frets: [8, 6, 7, 8], baseFret: 6, label: '1ª Inversão (Casa 6)' },
+            { frets: [11, 11, 11, 11], baseFret: 11, barre: 11, label: '2ª Inversão (Casa 11)' }
+        ],
+        'Gb': [
+            { frets: [4, 3, 2, 4], baseFret: 2, label: 'Pos. Fundamental (Casa 2)' },
+            { frets: [8, 6, 7, 8], baseFret: 6, label: '1ª Inversão (Casa 6)' },
+            { frets: [11, 11, 11, 11], baseFret: 11, barre: 11, label: '2ª Inversão (Casa 11)' }
+        ],
+        'G': [
+            { frets: [5, 4, 3, 5], baseFret: 3, label: 'Pos. Fundamental (Casa 3)' },
+            { frets: [0, 0, 0, 0], baseFret: 1, label: '2ª Inversão Solta' },
+            { frets: [9, 7, 8, 9], baseFret: 7, label: '1ª Inversão (Casa 7)' },
+            { frets: [12, 12, 12, 12], baseFret: 12, barre: 12, label: '2ª Inversão (Casa 12)' }
+        ],
+        'Ab': [
+            { frets: [1, 1, 1, 1], baseFret: 1, barre: 1, label: '2ª Inversão (Casa 1)' },
+            { frets: [6, 5, 4, 6], baseFret: 4, label: 'Pos. Fundamental (Casa 4)' },
+            { frets: [10, 8, 9, 10], baseFret: 8, label: '1ª Inversão (Casa 8)' }
+        ],
+        'G#': [
+            { frets: [1, 1, 1, 1], baseFret: 1, barre: 1, label: '2ª Inversão (Casa 1)' },
+            { frets: [6, 5, 4, 6], baseFret: 4, label: 'Pos. Fundamental (Casa 4)' },
+            { frets: [10, 8, 9, 10], baseFret: 8, label: '1ª Inversão (Casa 8)' }
+        ],
+        'A': [
+            { frets: [2, 2, 2, 2], baseFret: 1, barre: 2, label: '2ª Inversão (Casa 2)' },
+            { frets: [7, 6, 5, 7], baseFret: 5, label: 'Pos. Fundamental (Casa 5)' },
+            { frets: [11, 9, 10, 11], baseFret: 9, label: '1ª Inversão (Casa 9)' }
+        ],
+        'Bb': [
+            { frets: [3, 3, 3, 3], baseFret: 3, barre: 3, label: '2ª Inversão (Casa 3)' },
+            { frets: [8, 7, 6, 8], baseFret: 6, label: 'Pos. Fundamental (Casa 6)' },
+            { frets: [12, 10, 11, 12], baseFret: 10, label: '1ª Inversão (Casa 10)' }
+        ],
+        'A#': [
+            { frets: [3, 3, 3, 3], baseFret: 3, barre: 3, label: '2ª Inversão (Casa 3)' },
+            { frets: [8, 7, 6, 8], baseFret: 6, label: 'Pos. Fundamental (Casa 6)' },
+            { frets: [12, 10, 11, 12], baseFret: 10, label: '1ª Inversão (Casa 10)' }
+        ],
+        'B': [
+            { frets: [4, 4, 4, 4], baseFret: 4, barre: 4, label: '2ª Inversão (Casa 4)' },
+            { frets: [9, 8, 7, 9], baseFret: 7, label: 'Pos. Fundamental (Casa 7)' },
+            { frets: [1, 2, 0, 1], baseFret: 1, label: '1ª Inversão Aberta' }
+        ],
+
+        // Menores
+        'Cm': [
+            { frets: [1, 0, 1, 1], baseFret: 1, label: '1ª Inversão (Casa 1)' },
+            { frets: [5, 5, 4, 5], baseFret: 4, label: '2ª Inversão (Casa 4)' },
+            { frets: [10, 8, 8, 10], baseFret: 8, label: 'Pos. Fundamental (Casa 8)' }
+        ],
+        'C#m': [
+            { frets: [2, 1, 2, 2], baseFret: 1, label: 'Pos. Grave (Casa 1)' },
+            { frets: [6, 6, 5, 6], baseFret: 5, label: '2ª Inversão (Casa 5)' },
+            { frets: [11, 9, 9, 11], baseFret: 9, label: 'Pos. Fundamental (Casa 9)' }
+        ],
+        'Dbm': [
+            { frets: [2, 1, 2, 2], baseFret: 1, label: 'Pos. Grave (Casa 1)' },
+            { frets: [6, 6, 5, 6], baseFret: 5, label: '2ª Inversão (Casa 5)' },
+            { frets: [11, 9, 9, 11], baseFret: 9, label: 'Pos. Fundamental (Casa 9)' }
+        ],
+        'Dm': [
+            { frets: [3, 2, 3, 3], baseFret: 1, label: 'Pos. Fundamental (Casa 2)' },
+            { frets: [0, 2, 3, 3], baseFret: 1, label: 'Fundamental Aberta' },
+            { frets: [7, 7, 6, 7], baseFret: 6, label: '2ª Inversão (Casa 6)' },
+            { frets: [12, 10, 10, 12], baseFret: 10, label: 'Pos. Fundamental (Casa 10)' }
+        ],
+        'Ebm': [
+            { frets: [4, 3, 4, 4], baseFret: 3, label: 'Pos. Fundamental (Casa 3)' },
+            { frets: [8, 8, 7, 8], baseFret: 7, label: '2ª Inversão (Casa 7)' },
+            { frets: [1, 3, 4, 2], baseFret: 1, label: 'Pos. Grave Alternativa' }
+        ],
+        'D#m': [
+            { frets: [4, 3, 4, 4], baseFret: 3, label: 'Pos. Fundamental (Casa 3)' },
+            { frets: [8, 8, 7, 8], baseFret: 7, label: '2ª Inversão (Casa 7)' },
+            { frets: [1, 3, 4, 2], baseFret: 1, label: 'Pos. Grave Alternativa' }
+        ],
+        'Em': [
+            { frets: [2, 0, 0, 2], baseFret: 1, label: '1ª Inversão Aberta' },
+            { frets: [5, 4, 5, 5], baseFret: 4, label: 'Pos. Fundamental (Casa 4)' },
+            { frets: [9, 9, 8, 9], baseFret: 8, label: '2ª Inversão (Casa 8)' }
+        ],
+        'Fm': [
+            { frets: [3, 1, 1, 3], baseFret: 1, label: 'Pos. Fundamental (Casa 1)' },
+            { frets: [6, 5, 6, 6], baseFret: 5, label: '1ª Inversão (Casa 5)' },
+            { frets: [10, 10, 9, 10], baseFret: 9, label: '2ª Inversão (Casa 9)' }
+        ],
+        'F#m': [
+            { frets: [4, 2, 2, 4], baseFret: 2, label: 'Pos. Fundamental (Casa 2)' },
+            { frets: [7, 6, 7, 7], baseFret: 6, label: '1ª Inversão (Casa 6)' },
+            { frets: [11, 11, 10, 11], baseFret: 10, label: '2ª Inversão (Casa 10)' }
+        ],
+        'Gbm': [
+            { frets: [4, 2, 2, 4], baseFret: 2, label: 'Pos. Fundamental (Casa 2)' },
+            { frets: [7, 6, 7, 7], baseFret: 6, label: '1ª Inversão (Casa 6)' },
+            { frets: [11, 11, 10, 11], baseFret: 10, label: '2ª Inversão (Casa 10)' }
+        ],
+        'Gm': [
+            { frets: [5, 3, 3, 5], baseFret: 3, label: 'Pos. Fundamental (Casa 3)' },
+            { frets: [0, 3, 3, 5], baseFret: 3, label: 'Fundamental com Ré Solto' },
+            { frets: [8, 7, 8, 8], baseFret: 7, label: '1ª Inversão (Casa 7)' },
+            { frets: [12, 12, 11, 12], baseFret: 11, label: '2ª Inversão (Casa 11)' }
+        ],
+        'G#m': [
+            { frets: [1, 4, 4, 1], baseFret: 1, label: 'Pos. Grave (Casa 1)' },
+            { frets: [6, 4, 4, 6], baseFret: 4, label: 'Pos. Fundamental (Casa 4)' },
+            { frets: [9, 8, 9, 9], baseFret: 8, label: '1ª Inversão (Casa 8)' }
+        ],
+        'Abm': [
+            { frets: [1, 4, 4, 1], baseFret: 1, label: 'Pos. Grave (Casa 1)' },
+            { frets: [6, 4, 4, 6], baseFret: 4, label: 'Pos. Fundamental (Casa 4)' },
+            { frets: [9, 8, 9, 9], baseFret: 8, label: '1ª Inversão (Casa 8)' }
+        ],
+        'Am': [
+            { frets: [2, 2, 1, 2], baseFret: 1, label: '2ª Inversão (Casa 1)' },
+            { frets: [7, 5, 5, 7], baseFret: 5, label: 'Pos. Fundamental (Casa 5)' },
+            { frets: [10, 9, 10, 10], baseFret: 9, label: '1ª Inversão (Casa 9)' }
+        ],
+        'Bbm': [
+            { frets: [3, 3, 2, 3], baseFret: 2, label: '2ª Inversão (Casa 2)' },
+            { frets: [8, 6, 6, 8], baseFret: 6, label: 'Pos. Fundamental (Casa 6)' },
+            { frets: [11, 10, 11, 11], baseFret: 10, label: '1ª Inversão (Casa 10)' }
+        ],
+        'A#m': [
+            { frets: [3, 3, 2, 3], baseFret: 2, label: '2ª Inversão (Casa 2)' },
+            { frets: [8, 6, 6, 8], baseFret: 6, label: 'Pos. Fundamental (Casa 6)' },
+            { frets: [11, 10, 11, 11], baseFret: 10, label: '1ª Inversão (Casa 10)' }
+        ],
+        'Bm': [
+            { frets: [4, 4, 3, 4], baseFret: 2, label: '2ª Inversão (Casa 3)' },
+            { frets: [9, 7, 7, 9], baseFret: 7, label: 'Pos. Fundamental (Casa 7)' },
+            { frets: [12, 11, 12, 12], baseFret: 11, label: '1ª Inversão (Casa 11)' }
+        ],
+
+        // Sétimas e Sétimas Maiores
+        'C7M': [
+            { frets: [5, 4, 5, 5], baseFret: 3, label: 'Pos. na 3ª Casa' },
+            { frets: [2, 0, 0, 2], baseFret: 1, label: 'Pos. Aberta (sem Tônica)' },
+            { frets: [9, 9, 8, 10], baseFret: 8, label: 'Pos. Aguda (Casa 8)' }
+        ],
+        'G7M': [
+            { frets: [5, 4, 3, 4], baseFret: 3, label: 'Pos. na 3ª Casa' },
+            { frets: [0, 0, 0, 4], baseFret: 1, label: 'Pos. com Cordas Soltas' },
+            { frets: [9, 7, 7, 9], baseFret: 7, label: 'Pos. Aguda (Casa 7)' }
+        ],
+        'D7M': [
+            { frets: [0, 2, 2, 4], baseFret: 1, label: 'Pos. Aberta (Casa 1)' },
+            { frets: [4, 6, 6, 7], baseFret: 4, label: 'Pos. na 4ª Casa' }
+        ],
+        'F7M': [
+            { frets: [3, 2, 1, 2], baseFret: 1, label: 'Pos. Fundamental (Casa 1)' },
+            { frets: [7, 5, 5, 7], baseFret: 5, label: 'Pos. na 5ª Casa' }
+        ],
+        'C7': [
+            { frets: [2, 3, 1, 2], baseFret: 1, label: 'Pos. Básica (Casa 1)' },
+            { frets: [5, 5, 5, 6], baseFret: 5, label: 'Pos. na 5ª Casa' },
+            { frets: [8, 9, 8, 10], baseFret: 8, label: 'Pos. na 8ª Casa' }
+        ],
+        'D7': [
+            { frets: [0, 2, 1, 4], baseFret: 1, label: 'Pos. Aberta (Casa 1)' },
+            { frets: [4, 5, 3, 4], baseFret: 3, label: 'Pos. na 3ª Casa' },
+            { frets: [7, 7, 7, 8], baseFret: 7, label: 'Pos. na 7ª Casa' }
+        ],
+        'G7': [
+            { frets: [0, 0, 0, 3], baseFret: 1, label: 'Pos. Aberta (Casa 1)' },
+            { frets: [3, 4, 3, 5], baseFret: 3, label: 'Pos. na 3ª Casa' },
+            { frets: [5, 7, 6, 7], baseFret: 5, label: 'Pos. na 5ª Casa' }
+        ],
+        'A7': [
+            { frets: [2, 0, 2, 2], baseFret: 1, label: 'Pos. Aberta (Casa 1)' },
+            { frets: [5, 6, 5, 7], baseFret: 5, label: 'Pos. na 5ª Casa' },
+            { frets: [7, 9, 8, 9], baseFret: 7, label: 'Pos. na 7ª Casa' }
+        ],
+        'E7': [
+            { frets: [0, 1, 0, 2], baseFret: 1, label: 'Pos. Aberta (Casa 1)' },
+            { frets: [6, 7, 5, 6], baseFret: 5, label: 'Pos. na 5ª Casa' },
+            { frets: [9, 9, 9, 10], baseFret: 9, label: 'Pos. na 9ª Casa' }
+        ],
+        'B7': [
+            { frets: [4, 2, 4, 4], baseFret: 2, label: 'Pos. na 2ª Casa' },
+            { frets: [7, 8, 7, 9], baseFret: 7, label: 'Pos. na 7ª Casa' }
+        ],
+        'Gm7': [
+            { frets: [5, 3, 3, 5], baseFret: 3, label: 'Pos. na 3ª Casa' },
+            { frets: [3, 3, 3, 3], baseFret: 3, barre: 3, label: 'Pestana na 3ª Casa' },
+            { frets: [0, 3, 3, 3], baseFret: 1, label: 'Com Ré Solto' }
+        ],
+        'Dm7': [
+            { frets: [0, 2, 1, 3], baseFret: 1, label: 'Pos. Aberta (Casa 1)' },
+            { frets: [3, 5, 3, 5], baseFret: 3, label: 'Pos. na 3ª Casa' }
+        ],
+        'Am7': [
+            { frets: [2, 0, 1, 2], baseFret: 1, label: 'Pos. Aberta (Casa 1)' },
+            { frets: [5, 5, 5, 7], baseFret: 5, label: 'Pos. na 5ª Casa' }
+        ]
+    };
+
+    function getAlternativeShapes(chordName) {
+        if (!chordName || chordName === '---') return [];
+        const baseChord = chordName.includes('/') ? chordName.split('/')[0] : chordName;
+        
+        let found = ALT_SHAPES[baseChord];
+        if (!found) {
+            const rootMatch = baseChord.match(/^[A-G][#b]?/);
+            if (rootMatch) {
+                const root = rootMatch[0];
+                const enharmonicMap = { 'Db': 'C#', 'Eb': 'D#', 'Gb': 'F#', 'Ab': 'G#', 'Bb': 'A#', 'C#': 'Db', 'D#': 'Eb', 'F#': 'Gb', 'G#': 'Ab', 'A#': 'Bb' };
+                const altRoot = enharmonicMap[root] || root;
+                const suffix = baseChord.slice(root.length);
+                found = ALT_SHAPES[root + suffix] || ALT_SHAPES[altRoot + suffix];
+            }
+        }
+
+        const primary = resolveChordShape(chordName);
+        if (!found) {
+            return primary ? [Object.assign({}, primary, { label: 'Posição Padrão' })] : [];
+        }
+
+        return found.map((item, index) => {
+            return Object.assign({}, item, {
+                label: item.label || `Posição ${index + 1}`
+            });
+        });
+    }
+
     return {
         renderCavaquinhoFretboardSVG: renderCavaquinhoFretboardSVG,
+        getAlternativeShapes: getAlternativeShapes,
         CHORD_SHAPES: CHORD_SHAPES
     };
 });
