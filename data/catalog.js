@@ -22,6 +22,13 @@ const SONGS_CATALOG = [
         "chordsCount": 27
     },
     {
+        "id": "AOrdemESamba",
+        "title": "A Ordem é Samba",
+        "artist": "Ney Matogrosso",
+        "composer": "Jackson Pandeiro / Severino Ramos Betancourt",
+        "chordsCount": 5
+    },
+    {
         "id": "ATerceiraMargemDoRio",
         "title": "A Terceira Margem do Rio",
         "artist": "Caetano Veloso",
@@ -344,6 +351,13 @@ const SONGS_CATALOG = [
         "chordsCount": 3
     },
     {
+        "id": "HomemComH",
+        "title": "Homem com H",
+        "artist": "Ney Matogrosso",
+        "composer": "Antonio Barros",
+        "chordsCount": 9
+    },
+    {
         "id": "HotelDasEstrelas",
         "title": "Hotel Das Estrelas",
         "artist": "Jards Macalé",
@@ -363,6 +377,13 @@ const SONGS_CATALOG = [
         "artist": "Luiza Lian",
         "composer": "Luiza Lian / Leda Cartum",
         "chordsCount": 6
+    },
+    {
+        "id": "Interesse",
+        "title": "Interesse",
+        "artist": "Ney Matogrosso",
+        "composer": "Suely Mesquita / Pedro Luis",
+        "chordsCount": 5
     },
     {
         "id": "ItAintMeBabe",
@@ -764,6 +785,13 @@ const SONGS_CATALOG = [
         "chordsCount": 7
     },
     {
+        "id": "SangueLatino",
+        "title": "Sangue Latino",
+        "artist": "Ney Matogrosso",
+        "composer": "João Ricardo / Paulinho Mendonça",
+        "chordsCount": 4
+    },
+    {
         "id": "SantoDeCasa",
         "title": "Santo de Casa",
         "artist": "Itamar Assumpção",
@@ -881,6 +909,13 @@ const SONGS_CATALOG = [
         "artist": "Lô Borges",
         "composer": "Márcio Borges / Lô Borges",
         "chordsCount": 19
+    },
+    {
+        "id": "UrubuMalandro",
+        "title": "Urubu Malandro",
+        "artist": "Ney Matogrosso",
+        "composer": "Braguinha / Lourival Carvalho",
+        "chordsCount": 3
     },
     {
         "id": "ValeQuantoPesa",

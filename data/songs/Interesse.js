@@ -1,0 +1,107 @@
+window.SONG_DATA = {
+    "title": "Interesse",
+    "artist": "Ney Matogrosso",
+    "composer": "Suely Mesquita / Pedro Luis",
+    "lyricsHtml": "\n<span class=\"lyric-line\">(Suely Mesquita e Pedro Luís) </span>\n\n\n<span class=\"chord\" data-chord=\"Dm7\">Dm7</span>\n<span class=\"lyric-line\">Acendo uma vela pra Deus </span>\n            <span class=\"chord\" data-chord=\"Am7\">Am7</span>\n<span class=\"lyric-line\">outra pro diabo </span>\n    <span class=\"chord\" data-chord=\"Dm7\">Dm7</span>\n<span class=\"lyric-line\">agradeço,</span>\n                <span class=\"chord\" data-chord=\"C\">C</span>               <span class=\"chord\" data-chord=\"Dm7\">Dm7</span>    \n<span class=\"lyric-line\">você não se interessa mais por mim </span>\n<span class=\"chord\" data-chord=\"Dm7\">Dm7</span>\n<span class=\"lyric-line\">posso passear no bosque       </span>\n                 <span class=\"chord\" data-chord=\"Am7\">Am7</span> \n<span class=\"lyric-line\">seu lobo não vem mais atrás </span>\n    <span class=\"chord\" data-chord=\"Dm7\">Dm7</span> \n<span class=\"lyric-line\">agradeço, </span>\n                <span class=\"chord\" data-chord=\"C\">C</span>              <span class=\"chord\" data-chord=\"Dm7\">Dm7</span>     \n<span class=\"lyric-line\">você não se interessa mais por mim </span>\n\n   <span class=\"chord\" data-chord=\"Dm7\">Dm7</span>\n<span class=\"lyric-line\">me solta, me deixa, me larga, </span>\n                   <span class=\"chord\" data-chord=\"Am7\">Am7</span>\n<span class=\"lyric-line\">tenho mais o que fazer. </span>\n    <span class=\"chord\" data-chord=\"Dm7\">Dm7</span>                      <span class=\"chord\" data-chord=\"C\">C</span>  \n<span class=\"lyric-line\">não posso ficar nessa de esperar, </span>\n    <span class=\"chord\" data-chord=\"Dm7\">Dm7</span>                     <span class=\"chord\" data-chord=\"C\">C</span>  \n<span class=\"lyric-line\">nem posso ficar nessa de querer. </span>\n  <span class=\"chord\" data-chord=\"Dm7\">Dm7</span>                      <span class=\"chord\" data-chord=\"C\">C</span>       <span class=\"chord\" data-chord=\"Dm7\">Dm7</span>\n<span class=\"lyric-line\">o gato acha o rato muito interessante</span>\n  <span class=\"chord\" data-chord=\"Dm7\">Dm7</span>                       <span class=\"chord\" data-chord=\"C\">C</span>       <span class=\"chord\" data-chord=\"Dm7\">Dm7</span>\n<span class=\"lyric-line\">a cobra acha o sapo muito interessante</span>\n    <span class=\"chord\" data-chord=\"Dm7\">Dm7</span>\n<span class=\"lyric-line\">agradeço,</span>\n                       <span class=\"chord\" data-chord=\"C\">C</span>       <span class=\"chord\" data-chord=\"Dm7\">Dm7</span>    <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">você não se interessa mais por mim </span>\n\n\n<span class=\"chord\" data-chord=\"Dm7\">Dm7</span>                      <span class=\"chord\" data-chord=\"C\">C</span>     <span class=\"chord\" data-chord=\"Dm7\">Dm7</span>    |\n<span class=\"lyric-line\">sai de cima, deixa disso de promessa  |</span>\n       <span class=\"chord\" data-chord=\"Bb\">Bb</span>                             | 2X\n<span class=\"lyric-line\">não me prende aqui                    |</span>\n       <span class=\"chord\" data-chord=\"A7\">A7</span>         <span class=\"chord\" data-chord=\"Dm7\">Dm7</span>                 |\n<span class=\"lyric-line\">que eu tô com pressa                  |</span>\n",
+    "chordData": {
+        "A7": {
+            "name": "A7",
+            "notes": [
+                "A3",
+                "C#4",
+                "E4",
+                "G4"
+            ],
+            "displayNotes": [
+                "A",
+                "C#",
+                "E",
+                "G"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "Am7": {
+            "name": "Am7",
+            "notes": [
+                "A3",
+                "C4",
+                "E4",
+                "G4"
+            ],
+            "displayNotes": [
+                "A",
+                "C",
+                "E",
+                "G"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "Bb": {
+            "name": "Bb",
+            "notes": [
+                "A#3",
+                "D4",
+                "F4"
+            ],
+            "displayNotes": [
+                "Bb",
+                "D",
+                "F"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "C": {
+            "name": "C",
+            "notes": [
+                "C3",
+                "E3",
+                "G3"
+            ],
+            "displayNotes": [
+                "C",
+                "E",
+                "G"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Dm7": {
+            "name": "Dm7",
+            "notes": [
+                "D3",
+                "F3",
+                "A3",
+                "C4"
+            ],
+            "displayNotes": [
+                "D",
+                "F",
+                "A",
+                "C"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        }
+    }
+};
