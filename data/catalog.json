@@ -98,6 +98,13 @@
         "chordsCount": 8
     },
     {
+        "id": "AteAmanha",
+        "title": "Até Amanhã",
+        "artist": "Noel Rosa",
+        "composer": "Noel Rosa",
+        "chordsCount": 13
+    },
+    {
         "id": "BackInBahia",
         "title": "Back In Bahia",
         "artist": "Gilberto Gil",
@@ -168,6 +175,13 @@
         "chordsCount": 12
     },
     {
+        "id": "CemMilReis",
+        "title": "Cem Mil Réis",
+        "artist": "Noel Rosa",
+        "composer": "Noel Rosa / Vadico",
+        "chordsCount": 18
+    },
+    {
         "id": "CerebroEletronico",
         "title": "Cérebro Eletrônico",
         "artist": "Gilberto Gil",
@@ -194,6 +208,13 @@
         "artist": "Metá Metá",
         "composer": "Kiko Dinucci",
         "chordsCount": 4
+    },
+    {
+        "id": "ComQueRoupa",
+        "title": "Com que roupa?",
+        "artist": "Noel Rosa",
+        "composer": "Noel Rosa",
+        "chordsCount": 34
     },
     {
         "id": "Conselheiro",
@@ -229,6 +250,13 @@
         "artist": "Elomar Figueira Melo",
         "composer": "Elomar",
         "chordsCount": 5
+    },
+    {
+        "id": "DamaDoCabare",
+        "title": "Dama do cabaré",
+        "artist": "Noel Rosa",
+        "composer": "Noel Rosa",
+        "chordsCount": 16
     },
     {
         "id": "DancaDaSolidao",
@@ -334,6 +362,13 @@
         "artist": "sessa",
         "composer": "Sessa",
         "chordsCount": 9
+    },
+    {
+        "id": "GagoApaixonado",
+        "title": "Gago apaixonado",
+        "artist": "Noel Rosa",
+        "composer": "Noel Rosa",
+        "chordsCount": 20
     },
     {
         "id": "GataMagica",
@@ -539,6 +574,13 @@
         "chordsCount": 9
     },
     {
+        "id": "MinhaViola",
+        "title": "Minha Viola",
+        "artist": "Noel Rosa",
+        "composer": "Noel Rosa",
+        "chordsCount": 13
+    },
+    {
         "id": "MovimentoDosBarcos",
         "title": "Movimento Dos Barcos",
         "artist": "Jards Macalé",
@@ -593,6 +635,13 @@
         "artist": "Gal Costa",
         "composer": "Djavan",
         "chordsCount": 18
+    },
+    {
+        "id": "OXDoProblema",
+        "title": "O 'x' do problema",
+        "artist": "Noel Rosa",
+        "composer": "Noel Rosa",
+        "chordsCount": 25
     },
     {
         "id": "OBondeSaoJanuario",
@@ -665,6 +714,13 @@
         "chordsCount": 6
     },
     {
+        "id": "PelaDecimaVez",
+        "title": "Pela décima vez",
+        "artist": "Noel Rosa",
+        "composer": "Noel Rosa",
+        "chordsCount": 27
+    },
+    {
         "id": "PeralticeDeMenino",
         "title": "Peraltice de menino",
         "artist": "Lello Di Sarno",
@@ -677,6 +733,13 @@
         "artist": "Alceu Valença",
         "composer": "Geraldo Azevedo / Jorge De Altinho / Moraes Moreira / Francisco Agra",
         "chordsCount": 11
+    },
+    {
+        "id": "Picilone",
+        "title": "Picilone",
+        "artist": "Noel Rosa",
+        "composer": "Noel Rosa",
+        "chordsCount": 13
     },
     {
         "id": "Poema",
@@ -854,6 +917,13 @@
         "chordsCount": 13
     },
     {
+        "id": "TarzanOFilhoDoAlfaiate",
+        "title": "Tarzan (o filho do alfaiate)",
+        "artist": "Noel Rosa",
+        "composer": "Noel Rosa / Vadico",
+        "chordsCount": 20
+    },
+    {
         "id": "Tecoteco",
         "title": "Teco-teco",
         "artist": "Milton Villela e de Pereira Costa",
@@ -889,6 +959,13 @@
         "chordsCount": 8
     },
     {
+        "id": "TristeCuica",
+        "title": "Triste Cuíca",
+        "artist": "Noel Rosa",
+        "composer": "Noel Rosa / Herve Cordovil",
+        "chordsCount": 16
+    },
+    {
         "id": "TudoQueVocePodiaSer",
         "title": "Tudo Que Você Podia Ser",
         "artist": "Milton Nascimento",
@@ -897,10 +974,10 @@
     },
     {
         "id": "UltimoDesejo",
-        "title": "Último desejo",
+        "title": "Último Desejo",
         "artist": "Noel Rosa",
         "composer": "Noel Rosa",
-        "chordsCount": 15
+        "chordsCount": 26
     },
     {
         "id": "UmGirassolDaCorDeSeuCabelo",
@@ -985,6 +1062,13 @@
         "artist": "Ataulfo Alves",
         "composer": "Ataulfo Alves/Carlos Imperial",
         "chordsCount": 8
+    },
+    {
+        "id": "VoceSoMente",
+        "title": "Você Só... Mente",
+        "artist": "Noel Rosa",
+        "composer": "Noel Rosa / Hélio Rosa",
+        "chordsCount": 11
     },
     {
         "id": "VolverALos17",

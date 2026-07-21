@@ -99,6 +99,13 @@ const SONGS_CATALOG = [
         "chordsCount": 8
     },
     {
+        "id": "AteAmanha",
+        "title": "Até Amanhã",
+        "artist": "Noel Rosa",
+        "composer": "Noel Rosa",
+        "chordsCount": 13
+    },
+    {
         "id": "BackInBahia",
         "title": "Back In Bahia",
         "artist": "Gilberto Gil",
@@ -169,6 +176,13 @@ const SONGS_CATALOG = [
         "chordsCount": 12
     },
     {
+        "id": "CemMilReis",
+        "title": "Cem Mil Réis",
+        "artist": "Noel Rosa",
+        "composer": "Noel Rosa / Vadico",
+        "chordsCount": 18
+    },
+    {
         "id": "CerebroEletronico",
         "title": "Cérebro Eletrônico",
         "artist": "Gilberto Gil",
@@ -195,6 +209,13 @@ const SONGS_CATALOG = [
         "artist": "Metá Metá",
         "composer": "Kiko Dinucci",
         "chordsCount": 4
+    },
+    {
+        "id": "ComQueRoupa",
+        "title": "Com que roupa?",
+        "artist": "Noel Rosa",
+        "composer": "Noel Rosa",
+        "chordsCount": 34
     },
     {
         "id": "Conselheiro",
@@ -230,6 +251,13 @@ const SONGS_CATALOG = [
         "artist": "Elomar Figueira Melo",
         "composer": "Elomar",
         "chordsCount": 5
+    },
+    {
+        "id": "DamaDoCabare",
+        "title": "Dama do cabaré",
+        "artist": "Noel Rosa",
+        "composer": "Noel Rosa",
+        "chordsCount": 16
     },
     {
         "id": "DancaDaSolidao",
@@ -335,6 +363,13 @@ const SONGS_CATALOG = [
         "artist": "sessa",
         "composer": "Sessa",
         "chordsCount": 9
+    },
+    {
+        "id": "GagoApaixonado",
+        "title": "Gago apaixonado",
+        "artist": "Noel Rosa",
+        "composer": "Noel Rosa",
+        "chordsCount": 20
     },
     {
         "id": "GataMagica",
@@ -540,6 +575,13 @@ const SONGS_CATALOG = [
         "chordsCount": 9
     },
     {
+        "id": "MinhaViola",
+        "title": "Minha Viola",
+        "artist": "Noel Rosa",
+        "composer": "Noel Rosa",
+        "chordsCount": 13
+    },
+    {
         "id": "MovimentoDosBarcos",
         "title": "Movimento Dos Barcos",
         "artist": "Jards Macalé",
@@ -594,6 +636,13 @@ const SONGS_CATALOG = [
         "artist": "Gal Costa",
         "composer": "Djavan",
         "chordsCount": 18
+    },
+    {
+        "id": "OXDoProblema",
+        "title": "O 'x' do problema",
+        "artist": "Noel Rosa",
+        "composer": "Noel Rosa",
+        "chordsCount": 25
     },
     {
         "id": "OBondeSaoJanuario",
@@ -666,6 +715,13 @@ const SONGS_CATALOG = [
         "chordsCount": 6
     },
     {
+        "id": "PelaDecimaVez",
+        "title": "Pela décima vez",
+        "artist": "Noel Rosa",
+        "composer": "Noel Rosa",
+        "chordsCount": 27
+    },
+    {
         "id": "PeralticeDeMenino",
         "title": "Peraltice de menino",
         "artist": "Lello Di Sarno",
@@ -678,6 +734,13 @@ const SONGS_CATALOG = [
         "artist": "Alceu Valença",
         "composer": "Geraldo Azevedo / Jorge De Altinho / Moraes Moreira / Francisco Agra",
         "chordsCount": 11
+    },
+    {
+        "id": "Picilone",
+        "title": "Picilone",
+        "artist": "Noel Rosa",
+        "composer": "Noel Rosa",
+        "chordsCount": 13
     },
     {
         "id": "Poema",
@@ -855,6 +918,13 @@ const SONGS_CATALOG = [
         "chordsCount": 13
     },
     {
+        "id": "TarzanOFilhoDoAlfaiate",
+        "title": "Tarzan (o filho do alfaiate)",
+        "artist": "Noel Rosa",
+        "composer": "Noel Rosa / Vadico",
+        "chordsCount": 20
+    },
+    {
         "id": "Tecoteco",
         "title": "Teco-teco",
         "artist": "Milton Villela e de Pereira Costa",
@@ -890,6 +960,13 @@ const SONGS_CATALOG = [
         "chordsCount": 8
     },
     {
+        "id": "TristeCuica",
+        "title": "Triste Cuíca",
+        "artist": "Noel Rosa",
+        "composer": "Noel Rosa / Herve Cordovil",
+        "chordsCount": 16
+    },
+    {
         "id": "TudoQueVocePodiaSer",
         "title": "Tudo Que Você Podia Ser",
         "artist": "Milton Nascimento",
@@ -898,10 +975,10 @@ const SONGS_CATALOG = [
     },
     {
         "id": "UltimoDesejo",
-        "title": "Último desejo",
+        "title": "Último Desejo",
         "artist": "Noel Rosa",
         "composer": "Noel Rosa",
-        "chordsCount": 15
+        "chordsCount": 26
     },
     {
         "id": "UmGirassolDaCorDeSeuCabelo",
@@ -986,6 +1063,13 @@ const SONGS_CATALOG = [
         "artist": "Ataulfo Alves",
         "composer": "Ataulfo Alves/Carlos Imperial",
         "chordsCount": 8
+    },
+    {
+        "id": "VoceSoMente",
+        "title": "Você Só... Mente",
+        "artist": "Noel Rosa",
+        "composer": "Noel Rosa / Hélio Rosa",
+        "chordsCount": 11
     },
     {
         "id": "VolverALos17",

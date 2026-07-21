@@ -1,0 +1,233 @@
+{
+    "title": "Você Só... Mente",
+    "artist": "Noel Rosa",
+    "composer": "Noel Rosa / Hélio Rosa",
+    "lyricsHtml": "\n <span class=\"chord\" data-chord=\"D\">D</span>              <span class=\"chord\" data-chord=\"Am6/C\">Am6/C</span> <span class=\"chord\" data-chord=\"B7\">B7</span>\n<span class=\"lyric-line\">Não espero mais você</span>\n<span class=\"chord\" data-chord=\"E7\">E7</span>\n<span class=\"lyric-line\">Pois você não aparece</span>\n<span class=\"chord\" data-chord=\"B7\">B7</span>\n<span class=\"lyric-line\">Creio que você se esquece</span>\n<span class=\"chord\" data-chord=\"E7\">E7</span>                    <span class=\"chord\" data-chord=\"A7\">A7</span>  <span class=\"chord\" data-chord=\"A7(5+)\">A7(5+)</span>\n<span class=\"lyric-line\">Das promessas que me faz</span>\n\n<span class=\"chord\" data-chord=\"D\">D</span>                <span class=\"chord\" data-chord=\"Am6/C\">Am6/C</span>  <span class=\"chord\" data-chord=\"B7\">B7</span>\n<span class=\"lyric-line\">E depois vem dar desculpas</span>\n<span class=\"chord\" data-chord=\"E7\">E7</span>\n<span class=\"lyric-line\">Inocentes e banais</span>\n<span class=\"chord\" data-chord=\"B7\">B7</span>\n<span class=\"lyric-line\">É porque você bem sabe</span>\n                <span class=\"chord\" data-chord=\"E7\">E7</span>\n<span class=\"lyric-line\">Que em você desculpo</span>\n                <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">Muitas coisas mais</span>\n\n<span class=\"chord\" data-chord=\"D7\">D7</span>\n<span class=\"lyric-line\">    O que sei somente</span>\n\n<span class=\"lyric-line\">É que você é um ente</span>\n    <span class=\"chord\" data-chord=\"G\">G</span>                 <span class=\"chord\" data-chord=\"Gm\">Gm</span>\n<span class=\"lyric-line\">Que mente inconscientemente</span>\n <span class=\"chord\" data-chord=\"D\">D</span>    <span class=\"chord\" data-chord=\"C7\">C7</span>  <span class=\"chord\" data-chord=\"B7\">B7</span>\n<span class=\"lyric-line\">Mas finalmente</span>\n <span class=\"chord\" data-chord=\"E7\">E7</span>\n<span class=\"lyric-line\">Não sei porquê</span>\n             <span class=\"chord\" data-chord=\"Gm6\">Gm6</span>\n<span class=\"lyric-line\">Eu gosto imensamente</span>\n<span class=\"chord\" data-chord=\"A7\">A7</span>   <span class=\"chord\" data-chord=\"D\">D</span>  <span class=\"chord\" data-chord=\"A7(5+)\">A7(5+)</span>\n<span class=\"lyric-line\">De você</span>\n\n<span class=\"chord\" data-chord=\"D7\">D7</span>      <span class=\"chord\" data-chord=\"Am6/C\">Am6/C</span>  <span class=\"chord\" data-chord=\"B7\">B7</span>   <span class=\"chord\" data-chord=\"E7\">E7</span>\n<span class=\"lyric-line\">E Invariavelmente, sem ter o menor motivo</span>\n<span class=\"chord\" data-chord=\"B7\">B7</span>\n<span class=\"lyric-line\">Em um tom de voz altivo</span>\n<span class=\"chord\" data-chord=\"E7\">E7</span>\n<span class=\"lyric-line\">Você quando fala mente</span>\n<span class=\"chord\" data-chord=\"D\">D</span>             <span class=\"chord\" data-chord=\"Am6/C\">Am6/C</span>  <span class=\"chord\" data-chord=\"B7\">B7</span>\n<span class=\"lyric-line\">Mesmo involuntariamente</span>\n<span class=\"chord\" data-chord=\"E7\">E7</span>\n<span class=\"lyric-line\">Faço cara de contente</span>\n<span class=\"chord\" data-chord=\"B7\">B7</span>\n<span class=\"lyric-line\">Pois sua maior mentira</span>\n          <span class=\"chord\" data-chord=\"E7\">E7</span>                 <span class=\"chord\" data-chord=\"A7\">A7</span>  <span class=\"chord\" data-chord=\"A7(5+)\">A7(5+)</span>\n<span class=\"lyric-line\">É dizer à gente que você não mente</span>\n\n <span class=\"chord\" data-chord=\"D\">D</span>    <span class=\"chord\" data-chord=\"C7\">C7</span>  <span class=\"chord\" data-chord=\"B7\">B7</span>\n<span class=\"lyric-line\">Mas finalmente</span>\n <span class=\"chord\" data-chord=\"E7\">E7</span>\n<span class=\"lyric-line\">Não sei porquê</span>\n             <span class=\"chord\" data-chord=\"Gm6\">Gm6</span>\n<span class=\"lyric-line\">Eu gosto imensamente</span>\n<span class=\"chord\" data-chord=\"A7\">A7</span>   <span class=\"chord\" data-chord=\"D\">D</span>  <span class=\"chord\" data-chord=\"A7(5+)\">A7(5+)</span>\n<span class=\"lyric-line\">De você</span>\n",
+    "chordData": {
+        "A7": {
+            "name": "A7",
+            "notes": [
+                "A3",
+                "C#4",
+                "E4",
+                "G4"
+            ],
+            "displayNotes": [
+                "A",
+                "C#",
+                "E",
+                "G"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "A7(5+)": {
+            "name": "A7(5+)",
+            "notes": [
+                "A3",
+                "C#4",
+                "F4",
+                "G4"
+            ],
+            "displayNotes": [
+                "A",
+                "C#",
+                "F",
+                "G"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "Am6/C": {
+            "name": "Am6/C",
+            "notes": [
+                "C3",
+                "A3",
+                "C4",
+                "E4",
+                "F#4"
+            ],
+            "displayNotes": [
+                "C",
+                "A",
+                "C",
+                "E",
+                "F#"
+            ],
+            "noteTypes": [
+                "bass",
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "B7": {
+            "name": "B7",
+            "notes": [
+                "B3",
+                "D#4",
+                "F#4",
+                "A4"
+            ],
+            "displayNotes": [
+                "B",
+                "D#",
+                "F#",
+                "A"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "C7": {
+            "name": "C7",
+            "notes": [
+                "C3",
+                "E3",
+                "G3",
+                "A#3"
+            ],
+            "displayNotes": [
+                "C",
+                "E",
+                "G",
+                "A#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "D": {
+            "name": "D",
+            "notes": [
+                "D3",
+                "F#3",
+                "A3"
+            ],
+            "displayNotes": [
+                "D",
+                "F#",
+                "A"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "D7": {
+            "name": "D7",
+            "notes": [
+                "D3",
+                "F#3",
+                "A3",
+                "C4"
+            ],
+            "displayNotes": [
+                "D",
+                "F#",
+                "A",
+                "C"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "E7": {
+            "name": "E7",
+            "notes": [
+                "E3",
+                "G#3",
+                "B3",
+                "D4"
+            ],
+            "displayNotes": [
+                "E",
+                "G#",
+                "B",
+                "D"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "G": {
+            "name": "G",
+            "notes": [
+                "G3",
+                "B3",
+                "D4"
+            ],
+            "displayNotes": [
+                "G",
+                "B",
+                "D"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Gm": {
+            "name": "Gm",
+            "notes": [
+                "G3",
+                "A#3",
+                "D4"
+            ],
+            "displayNotes": [
+                "G",
+                "A#",
+                "D"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Gm6": {
+            "name": "Gm6",
+            "notes": [
+                "G3",
+                "A#3",
+                "D4",
+                "E4"
+            ],
+            "displayNotes": [
+                "G",
+                "A#",
+                "D",
+                "E"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        }
+    }
+}
