@@ -30,10 +30,19 @@
 <body>
     <div class="background-overlay"></div>
     
-    <header class="app-header">
-        <div class="header-left" style="display: flex; align-items: center; gap: 12px;">
+    <header class="app-header" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+        <div class="header-left" style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
             <a href="index.html" class="glass-btn" style="color: var(--primary); text-decoration: none; font-size: 0.95rem; font-weight: 700; display: inline-flex; align-items: center; gap: 6px; padding: 0.45rem 1rem;">⬅ Voltar ao Hub</a>
             <a id="btn-to-piano" href="viewer.html" class="switch-mode-btn">🎹 Mudar para Teclado</a>
+        </div>
+        <div class="header-center speed-control-container" style="display: flex; align-items: center;">
+            <div class="speed-control glass-panel" style="display: flex; align-items: center; gap: 6px; padding: 0.35rem 0.8rem; border-radius: 12px; border: 1px solid var(--glass-border);">
+                <label for="bpm-input" style="font-weight: 700; color: #cbd5e1;">BPM:</label>
+                <input type="number" id="bpm-input" min="40" max="240" step="1" value="95" style="width: 50px; background: transparent; color: white; border: 1px solid var(--glass-border); border-radius: 5px; padding: 2px 4px; text-align: center; font-weight: 700;">
+                
+                <label for="speed-slider" id="speed-label" style="margin-left: 6px; font-weight: 700; color: #cbd5e1;">Ajuste: 1.0x</label>
+                <input type="range" id="speed-slider" min="0.1" max="1.5" step="0.1" value="1.0" style="width: 80px;">
+            </div>
         </div>
     </header>
 
@@ -41,22 +50,15 @@
         <button id="toggle-guitar-btn" class="glass-btn" style="padding: 0.6rem; border-radius: 50%;" title="Ocultar/Exibir Acordes de Violão">
             <span class="icon" style="font-size: 1.2rem;">🎸</span>
         </button>
-        <div class="transposition-control glass-panel" style="display: flex; align-items: center; gap: 8px; padding: 0.35rem 0.8rem; border-radius: 12px; border: 1px solid var(--glass-border);">
+        <div class="transposition-control glass-panel" style="display: flex; align-items: center; gap: 6px; padding: 0.35rem 0.6rem; border-radius: 12px; border: 1px solid var(--glass-border);">
             <span style="font-size: 0.85rem; font-weight: 700; color: #cbd5e1;">Tom:</span>
-            <button id="transpose-down-btn" class="glass-btn" style="padding: 0.25rem 0.6rem; font-size: 0.85rem; font-weight: 700;" title="Descer meio tom (-½)">- ½</button>
-            <span id="transpose-offset-label" style="font-size: 0.9rem; font-weight: 800; color: var(--primary); min-width: 45px; text-align: center;">Original</span>
-            <button id="transpose-up-btn" class="glass-btn" style="padding: 0.25rem 0.6rem; font-size: 0.85rem; font-weight: 700;" title="Subir meio tom (+½)">+ ½</button>
+            <button id="transpose-down-btn" class="glass-btn" style="padding: 0.25rem 0.5rem; font-size: 0.85rem; font-weight: 700;" title="Descer meio tom (-½)">- ½</button>
+            <span id="transpose-offset-label" style="font-size: 0.85rem; font-weight: 800; color: var(--primary); min-width: 40px; text-align: center;">Original</span>
+            <button id="transpose-up-btn" class="glass-btn" style="padding: 0.25rem 0.5rem; font-size: 0.85rem; font-weight: 700;" title="Subir meio tom (+½)">+ ½</button>
         </div>
         <button id="autoscroll-btn" class="glass-btn">
             <span class="icon">▶</span> Auto-scroll
         </button>
-        <div class="speed-control glass-panel">
-            <label for="bpm-input">BPM:</label>
-            <input type="number" id="bpm-input" min="40" max="240" step="1" value="95" style="width: 55px; background: transparent; color: white; border: 1px solid var(--glass-border); border-radius: 5px; padding: 2px 5px; text-align: center;">
-            
-            <label for="speed-slider" id="speed-label" style="margin-left: 10px;">Ajuste: 1.0x</label>
-            <input type="range" id="speed-slider" min="0.1" max="1.5" step="0.1" value="1.0">
-        </div>
     </div>
 
     <main class="container">

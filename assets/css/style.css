@@ -447,6 +447,12 @@ h2.song-artist {
         font-size: 0.82rem !important;
         padding: 0.38rem 0.75rem !important;
     }
+    .speed-control-container {
+        width: 100% !important;
+        display: flex !important;
+        justify-content: flex-start !important;
+        margin-top: 2px !important;
+    }
     .song-info {
         flex: 1;
         min-width: 0;
@@ -481,7 +487,7 @@ h2.song-artist {
         -webkit-backdrop-filter: blur(16px) !important;
         border: 1px solid rgba(255, 255, 255, 0.18) !important;
         border-radius: 12px !important;
-        padding: 3px 8px !important;
+        padding: 3px 6px !important;
         display: flex !important;
         flex-direction: row !important;
         flex-wrap: nowrap !important;
@@ -490,7 +496,7 @@ h2.song-artist {
         max-width: 100%;
         gap: 4px !important;
         box-shadow: 0 6px 24px rgba(0, 0, 0, 0.5) !important;
-        transform: scale(0.72) !important;
+        transform: scale(0.75) !important;
         transform-origin: top right !important;
     }
     #toggle-piano-btn,
@@ -499,6 +505,21 @@ h2.song-artist {
         font-size: 0.85rem !important;
         border-radius: 50% !important;
     }
+    .transposition-control {
+        padding: 2px 5px !important;
+        gap: 4px !important;
+    }
+    .transposition-control span {
+        font-size: 0.72rem !important;
+    }
+    .transposition-control button {
+        padding: 2px 5px !important;
+        font-size: 0.72rem !important;
+    }
+    #transpose-offset-label {
+        min-width: 35px !important;
+        font-size: 0.75rem !important;
+    }
     #autoscroll-btn {
         padding: 3px 7px !important;
         font-size: 0.7rem !important;
@@ -506,14 +527,14 @@ h2.song-artist {
         white-space: nowrap !important;
     }
     .speed-control {
-        padding: 2px 5px !important;
-        font-size: 0.68rem !important;
-        border-radius: 5px !important;
-        gap: 3px !important;
+        padding: 3px 8px !important;
+        font-size: 0.72rem !important;
+        border-radius: 8px !important;
+        gap: 4px !important;
     }
     #bpm-input {
-        width: 38px !important;
-        font-size: 0.7rem !important;
+        width: 42px !important;
+        font-size: 0.72rem !important;
         padding: 1px !important;
     }
     .piano-panel {
