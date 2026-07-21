@@ -523,4 +523,141 @@ function initViewer() {
         });
     }
 
+    // Live Transposition Module (-½ and +½ buttons)
+    const transposeUpBtn = document.getElementById('transpose-up-btn');
+    const transposeDownBtn = document.getElementById('transpose-down-btn');
+    const transposeOffsetLabel = document.getElementById('transpose-offset-label');
+    let currentTransposeOffset = 0;
+
+    function transposeNote(noteStr, semitones, preferFlats = false) {
+        const SHARPS = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
+        const FLATS  = ['C', 'Db', 'D', 'Eb', 'E', 'F', 'Gb', 'G', 'Ab', 'A', 'Bb', 'B'];
+        let idx = SHARPS.indexOf(noteStr);
+        if (idx === -1) idx = FLATS.indexOf(noteStr);
+        if (idx === -1) {
+            if (noteStr === 'Cb') idx = 11;
+            else if (noteStr === 'E#') idx = 5;
+            else if (noteStr === 'B#') idx = 0;
+            else if (noteStr === 'Fb') idx = 4;
+            else return noteStr;
+        }
+        let newIdx = (idx + semitones) % 12;
+        if (newIdx < 0) newIdx += 12;
+        return preferFlats ? FLATS[newIdx] : SHARPS[newIdx];
+    }
+
+    function transposeMidiNote(midiStr, semitones, preferFlats = false) {
+        const octave = parseInt(midiStr.slice(-1), 10);
+        if (isNaN(octave)) return transposeNote(midiStr, semitones, preferFlats);
+        const name = midiStr.slice(0, -1);
+        const SHARPS = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
+        const FLATS  = ['C', 'Db', 'D', 'Eb', 'E', 'F', 'Gb', 'G', 'Ab', 'A', 'Bb', 'B'];
+        let idx = SHARPS.indexOf(name);
+        if (idx === -1) idx = FLATS.indexOf(name);
+        if (idx === -1) return midiStr;
+        
+        let totalMidi = (octave * 12) + idx + semitones;
+        let newOctave = Math.floor(totalMidi / 12);
+        let newIdx = totalMidi % 12;
+        if (newIdx < 0) {
+            newIdx += 12;
+            newOctave -= 1;
+        }
+        const newName = preferFlats ? FLATS[newIdx] : SHARPS[newIdx];
+        return `${newName}${newOctave}`;
+    }
+
+    function transposeChordSymbol(chordStr, semitones, preferFlats = false) {
+        if (!chordStr || chordStr.trim() === '' || chordStr === '---') return chordStr;
+        const parts = chordStr.split('/');
+        const mainPart = parts[0];
+        const bassPart = parts.length > 1 ? parts[1] : null;
+        
+        const rootMatch = mainPart.match(/^([CDEFGAB][#b]?)/);
+        if (!rootMatch) return chordStr;
+        
+        const rootNote = rootMatch[1];
+        const restOfChord = mainPart.slice(rootNote.length);
+        const newRoot = transposeNote(rootNote, semitones, preferFlats);
+        
+        let newChord = newRoot + restOfChord;
+        if (bassPart) {
+            const bassMatch = bassPart.match(/^([CDEFGAB][#b]?)/);
+            if (bassMatch) {
+                const bassNote = bassMatch[1];
+                const restOfBass = bassPart.slice(bassNote.length);
+                const newBass = transposeNote(bassNote, semitones, preferFlats);
+                newChord += '/' + newBass + restOfBass;
+            } else {
+                newChord += '/' + bassPart;
+            }
+        }
+        return newChord;
+    }
+
+    function transposeCurrentSong(step) {
+        currentTransposeOffset += step;
+        const preferFlats = currentTransposeOffset < 0;
+        
+        if (transposeOffsetLabel) {
+            if (currentTransposeOffset === 0) {
+                transposeOffsetLabel.textContent = "Original";
+            } else {
+                const sign = currentTransposeOffset > 0 ? "+" : "";
+                const halfSteps = currentTransposeOffset;
+                if (halfSteps % 2 === 0) {
+                    const tones = halfSteps / 2;
+                    transposeOffsetLabel.textContent = `${sign}${tones} ${Math.abs(tones) === 1 ? 'tom' : 'tons'}`;
+                } else {
+                    transposeOffsetLabel.textContent = `${sign}${halfSteps} st`;
+                }
+            }
+        }
+
+        const chordElementsList = document.querySelectorAll('.chord');
+        chordElementsList.forEach(el => {
+            const oldChord = el.getAttribute('data-chord') || el.textContent.trim();
+            const newChord = transposeChordSymbol(oldChord, step, preferFlats);
+            el.setAttribute('data-chord', newChord);
+            el.textContent = newChord;
+        });
+
+        if (typeof allChords !== 'undefined') {
+            allChords.forEach(item => {
+                if (item.element) {
+                    item.chordName = item.element.getAttribute('data-chord') || item.element.textContent.trim();
+                }
+            });
+        }
+
+        const newChordData = {};
+        for (const [oldName, data] of Object.entries(chordData)) {
+            const newName = transposeChordSymbol(oldName, step, preferFlats);
+            const newNotes = (data.notes || []).map(n => transposeMidiNote(n, step, preferFlats));
+            const newDisplay = (data.displayNotes || (data.notes || []).map(n => n.replace(/[0-9]/g, ''))).map(dn => transposeNote(dn, step, preferFlats));
+            newChordData[newName] = {
+                name: newName,
+                notes: newNotes,
+                displayNotes: newDisplay,
+                noteTypes: data.noteTypes || []
+            };
+        }
+        chordData = newChordData;
+
+        if (currentDisplayedChordId) {
+            const newCurrentId = transposeChordSymbol(currentDisplayedChordId, step, preferFlats);
+            const newNextId = currentNextChordId ? transposeChordSymbol(currentNextChordId, step, preferFlats) : null;
+            showChord(newCurrentId, newNextId, currentNextLyric);
+        } else if (typeof allChords !== 'undefined' && allChords.length > 0) {
+            showChord(allChords[0].chordName, null, null);
+        }
+    }
+
+    if (transposeUpBtn) {
+        transposeUpBtn.addEventListener('click', () => transposeCurrentSong(1));
+    }
+    if (transposeDownBtn) {
+        transposeDownBtn.addEventListener('click', () => transposeCurrentSong(-1));
+    }
+
 }

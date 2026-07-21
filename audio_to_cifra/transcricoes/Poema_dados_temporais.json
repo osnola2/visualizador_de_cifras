@@ -1,0 +1,2230 @@
+{
+  "titulo": "Poema",
+  "artista": "Artista Desconhecido",
+  "acordes": [
+    {
+      "chord": "C7M(9)",
+      "start": 0.0,
+      "end": 1.02,
+      "duration": 1.02
+    },
+    {
+      "chord": "C",
+      "start": 1.02,
+      "end": 5.02,
+      "duration": 4.0
+    },
+    {
+      "chord": "Dm7",
+      "start": 5.02,
+      "end": 6.78,
+      "duration": 1.76
+    },
+    {
+      "chord": "F",
+      "start": 6.78,
+      "end": 8.64,
+      "duration": 1.86
+    },
+    {
+      "chord": "C",
+      "start": 8.64,
+      "end": 12.63,
+      "duration": 3.99
+    },
+    {
+      "chord": "Dm7",
+      "start": 12.63,
+      "end": 14.68,
+      "duration": 2.05
+    },
+    {
+      "chord": "F",
+      "start": 14.68,
+      "end": 16.44,
+      "duration": 1.76
+    },
+    {
+      "chord": "C",
+      "start": 16.44,
+      "end": 18.58,
+      "duration": 2.14
+    },
+    {
+      "chord": "G",
+      "start": 18.58,
+      "end": 22.2,
+      "duration": 3.62
+    },
+    {
+      "chord": "F7M",
+      "start": 22.2,
+      "end": 24.33,
+      "duration": 2.13
+    },
+    {
+      "chord": "C",
+      "start": 24.33,
+      "end": 26.28,
+      "duration": 1.95
+    },
+    {
+      "chord": "G",
+      "start": 26.28,
+      "end": 28.05,
+      "duration": 1.77
+    },
+    {
+      "chord": "D7",
+      "start": 28.05,
+      "end": 29.91,
+      "duration": 1.86
+    },
+    {
+      "chord": "Dm7/F",
+      "start": 29.91,
+      "end": 31.86,
+      "duration": 1.95
+    },
+    {
+      "chord": "Am7",
+      "start": 31.86,
+      "end": 34.27,
+      "duration": 2.41
+    },
+    {
+      "chord": "Em/G",
+      "start": 34.27,
+      "end": 35.94,
+      "duration": 1.67
+    },
+    {
+      "chord": "F",
+      "start": 35.94,
+      "end": 37.71,
+      "duration": 1.77
+    },
+    {
+      "chord": "F7M",
+      "start": 37.71,
+      "end": 39.75,
+      "duration": 2.04
+    },
+    {
+      "chord": "Am",
+      "start": 39.75,
+      "end": 47.37,
+      "duration": 7.62
+    },
+    {
+      "chord": "C",
+      "start": 47.37,
+      "end": 51.83,
+      "duration": 4.46
+    },
+    {
+      "chord": "Dm7",
+      "start": 51.83,
+      "end": 55.17,
+      "duration": 3.34
+    },
+    {
+      "chord": "C",
+      "start": 55.17,
+      "end": 60.93,
+      "duration": 5.76
+    },
+    {
+      "chord": "F",
+      "start": 60.93,
+      "end": 62.88,
+      "duration": 1.95
+    },
+    {
+      "chord": "C",
+      "start": 62.88,
+      "end": 68.73,
+      "duration": 5.85
+    },
+    {
+      "chord": "F7M",
+      "start": 68.73,
+      "end": 70.59,
+      "duration": 1.86
+    },
+    {
+      "chord": "C",
+      "start": 70.59,
+      "end": 74.4,
+      "duration": 3.81
+    },
+    {
+      "chord": "Dm",
+      "start": 74.4,
+      "end": 78.39,
+      "duration": 3.99
+    },
+    {
+      "chord": "C",
+      "start": 78.39,
+      "end": 82.66,
+      "duration": 4.27
+    },
+    {
+      "chord": "Dm7",
+      "start": 82.66,
+      "end": 86.29,
+      "duration": 3.63
+    },
+    {
+      "chord": "F",
+      "start": 86.29,
+      "end": 88.33,
+      "duration": 2.04
+    },
+    {
+      "chord": "G",
+      "start": 88.33,
+      "end": 90.56,
+      "duration": 2.23
+    },
+    {
+      "chord": "Am",
+      "start": 90.56,
+      "end": 93.99,
+      "duration": 3.43
+    },
+    {
+      "chord": "F",
+      "start": 93.99,
+      "end": 95.94,
+      "duration": 1.95
+    },
+    {
+      "chord": "G",
+      "start": 95.94,
+      "end": 97.71,
+      "duration": 1.77
+    },
+    {
+      "chord": "Am7",
+      "start": 97.71,
+      "end": 101.8,
+      "duration": 4.09
+    },
+    {
+      "chord": "F",
+      "start": 101.8,
+      "end": 105.51,
+      "duration": 3.71
+    },
+    {
+      "chord": "Am",
+      "start": 105.51,
+      "end": 109.13,
+      "duration": 3.62
+    },
+    {
+      "chord": "F",
+      "start": 109.13,
+      "end": 113.5,
+      "duration": 4.37
+    },
+    {
+      "chord": "C",
+      "start": 113.5,
+      "end": 119.07,
+      "duration": 5.57
+    },
+    {
+      "chord": "G",
+      "start": 119.07,
+      "end": 121.02,
+      "duration": 1.95
+    },
+    {
+      "chord": "D7",
+      "start": 121.02,
+      "end": 122.88,
+      "duration": 1.86
+    },
+    {
+      "chord": "F",
+      "start": 122.88,
+      "end": 124.92,
+      "duration": 2.04
+    },
+    {
+      "chord": "C",
+      "start": 124.92,
+      "end": 126.97,
+      "duration": 2.05
+    },
+    {
+      "chord": "G",
+      "start": 126.97,
+      "end": 131.61,
+      "duration": 4.64
+    },
+    {
+      "chord": "F6/9",
+      "start": 131.61,
+      "end": 132.73,
+      "duration": 1.12
+    },
+    {
+      "chord": "C",
+      "start": 132.73,
+      "end": 138.3,
+      "duration": 5.57
+    },
+    {
+      "chord": "F7M",
+      "start": 138.3,
+      "end": 140.43,
+      "duration": 2.13
+    },
+    {
+      "chord": "C",
+      "start": 140.43,
+      "end": 142.29,
+      "duration": 1.86
+    },
+    {
+      "chord": "G",
+      "start": 142.29,
+      "end": 145.91,
+      "duration": 3.62
+    },
+    {
+      "chord": "Dm7/F",
+      "start": 145.91,
+      "end": 147.96,
+      "duration": 2.05
+    },
+    {
+      "chord": "Am7",
+      "start": 147.96,
+      "end": 149.72,
+      "duration": 1.76
+    },
+    {
+      "chord": "G6/9",
+      "start": 149.72,
+      "end": 151.95,
+      "duration": 2.23
+    },
+    {
+      "chord": "F",
+      "start": 151.95,
+      "end": 153.44,
+      "duration": 1.49
+    },
+    {
+      "chord": "F7M",
+      "start": 153.44,
+      "end": 154.74,
+      "duration": 1.3
+    },
+    {
+      "chord": "F7M(9)",
+      "start": 154.74,
+      "end": 159.85,
+      "duration": 5.11
+    },
+    {
+      "chord": "F",
+      "start": 159.85,
+      "end": 161.61,
+      "duration": 1.76
+    },
+    {
+      "chord": "G",
+      "start": 161.61,
+      "end": 163.47,
+      "duration": 1.86
+    },
+    {
+      "chord": "C",
+      "start": 163.47,
+      "end": 169.23,
+      "duration": 5.76
+    },
+    {
+      "chord": "F7M",
+      "start": 169.23,
+      "end": 171.18,
+      "duration": 1.95
+    },
+    {
+      "chord": "C",
+      "start": 171.18,
+      "end": 177.4,
+      "duration": 6.22
+    },
+    {
+      "chord": "F6/9",
+      "start": 177.4,
+      "end": 181.02,
+      "duration": 3.62
+    },
+    {
+      "chord": "G",
+      "start": 181.02,
+      "end": 186.78,
+      "duration": 5.76
+    },
+    {
+      "chord": "F",
+      "start": 186.78,
+      "end": 188.82,
+      "duration": 2.04
+    },
+    {
+      "chord": "G",
+      "start": 188.82,
+      "end": 192.35,
+      "duration": 3.53
+    },
+    {
+      "chord": "D7",
+      "start": 192.35,
+      "end": 194.49,
+      "duration": 2.14
+    },
+    {
+      "chord": "F",
+      "start": 194.49,
+      "end": 198.86,
+      "duration": 4.37
+    },
+    {
+      "chord": "Am7",
+      "start": 198.86,
+      "end": 202.2,
+      "duration": 3.34
+    },
+    {
+      "chord": "F",
+      "start": 202.2,
+      "end": 205.54,
+      "duration": 3.34
+    },
+    {
+      "chord": "Am7",
+      "start": 205.54,
+      "end": 206.84,
+      "duration": 1.3
+    },
+    {
+      "chord": "Am9",
+      "start": 206.84,
+      "end": 210.0,
+      "duration": 3.16
+    },
+    {
+      "chord": "F",
+      "start": 210.0,
+      "end": 213.9,
+      "duration": 3.9
+    },
+    {
+      "chord": "C",
+      "start": 213.9,
+      "end": 217.34,
+      "duration": 3.44
+    },
+    {
+      "chord": "C7M",
+      "start": 217.34,
+      "end": 227.56,
+      "duration": 10.22
+    },
+    {
+      "chord": "G",
+      "start": 227.56,
+      "end": 233.22,
+      "duration": 5.66
+    },
+    {
+      "chord": "C",
+      "start": 233.22,
+      "end": 238.89,
+      "duration": 5.67
+    },
+    {
+      "chord": "F",
+      "start": 238.89,
+      "end": 240.84,
+      "duration": 1.95
+    },
+    {
+      "chord": "C",
+      "start": 240.84,
+      "end": 242.97,
+      "duration": 2.13
+    },
+    {
+      "chord": "G",
+      "start": 242.97,
+      "end": 248.73,
+      "duration": 5.76
+    },
+    {
+      "chord": "C",
+      "start": 248.73,
+      "end": 253.84,
+      "duration": 5.11
+    },
+    {
+      "chord": "C6/9",
+      "start": 253.84,
+      "end": 260.34,
+      "duration": 6.5
+    },
+    {
+      "chord": "B7M",
+      "start": 260.34,
+      "end": 262.94,
+      "duration": 2.6
+    }
+  ],
+  "versos": [
+    {
+      "text": "Eu hoje tive um pesadelo E levantei atento,",
+      "start": 14.36,
+      "end": 21.04,
+      "words": [
+        {
+          "word": "Eu",
+          "start": 14.36,
+          "end": 15.76
+        },
+        {
+          "word": "hoje",
+          "start": 15.76,
+          "end": 17.16
+        },
+        {
+          "word": "tive",
+          "start": 17.16,
+          "end": 17.56
+        },
+        {
+          "word": "um",
+          "start": 17.56,
+          "end": 17.82
+        },
+        {
+          "word": "pesadelo",
+          "start": 17.82,
+          "end": 18.52
+        },
+        {
+          "word": "E",
+          "start": 18.52,
+          "end": 18.86
+        },
+        {
+          "word": "levantei",
+          "start": 18.86,
+          "end": 19.82
+        },
+        {
+          "word": "atento,",
+          "start": 19.82,
+          "end": 21.04
+        }
+      ]
+    },
+    {
+      "text": "atento",
+      "start": 21.88,
+      "end": 23.32,
+      "words": [
+        {
+          "word": "atento",
+          "start": 21.88,
+          "end": 23.32
+        }
+      ]
+    },
+    {
+      "text": "Eu acordei com medo E procurei no escuro alguém",
+      "start": 23.32,
+      "end": 27.44,
+      "words": [
+        {
+          "word": "Eu",
+          "start": 23.32,
+          "end": 24.54
+        },
+        {
+          "word": "acordei",
+          "start": 24.54,
+          "end": 25.2
+        },
+        {
+          "word": "com",
+          "start": 25.2,
+          "end": 25.42
+        },
+        {
+          "word": "medo",
+          "start": 25.42,
+          "end": 25.68
+        },
+        {
+          "word": "E",
+          "start": 25.68,
+          "end": 26.0
+        },
+        {
+          "word": "procurei",
+          "start": 26.0,
+          "end": 26.54
+        },
+        {
+          "word": "no",
+          "start": 26.54,
+          "end": 26.76
+        },
+        {
+          "word": "escuro",
+          "start": 26.76,
+          "end": 27.12
+        },
+        {
+          "word": "alguém",
+          "start": 27.12,
+          "end": 27.44
+        }
+      ]
+    },
+    {
+      "text": "com seu carinho",
+      "start": 27.44,
+      "end": 28.52,
+      "words": [
+        {
+          "word": "com",
+          "start": 27.44,
+          "end": 27.84
+        },
+        {
+          "word": "seu",
+          "start": 27.84,
+          "end": 28.12
+        },
+        {
+          "word": "carinho",
+          "start": 28.12,
+          "end": 28.52
+        }
+      ]
+    },
+    {
+      "text": "E lembrei de um tempo Porque o passado me traz",
+      "start": 28.86,
+      "end": 33.92,
+      "words": [
+        {
+          "word": "E",
+          "start": 28.86,
+          "end": 29.3
+        },
+        {
+          "word": "lembrei",
+          "start": 29.3,
+          "end": 29.8
+        },
+        {
+          "word": "de",
+          "start": 29.8,
+          "end": 29.94
+        },
+        {
+          "word": "um",
+          "start": 29.94,
+          "end": 30.2
+        },
+        {
+          "word": "tempo",
+          "start": 30.2,
+          "end": 31.06
+        },
+        {
+          "word": "Porque",
+          "start": 31.06,
+          "end": 32.28
+        },
+        {
+          "word": "o",
+          "start": 32.28,
+          "end": 32.56
+        },
+        {
+          "word": "passado",
+          "start": 32.56,
+          "end": 33.04
+        },
+        {
+          "word": "me",
+          "start": 33.04,
+          "end": 33.52
+        },
+        {
+          "word": "traz",
+          "start": 33.52,
+          "end": 33.92
+        }
+      ]
+    },
+    {
+      "text": "uma lembrança",
+      "start": 33.92,
+      "end": 34.56,
+      "words": [
+        {
+          "word": "uma",
+          "start": 33.92,
+          "end": 34.16
+        },
+        {
+          "word": "lembrança",
+          "start": 34.16,
+          "end": 34.56
+        }
+      ]
+    },
+    {
+      "text": "Do tempo que eu era criança E o medo era motivo",
+      "start": 35.14,
+      "end": 41.72,
+      "words": [
+        {
+          "word": "Do",
+          "start": 35.14,
+          "end": 35.52
+        },
+        {
+          "word": "tempo",
+          "start": 35.52,
+          "end": 36.1
+        },
+        {
+          "word": "que",
+          "start": 36.1,
+          "end": 36.48
+        },
+        {
+          "word": "eu",
+          "start": 36.48,
+          "end": 36.72
+        },
+        {
+          "word": "era",
+          "start": 36.72,
+          "end": 37.06
+        },
+        {
+          "word": "criança",
+          "start": 37.06,
+          "end": 38.3
+        },
+        {
+          "word": "E",
+          "start": 38.3,
+          "end": 40.14
+        },
+        {
+          "word": "o",
+          "start": 40.14,
+          "end": 40.4
+        },
+        {
+          "word": "medo",
+          "start": 40.4,
+          "end": 40.7
+        },
+        {
+          "word": "era",
+          "start": 40.7,
+          "end": 41.06
+        },
+        {
+          "word": "motivo",
+          "start": 41.06,
+          "end": 41.72
+        }
+      ]
+    },
+    {
+      "text": "de choro",
+      "start": 41.72,
+      "end": 42.82,
+      "words": [
+        {
+          "word": "de",
+          "start": 41.72,
+          "end": 42.16
+        },
+        {
+          "word": "choro",
+          "start": 42.16,
+          "end": 42.82
+        }
+      ]
+    },
+    {
+      "text": "Desculpa pra um abraço ou um consolo",
+      "start": 42.82,
+      "end": 47.08,
+      "words": [
+        {
+          "word": "Desculpa",
+          "start": 42.82,
+          "end": 43.74
+        },
+        {
+          "word": "pra",
+          "start": 43.74,
+          "end": 43.94
+        },
+        {
+          "word": "um",
+          "start": 43.94,
+          "end": 44.2
+        },
+        {
+          "word": "abraço",
+          "start": 44.2,
+          "end": 44.64
+        },
+        {
+          "word": "ou",
+          "start": 44.64,
+          "end": 44.9
+        },
+        {
+          "word": "um",
+          "start": 44.9,
+          "end": 45.26
+        },
+        {
+          "word": "consolo",
+          "start": 45.26,
+          "end": 47.08
+        }
+      ]
+    },
+    {
+      "text": "Hoje eu acordei com medo Mas não chorei nem reclamei",
+      "start": 62.06,
+      "end": 68.26,
+      "words": [
+        {
+          "word": "Hoje",
+          "start": 62.06,
+          "end": 63.0
+        },
+        {
+          "word": "eu",
+          "start": 63.0,
+          "end": 63.4
+        },
+        {
+          "word": "acordei",
+          "start": 63.4,
+          "end": 63.9
+        },
+        {
+          "word": "com",
+          "start": 63.9,
+          "end": 64.12
+        },
+        {
+          "word": "medo",
+          "start": 64.12,
+          "end": 64.9
+        },
+        {
+          "word": "Mas",
+          "start": 64.9,
+          "end": 65.54
+        },
+        {
+          "word": "não",
+          "start": 65.54,
+          "end": 65.84
+        },
+        {
+          "word": "chorei",
+          "start": 65.84,
+          "end": 67.22
+        },
+        {
+          "word": "nem",
+          "start": 67.22,
+          "end": 67.52
+        },
+        {
+          "word": "reclamei",
+          "start": 67.52,
+          "end": 68.26
+        }
+      ]
+    },
+    {
+      "text": "abrigo",
+      "start": 68.26,
+      "end": 70.12,
+      "words": [
+        {
+          "word": "abrigo",
+          "start": 68.26,
+          "end": 70.12
+        }
+      ]
+    },
+    {
+      "text": "Do escuro eu via o infinito sem presente,",
+      "start": 70.12,
+      "end": 74.26,
+      "words": [
+        {
+          "word": "Do",
+          "start": 70.12,
+          "end": 71.04
+        },
+        {
+          "word": "escuro",
+          "start": 71.04,
+          "end": 71.54
+        },
+        {
+          "word": "eu",
+          "start": 71.54,
+          "end": 71.86
+        },
+        {
+          "word": "via",
+          "start": 71.86,
+          "end": 72.02
+        },
+        {
+          "word": "o",
+          "start": 72.02,
+          "end": 72.48
+        },
+        {
+          "word": "infinito",
+          "start": 72.48,
+          "end": 73.1
+        },
+        {
+          "word": "sem",
+          "start": 73.1,
+          "end": 73.42
+        },
+        {
+          "word": "presente,",
+          "start": 73.42,
+          "end": 74.26
+        }
+      ]
+    },
+    {
+      "text": "passado ou futuro",
+      "start": 75.14,
+      "end": 77.22,
+      "words": [
+        {
+          "word": "passado",
+          "start": 75.14,
+          "end": 75.68
+        },
+        {
+          "word": "ou",
+          "start": 75.68,
+          "end": 76.06
+        },
+        {
+          "word": "futuro",
+          "start": 76.06,
+          "end": 77.22
+        }
+      ]
+    },
+    {
+      "text": "Senti um abraço forte,",
+      "start": 78.12,
+      "end": 80.28,
+      "words": [
+        {
+          "word": "Senti",
+          "start": 78.12,
+          "end": 78.94
+        },
+        {
+          "word": "um",
+          "start": 78.94,
+          "end": 79.26
+        },
+        {
+          "word": "abraço",
+          "start": 79.26,
+          "end": 79.84
+        },
+        {
+          "word": "forte,",
+          "start": 79.84,
+          "end": 80.28
+        }
+      ]
+    },
+    {
+      "text": "já não era medo Era uma coisa sua que ficou em",
+      "start": 80.36,
+      "end": 84.32,
+      "words": [
+        {
+          "word": "já",
+          "start": 80.36,
+          "end": 80.64
+        },
+        {
+          "word": "não",
+          "start": 80.64,
+          "end": 80.84
+        },
+        {
+          "word": "era",
+          "start": 80.84,
+          "end": 80.98
+        },
+        {
+          "word": "medo",
+          "start": 80.98,
+          "end": 81.62
+        },
+        {
+          "word": "Era",
+          "start": 81.62,
+          "end": 82.5
+        },
+        {
+          "word": "uma",
+          "start": 82.5,
+          "end": 82.76
+        },
+        {
+          "word": "coisa",
+          "start": 82.76,
+          "end": 83.1
+        },
+        {
+          "word": "sua",
+          "start": 83.1,
+          "end": 83.36
+        },
+        {
+          "word": "que",
+          "start": 83.36,
+          "end": 83.7
+        },
+        {
+          "word": "ficou",
+          "start": 83.7,
+          "end": 84.0
+        },
+        {
+          "word": "em",
+          "start": 84.0,
+          "end": 84.32
+        }
+      ]
+    },
+    {
+      "text": "mim",
+      "start": 84.32,
+      "end": 85.12,
+      "words": [
+        {
+          "word": "mim",
+          "start": 84.32,
+          "end": 85.12
+        }
+      ]
+    },
+    {
+      "text": "De repente a gente vê que perdeu ou está Perdendo",
+      "start": 86.16,
+      "end": 91.12,
+      "words": [
+        {
+          "word": "De",
+          "start": 86.16,
+          "end": 86.7
+        },
+        {
+          "word": "repente",
+          "start": 86.7,
+          "end": 87.12
+        },
+        {
+          "word": "a",
+          "start": 87.12,
+          "end": 87.34
+        },
+        {
+          "word": "gente",
+          "start": 87.34,
+          "end": 87.7
+        },
+        {
+          "word": "vê",
+          "start": 87.7,
+          "end": 88.04
+        },
+        {
+          "word": "que",
+          "start": 88.04,
+          "end": 88.56
+        },
+        {
+          "word": "perdeu",
+          "start": 88.56,
+          "end": 89.08
+        },
+        {
+          "word": "ou",
+          "start": 89.08,
+          "end": 89.58
+        },
+        {
+          "word": "está",
+          "start": 89.58,
+          "end": 90.28
+        },
+        {
+          "word": "Perdendo",
+          "start": 90.28,
+          "end": 91.12
+        }
+      ]
+    },
+    {
+      "text": "alguma coisa",
+      "start": 91.12,
+      "end": 92.12,
+      "words": [
+        {
+          "word": "alguma",
+          "start": 91.12,
+          "end": 91.56
+        },
+        {
+          "word": "coisa",
+          "start": 91.56,
+          "end": 92.12
+        }
+      ]
+    },
+    {
+      "text": "Morna e ingênua que vai ficando no caminho",
+      "start": 93.8,
+      "end": 98.02,
+      "words": [
+        {
+          "word": "Morna",
+          "start": 93.8,
+          "end": 94.68
+        },
+        {
+          "word": "e",
+          "start": 94.68,
+          "end": 95.04
+        },
+        {
+          "word": "ingênua",
+          "start": 95.04,
+          "end": 95.6
+        },
+        {
+          "word": "que",
+          "start": 95.6,
+          "end": 96.04
+        },
+        {
+          "word": "vai",
+          "start": 96.04,
+          "end": 96.32
+        },
+        {
+          "word": "ficando",
+          "start": 96.32,
+          "end": 96.96
+        },
+        {
+          "word": "no",
+          "start": 96.96,
+          "end": 97.3
+        },
+        {
+          "word": "caminho",
+          "start": 97.3,
+          "end": 98.02
+        }
+      ]
+    },
+    {
+      "text": "Que é escuro e frio mas também bonito Porque",
+      "start": 100.94,
+      "end": 106.2,
+      "words": [
+        {
+          "word": "Que",
+          "start": 100.94,
+          "end": 102.1
+        },
+        {
+          "word": "é",
+          "start": 102.1,
+          "end": 102.68
+        },
+        {
+          "word": "escuro",
+          "start": 102.68,
+          "end": 103.34
+        },
+        {
+          "word": "e",
+          "start": 103.34,
+          "end": 103.44
+        },
+        {
+          "word": "frio",
+          "start": 103.44,
+          "end": 103.7
+        },
+        {
+          "word": "mas",
+          "start": 103.7,
+          "end": 104.06
+        },
+        {
+          "word": "também",
+          "start": 104.06,
+          "end": 104.52
+        },
+        {
+          "word": "bonito",
+          "start": 104.52,
+          "end": 105.2
+        },
+        {
+          "word": "Porque",
+          "start": 105.2,
+          "end": 106.2
+        }
+      ]
+    },
+    {
+      "text": "é iluminado",
+      "start": 106.2,
+      "end": 108.12,
+      "words": [
+        {
+          "word": "é",
+          "start": 106.2,
+          "end": 106.6
+        },
+        {
+          "word": "iluminado",
+          "start": 106.6,
+          "end": 108.12
+        }
+      ]
+    },
+    {
+      "text": "Pela beleza do que aconteceu há minutos atrás",
+      "start": 108.66,
+      "end": 114.78,
+      "words": [
+        {
+          "word": "Pela",
+          "start": 108.66,
+          "end": 109.52
+        },
+        {
+          "word": "beleza",
+          "start": 109.52,
+          "end": 110.42
+        },
+        {
+          "word": "do",
+          "start": 110.42,
+          "end": 110.78
+        },
+        {
+          "word": "que",
+          "start": 110.78,
+          "end": 111.08
+        },
+        {
+          "word": "aconteceu",
+          "start": 111.08,
+          "end": 112.32
+        },
+        {
+          "word": "há",
+          "start": 112.32,
+          "end": 112.88
+        },
+        {
+          "word": "minutos",
+          "start": 112.88,
+          "end": 113.42
+        },
+        {
+          "word": "atrás",
+          "start": 113.42,
+          "end": 114.78
+        }
+      ]
+    },
+    {
+      "text": "Eu hoje tive um pesadelo E levantei atento,",
+      "start": 131.98,
+      "end": 137.08,
+      "words": [
+        {
+          "word": "Eu",
+          "start": 131.98,
+          "end": 132.82
+        },
+        {
+          "word": "hoje",
+          "start": 132.82,
+          "end": 133.26
+        },
+        {
+          "word": "tive",
+          "start": 133.26,
+          "end": 133.64
+        },
+        {
+          "word": "um",
+          "start": 133.64,
+          "end": 133.92
+        },
+        {
+          "word": "pesadelo",
+          "start": 133.92,
+          "end": 134.58
+        },
+        {
+          "word": "E",
+          "start": 134.58,
+          "end": 134.92
+        },
+        {
+          "word": "levantei",
+          "start": 134.92,
+          "end": 135.86
+        },
+        {
+          "word": "atento,",
+          "start": 135.86,
+          "end": 137.08
+        }
+      ]
+    },
+    {
+      "text": "atento",
+      "start": 138.0,
+      "end": 139.4,
+      "words": [
+        {
+          "word": "atento",
+          "start": 138.0,
+          "end": 139.4
+        }
+      ]
+    },
+    {
+      "text": "Eu acordei com medo E procurei no escuro alguém",
+      "start": 139.4,
+      "end": 143.54,
+      "words": [
+        {
+          "word": "Eu",
+          "start": 139.4,
+          "end": 140.68
+        },
+        {
+          "word": "acordei",
+          "start": 140.68,
+          "end": 141.36
+        },
+        {
+          "word": "com",
+          "start": 141.36,
+          "end": 141.5
+        },
+        {
+          "word": "medo",
+          "start": 141.5,
+          "end": 141.8
+        },
+        {
+          "word": "E",
+          "start": 141.8,
+          "end": 142.12
+        },
+        {
+          "word": "procurei",
+          "start": 142.12,
+          "end": 142.64
+        },
+        {
+          "word": "no",
+          "start": 142.64,
+          "end": 142.86
+        },
+        {
+          "word": "escuro",
+          "start": 142.86,
+          "end": 143.22
+        },
+        {
+          "word": "alguém",
+          "start": 143.22,
+          "end": 143.54
+        }
+      ]
+    },
+    {
+      "text": "com seu carinho",
+      "start": 143.54,
+      "end": 144.92,
+      "words": [
+        {
+          "word": "com",
+          "start": 143.54,
+          "end": 143.9
+        },
+        {
+          "word": "seu",
+          "start": 143.9,
+          "end": 144.18
+        },
+        {
+          "word": "carinho",
+          "start": 144.18,
+          "end": 144.92
+        }
+      ]
+    },
+    {
+      "text": "E lembrei de um tempo Porque o passado me traz",
+      "start": 144.92,
+      "end": 149.98,
+      "words": [
+        {
+          "word": "E",
+          "start": 144.92,
+          "end": 145.4
+        },
+        {
+          "word": "lembrei",
+          "start": 145.4,
+          "end": 145.82
+        },
+        {
+          "word": "de",
+          "start": 145.82,
+          "end": 145.96
+        },
+        {
+          "word": "um",
+          "start": 145.96,
+          "end": 146.2
+        },
+        {
+          "word": "tempo",
+          "start": 146.2,
+          "end": 147.02
+        },
+        {
+          "word": "Porque",
+          "start": 147.02,
+          "end": 148.38
+        },
+        {
+          "word": "o",
+          "start": 148.38,
+          "end": 148.66
+        },
+        {
+          "word": "passado",
+          "start": 148.66,
+          "end": 149.14
+        },
+        {
+          "word": "me",
+          "start": 149.14,
+          "end": 149.62
+        },
+        {
+          "word": "traz",
+          "start": 149.62,
+          "end": 149.98
+        }
+      ]
+    },
+    {
+      "text": "uma lembrança",
+      "start": 149.98,
+      "end": 151.2,
+      "words": [
+        {
+          "word": "uma",
+          "start": 149.98,
+          "end": 150.28
+        },
+        {
+          "word": "lembrança",
+          "start": 150.28,
+          "end": 151.2
+        }
+      ]
+    },
+    {
+      "text": "Do tempo que eu era criança E o medo era motivo",
+      "start": 151.2,
+      "end": 157.88,
+      "words": [
+        {
+          "word": "Do",
+          "start": 151.2,
+          "end": 151.54
+        },
+        {
+          "word": "tempo",
+          "start": 151.54,
+          "end": 152.16
+        },
+        {
+          "word": "que",
+          "start": 152.16,
+          "end": 152.5
+        },
+        {
+          "word": "eu",
+          "start": 152.5,
+          "end": 152.82
+        },
+        {
+          "word": "era",
+          "start": 152.82,
+          "end": 153.14
+        },
+        {
+          "word": "criança",
+          "start": 153.14,
+          "end": 154.84
+        },
+        {
+          "word": "E",
+          "start": 154.84,
+          "end": 156.46
+        },
+        {
+          "word": "o",
+          "start": 156.46,
+          "end": 156.64
+        },
+        {
+          "word": "medo",
+          "start": 156.64,
+          "end": 156.86
+        },
+        {
+          "word": "era",
+          "start": 156.86,
+          "end": 157.24
+        },
+        {
+          "word": "motivo",
+          "start": 157.24,
+          "end": 157.88
+        }
+      ]
+    },
+    {
+      "text": "de choro",
+      "start": 157.88,
+      "end": 158.94,
+      "words": [
+        {
+          "word": "de",
+          "start": 157.88,
+          "end": 158.32
+        },
+        {
+          "word": "choro",
+          "start": 158.32,
+          "end": 158.94
+        }
+      ]
+    },
+    {
+      "text": "Desculpa pra um abraço ou um consolo Hoje eu",
+      "start": 158.94,
+      "end": 164.96,
+      "words": [
+        {
+          "word": "Desculpa",
+          "start": 158.94,
+          "end": 159.96
+        },
+        {
+          "word": "pra",
+          "start": 159.96,
+          "end": 160.18
+        },
+        {
+          "word": "um",
+          "start": 160.18,
+          "end": 160.5
+        },
+        {
+          "word": "abraço",
+          "start": 160.5,
+          "end": 160.98
+        },
+        {
+          "word": "ou",
+          "start": 160.98,
+          "end": 161.24
+        },
+        {
+          "word": "um",
+          "start": 161.24,
+          "end": 161.68
+        },
+        {
+          "word": "consolo",
+          "start": 161.68,
+          "end": 163.22
+        },
+        {
+          "word": "Hoje",
+          "start": 163.22,
+          "end": 164.56
+        },
+        {
+          "word": "eu",
+          "start": 164.56,
+          "end": 164.96
+        }
+      ]
+    },
+    {
+      "text": "acordei com medo Mas não chorei nem reclamei",
+      "start": 164.96,
+      "end": 168.98,
+      "words": [
+        {
+          "word": "acordei",
+          "start": 164.96,
+          "end": 165.5
+        },
+        {
+          "word": "com",
+          "start": 165.5,
+          "end": 165.78
+        },
+        {
+          "word": "medo",
+          "start": 165.78,
+          "end": 166.12
+        },
+        {
+          "word": "Mas",
+          "start": 166.12,
+          "end": 166.52
+        },
+        {
+          "word": "não",
+          "start": 166.52,
+          "end": 166.88
+        },
+        {
+          "word": "chorei",
+          "start": 166.88,
+          "end": 167.94
+        },
+        {
+          "word": "nem",
+          "start": 167.94,
+          "end": 168.28
+        },
+        {
+          "word": "reclamei",
+          "start": 168.28,
+          "end": 168.98
+        }
+      ]
+    },
+    {
+      "text": "abrigo",
+      "start": 168.98,
+      "end": 169.94,
+      "words": [
+        {
+          "word": "abrigo",
+          "start": 168.98,
+          "end": 169.94
+        }
+      ]
+    },
+    {
+      "text": "Do escuro eu via o infinito sem presente,",
+      "start": 171.28,
+      "end": 174.98,
+      "words": [
+        {
+          "word": "Do",
+          "start": 171.28,
+          "end": 171.74
+        },
+        {
+          "word": "escuro",
+          "start": 171.74,
+          "end": 172.28
+        },
+        {
+          "word": "eu",
+          "start": 172.28,
+          "end": 172.62
+        },
+        {
+          "word": "via",
+          "start": 172.62,
+          "end": 172.78
+        },
+        {
+          "word": "o",
+          "start": 172.78,
+          "end": 173.2
+        },
+        {
+          "word": "infinito",
+          "start": 173.2,
+          "end": 173.88
+        },
+        {
+          "word": "sem",
+          "start": 173.88,
+          "end": 174.2
+        },
+        {
+          "word": "presente,",
+          "start": 174.2,
+          "end": 174.98
+        }
+      ]
+    },
+    {
+      "text": "passado ou futuro",
+      "start": 175.66,
+      "end": 177.84,
+      "words": [
+        {
+          "word": "passado",
+          "start": 175.66,
+          "end": 176.36
+        },
+        {
+          "word": "ou",
+          "start": 176.36,
+          "end": 176.82
+        },
+        {
+          "word": "futuro",
+          "start": 176.82,
+          "end": 177.84
+        }
+      ]
+    },
+    {
+      "text": "Senti um abraço forte,",
+      "start": 178.76,
+      "end": 181.0,
+      "words": [
+        {
+          "word": "Senti",
+          "start": 178.76,
+          "end": 179.58
+        },
+        {
+          "word": "um",
+          "start": 179.58,
+          "end": 180.0
+        },
+        {
+          "word": "abraço",
+          "start": 180.0,
+          "end": 180.6
+        },
+        {
+          "word": "forte,",
+          "start": 180.6,
+          "end": 181.0
+        }
+      ]
+    },
+    {
+      "text": "já não era medo Era uma coisa sua que ficou em",
+      "start": 181.0,
+      "end": 184.66,
+      "words": [
+        {
+          "word": "já",
+          "start": 181.0,
+          "end": 181.4
+        },
+        {
+          "word": "não",
+          "start": 181.4,
+          "end": 181.64
+        },
+        {
+          "word": "era",
+          "start": 181.64,
+          "end": 181.78
+        },
+        {
+          "word": "medo",
+          "start": 181.78,
+          "end": 182.26
+        },
+        {
+          "word": "Era",
+          "start": 182.26,
+          "end": 182.92
+        },
+        {
+          "word": "uma",
+          "start": 182.92,
+          "end": 183.18
+        },
+        {
+          "word": "coisa",
+          "start": 183.18,
+          "end": 183.48
+        },
+        {
+          "word": "sua",
+          "start": 183.48,
+          "end": 183.8
+        },
+        {
+          "word": "que",
+          "start": 183.8,
+          "end": 184.08
+        },
+        {
+          "word": "ficou",
+          "start": 184.08,
+          "end": 184.4
+        },
+        {
+          "word": "em",
+          "start": 184.4,
+          "end": 184.66
+        }
+      ]
+    },
+    {
+      "text": "mim",
+      "start": 184.66,
+      "end": 185.04,
+      "words": [
+        {
+          "word": "mim",
+          "start": 184.66,
+          "end": 185.04
+        }
+      ]
+    },
+    {
+      "text": "De repente a gente vê que perdeu ou está Perdendo",
+      "start": 185.04,
+      "end": 191.8,
+      "words": [
+        {
+          "word": "De",
+          "start": 185.04,
+          "end": 186.68
+        },
+        {
+          "word": "repente",
+          "start": 186.68,
+          "end": 187.72
+        },
+        {
+          "word": "a",
+          "start": 187.72,
+          "end": 187.94
+        },
+        {
+          "word": "gente",
+          "start": 187.94,
+          "end": 188.3
+        },
+        {
+          "word": "vê",
+          "start": 188.3,
+          "end": 188.62
+        },
+        {
+          "word": "que",
+          "start": 188.62,
+          "end": 189.12
+        },
+        {
+          "word": "perdeu",
+          "start": 189.12,
+          "end": 189.68
+        },
+        {
+          "word": "ou",
+          "start": 189.68,
+          "end": 190.04
+        },
+        {
+          "word": "está",
+          "start": 190.04,
+          "end": 191.04
+        },
+        {
+          "word": "Perdendo",
+          "start": 191.04,
+          "end": 191.8
+        }
+      ]
+    },
+    {
+      "text": "alguma coisa",
+      "start": 191.8,
+      "end": 193.04,
+      "words": [
+        {
+          "word": "alguma",
+          "start": 191.8,
+          "end": 192.3
+        },
+        {
+          "word": "coisa",
+          "start": 192.3,
+          "end": 193.04
+        }
+      ]
+    },
+    {
+      "text": "Morna e ingênua que vai ficando no caminho",
+      "start": 193.62,
+      "end": 199.04,
+      "words": [
+        {
+          "word": "Morna",
+          "start": 193.62,
+          "end": 195.04
+        },
+        {
+          "word": "e",
+          "start": 195.04,
+          "end": 195.38
+        },
+        {
+          "word": "ingênua",
+          "start": 195.38,
+          "end": 196.14
+        },
+        {
+          "word": "que",
+          "start": 196.14,
+          "end": 196.64
+        },
+        {
+          "word": "vai",
+          "start": 196.64,
+          "end": 196.9
+        },
+        {
+          "word": "ficando",
+          "start": 196.9,
+          "end": 197.6
+        },
+        {
+          "word": "no",
+          "start": 197.6,
+          "end": 197.92
+        },
+        {
+          "word": "caminho",
+          "start": 197.92,
+          "end": 199.04
+        }
+      ]
+    },
+    {
+      "text": "Que é escuro e frio mas também bonito Porque",
+      "start": 201.7,
+      "end": 206.82,
+      "words": [
+        {
+          "word": "Que",
+          "start": 201.7,
+          "end": 202.7
+        },
+        {
+          "word": "é",
+          "start": 202.7,
+          "end": 203.1
+        },
+        {
+          "word": "escuro",
+          "start": 203.1,
+          "end": 203.86
+        },
+        {
+          "word": "e",
+          "start": 203.86,
+          "end": 204.04
+        },
+        {
+          "word": "frio",
+          "start": 204.04,
+          "end": 204.26
+        },
+        {
+          "word": "mas",
+          "start": 204.26,
+          "end": 204.58
+        },
+        {
+          "word": "também",
+          "start": 204.58,
+          "end": 205.02
+        },
+        {
+          "word": "bonito",
+          "start": 205.02,
+          "end": 205.76
+        },
+        {
+          "word": "Porque",
+          "start": 205.76,
+          "end": 206.82
+        }
+      ]
+    },
+    {
+      "text": "é iluminado",
+      "start": 206.82,
+      "end": 208.04,
+      "words": [
+        {
+          "word": "é",
+          "start": 206.82,
+          "end": 207.3
+        },
+        {
+          "word": "iluminado",
+          "start": 207.3,
+          "end": 208.04
+        }
+      ]
+    },
+    {
+      "text": "Pela beleza do que aconteceu há minutos atrás",
+      "start": 208.04,
+      "end": 215.04,
+      "words": [
+        {
+          "word": "Pela",
+          "start": 208.04,
+          "end": 210.16
+        },
+        {
+          "word": "beleza",
+          "start": 210.16,
+          "end": 211.08
+        },
+        {
+          "word": "do",
+          "start": 211.08,
+          "end": 211.44
+        },
+        {
+          "word": "que",
+          "start": 211.44,
+          "end": 211.74
+        },
+        {
+          "word": "aconteceu",
+          "start": 211.74,
+          "end": 212.94
+        },
+        {
+          "word": "há",
+          "start": 212.94,
+          "end": 213.56
+        },
+        {
+          "word": "minutos",
+          "start": 213.56,
+          "end": 214.12
+        },
+        {
+          "word": "atrás",
+          "start": 214.12,
+          "end": 215.04
+        }
+      ]
+    },
+    {
+      "text": "Senti um abraço forte,",
+      "start": 250.38,
+      "end": 251.78,
+      "words": [
+        {
+          "word": "Senti",
+          "start": 250.38,
+          "end": 251.78
+        },
+        {
+          "word": "um",
+          "start": 251.78,
+          "end": 251.78
+        },
+        {
+          "word": "abraço",
+          "start": 251.78,
+          "end": 251.78
+        },
+        {
+          "word": "forte,",
+          "start": 251.78,
+          "end": 251.78
+        }
+      ]
+    },
+    {
+      "text": "já não era medo",
+      "start": 251.78,
+      "end": 251.78,
+      "words": [
+        {
+          "word": "já",
+          "start": 251.78,
+          "end": 251.78
+        },
+        {
+          "word": "não",
+          "start": 251.78,
+          "end": 251.78
+        },
+        {
+          "word": "era",
+          "start": 251.78,
+          "end": 251.78
+        },
+        {
+          "word": "medo",
+          "start": 251.78,
+          "end": 251.78
+        }
+      ]
+    },
+    {
+      "text": "De repente a gente vê que perdeu ou está Perdendo",
+      "start": 251.78,
+      "end": 262.86,
+      "words": [
+        {
+          "word": "De",
+          "start": 251.78,
+          "end": 251.78
+        },
+        {
+          "word": "repente",
+          "start": 251.78,
+          "end": 251.78
+        },
+        {
+          "word": "a",
+          "start": 251.78,
+          "end": 251.78
+        },
+        {
+          "word": "gente",
+          "start": 251.78,
+          "end": 251.78
+        },
+        {
+          "word": "vê",
+          "start": 251.78,
+          "end": 251.78
+        },
+        {
+          "word": "que",
+          "start": 251.78,
+          "end": 251.78
+        },
+        {
+          "word": "perdeu",
+          "start": 251.78,
+          "end": 251.78
+        },
+        {
+          "word": "ou",
+          "start": 251.78,
+          "end": 251.78
+        },
+        {
+          "word": "está",
+          "start": 251.78,
+          "end": 251.78
+        },
+        {
+          "word": "Perdendo",
+          "start": 251.78,
+          "end": 262.86
+        }
+      ]
+    },
+    {
+      "text": "alguma coisa",
+      "start": 262.86,
+      "end": 262.86,
+      "words": [
+        {
+          "word": "alguma",
+          "start": 262.86,
+          "end": 262.86
+        },
+        {
+          "word": "coisa",
+          "start": 262.86,
+          "end": 262.86
+        }
+      ]
+    }
+  ]
+}

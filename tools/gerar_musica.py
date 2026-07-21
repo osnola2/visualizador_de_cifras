@@ -84,6 +84,7 @@ def is_tablature_line(line):
 
 def parse_plaintext_tab(tab_content, song_title, song_artist):
     unique_chords = set()
+    tab_content = tab_content.expandtabs(4)
 
     def replace_chord_token(match):
         ch = match.group(0)
@@ -253,7 +254,8 @@ def parse_sambacifras(url):
 
 def parse_bananacifras(url):
     print(f"Parsing Banana Cifras URL via Jina HTML proxy: {url} ...")
-    jina_url = "https://r.jina.ai/" + url
+    url_clean = url.replace("https://", "http://")
+    jina_url = "https://r.jina.ai/" + url_clean
     req = urllib.request.Request(jina_url, headers={'User-Agent': 'Mozilla/5.0', 'X-Return-Format': 'html'})
     try:
         response = urllib.request.urlopen(req)
@@ -277,9 +279,9 @@ def parse_bananacifras(url):
             song_title = t_clean.split('CHORDS')[0].strip()
 
     pre_match = re.search(r'<pre id="song-pre"[^>]*>(.*?)</pre>', html, re.IGNORECASE | re.DOTALL)
-    if not pre_match:
-        print("Could not find <pre id=\"song-pre\"> inside Banana Cifras HTML, falling back to markdown...")
-        return fetch_jina_markdown(url)
+    if not pre_match or not pre_match.group(1).strip():
+        print("Could not find populated <pre id=\"song-pre\"> inside Banana Cifras HTML, fetching rendered Jina Markdown...")
+        return parse_bananacifras_markdown(url, song_title, song_artist)
 
     pre_content = pre_match.group(1)
     unique_chords = set()
@@ -335,7 +337,144 @@ def parse_bananacifras(url):
     return song_title, song_artist, "", lyrics_content, chord_data
 
 
+def parse_bananacifras_markdown(url, default_title="Unknown Title", default_artist="Unknown Artist"):
+    print(f"Parsing Banana Cifras rendered markdown via Jina: {url} ...")
+    url_clean = url.replace("https://", "http://")
+    jina_url = "https://r.jina.ai/" + url_clean
+    req = urllib.request.Request(jina_url, headers={'User-Agent': 'Mozilla/5.0'})
+    try:
+        response = urllib.request.urlopen(req)
+        text = response.read().decode('utf-8', errors='replace')
+    except Exception as e:
+        print(f"Error fetching Jina Markdown ({e})")
+        return None
+
+    song_title = default_title
+    song_artist = default_artist
+
+    title_match = re.search(r'Title:\s*(.*?)\s*(?:\n|$)', text, re.IGNORECASE)
+    if title_match:
+        full_title = title_match.group(1).strip()
+        m = re.search(r'^(.*?)\s+CHORDS\s+(?:by\s+)?(.*?)(\s+-\s+.*)?$', full_title, re.IGNORECASE)
+        if m:
+            song_title = m.group(1).strip()
+            song_artist = m.group(2).strip()
+            song_artist = re.sub(r'\s*-\s*Banana.*$', '', song_artist, flags=re.IGNORECASE).strip()
+        else:
+            song_title = full_title.split('CHORDS')[0].strip()
+
+    # Split into segments by double space, newline, or right before a new chord block that follows text
+    segments = re.split(r'\s{2,}|\n+|(?<=[a-zA-Zãõçáéíóúâêô.,!?"\'\)\d])\s+(?="_[A-Z])', text)
+    new_lines = []
+    unique_chords = set()
+
+    song_started = False
+    for seg in segments:
+        seg = seg.strip()
+        if not seg:
+            continue
+        if seg.startswith("Title:") or seg == "Markdown Content:" or seg.strip() == song_title.strip():
+            continue
+        if "http://" in seg or "https://" in seg or "bananacifras.com" in seg or seg.startswith("[") or "]" in seg or "Capo No" in seg or "Transpose" in seg or "Font size" in seg or "Split into" in seg or "Show tabs" in seg or "Keep screen" in seg or "Left-Handed" in seg or "Zoom-" in seg or "Color" in seg or "Background" in seg:
+            continue
+        if seg in ["Show all", "Related tracks"] or seg.startswith("Related tracks") or seg == "Guitar" or seg == "O sol [Guitar]":
+            break
+        if re.match(r'^[A-G][b#]?\d*\+?(/[\d/]+)?$', seg): # Skip chord diagrams/tables at bottom
+            break
+
+        chords = re.findall(r'_([A-Z][a-zA-Z0-9/#+-\.]*)_', seg)
+        lyric = re.sub(r'_[A-Z][a-zA-Z0-9/#+-\.]*_', '', seg).strip()
+
+        if chords or lyric:
+            song_started = True
+            if chords:
+                chord_spans = []
+                for ch in chords:
+                    clean_ch = clean_chord_token(ch)
+                    if clean_ch and CHORD_REGEX.match(clean_ch):
+                        unique_chords.add(clean_ch)
+                        chord_spans.append(f'<span class="chord" data-chord="{clean_ch}">{clean_ch}</span>')
+                    else:
+                        chord_spans.append(html_lib.escape(ch))
+                new_lines.append(" ".join(chord_spans))
+            if lyric:
+                new_lines.append(f'<span class="lyric-line">{html_lib.escape(lyric)}</span>')
+
+    while new_lines and new_lines[-1] == "":
+        new_lines.pop()
+
+    lyrics_content = '\n'.join(new_lines)
+
+    chord_data = {}
+    for chord in sorted(unique_chords):
+        notes, display, types = guess_chord_notes(chord)
+        chord_data[chord] = {
+            "name": chord,
+            "notes": notes,
+            "displayNotes": display,
+            "noteTypes": types
+        }
+
+    return song_title, song_artist, "", lyrics_content, chord_data
+
+
+
 def fetch_and_parse(url):
+    if os.path.exists(url):
+        print(f"Processing local file: {url} ...")
+        with open(url, "r", encoding="utf-8") as f:
+            text = f.read()
+        
+        lines = [l.strip() for l in text.split('\n') if l.strip()]
+        song_title = lines[0] if lines else os.path.splitext(os.path.basename(url))[0]
+        song_artist = "Unknown Artist"
+        song_composer = ""
+        
+        file_name = generate_file_name(song_title)
+        existing_json = os.path.join(DATA_DIR, f"{file_name}.json")
+        if os.path.exists(existing_json):
+            try:
+                with open(existing_json, "r", encoding="utf-8") as ef:
+                    ej = json.load(ef)
+                    song_title = ej.get("title", song_title)
+                    song_artist = ej.get("artist", song_artist)
+                    song_composer = ej.get("composer", song_composer)
+            except Exception:
+                pass
+                
+        if song_artist == "Unknown Artist" and "Estrada do Sol" in song_title:
+            song_artist = "Tom Jobim"
+            song_composer = "Tom Jobim / Dolores Duran"
+            
+        t, a, l, c = parse_plaintext_tab(text, song_title, song_artist)
+        song_title, song_artist, lyrics_content, chord_data = t, a, l, c
+        
+        json_path = os.path.join(DATA_DIR, f"{file_name}.json")
+        js_path = os.path.join(DATA_DIR, f"{file_name}.js")
+        
+        if not os.path.exists(DATA_DIR):
+            os.makedirs(DATA_DIR)
+            
+        song_json = {
+            "title": song_title,
+            "artist": song_artist,
+            "composer": song_composer,
+            "lyricsHtml": "\n" + lyrics_content + "\n",
+            "chordData": chord_data
+        }
+        
+        with open(json_path, "w", encoding="utf-8") as f:
+            json.dump(song_json, f, ensure_ascii=False, indent=4)
+            
+        with open(js_path, "w", encoding="utf-8") as f:
+            f.write("window.SONG_DATA = " + json.dumps(song_json, ensure_ascii=False, indent=4) + ";\n")
+            
+        update_hub(song_title, song_artist, file_name, song_composer)
+        
+        print(f"\n Successfully processed '{song_title}' by {song_artist} from local file!")
+        print(f" Saved data to: {json_path} and {js_path}")
+        return
+
     print(f"Fetching {url} ...")
     
     # If Ultimate Guitar or non-CifraClub site where direct fetch often blocks 403, support fallback

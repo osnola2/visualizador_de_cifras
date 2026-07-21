@@ -22,6 +22,12 @@
         <button id="toggle-piano-btn" class="glass-btn" style="padding: 0.6rem; border-radius: 50%;">
             <span class="icon" style="font-size: 1.2rem;">🎹</span>
         </button>
+        <div class="transposition-control glass-panel" style="display: flex; align-items: center; gap: 8px; padding: 0.35rem 0.8rem; border-radius: 12px; border: 1px solid var(--glass-border);">
+            <span style="font-size: 0.85rem; font-weight: 700; color: #cbd5e1;">Tom:</span>
+            <button id="transpose-down-btn" class="glass-btn" style="padding: 0.25rem 0.6rem; font-size: 0.85rem; font-weight: 700;" title="Descer meio tom (-½)">- ½</button>
+            <span id="transpose-offset-label" style="font-size: 0.9rem; font-weight: 800; color: var(--primary); min-width: 45px; text-align: center;">Original</span>
+            <button id="transpose-up-btn" class="glass-btn" style="padding: 0.25rem 0.6rem; font-size: 0.85rem; font-weight: 700;" title="Subir meio tom (+½)">+ ½</button>
+        </div>
         <button id="autoscroll-btn" class="glass-btn">
             <span class="icon">▶</span> Auto-scroll
         </button>

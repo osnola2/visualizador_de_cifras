@@ -1,0 +1,14 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Large audio/video files and temporal data for MIR testing
+audio_to_cifra/audios/*.mp4
+audio_to_cifra/audios/*.webm
+audio_to_cifra/audios/*.m4a
+audio_to_cifra/audios/*.mp3
+audio_to_cifra/audios/*.wav
+
+# Temporary / scratch
+*.log

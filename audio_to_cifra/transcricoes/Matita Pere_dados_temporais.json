@@ -1,0 +1,2575 @@
+{
+  "titulo": "Matita Perê",
+  "artista": "Tom Jobim",
+  "acordes": [
+    {
+      "chord": "Dm9",
+      "start": 0.0,
+      "end": 2.14,
+      "duration": 2.14
+    },
+    {
+      "chord": "E",
+      "start": 2.14,
+      "end": 9.85,
+      "duration": 7.71
+    },
+    {
+      "chord": "G#m7",
+      "start": 9.85,
+      "end": 12.07,
+      "duration": 2.22
+    },
+    {
+      "chord": "F#6/9",
+      "start": 12.07,
+      "end": 13.28,
+      "duration": 1.21
+    },
+    {
+      "chord": "B7M",
+      "start": 13.28,
+      "end": 14.21,
+      "duration": 0.93
+    },
+    {
+      "chord": "G#m9",
+      "start": 14.21,
+      "end": 19.78,
+      "duration": 5.57
+    },
+    {
+      "chord": "D#7(4)/G#",
+      "start": 19.78,
+      "end": 21.83,
+      "duration": 2.05
+    },
+    {
+      "chord": "G#m7",
+      "start": 21.83,
+      "end": 30.09,
+      "duration": 8.26
+    },
+    {
+      "chord": "E/G#",
+      "start": 30.09,
+      "end": 31.21,
+      "duration": 1.12
+    },
+    {
+      "chord": "E7M(9)",
+      "start": 31.21,
+      "end": 32.6,
+      "duration": 1.39
+    },
+    {
+      "chord": "E7M",
+      "start": 32.6,
+      "end": 36.22,
+      "duration": 3.62
+    },
+    {
+      "chord": "C#m7/E",
+      "start": 36.22,
+      "end": 40.77,
+      "duration": 4.55
+    },
+    {
+      "chord": "D#7(4)",
+      "start": 40.77,
+      "end": 41.98,
+      "duration": 1.21
+    },
+    {
+      "chord": "G#m7",
+      "start": 41.98,
+      "end": 44.68,
+      "duration": 2.7
+    },
+    {
+      "chord": "D#7(4)",
+      "start": 44.68,
+      "end": 48.3,
+      "duration": 3.62
+    },
+    {
+      "chord": "F6/9",
+      "start": 48.3,
+      "end": 53.41,
+      "duration": 5.11
+    },
+    {
+      "chord": "D4(add9)",
+      "start": 53.41,
+      "end": 61.95,
+      "duration": 8.54
+    },
+    {
+      "chord": "F#m",
+      "start": 61.95,
+      "end": 63.07,
+      "duration": 1.11
+    },
+    {
+      "chord": "F#7M",
+      "start": 63.07,
+      "end": 65.2,
+      "duration": 2.13
+    },
+    {
+      "chord": "F#m",
+      "start": 65.2,
+      "end": 66.22,
+      "duration": 1.02
+    },
+    {
+      "chord": "F#m9",
+      "start": 66.22,
+      "end": 69.94,
+      "duration": 3.72
+    },
+    {
+      "chord": "F#m",
+      "start": 69.94,
+      "end": 75.98,
+      "duration": 6.04
+    },
+    {
+      "chord": "C#7(4)",
+      "start": 75.98,
+      "end": 79.97,
+      "duration": 3.99
+    },
+    {
+      "chord": "D#6/9",
+      "start": 79.97,
+      "end": 81.18,
+      "duration": 1.21
+    },
+    {
+      "chord": "Fm9",
+      "start": 81.18,
+      "end": 84.33,
+      "duration": 3.15
+    },
+    {
+      "chord": "F7(4)",
+      "start": 84.33,
+      "end": 93.53,
+      "duration": 9.2
+    },
+    {
+      "chord": "F7M",
+      "start": 93.53,
+      "end": 95.39,
+      "duration": 1.86
+    },
+    {
+      "chord": "C7(4)",
+      "start": 95.39,
+      "end": 97.71,
+      "duration": 2.32
+    },
+    {
+      "chord": "E/G#",
+      "start": 97.71,
+      "end": 100.22,
+      "duration": 2.51
+    },
+    {
+      "chord": "E6/9/B",
+      "start": 100.22,
+      "end": 101.98,
+      "duration": 1.76
+    },
+    {
+      "chord": "E/B",
+      "start": 101.98,
+      "end": 107.93,
+      "duration": 5.95
+    },
+    {
+      "chord": "A#m7",
+      "start": 107.93,
+      "end": 122.6,
+      "duration": 14.67
+    },
+    {
+      "chord": "D4(add9)/E",
+      "start": 122.6,
+      "end": 126.6,
+      "duration": 4.0
+    },
+    {
+      "chord": "C6/9",
+      "start": 126.6,
+      "end": 128.73,
+      "duration": 2.13
+    },
+    {
+      "chord": "Dm",
+      "start": 128.73,
+      "end": 129.85,
+      "duration": 1.11
+    },
+    {
+      "chord": "A#7M",
+      "start": 129.85,
+      "end": 132.91,
+      "duration": 3.06
+    },
+    {
+      "chord": "Dm",
+      "start": 132.91,
+      "end": 134.03,
+      "duration": 1.11
+    },
+    {
+      "chord": "A#7M",
+      "start": 134.03,
+      "end": 135.98,
+      "duration": 1.95
+    },
+    {
+      "chord": "Dm",
+      "start": 135.98,
+      "end": 137.83,
+      "duration": 1.86
+    },
+    {
+      "chord": "Dm7",
+      "start": 137.83,
+      "end": 138.86,
+      "duration": 1.02
+    },
+    {
+      "chord": "D4(add9)",
+      "start": 138.86,
+      "end": 140.9,
+      "duration": 2.04
+    },
+    {
+      "chord": "Dm7",
+      "start": 140.9,
+      "end": 143.31,
+      "duration": 2.41
+    },
+    {
+      "chord": "C6/9",
+      "start": 143.31,
+      "end": 147.4,
+      "duration": 4.09
+    },
+    {
+      "chord": "F#",
+      "start": 147.4,
+      "end": 148.33,
+      "duration": 0.93
+    },
+    {
+      "chord": "C#4(add9)/F#",
+      "start": 148.33,
+      "end": 151.49,
+      "duration": 3.16
+    },
+    {
+      "chord": "C#m7/E",
+      "start": 151.49,
+      "end": 155.02,
+      "duration": 3.53
+    },
+    {
+      "chord": "C#m7",
+      "start": 155.02,
+      "end": 164.3,
+      "duration": 9.28
+    },
+    {
+      "chord": "C#7",
+      "start": 164.3,
+      "end": 165.6,
+      "duration": 1.3
+    },
+    {
+      "chord": "C#4(add9)",
+      "start": 165.6,
+      "end": 170.99,
+      "duration": 5.39
+    },
+    {
+      "chord": "B6/9",
+      "start": 170.99,
+      "end": 172.66,
+      "duration": 1.67
+    },
+    {
+      "chord": "C#m7/B",
+      "start": 172.66,
+      "end": 178.14,
+      "duration": 5.48
+    },
+    {
+      "chord": "C4(add9)",
+      "start": 178.14,
+      "end": 180.74,
+      "duration": 2.6
+    },
+    {
+      "chord": "A#6/9",
+      "start": 180.74,
+      "end": 183.07,
+      "duration": 2.33
+    },
+    {
+      "chord": "Cm7/A#",
+      "start": 183.07,
+      "end": 185.3,
+      "duration": 2.23
+    },
+    {
+      "chord": "A#6/9",
+      "start": 185.3,
+      "end": 189.47,
+      "duration": 4.17
+    },
+    {
+      "chord": "G#7M/C",
+      "start": 189.47,
+      "end": 190.4,
+      "duration": 0.93
+    },
+    {
+      "chord": "C7",
+      "start": 190.4,
+      "end": 199.04,
+      "duration": 8.64
+    },
+    {
+      "chord": "A#7M",
+      "start": 199.04,
+      "end": 200.9,
+      "duration": 1.86
+    },
+    {
+      "chord": "A#m7",
+      "start": 200.9,
+      "end": 205.91,
+      "duration": 5.01
+    },
+    {
+      "chord": "D#4(add9)/F",
+      "start": 205.91,
+      "end": 214.92,
+      "duration": 9.01
+    },
+    {
+      "chord": "G#m7",
+      "start": 214.92,
+      "end": 228.3,
+      "duration": 13.38
+    },
+    {
+      "chord": "D#7(4)",
+      "start": 228.3,
+      "end": 237.49,
+      "duration": 9.19
+    },
+    {
+      "chord": "G#m",
+      "start": 237.49,
+      "end": 238.42,
+      "duration": 0.93
+    },
+    {
+      "chord": "E7/G#",
+      "start": 238.42,
+      "end": 241.02,
+      "duration": 2.6
+    },
+    {
+      "chord": "Gm",
+      "start": 241.02,
+      "end": 243.53,
+      "duration": 2.51
+    },
+    {
+      "chord": "D7(4)",
+      "start": 243.53,
+      "end": 248.83,
+      "duration": 5.3
+    },
+    {
+      "chord": "F7(4)",
+      "start": 248.83,
+      "end": 251.15,
+      "duration": 2.32
+    },
+    {
+      "chord": "C7M",
+      "start": 251.15,
+      "end": 258.21,
+      "duration": 7.06
+    },
+    {
+      "chord": "G#6/9/A#",
+      "start": 258.21,
+      "end": 262.57,
+      "duration": 4.36
+    },
+    {
+      "chord": "D#7M",
+      "start": 262.57,
+      "end": 267.4,
+      "duration": 4.83
+    },
+    {
+      "chord": "D4(add9)",
+      "start": 267.4,
+      "end": 274.0,
+      "duration": 6.6
+    },
+    {
+      "chord": "D7M/F#",
+      "start": 274.0,
+      "end": 275.67,
+      "duration": 1.67
+    },
+    {
+      "chord": "D7M",
+      "start": 275.67,
+      "end": 276.78,
+      "duration": 1.11
+    },
+    {
+      "chord": "D7M(9)",
+      "start": 276.78,
+      "end": 278.64,
+      "duration": 1.86
+    },
+    {
+      "chord": "D7M",
+      "start": 278.64,
+      "end": 289.88,
+      "duration": 11.24
+    },
+    {
+      "chord": "D7",
+      "start": 289.88,
+      "end": 293.87,
+      "duration": 3.99
+    },
+    {
+      "chord": "B7M",
+      "start": 293.87,
+      "end": 296.01,
+      "duration": 2.14
+    },
+    {
+      "chord": "G#m7",
+      "start": 296.01,
+      "end": 298.7,
+      "duration": 2.69
+    },
+    {
+      "chord": "G#m7(b5)",
+      "start": 298.7,
+      "end": 302.42,
+      "duration": 3.72
+    },
+    {
+      "chord": "D#7(4)",
+      "start": 302.42,
+      "end": 303.9,
+      "duration": 1.49
+    },
+    {
+      "chord": "D#4",
+      "start": 303.9,
+      "end": 311.61,
+      "duration": 7.71
+    },
+    {
+      "chord": "D#",
+      "start": 311.61,
+      "end": 329.26,
+      "duration": 17.65
+    },
+    {
+      "chord": "G6/9/A",
+      "start": 329.26,
+      "end": 337.43,
+      "duration": 8.17
+    },
+    {
+      "chord": "A7M",
+      "start": 337.43,
+      "end": 350.99,
+      "duration": 13.56
+    },
+    {
+      "chord": "F",
+      "start": 350.99,
+      "end": 357.12,
+      "duration": 6.13
+    },
+    {
+      "chord": "Dm/F",
+      "start": 357.12,
+      "end": 361.21,
+      "duration": 4.09
+    },
+    {
+      "chord": "E4",
+      "start": 361.21,
+      "end": 362.97,
+      "duration": 1.76
+    },
+    {
+      "chord": "Am7",
+      "start": 362.97,
+      "end": 365.85,
+      "duration": 2.88
+    },
+    {
+      "chord": "E7(4)",
+      "start": 365.85,
+      "end": 376.35,
+      "duration": 10.5
+    },
+    {
+      "chord": "G#7M",
+      "start": 376.35,
+      "end": 382.11,
+      "duration": 5.76
+    },
+    {
+      "chord": "D#7(4)",
+      "start": 382.11,
+      "end": 387.77,
+      "duration": 5.66
+    },
+    {
+      "chord": "G#7M",
+      "start": 387.77,
+      "end": 392.23,
+      "duration": 4.46
+    },
+    {
+      "chord": "B7M",
+      "start": 392.23,
+      "end": 397.62,
+      "duration": 5.39
+    },
+    {
+      "chord": "E7M",
+      "start": 397.62,
+      "end": 398.55,
+      "duration": 0.93
+    },
+    {
+      "chord": "E7M(9)",
+      "start": 398.55,
+      "end": 400.96,
+      "duration": 2.41
+    },
+    {
+      "chord": "B",
+      "start": 400.96,
+      "end": 403.1,
+      "duration": 2.14
+    },
+    {
+      "chord": "A#m",
+      "start": 403.1,
+      "end": 406.81,
+      "duration": 3.71
+    },
+    {
+      "chord": "G#m",
+      "start": 406.81,
+      "end": 407.74,
+      "duration": 0.93
+    },
+    {
+      "chord": "G#",
+      "start": 407.74,
+      "end": 409.14,
+      "duration": 1.39
+    },
+    {
+      "chord": "D#4/G#",
+      "start": 409.14,
+      "end": 411.09,
+      "duration": 1.95
+    },
+    {
+      "chord": "G#m",
+      "start": 411.09,
+      "end": 414.43,
+      "duration": 3.34
+    },
+    {
+      "chord": "D#4",
+      "start": 414.43,
+      "end": 418.33,
+      "duration": 3.9
+    },
+    {
+      "chord": "Em",
+      "start": 418.33,
+      "end": 420.1,
+      "duration": 1.77
+    },
+    {
+      "chord": "E",
+      "start": 420.1,
+      "end": 423.72,
+      "duration": 3.62
+    },
+    {
+      "chord": "G#",
+      "start": 423.72,
+      "end": 426.32,
+      "duration": 2.6
+    },
+    {
+      "chord": "G#m",
+      "start": 426.32,
+      "end": 429.57,
+      "duration": 3.25
+    },
+    {
+      "chord": "G#7M",
+      "start": 429.57,
+      "end": 433.93,
+      "duration": 4.36
+    }
+  ],
+  "versos": [
+    {
+      "text": "No Jardim das Rosas de Sonho e Medo Pelos canteiros",
+      "start": 9.6,
+      "end": 16.62,
+      "words": [
+        {
+          "word": "No",
+          "start": 9.6,
+          "end": 10.76
+        },
+        {
+          "word": "Jardim",
+          "start": 10.76,
+          "end": 11.42
+        },
+        {
+          "word": "das",
+          "start": 11.42,
+          "end": 11.68
+        },
+        {
+          "word": "Rosas",
+          "start": 11.68,
+          "end": 12.5
+        },
+        {
+          "word": "de",
+          "start": 12.5,
+          "end": 12.9
+        },
+        {
+          "word": "Sonho",
+          "start": 12.9,
+          "end": 13.4
+        },
+        {
+          "word": "e",
+          "start": 13.4,
+          "end": 13.64
+        },
+        {
+          "word": "Medo",
+          "start": 13.64,
+          "end": 15.04
+        },
+        {
+          "word": "Pelos",
+          "start": 15.04,
+          "end": 15.64
+        },
+        {
+          "word": "canteiros",
+          "start": 15.64,
+          "end": 16.62
+        }
+      ]
+    },
+    {
+      "text": "de espinho e flores lá",
+      "start": 16.62,
+      "end": 19.86,
+      "words": [
+        {
+          "word": "de",
+          "start": 16.62,
+          "end": 17.08
+        },
+        {
+          "word": "espinho",
+          "start": 17.08,
+          "end": 17.4
+        },
+        {
+          "word": "e",
+          "start": 17.4,
+          "end": 17.88
+        },
+        {
+          "word": "flores",
+          "start": 17.88,
+          "end": 18.46
+        },
+        {
+          "word": "lá",
+          "start": 18.46,
+          "end": 19.86
+        }
+      ]
+    },
+    {
+      "text": "Quero ver você, olere,",
+      "start": 19.86,
+      "end": 24.54,
+      "words": [
+        {
+          "word": "Quero",
+          "start": 19.86,
+          "end": 21.2
+        },
+        {
+          "word": "ver",
+          "start": 21.2,
+          "end": 21.6
+        },
+        {
+          "word": "você,",
+          "start": 21.6,
+          "end": 22.96
+        },
+        {
+          "word": "olere,",
+          "start": 22.96,
+          "end": 24.54
+        }
+      ]
+    },
+    {
+      "text": "olara, você me pegar",
+      "start": 24.98,
+      "end": 31.6,
+      "words": [
+        {
+          "word": "olara,",
+          "start": 24.98,
+          "end": 26.84
+        },
+        {
+          "word": "você",
+          "start": 28.66,
+          "end": 28.92
+        },
+        {
+          "word": "me",
+          "start": 28.92,
+          "end": 29.42
+        },
+        {
+          "word": "pegar",
+          "start": 29.42,
+          "end": 31.6
+        }
+      ]
+    },
+    {
+      "text": "Na trocada fria de estranho sono acordou João",
+      "start": 45.46,
+      "end": 51.92,
+      "words": [
+        {
+          "word": "Na",
+          "start": 45.46,
+          "end": 46.86
+        },
+        {
+          "word": "trocada",
+          "start": 46.86,
+          "end": 47.68
+        },
+        {
+          "word": "fria",
+          "start": 47.68,
+          "end": 48.48
+        },
+        {
+          "word": "de",
+          "start": 48.48,
+          "end": 48.94
+        },
+        {
+          "word": "estranho",
+          "start": 48.94,
+          "end": 49.6
+        },
+        {
+          "word": "sono",
+          "start": 49.6,
+          "end": 50.18
+        },
+        {
+          "word": "acordou",
+          "start": 50.18,
+          "end": 51.08
+        },
+        {
+          "word": "João",
+          "start": 51.08,
+          "end": 51.92
+        }
+      ]
+    },
+    {
+      "text": "O cachorro latia,",
+      "start": 51.92,
+      "end": 54.34,
+      "words": [
+        {
+          "word": "O",
+          "start": 51.92,
+          "end": 52.88
+        },
+        {
+          "word": "cachorro",
+          "start": 52.88,
+          "end": 53.4
+        },
+        {
+          "word": "latia,",
+          "start": 53.4,
+          "end": 54.34
+        }
+      ]
+    },
+    {
+      "text": "João abriu a porta,",
+      "start": 54.58,
+      "end": 56.24,
+      "words": [
+        {
+          "word": "João",
+          "start": 54.58,
+          "end": 54.64
+        },
+        {
+          "word": "abriu",
+          "start": 54.64,
+          "end": 55.2
+        },
+        {
+          "word": "a",
+          "start": 55.2,
+          "end": 55.58
+        },
+        {
+          "word": "porta,",
+          "start": 55.58,
+          "end": 56.24
+        }
+      ]
+    },
+    {
+      "text": "o sonho existia",
+      "start": 56.84,
+      "end": 59.22,
+      "words": [
+        {
+          "word": "o",
+          "start": 56.84,
+          "end": 56.96
+        },
+        {
+          "word": "sonho",
+          "start": 56.96,
+          "end": 57.38
+        },
+        {
+          "word": "existia",
+          "start": 57.38,
+          "end": 59.22
+        }
+      ]
+    },
+    {
+      "text": "Que João fugisse,",
+      "start": 61.6,
+      "end": 64.14,
+      "words": [
+        {
+          "word": "Que",
+          "start": 61.6,
+          "end": 62.6
+        },
+        {
+          "word": "João",
+          "start": 62.6,
+          "end": 63.02
+        },
+        {
+          "word": "fugisse,",
+          "start": 63.02,
+          "end": 64.14
+        }
+      ]
+    },
+    {
+      "text": "que João partisse,",
+      "start": 64.3,
+      "end": 66.22,
+      "words": [
+        {
+          "word": "que",
+          "start": 64.3,
+          "end": 64.46
+        },
+        {
+          "word": "João",
+          "start": 64.46,
+          "end": 64.94
+        },
+        {
+          "word": "partisse,",
+          "start": 64.94,
+          "end": 66.22
+        }
+      ]
+    },
+    {
+      "text": "que João sumisse do mundo",
+      "start": 66.58,
+      "end": 69.98,
+      "words": [
+        {
+          "word": "que",
+          "start": 66.58,
+          "end": 66.78
+        },
+        {
+          "word": "João",
+          "start": 66.78,
+          "end": 67.14
+        },
+        {
+          "word": "sumisse",
+          "start": 67.14,
+          "end": 67.96
+        },
+        {
+          "word": "do",
+          "start": 67.96,
+          "end": 68.3
+        },
+        {
+          "word": "mundo",
+          "start": 68.3,
+          "end": 69.98
+        }
+      ]
+    },
+    {
+      "text": "De nem Deus achar lerê",
+      "start": 71.88,
+      "end": 78.1,
+      "words": [
+        {
+          "word": "De",
+          "start": 71.88,
+          "end": 72.38
+        },
+        {
+          "word": "nem",
+          "start": 72.38,
+          "end": 72.64
+        },
+        {
+          "word": "Deus",
+          "start": 72.64,
+          "end": 73.04
+        },
+        {
+          "word": "achar",
+          "start": 73.04,
+          "end": 74.76
+        },
+        {
+          "word": "lerê",
+          "start": 74.76,
+          "end": 78.1
+        }
+      ]
+    },
+    {
+      "text": "Manhã noiteira de força viagem Levem dia inteiro",
+      "start": 78.1,
+      "end": 83.7,
+      "words": [
+        {
+          "word": "Manhã",
+          "start": 78.1,
+          "end": 78.94
+        },
+        {
+          "word": "noiteira",
+          "start": 78.94,
+          "end": 80.04
+        },
+        {
+          "word": "de",
+          "start": 80.04,
+          "end": 80.38
+        },
+        {
+          "word": "força",
+          "start": 80.38,
+          "end": 81.02
+        },
+        {
+          "word": "viagem",
+          "start": 81.02,
+          "end": 82.0
+        },
+        {
+          "word": "Levem",
+          "start": 82.0,
+          "end": 82.5
+        },
+        {
+          "word": "dia",
+          "start": 82.5,
+          "end": 82.88
+        },
+        {
+          "word": "inteiro",
+          "start": 82.88,
+          "end": 83.7
+        }
+      ]
+    },
+    {
+      "text": "um dia de vantagem",
+      "start": 83.7,
+      "end": 86.1,
+      "words": [
+        {
+          "word": "um",
+          "start": 83.7,
+          "end": 84.16
+        },
+        {
+          "word": "dia",
+          "start": 84.16,
+          "end": 84.38
+        },
+        {
+          "word": "de",
+          "start": 84.38,
+          "end": 84.7
+        },
+        {
+          "word": "vantagem",
+          "start": 84.7,
+          "end": 86.1
+        }
+      ]
+    },
+    {
+      "text": "Folha de palmeira apaga a passagem O chão na",
+      "start": 86.64,
+      "end": 92.48,
+      "words": [
+        {
+          "word": "Folha",
+          "start": 86.64,
+          "end": 87.2
+        },
+        {
+          "word": "de",
+          "start": 87.2,
+          "end": 87.52
+        },
+        {
+          "word": "palmeira",
+          "start": 87.52,
+          "end": 88.66
+        },
+        {
+          "word": "apaga",
+          "start": 88.66,
+          "end": 89.34
+        },
+        {
+          "word": "a",
+          "start": 89.34,
+          "end": 89.52
+        },
+        {
+          "word": "passagem",
+          "start": 89.52,
+          "end": 90.68
+        },
+        {
+          "word": "O",
+          "start": 90.68,
+          "end": 91.04
+        },
+        {
+          "word": "chão",
+          "start": 91.04,
+          "end": 92.04
+        },
+        {
+          "word": "na",
+          "start": 92.04,
+          "end": 92.48
+        }
+      ]
+    },
+    {
+      "text": "palma da mão",
+      "start": 92.48,
+      "end": 94.46,
+      "words": [
+        {
+          "word": "palma",
+          "start": 92.48,
+          "end": 92.92
+        },
+        {
+          "word": "da",
+          "start": 92.92,
+          "end": 93.26
+        },
+        {
+          "word": "mão",
+          "start": 93.26,
+          "end": 94.46
+        }
+      ]
+    },
+    {
+      "text": "O chão, o chão manhã redonda De pedras altas",
+      "start": 94.46,
+      "end": 103.2,
+      "words": [
+        {
+          "word": "O",
+          "start": 94.46,
+          "end": 95.0
+        },
+        {
+          "word": "chão,",
+          "start": 95.0,
+          "end": 96.76
+        },
+        {
+          "word": "o",
+          "start": 97.26,
+          "end": 97.26
+        },
+        {
+          "word": "chão",
+          "start": 97.26,
+          "end": 98.28
+        },
+        {
+          "word": "manhã",
+          "start": 98.28,
+          "end": 99.06
+        },
+        {
+          "word": "redonda",
+          "start": 99.06,
+          "end": 100.72
+        },
+        {
+          "word": "De",
+          "start": 100.72,
+          "end": 101.24
+        },
+        {
+          "word": "pedras",
+          "start": 101.24,
+          "end": 102.16
+        },
+        {
+          "word": "altas",
+          "start": 102.16,
+          "end": 103.2
+        }
+      ]
+    },
+    {
+      "text": "cruzou fronteira",
+      "start": 103.2,
+      "end": 106.24,
+      "words": [
+        {
+          "word": "cruzou",
+          "start": 103.2,
+          "end": 103.86
+        },
+        {
+          "word": "fronteira",
+          "start": 103.86,
+          "end": 106.24
+        }
+      ]
+    },
+    {
+      "text": "Dá servidão, olere,",
+      "start": 106.24,
+      "end": 113.18,
+      "words": [
+        {
+          "word": "Dá",
+          "start": 106.24,
+          "end": 107.08
+        },
+        {
+          "word": "servidão,",
+          "start": 107.08,
+          "end": 111.24
+        },
+        {
+          "word": "olere,",
+          "start": 111.82,
+          "end": 113.18
+        }
+      ]
+    },
+    {
+      "text": "quero ver, olere",
+      "start": 115.78,
+      "end": 121.76,
+      "words": [
+        {
+          "word": "quero",
+          "start": 115.78,
+          "end": 116.02
+        },
+        {
+          "word": "ver,",
+          "start": 116.02,
+          "end": 118.02
+        },
+        {
+          "word": "olere",
+          "start": 119.78,
+          "end": 121.76
+        }
+      ]
+    },
+    {
+      "text": "O chão, o chão manhã redonda",
+      "start": 159.84,
+      "end": 166.22,
+      "words": [
+        {
+          "word": "O",
+          "start": 159.84,
+          "end": 161.24
+        },
+        {
+          "word": "chão,",
+          "start": 161.24,
+          "end": 162.64
+        },
+        {
+          "word": "o",
+          "start": 162.64,
+          "end": 162.72
+        },
+        {
+          "word": "chão",
+          "start": 162.72,
+          "end": 162.74
+        },
+        {
+          "word": "manhã",
+          "start": 162.74,
+          "end": 164.56
+        },
+        {
+          "word": "redonda",
+          "start": 164.56,
+          "end": 166.22
+        }
+      ]
+    },
+    {
+      "text": "O chão, o chão manhã redonda",
+      "start": 166.24,
+      "end": 196.22,
+      "words": [
+        {
+          "word": "O",
+          "start": 166.24,
+          "end": 166.24
+        },
+        {
+          "word": "chão,",
+          "start": 166.24,
+          "end": 195.38
+        },
+        {
+          "word": "o",
+          "start": 196.2,
+          "end": 196.22
+        },
+        {
+          "word": "chão",
+          "start": 196.22,
+          "end": 196.22
+        },
+        {
+          "word": "manhã",
+          "start": 196.22,
+          "end": 196.22
+        },
+        {
+          "word": "redonda",
+          "start": 196.22,
+          "end": 196.22
+        }
+      ]
+    },
+    {
+      "text": "De sorte, buscando a vida,",
+      "start": 196.22,
+      "end": 199.14,
+      "words": [
+        {
+          "word": "De",
+          "start": 196.22,
+          "end": 196.22
+        },
+        {
+          "word": "sorte,",
+          "start": 196.22,
+          "end": 197.36
+        },
+        {
+          "word": "buscando",
+          "start": 197.84,
+          "end": 198.3
+        },
+        {
+          "word": "a",
+          "start": 198.3,
+          "end": 198.76
+        },
+        {
+          "word": "vida,",
+          "start": 198.76,
+          "end": 199.14
+        }
+      ]
+    },
+    {
+      "text": "encontrando a morte Pela meia rosa do quadrante",
+      "start": 199.78,
+      "end": 204.6,
+      "words": [
+        {
+          "word": "encontrando",
+          "start": 199.78,
+          "end": 200.16
+        },
+        {
+          "word": "a",
+          "start": 200.16,
+          "end": 200.52
+        },
+        {
+          "word": "morte",
+          "start": 200.52,
+          "end": 201.34
+        },
+        {
+          "word": "Pela",
+          "start": 201.34,
+          "end": 202.4
+        },
+        {
+          "word": "meia",
+          "start": 202.4,
+          "end": 203.04
+        },
+        {
+          "word": "rosa",
+          "start": 203.04,
+          "end": 203.52
+        },
+        {
+          "word": "do",
+          "start": 203.52,
+          "end": 203.8
+        },
+        {
+          "word": "quadrante",
+          "start": 203.8,
+          "end": 204.6
+        }
+      ]
+    },
+    {
+      "text": "norte",
+      "start": 204.6,
+      "end": 205.82,
+      "words": [
+        {
+          "word": "norte",
+          "start": 204.6,
+          "end": 205.82
+        }
+      ]
+    },
+    {
+      "text": "João, João",
+      "start": 205.82,
+      "end": 211.68,
+      "words": [
+        {
+          "word": "João,",
+          "start": 205.82,
+          "end": 206.98
+        },
+        {
+          "word": "João",
+          "start": 208.12,
+          "end": 211.68
+        }
+      ]
+    },
+    {
+      "text": "Um tal de Chico chamado Antônio num cavalo baio",
+      "start": 214.56,
+      "end": 220.64,
+      "words": [
+        {
+          "word": "Um",
+          "start": 214.56,
+          "end": 215.38
+        },
+        {
+          "word": "tal",
+          "start": 215.38,
+          "end": 215.76
+        },
+        {
+          "word": "de",
+          "start": 215.76,
+          "end": 216.1
+        },
+        {
+          "word": "Chico",
+          "start": 216.1,
+          "end": 216.86
+        },
+        {
+          "word": "chamado",
+          "start": 216.86,
+          "end": 217.54
+        },
+        {
+          "word": "Antônio",
+          "start": 217.54,
+          "end": 218.72
+        },
+        {
+          "word": "num",
+          "start": 218.72,
+          "end": 219.04
+        },
+        {
+          "word": "cavalo",
+          "start": 219.04,
+          "end": 219.8
+        },
+        {
+          "word": "baio",
+          "start": 219.8,
+          "end": 220.64
+        }
+      ]
+    },
+    {
+      "text": "Que era um burro velho que na barra fria já cruzado",
+      "start": 220.64,
+      "end": 225.62,
+      "words": [
+        {
+          "word": "Que",
+          "start": 220.64,
+          "end": 220.92
+        },
+        {
+          "word": "era",
+          "start": 220.92,
+          "end": 221.1
+        },
+        {
+          "word": "um",
+          "start": 221.1,
+          "end": 221.38
+        },
+        {
+          "word": "burro",
+          "start": 221.38,
+          "end": 221.7
+        },
+        {
+          "word": "velho",
+          "start": 221.7,
+          "end": 222.94
+        },
+        {
+          "word": "que",
+          "start": 222.94,
+          "end": 223.36
+        },
+        {
+          "word": "na",
+          "start": 223.36,
+          "end": 223.64
+        },
+        {
+          "word": "barra",
+          "start": 223.64,
+          "end": 224.26
+        },
+        {
+          "word": "fria",
+          "start": 224.26,
+          "end": 224.66
+        },
+        {
+          "word": "já",
+          "start": 224.66,
+          "end": 225.0
+        },
+        {
+          "word": "cruzado",
+          "start": 225.0,
+          "end": 225.62
+        }
+      ]
+    },
+    {
+      "text": "o rio",
+      "start": 225.62,
+      "end": 226.4,
+      "words": [
+        {
+          "word": "o",
+          "start": 225.62,
+          "end": 225.78
+        },
+        {
+          "word": "rio",
+          "start": 225.78,
+          "end": 226.4
+        }
+      ]
+    },
+    {
+      "text": "Lá vinha Matias,",
+      "start": 226.4,
+      "end": 228.48,
+      "words": [
+        {
+          "word": "Lá",
+          "start": 226.4,
+          "end": 226.92
+        },
+        {
+          "word": "vinha",
+          "start": 226.92,
+          "end": 227.1
+        },
+        {
+          "word": "Matias,",
+          "start": 227.1,
+          "end": 228.48
+        }
+      ]
+    },
+    {
+      "text": "cujo nome é Pedro aliás Horácio",
+      "start": 228.86,
+      "end": 231.68,
+      "words": [
+        {
+          "word": "cujo",
+          "start": 228.86,
+          "end": 229.14
+        },
+        {
+          "word": "nome",
+          "start": 229.14,
+          "end": 229.46
+        },
+        {
+          "word": "é",
+          "start": 229.46,
+          "end": 229.82
+        },
+        {
+          "word": "Pedro",
+          "start": 229.82,
+          "end": 230.38
+        },
+        {
+          "word": "aliás",
+          "start": 230.38,
+          "end": 231.06
+        },
+        {
+          "word": "Horácio",
+          "start": 231.06,
+          "end": 231.68
+        }
+      ]
+    },
+    {
+      "text": "Volgo Simão, Lá um chamado Tiam,",
+      "start": 231.68,
+      "end": 239.12,
+      "words": [
+        {
+          "word": "Volgo",
+          "start": 231.68,
+          "end": 233.22
+        },
+        {
+          "word": "Simão,",
+          "start": 233.22,
+          "end": 234.7
+        },
+        {
+          "word": "Lá",
+          "start": 234.82,
+          "end": 235.02
+        },
+        {
+          "word": "um",
+          "start": 235.02,
+          "end": 236.06
+        },
+        {
+          "word": "chamado",
+          "start": 236.06,
+          "end": 236.68
+        },
+        {
+          "word": "Tiam,",
+          "start": 236.68,
+          "end": 239.12
+        }
+      ]
+    },
+    {
+      "text": "chamado João",
+      "start": 239.8,
+      "end": 241.68,
+      "words": [
+        {
+          "word": "chamado",
+          "start": 239.8,
+          "end": 240.22
+        },
+        {
+          "word": "João",
+          "start": 240.22,
+          "end": 241.68
+        }
+      ]
+    },
+    {
+      "text": "Recebendo o aviso,",
+      "start": 253.06,
+      "end": 254.58,
+      "words": [
+        {
+          "word": "Recebendo",
+          "start": 253.06,
+          "end": 254.02
+        },
+        {
+          "word": "o",
+          "start": 254.02,
+          "end": 254.22
+        },
+        {
+          "word": "aviso,",
+          "start": 254.22,
+          "end": 254.58
+        }
+      ]
+    },
+    {
+      "text": "ensorçou o caminho de norte -nordeste pra norte",
+      "start": 254.74,
+      "end": 257.7,
+      "words": [
+        {
+          "word": "ensorçou",
+          "start": 254.74,
+          "end": 255.22
+        },
+        {
+          "word": "o",
+          "start": 255.22,
+          "end": 255.28
+        },
+        {
+          "word": "caminho",
+          "start": 255.28,
+          "end": 255.82
+        },
+        {
+          "word": "de",
+          "start": 255.82,
+          "end": 256.14
+        },
+        {
+          "word": "norte",
+          "start": 256.14,
+          "end": 256.3
+        },
+        {
+          "word": "-nordeste",
+          "start": 256.3,
+          "end": 256.94
+        },
+        {
+          "word": "pra",
+          "start": 256.94,
+          "end": 257.22
+        },
+        {
+          "word": "norte",
+          "start": 257.22,
+          "end": 257.7
+        }
+      ]
+    },
+    {
+      "text": "-norte",
+      "start": 257.7,
+      "end": 258.06,
+      "words": [
+        {
+          "word": "-norte",
+          "start": 257.7,
+          "end": 258.06
+        }
+      ]
+    },
+    {
+      "text": "Na meia vida de Adiá das mortes,",
+      "start": 258.06,
+      "end": 260.68,
+      "words": [
+        {
+          "word": "Na",
+          "start": 258.06,
+          "end": 258.26
+        },
+        {
+          "word": "meia",
+          "start": 258.26,
+          "end": 258.78
+        },
+        {
+          "word": "vida",
+          "start": 258.78,
+          "end": 259.1
+        },
+        {
+          "word": "de",
+          "start": 259.1,
+          "end": 259.34
+        },
+        {
+          "word": "Adiá",
+          "start": 259.34,
+          "end": 259.68
+        },
+        {
+          "word": "das",
+          "start": 259.68,
+          "end": 259.94
+        },
+        {
+          "word": "mortes,",
+          "start": 259.94,
+          "end": 260.68
+        }
+      ]
+    },
+    {
+      "text": "um estranho chamado João",
+      "start": 261.16,
+      "end": 263.14,
+      "words": [
+        {
+          "word": "um",
+          "start": 261.16,
+          "end": 261.16
+        },
+        {
+          "word": "estranho",
+          "start": 261.16,
+          "end": 261.68
+        },
+        {
+          "word": "chamado",
+          "start": 261.68,
+          "end": 262.16
+        },
+        {
+          "word": "João",
+          "start": 262.16,
+          "end": 263.14
+        }
+      ]
+    },
+    {
+      "text": "O clarão das águas no deserto negro a perder",
+      "start": 264.26,
+      "end": 267.68,
+      "words": [
+        {
+          "word": "O",
+          "start": 264.26,
+          "end": 264.96
+        },
+        {
+          "word": "clarão",
+          "start": 264.96,
+          "end": 265.28
+        },
+        {
+          "word": "das",
+          "start": 265.28,
+          "end": 265.54
+        },
+        {
+          "word": "águas",
+          "start": 265.54,
+          "end": 265.94
+        },
+        {
+          "word": "no",
+          "start": 265.94,
+          "end": 266.12
+        },
+        {
+          "word": "deserto",
+          "start": 266.12,
+          "end": 266.8
+        },
+        {
+          "word": "negro",
+          "start": 266.8,
+          "end": 267.06
+        },
+        {
+          "word": "a",
+          "start": 267.06,
+          "end": 267.32
+        },
+        {
+          "word": "perder",
+          "start": 267.32,
+          "end": 267.68
+        }
+      ]
+    },
+    {
+      "text": "mais nada",
+      "start": 267.68,
+      "end": 268.3,
+      "words": [
+        {
+          "word": "mais",
+          "start": 267.68,
+          "end": 268.0
+        },
+        {
+          "word": "nada",
+          "start": 268.0,
+          "end": 268.3
+        }
+      ]
+    },
+    {
+      "text": "Corajoso medo lá,",
+      "start": 268.3,
+      "end": 270.22,
+      "words": [
+        {
+          "word": "Corajoso",
+          "start": 268.3,
+          "end": 269.04
+        },
+        {
+          "word": "medo",
+          "start": 269.04,
+          "end": 269.4
+        },
+        {
+          "word": "lá,",
+          "start": 269.4,
+          "end": 270.22
+        }
+      ]
+    },
+    {
+      "text": "quero ver você",
+      "start": 270.36,
+      "end": 272.44,
+      "words": [
+        {
+          "word": "quero",
+          "start": 270.36,
+          "end": 270.58
+        },
+        {
+          "word": "ver",
+          "start": 270.58,
+          "end": 270.86
+        },
+        {
+          "word": "você",
+          "start": 270.86,
+          "end": 272.44
+        }
+      ]
+    },
+    {
+      "text": "Os sete caminhos,",
+      "start": 273.3,
+      "end": 274.98,
+      "words": [
+        {
+          "word": "Os",
+          "start": 273.3,
+          "end": 274.0
+        },
+        {
+          "word": "sete",
+          "start": 274.0,
+          "end": 274.4
+        },
+        {
+          "word": "caminhos,",
+          "start": 274.4,
+          "end": 274.98
+        }
+      ]
+    },
+    {
+      "text": "setenta sorte, setecentas vidas e sete mil mortes",
+      "start": 275.26,
+      "end": 278.37,
+      "words": [
+        {
+          "word": "setenta",
+          "start": 275.26,
+          "end": 275.58
+        },
+        {
+          "word": "sorte,",
+          "start": 275.58,
+          "end": 276.02
+        },
+        {
+          "word": "setecentas",
+          "start": 276.16,
+          "end": 277.06
+        },
+        {
+          "word": "vidas",
+          "start": 277.06,
+          "end": 277.4
+        },
+        {
+          "word": "e",
+          "start": 277.4,
+          "end": 277.62
+        },
+        {
+          "word": "sete",
+          "start": 277.62,
+          "end": 277.88
+        },
+        {
+          "word": "mil",
+          "start": 277.88,
+          "end": 278.02
+        },
+        {
+          "word": "mortes",
+          "start": 278.02,
+          "end": 278.37
+        }
+      ]
+    },
+    {
+      "text": "Esse um, João, João",
+      "start": 278.58,
+      "end": 282.28,
+      "words": [
+        {
+          "word": "Esse",
+          "start": 278.58,
+          "end": 278.98
+        },
+        {
+          "word": "um,",
+          "start": 278.98,
+          "end": 279.64
+        },
+        {
+          "word": "João,",
+          "start": 279.88,
+          "end": 280.6
+        },
+        {
+          "word": "João",
+          "start": 280.84,
+          "end": 282.28
+        }
+      ]
+    },
+    {
+      "text": "E deu dia claro,",
+      "start": 282.28,
+      "end": 284.52,
+      "words": [
+        {
+          "word": "E",
+          "start": 282.28,
+          "end": 283.12
+        },
+        {
+          "word": "deu",
+          "start": 283.12,
+          "end": 283.3
+        },
+        {
+          "word": "dia",
+          "start": 283.3,
+          "end": 283.84
+        },
+        {
+          "word": "claro,",
+          "start": 283.84,
+          "end": 284.52
+        }
+      ]
+    },
+    {
+      "text": "e deu noite escuro,",
+      "start": 284.74,
+      "end": 286.58,
+      "words": [
+        {
+          "word": "e",
+          "start": 284.74,
+          "end": 284.8
+        },
+        {
+          "word": "deu",
+          "start": 284.8,
+          "end": 285.0
+        },
+        {
+          "word": "noite",
+          "start": 285.0,
+          "end": 285.58
+        },
+        {
+          "word": "escuro,",
+          "start": 285.58,
+          "end": 286.58
+        }
+      ]
+    },
+    {
+      "text": "e deu meia -noite",
+      "start": 286.66,
+      "end": 290.04,
+      "words": [
+        {
+          "word": "e",
+          "start": 286.66,
+          "end": 286.84
+        },
+        {
+          "word": "deu",
+          "start": 286.84,
+          "end": 287.06
+        },
+        {
+          "word": "meia",
+          "start": 287.06,
+          "end": 287.76
+        },
+        {
+          "word": "-noite",
+          "start": 287.76,
+          "end": 290.04
+        }
+      ]
+    },
+    {
+      "text": "No coração",
+      "start": 293.8,
+      "end": 296.52,
+      "words": [
+        {
+          "word": "No",
+          "start": 293.8,
+          "end": 295.16
+        },
+        {
+          "word": "coração",
+          "start": 295.16,
+          "end": 296.52
+        }
+      ]
+    },
+    {
+      "text": "Olhere",
+      "start": 300.64,
+      "end": 302.0,
+      "words": [
+        {
+          "word": "Olhere",
+          "start": 300.64,
+          "end": 302.0
+        }
+      ]
+    },
+    {
+      "text": "Quero ver",
+      "start": 305.5,
+      "end": 308.22,
+      "words": [
+        {
+          "word": "Quero",
+          "start": 305.5,
+          "end": 306.86
+        },
+        {
+          "word": "ver",
+          "start": 306.86,
+          "end": 308.22
+        }
+      ]
+    },
+    {
+      "text": "Olhere",
+      "start": 311.4,
+      "end": 312.22,
+      "words": [
+        {
+          "word": "Olhere",
+          "start": 311.4,
+          "end": 312.22
+        }
+      ]
+    },
+    {
+      "text": "As serras passam canabrava,",
+      "start": 338.22,
+      "end": 340.06,
+      "words": [
+        {
+          "word": "As",
+          "start": 338.22,
+          "end": 338.68
+        },
+        {
+          "word": "serras",
+          "start": 338.68,
+          "end": 338.86
+        },
+        {
+          "word": "passam",
+          "start": 338.86,
+          "end": 339.18
+        },
+        {
+          "word": "canabrava,",
+          "start": 339.18,
+          "end": 340.06
+        }
+      ]
+    },
+    {
+      "text": "no brejo das almas tudo terminava",
+      "start": 340.14,
+      "end": 342.44,
+      "words": [
+        {
+          "word": "no",
+          "start": 340.14,
+          "end": 340.28
+        },
+        {
+          "word": "brejo",
+          "start": 340.28,
+          "end": 340.5
+        },
+        {
+          "word": "das",
+          "start": 340.5,
+          "end": 340.78
+        },
+        {
+          "word": "almas",
+          "start": 340.78,
+          "end": 341.3
+        },
+        {
+          "word": "tudo",
+          "start": 341.3,
+          "end": 341.68
+        },
+        {
+          "word": "terminava",
+          "start": 341.68,
+          "end": 342.44
+        }
+      ]
+    },
+    {
+      "text": "No caminho velho onde a lama trava lá",
+      "start": 342.44,
+      "end": 345.86,
+      "words": [
+        {
+          "word": "No",
+          "start": 342.44,
+          "end": 342.62
+        },
+        {
+          "word": "caminho",
+          "start": 342.62,
+          "end": 343.02
+        },
+        {
+          "word": "velho",
+          "start": 343.02,
+          "end": 343.54
+        },
+        {
+          "word": "onde",
+          "start": 343.54,
+          "end": 343.7
+        },
+        {
+          "word": "a",
+          "start": 343.7,
+          "end": 343.96
+        },
+        {
+          "word": "lama",
+          "start": 343.96,
+          "end": 344.22
+        },
+        {
+          "word": "trava",
+          "start": 344.22,
+          "end": 344.74
+        },
+        {
+          "word": "lá",
+          "start": 344.74,
+          "end": 345.86
+        }
+      ]
+    },
+    {
+      "text": "No todo fim é bom,",
+      "start": 345.86,
+      "end": 347.98,
+      "words": [
+        {
+          "word": "No",
+          "start": 345.86,
+          "end": 346.24
+        },
+        {
+          "word": "todo",
+          "start": 346.24,
+          "end": 346.62
+        },
+        {
+          "word": "fim",
+          "start": 346.62,
+          "end": 346.82
+        },
+        {
+          "word": "é",
+          "start": 346.82,
+          "end": 347.12
+        },
+        {
+          "word": "bom,",
+          "start": 347.12,
+          "end": 347.98
+        }
+      ]
+    },
+    {
+      "text": "já acabou João",
+      "start": 348.4,
+      "end": 350.04,
+      "words": [
+        {
+          "word": "já",
+          "start": 348.4,
+          "end": 348.56
+        },
+        {
+          "word": "acabou",
+          "start": 348.56,
+          "end": 348.82
+        },
+        {
+          "word": "João",
+          "start": 348.82,
+          "end": 350.04
+        }
+      ]
+    },
+    {
+      "text": "No jardim das roças de sonho e medo",
+      "start": 374.22,
+      "end": 379.98,
+      "words": [
+        {
+          "word": "No",
+          "start": 374.22,
+          "end": 375.54
+        },
+        {
+          "word": "jardim",
+          "start": 375.54,
+          "end": 376.86
+        },
+        {
+          "word": "das",
+          "start": 376.86,
+          "end": 377.24
+        },
+        {
+          "word": "roças",
+          "start": 377.24,
+          "end": 378.24
+        },
+        {
+          "word": "de",
+          "start": 378.24,
+          "end": 378.7
+        },
+        {
+          "word": "sonho",
+          "start": 378.7,
+          "end": 379.14
+        },
+        {
+          "word": "e",
+          "start": 379.14,
+          "end": 379.42
+        },
+        {
+          "word": "medo",
+          "start": 379.42,
+          "end": 379.98
+        }
+      ]
+    },
+    {
+      "text": "No clarão das águas no deserto negro lá",
+      "start": 379.98,
+      "end": 385.98,
+      "words": [
+        {
+          "word": "No",
+          "start": 379.98,
+          "end": 380.32
+        },
+        {
+          "word": "clarão",
+          "start": 380.32,
+          "end": 380.98
+        },
+        {
+          "word": "das",
+          "start": 380.98,
+          "end": 381.52
+        },
+        {
+          "word": "águas",
+          "start": 381.52,
+          "end": 382.72
+        },
+        {
+          "word": "no",
+          "start": 382.72,
+          "end": 383.08
+        },
+        {
+          "word": "deserto",
+          "start": 383.08,
+          "end": 384.08
+        },
+        {
+          "word": "negro",
+          "start": 384.08,
+          "end": 384.64
+        },
+        {
+          "word": "lá",
+          "start": 384.64,
+          "end": 385.98
+        }
+      ]
+    },
+    {
+      "text": "Quero ver você",
+      "start": 385.98,
+      "end": 388.24,
+      "words": [
+        {
+          "word": "Quero",
+          "start": 385.98,
+          "end": 387.2
+        },
+        {
+          "word": "ver",
+          "start": 387.2,
+          "end": 387.58
+        },
+        {
+          "word": "você",
+          "start": 387.58,
+          "end": 388.24
+        }
+      ]
+    },
+    {
+      "text": "Olhere",
+      "start": 389.02,
+      "end": 390.22,
+      "words": [
+        {
+          "word": "Olhere",
+          "start": 389.02,
+          "end": 390.22
+        }
+      ]
+    },
+    {
+      "text": "Lará",
+      "start": 392.74,
+      "end": 394.06,
+      "words": [
+        {
+          "word": "Lará",
+          "start": 392.74,
+          "end": 394.06
+        }
+      ]
+    },
+    {
+      "text": "Você me pegar",
+      "start": 394.06,
+      "end": 396.64,
+      "words": [
+        {
+          "word": "Você",
+          "start": 394.06,
+          "end": 394.94
+        },
+        {
+          "word": "me",
+          "start": 394.94,
+          "end": 395.4
+        },
+        {
+          "word": "pegar",
+          "start": 395.4,
+          "end": 396.64
+        }
+      ]
+    },
+    {
+      "text": "Você me pegar",
+      "start": 425.0,
+      "end": 427.92,
+      "words": [
+        {
+          "word": "Você",
+          "start": 425.0,
+          "end": 426.4
+        },
+        {
+          "word": "me",
+          "start": 426.4,
+          "end": 427.8
+        },
+        {
+          "word": "pegar",
+          "start": 427.8,
+          "end": 427.92
+        }
+      ]
+    },
+    {
+      "text": "Você me pegar",
+      "start": 432.5,
+      "end": 433.9,
+      "words": [
+        {
+          "word": "Você",
+          "start": 432.5,
+          "end": 433.9
+        },
+        {
+          "word": "me",
+          "start": 433.9,
+          "end": 433.9
+        },
+        {
+          "word": "pegar",
+          "start": 433.9,
+          "end": 433.9
+        }
+      ]
+    }
+  ]
+}

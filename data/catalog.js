@@ -246,6 +246,13 @@ const SONGS_CATALOG = [
         "chordsCount": 11
     },
     {
+        "id": "EstradaDoSol",
+        "title": "Estrada do Sol",
+        "artist": "Tom Jobim",
+        "composer": "Tom Jobim / Dolores Duran",
+        "chordsCount": 10
+    },
+    {
         "id": "Estrela",
         "title": "Estrela",
         "artist": "Elton Medeiros / Eduardo Gudin / Roberto Riberti",

@@ -1,0 +1,1710 @@
+{
+  "titulo": "Maria Helena Raposo - ESTRADA DO SOL - Antonio Carlos Jobim e Dolores Duran - gravação de 1958",
+  "artista": "luciano hortencio",
+  "acordes": [
+    {
+      "chord": "C7M",
+      "start": 0.0,
+      "end": 0.37,
+      "duration": 0.37
+    },
+    {
+      "chord": "G7M(9)",
+      "start": 0.37,
+      "end": 1.11,
+      "duration": 0.74
+    },
+    {
+      "chord": "C#",
+      "start": 1.11,
+      "end": 2.09,
+      "duration": 0.98
+    },
+    {
+      "chord": "G7M(9)",
+      "start": 2.09,
+      "end": 2.65,
+      "duration": 0.56
+    },
+    {
+      "chord": "D7M",
+      "start": 2.65,
+      "end": 4.92,
+      "duration": 2.27
+    },
+    {
+      "chord": "G#4",
+      "start": 4.92,
+      "end": 5.53,
+      "duration": 0.6
+    },
+    {
+      "chord": "C#7(4)/B",
+      "start": 5.53,
+      "end": 6.22,
+      "duration": 0.69
+    },
+    {
+      "chord": "G#4",
+      "start": 6.22,
+      "end": 7.57,
+      "duration": 1.35
+    },
+    {
+      "chord": "C#7/G#",
+      "start": 7.57,
+      "end": 9.1,
+      "duration": 1.53
+    },
+    {
+      "chord": "C#7(4)",
+      "start": 9.1,
+      "end": 9.85,
+      "duration": 0.74
+    },
+    {
+      "chord": "G#7M",
+      "start": 9.85,
+      "end": 11.56,
+      "duration": 1.71
+    },
+    {
+      "chord": "D7M",
+      "start": 11.56,
+      "end": 13.1,
+      "duration": 1.54
+    },
+    {
+      "chord": "G7M(9)",
+      "start": 13.1,
+      "end": 13.93,
+      "duration": 0.83
+    },
+    {
+      "chord": "C#",
+      "start": 13.93,
+      "end": 14.95,
+      "duration": 1.02
+    },
+    {
+      "chord": "G7M(9)",
+      "start": 14.95,
+      "end": 15.37,
+      "duration": 0.42
+    },
+    {
+      "chord": "D7M",
+      "start": 15.37,
+      "end": 15.74,
+      "duration": 0.37
+    },
+    {
+      "chord": "A7/G",
+      "start": 15.74,
+      "end": 16.72,
+      "duration": 0.98
+    },
+    {
+      "chord": "G#7M",
+      "start": 16.72,
+      "end": 17.74,
+      "duration": 1.02
+    },
+    {
+      "chord": "A6/9/F#",
+      "start": 17.74,
+      "end": 18.2,
+      "duration": 0.46
+    },
+    {
+      "chord": "Fm7",
+      "start": 18.2,
+      "end": 19.55,
+      "duration": 1.35
+    },
+    {
+      "chord": "Fm",
+      "start": 19.55,
+      "end": 22.94,
+      "duration": 3.39
+    },
+    {
+      "chord": "Em",
+      "start": 22.94,
+      "end": 23.36,
+      "duration": 0.42
+    },
+    {
+      "chord": "C#m/E",
+      "start": 23.36,
+      "end": 24.15,
+      "duration": 0.79
+    },
+    {
+      "chord": "E7M",
+      "start": 24.15,
+      "end": 26.05,
+      "duration": 1.9
+    },
+    {
+      "chord": "C#m/E",
+      "start": 26.05,
+      "end": 26.8,
+      "duration": 0.74
+    },
+    {
+      "chord": "E7M",
+      "start": 26.8,
+      "end": 27.35,
+      "duration": 0.56
+    },
+    {
+      "chord": "E4(add9)",
+      "start": 27.35,
+      "end": 28.93,
+      "duration": 1.58
+    },
+    {
+      "chord": "C#m/E",
+      "start": 28.93,
+      "end": 31.25,
+      "duration": 2.32
+    },
+    {
+      "chord": "E7M",
+      "start": 31.25,
+      "end": 38.03,
+      "duration": 6.78
+    },
+    {
+      "chord": "E4/A",
+      "start": 38.03,
+      "end": 39.47,
+      "duration": 1.44
+    },
+    {
+      "chord": "Bm7",
+      "start": 39.47,
+      "end": 41.05,
+      "duration": 1.58
+    },
+    {
+      "chord": "C#m7/B",
+      "start": 41.05,
+      "end": 42.68,
+      "duration": 1.63
+    },
+    {
+      "chord": "D7M(9)/E",
+      "start": 42.68,
+      "end": 43.19,
+      "duration": 0.51
+    },
+    {
+      "chord": "F7M/A",
+      "start": 43.19,
+      "end": 45.14,
+      "duration": 1.95
+    },
+    {
+      "chord": "D7M",
+      "start": 45.14,
+      "end": 45.51,
+      "duration": 0.37
+    },
+    {
+      "chord": "G7M",
+      "start": 45.51,
+      "end": 45.93,
+      "duration": 0.42
+    },
+    {
+      "chord": "C7M/G",
+      "start": 45.93,
+      "end": 47.23,
+      "duration": 1.3
+    },
+    {
+      "chord": "F7M",
+      "start": 47.23,
+      "end": 47.93,
+      "duration": 0.7
+    },
+    {
+      "chord": "D7M",
+      "start": 47.93,
+      "end": 49.09,
+      "duration": 1.16
+    },
+    {
+      "chord": "C7M/B",
+      "start": 49.09,
+      "end": 50.29,
+      "duration": 1.2
+    },
+    {
+      "chord": "F7M/E",
+      "start": 50.29,
+      "end": 50.71,
+      "duration": 0.42
+    },
+    {
+      "chord": "C#m/E",
+      "start": 50.71,
+      "end": 51.64,
+      "duration": 0.93
+    },
+    {
+      "chord": "C#m7/E",
+      "start": 51.64,
+      "end": 52.94,
+      "duration": 1.3
+    },
+    {
+      "chord": "Em",
+      "start": 52.94,
+      "end": 53.31,
+      "duration": 0.37
+    },
+    {
+      "chord": "E6/9",
+      "start": 53.31,
+      "end": 53.78,
+      "duration": 0.46
+    },
+    {
+      "chord": "E7M",
+      "start": 53.78,
+      "end": 54.47,
+      "duration": 0.69
+    },
+    {
+      "chord": "Em9",
+      "start": 54.47,
+      "end": 56.29,
+      "duration": 1.82
+    },
+    {
+      "chord": "E7M",
+      "start": 56.29,
+      "end": 58.24,
+      "duration": 1.95
+    },
+    {
+      "chord": "C#m/E",
+      "start": 58.24,
+      "end": 60.42,
+      "duration": 2.18
+    },
+    {
+      "chord": "E7M",
+      "start": 60.42,
+      "end": 64.27,
+      "duration": 3.85
+    },
+    {
+      "chord": "D6/9/E",
+      "start": 64.27,
+      "end": 65.25,
+      "duration": 0.98
+    },
+    {
+      "chord": "A7M",
+      "start": 65.25,
+      "end": 66.78,
+      "duration": 1.53
+    },
+    {
+      "chord": "C4(add9)",
+      "start": 66.78,
+      "end": 69.1,
+      "duration": 2.32
+    },
+    {
+      "chord": "F#6/9",
+      "start": 69.1,
+      "end": 69.47,
+      "duration": 0.37
+    },
+    {
+      "chord": "F7(4)",
+      "start": 69.47,
+      "end": 70.96,
+      "duration": 1.49
+    },
+    {
+      "chord": "C7M/B",
+      "start": 70.96,
+      "end": 71.47,
+      "duration": 0.51
+    },
+    {
+      "chord": "Bm",
+      "start": 71.47,
+      "end": 72.03,
+      "duration": 0.56
+    },
+    {
+      "chord": "Bm9",
+      "start": 72.03,
+      "end": 72.72,
+      "duration": 0.69
+    },
+    {
+      "chord": "E7M",
+      "start": 72.72,
+      "end": 77.51,
+      "duration": 4.79
+    },
+    {
+      "chord": "F#m7",
+      "start": 77.51,
+      "end": 77.88,
+      "duration": 0.37
+    },
+    {
+      "chord": "C#m/E",
+      "start": 77.88,
+      "end": 78.58,
+      "duration": 0.7
+    },
+    {
+      "chord": "A7M",
+      "start": 78.58,
+      "end": 79.74,
+      "duration": 1.16
+    },
+    {
+      "chord": "F#m7",
+      "start": 79.74,
+      "end": 81.73,
+      "duration": 1.99
+    },
+    {
+      "chord": "C#m/E",
+      "start": 81.73,
+      "end": 82.9,
+      "duration": 1.17
+    },
+    {
+      "chord": "A7M",
+      "start": 82.9,
+      "end": 84.2,
+      "duration": 1.3
+    },
+    {
+      "chord": "Bm",
+      "start": 84.2,
+      "end": 84.75,
+      "duration": 0.55
+    },
+    {
+      "chord": "E6/9/B",
+      "start": 84.75,
+      "end": 85.12,
+      "duration": 0.37
+    },
+    {
+      "chord": "E/B",
+      "start": 85.12,
+      "end": 85.5,
+      "duration": 0.37
+    },
+    {
+      "chord": "C#m7/B",
+      "start": 85.5,
+      "end": 88.05,
+      "duration": 2.55
+    },
+    {
+      "chord": "Em",
+      "start": 88.05,
+      "end": 88.42,
+      "duration": 0.37
+    },
+    {
+      "chord": "B4",
+      "start": 88.42,
+      "end": 88.89,
+      "duration": 0.47
+    },
+    {
+      "chord": "E",
+      "start": 88.89,
+      "end": 90.37,
+      "duration": 1.48
+    },
+    {
+      "chord": "B4",
+      "start": 90.37,
+      "end": 91.86,
+      "duration": 1.49
+    },
+    {
+      "chord": "C#m/E",
+      "start": 91.86,
+      "end": 93.25,
+      "duration": 1.39
+    },
+    {
+      "chord": "E7(4)",
+      "start": 93.25,
+      "end": 96.08,
+      "duration": 2.83
+    },
+    {
+      "chord": "D6/9/E",
+      "start": 96.08,
+      "end": 97.01,
+      "duration": 0.93
+    },
+    {
+      "chord": "B4/E",
+      "start": 97.01,
+      "end": 97.66,
+      "duration": 0.65
+    },
+    {
+      "chord": "A7M/E",
+      "start": 97.66,
+      "end": 99.06,
+      "duration": 1.4
+    },
+    {
+      "chord": "D6/9/E",
+      "start": 99.06,
+      "end": 101.52,
+      "duration": 2.46
+    },
+    {
+      "chord": "C#m/G#",
+      "start": 101.52,
+      "end": 101.98,
+      "duration": 0.46
+    },
+    {
+      "chord": "A7M",
+      "start": 101.98,
+      "end": 102.59,
+      "duration": 0.61
+    },
+    {
+      "chord": "E7(4)/B",
+      "start": 102.59,
+      "end": 103.24,
+      "duration": 0.65
+    },
+    {
+      "chord": "Bm7",
+      "start": 103.24,
+      "end": 103.98,
+      "duration": 0.74
+    },
+    {
+      "chord": "C#m7",
+      "start": 103.98,
+      "end": 106.72,
+      "duration": 2.74
+    },
+    {
+      "chord": "A7M",
+      "start": 106.72,
+      "end": 110.02,
+      "duration": 3.3
+    },
+    {
+      "chord": "E/G#",
+      "start": 110.02,
+      "end": 111.22,
+      "duration": 1.2
+    },
+    {
+      "chord": "D#6/9/G",
+      "start": 111.22,
+      "end": 111.78,
+      "duration": 0.56
+    },
+    {
+      "chord": "D#7M",
+      "start": 111.78,
+      "end": 112.99,
+      "duration": 1.21
+    },
+    {
+      "chord": "Bm",
+      "start": 112.99,
+      "end": 114.24,
+      "duration": 1.25
+    },
+    {
+      "chord": "F7M/E",
+      "start": 114.24,
+      "end": 116.01,
+      "duration": 1.77
+    },
+    {
+      "chord": "E7/B",
+      "start": 116.01,
+      "end": 117.82,
+      "duration": 1.81
+    },
+    {
+      "chord": "E7M",
+      "start": 117.82,
+      "end": 118.42,
+      "duration": 0.6
+    },
+    {
+      "chord": "Em9",
+      "start": 118.42,
+      "end": 119.35,
+      "duration": 0.93
+    },
+    {
+      "chord": "E7M",
+      "start": 119.35,
+      "end": 120.98,
+      "duration": 1.63
+    },
+    {
+      "chord": "F#7M",
+      "start": 120.98,
+      "end": 124.04,
+      "duration": 3.06
+    },
+    {
+      "chord": "E",
+      "start": 124.04,
+      "end": 124.55,
+      "duration": 0.51
+    },
+    {
+      "chord": "E7M",
+      "start": 124.55,
+      "end": 125.39,
+      "duration": 0.84
+    },
+    {
+      "chord": "Bm7/A",
+      "start": 125.39,
+      "end": 128.45,
+      "duration": 3.06
+    },
+    {
+      "chord": "A4/E",
+      "start": 128.45,
+      "end": 129.66,
+      "duration": 1.21
+    },
+    {
+      "chord": "F7M/A",
+      "start": 129.66,
+      "end": 130.45,
+      "duration": 0.79
+    },
+    {
+      "chord": "C7M(9)/B",
+      "start": 130.45,
+      "end": 132.21,
+      "duration": 1.76
+    },
+    {
+      "chord": "F#7(4)/C#",
+      "start": 132.21,
+      "end": 133.05,
+      "duration": 0.84
+    },
+    {
+      "chord": "F#6/9",
+      "start": 133.05,
+      "end": 133.61,
+      "duration": 0.56
+    },
+    {
+      "chord": "F7(4)",
+      "start": 133.61,
+      "end": 134.95,
+      "duration": 1.34
+    },
+    {
+      "chord": "C7M/B",
+      "start": 134.95,
+      "end": 135.6,
+      "duration": 0.65
+    },
+    {
+      "chord": "Bm",
+      "start": 135.6,
+      "end": 136.07,
+      "duration": 0.47
+    },
+    {
+      "chord": "Bm9",
+      "start": 136.07,
+      "end": 136.9,
+      "duration": 0.83
+    },
+    {
+      "chord": "C#m/E",
+      "start": 136.9,
+      "end": 143.22,
+      "duration": 6.32
+    },
+    {
+      "chord": "E7M",
+      "start": 143.22,
+      "end": 143.82,
+      "duration": 0.6
+    },
+    {
+      "chord": "F#m7",
+      "start": 143.82,
+      "end": 145.08,
+      "duration": 1.26
+    },
+    {
+      "chord": "C#m/E",
+      "start": 145.08,
+      "end": 146.33,
+      "duration": 1.25
+    },
+    {
+      "chord": "C#m/G#",
+      "start": 146.33,
+      "end": 147.86,
+      "duration": 1.53
+    },
+    {
+      "chord": "A6/9/B",
+      "start": 147.86,
+      "end": 148.47,
+      "duration": 0.61
+    },
+    {
+      "chord": "D6/9/B",
+      "start": 148.47,
+      "end": 149.3,
+      "duration": 0.83
+    },
+    {
+      "chord": "C#m7/B",
+      "start": 149.3,
+      "end": 150.47,
+      "duration": 1.17
+    },
+    {
+      "chord": "G7M",
+      "start": 150.47,
+      "end": 153.11,
+      "duration": 2.64
+    },
+    {
+      "chord": "E4/A",
+      "start": 153.11,
+      "end": 154.18,
+      "duration": 1.07
+    },
+    {
+      "chord": "E4",
+      "start": 154.18,
+      "end": 155.11,
+      "duration": 0.93
+    },
+    {
+      "chord": "E4(add9)",
+      "start": 155.11,
+      "end": 160.87,
+      "duration": 5.76
+    },
+    {
+      "chord": "F#m7/A",
+      "start": 160.87,
+      "end": 162.4,
+      "duration": 1.53
+    },
+    {
+      "chord": "D6/9",
+      "start": 162.4,
+      "end": 163.05,
+      "duration": 0.65
+    },
+    {
+      "chord": "D6/9/E",
+      "start": 163.05,
+      "end": 164.07,
+      "duration": 1.02
+    },
+    {
+      "chord": "D6/9",
+      "start": 164.07,
+      "end": 165.37,
+      "duration": 1.3
+    }
+  ],
+  "versos": [
+    {
+      "text": "Lalalalalalalalalala",
+      "start": 33.0,
+      "end": 33.84,
+      "words": [
+        {
+          "word": "Lalalalalalalalalala",
+          "start": 33.0,
+          "end": 33.84
+        }
+      ]
+    },
+    {
+      "text": "Lalalalalalalala",
+      "start": 35.52,
+      "end": 36.36,
+      "words": [
+        {
+          "word": "Lalalalalalalala",
+          "start": 35.52,
+          "end": 36.36
+        }
+      ]
+    },
+    {
+      "text": "Lalalalalalalala",
+      "start": 38.42,
+      "end": 39.26,
+      "words": [
+        {
+          "word": "Lalalalalalalala",
+          "start": 38.42,
+          "end": 39.26
+        }
+      ]
+    },
+    {
+      "text": "Lalalalalalalala",
+      "start": 41.36,
+      "end": 42.2,
+      "words": [
+        {
+          "word": "Lalalalalalalala",
+          "start": 41.36,
+          "end": 42.2
+        }
+      ]
+    },
+    {
+      "text": "Lalalalalalalala",
+      "start": 43.22,
+      "end": 44.06,
+      "words": [
+        {
+          "word": "Lalalalalalalala",
+          "start": 43.22,
+          "end": 44.06
+        }
+      ]
+    },
+    {
+      "text": "É de manhã, vem o sol",
+      "start": 48.5,
+      "end": 51.72,
+      "words": [
+        {
+          "word": "É",
+          "start": 48.5,
+          "end": 49.34
+        },
+        {
+          "word": "de",
+          "start": 49.34,
+          "end": 49.98
+        },
+        {
+          "word": "manhã,",
+          "start": 49.98,
+          "end": 50.98
+        },
+        {
+          "word": "vem",
+          "start": 51.26,
+          "end": 51.36
+        },
+        {
+          "word": "o",
+          "start": 51.36,
+          "end": 51.56
+        },
+        {
+          "word": "sol",
+          "start": 51.56,
+          "end": 51.72
+        }
+      ]
+    },
+    {
+      "text": "Mas os pingos da chuva que ontem caiu",
+      "start": 51.72,
+      "end": 55.0,
+      "words": [
+        {
+          "word": "Mas",
+          "start": 51.72,
+          "end": 51.94
+        },
+        {
+          "word": "os",
+          "start": 51.94,
+          "end": 52.18
+        },
+        {
+          "word": "pingos",
+          "start": 52.18,
+          "end": 52.52
+        },
+        {
+          "word": "da",
+          "start": 52.52,
+          "end": 52.78
+        },
+        {
+          "word": "chuva",
+          "start": 52.78,
+          "end": 53.18
+        },
+        {
+          "word": "que",
+          "start": 53.18,
+          "end": 53.5
+        },
+        {
+          "word": "ontem",
+          "start": 53.5,
+          "end": 54.0
+        },
+        {
+          "word": "caiu",
+          "start": 54.0,
+          "end": 55.0
+        }
+      ]
+    },
+    {
+      "text": "Ainda estão a brilhar",
+      "start": 55.78,
+      "end": 58.08,
+      "words": [
+        {
+          "word": "Ainda",
+          "start": 55.78,
+          "end": 56.1
+        },
+        {
+          "word": "estão",
+          "start": 56.1,
+          "end": 56.54
+        },
+        {
+          "word": "a",
+          "start": 56.54,
+          "end": 56.78
+        },
+        {
+          "word": "brilhar",
+          "start": 56.78,
+          "end": 58.08
+        }
+      ]
+    },
+    {
+      "text": "Ainda estão a bailar",
+      "start": 58.08,
+      "end": 61.18,
+      "words": [
+        {
+          "word": "Ainda",
+          "start": 58.08,
+          "end": 58.8
+        },
+        {
+          "word": "estão",
+          "start": 58.8,
+          "end": 59.14
+        },
+        {
+          "word": "a",
+          "start": 59.14,
+          "end": 59.34
+        },
+        {
+          "word": "bailar",
+          "start": 59.34,
+          "end": 61.18
+        }
+      ]
+    },
+    {
+      "text": "Ao vento alegre que me trai esta canção",
+      "start": 61.18,
+      "end": 66.3,
+      "words": [
+        {
+          "word": "Ao",
+          "start": 61.18,
+          "end": 61.62
+        },
+        {
+          "word": "vento",
+          "start": 61.62,
+          "end": 62.24
+        },
+        {
+          "word": "alegre",
+          "start": 62.24,
+          "end": 63.0
+        },
+        {
+          "word": "que",
+          "start": 63.0,
+          "end": 63.26
+        },
+        {
+          "word": "me",
+          "start": 63.26,
+          "end": 63.78
+        },
+        {
+          "word": "trai",
+          "start": 63.78,
+          "end": 64.2
+        },
+        {
+          "word": "esta",
+          "start": 64.2,
+          "end": 64.7
+        },
+        {
+          "word": "canção",
+          "start": 64.7,
+          "end": 66.3
+        }
+      ]
+    },
+    {
+      "text": "Quero que você me dê a mão que eu vou seguir",
+      "start": 66.3,
+      "end": 71.98,
+      "words": [
+        {
+          "word": "Quero",
+          "start": 66.3,
+          "end": 67.16
+        },
+        {
+          "word": "que",
+          "start": 67.16,
+          "end": 67.6
+        },
+        {
+          "word": "você",
+          "start": 67.6,
+          "end": 68.36
+        },
+        {
+          "word": "me",
+          "start": 68.36,
+          "end": 68.9
+        },
+        {
+          "word": "dê",
+          "start": 68.9,
+          "end": 69.2
+        },
+        {
+          "word": "a",
+          "start": 69.2,
+          "end": 69.6
+        },
+        {
+          "word": "mão",
+          "start": 69.6,
+          "end": 69.9
+        },
+        {
+          "word": "que",
+          "start": 69.9,
+          "end": 70.18
+        },
+        {
+          "word": "eu",
+          "start": 70.18,
+          "end": 70.48
+        },
+        {
+          "word": "vou",
+          "start": 70.48,
+          "end": 70.8
+        },
+        {
+          "word": "seguir",
+          "start": 70.8,
+          "end": 71.98
+        }
+      ]
+    },
+    {
+      "text": "por aí",
+      "start": 71.98,
+      "end": 73.36,
+      "words": [
+        {
+          "word": "por",
+          "start": 71.98,
+          "end": 72.6
+        },
+        {
+          "word": "aí",
+          "start": 72.6,
+          "end": 73.36
+        }
+      ]
+    },
+    {
+      "text": "Sem pensar no que foi que eu sonhei,",
+      "start": 73.36,
+      "end": 75.58,
+      "words": [
+        {
+          "word": "Sem",
+          "start": 73.36,
+          "end": 73.66
+        },
+        {
+          "word": "pensar",
+          "start": 73.66,
+          "end": 74.12
+        },
+        {
+          "word": "no",
+          "start": 74.12,
+          "end": 74.36
+        },
+        {
+          "word": "que",
+          "start": 74.36,
+          "end": 74.56
+        },
+        {
+          "word": "foi",
+          "start": 74.56,
+          "end": 74.72
+        },
+        {
+          "word": "que",
+          "start": 74.72,
+          "end": 74.92
+        },
+        {
+          "word": "eu",
+          "start": 74.92,
+          "end": 75.08
+        },
+        {
+          "word": "sonhei,",
+          "start": 75.08,
+          "end": 75.58
+        }
+      ]
+    },
+    {
+      "text": "que eu chorei, que eu sofri",
+      "start": 75.58,
+      "end": 78.18,
+      "words": [
+        {
+          "word": "que",
+          "start": 75.58,
+          "end": 75.8
+        },
+        {
+          "word": "eu",
+          "start": 75.8,
+          "end": 76.04
+        },
+        {
+          "word": "chorei,",
+          "start": 76.04,
+          "end": 76.36
+        },
+        {
+          "word": "que",
+          "start": 76.36,
+          "end": 76.54
+        },
+        {
+          "word": "eu",
+          "start": 76.54,
+          "end": 76.86
+        },
+        {
+          "word": "sofri",
+          "start": 76.86,
+          "end": 78.18
+        }
+      ]
+    },
+    {
+      "text": "Pois a nossa manhã já me fez esquecer",
+      "start": 78.18,
+      "end": 83.74,
+      "words": [
+        {
+          "word": "Pois",
+          "start": 78.18,
+          "end": 78.62
+        },
+        {
+          "word": "a",
+          "start": 78.62,
+          "end": 78.9
+        },
+        {
+          "word": "nossa",
+          "start": 78.9,
+          "end": 79.2
+        },
+        {
+          "word": "manhã",
+          "start": 79.2,
+          "end": 80.82
+        },
+        {
+          "word": "já",
+          "start": 80.82,
+          "end": 81.16
+        },
+        {
+          "word": "me",
+          "start": 81.16,
+          "end": 81.44
+        },
+        {
+          "word": "fez",
+          "start": 81.44,
+          "end": 81.64
+        },
+        {
+          "word": "esquecer",
+          "start": 81.64,
+          "end": 83.74
+        }
+      ]
+    },
+    {
+      "text": "Me dê a mão, vamos sair pra ver o sol",
+      "start": 83.74,
+      "end": 90.88,
+      "words": [
+        {
+          "word": "Me",
+          "start": 83.74,
+          "end": 84.4
+        },
+        {
+          "word": "dê",
+          "start": 84.4,
+          "end": 84.58
+        },
+        {
+          "word": "a",
+          "start": 84.58,
+          "end": 84.98
+        },
+        {
+          "word": "mão,",
+          "start": 84.98,
+          "end": 85.36
+        },
+        {
+          "word": "vamos",
+          "start": 85.38,
+          "end": 85.9
+        },
+        {
+          "word": "sair",
+          "start": 85.9,
+          "end": 86.72
+        },
+        {
+          "word": "pra",
+          "start": 86.72,
+          "end": 87.34
+        },
+        {
+          "word": "ver",
+          "start": 87.34,
+          "end": 87.7
+        },
+        {
+          "word": "o",
+          "start": 87.7,
+          "end": 88.12
+        },
+        {
+          "word": "sol",
+          "start": 88.12,
+          "end": 90.88
+        }
+      ]
+    },
+    {
+      "text": "É de manhã, vem o sol",
+      "start": 112.96,
+      "end": 115.62,
+      "words": [
+        {
+          "word": "É",
+          "start": 112.96,
+          "end": 113.56
+        },
+        {
+          "word": "de",
+          "start": 113.56,
+          "end": 113.9
+        },
+        {
+          "word": "manhã,",
+          "start": 113.9,
+          "end": 114.88
+        },
+        {
+          "word": "vem",
+          "start": 114.94,
+          "end": 115.26
+        },
+        {
+          "word": "o",
+          "start": 115.26,
+          "end": 115.48
+        },
+        {
+          "word": "sol",
+          "start": 115.48,
+          "end": 115.62
+        }
+      ]
+    },
+    {
+      "text": "Mas os pingos da chuva que ontem caiu",
+      "start": 115.62,
+      "end": 119.62,
+      "words": [
+        {
+          "word": "Mas",
+          "start": 115.62,
+          "end": 115.84
+        },
+        {
+          "word": "os",
+          "start": 115.84,
+          "end": 116.12
+        },
+        {
+          "word": "pingos",
+          "start": 116.12,
+          "end": 116.42
+        },
+        {
+          "word": "da",
+          "start": 116.42,
+          "end": 116.68
+        },
+        {
+          "word": "chuva",
+          "start": 116.68,
+          "end": 117.22
+        },
+        {
+          "word": "que",
+          "start": 117.22,
+          "end": 117.48
+        },
+        {
+          "word": "ontem",
+          "start": 117.48,
+          "end": 118.04
+        },
+        {
+          "word": "caiu",
+          "start": 118.04,
+          "end": 119.62
+        }
+      ]
+    },
+    {
+      "text": "Ainda estão a brilhar",
+      "start": 119.62,
+      "end": 120.86,
+      "words": [
+        {
+          "word": "Ainda",
+          "start": 119.62,
+          "end": 120.14
+        },
+        {
+          "word": "estão",
+          "start": 120.14,
+          "end": 120.52
+        },
+        {
+          "word": "a",
+          "start": 120.52,
+          "end": 120.8
+        },
+        {
+          "word": "brilhar",
+          "start": 120.8,
+          "end": 120.86
+        }
+      ]
+    },
+    {
+      "text": "Ainda estão a bailar",
+      "start": 121.98,
+      "end": 125.16,
+      "words": [
+        {
+          "word": "Ainda",
+          "start": 121.98,
+          "end": 122.7
+        },
+        {
+          "word": "estão",
+          "start": 122.7,
+          "end": 123.06
+        },
+        {
+          "word": "a",
+          "start": 123.06,
+          "end": 123.28
+        },
+        {
+          "word": "bailar",
+          "start": 123.28,
+          "end": 125.16
+        }
+      ]
+    },
+    {
+      "text": "Ao vento alegre que me trai esta canção",
+      "start": 125.16,
+      "end": 130.3,
+      "words": [
+        {
+          "word": "Ao",
+          "start": 125.16,
+          "end": 125.62
+        },
+        {
+          "word": "vento",
+          "start": 125.62,
+          "end": 126.3
+        },
+        {
+          "word": "alegre",
+          "start": 126.3,
+          "end": 127.04
+        },
+        {
+          "word": "que",
+          "start": 127.04,
+          "end": 127.28
+        },
+        {
+          "word": "me",
+          "start": 127.28,
+          "end": 127.76
+        },
+        {
+          "word": "trai",
+          "start": 127.76,
+          "end": 128.12
+        },
+        {
+          "word": "esta",
+          "start": 128.12,
+          "end": 128.68
+        },
+        {
+          "word": "canção",
+          "start": 128.68,
+          "end": 130.3
+        }
+      ]
+    },
+    {
+      "text": "Quero que você me dê a mão que eu vou seguir",
+      "start": 130.3,
+      "end": 135.98,
+      "words": [
+        {
+          "word": "Quero",
+          "start": 130.3,
+          "end": 131.24
+        },
+        {
+          "word": "que",
+          "start": 131.24,
+          "end": 131.66
+        },
+        {
+          "word": "você",
+          "start": 131.66,
+          "end": 132.44
+        },
+        {
+          "word": "me",
+          "start": 132.44,
+          "end": 132.94
+        },
+        {
+          "word": "dê",
+          "start": 132.94,
+          "end": 133.24
+        },
+        {
+          "word": "a",
+          "start": 133.24,
+          "end": 133.54
+        },
+        {
+          "word": "mão",
+          "start": 133.54,
+          "end": 133.9
+        },
+        {
+          "word": "que",
+          "start": 133.9,
+          "end": 134.2
+        },
+        {
+          "word": "eu",
+          "start": 134.2,
+          "end": 134.48
+        },
+        {
+          "word": "vou",
+          "start": 134.48,
+          "end": 134.78
+        },
+        {
+          "word": "seguir",
+          "start": 134.78,
+          "end": 135.98
+        }
+      ]
+    },
+    {
+      "text": "por aí",
+      "start": 135.98,
+      "end": 136.96,
+      "words": [
+        {
+          "word": "por",
+          "start": 135.98,
+          "end": 136.6
+        },
+        {
+          "word": "aí",
+          "start": 136.6,
+          "end": 136.96
+        }
+      ]
+    },
+    {
+      "text": "Sem pensar no que foi que eu sonhei,",
+      "start": 137.44,
+      "end": 139.64,
+      "words": [
+        {
+          "word": "Sem",
+          "start": 137.44,
+          "end": 137.74
+        },
+        {
+          "word": "pensar",
+          "start": 137.74,
+          "end": 138.18
+        },
+        {
+          "word": "no",
+          "start": 138.18,
+          "end": 138.42
+        },
+        {
+          "word": "que",
+          "start": 138.42,
+          "end": 138.68
+        },
+        {
+          "word": "foi",
+          "start": 138.68,
+          "end": 138.78
+        },
+        {
+          "word": "que",
+          "start": 138.78,
+          "end": 139.0
+        },
+        {
+          "word": "eu",
+          "start": 139.0,
+          "end": 139.14
+        },
+        {
+          "word": "sonhei,",
+          "start": 139.14,
+          "end": 139.64
+        }
+      ]
+    },
+    {
+      "text": "que eu chorei, que eu sofri",
+      "start": 139.86,
+      "end": 142.28,
+      "words": [
+        {
+          "word": "que",
+          "start": 139.86,
+          "end": 140.02
+        },
+        {
+          "word": "eu",
+          "start": 140.02,
+          "end": 140.18
+        },
+        {
+          "word": "chorei,",
+          "start": 140.18,
+          "end": 140.54
+        },
+        {
+          "word": "que",
+          "start": 140.54,
+          "end": 140.72
+        },
+        {
+          "word": "eu",
+          "start": 140.72,
+          "end": 141.16
+        },
+        {
+          "word": "sofri",
+          "start": 141.16,
+          "end": 142.28
+        }
+      ]
+    },
+    {
+      "text": "Pois a nossa manhã já me fez esquecer",
+      "start": 142.28,
+      "end": 147.8,
+      "words": [
+        {
+          "word": "Pois",
+          "start": 142.28,
+          "end": 142.92
+        },
+        {
+          "word": "a",
+          "start": 142.92,
+          "end": 143.18
+        },
+        {
+          "word": "nossa",
+          "start": 143.18,
+          "end": 143.52
+        },
+        {
+          "word": "manhã",
+          "start": 143.52,
+          "end": 144.96
+        },
+        {
+          "word": "já",
+          "start": 144.96,
+          "end": 145.5
+        },
+        {
+          "word": "me",
+          "start": 145.5,
+          "end": 145.78
+        },
+        {
+          "word": "fez",
+          "start": 145.78,
+          "end": 146.04
+        },
+        {
+          "word": "esquecer",
+          "start": 146.04,
+          "end": 147.8
+        }
+      ]
+    },
+    {
+      "text": "Me dê a mão, vamos sair pra ver o sol",
+      "start": 147.8,
+      "end": 154.0,
+      "words": [
+        {
+          "word": "Me",
+          "start": 147.8,
+          "end": 148.64
+        },
+        {
+          "word": "dê",
+          "start": 148.64,
+          "end": 148.94
+        },
+        {
+          "word": "a",
+          "start": 148.94,
+          "end": 149.18
+        },
+        {
+          "word": "mão,",
+          "start": 149.18,
+          "end": 149.52
+        },
+        {
+          "word": "vamos",
+          "start": 149.66,
+          "end": 150.16
+        },
+        {
+          "word": "sair",
+          "start": 150.16,
+          "end": 151.16
+        },
+        {
+          "word": "pra",
+          "start": 151.16,
+          "end": 151.72
+        },
+        {
+          "word": "ver",
+          "start": 151.72,
+          "end": 152.14
+        },
+        {
+          "word": "o",
+          "start": 152.14,
+          "end": 152.74
+        },
+        {
+          "word": "sol",
+          "start": 152.74,
+          "end": 154.0
+        }
+      ]
+    }
+  ]
+}

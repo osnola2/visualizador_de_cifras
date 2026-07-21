@@ -1,0 +1,1189 @@
+{
+  "titulo": "Estrada Do Sol",
+  "artista": "Artista Desconhecido",
+  "acordes": [
+    {
+      "chord": "G#m9",
+      "start": 0.0,
+      "end": 0.74,
+      "duration": 0.74
+    },
+    {
+      "chord": "A",
+      "start": 0.74,
+      "end": 10.68,
+      "duration": 9.94
+    },
+    {
+      "chord": "F#7",
+      "start": 10.68,
+      "end": 27.4,
+      "duration": 16.72
+    },
+    {
+      "chord": "F#m/A",
+      "start": 27.4,
+      "end": 32.23,
+      "duration": 4.83
+    },
+    {
+      "chord": "F#7",
+      "start": 32.23,
+      "end": 41.7,
+      "duration": 9.47
+    },
+    {
+      "chord": "E",
+      "start": 41.7,
+      "end": 54.24,
+      "duration": 12.54
+    },
+    {
+      "chord": "C4(add9)/D",
+      "start": 54.24,
+      "end": 55.45,
+      "duration": 1.21
+    },
+    {
+      "chord": "G7",
+      "start": 55.45,
+      "end": 61.02,
+      "duration": 5.57
+    },
+    {
+      "chord": "F",
+      "start": 61.02,
+      "end": 69.57,
+      "duration": 8.55
+    },
+    {
+      "chord": "E7",
+      "start": 69.57,
+      "end": 74.12,
+      "duration": 4.55
+    },
+    {
+      "chord": "A7M",
+      "start": 74.12,
+      "end": 79.6,
+      "duration": 5.48
+    },
+    {
+      "chord": "E4/A",
+      "start": 79.6,
+      "end": 102.73,
+      "duration": 23.13
+    },
+    {
+      "chord": "A7M",
+      "start": 102.73,
+      "end": 116.94,
+      "duration": 14.21
+    },
+    {
+      "chord": "E7",
+      "start": 116.94,
+      "end": 124.46,
+      "duration": 7.52
+    },
+    {
+      "chord": "A7M",
+      "start": 124.46,
+      "end": 130.59,
+      "duration": 6.13
+    },
+    {
+      "chord": "A",
+      "start": 130.59,
+      "end": 136.16,
+      "duration": 5.57
+    },
+    {
+      "chord": "E4/A",
+      "start": 136.16,
+      "end": 137.09,
+      "duration": 0.93
+    },
+    {
+      "chord": "A",
+      "start": 137.09,
+      "end": 144.15,
+      "duration": 7.06
+    }
+  ],
+  "versos": [
+    {
+      "text": "É de manhã, vem o sol,",
+      "start": 11.8,
+      "end": 15.04,
+      "words": [
+        {
+          "word": "É",
+          "start": 11.8,
+          "end": 12.46
+        },
+        {
+          "word": "de",
+          "start": 12.46,
+          "end": 13.12
+        },
+        {
+          "word": "manhã,",
+          "start": 13.12,
+          "end": 14.2
+        },
+        {
+          "word": "vem",
+          "start": 14.48,
+          "end": 14.64
+        },
+        {
+          "word": "o",
+          "start": 14.64,
+          "end": 14.86
+        },
+        {
+          "word": "sol,",
+          "start": 14.86,
+          "end": 15.04
+        }
+      ]
+    },
+    {
+      "text": "Mas os pingos da chuva que ontem caiu",
+      "start": 15.08,
+      "end": 18.0,
+      "words": [
+        {
+          "word": "Mas",
+          "start": 15.08,
+          "end": 15.26
+        },
+        {
+          "word": "os",
+          "start": 15.26,
+          "end": 15.6
+        },
+        {
+          "word": "pingos",
+          "start": 15.6,
+          "end": 15.94
+        },
+        {
+          "word": "da",
+          "start": 15.94,
+          "end": 16.16
+        },
+        {
+          "word": "chuva",
+          "start": 16.16,
+          "end": 16.62
+        },
+        {
+          "word": "que",
+          "start": 16.62,
+          "end": 16.94
+        },
+        {
+          "word": "ontem",
+          "start": 16.94,
+          "end": 17.42
+        },
+        {
+          "word": "caiu",
+          "start": 17.42,
+          "end": 18.0
+        }
+      ]
+    },
+    {
+      "text": "Ainda estão a brilhar,",
+      "start": 19.04,
+      "end": 21.7,
+      "words": [
+        {
+          "word": "Ainda",
+          "start": 19.04,
+          "end": 19.72
+        },
+        {
+          "word": "estão",
+          "start": 19.72,
+          "end": 20.06
+        },
+        {
+          "word": "a",
+          "start": 20.06,
+          "end": 20.32
+        },
+        {
+          "word": "brilhar,",
+          "start": 20.32,
+          "end": 21.7
+        }
+      ]
+    },
+    {
+      "text": "ainda estão a dançar Ao vento alegre que me traz",
+      "start": 22.24,
+      "end": 27.82,
+      "words": [
+        {
+          "word": "ainda",
+          "start": 22.24,
+          "end": 22.5
+        },
+        {
+          "word": "estão",
+          "start": 22.5,
+          "end": 22.76
+        },
+        {
+          "word": "a",
+          "start": 22.76,
+          "end": 22.96
+        },
+        {
+          "word": "dançar",
+          "start": 22.96,
+          "end": 24.76
+        },
+        {
+          "word": "Ao",
+          "start": 24.76,
+          "end": 25.22
+        },
+        {
+          "word": "vento",
+          "start": 25.22,
+          "end": 25.86
+        },
+        {
+          "word": "alegre",
+          "start": 25.86,
+          "end": 26.8
+        },
+        {
+          "word": "que",
+          "start": 26.8,
+          "end": 27.04
+        },
+        {
+          "word": "me",
+          "start": 27.04,
+          "end": 27.46
+        },
+        {
+          "word": "traz",
+          "start": 27.46,
+          "end": 27.82
+        }
+      ]
+    },
+    {
+      "text": "esta canção",
+      "start": 27.82,
+      "end": 30.5,
+      "words": [
+        {
+          "word": "esta",
+          "start": 27.82,
+          "end": 28.34
+        },
+        {
+          "word": "canção",
+          "start": 28.34,
+          "end": 30.5
+        }
+      ]
+    },
+    {
+      "text": "É de manhã, vem o sol,",
+      "start": 34.68,
+      "end": 37.5,
+      "words": [
+        {
+          "word": "É",
+          "start": 34.68,
+          "end": 35.36
+        },
+        {
+          "word": "de",
+          "start": 35.36,
+          "end": 35.68
+        },
+        {
+          "word": "manhã,",
+          "start": 35.68,
+          "end": 36.72
+        },
+        {
+          "word": "vem",
+          "start": 36.86,
+          "end": 37.08
+        },
+        {
+          "word": "o",
+          "start": 37.08,
+          "end": 37.22
+        },
+        {
+          "word": "sol,",
+          "start": 37.22,
+          "end": 37.5
+        }
+      ]
+    },
+    {
+      "text": "Mas os pingos da chuva que ontem caiu",
+      "start": 37.62,
+      "end": 40.16,
+      "words": [
+        {
+          "word": "Mas",
+          "start": 37.62,
+          "end": 37.74
+        },
+        {
+          "word": "os",
+          "start": 37.74,
+          "end": 37.96
+        },
+        {
+          "word": "pingos",
+          "start": 37.96,
+          "end": 38.26
+        },
+        {
+          "word": "da",
+          "start": 38.26,
+          "end": 38.54
+        },
+        {
+          "word": "chuva",
+          "start": 38.54,
+          "end": 39.06
+        },
+        {
+          "word": "que",
+          "start": 39.06,
+          "end": 39.36
+        },
+        {
+          "word": "ontem",
+          "start": 39.36,
+          "end": 39.82
+        },
+        {
+          "word": "caiu",
+          "start": 39.82,
+          "end": 40.16
+        }
+      ]
+    },
+    {
+      "text": "Ainda estão a brilhar,",
+      "start": 40.16,
+      "end": 44.18,
+      "words": [
+        {
+          "word": "Ainda",
+          "start": 40.16,
+          "end": 41.98
+        },
+        {
+          "word": "estão",
+          "start": 41.98,
+          "end": 42.4
+        },
+        {
+          "word": "a",
+          "start": 42.4,
+          "end": 42.7
+        },
+        {
+          "word": "brilhar,",
+          "start": 42.7,
+          "end": 44.18
+        }
+      ]
+    },
+    {
+      "text": "ainda estão a dançar Ao vento alegre que me traz",
+      "start": 44.64,
+      "end": 50.44,
+      "words": [
+        {
+          "word": "ainda",
+          "start": 44.64,
+          "end": 44.92
+        },
+        {
+          "word": "estão",
+          "start": 44.92,
+          "end": 45.4
+        },
+        {
+          "word": "a",
+          "start": 45.4,
+          "end": 45.74
+        },
+        {
+          "word": "dançar",
+          "start": 45.74,
+          "end": 47.28
+        },
+        {
+          "word": "Ao",
+          "start": 47.28,
+          "end": 47.78
+        },
+        {
+          "word": "vento",
+          "start": 47.78,
+          "end": 48.38
+        },
+        {
+          "word": "alegre",
+          "start": 48.38,
+          "end": 49.36
+        },
+        {
+          "word": "que",
+          "start": 49.36,
+          "end": 49.58
+        },
+        {
+          "word": "me",
+          "start": 49.58,
+          "end": 50.06
+        },
+        {
+          "word": "traz",
+          "start": 50.06,
+          "end": 50.44
+        }
+      ]
+    },
+    {
+      "text": "esta canção",
+      "start": 50.44,
+      "end": 52.16,
+      "words": [
+        {
+          "word": "esta",
+          "start": 50.44,
+          "end": 50.8
+        },
+        {
+          "word": "canção",
+          "start": 50.8,
+          "end": 52.16
+        }
+      ]
+    },
+    {
+      "text": "Quero que você me dê a mão Que eu vou sair por",
+      "start": 54.42,
+      "end": 63.8,
+      "words": [
+        {
+          "word": "Quero",
+          "start": 54.42,
+          "end": 55.46
+        },
+        {
+          "word": "que",
+          "start": 55.46,
+          "end": 56.0
+        },
+        {
+          "word": "você",
+          "start": 56.0,
+          "end": 57.54
+        },
+        {
+          "word": "me",
+          "start": 57.54,
+          "end": 58.5
+        },
+        {
+          "word": "dê",
+          "start": 58.5,
+          "end": 58.84
+        },
+        {
+          "word": "a",
+          "start": 58.84,
+          "end": 59.2
+        },
+        {
+          "word": "mão",
+          "start": 59.2,
+          "end": 60.66
+        },
+        {
+          "word": "Que",
+          "start": 60.66,
+          "end": 61.5
+        },
+        {
+          "word": "eu",
+          "start": 61.5,
+          "end": 61.68
+        },
+        {
+          "word": "vou",
+          "start": 61.68,
+          "end": 62.04
+        },
+        {
+          "word": "sair",
+          "start": 62.04,
+          "end": 63.24
+        },
+        {
+          "word": "por",
+          "start": 63.24,
+          "end": 63.8
+        }
+      ]
+    },
+    {
+      "text": "aí",
+      "start": 63.8,
+      "end": 64.64,
+      "words": [
+        {
+          "word": "aí",
+          "start": 63.8,
+          "end": 64.64
+        }
+      ]
+    },
+    {
+      "text": "Sem pensar no que foi Que sonhei,",
+      "start": 64.64,
+      "end": 66.86,
+      "words": [
+        {
+          "word": "Sem",
+          "start": 64.64,
+          "end": 65.0
+        },
+        {
+          "word": "pensar",
+          "start": 65.0,
+          "end": 65.5
+        },
+        {
+          "word": "no",
+          "start": 65.5,
+          "end": 65.76
+        },
+        {
+          "word": "que",
+          "start": 65.76,
+          "end": 65.98
+        },
+        {
+          "word": "foi",
+          "start": 65.98,
+          "end": 66.18
+        },
+        {
+          "word": "Que",
+          "start": 66.18,
+          "end": 66.46
+        },
+        {
+          "word": "sonhei,",
+          "start": 66.46,
+          "end": 66.86
+        }
+      ]
+    },
+    {
+      "text": "que chorei, que sofri",
+      "start": 66.96,
+      "end": 68.64,
+      "words": [
+        {
+          "word": "que",
+          "start": 66.96,
+          "end": 67.24
+        },
+        {
+          "word": "chorei,",
+          "start": 67.24,
+          "end": 67.68
+        },
+        {
+          "word": "que",
+          "start": 67.68,
+          "end": 68.04
+        },
+        {
+          "word": "sofri",
+          "start": 68.04,
+          "end": 68.64
+        }
+      ]
+    },
+    {
+      "text": "Pois é nossa manhã,",
+      "start": 69.38,
+      "end": 72.26,
+      "words": [
+        {
+          "word": "Pois",
+          "start": 69.38,
+          "end": 70.02
+        },
+        {
+          "word": "é",
+          "start": 70.02,
+          "end": 70.38
+        },
+        {
+          "word": "nossa",
+          "start": 70.38,
+          "end": 70.76
+        },
+        {
+          "word": "manhã,",
+          "start": 70.76,
+          "end": 72.26
+        }
+      ]
+    },
+    {
+      "text": "já me fez esquecer Me dê a mão,",
+      "start": 72.4,
+      "end": 76.8,
+      "words": [
+        {
+          "word": "já",
+          "start": 72.4,
+          "end": 72.82
+        },
+        {
+          "word": "me",
+          "start": 72.82,
+          "end": 73.08
+        },
+        {
+          "word": "fez",
+          "start": 73.08,
+          "end": 73.32
+        },
+        {
+          "word": "esquecer",
+          "start": 73.32,
+          "end": 75.3
+        },
+        {
+          "word": "Me",
+          "start": 75.3,
+          "end": 75.9
+        },
+        {
+          "word": "dê",
+          "start": 75.9,
+          "end": 76.24
+        },
+        {
+          "word": "a",
+          "start": 76.24,
+          "end": 76.52
+        },
+        {
+          "word": "mão,",
+          "start": 76.52,
+          "end": 76.8
+        }
+      ]
+    },
+    {
+      "text": "vamos sair pra ver o sol",
+      "start": 76.82,
+      "end": 82.08,
+      "words": [
+        {
+          "word": "vamos",
+          "start": 76.82,
+          "end": 77.44
+        },
+        {
+          "word": "sair",
+          "start": 77.44,
+          "end": 78.22
+        },
+        {
+          "word": "pra",
+          "start": 78.22,
+          "end": 78.78
+        },
+        {
+          "word": "ver",
+          "start": 78.78,
+          "end": 79.14
+        },
+        {
+          "word": "o",
+          "start": 79.14,
+          "end": 79.52
+        },
+        {
+          "word": "sol",
+          "start": 79.52,
+          "end": 82.08
+        }
+      ]
+    },
+    {
+      "text": "É de manhã, vem o sol,",
+      "start": 85.24,
+      "end": 88.02,
+      "words": [
+        {
+          "word": "É",
+          "start": 85.24,
+          "end": 85.94
+        },
+        {
+          "word": "de",
+          "start": 85.94,
+          "end": 86.24
+        },
+        {
+          "word": "manhã,",
+          "start": 86.24,
+          "end": 87.22
+        },
+        {
+          "word": "vem",
+          "start": 87.26,
+          "end": 87.58
+        },
+        {
+          "word": "o",
+          "start": 87.58,
+          "end": 87.78
+        },
+        {
+          "word": "sol,",
+          "start": 87.78,
+          "end": 88.02
+        }
+      ]
+    },
+    {
+      "text": "Mas os pingos da chuva que ontem caiu",
+      "start": 88.12,
+      "end": 90.81,
+      "words": [
+        {
+          "word": "Mas",
+          "start": 88.12,
+          "end": 88.28
+        },
+        {
+          "word": "os",
+          "start": 88.28,
+          "end": 88.56
+        },
+        {
+          "word": "pingos",
+          "start": 88.56,
+          "end": 88.9
+        },
+        {
+          "word": "da",
+          "start": 88.9,
+          "end": 89.14
+        },
+        {
+          "word": "chuva",
+          "start": 89.14,
+          "end": 89.78
+        },
+        {
+          "word": "que",
+          "start": 89.78,
+          "end": 90.06
+        },
+        {
+          "word": "ontem",
+          "start": 90.06,
+          "end": 90.46
+        },
+        {
+          "word": "caiu",
+          "start": 90.46,
+          "end": 90.81
+        }
+      ]
+    },
+    {
+      "text": "Ainda estão a brilhar,",
+      "start": 90.81,
+      "end": 94.69,
+      "words": [
+        {
+          "word": "Ainda",
+          "start": 90.81,
+          "end": 92.51
+        },
+        {
+          "word": "estão",
+          "start": 92.51,
+          "end": 92.89
+        },
+        {
+          "word": "a",
+          "start": 92.89,
+          "end": 93.19
+        },
+        {
+          "word": "brilhar,",
+          "start": 93.19,
+          "end": 94.69
+        }
+      ]
+    },
+    {
+      "text": "ainda estão a dançar Ao vento alegre que me traz",
+      "start": 95.09,
+      "end": 100.73,
+      "words": [
+        {
+          "word": "ainda",
+          "start": 95.09,
+          "end": 95.33
+        },
+        {
+          "word": "estão",
+          "start": 95.33,
+          "end": 95.65
+        },
+        {
+          "word": "a",
+          "start": 95.65,
+          "end": 95.91
+        },
+        {
+          "word": "dançar",
+          "start": 95.91,
+          "end": 97.53
+        },
+        {
+          "word": "Ao",
+          "start": 97.53,
+          "end": 98.15
+        },
+        {
+          "word": "vento",
+          "start": 98.15,
+          "end": 98.77
+        },
+        {
+          "word": "alegre",
+          "start": 98.77,
+          "end": 99.61
+        },
+        {
+          "word": "que",
+          "start": 99.61,
+          "end": 99.85
+        },
+        {
+          "word": "me",
+          "start": 99.85,
+          "end": 100.33
+        },
+        {
+          "word": "traz",
+          "start": 100.33,
+          "end": 100.73
+        }
+      ]
+    },
+    {
+      "text": "esta canção",
+      "start": 100.73,
+      "end": 102.81,
+      "words": [
+        {
+          "word": "esta",
+          "start": 100.73,
+          "end": 101.17
+        },
+        {
+          "word": "canção",
+          "start": 101.17,
+          "end": 102.81
+        }
+      ]
+    },
+    {
+      "text": "Quero que você me dê a mão Que eu vou sair por",
+      "start": 104.47,
+      "end": 113.75,
+      "words": [
+        {
+          "word": "Quero",
+          "start": 104.47,
+          "end": 105.39
+        },
+        {
+          "word": "que",
+          "start": 105.39,
+          "end": 105.99
+        },
+        {
+          "word": "você",
+          "start": 105.99,
+          "end": 107.47
+        },
+        {
+          "word": "me",
+          "start": 107.47,
+          "end": 108.31
+        },
+        {
+          "word": "dê",
+          "start": 108.31,
+          "end": 108.77
+        },
+        {
+          "word": "a",
+          "start": 108.77,
+          "end": 109.25
+        },
+        {
+          "word": "mão",
+          "start": 109.25,
+          "end": 110.65
+        },
+        {
+          "word": "Que",
+          "start": 110.65,
+          "end": 111.65
+        },
+        {
+          "word": "eu",
+          "start": 111.65,
+          "end": 111.85
+        },
+        {
+          "word": "vou",
+          "start": 111.85,
+          "end": 112.21
+        },
+        {
+          "word": "sair",
+          "start": 112.21,
+          "end": 113.25
+        },
+        {
+          "word": "por",
+          "start": 113.25,
+          "end": 113.75
+        }
+      ]
+    },
+    {
+      "text": "aí",
+      "start": 113.75,
+      "end": 114.21,
+      "words": [
+        {
+          "word": "aí",
+          "start": 113.75,
+          "end": 114.21
+        }
+      ]
+    },
+    {
+      "text": "Sem pensar no que foi Que sonhei,",
+      "start": 114.71,
+      "end": 116.95,
+      "words": [
+        {
+          "word": "Sem",
+          "start": 114.71,
+          "end": 115.05
+        },
+        {
+          "word": "pensar",
+          "start": 115.05,
+          "end": 115.51
+        },
+        {
+          "word": "no",
+          "start": 115.51,
+          "end": 115.81
+        },
+        {
+          "word": "que",
+          "start": 115.81,
+          "end": 116.05
+        },
+        {
+          "word": "foi",
+          "start": 116.05,
+          "end": 116.25
+        },
+        {
+          "word": "Que",
+          "start": 116.25,
+          "end": 116.47
+        },
+        {
+          "word": "sonhei,",
+          "start": 116.47,
+          "end": 116.95
+        }
+      ]
+    },
+    {
+      "text": "que chorei, que sofri",
+      "start": 117.05,
+      "end": 118.81,
+      "words": [
+        {
+          "word": "que",
+          "start": 117.05,
+          "end": 117.29
+        },
+        {
+          "word": "chorei,",
+          "start": 117.29,
+          "end": 117.69
+        },
+        {
+          "word": "que",
+          "start": 117.69,
+          "end": 118.05
+        },
+        {
+          "word": "sofri",
+          "start": 118.05,
+          "end": 118.81
+        }
+      ]
+    },
+    {
+      "text": "Pois é nossa manhã,",
+      "start": 118.81,
+      "end": 122.29,
+      "words": [
+        {
+          "word": "Pois",
+          "start": 118.81,
+          "end": 120.15
+        },
+        {
+          "word": "é",
+          "start": 120.15,
+          "end": 120.47
+        },
+        {
+          "word": "nossa",
+          "start": 120.47,
+          "end": 120.81
+        },
+        {
+          "word": "manhã,",
+          "start": 120.81,
+          "end": 122.29
+        }
+      ]
+    },
+    {
+      "text": "já me fez esquecer Me dê a mão,",
+      "start": 122.61,
+      "end": 126.91,
+      "words": [
+        {
+          "word": "já",
+          "start": 122.61,
+          "end": 122.93
+        },
+        {
+          "word": "me",
+          "start": 122.93,
+          "end": 123.23
+        },
+        {
+          "word": "fez",
+          "start": 123.23,
+          "end": 123.43
+        },
+        {
+          "word": "esquecer",
+          "start": 123.43,
+          "end": 125.33
+        },
+        {
+          "word": "Me",
+          "start": 125.33,
+          "end": 125.91
+        },
+        {
+          "word": "dê",
+          "start": 125.91,
+          "end": 126.23
+        },
+        {
+          "word": "a",
+          "start": 126.23,
+          "end": 126.53
+        },
+        {
+          "word": "mão,",
+          "start": 126.53,
+          "end": 126.91
+        }
+      ]
+    },
+    {
+      "text": "vamos sair pra ver o sol",
+      "start": 126.95,
+      "end": 132.51,
+      "words": [
+        {
+          "word": "vamos",
+          "start": 126.95,
+          "end": 127.65
+        },
+        {
+          "word": "sair",
+          "start": 127.65,
+          "end": 128.47
+        },
+        {
+          "word": "pra",
+          "start": 128.47,
+          "end": 128.93
+        },
+        {
+          "word": "ver",
+          "start": 128.93,
+          "end": 129.47
+        },
+        {
+          "word": "o",
+          "start": 129.47,
+          "end": 129.93
+        },
+        {
+          "word": "sol",
+          "start": 129.93,
+          "end": 132.51
+        }
+      ]
+    }
+  ]
+}
