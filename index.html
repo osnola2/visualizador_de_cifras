@@ -210,6 +210,7 @@
         .group-section {
             margin-bottom: 2rem;
             animation: fadeIn 0.3s ease;
+            transition: margin-bottom 0.2s ease;
         }
 
         .group-header {
@@ -224,6 +225,38 @@
             font-weight: 700;
             font-size: 1.15rem;
             color: #fff;
+            cursor: pointer;
+            user-select: none;
+            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .group-header:hover {
+            background: rgba(56, 189, 248, 0.12);
+            border-left-color: #38bdf8;
+            transform: translateX(3px);
+        }
+
+        .group-toggle-icon {
+            font-size: 0.8rem;
+            transition: transform 0.25s ease;
+            color: var(--accent-cyan);
+        }
+
+        .group-section.is-collapsed {
+            margin-bottom: 0.5rem;
+        }
+
+        .group-section.is-collapsed .group-cards {
+            display: none !important;
+        }
+
+        .group-section.is-collapsed .group-header {
+            margin-bottom: 0;
+            background: rgba(30, 41, 59, 0.65);
+        }
+
+        .group-section.is-collapsed .group-toggle-icon {
+            transform: rotate(-90deg);
         }
 
         .group-count {

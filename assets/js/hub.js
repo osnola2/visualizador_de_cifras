@@ -192,13 +192,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Montar HTML dos grupos
         let html = "";
+        const isArtistGroup = state.group === "artist";
         sortedKeys.forEach(key => {
             const groupObj = groups.get(key);
             if (groupObj.songs.length === 0) return;
 
+            const collapsedClass = isArtistGroup ? "is-collapsed" : "";
             html += `
-                <div class="group-section">
-                    <div class="group-header">
+                <div class="group-section ${collapsedClass}">
+                    <div class="group-header" title="Clique para expandir/ocultar">
+                        <span class="group-toggle-icon">▼</span>
                         <span class="group-icon">${groupObj.icon}</span>
                         <span class="group-title">${key}</span>
                         <span class="group-count">${groupObj.songs.length} ${groupObj.songs.length === 1 ? 'música' : 'músicas'}</span>
@@ -211,6 +214,17 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         container.innerHTML = html;
+
+        // Adicionar interatividade para expandir/colapsar os grupos
+        const groupHeaders = container.querySelectorAll(".group-header");
+        groupHeaders.forEach(header => {
+            header.addEventListener("click", () => {
+                const section = header.closest(".group-section");
+                if (section) {
+                    section.classList.toggle("is-collapsed");
+                }
+            });
+        });
     };
 
     // Event Listeners
