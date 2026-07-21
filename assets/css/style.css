@@ -171,6 +171,26 @@ h2.song-artist {
     box-shadow: 0 0 20px var(--primary-glow);
 }
 
+.switch-mode-btn {
+    background: rgba(56, 189, 248, 0.15);
+    color: #38bdf8;
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    padding: 0.45rem 1rem;
+    border-radius: 8px;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.2s ease;
+}
+
+.switch-mode-btn:hover {
+    background: rgba(56, 189, 248, 0.3);
+    color: #fff;
+    transform: translateY(-1px);
+}
+
 .speed-control {
     display: flex;
     align-items: center;
@@ -443,9 +463,19 @@ h2.song-artist {
         gap: 8px !important;
         width: 100% !important;
     }
+    .instrument-switch-group {
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        align-items: center !important;
+        gap: 8px !important;
+        margin-top: 26px !important;
+    }
     .header-left a,
     .header-left .glass-btn,
-    .header-left .switch-mode-btn {
+    .header-left .switch-mode-btn,
+    .instrument-switch-group .switch-mode-btn {
         font-size: 0.82rem !important;
         padding: 0.38rem 0.75rem !important;
     }
