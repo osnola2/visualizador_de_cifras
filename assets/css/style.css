@@ -130,7 +130,8 @@ h2.song-artist {
 }
 
 .controls-panel.floating-controls .speed-control,
-.controls-panel.header-controls .speed-control {
+.controls-panel.header-controls .speed-control,
+.bpm-control {
     padding: 0.3rem 0.7rem !important;
     font-size: 0.85rem !important;
     border-radius: 8px !important;
@@ -138,7 +139,8 @@ h2.song-artist {
 }
 
 .controls-panel.floating-controls #bpm-input,
-.controls-panel.header-controls #bpm-input {
+.controls-panel.header-controls #bpm-input,
+.bpm-control #bpm-input {
     width: 46px !important;
     padding: 1px 4px !important;
     font-size: 0.85rem !important;
@@ -479,24 +481,24 @@ h2.song-artist {
     .controls-panel.header-controls,
     .controls-panel {
         position: fixed !important;
-        top: 8px !important;
-        right: 8px !important;
+        top: 6px !important;
+        right: 6px !important;
         z-index: 10000 !important;
         background: rgba(15, 23, 42, 0.95) !important;
         backdrop-filter: blur(16px) !important;
         -webkit-backdrop-filter: blur(16px) !important;
         border: 1px solid rgba(255, 255, 255, 0.18) !important;
         border-radius: 12px !important;
-        padding: 3px 6px !important;
+        padding: 5px 8px !important;
         display: flex !important;
         flex-direction: row !important;
-        flex-wrap: nowrap !important;
+        flex-wrap: wrap !important;
         justify-content: flex-end;
         align-items: center;
-        max-width: 100%;
-        gap: 4px !important;
-        box-shadow: 0 6px 24px rgba(0, 0, 0, 0.5) !important;
-        transform: scale(0.75) !important;
+        max-width: 250px !important;
+        gap: 5px !important;
+        box-shadow: 0 6px 24px rgba(0, 0, 0, 0.6) !important;
+        transform: scale(0.8) !important;
         transform-origin: top right !important;
     }
     #toggle-piano-btn,
@@ -526,7 +528,8 @@ h2.song-artist {
         border-radius: 5px !important;
         white-space: nowrap !important;
     }
-    .speed-control {
+    .speed-control,
+    .bpm-control {
         padding: 3px 8px !important;
         font-size: 0.72rem !important;
         border-radius: 8px !important;
