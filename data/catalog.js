@@ -61,7 +61,7 @@ const SONGS_CATALOG = [
         "title": "Antonico",
         "artist": "Ismael Silva",
         "composer": "Ismael Silva",
-        "chordsCount": 12
+        "chordsCount": 16
     },
     {
         "id": "Anunciacao",
