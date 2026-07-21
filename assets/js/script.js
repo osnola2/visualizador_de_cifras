@@ -8,6 +8,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (btnToGuitar && songId) {
         btnToGuitar.href = `viewer-violao.html?song=${songId}`;
     }
+    const btnToCavaquinho = document.getElementById('btn-to-cavaquinho');
+    if (btnToCavaquinho && songId) {
+        btnToCavaquinho.href = `viewer-cavaquinho.html?song=${songId}`;
+    }
 
     if (!songId) {
         document.getElementById('song-title-el').textContent = 'Nenhuma musica selecionada';

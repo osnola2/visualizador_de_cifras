@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visualizador de Cifras - Violão</title>
+    <title>Visualizador de Cifras - Cavaquinho</title>
     <link rel="stylesheet" href="assets/css/style.css?v=1">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Outfit:wght@600;800&display=swap" rel="stylesheet">
     <style>
@@ -34,7 +34,7 @@
         <div class="header-left" style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
             <a href="index.html" class="glass-btn" style="color: var(--primary); text-decoration: none; font-size: 0.95rem; font-weight: 700; display: inline-flex; align-items: center; gap: 6px; padding: 0.45rem 1rem;">⬅ Voltar ao Hub</a>
             <a id="btn-to-piano" href="viewer.html" class="switch-mode-btn">🎹 Mudar para Teclado</a>
-            <a id="btn-to-cavaquinho" href="viewer-cavaquinho.html" class="switch-mode-btn">🪕 Mudar para Cavaquinho</a>
+            <a id="btn-to-guitar" href="viewer-violao.html" class="switch-mode-btn">🎸 Mudar para Violão</a>
         </div>
         <div class="header-center bpm-control-container" style="display: flex; align-items: center;">
             <div class="bpm-control glass-panel" style="display: flex; align-items: center; gap: 6px; padding: 0.35rem 0.8rem; border-radius: 12px; border: 1px solid var(--glass-border);">
@@ -45,8 +45,8 @@
     </header>
 
     <div class="controls-panel header-controls floating-controls">
-        <button id="toggle-guitar-btn" class="glass-btn" style="padding: 0.6rem; border-radius: 50%;" title="Ocultar/Exibir Acordes de Violão">
-            <span class="icon" style="font-size: 1.2rem;">🎸</span>
+        <button id="toggle-cavaquinho-btn" class="glass-btn" style="padding: 0.6rem; border-radius: 50%;" title="Ocultar/Exibir Acordes de Cavaquinho">
+            <span class="icon" style="font-size: 1.2rem;">🪕</span>
         </button>
         <div class="transposition-control glass-panel" style="display: flex; align-items: center; gap: 6px; padding: 0.35rem 0.6rem; border-radius: 12px; border: 1px solid var(--glass-border);">
             <span style="font-size: 0.85rem; font-weight: 700; color: #cbd5e1;">Tom:</span>
@@ -73,33 +73,33 @@
         </section>
     </main>
 
-    <aside class="piano-panel glass-panel" style="min-width: 320px;">
+    <aside class="cavaquinho-panel glass-panel" style="min-width: 320px;">
         <div class="piano-top-display" style="text-align: center; margin-bottom: 1rem;">
             <div id="active-display-chord" style="color: var(--primary); font-size: 1.6rem; font-weight: bold; margin-bottom: 0.1rem;"></div>
             <div id="active-display-lyric" style="font-size: 1.05rem; font-style: italic; color: #fff;">Passe o mouse ou role a tela...</div>
         </div>
 
         <div class="guitar-chords-container">
-            <!-- 1. Acorde Atual no Violão -->
+            <!-- 1. Acorde Atual no Cavaquinho -->
             <div class="guitar-card">
                 <div class="guitar-card-header" style="display: flex; justify-content: center; align-items: center; margin-bottom: 0.4rem; gap: 8px;">
                     <span style="font-size: 0.7rem; font-weight: 700; color: #34d399; letter-spacing: 0.8px; text-transform: uppercase;">🟢 ACORDE ATUAL:</span>
                     <h3 id="current-chord-name" style="font-size: 1.15rem; color: #fff; margin: 0; font-weight: 800;">---</h3>
                 </div>
-                <div id="guitar-current-view"></div>
+                <div id="cavaquinho-current-view"></div>
             </div>
 
-            <!-- 2. Próximo Acorde no Violão -->
+            <!-- 2. Próximo Acorde no Cavaquinho -->
             <div class="guitar-card">
                 <div class="guitar-card-header" style="display: flex; justify-content: center; align-items: center; margin-bottom: 0.4rem; gap: 8px;">
                     <span style="font-size: 0.7rem; font-weight: 700; color: #38bdf8; letter-spacing: 0.8px; text-transform: uppercase;">🔵 PRÓXIMO ACORDE</span>
                 </div>
-                <div id="guitar-next-view"></div>
+                <div id="cavaquinho-next-view"></div>
             </div>
         </div>
     </aside>
 
-    <script src="assets/modules/GuitarChordVisualizer.js?v=1"></script>
-    <script src="assets/js/script-violao.js?v=1"></script>
+    <script src="assets/modules/CavaquinhoChordVisualizer.js?v=1"></script>
+    <script src="assets/js/script-cavaquinho.js?v=1"></script>
 </body>
 </html>

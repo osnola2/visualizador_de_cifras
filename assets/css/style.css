@@ -294,7 +294,7 @@ h2.song-artist {
     box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.08);
 }
 
-.piano-panel {
+.piano-panel, .cavaquinho-panel {
     position: fixed;
     right: 2%;
     top: 100px;
@@ -540,7 +540,7 @@ h2.song-artist {
         font-size: 0.72rem !important;
         padding: 1px !important;
     }
-    .piano-panel {
+    .piano-panel, .cavaquinho-panel {
         position: fixed !important;
         top: auto !important;
         bottom: 0 !important;
@@ -737,10 +737,10 @@ h2.song-artist {
 }
 
 /* Hide piano toggle state */
-.piano-panel {
+.piano-panel, .cavaquinho-panel {
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
 }
-.piano-panel.piano-hidden {
+.piano-panel.piano-hidden, .cavaquinho-panel.cavaquinho-hidden {
     display: none !important;
     transform: translateY(150%) !important;
     -webkit-transform: translateY(150%) !important;
@@ -749,12 +749,12 @@ h2.song-artist {
     pointer-events: none !important;
 }
 @media (min-width: 900px) {
-    .piano-panel.piano-hidden {
+    .piano-panel.piano-hidden, .cavaquinho-panel.cavaquinho-hidden {
         display: none !important; /* On desktop, free up space */
     }
 }
 @media (max-width: 899px) {
-    .piano-panel.piano-hidden {
+    .piano-panel.piano-hidden, .cavaquinho-panel.cavaquinho-hidden {
         /* On mobile, ensure it is completely hidden and overrides mobile !important rules */
         display: none !important;
         transform: translateY(150%) !important;
@@ -763,24 +763,25 @@ h2.song-artist {
         opacity: 0 !important;
         pointer-events: none !important;
     }
-    body:has(.piano-panel.piano-hidden) .lyrics-panel {
+    body:has(.piano-panel.piano-hidden) .lyrics-panel,
+    body:has(.cavaquinho-panel.cavaquinho-hidden) .lyrics-panel {
         padding-bottom: 4rem !important;
     }
 }
 
 /* Custom thin scrollbar instead of hiding it */
-.piano-panel {
+.piano-panel, .cavaquinho-panel {
     scrollbar-width: thin;
     scrollbar-color: var(--primary) rgba(255,255,255,0.05);
 }
-.piano-panel::-webkit-scrollbar {
+.piano-panel::-webkit-scrollbar, .cavaquinho-panel::-webkit-scrollbar {
     width: 6px;
 }
-.piano-panel::-webkit-scrollbar-track {
+.piano-panel::-webkit-scrollbar-track, .cavaquinho-panel::-webkit-scrollbar-track {
     background: rgba(255,255,255,0.02);
     border-radius: 10px;
 }
-.piano-panel::-webkit-scrollbar-thumb {
+.piano-panel::-webkit-scrollbar-thumb, .cavaquinho-panel::-webkit-scrollbar-thumb {
     background: var(--primary);
     border-radius: 10px;
 }
@@ -800,7 +801,7 @@ h2.song-artist {
     .inversion-column {
         min-height: 85px;
     }
-    .piano-panel {
+    .piano-panel, .cavaquinho-panel {
         padding: 1rem !important;
     }
     .current-chord {
@@ -815,7 +816,7 @@ h2.song-artist {
 
 /* Responsive Desktop Fix without Scroll Trap v8 */
 @media (min-width: 900px) {
-    .piano-panel {
+    .piano-panel, .cavaquinho-panel {
         max-height: calc(100vh - 120px);
         overflow: hidden !important; /* PREVENTS MOUSE WHEEL SCROLL TRAP */
     }
@@ -875,7 +876,7 @@ header {
     .app-header .bpm-control-container {
         margin-left: 12px !important;
     }
-    .piano-panel {
+    .piano-panel, .cavaquinho-panel {
         position: fixed !important;
         right: 2% !important;
         top: 75px !important;
@@ -892,7 +893,7 @@ header {
 }
 
 @media (max-height: 850px) and (min-width: 900px) {
-    .piano-panel {
+    .piano-panel, .cavaquinho-panel {
         padding: 1rem !important;
     }
     .next-chord-header {

@@ -4,14 +4,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const urlParams = new URLSearchParams(window.location.search);
     const songId = urlParams.get('song');
 
-    // Atualiza o link de volta para o teclado e cavaquinho mantendo a música selecionada
+    // Atualiza os links de navegação entre instrumentos mantendo a música selecionada
     const btnToPiano = document.getElementById('btn-to-piano');
     if (btnToPiano && songId) {
         btnToPiano.href = `viewer.html?song=${songId}`;
     }
-    const btnToCavaquinho = document.getElementById('btn-to-cavaquinho');
-    if (btnToCavaquinho && songId) {
-        btnToCavaquinho.href = `viewer-cavaquinho.html?song=${songId}`;
+    const btnToGuitar = document.getElementById('btn-to-guitar');
+    if (btnToGuitar && songId) {
+        btnToGuitar.href = `viewer-violao.html?song=${songId}`;
     }
 
     if (!songId) {
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('lyrics-content').innerHTML = data.lyricsHtml;
         chordData = data.chordData || {};
         
-        initViolaoViewer();
+        initCavaquinhoViewer();
     }
 
     const scriptEl = document.createElement('script');
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => clearInterval(checkInterval), 4000);
 });
 
-function initViolaoViewer() {
+function initCavaquinhoViewer() {
     let currentDisplayedChordId = null;
     let currentNextChordId = null;
     let currentNextLyric = null;
@@ -72,8 +72,8 @@ function initViolaoViewer() {
     const activeDisplayChord = document.getElementById('active-display-chord');
     const activeDisplayLyric = document.getElementById('active-display-lyric');
     const currentChordNameEl = document.getElementById('current-chord-name');
-    const guitarCurrentView = document.getElementById('guitar-current-view');
-    const guitarNextView = document.getElementById('guitar-next-view');
+    const cavaquinhoCurrentView = document.getElementById('cavaquinho-current-view');
+    const cavaquinhoNextView = document.getElementById('cavaquinho-next-view');
 
     function getLyricForChordElement(chordEl) {
         if (!chordEl) return null;
@@ -137,8 +137,8 @@ function initViolaoViewer() {
     function showChord(chordId, nextChordId, nextLyric) {
         if (!chordId || !chordData[chordId]) {
             if (currentChordNameEl) currentChordNameEl.textContent = '---';
-            if (guitarCurrentView) guitarCurrentView.innerHTML = '';
-            if (guitarNextView) guitarNextView.innerHTML = '';
+            if (cavaquinhoCurrentView) cavaquinhoCurrentView.innerHTML = '';
+            if (cavaquinhoNextView) cavaquinhoNextView.innerHTML = '';
             return;
         }
 
@@ -153,22 +153,22 @@ function initViolaoViewer() {
         const svgW = isMobile ? 84 : 120;
         const svgH = isMobile ? 80 : 115;
 
-        if (window.GuitarChordVisualizer && guitarCurrentView) {
-            guitarCurrentView.innerHTML = window.GuitarChordVisualizer.renderGuitarFretboardSVG(data.name, { width: svgW, height: svgH });
+        if (window.CavaquinhoChordVisualizer && cavaquinhoCurrentView) {
+            cavaquinhoCurrentView.innerHTML = window.CavaquinhoChordVisualizer.renderCavaquinhoFretboardSVG(data.name, { width: svgW, height: svgH });
         }
 
-        if (window.GuitarChordVisualizer && guitarNextView) {
+        if (window.CavaquinhoChordVisualizer && cavaquinhoNextView) {
             if (nextChordId && chordData[nextChordId]) {
                 const nextData = chordData[nextChordId];
-                guitarNextView.innerHTML = `
+                cavaquinhoNextView.innerHTML = `
                     <div style="text-align: center; margin-bottom: 0.15rem;">
                         <span style="font-size: ${isMobile ? '0.85rem' : '1.0rem'}; font-weight: 800; color: #fff;">${nextData.name}</span>
                         ${nextLyric ? `<div style="font-size: ${isMobile ? '0.7rem' : '0.78rem'}; color: #cbd5e1; margin-top: 0.1rem; font-style: italic;">"${nextLyric}"</div>` : ''}
                     </div>
-                    ${window.GuitarChordVisualizer.renderGuitarFretboardSVG(nextData.name, { width: svgW, height: svgH })}
+                    ${window.CavaquinhoChordVisualizer.renderCavaquinhoFretboardSVG(nextData.name, { width: svgW, height: svgH })}
                 `;
             } else {
-                guitarNextView.innerHTML = '<div style="text-align:center; color:#64748b; font-size:0.85rem; padding:0.6rem 0;">Fim da música</div>';
+                cavaquinhoNextView.innerHTML = '<div style="text-align:center; color:#64748b; font-size:0.85rem; padding:0.6rem 0;">Fim da música</div>';
             }
         }
     }
@@ -392,17 +392,17 @@ function initViolaoViewer() {
         });
     }
 
-    // Toggle Guitar Diagram Panel Logic
-    const toggleGuitarBtn = document.getElementById('toggle-guitar-btn') || document.getElementById('toggle-piano-btn');
-    if (toggleGuitarBtn) {
-        toggleGuitarBtn.addEventListener('click', () => {
-            const panel = document.querySelector('.piano-panel');
+    // Toggle Cavaquinho Diagram Panel Logic
+    const toggleCavaquinhoBtn = document.getElementById('toggle-cavaquinho-btn') || document.getElementById('toggle-guitar-btn') || document.getElementById('toggle-piano-btn');
+    if (toggleCavaquinhoBtn) {
+        toggleCavaquinhoBtn.addEventListener('click', () => {
+            const panel = document.querySelector('.cavaquinho-panel') || document.querySelector('.piano-panel');
             if (panel) {
-                panel.classList.toggle('piano-hidden');
-                if (panel.classList.contains('piano-hidden')) {
-                    toggleGuitarBtn.style.opacity = '0.5';
+                panel.classList.toggle('cavaquinho-hidden');
+                if (panel.classList.contains('cavaquinho-hidden')) {
+                    toggleCavaquinhoBtn.style.opacity = '0.5';
                 } else {
-                    toggleGuitarBtn.style.opacity = '1';
+                    toggleCavaquinhoBtn.style.opacity = '1';
                 }
             }
         });
