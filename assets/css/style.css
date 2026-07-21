@@ -868,6 +868,13 @@ header {
 }
 
 @media (min-width: 900px) {
+    .app-header {
+        justify-content: flex-start !important;
+        gap: 24px !important;
+    }
+    .app-header .bpm-control-container {
+        margin-left: 12px !important;
+    }
     .piano-panel {
         position: fixed !important;
         right: 2% !important;
