@@ -100,17 +100,26 @@ document.addEventListener("DOMContentLoaded", () => {
             artistDisplay += ` <span class="song-composer">(Comp: ${song.composer})</span>`;
         }
 
+        const showChordsInfo = state.quick !== "all" || 
+                               state.group === "chords-range" || 
+                               state.sort === "chords-asc" || 
+                               state.sort === "chords-desc";
+
+        const badgesHtml = showChordsInfo ? `
+                <div class="song-badges">
+                    <span class="chord-badge badge-${level.class}">
+                        🎸 ${song.chordsCount} ${song.chordsCount === 1 ? 'acorde' : 'acordes'}
+                    </span>
+                </div>
+        ` : '';
+
         return `
             <a href="viewer.html?song=${song.id}" class="song-link" data-chords="${song.chordsCount}">
                 <div class="song-info">
                     <span class="song-title">${song.title}</span>
                     <span class="song-artist">${artistDisplay}</span>
                 </div>
-                <div class="song-badges">
-                    <span class="chord-badge badge-${level.class}">
-                        🎸 ${song.chordsCount} ${song.chordsCount === 1 ? 'acorde' : 'acordes'}
-                    </span>
-                </div>
+                ${badgesHtml}
             </a>
         `;
     };
