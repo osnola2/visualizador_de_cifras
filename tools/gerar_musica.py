@@ -57,6 +57,8 @@ def is_chord_line(line):
             continue
         if re.match(r'^\d+x?$', clean_token, re.IGNORECASE) or clean_token in ('|', '||', '/', '-', 'bis', 'x', ':', 'e', '+') or re.match(r'^[|/\-:]+$', clean_token):
             continue
+        if token.lower().rstrip(':') in ('intro', 'solo', 'final', 'refrão', 'refrao', 'ponte', 'tom', 'riff') or token.lower() in ('[intro]', '[solo]', '[final]', '[refrão]', '[refrao]', '[ponte]', '[riff]'):
+            continue
         return False
     return has_chord
 

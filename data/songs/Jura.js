@@ -1,0 +1,203 @@
+window.SONG_DATA = {
+    "title": "Jura",
+    "artist": "Zeca Pagodinho",
+    "composer": "Sinhô / José Barbosa Da Silva",
+    "lyricsHtml": "\n\n\nIntrodução: <span class=\"chord\" data-chord=\"G7\">G7</span> <span class=\"chord\" data-chord=\"C\">C</span> <span class=\"chord\" data-chord=\"A7\">A7</span> <span class=\"chord\" data-chord=\"Dm\">Dm</span> <span class=\"chord\" data-chord=\"G7\">G7</span> <span class=\"chord\" data-chord=\"C\">C</span> <span class=\"chord\" data-chord=\"A7\">A7</span> <span class=\"chord\" data-chord=\"Dm\">Dm</span> <span class=\"chord\" data-chord=\"G7\">G7</span> <span class=\"chord\" data-chord=\"C\">C</span>   <span class=\"chord\" data-chord=\"G7\">G7</span> \n\n<span class=\"chord\" data-chord=\"C\">C</span>   <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">Jura</span>\n<span class=\"chord\" data-chord=\"Dm\">Dm</span>  <span class=\"chord\" data-chord=\"A7\">A7</span> <span class=\"chord\" data-chord=\"Dm\">Dm</span>  <span class=\"chord\" data-chord=\"G7\">G7</span>     <span class=\"chord\" data-chord=\"C\">C</span>    <span class=\"chord\" data-chord=\"G7\">G7</span>\n<span class=\"lyric-line\">Jura, jura pelo Senhor</span>\n <span class=\"chord\" data-chord=\"C\">C</span>   <span class=\"chord\" data-chord=\"A7\">A7</span> \n<span class=\"lyric-line\">Jura,</span>\n      <span class=\"chord\" data-chord=\"G7\">G7</span>     <span class=\"chord\" data-chord=\"E7\">E7</span>       <span class=\"chord\" data-chord=\"A7\">A7</span>  <span class=\"chord\" data-chord=\"D7\">D7</span>     <span class=\"chord\" data-chord=\"Dm\">Dm</span>\n<span class=\"lyric-line\">Pela imagem da Santa Cruz do Redentor </span>\n          <span class=\"chord\" data-chord=\"G7\">G7</span>\n<span class=\"lyric-line\">Pra ter valor </span>\n       <span class=\"chord\" data-chord=\"C\">C</span>    <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">A tua jura, </span>\n<span class=\"chord\" data-chord=\"Dm\">Dm</span>  <span class=\"chord\" data-chord=\"A7\">A7</span> <span class=\"chord\" data-chord=\"Dm\">Dm</span>  <span class=\"chord\" data-chord=\"G7\">G7</span>      <span class=\"chord\" data-chord=\"C\">C</span> <span class=\"chord\" data-chord=\"G7\">G7</span>\n<span class=\"lyric-line\">Jura, jura de coração</span>\n<span class=\"chord\" data-chord=\"C\">C</span>            <span class=\"chord\" data-chord=\"C7\">C7</span>\n<span class=\"lyric-line\">Para que um dia </span>\n         <span class=\"chord\" data-chord=\"F\">F</span>           <span class=\"chord\" data-chord=\"Fm\">Fm</span>    <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">Eu possa dar-te o meu amor</span>\n<span class=\"chord\" data-chord=\"Dm\">Dm</span>            <span class=\"chord\" data-chord=\"G7\">G7</span>       <span class=\"chord\" data-chord=\"C\">C</span>   <span class=\"chord\" data-chord=\"C7\">C7</span>\n<span class=\"lyric-line\">Sem mais pensar na ilusão </span>\n  <span class=\"chord\" data-chord=\"F\">F</span>      <span class=\"chord\" data-chord=\"G7\">G7</span>    <span class=\"chord\" data-chord=\"C\">C</span>        <span class=\"chord\" data-chord=\"Am\">Am</span>\n<span class=\"lyric-line\">Daí então dar-te eu irei</span>\n         <span class=\"chord\" data-chord=\"Dm\">Dm</span>           <span class=\"chord\" data-chord=\"G7\">G7</span>       <span class=\"chord\" data-chord=\"C\">C</span>  <span class=\"chord\" data-chord=\"C7\">C7</span> \n<span class=\"lyric-line\">Um beijo puro na catedral do amor</span>\n    <span class=\"chord\" data-chord=\"F\">F</span>            <span class=\"chord\" data-chord=\"G7\">G7</span>\n<span class=\"lyric-line\">Dos sonhos meus, </span>\n     <span class=\"chord\" data-chord=\"C\">C</span>              <span class=\"chord\" data-chord=\"Am\">Am</span>\n<span class=\"lyric-line\">Bem juntos aos teus </span>\n        <span class=\"chord\" data-chord=\"Dm\">Dm</span>          <span class=\"chord\" data-chord=\"G7\">G7</span>      <span class=\"chord\" data-chord=\"C\">C</span> <span class=\"chord\" data-chord=\"G7\">G7</span> .... <span class=\"chord\" data-chord=\"C\">C</span> <span class=\"chord\" data-chord=\"A7\">A7</span> <span class=\"chord\" data-chord=\"Dm\">Dm</span> <span class=\"chord\" data-chord=\"G7\">G7</span> <span class=\"chord\" data-chord=\"C\">C</span> <span class=\"chord\" data-chord=\"A7\">A7</span> <span class=\"chord\" data-chord=\"Dm\">Dm</span> <span class=\"chord\" data-chord=\"G7\">G7</span> <span class=\"chord\" data-chord=\"C\">C</span> ... <span class=\"chord\" data-chord=\"G7\">G7</span>\n<span class=\"lyric-line\">Para fugir das aflições da dor </span>\n<span class=\"chord\" data-chord=\"C\">C</span>   <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">Jura</span>\n<span class=\"chord\" data-chord=\"Dm\">Dm</span>  <span class=\"chord\" data-chord=\"A7\">A7</span> <span class=\"chord\" data-chord=\"Dm\">Dm</span>  <span class=\"chord\" data-chord=\"G7\">G7</span>     <span class=\"chord\" data-chord=\"C\">C</span>    <span class=\"chord\" data-chord=\"G7\">G7</span>\n<span class=\"lyric-line\">Jura, jura pelo Senhor</span>\n<span class=\"chord\" data-chord=\"C\">C</span>   <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">Jura,</span>\n      <span class=\"chord\" data-chord=\"G7\">G7</span>     <span class=\"chord\" data-chord=\"E7\">E7</span>       <span class=\"chord\" data-chord=\"A7\">A7</span>  <span class=\"chord\" data-chord=\"D7\">D7</span>     <span class=\"chord\" data-chord=\"Dm\">Dm</span>\n<span class=\"lyric-line\">Pela imagem da Santa Cruz do Redentor </span>\n          <span class=\"chord\" data-chord=\"G7\">G7</span>\n<span class=\"lyric-line\">Pra ter valor </span>\n       <span class=\"chord\" data-chord=\"C\">C</span>    <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">A tua jura, </span>\n<span class=\"chord\" data-chord=\"Dm\">Dm</span>  <span class=\"chord\" data-chord=\"A7\">A7</span> <span class=\"chord\" data-chord=\"Dm\">Dm</span>  <span class=\"chord\" data-chord=\"G7\">G7</span>      <span class=\"chord\" data-chord=\"C\">C</span> <span class=\"chord\" data-chord=\"G7\">G7</span>\n<span class=\"lyric-line\">Jura, jura de coração</span>\n<span class=\"chord\" data-chord=\"C\">C</span>            <span class=\"chord\" data-chord=\"C7\">C7</span>\n<span class=\"lyric-line\">Para que um dia </span>\n         <span class=\"chord\" data-chord=\"F\">F</span>           <span class=\"chord\" data-chord=\"Fm\">Fm</span>    <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">Eu possa dar-te o meu amor</span>\n<span class=\"chord\" data-chord=\"Dm\">Dm</span>            <span class=\"chord\" data-chord=\"G7\">G7</span>       <span class=\"chord\" data-chord=\"C\">C</span>   <span class=\"chord\" data-chord=\"C7\">C7</span>\n<span class=\"lyric-line\">Sem mais pensar na ilusão </span>\n  <span class=\"chord\" data-chord=\"F\">F</span>      <span class=\"chord\" data-chord=\"G7\">G7</span>    <span class=\"chord\" data-chord=\"C\">C</span>        <span class=\"chord\" data-chord=\"Am\">Am</span>\n<span class=\"lyric-line\">Daí então dar-te eu irei</span>\n         <span class=\"chord\" data-chord=\"Dm\">Dm</span>           <span class=\"chord\" data-chord=\"G7\">G7</span>       <span class=\"chord\" data-chord=\"C\">C</span>  <span class=\"chord\" data-chord=\"C7\">C7</span> \n<span class=\"lyric-line\">Um beijo puro na catedral do amor</span>\n    <span class=\"chord\" data-chord=\"F\">F</span>            <span class=\"chord\" data-chord=\"G7\">G7</span>\n<span class=\"lyric-line\">Dos sonhos meus, </span>\n     <span class=\"chord\" data-chord=\"C\">C</span>              <span class=\"chord\" data-chord=\"Am\">Am</span>\n<span class=\"lyric-line\">Bem juntos aos teus </span>\n        <span class=\"chord\" data-chord=\"Dm\">Dm</span>          <span class=\"chord\" data-chord=\"G7\">G7</span>      <span class=\"chord\" data-chord=\"C\">C</span> <span class=\"chord\" data-chord=\"C7\">C7</span>\n<span class=\"lyric-line\">Para fugir das aflições da dor </span>\n  <span class=\"chord\" data-chord=\"F\">F</span>      <span class=\"chord\" data-chord=\"G7\">G7</span>    <span class=\"chord\" data-chord=\"C\">C</span>        <span class=\"chord\" data-chord=\"Am\">Am</span>\n<span class=\"lyric-line\">Daí então dar-te eu irei</span>\n         <span class=\"chord\" data-chord=\"Dm\">Dm</span>           <span class=\"chord\" data-chord=\"G7\">G7</span>       <span class=\"chord\" data-chord=\"C\">C</span>  <span class=\"chord\" data-chord=\"C7\">C7</span> \n<span class=\"lyric-line\">Um beijo puro na catedral do amor</span>\n    <span class=\"chord\" data-chord=\"F\">F</span>            <span class=\"chord\" data-chord=\"G7\">G7</span>\n<span class=\"lyric-line\">Dos sonhos meus, </span>\n     <span class=\"chord\" data-chord=\"C\">C</span>              <span class=\"chord\" data-chord=\"Am\">Am</span>\n<span class=\"lyric-line\">Bem juntos aos teus </span>\n        <span class=\"chord\" data-chord=\"Dm\">Dm</span>          <span class=\"chord\" data-chord=\"G7\">G7</span>      <span class=\"chord\" data-chord=\"C\">C</span>  <span class=\"chord\" data-chord=\"G7\">G7</span> ... <span class=\"chord\" data-chord=\"C\">C</span> <span class=\"chord\" data-chord=\"A7\">A7</span> <span class=\"chord\" data-chord=\"Dm\">Dm</span> <span class=\"chord\" data-chord=\"G7\">G7</span> <span class=\"chord\" data-chord=\"C\">C</span> <span class=\"chord\" data-chord=\"A7\">A7</span> <span class=\"chord\" data-chord=\"Dm\">Dm</span> <span class=\"chord\" data-chord=\"G7\">G7</span> <span class=\"chord\" data-chord=\"C\">C</span> \n<span class=\"lyric-line\">Para fugir das aflições da dor</span>\n",
+    "chordData": {
+        "A7": {
+            "name": "A7",
+            "notes": [
+                "A3",
+                "C#4",
+                "E4",
+                "G4"
+            ],
+            "displayNotes": [
+                "A",
+                "C#",
+                "E",
+                "G"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "Am": {
+            "name": "Am",
+            "notes": [
+                "A3",
+                "C4",
+                "E4"
+            ],
+            "displayNotes": [
+                "A",
+                "C",
+                "E"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "C": {
+            "name": "C",
+            "notes": [
+                "C3",
+                "E3",
+                "G3"
+            ],
+            "displayNotes": [
+                "C",
+                "E",
+                "G"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "C7": {
+            "name": "C7",
+            "notes": [
+                "C3",
+                "E3",
+                "G3",
+                "A#3"
+            ],
+            "displayNotes": [
+                "C",
+                "E",
+                "G",
+                "A#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "D7": {
+            "name": "D7",
+            "notes": [
+                "D3",
+                "F#3",
+                "A3",
+                "C4"
+            ],
+            "displayNotes": [
+                "D",
+                "F#",
+                "A",
+                "C"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "Dm": {
+            "name": "Dm",
+            "notes": [
+                "D3",
+                "F3",
+                "A3"
+            ],
+            "displayNotes": [
+                "D",
+                "F",
+                "A"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "E7": {
+            "name": "E7",
+            "notes": [
+                "E3",
+                "G#3",
+                "B3",
+                "D4"
+            ],
+            "displayNotes": [
+                "E",
+                "G#",
+                "B",
+                "D"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "F": {
+            "name": "F",
+            "notes": [
+                "F3",
+                "A3",
+                "C4"
+            ],
+            "displayNotes": [
+                "F",
+                "A",
+                "C"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Fm": {
+            "name": "Fm",
+            "notes": [
+                "F3",
+                "G#3",
+                "C4"
+            ],
+            "displayNotes": [
+                "F",
+                "Ab",
+                "C"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "G7": {
+            "name": "G7",
+            "notes": [
+                "G3",
+                "B3",
+                "D4",
+                "F4"
+            ],
+            "displayNotes": [
+                "G",
+                "B",
+                "D",
+                "F"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        }
+    }
+};

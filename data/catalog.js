@@ -43,6 +43,13 @@ const SONGS_CATALOG = [
         "chordsCount": 22
     },
     {
+        "id": "AindaETempoDeSerFeliz",
+        "title": "Ainda é tempo de ser feliz",
+        "artist": "Zeca Pagodinho",
+        "composer": "Arlindo Cruz",
+        "chordsCount": 26
+    },
+    {
         "id": "Antonico",
         "title": "Antonico",
         "artist": "Ismael Silva",
@@ -141,6 +148,13 @@ const SONGS_CATALOG = [
         "chordsCount": 10
     },
     {
+        "id": "CamaraoQueDormeAOndaLeva",
+        "title": "Camarão que dorme a onda Leva",
+        "artist": "Zeca Pagodinho",
+        "composer": "Zeca Pagodinho / Arlindo Cruz / Jorge Aragão / Beto Sem Braço",
+        "chordsCount": 10
+    },
+    {
         "id": "Caravana",
         "title": "Caravana",
         "artist": "Geraldo Azevedo",
@@ -216,6 +230,13 @@ const SONGS_CATALOG = [
         "artist": "Paulinho da Viola",
         "composer": "",
         "chordsCount": 4
+    },
+    {
+        "id": "DeixaClarear",
+        "title": "Deixa Clarear",
+        "artist": "Zeca Pagodinho",
+        "composer": "Arlindo Cruz / Marquinhos PQD / Sombrinha",
+        "chordsCount": 8
     },
     {
         "id": "Dindinha",
@@ -365,6 +386,13 @@ const SONGS_CATALOG = [
         "chordsCount": 9
     },
     {
+        "id": "Jura",
+        "title": "Jura",
+        "artist": "Zeca Pagodinho",
+        "composer": "Sinhô / José Barbosa Da Silva",
+        "chordsCount": 10
+    },
+    {
         "id": "LagrimasNegras",
         "title": "Lágrimas Negras",
         "artist": "Jorge Mautner e Nelson Jacobina",
@@ -466,7 +494,7 @@ const SONGS_CATALOG = [
         "id": "MatitaPere",
         "title": "Matita Perê",
         "artist": "Tom Jobim",
-        "composer": "",
+        "composer": "Tom Jobim / Paulo César Pinheiro",
         "chordsCount": 30
     },
     {
