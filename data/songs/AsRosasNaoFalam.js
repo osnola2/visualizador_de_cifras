@@ -1,0 +1,356 @@
+window.SONG_DATA = {
+    "title": "As Rosas Não Falam",
+    "artist": "Cartola",
+    "composer": "Cartola",
+    "lyricsHtml": "\n[Intro] <span class=\"chord\" data-chord=\"Dm\">Dm</span>  <span class=\"chord\" data-chord=\"Dm/C\">Dm/C</span>  <span class=\"chord\" data-chord=\"Bº\">Bº</span>  <span class=\"chord\" data-chord=\"Gm/Bb\">Gm/Bb</span>\n        <span class=\"chord\" data-chord=\"E7\">E7</span>  <span class=\"chord\" data-chord=\"A7\">A7</span>  <span class=\"chord\" data-chord=\"Dm\">Dm</span>  <span class=\"chord\" data-chord=\"A7\">A7</span>\n\n<span class=\"lyric-line\">[Tab - Intro]</span>\n\n<span class=\"lyric-line\">Parte 1 de 5</span>\n   <span class=\"chord\" data-chord=\"Dm\">Dm</span>              <span class=\"chord\" data-chord=\"Dm/C\">Dm/C</span>\n\n\n<span class=\"lyric-line\">Parte 2 de 5</span>\n   <span class=\"chord\" data-chord=\"Bº\">Bº</span>              <span class=\"chord\" data-chord=\"Gm/Bb\">Gm/Bb</span>\n\n\n<span class=\"lyric-line\">Parte 3 de 5</span>\n   <span class=\"chord\" data-chord=\"E7\">E7</span>              <span class=\"chord\" data-chord=\"A7\">A7</span>\n\n\n<span class=\"lyric-line\">Parte 4 de 5</span>\n    <span class=\"chord\" data-chord=\"Dm\">Dm</span>\n\n\n<span class=\"lyric-line\">Parte 5 de 5</span>\n    <span class=\"chord\" data-chord=\"Dm\">Dm</span>         <span class=\"chord\" data-chord=\"A7\">A7</span>\n\n\n<span class=\"lyric-line\">[Primeira Parte]</span>\n\n<span class=\"lyric-line\">[Tab - Primeira Parte]</span>\n\n<span class=\"lyric-line\">Parte 1 de 4</span>\n   <span class=\"chord\" data-chord=\"Dm\">Dm</span>              <span class=\"chord\" data-chord=\"Dm/C\">Dm/C</span>\n\n\n<span class=\"lyric-line\">Parte 2 de 4</span>\n   <span class=\"chord\" data-chord=\"Gm/Bb\">Gm/Bb</span>           <span class=\"chord\" data-chord=\"Gm/F\">Gm/F</span>\n\n\n<span class=\"lyric-line\">Parte 3 de 4</span>\n   <span class=\"chord\" data-chord=\"E7\">E7</span>                  <span class=\"chord\" data-chord=\"A7/C#\">A7/C#</span>   <span class=\"chord\" data-chord=\"A7\">A7</span>      <span class=\"chord\" data-chord=\"Dm\">Dm</span>\n\n\n<span class=\"lyric-line\">Parte 4 de 4</span>\n\n\n\n\n <span class=\"chord\" data-chord=\"Dm\">Dm</span>            <span class=\"chord\" data-chord=\"Dm/C\">Dm/C</span>\n<span class=\"lyric-line\">Bate outra vez</span>\n                  <span class=\"chord\" data-chord=\"Gm/Bb\">Gm/Bb</span>      <span class=\"chord\" data-chord=\"Gm/F\">Gm/F</span>\n<span class=\"lyric-line\">Com esperanças o meu coração</span>\n                  <span class=\"chord\" data-chord=\"E7\">E7</span>           <span class=\"chord\" data-chord=\"A7/C#\">A7/C#</span>\n<span class=\"lyric-line\">Pois já vai terminando o verão</span>\n<span class=\"chord\" data-chord=\"A7\">A7</span>    <span class=\"chord\" data-chord=\"Dm\">Dm</span>  <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">   Enfim</span>\n\n<span class=\"lyric-line\">[Segunda Parte]</span>\n\n<span class=\"lyric-line\">[Tab - Segunda Parte]</span>\n\n<span class=\"lyric-line\">Parte 1 de 4</span>\n   <span class=\"chord\" data-chord=\"Dm\">Dm</span>              <span class=\"chord\" data-chord=\"Dm/C\">Dm/C</span>    <span class=\"chord\" data-chord=\"Dm/A\">Dm/A</span>\n\n\n<span class=\"lyric-line\">Parte 2 de 4</span>\n   <span class=\"chord\" data-chord=\"E7/G#\">E7/G#</span>             <span class=\"chord\" data-chord=\"E7/D\">E7/D</span>\n\n\n<span class=\"lyric-line\">Parte 3 de 4</span>\n   <span class=\"chord\" data-chord=\"Gm/Bb\">Gm/Bb</span>           <span class=\"chord\" data-chord=\"A7\">A7</span>     <span class=\"chord\" data-chord=\"A7/E\">A7/E</span>\n\n\n<span class=\"lyric-line\">Parte 4 de 4</span>\n   <span class=\"chord\" data-chord=\"Dm\">Dm</span>              <span class=\"chord\" data-chord=\"D7/F#\">D7/F#</span>\n\n\n <span class=\"chord\" data-chord=\"Dm\">Dm</span>             <span class=\"chord\" data-chord=\"Dm/C\">Dm/C</span>  <span class=\"chord\" data-chord=\"Dm/A\">Dm/A</span>\n<span class=\"lyric-line\">Volto ao jardim</span>\n                   <span class=\"chord\" data-chord=\"E7/G#\">E7/G#</span>      <span class=\"chord\" data-chord=\"E7/D\">E7/D</span>\n<span class=\"lyric-line\">Com a certeza que devo chorar</span>\n                       <span class=\"chord\" data-chord=\"Gm/Bb\">Gm/Bb</span>       <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">Pois bem sei que não queres voltar</span>\n<span class=\"chord\" data-chord=\"A7/E\">A7/E</span>  <span class=\"chord\" data-chord=\"Dm\">Dm</span>      <span class=\"chord\" data-chord=\"D7/F#\">D7/F#</span>\n<span class=\"lyric-line\">     Para mim</span>\n\n<span class=\"lyric-line\">[Terceira Parte]</span>\n\n<span class=\"lyric-line\">[Tab - Terceira Parte]</span>\n\n<span class=\"lyric-line\">Parte 1 de 5</span>\n   <span class=\"chord\" data-chord=\"Gm\">Gm</span>            <span class=\"chord\" data-chord=\"Gm/F\">Gm/F</span>\n\n\n<span class=\"lyric-line\">Parte 2 de 5</span>\n   <span class=\"chord\" data-chord=\"Dm\">Dm</span>              <span class=\"chord\" data-chord=\"Dm/C\">Dm/C</span>\n\n\n<span class=\"lyric-line\">Parte 3 de 5</span>\n   <span class=\"chord\" data-chord=\"E7/B\">E7/B</span>              <span class=\"chord\" data-chord=\"E7/D\">E7/D</span>    <span class=\"chord\" data-chord=\"E7/B\">E7/B</span>    \n\n\n<span class=\"lyric-line\">Parte 4 de 5</span>\n   <span class=\"chord\" data-chord=\"A7\">A7</span>\n\n\n<span class=\"lyric-line\">Parte 5 de 5</span>\n\n\n  <span class=\"chord\" data-chord=\"Gm\">Gm</span>\n<span class=\"lyric-line\">Queixo-me às rosas</span>\n<span class=\"chord\" data-chord=\"Gm/F\">Gm/F</span>\n<span class=\"lyric-line\">     Mas que bobagem</span>\n    <span class=\"chord\" data-chord=\"Dm\">Dm</span>             <span class=\"chord\" data-chord=\"Dm/C\">Dm/C</span>\n<span class=\"lyric-line\">As rosas não falam</span>\n                 <span class=\"chord\" data-chord=\"E7/B\">E7/B</span>        <span class=\"chord\" data-chord=\"E7/D\">E7/D</span>\n<span class=\"lyric-line\">Simplesmente as rosas exalam</span>\n      <span class=\"chord\" data-chord=\"E7/B\">E7/B</span>     <span class=\"chord\" data-chord=\"A7\">A7</span>     <span class=\"chord\" data-chord=\"A7/E\">A7/E</span>\n<span class=\"lyric-line\">O perfume que roubam de ti, ai!</span>\n\n<span class=\"lyric-line\">[quarte parte]</span>\n\n<span class=\"lyric-line\">[Tab - Quarta Parte]</span>\n\n<span class=\"lyric-line\">Parte 1 de 4</span>\n   <span class=\"chord\" data-chord=\"Dm\">Dm</span>              <span class=\"chord\" data-chord=\"Dm/C\">Dm/C</span>\n\n\n<span class=\"lyric-line\">Parte 2 de 4</span>\n   <span class=\"chord\" data-chord=\"Gm/Bb\">Gm/Bb</span>           <span class=\"chord\" data-chord=\"Gm/F\">Gm/F</span>\n\n\n<span class=\"lyric-line\">Parte 3 de 4</span>\n   <span class=\"chord\" data-chord=\"E7\">E7</span>                  <span class=\"chord\" data-chord=\"A7/C#\">A7/C#</span>   <span class=\"chord\" data-chord=\"A7\">A7</span>      <span class=\"chord\" data-chord=\"Dm\">Dm</span>\n\n\n<span class=\"lyric-line\">Parte 4 de 4</span>\n\n\n<span class=\"chord\" data-chord=\"Dm\">Dm</span>            <span class=\"chord\" data-chord=\"Dm/C\">Dm/C</span>\n<span class=\"lyric-line\">   Devias vir</span>\n                 <span class=\"chord\" data-chord=\"Gm/Bb\">Gm/Bb</span>            <span class=\"chord\" data-chord=\"Gm/F\">Gm/F</span>\n<span class=\"lyric-line\">Para ver os meus olhos tristonhos</span>\n                <span class=\"chord\" data-chord=\"E7\">E7</span>        <span class=\"chord\" data-chord=\"E7/B\">E7/B</span>  <span class=\"chord\" data-chord=\"A7/C#\">A7/C#</span>\n<span class=\"lyric-line\">E quem sabe sonhavas meu sonho</span>\n<span class=\"chord\" data-chord=\"A7\">A7</span>      <span class=\"chord\" data-chord=\"Dm\">Dm</span>  <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">   Por fim</span>\n\n<span class=\"lyric-line\">[Primeira Parte]</span>\n\n <span class=\"chord\" data-chord=\"Dm\">Dm</span>            <span class=\"chord\" data-chord=\"Dm/C\">Dm/C</span>\n<span class=\"lyric-line\">Bate outra vez</span>\n                  <span class=\"chord\" data-chord=\"Gm/Bb\">Gm/Bb</span>      <span class=\"chord\" data-chord=\"Gm/F\">Gm/F</span>\n<span class=\"lyric-line\">Com esperanças o meu coração</span>\n                  <span class=\"chord\" data-chord=\"E7\">E7</span>           <span class=\"chord\" data-chord=\"A7/C#\">A7/C#</span>\n<span class=\"lyric-line\">Pois já vai terminando o verão</span>\n<span class=\"chord\" data-chord=\"A7\">A7</span>    <span class=\"chord\" data-chord=\"Dm\">Dm</span>  <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">   Enfim</span>\n\n<span class=\"lyric-line\">[Segunda Parte]</span>\n\n <span class=\"chord\" data-chord=\"Dm\">Dm</span>             <span class=\"chord\" data-chord=\"Dm/C\">Dm/C</span>  <span class=\"chord\" data-chord=\"Dm/A\">Dm/A</span>\n<span class=\"lyric-line\">Volto ao jardim</span>\n                   <span class=\"chord\" data-chord=\"E7/G#\">E7/G#</span>      <span class=\"chord\" data-chord=\"E7/D\">E7/D</span>\n<span class=\"lyric-line\">Com a certeza que devo chorar</span>\n                       <span class=\"chord\" data-chord=\"Gm/Bb\">Gm/Bb</span>       <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">Pois bem sei que não queres voltar</span>\n<span class=\"chord\" data-chord=\"A7/E\">A7/E</span>  <span class=\"chord\" data-chord=\"Dm\">Dm</span>      <span class=\"chord\" data-chord=\"D7/F#\">D7/F#</span>\n<span class=\"lyric-line\">     Para mim</span>\n\n<span class=\"lyric-line\">[Terceira Parte]</span>\n\n  <span class=\"chord\" data-chord=\"Gm\">Gm</span>\n<span class=\"lyric-line\">Queixo-me às rosas</span>\n<span class=\"chord\" data-chord=\"Gm/F\">Gm/F</span>\n<span class=\"lyric-line\">     Mas que bobagem</span>\n    <span class=\"chord\" data-chord=\"Dm\">Dm</span>             <span class=\"chord\" data-chord=\"Dm/C\">Dm/C</span>\n<span class=\"lyric-line\">As rosas não falam</span>\n                 <span class=\"chord\" data-chord=\"E7/B\">E7/B</span>        <span class=\"chord\" data-chord=\"E7/D\">E7/D</span>\n<span class=\"lyric-line\">Simplesmente as rosas exalam</span>\n      <span class=\"chord\" data-chord=\"E7/B\">E7/B</span>     <span class=\"chord\" data-chord=\"A7\">A7</span>     <span class=\"chord\" data-chord=\"A7/E\">A7/E</span>\n<span class=\"lyric-line\">O perfume que roubam de ti, ai!</span>\n\n<span class=\"lyric-line\">[Quarta Parte]</span>\n\n<span class=\"chord\" data-chord=\"Dm\">Dm</span>            <span class=\"chord\" data-chord=\"Dm/C\">Dm/C</span>\n<span class=\"lyric-line\">   Devias vir</span>\n                 <span class=\"chord\" data-chord=\"Gm/Bb\">Gm/Bb</span>            <span class=\"chord\" data-chord=\"Gm/F\">Gm/F</span>\n<span class=\"lyric-line\">Para ver os meus olhos tristonhos</span>\n                <span class=\"chord\" data-chord=\"E7\">E7</span>        <span class=\"chord\" data-chord=\"E7/B\">E7/B</span>  <span class=\"chord\" data-chord=\"A7/C#\">A7/C#</span>\n<span class=\"lyric-line\">E quem sabe sonhavas meu sonho</span>\n<span class=\"chord\" data-chord=\"A7\">A7</span>      <span class=\"chord\" data-chord=\"Dm\">Dm</span>  <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">   Por fim</span>\n\n<span class=\"lyric-line\">[Tab - Dedilhado]</span>\n\n\n\n<span class=\"chord\" data-chord=\"Dm\">Dm</span>            <span class=\"chord\" data-chord=\"Dm/C\">Dm/C</span>\n<span class=\"lyric-line\">   Devias vir</span>\n                 <span class=\"chord\" data-chord=\"Gm/Bb\">Gm/Bb</span>            <span class=\"chord\" data-chord=\"Gm/F\">Gm/F</span>\n<span class=\"lyric-line\">Para ver os meus olhos tristonhos</span>\n                <span class=\"chord\" data-chord=\"E7\">E7</span>        <span class=\"chord\" data-chord=\"E7/B\">E7/B</span>  <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">E quem sabe sonhavas meu sonho</span>\n<span class=\"chord\" data-chord=\"A7/E\">A7/E</span>      <span class=\"chord\" data-chord=\"Dm\">Dm</span>  <span class=\"chord\" data-chord=\"Dm9\">Dm9</span>\n<span class=\"lyric-line\">     Por fim</span>\n\n<span class=\"lyric-line\">[Tab - Final]</span>\n\n                             <span class=\"chord\" data-chord=\"Dm9\">Dm9</span>\n\n<span class=\"lyric-line\">E|-----------------3-1-3--------------------|</span>\n",
+    "chordData": {
+        "A7": {
+            "name": "A7",
+            "notes": [
+                "A3",
+                "C#4",
+                "E4",
+                "G4"
+            ],
+            "displayNotes": [
+                "A",
+                "C#",
+                "E",
+                "G"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "A7/C#": {
+            "name": "A7/C#",
+            "notes": [
+                "C#3",
+                "A3",
+                "C#4",
+                "E4",
+                "G4"
+            ],
+            "displayNotes": [
+                "C#",
+                "A",
+                "C#",
+                "E",
+                "G"
+            ],
+            "noteTypes": [
+                "bass",
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "A7/E": {
+            "name": "A7/E",
+            "notes": [
+                "E3",
+                "A3",
+                "C#4",
+                "E4",
+                "G4"
+            ],
+            "displayNotes": [
+                "E",
+                "A",
+                "C#",
+                "E",
+                "G"
+            ],
+            "noteTypes": [
+                "bass",
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "Bº": {
+            "name": "Bº",
+            "notes": [
+                "B3",
+                "D4",
+                "F4"
+            ],
+            "displayNotes": [
+                "B",
+                "D",
+                "F"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "D7/F#": {
+            "name": "D7/F#",
+            "notes": [
+                "F#3",
+                "D4",
+                "F#4",
+                "A4",
+                "C5"
+            ],
+            "displayNotes": [
+                "F#",
+                "D",
+                "F#",
+                "A",
+                "C"
+            ],
+            "noteTypes": [
+                "bass",
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "Dm": {
+            "name": "Dm",
+            "notes": [
+                "D3",
+                "F3",
+                "A3"
+            ],
+            "displayNotes": [
+                "D",
+                "F",
+                "A"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Dm/A": {
+            "name": "Dm/A",
+            "notes": [
+                "A3",
+                "D4",
+                "F4",
+                "A4"
+            ],
+            "displayNotes": [
+                "A",
+                "D",
+                "F",
+                "A"
+            ],
+            "noteTypes": [
+                "bass",
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Dm/C": {
+            "name": "Dm/C",
+            "notes": [
+                "C3",
+                "D3",
+                "F3",
+                "A3"
+            ],
+            "displayNotes": [
+                "C",
+                "D",
+                "F",
+                "A"
+            ],
+            "noteTypes": [
+                "bass",
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Dm9": {
+            "name": "Dm9",
+            "notes": [
+                "D3",
+                "F3",
+                "A3",
+                "C4",
+                "E4"
+            ],
+            "displayNotes": [
+                "D",
+                "F",
+                "A",
+                "C",
+                "E"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh",
+                "ninth"
+            ]
+        },
+        "E7": {
+            "name": "E7",
+            "notes": [
+                "E3",
+                "G#3",
+                "B3",
+                "D4"
+            ],
+            "displayNotes": [
+                "E",
+                "G#",
+                "B",
+                "D"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "E7/B": {
+            "name": "E7/B",
+            "notes": [
+                "B3",
+                "E4",
+                "G#4",
+                "B4",
+                "D5"
+            ],
+            "displayNotes": [
+                "B",
+                "E",
+                "G#",
+                "B",
+                "D"
+            ],
+            "noteTypes": [
+                "bass",
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "E7/D": {
+            "name": "E7/D",
+            "notes": [
+                "D3",
+                "E3",
+                "G#3",
+                "B3",
+                "D4"
+            ],
+            "displayNotes": [
+                "D",
+                "E",
+                "G#",
+                "B",
+                "D"
+            ],
+            "noteTypes": [
+                "bass",
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "E7/G#": {
+            "name": "E7/G#",
+            "notes": [
+                "G#3",
+                "E4",
+                "G#4",
+                "B4",
+                "D5"
+            ],
+            "displayNotes": [
+                "G#",
+                "E",
+                "G#",
+                "B",
+                "D"
+            ],
+            "noteTypes": [
+                "bass",
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "Gm": {
+            "name": "Gm",
+            "notes": [
+                "G3",
+                "A#3",
+                "D4"
+            ],
+            "displayNotes": [
+                "G",
+                "A#",
+                "D"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Gm/Bb": {
+            "name": "Gm/Bb",
+            "notes": [
+                "A#3",
+                "G4",
+                "A#4",
+                "D5"
+            ],
+            "displayNotes": [
+                "A#",
+                "G",
+                "A#",
+                "D"
+            ],
+            "noteTypes": [
+                "bass",
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Gm/F": {
+            "name": "Gm/F",
+            "notes": [
+                "F3",
+                "G3",
+                "A#3",
+                "D4"
+            ],
+            "displayNotes": [
+                "F",
+                "G",
+                "A#",
+                "D"
+            ],
+            "noteTypes": [
+                "bass",
+                "root",
+                "triad",
+                "triad"
+            ]
+        }
+    }
+};

@@ -43,6 +43,13 @@ const SONGS_CATALOG = [
         "chordsCount": 13
     },
     {
+        "id": "Acontece",
+        "title": "Acontece",
+        "artist": "Cartola",
+        "composer": "Cartola",
+        "chordsCount": 24
+    },
+    {
         "id": "AguasDeMarco",
         "title": "Águas de Março",
         "artist": "Tom Jobim",
@@ -76,6 +83,13 @@ const SONGS_CATALOG = [
         "artist": "Adoniran Barbosa",
         "composer": "Adoniran Barbosa",
         "chordsCount": 7
+    },
+    {
+        "id": "AsRosasNaoFalam",
+        "title": "As Rosas Não Falam",
+        "artist": "Cartola",
+        "composer": "Cartola",
+        "chordsCount": 16
     },
     {
         "id": "AsTearsGoBy",
@@ -132,6 +146,13 @@ const SONGS_CATALOG = [
         "artist": "Gilberto Gil",
         "composer": "",
         "chordsCount": 8
+    },
+    {
+        "id": "BoaViagem",
+        "title": "Boa Viagem",
+        "artist": "Ismael Silva",
+        "composer": "Noel Rosa / Ismael Silva 1934",
+        "chordsCount": 12
     },
     {
         "id": "BomDiaTristeza",
@@ -236,6 +257,20 @@ const SONGS_CATALOG = [
         "title": "Copo Vazio",
         "artist": "Gilberto Gil",
         "composer": "Gilberto Gil",
+        "chordsCount": 14
+    },
+    {
+        "id": "CordasDeAco",
+        "title": "Cordas de Aço",
+        "artist": "Cartola",
+        "composer": "Cartola",
+        "chordsCount": 20
+    },
+    {
+        "id": "CorraEOlheOCeu",
+        "title": "Corra e Olhe o Céu",
+        "artist": "Cartola",
+        "composer": "Cartola / Dalmo Castello",
         "chordsCount": 14
     },
     {
@@ -426,6 +461,13 @@ const SONGS_CATALOG = [
         "artist": "Ney Matogrosso",
         "composer": "Suely Mesquita / Pedro Luis",
         "chordsCount": 5
+    },
+    {
+        "id": "IntroEm7E4add92x",
+        "title": "Intro: Em7  E4(add9)  (2x)",
+        "artist": "Unknown Artist",
+        "composer": "",
+        "chordsCount": 30
     },
     {
         "id": "ItAintMeBabe",
@@ -771,6 +813,13 @@ const SONGS_CATALOG = [
         "chordsCount": 21
     },
     {
+        "id": "PrecisoMeEncontrar",
+        "title": "Preciso Me Encontrar",
+        "artist": "Cartola",
+        "composer": "Candeia",
+        "chordsCount": 25
+    },
+    {
         "id": "Pressentimento",
         "title": "Pressentimento",
         "artist": "Herminio Bello De Carvalho",
@@ -902,6 +951,13 @@ const SONGS_CATALOG = [
         "artist": "Laura Branigan",
         "composer": "",
         "chordsCount": 6
+    },
+    {
+        "id": "SenhoraTentacao",
+        "title": "Senhora Tentação",
+        "artist": "Cartola",
+        "composer": "Silas De Oliveira / Joaquim Ilarindo",
+        "chordsCount": 20
     },
     {
         "id": "SeuOlhar",
