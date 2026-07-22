@@ -134,6 +134,13 @@ const SONGS_CATALOG = [
         "chordsCount": 3
     },
     {
+        "id": "BamBam",
+        "title": "Bam Bam",
+        "artist": "Sister Nancy",
+        "composer": "Winston Reilly",
+        "chordsCount": 2
+    },
+    {
         "id": "BanhoDeFolhas",
         "title": "Banho de Folhas",
         "artist": "Luedji Luna",
@@ -195,6 +202,13 @@ const SONGS_CATALOG = [
         "artist": "Zeca Pagodinho",
         "composer": "Zeca Pagodinho / Arlindo Cruz / Jorge Aragão / Beto Sem Braço",
         "chordsCount": 10
+    },
+    {
+        "id": "Capitu",
+        "title": "Capitu",
+        "artist": "Luiz Tatit",
+        "composer": "Luiz Tatit",
+        "chordsCount": 11
     },
     {
         "id": "Caravana",
@@ -316,11 +330,25 @@ const SONGS_CATALOG = [
         "chordsCount": 8
     },
     {
+        "id": "DepoisMelhora",
+        "title": "Depois melhora",
+        "artist": "Luiz Tatit",
+        "composer": "Luiz Tatit",
+        "chordsCount": 19
+    },
+    {
         "id": "Dindinha",
         "title": "Dindinha",
         "artist": "Ceumar",
         "composer": "Zeca Baleiro",
         "chordsCount": 4
+    },
+    {
+        "id": "Dodoi",
+        "title": "Dodói",
+        "artist": "Luiz Tatit",
+        "composer": "Luiz Tatit / Itamar Assumpcao",
+        "chordsCount": 9
     },
     {
         "id": "Elegia",
@@ -428,6 +456,13 @@ const SONGS_CATALOG = [
         "chordsCount": 7
     },
     {
+        "id": "GotMyMojoWorking",
+        "title": "Got My Mojo Working",
+        "artist": "Muddy Waters",
+        "composer": "Muddy Waters / Preston Foster",
+        "chordsCount": 4
+    },
+    {
         "id": "GothamCity",
         "title": "Gotham City",
         "artist": "Jards Macalé",
@@ -440,6 +475,13 @@ const SONGS_CATALOG = [
         "artist": "Ney Matogrosso",
         "composer": "Antonio Barros",
         "chordsCount": 9
+    },
+    {
+        "id": "HoochieCoochieMan",
+        "title": "Hoochie Coochie Man",
+        "artist": "Muddy Waters",
+        "composer": "Willie Dixon",
+        "chordsCount": 4
     },
     {
         "id": "HotelCoracaoPartido",
@@ -517,6 +559,13 @@ const SONGS_CATALOG = [
         "artist": "Zeca Pagodinho",
         "composer": "Sinhô / José Barbosa Da Silva",
         "chordsCount": 10
+    },
+    {
+        "id": "LadeiraDaMemoria",
+        "title": "Ladeira da Memória",
+        "artist": "Grupo Rumo",
+        "composer": "Zecarlos Ribeiro",
+        "chordsCount": 18
     },
     {
         "id": "LagrimasNegras",
@@ -1098,6 +1147,13 @@ const SONGS_CATALOG = [
         "artist": "Jimi Hendrix",
         "composer": "",
         "chordsCount": 8
+    },
+    {
+        "id": "TheseBootsAreMadeForWalkin",
+        "title": "These Boots Are Made For Walkin",
+        "artist": "Nancy Sinatra",
+        "composer": "Ford Naomi",
+        "chordsCount": 5
     },
     {
         "id": "Traste",

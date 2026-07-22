@@ -1,0 +1,92 @@
+{
+    "title": "Hoochie Coochie Man",
+    "artist": "Muddy Waters",
+    "composer": "Willie Dixon",
+    "lyricsHtml": "\n<span class=\"lyric-line\">Riff 1</span>\n   \n\n\n<span class=\"lyric-line\">Riff 2</span>\n\n                                   <span class=\"chord\" data-chord=\"Bb7\">Bb7</span> <span class=\"chord\" data-chord=\"A7\">A7</span>\n\n\n\n<span class=\"lyric-line\">Introdução/Verso 1: Riff 1</span>\n\n\n<span class=\"lyric-line\">The gypsy woman told my mother</span>\n<span class=\"lyric-line\">Before I was born</span>\n<span class=\"lyric-line\">You got a boy child's comin'</span>\n<span class=\"lyric-line\">He's gonna be a son-of-a-gun</span>\n<span class=\"lyric-line\">Gonna make pretty womens</span>\n<span class=\"lyric-line\">Jump and shout</span>\n<span class=\"lyric-line\">Then the world wanna know</span>\n\n\n<span class=\"lyric-line\">Refrão:</span>\n\n<span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">What this all about</span>\n                 <span class=\"chord\" data-chord=\"D7\">D7</span>\n<span class=\"lyric-line\">But you know I'm here</span>\n                    <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">Everybody knows I'm here</span>\n                      <span class=\"chord\" data-chord=\"E7\">E7</span>                   <span class=\"chord\" data-chord=\"D7\">D7</span>\n<span class=\"lyric-line\">Well you know I'm the hoochie coochie man</span>\n<span class=\"lyric-line\">                    Riff 2 </span>\n<span class=\"lyric-line\">Everybody knows I'm here</span>\n\n\n<span class=\"lyric-line\">Verso 2: Riff 1</span>\n\n<span class=\"lyric-line\">I got a black cat bone</span>\n<span class=\"lyric-line\">I got a mojo too</span>\n<span class=\"lyric-line\">I got the Johnny conkeroo</span>\n<span class=\"lyric-line\">I'm gonna mess with you</span>\n<span class=\"lyric-line\">I'm gonna make you girls</span>\n<span class=\"lyric-line\">Lead me by my hand</span>\n<span class=\"lyric-line\">Then the world will know</span>\n\n\n<span class=\"lyric-line\">Refrão:</span>\n\n    <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">The hoochie coochie man</span>\n                 <span class=\"chord\" data-chord=\"D7\">D7</span>\n<span class=\"lyric-line\">But you know I'm here</span>\n                    <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">Everybody knows I'm here </span>\n                      <span class=\"chord\" data-chord=\"E7\">E7</span>                  <span class=\"chord\" data-chord=\"D7\">D7</span>\n<span class=\"lyric-line\">Well you know I'm the hoochie coochie man</span>\n<span class=\"lyric-line\">                    Riff 2</span>\n<span class=\"lyric-line\">Everybody knows I'm here</span>\n\n\n<span class=\"lyric-line\">Verso 3: Riff 1</span>\n\n<span class=\"lyric-line\">On the seventh hour</span>\n<span class=\"lyric-line\">Of the seventh day</span>\n<span class=\"lyric-line\">Of the seventh month</span>\n<span class=\"lyric-line\">The seven doctors say</span>\n<span class=\"lyric-line\">He was born for good luck</span>\n<span class=\"lyric-line\">And that you'll see</span>\n<span class=\"lyric-line\">I got seven hundred dollars</span>\n\n\n<span class=\"lyric-line\">Refrão:</span>\n\n<span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">Don't you mess with me</span>\n                 <span class=\"chord\" data-chord=\"D7\">D7</span>\n<span class=\"lyric-line\">But you know I'm here</span>\n                    <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">Everybody knows I'm here</span>\n                      <span class=\"chord\" data-chord=\"E7\">E7</span>                   <span class=\"chord\" data-chord=\"D7\">D7</span>\n<span class=\"lyric-line\">Well you know I'm the hoochie coochie man</span>\n<span class=\"lyric-line\">                    Riff 2 </span>\n<span class=\"lyric-line\">Everybody knows I'm here</span>\n",
+    "chordData": {
+        "A7": {
+            "name": "A7",
+            "notes": [
+                "A3",
+                "C#4",
+                "E4",
+                "G4"
+            ],
+            "displayNotes": [
+                "A",
+                "C#",
+                "E",
+                "G"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "Bb7": {
+            "name": "Bb7",
+            "notes": [
+                "A#3",
+                "D4",
+                "F4",
+                "G#4"
+            ],
+            "displayNotes": [
+                "Bb",
+                "D",
+                "F",
+                "Ab"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "D7": {
+            "name": "D7",
+            "notes": [
+                "D3",
+                "F#3",
+                "A3",
+                "C4"
+            ],
+            "displayNotes": [
+                "D",
+                "F#",
+                "A",
+                "C"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "E7": {
+            "name": "E7",
+            "notes": [
+                "E3",
+                "G#3",
+                "B3",
+                "D4"
+            ],
+            "displayNotes": [
+                "E",
+                "G#",
+                "B",
+                "D"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        }
+    }
+}

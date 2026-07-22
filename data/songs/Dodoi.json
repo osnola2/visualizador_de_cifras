@@ -1,0 +1,191 @@
+{
+    "title": "Dodói",
+    "artist": "Luiz Tatit",
+    "composer": "Luiz Tatit / Itamar Assumpcao",
+    "lyricsHtml": "\n[Intro] <span class=\"chord\" data-chord=\"Am\">Am</span>  <span class=\"chord\" data-chord=\"Em\">Em</span>  <span class=\"chord\" data-chord=\"C7M\">C7M</span>  <span class=\"chord\" data-chord=\"Em\">Em</span>\n        <span class=\"chord\" data-chord=\"Am\">Am</span>  <span class=\"chord\" data-chord=\"G6\">G6</span>  <span class=\"chord\" data-chord=\"C7M\">C7M</span>  <span class=\"chord\" data-chord=\"B7\">B7</span>\n\n   <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Eu ando tão dodói</span>\n<span class=\"lyric-line\">Mas tão dodói</span>\n           <span class=\"chord\" data-chord=\"B7\">B7</span>\n<span class=\"lyric-line\">Que quando ando dói</span>\n<span class=\"lyric-line\">Quando não ando dói</span>\n    <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Meu corpo todo dói</span>\n   <span class=\"chord\" data-chord=\"C7M\">C7M</span>\n<span class=\"lyric-line\">Tendão dói</span>\n  <span class=\"chord\" data-chord=\"C#º\">C#º</span>\n<span class=\"lyric-line\">Dedão dói</span>\n  <span class=\"chord\" data-chord=\"G6/D\">G6/D</span>\n<span class=\"lyric-line\">Pomo-de-adão dói</span>\n  <span class=\"chord\" data-chord=\"B7\">B7</span>\n<span class=\"lyric-line\">Ouvido dói</span>\n<span class=\"lyric-line\">Libido dói</span>\n<span class=\"chord\" data-chord=\"Cº\">Cº</span>\n<span class=\"lyric-line\">Fígado dói</span>\n <span class=\"chord\" data-chord=\"G6/B\">G6/B</span>\n<span class=\"lyric-line\">Até meu dom dói</span>\n     <span class=\"chord\" data-chord=\"B7\">B7</span>\n<span class=\"lyric-line\">Pois quando canto</span>\n<span class=\"lyric-line\">Não importa o tom dói</span>\n\n( <span class=\"chord\" data-chord=\"Em\">Em</span>  <span class=\"chord\" data-chord=\"C7M\">C7M</span>  <span class=\"chord\" data-chord=\"B7\">B7</span>  <span class=\"chord\" data-chord=\"G6/B\">G6/B</span>  <span class=\"chord\" data-chord=\"B7\">B7</span> )\n",
+    "chordData": {
+        "Am": {
+            "name": "Am",
+            "notes": [
+                "A3",
+                "C4",
+                "E4"
+            ],
+            "displayNotes": [
+                "A",
+                "C",
+                "E"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "B7": {
+            "name": "B7",
+            "notes": [
+                "B3",
+                "D#4",
+                "F#4",
+                "A4"
+            ],
+            "displayNotes": [
+                "B",
+                "D#",
+                "F#",
+                "A"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "C#º": {
+            "name": "C#º",
+            "notes": [
+                "C#3",
+                "E3",
+                "G3"
+            ],
+            "displayNotes": [
+                "C#",
+                "E",
+                "G"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "C7M": {
+            "name": "C7M",
+            "notes": [
+                "C3",
+                "E3",
+                "G3",
+                "B3"
+            ],
+            "displayNotes": [
+                "C",
+                "E",
+                "G",
+                "B"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "Cº": {
+            "name": "Cº",
+            "notes": [
+                "C3",
+                "D#3",
+                "F#3"
+            ],
+            "displayNotes": [
+                "C",
+                "D#",
+                "F#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Em": {
+            "name": "Em",
+            "notes": [
+                "E3",
+                "G3",
+                "B3"
+            ],
+            "displayNotes": [
+                "E",
+                "G",
+                "B"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "G6": {
+            "name": "G6",
+            "notes": [
+                "G3",
+                "B3",
+                "D4",
+                "E4"
+            ],
+            "displayNotes": [
+                "G",
+                "B",
+                "D",
+                "E"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "G6/B": {
+            "name": "G6/B",
+            "notes": [
+                "B3",
+                "G4",
+                "B4",
+                "D5",
+                "E5"
+            ],
+            "displayNotes": [
+                "B",
+                "G",
+                "B",
+                "D",
+                "E"
+            ],
+            "noteTypes": [
+                "bass",
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "G6/D": {
+            "name": "G6/D",
+            "notes": [
+                "D3",
+                "G3",
+                "B3",
+                "D4",
+                "E4"
+            ],
+            "displayNotes": [
+                "D",
+                "G",
+                "B",
+                "D",
+                "E"
+            ],
+            "noteTypes": [
+                "bass",
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        }
+    }
+}
