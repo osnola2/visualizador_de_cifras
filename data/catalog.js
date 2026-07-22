@@ -631,6 +631,13 @@ const SONGS_CATALOG = [
         "chordsCount": 13
     },
     {
+        "id": "MoonageDaydream",
+        "title": "Moonage Daydream",
+        "artist": "David Bowie",
+        "composer": "David Bowie",
+        "chordsCount": 7
+    },
+    {
         "id": "MovimentoDosBarcos",
         "title": "Movimento Dos Barcos",
         "artist": "Jards Macalé",
@@ -979,6 +986,13 @@ const SONGS_CATALOG = [
         "artist": "Caetano Veloso",
         "composer": "Gilberto Gil / Capinan",
         "chordsCount": 13
+    },
+    {
+        "id": "SpaceOddity",
+        "title": "Space Oddity",
+        "artist": "David Bowie",
+        "composer": "",
+        "chordsCount": 15
     },
     {
         "id": "TarzanOFilhoDoAlfaiate",

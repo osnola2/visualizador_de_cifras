@@ -1,0 +1,137 @@
+window.SONG_DATA = {
+    "title": "Moonage Daydream",
+    "artist": "David Bowie",
+    "composer": "David Bowie",
+    "lyricsHtml": "\n<span class=\"chord\" data-chord=\"D\">D</span>                    <span class=\"chord\" data-chord=\"F#\">F#</span>                               <span class=\"chord\" data-chord=\"Bm\">Bm</span>\n<span class=\"lyric-line\">   I'm an alligator,    I'm a mama-papa coming for you</span>\n      <span class=\"chord\" data-chord=\"Bm/A\">Bm/A</span>           <span class=\"chord\" data-chord=\"E\">E</span>                                          <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">I'm the space invader,  I'll be a rock 'n' rolling bitch for you </span>\n                     <span class=\"chord\" data-chord=\"D\">D</span>                                          <span class=\"chord\" data-chord=\"F#\">F#</span>\n<span class=\"lyric-line\">Keep your mouth shut,   you're squawking like a pink monkey bird </span>\n                             <span class=\"chord\" data-chord=\"Bm\">Bm</span>        <span class=\"chord\" data-chord=\"Bm/A\">Bm/A</span>    <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\">And I'm busting up my brains for the words</span>\n\n<span class=\"chord\" data-chord=\"G\">G</span>           <span class=\"chord\" data-chord=\"D\">D</span>                  <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\">Keep your 'lectric eye on me babe</span>\n<span class=\"chord\" data-chord=\"G\">G</span>        <span class=\"chord\" data-chord=\"D\">D</span>            <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\">Put your ray gun to my head</span>\n<span class=\"chord\" data-chord=\"G\">G</span>           <span class=\"chord\" data-chord=\"D\">D</span>                    <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\">Press your space face close to mine, love</span>\n<span class=\"chord\" data-chord=\"D\">D</span>                                <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\">Freak out in a moonage daydream oh yeah</span>\n\n<span class=\"chord\" data-chord=\"D\">D</span>                     <span class=\"chord\" data-chord=\"F#\">F#</span>                           <span class=\"chord\" data-chord=\"Bm\">Bm</span>\n<span class=\"lyric-line\">   Don't fake it baby,    lay the real thing on me </span>\n     <span class=\"chord\" data-chord=\"Bm/A\">Bm/A</span>               <span class=\"chord\" data-chord=\"E\">E</span>                             <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">The church of man, love,   is such a holy place to be</span>\n             <span class=\"chord\" data-chord=\"D\">D</span>                               <span class=\"chord\" data-chord=\"F#\">F#</span>\n<span class=\"lyric-line\">Make me baby,   make me know you really care</span>\n                       <span class=\"chord\" data-chord=\"Bm\">Bm</span>    <span class=\"chord\" data-chord=\"Bm/A\">Bm/A</span>    <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\">Make me jump into the air</span>\n\n<span class=\"chord\" data-chord=\"G\">G</span>           <span class=\"chord\" data-chord=\"D\">D</span>                  <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\">Keep your 'lectric eye on me babe</span>\n<span class=\"chord\" data-chord=\"G\">G</span>        <span class=\"chord\" data-chord=\"D\">D</span>            <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\">Put your ray gun to my head</span>\n<span class=\"chord\" data-chord=\"G\">G</span>           <span class=\"chord\" data-chord=\"D\">D</span>                    <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\">Press your space face close to mine, love</span>\n<span class=\"chord\" data-chord=\"D\">D</span>                                <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\">Freak out in a moonage daydream oh yeah</span>\n\n[Solo]  <span class=\"chord\" data-chord=\"Bm\">Bm</span>  <span class=\"chord\" data-chord=\"A\">A</span>  <span class=\"chord\" data-chord=\"G\">G</span>  <span class=\"chord\" data-chord=\"F#\">F#</span>  <span class=\"chord\" data-chord=\"Bm\">Bm</span>  <span class=\"chord\" data-chord=\"A\">A</span>  <span class=\"chord\" data-chord=\"G\">G</span>  <span class=\"chord\" data-chord=\"F#\">F#</span>\n\n\n\n\n\n\n\n\n\n\n\n\n\n<span class=\"chord\" data-chord=\"G\">G</span>           <span class=\"chord\" data-chord=\"D\">D</span>                  <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\">Keep your 'lectric eye on me babe</span>\n<span class=\"chord\" data-chord=\"G\">G</span>        <span class=\"chord\" data-chord=\"D\">D</span>            <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\">Put your ray gun to my head</span>\n<span class=\"chord\" data-chord=\"G\">G</span>           <span class=\"chord\" data-chord=\"D\">D</span>                    <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\">Press your space face close to mine, love</span>\n<span class=\"chord\" data-chord=\"D\">D</span>                                <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\">Freak out in a moonage daydream oh yeah</span>\n\n<span class=\"chord\" data-chord=\"G\">G</span>           <span class=\"chord\" data-chord=\"D\">D</span>                  <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\">Keep your 'lectric eye on me babe</span>\n<span class=\"chord\" data-chord=\"G\">G</span>        <span class=\"chord\" data-chord=\"D\">D</span>            <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\">Put your ray gun to my head</span>\n<span class=\"chord\" data-chord=\"G\">G</span>           <span class=\"chord\" data-chord=\"D\">D</span>                    <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\">Press your space face close to mine, love</span>\n<span class=\"chord\" data-chord=\"D\">D</span>                                <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\">Freak out in a moonage daydream oh yeah</span>\n\n( <span class=\"chord\" data-chord=\"Bm\">Bm</span>  <span class=\"chord\" data-chord=\"A\">A</span>  <span class=\"chord\" data-chord=\"G\">G</span>  <span class=\"chord\" data-chord=\"F#\">F#</span> )\n",
+    "chordData": {
+        "A": {
+            "name": "A",
+            "notes": [
+                "A3",
+                "C#4",
+                "E4"
+            ],
+            "displayNotes": [
+                "A",
+                "C#",
+                "E"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Bm": {
+            "name": "Bm",
+            "notes": [
+                "B3",
+                "D4",
+                "F#4"
+            ],
+            "displayNotes": [
+                "B",
+                "D",
+                "F#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Bm/A": {
+            "name": "Bm/A",
+            "notes": [
+                "A3",
+                "B3",
+                "D4",
+                "F#4"
+            ],
+            "displayNotes": [
+                "A",
+                "B",
+                "D",
+                "F#"
+            ],
+            "noteTypes": [
+                "bass",
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "D": {
+            "name": "D",
+            "notes": [
+                "D3",
+                "F#3",
+                "A3"
+            ],
+            "displayNotes": [
+                "D",
+                "F#",
+                "A"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "E": {
+            "name": "E",
+            "notes": [
+                "E3",
+                "G#3",
+                "B3"
+            ],
+            "displayNotes": [
+                "E",
+                "G#",
+                "B"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "F#": {
+            "name": "F#",
+            "notes": [
+                "F#3",
+                "A#3",
+                "C#4"
+            ],
+            "displayNotes": [
+                "F#",
+                "A#",
+                "C#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "G": {
+            "name": "G",
+            "notes": [
+                "G3",
+                "B3",
+                "D4"
+            ],
+            "displayNotes": [
+                "G",
+                "B",
+                "D"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        }
+    }
+};
