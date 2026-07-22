@@ -1,0 +1,116 @@
+{
+    "title": "Five Years",
+    "artist": "David Bowie",
+    "composer": "David Bowie",
+    "lyricsHtml": "\n<span class=\"chord\" data-chord=\"G\">G</span>                                  <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Pushing through the market square, so many mothers sighing  </span>\n<span class=\"chord\" data-chord=\"A\">A</span>                                <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">News had just come over, we had five years left to cry in</span>\n<span class=\"chord\" data-chord=\"G\">G</span>                           <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">News guy wept and told us, earth was really dying</span>\n<span class=\"chord\" data-chord=\"A\">A</span>                                       <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">Cried so much his face was wet, then I knew he was not lying</span>\n         <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">I heard telephones, opera house, favorite melodies</span>\n       <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">I saw boys, toys, electric irons and TV's</span>\n    <span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">My brain hurt like a warehouse, it had no room to spare</span>\n          <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">I had to cram so many things to store everything in there</span>\n                        <span class=\"chord\" data-chord=\"Am\">Am</span>       <span class=\"chord\" data-chord=\"C\">C</span>                      <span class=\"chord\" data-chord=\"Am\">Am</span>\n<span class=\"lyric-line\">And all the fat-skinny people,  and all the tall-short people</span>\n<span class=\"chord\" data-chord=\"C\">C</span>                   <span class=\"chord\" data-chord=\"G\">G</span>       <span class=\"chord\" data-chord=\"C\">C</span>                    <span class=\"chord\" data-chord=\"D\">D</span>\n<span class=\"lyric-line\">And all the nobody people, and all the somebody people</span>\n                                 <span class=\"chord\" data-chord=\"Am\">Am</span>       <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">I never thought I'd need so many people</span>\n\n<span class=\"chord\" data-chord=\"G\">G</span>                                 <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">A girl my age went off her head, hit some tiny children</span>\n<span class=\"chord\" data-chord=\"A\">A</span>                                        <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">If the black hadn't a pulled her off, I think she would have killed them</span>\n<span class=\"chord\" data-chord=\"G\">G</span>                             <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">A soldier with a broken arm, fixed his stare to the wheels of a Cadillac</span>\n<span class=\"chord\" data-chord=\"A\">A</span>                                                   <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">A cop knelt and kissed the feet of a priest, and a queer threw up at the sight of that</span>\n<span class=\"chord\" data-chord=\"G\">G</span>                                          <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">I think I saw you in an ice cream parlor, drinking  milk shakes cold and long</span>\n<span class=\"chord\" data-chord=\"A\">A</span>                                        <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">Smiling and waving and looking so fine, don't think you knew you were in this song</span>\n<span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">And it was cold, and it rained, so I felt like an actor</span>\n       <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">And I thought of Ma and I wanted to get back there</span>\n      <span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">Your face, your race, the way that you talk </span>\n   <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">I kiss you, you're beautiful, I want you to walk</span>\n\n        <span class=\"chord\" data-chord=\"G\">G</span>                              <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">We got five years, stuck on my eyes - Five years, what a suprise</span>\n        <span class=\"chord\" data-chord=\"A\">A</span>                                 <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">We got five years, my brain hurts alot - Five years, that's all we got </span>\n        <span class=\"chord\" data-chord=\"G\">G</span>                             <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">We got five years, what a surprise - Five years, stuck on my eyes</span>\n        <span class=\"chord\" data-chord=\"A\">A</span>                                 <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">We got five years, my brain hurts alot - Five years, that's all we got</span>\n",
+    "chordData": {
+        "A": {
+            "name": "A",
+            "notes": [
+                "A3",
+                "C#4",
+                "E4"
+            ],
+            "displayNotes": [
+                "A",
+                "C#",
+                "E"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Am": {
+            "name": "Am",
+            "notes": [
+                "A3",
+                "C4",
+                "E4"
+            ],
+            "displayNotes": [
+                "A",
+                "C",
+                "E"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "C": {
+            "name": "C",
+            "notes": [
+                "C3",
+                "E3",
+                "G3"
+            ],
+            "displayNotes": [
+                "C",
+                "E",
+                "G"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "D": {
+            "name": "D",
+            "notes": [
+                "D3",
+                "F#3",
+                "A3"
+            ],
+            "displayNotes": [
+                "D",
+                "F#",
+                "A"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Em": {
+            "name": "Em",
+            "notes": [
+                "E3",
+                "G3",
+                "B3"
+            ],
+            "displayNotes": [
+                "E",
+                "G",
+                "B"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "G": {
+            "name": "G",
+            "notes": [
+                "G3",
+                "B3",
+                "D4"
+            ],
+            "displayNotes": [
+                "G",
+                "B",
+                "D"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        }
+    }
+}

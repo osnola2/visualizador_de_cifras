@@ -1,0 +1,470 @@
+{
+    "title": "Life On Mars",
+    "artist": "David Bowie",
+    "composer": "David Bowie",
+    "lyricsHtml": "\n<span class=\"chord\" data-chord=\"F\">F</span>         133211\n<span class=\"chord\" data-chord=\"Am\">Am</span>        002210\n<span class=\"lyric-line\">Cm/Eb     x6554x</span>\n<span class=\"lyric-line\">D7        xx0212</span>\n<span class=\"chord\" data-chord=\"Gm\">Gm</span>        355333\n<span class=\"chord\" data-chord=\"Bb\">Bb</span>        113331\n<span class=\"lyric-line\">C7        x3231x</span>\n<span class=\"chord\" data-chord=\"Ab\">Ab</span>        466544\n<span class=\"lyric-line\">Eaug      x7655x</span>\n<span class=\"chord\" data-chord=\"Fm\">Fm</span>        133111\n<span class=\"chord\" data-chord=\"Ab7\">Ab7</span>       464544\n<span class=\"lyric-line\">Db        x46664</span>\n<span class=\"lyric-line\">Aaug      x03221</span>\n<span class=\"lyric-line\">Bbm       x13321</span>\n<span class=\"lyric-line\">Db7       x46464</span>\n<span class=\"chord\" data-chord=\"Eb\">Eb</span>        665x4x\n<span class=\"chord\" data-chord=\"Gm7\">Gm7</span>       353333\n<span class=\"lyric-line\">Gbaug     xx4332</span>\n<span class=\"lyric-line\">Cm7       x35343</span>\n<span class=\"lyric-line\">Ebm7      x68676</span>\n\n\n<span class=\"lyric-line\">[Verse 1]</span>\n\n<span class=\"chord\" data-chord=\"F\">F</span>       <span class=\"chord\" data-chord=\"Am\">Am</span>                          <span class=\"chord\" data-chord=\"Cm/Eb\">Cm/Eb</span>\n<span class=\"lyric-line\">It's a god-awful small affair</span>\n           <span class=\"chord\" data-chord=\"D7\">D7</span>\n<span class=\"lyric-line\">To the girl with the mousy hair</span>\n<span class=\"chord\" data-chord=\"Gm\">Gm</span>         <span class=\"chord\" data-chord=\"Bb\">Bb</span>                                 <span class=\"chord\" data-chord=\"C7\">C7</span>\n<span class=\"lyric-line\">   But her mummy is yelling \"No\"</span>\n                                               <span class=\"chord\" data-chord=\"F\">F</span>\n<span class=\"lyric-line\">And her daddy has told her to go</span>\n<span class=\"chord\" data-chord=\"F\">F</span>       <span class=\"chord\" data-chord=\"Am\">Am</span>                          <span class=\"chord\" data-chord=\"Cm/Eb\">Cm/Eb</span>\n<span class=\"lyric-line\">But her friend is nowhere to be seen</span>\n           <span class=\"chord\" data-chord=\"D7\">D7</span>\n<span class=\"lyric-line\">Now she walks through her sunken dream.</span>\n<span class=\"chord\" data-chord=\"Gm\">Gm</span>         <span class=\"chord\" data-chord=\"Bb\">Bb</span>                                 <span class=\"chord\" data-chord=\"C7\">C7</span>\n<span class=\"lyric-line\">To the seat with the clearest view</span>\n\n<span class=\"lyric-line\">And she's hooked to the silver screen</span>\n\n\n<span class=\"lyric-line\">[Pre-Chorus]</span>\n\n<span class=\"chord\" data-chord=\"Ab\">Ab</span>       <span class=\"chord\" data-chord=\"Eaug\">Eaug</span>                              <span class=\"chord\" data-chord=\"Fm\">Fm</span>\n<span class=\"lyric-line\">But the film is a saddening bore</span>\n              <span class=\"chord\" data-chord=\"Ab7\">Ab7</span>\n<span class=\"lyric-line\">For she's lived it ten times or more</span>\n<span class=\"chord\" data-chord=\"Db\">Db</span>           <span class=\"chord\" data-chord=\"Aaug\">Aaug</span>                           <span class=\"chord\" data-chord=\"Bbm\">Bbm</span>\n<span class=\"lyric-line\">She could spit in the eyes of fools</span>\n             <span class=\"chord\" data-chord=\"Db7\">Db7</span>\n<span class=\"lyric-line\">As they ask her to focus on</span>\n\n\n<span class=\"lyric-line\">[Chorus]</span>\n\n<span class=\"chord\" data-chord=\"Bb\">Bb</span>         <span class=\"chord\" data-chord=\"Eb\">Eb</span>\n<span class=\"lyric-line\">Sailors fighting in the dance hall</span>\n<span class=\"chord\" data-chord=\"Gm7\">Gm7</span>       <span class=\"chord\" data-chord=\"Gbaug\">Gbaug</span>                          <span class=\"chord\" data-chord=\"F\">F</span>\n<span class=\"lyric-line\">Oh man! look at those cavemen go</span>\n<span class=\"chord\" data-chord=\"Fm\">Fm</span>                      <span class=\"chord\" data-chord=\"Cm7\">Cm7</span>\n<span class=\"lyric-line\">It's the freakiest show</span>\n<span class=\"chord\" data-chord=\"Ebm7\">Ebm7</span>                    <span class=\"chord\" data-chord=\"Bb\">Bb</span>\n<span class=\"lyric-line\">Take a look at the lawman</span>\n<span class=\"chord\" data-chord=\"Eb\">Eb</span>          \n<span class=\"lyric-line\">Beating up the wrong guy</span>\n<span class=\"chord\" data-chord=\"Gm\">Gm</span>         <span class=\"chord\" data-chord=\"Gbaug\">Gbaug</span>\n<span class=\"lyric-line\">Oh man! Wonder if he'll ever know</span>\n<span class=\"chord\" data-chord=\"F\">F</span>  <span class=\"chord\" data-chord=\"Fm\">Fm</span>                                    <span class=\"chord\" data-chord=\"Cm7\">Cm7</span>\n<span class=\"lyric-line\">   He's in the best selling show</span>\n<span class=\"chord\" data-chord=\"Ebm7\">Ebm7</span>               <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>       <span class=\"chord\" data-chord=\"Gbaug\">Gbaug</span>   <span class=\"chord\" data-chord=\"Bb/F\">Bb/F</span>   <span class=\"chord\" data-chord=\"C/E\">C/E</span>\n<span class=\"lyric-line\">Is there life on Mars?</span>\n\n\n<span class=\"lyric-line\">[Bridge]</span>\n\n<span class=\"chord\" data-chord=\"F\">F</span>   <span class=\"chord\" data-chord=\"Gbdim\">Gbdim</span> <span class=\"chord\" data-chord=\"Gm\">Gm</span>  <span class=\"chord\" data-chord=\"Ddim\">Ddim</span> <span class=\"chord\" data-chord=\"Am\">Am</span> <span class=\"chord\" data-chord=\"Bb\">Bb</span>  <span class=\"chord\" data-chord=\"Bbm\">Bbm</span>\n\n\n<span class=\"lyric-line\">[Verse 2]</span>\n\n<span class=\"chord\" data-chord=\"F\">F</span>       <span class=\"chord\" data-chord=\"Am\">Am</span>                          <span class=\"chord\" data-chord=\"Cm/Eb\">Cm/Eb</span>\n<span class=\"lyric-line\">It's on Amerika's tortured brow</span>\n           <span class=\"chord\" data-chord=\"D7\">D7</span>\n<span class=\"lyric-line\">That Mickey Mouse has grown up a cow</span>\n<span class=\"chord\" data-chord=\"Gm\">Gm</span>         <span class=\"chord\" data-chord=\"Bb\">Bb</span>                                 <span class=\"chord\" data-chord=\"C7\">C7</span>\n<span class=\"lyric-line\">Now the workers have struck for fame</span>\n                                               <span class=\"chord\" data-chord=\"F\">F</span>\n<span class=\"lyric-line\">'Cause Lennon's on sale again</span>\n<span class=\"chord\" data-chord=\"F\">F</span>       <span class=\"chord\" data-chord=\"Am\">Am</span>                          <span class=\"chord\" data-chord=\"Cm/Eb\">Cm/Eb</span>\n<span class=\"lyric-line\">See the mice in their million hordes</span>\n           <span class=\"chord\" data-chord=\"D7\">D7</span>\n<span class=\"lyric-line\">From Ibeza to the norfolk broads</span>\n<span class=\"chord\" data-chord=\"Gm\">Gm</span>         <span class=\"chord\" data-chord=\"Bb\">Bb</span>                                 <span class=\"chord\" data-chord=\"C7\">C7</span>\n<span class=\"lyric-line\">Rule Britannia is out of bounds</span>\n\n<span class=\"lyric-line\">To my mother, my dog, and clowns</span>\n\n\n<span class=\"lyric-line\">[Pre-Chorus]</span>\n\n<span class=\"chord\" data-chord=\"Ab\">Ab</span>       <span class=\"chord\" data-chord=\"Eaug\">Eaug</span>                              <span class=\"chord\" data-chord=\"Fm\">Fm</span>\n<span class=\"lyric-line\">But the film is a saddening bore</span>\n              <span class=\"chord\" data-chord=\"Ab7\">Ab7</span>\n<span class=\"lyric-line\">For I've writ it ten times or more</span>\n<span class=\"chord\" data-chord=\"Db\">Db</span>           <span class=\"chord\" data-chord=\"Aaug\">Aaug</span>                           <span class=\"chord\" data-chord=\"Bbm\">Bbm</span>\n<span class=\"lyric-line\">It's about to be writ again</span>\n             <span class=\"chord\" data-chord=\"Db7\">Db7</span>\n<span class=\"lyric-line\">As I ask you to focus on</span>\n\n\n<span class=\"lyric-line\">[Chorus]</span>\n\n<span class=\"chord\" data-chord=\"Bb\">Bb</span>         <span class=\"chord\" data-chord=\"Eb\">Eb</span>\n<span class=\"lyric-line\">Sailors fighting in the dance hall</span>\n<span class=\"chord\" data-chord=\"Gm7\">Gm7</span>       <span class=\"chord\" data-chord=\"Gbaug\">Gbaug</span>                          <span class=\"chord\" data-chord=\"F\">F</span>\n<span class=\"lyric-line\">Oh man! look at those cavemen go</span>\n<span class=\"chord\" data-chord=\"Fm\">Fm</span>                      <span class=\"chord\" data-chord=\"Cm7\">Cm7</span>\n<span class=\"lyric-line\">It's the freakiest show</span>\n<span class=\"chord\" data-chord=\"Ebm7\">Ebm7</span>                    <span class=\"chord\" data-chord=\"Bb\">Bb</span>\n<span class=\"lyric-line\">Take a look at the lawman</span>\n<span class=\"chord\" data-chord=\"Eb\">Eb</span>\n<span class=\"lyric-line\">Beating up the wrong guy</span>\n<span class=\"chord\" data-chord=\"Gm\">Gm</span>         <span class=\"chord\" data-chord=\"Gbaug\">Gbaug</span>\n<span class=\"lyric-line\">Oh man! Wonder if he'll ever know</span>\n<span class=\"chord\" data-chord=\"F\">F</span>  <span class=\"chord\" data-chord=\"Fm\">Fm</span>                                    <span class=\"chord\" data-chord=\"Cm7\">Cm7</span>\n<span class=\"lyric-line\">   He's in the best selling show</span>\n<span class=\"chord\" data-chord=\"Ebm7\">Ebm7</span>               <span class=\"chord\" data-chord=\"Gm7\">Gm7</span>       <span class=\"chord\" data-chord=\"Gbaug\">Gbaug</span>   <span class=\"chord\" data-chord=\"Bb/F\">Bb/F</span>   <span class=\"chord\" data-chord=\"C/E\">C/E</span>\n<span class=\"lyric-line\">Is there life on Mars?</span>\n",
+    "chordData": {
+        "Aaug": {
+            "name": "Aaug",
+            "notes": [
+                "A3",
+                "C#4",
+                "F4"
+            ],
+            "displayNotes": [
+                "A",
+                "C#",
+                "F"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Ab": {
+            "name": "Ab",
+            "notes": [
+                "G#3",
+                "C4",
+                "D#4"
+            ],
+            "displayNotes": [
+                "Ab",
+                "C",
+                "Eb"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Ab7": {
+            "name": "Ab7",
+            "notes": [
+                "G#3",
+                "C4",
+                "D#4",
+                "F#4"
+            ],
+            "displayNotes": [
+                "Ab",
+                "C",
+                "Eb",
+                "Gb"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "Am": {
+            "name": "Am",
+            "notes": [
+                "A3",
+                "C4",
+                "E4"
+            ],
+            "displayNotes": [
+                "A",
+                "C",
+                "E"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Bb": {
+            "name": "Bb",
+            "notes": [
+                "A#3",
+                "D4",
+                "F4"
+            ],
+            "displayNotes": [
+                "Bb",
+                "D",
+                "F"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Bb/F": {
+            "name": "Bb/F",
+            "notes": [
+                "F3",
+                "A#3",
+                "D4",
+                "F4"
+            ],
+            "displayNotes": [
+                "F",
+                "Bb",
+                "D",
+                "F"
+            ],
+            "noteTypes": [
+                "bass",
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Bbm": {
+            "name": "Bbm",
+            "notes": [
+                "A#3",
+                "C#4",
+                "F4"
+            ],
+            "displayNotes": [
+                "Bb",
+                "Db",
+                "F"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "C/E": {
+            "name": "C/E",
+            "notes": [
+                "E3",
+                "C4",
+                "E4",
+                "G4"
+            ],
+            "displayNotes": [
+                "E",
+                "C",
+                "E",
+                "G"
+            ],
+            "noteTypes": [
+                "bass",
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "C7": {
+            "name": "C7",
+            "notes": [
+                "C3",
+                "E3",
+                "G3",
+                "A#3"
+            ],
+            "displayNotes": [
+                "C",
+                "E",
+                "G",
+                "A#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "Cm/Eb": {
+            "name": "Cm/Eb",
+            "notes": [
+                "D#3",
+                "C4",
+                "D#4",
+                "G4"
+            ],
+            "displayNotes": [
+                "D#",
+                "C",
+                "D#",
+                "G"
+            ],
+            "noteTypes": [
+                "bass",
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Cm7": {
+            "name": "Cm7",
+            "notes": [
+                "C3",
+                "D#3",
+                "G3",
+                "A#3"
+            ],
+            "displayNotes": [
+                "C",
+                "D#",
+                "G",
+                "A#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "D7": {
+            "name": "D7",
+            "notes": [
+                "D3",
+                "F#3",
+                "A3",
+                "C4"
+            ],
+            "displayNotes": [
+                "D",
+                "F#",
+                "A",
+                "C"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "Db": {
+            "name": "Db",
+            "notes": [
+                "C#3",
+                "F3",
+                "G#3"
+            ],
+            "displayNotes": [
+                "Db",
+                "F",
+                "Ab"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Db7": {
+            "name": "Db7",
+            "notes": [
+                "C#3",
+                "F3",
+                "G#3",
+                "B3"
+            ],
+            "displayNotes": [
+                "Db",
+                "F",
+                "Ab",
+                "B"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "Ddim": {
+            "name": "Ddim",
+            "notes": [
+                "D3",
+                "F3",
+                "G#3"
+            ],
+            "displayNotes": [
+                "D",
+                "F",
+                "G#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Eaug": {
+            "name": "Eaug",
+            "notes": [
+                "E3",
+                "G#3",
+                "C4"
+            ],
+            "displayNotes": [
+                "E",
+                "G#",
+                "C"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Eb": {
+            "name": "Eb",
+            "notes": [
+                "D#3",
+                "G3",
+                "A#3"
+            ],
+            "displayNotes": [
+                "Eb",
+                "G",
+                "Bb"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Ebm7": {
+            "name": "Ebm7",
+            "notes": [
+                "D#3",
+                "F#3",
+                "A#3",
+                "C#4"
+            ],
+            "displayNotes": [
+                "Eb",
+                "Gb",
+                "Bb",
+                "Db"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "F": {
+            "name": "F",
+            "notes": [
+                "F3",
+                "A3",
+                "C4"
+            ],
+            "displayNotes": [
+                "F",
+                "A",
+                "C"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Fm": {
+            "name": "Fm",
+            "notes": [
+                "F3",
+                "G#3",
+                "C4"
+            ],
+            "displayNotes": [
+                "F",
+                "Ab",
+                "C"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Gbaug": {
+            "name": "Gbaug",
+            "notes": [
+                "F#3",
+                "A#3",
+                "D4"
+            ],
+            "displayNotes": [
+                "Gb",
+                "Bb",
+                "D"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Gbdim": {
+            "name": "Gbdim",
+            "notes": [
+                "F#3",
+                "A3",
+                "C4"
+            ],
+            "displayNotes": [
+                "Gb",
+                "A",
+                "C"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Gm": {
+            "name": "Gm",
+            "notes": [
+                "G3",
+                "A#3",
+                "D4"
+            ],
+            "displayNotes": [
+                "G",
+                "A#",
+                "D"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Gm7": {
+            "name": "Gm7",
+            "notes": [
+                "G3",
+                "A#3",
+                "D4",
+                "F4"
+            ],
+            "displayNotes": [
+                "G",
+                "A#",
+                "D",
+                "F"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        }
+    }
+}

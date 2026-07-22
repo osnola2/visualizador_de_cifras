@@ -36,6 +36,13 @@ const SONGS_CATALOG = [
         "chordsCount": 11
     },
     {
+        "id": "AbsoluteBeginners",
+        "title": "Absolute beginners",
+        "artist": "David Bowie",
+        "composer": "David Bowie",
+        "chordsCount": 14
+    },
+    {
         "id": "Achou",
         "title": "Achou",
         "artist": "Ceumar",
@@ -386,6 +393,13 @@ const SONGS_CATALOG = [
         "chordsCount": 11
     },
     {
+        "id": "FiveYears",
+        "title": "Five Years",
+        "artist": "David Bowie",
+        "composer": "David Bowie",
+        "chordsCount": 6
+    },
+    {
         "id": "FlorDeMaracuja",
         "title": "Flor de Maracujá",
         "artist": "João Donato",
@@ -470,6 +484,13 @@ const SONGS_CATALOG = [
         "chordsCount": 30
     },
     {
+        "id": "ItAintEasy",
+        "title": "It Aint Easy",
+        "artist": "David Bowie",
+        "composer": "",
+        "chordsCount": 5
+    },
+    {
         "id": "ItAintMeBabe",
         "title": "It Aint Me Babe",
         "artist": "Bob Dylan",
@@ -538,6 +559,20 @@ const SONGS_CATALOG = [
         "artist": "The Rolling Stones",
         "composer": "",
         "chordsCount": 7
+    },
+    {
+        "id": "LetSDance",
+        "title": "Let´s Dance",
+        "artist": "David Bowie",
+        "composer": "",
+        "chordsCount": 9
+    },
+    {
+        "id": "LifeOnMars",
+        "title": "Life On Mars",
+        "artist": "David Bowie",
+        "composer": "David Bowie",
+        "chordsCount": 24
     },
     {
         "id": "LikeARollingStone",
@@ -736,6 +771,13 @@ const SONGS_CATALOG = [
         "chordsCount": 24
     },
     {
+        "id": "OhYouPrettyThings",
+        "title": "Oh You Pretty Things",
+        "artist": "David Bowie",
+        "composer": "David Bowie",
+        "chordsCount": 12
+    },
+    {
         "id": "Oriente",
         "title": "Oriente",
         "artist": "Gilberto Gil",
@@ -834,6 +876,13 @@ const SONGS_CATALOG = [
         "chordsCount": 14
     },
     {
+        "id": "PuttingOutFire",
+        "title": "Putting Out Fire",
+        "artist": "David Bowie",
+        "composer": "Giorgio Moroder (De 1) / David Bowie",
+        "chordsCount": 9
+    },
+    {
         "id": "Pyata",
         "title": "Pyatã",
         "artist": "Lello Di Sarno",
@@ -853,6 +902,13 @@ const SONGS_CATALOG = [
         "artist": "Herbert Vianna",
         "composer": "",
         "chordsCount": 17
+    },
+    {
+        "id": "RebelRebel",
+        "title": "Rebel Rebel",
+        "artist": "David Bowie",
+        "composer": "Seu Jorge / David Bowie",
+        "chordsCount": 4
     },
     {
         "id": "RespeitemMeusCabelosBrancos",
@@ -995,6 +1051,13 @@ const SONGS_CATALOG = [
         "chordsCount": 15
     },
     {
+        "id": "SuffragetteCity",
+        "title": "Suffragette City",
+        "artist": "David Bowie",
+        "composer": "David Bowie",
+        "chordsCount": 6
+    },
+    {
         "id": "TarzanOFilhoDoAlfaiate",
         "title": "Tarzan (o filho do alfaiate)",
         "artist": "Noel Rosa",
@@ -1021,6 +1084,13 @@ const SONGS_CATALOG = [
         "artist": "Jards Macalé",
         "composer": "Caetano Veloso",
         "chordsCount": 2
+    },
+    {
+        "id": "TheManWhoSoldTheWorld",
+        "title": "The Man Who Sold The World",
+        "artist": "David Bowie",
+        "composer": "David Bowie",
+        "chordsCount": 7
     },
     {
         "id": "TheWindCriesMary",
@@ -1182,5 +1252,12 @@ const SONGS_CATALOG = [
         "artist": "Itamar Assumpção",
         "composer": "",
         "chordsCount": 9
+    },
+    {
+        "id": "ZiggyStardust",
+        "title": "Ziggy Stardust",
+        "artist": "David Bowie",
+        "composer": "David Bowie",
+        "chordsCount": 10
     }
 ];
