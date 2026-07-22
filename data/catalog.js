@@ -393,6 +393,13 @@ const SONGS_CATALOG = [
         "chordsCount": 9
     },
     {
+        "id": "HotelCoracaoPartido",
+        "title": "Hotel Coração Partido",
+        "artist": "Vitor Wutski",
+        "composer": "Vitor Wutski",
+        "chordsCount": 17
+    },
+    {
         "id": "HotelDasEstrelas",
         "title": "Hotel Das Estrelas",
         "artist": "Jards Macalé",
