@@ -292,6 +292,9 @@ function initViewer() {
             const nextLyric = nextItem ? getLyricForChordElement(nextItem.element) : null;
             showChord(cId, nextData, nextLyric);
             if (typeof highlightRightPanelLyric === 'function') highlightRightPanelLyric(el);
+            if (window.chordSynth && window.chordSynth.isAudioEnabled && chordData[cId]) {
+                window.chordSynth.triggerChord(chordData[cId]);
+            }
         });
     });
 
@@ -406,6 +409,9 @@ function initViewer() {
             const nextData = nextItem ? nextItem.chordName : null;
             const nextLyric = nextItem ? getLyricForChordElement(nextItem.element) : null;
             showChord(activeChordData.chordName, nextData, nextLyric);
+            if (window.chordSynth && window.chordSynth.isAudioEnabled && chordData[activeChordData.chordName]) {
+                window.chordSynth.triggerChord(chordData[activeChordData.chordName]);
+            }
             
             document.querySelectorAll('.chord.active-chord').forEach(c => c.classList.remove('active-chord'));
             activeChordData.element.classList.add('active-chord');
@@ -509,6 +515,24 @@ function initViewer() {
             cancelAnimationFrame(animationFrameId);
         }
     });
+
+    const audioSynthBtn = document.getElementById('audio-synth-btn');
+    if (audioSynthBtn && window.chordSynth) {
+        window.chordSynth.setTimbre('piano');
+        audioSynthBtn.addEventListener('click', () => {
+            const enabled = window.chordSynth.toggleAudio();
+            if (enabled) {
+                audioSynthBtn.classList.add('active');
+                audioSynthBtn.innerHTML = '<span class="icon">🔊</span> Áudio: ON';
+                if (currentDisplayedChordId && chordData[currentDisplayedChordId]) {
+                    window.chordSynth.triggerChord(chordData[currentDisplayedChordId]);
+                }
+            } else {
+                audioSynthBtn.classList.remove('active');
+                audioSynthBtn.innerHTML = '<span class="icon">🔇</span> Áudio: OFF';
+            }
+        });
+    }
 
 
     // Toggle Piano Logic

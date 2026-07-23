@@ -1,0 +1,116 @@
+{
+    "title": "Till The Next Goodbye",
+    "artist": "The Rolling Stones",
+    "composer": "",
+    "lyricsHtml": "\n       <span class=\"chord\" data-chord=\"D\">D</span>                                       <span class=\"chord\" data-chord=\"G\">G</span>           (<span class=\"chord\" data-chord=\"G\">G</span> <span class=\"chord\" data-chord=\"C\">C</span> <span class=\"chord\" data-chord=\"A\">A</span> <span class=\"chord\" data-chord=\"D\">D</span>)\n<span class=\"lyric-line\">       Honey is there any place that you would like to eat?</span>\n       <span class=\"chord\" data-chord=\"D\">D</span>                            <span class=\"chord\" data-chord=\"G\">G</span>          (<span class=\"chord\" data-chord=\"G\">G</span> <span class=\"chord\" data-chord=\"C\">C</span> <span class=\"chord\" data-chord=\"A\">A</span> <span class=\"chord\" data-chord=\"D\">D</span>)\n<span class=\"lyric-line\">       I know a coffee shop down on 52nd street</span>\n       <span class=\"chord\" data-chord=\"D\">D</span>\n<span class=\"lyric-line\">       And I don&#x27;t need no fancy food</span>\n                    <span class=\"chord\" data-chord=\"G\">G</span>                (<span class=\"chord\" data-chord=\"G\">G</span> <span class=\"chord\" data-chord=\"C\">C</span> <span class=\"chord\" data-chord=\"A\">A</span> <span class=\"chord\" data-chord=\"D\">D</span>)\n<span class=\"lyric-line\">       And I don&#x27;t need no fancy wine</span>\n       <span class=\"chord\" data-chord=\"D\">D</span>                          <span class=\"chord\" data-chord=\"G\">G</span>           (<span class=\"chord\" data-chord=\"G\">G</span> <span class=\"chord\" data-chord=\"C\">C</span> <span class=\"chord\" data-chord=\"A\">A</span> <span class=\"chord\" data-chord=\"D\">D</span>)\n<span class=\"lyric-line\">       And I sure don&#x27;t need the tears you cry</span>\n\n<span class=\"lyric-line\">CHORUS:</span>\n\n<span class=\"lyric-line\">    *  D                          G           (G A C D)</span>\n<span class=\"lyric-line\">       Till the next time that we say goodbye</span>\n\n<span class=\"lyric-line\">*NOTE: other guitar plays this FILL (first chorus only)</span>\n\n<span class=\"lyric-line\">    *  D                          G           (G A C D)</span>\n<span class=\"lyric-line\">       Till the next time that we say goodbye</span>\n<span class=\"lyric-line\">    *  D                          G           (G A  C D)</span>\n<span class=\"lyric-line\">       Till the next time that we say goodbye</span>\n       <span class=\"chord\" data-chord=\"D\">D</span>       <span class=\"chord\" data-chord=\"A\">A</span>            <span class=\"chord\" data-chord=\"D\">D</span>  <span class=\"chord\" data-chord=\"G\">G</span>  <span class=\"chord\" data-chord=\"D\">D</span>\n<span class=\"lyric-line\">       I&#x27;ll be thinking of you</span>\n       <span class=\"chord\" data-chord=\"D\">D</span>       <span class=\"chord\" data-chord=\"A\">A</span>             <span class=\"chord\" data-chord=\"D\">D</span>\n<span class=\"lyric-line\">       I&#x27;ll be thinking of you</span>\n\n<span class=\"lyric-line\">VERSE:                                        ( D G C A D}</span>\n<span class=\"lyric-line\">       In a movie house on 42nd street</span>\n<span class=\"lyric-line\">       Ain&#x27;t a very likely place for you and I to meet</span>\n<span class=\"lyric-line\">       Watching the snow swirl</span>\n<span class=\"lyric-line\">       Around your hair and around your feet</span>\n<span class=\"lyric-line\">       And I&#x27;m thinking to myself surely looks a treat</span>\n\n<span class=\"lyric-line\">CHORUS:</span>\n\n<span class=\"lyric-line\">BREAK:</span>\n\n <span class=\"chord\" data-chord=\"F#m\">F#m</span>  <span class=\"chord\" data-chord=\"Em\">Em</span>  <span class=\"chord\" data-chord=\"G\">G</span>                          <span class=\"chord\" data-chord=\"D\">D</span>\n<span class=\"lyric-line\">            I can&#x27;t go on like this can ya? can ya?</span>\n <span class=\"chord\" data-chord=\"F#m\">F#m</span>  <span class=\"chord\" data-chord=\"Em\">Em</span>  <span class=\"chord\" data-chord=\"G\">G</span>                               <span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">            I can&#x27;t go on like this can ya?</span>\n\n<span class=\"lyric-line\">VERSE:                                       ( D  G C A D )</span>\n<span class=\"lyric-line\">       You give me a cure all to New Orleans</span>\n<span class=\"lyric-line\">       Now that&#x27;s a recipe that I sure do need</span>\n<span class=\"lyric-line\">       Some cider vinegar and some elderberry wine</span>\n<span class=\"lyric-line\">       To cure all your ills you can&#x27;t cure mine</span>\n<span class=\"lyric-line\">       Your Louisiana recipes done let me down</span>\n<span class=\"lyric-line\">       Your Louisiana recipes surely let me down</span>\n\n<span class=\"lyric-line\">CHORUS:    D       G                A C D</span>\n<span class=\"lyric-line\">       Till the next time we say goodbye (drink to you)</span>\n<span class=\"lyric-line\">       Till the next time we say goodbye</span>\n<span class=\"lyric-line\">       Till the next time we kiss goodnight</span>\n<span class=\"lyric-line\">       Till the next time we say goodbye</span>\n<span class=\"lyric-line\">       Till the next time we say goodbye</span>\n<span class=\"lyric-line\">       Till the next time we say goodbye</span>\n<span class=\"lyric-line\">       Till the next time we kiss goodnight</span>\n<span class=\"lyric-line\">       I&#x27;ll be thinking of you</span>\n\n       <span class=\"chord\" data-chord=\"D\">D</span>        <span class=\"chord\" data-chord=\"A\">A</span>           <span class=\"chord\" data-chord=\"G\">G</span>   <span class=\"chord\" data-chord=\"D\">D</span>\n<span class=\"lyric-line\">       I&#x27;ll be thinking of you</span>\n",
+    "chordData": {
+        "A": {
+            "name": "A",
+            "notes": [
+                "A3",
+                "C#4",
+                "E4"
+            ],
+            "displayNotes": [
+                "A",
+                "C#",
+                "E"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "C": {
+            "name": "C",
+            "notes": [
+                "C3",
+                "E3",
+                "G3"
+            ],
+            "displayNotes": [
+                "C",
+                "E",
+                "G"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "D": {
+            "name": "D",
+            "notes": [
+                "D3",
+                "F#3",
+                "A3"
+            ],
+            "displayNotes": [
+                "D",
+                "F#",
+                "A"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Em": {
+            "name": "Em",
+            "notes": [
+                "E3",
+                "G3",
+                "B3"
+            ],
+            "displayNotes": [
+                "E",
+                "G",
+                "B"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "F#m": {
+            "name": "F#m",
+            "notes": [
+                "F#3",
+                "A3",
+                "C#4"
+            ],
+            "displayNotes": [
+                "F#",
+                "A",
+                "C#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "G": {
+            "name": "G",
+            "notes": [
+                "G3",
+                "B3",
+                "D4"
+            ],
+            "displayNotes": [
+                "G",
+                "B",
+                "D"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        }
+    }
+}

@@ -57,6 +57,13 @@ const SONGS_CATALOG = [
         "chordsCount": 24
     },
     {
+        "id": "AgoraFalandoSerio",
+        "title": "Agora Falando Sério",
+        "artist": "Chico Buarque",
+        "composer": "Chico Buarque",
+        "chordsCount": 8
+    },
+    {
         "id": "AguasDeMarco",
         "title": "Águas de Março",
         "artist": "Tom Jobim",
@@ -69,6 +76,13 @@ const SONGS_CATALOG = [
         "artist": "Zeca Pagodinho",
         "composer": "Arlindo Cruz",
         "chordsCount": 26
+    },
+    {
+        "id": "AintTooProudToBeg",
+        "title": "Aint Too Proud To Beg",
+        "artist": "The Rolling Stones",
+        "composer": "",
+        "chordsCount": 3
     },
     {
         "id": "Antonico",
@@ -160,6 +174,13 @@ const SONGS_CATALOG = [
         "artist": "Gilberto Gil",
         "composer": "",
         "chordsCount": 8
+    },
+    {
+        "id": "BatuqueNaCozinha",
+        "title": "Batuque na Cozinha",
+        "artist": "Pixinguinha",
+        "composer": "",
+        "chordsCount": 5
     },
     {
         "id": "BoaViagem",
@@ -715,6 +736,13 @@ const SONGS_CATALOG = [
         "chordsCount": 13
     },
     {
+        "id": "MinistroDoSamba",
+        "title": "Ministro do Samba",
+        "artist": "Batatinha",
+        "composer": "Batatinha",
+        "chordsCount": 10
+    },
+    {
         "id": "MoonageDaydream",
         "title": "Moonage Daydream",
         "artist": "David Bowie",
@@ -1107,6 +1135,13 @@ const SONGS_CATALOG = [
         "chordsCount": 6
     },
     {
+        "id": "TantaSaudade",
+        "title": "Tanta Saudade",
+        "artist": "Djavan",
+        "composer": "Chico Buarque / Djavan",
+        "chordsCount": 7
+    },
+    {
         "id": "TarzanOFilhoDoAlfaiate",
         "title": "Tarzan (o filho do alfaiate)",
         "artist": "Noel Rosa",
@@ -1154,6 +1189,20 @@ const SONGS_CATALOG = [
         "artist": "Nancy Sinatra",
         "composer": "Ford Naomi",
         "chordsCount": 5
+    },
+    {
+        "id": "ThingsHaveChanged",
+        "title": "Things Have Changed",
+        "artist": "Bob Dylan",
+        "composer": "Bob Dylan / Marlon Mcvey / Preetesh Hirji",
+        "chordsCount": 5
+    },
+    {
+        "id": "TillTheNextGoodbye",
+        "title": "Till The Next Goodbye",
+        "artist": "The Rolling Stones",
+        "composer": "",
+        "chordsCount": 6
     },
     {
         "id": "Traste",
@@ -1294,6 +1343,13 @@ const SONGS_CATALOG = [
         "artist": "Alceu Valença",
         "composer": "Luiz Gonzaga / Zé Dantas",
         "chordsCount": 15
+    },
+    {
+        "id": "Yao",
+        "title": "Yaô",
+        "artist": "Pixinguinha",
+        "composer": "Pixinguinha / Carmem T",
+        "chordsCount": 16
     },
     {
         "id": "YouCantAlwaysGetWhatYouWant",

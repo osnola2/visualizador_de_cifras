@@ -322,6 +322,9 @@ function initCavaquinhoViewer() {
             const nextLyric = nextItem ? getLyricForChordElement(nextItem.element) : null;
             showChord(cId, nextData, nextLyric);
             highlightRightPanelLyric(el);
+            if (window.chordSynth && window.chordSynth.isAudioEnabled && chordData[cId]) {
+                window.chordSynth.triggerChord(chordData[cId]);
+            }
         });
     });
 
@@ -353,6 +356,9 @@ function initCavaquinhoViewer() {
             const nextData = nextItem ? nextItem.chordName : null;
             const nextLyric = nextItem ? getLyricForChordElement(nextItem.element) : null;
             showChord(activeChordData.chordName, nextData, nextLyric);
+            if (window.chordSynth && window.chordSynth.isAudioEnabled && chordData[activeChordData.chordName]) {
+                window.chordSynth.triggerChord(chordData[activeChordData.chordName]);
+            }
             
             document.querySelectorAll('.chord.active-chord').forEach(c => c.classList.remove('active-chord'));
             activeChordData.element.classList.add('active-chord');
@@ -468,6 +474,24 @@ function initCavaquinhoViewer() {
                 autoscrollBtn.classList.remove('active');
                 autoscrollBtn.innerHTML = '<span class="icon">▶</span> Auto-scroll';
                 cancelAnimationFrame(animationFrameId);
+            }
+        });
+    }
+
+    const audioSynthBtn = document.getElementById('audio-synth-btn');
+    if (audioSynthBtn && window.chordSynth) {
+        window.chordSynth.setTimbre('acoustic');
+        audioSynthBtn.addEventListener('click', () => {
+            const enabled = window.chordSynth.toggleAudio();
+            if (enabled) {
+                audioSynthBtn.classList.add('active');
+                audioSynthBtn.innerHTML = '<span class="icon">🔊</span> Áudio: ON';
+                if (currentDisplayedChordId && chordData[currentDisplayedChordId]) {
+                    window.chordSynth.triggerChord(chordData[currentDisplayedChordId]);
+                }
+            } else {
+                audioSynthBtn.classList.remove('active');
+                audioSynthBtn.innerHTML = '<span class="icon">🔇</span> Áudio: OFF';
             }
         });
     }
