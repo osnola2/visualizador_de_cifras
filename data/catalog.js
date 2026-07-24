@@ -57,6 +57,13 @@ const SONGS_CATALOG = [
         "chordsCount": 24
     },
     {
+        "id": "AcrossTheUniverse",
+        "title": "Across The Universe",
+        "artist": "The Beatles",
+        "composer": "Paul Mccartney / Beatles (The)",
+        "chordsCount": 9
+    },
+    {
         "id": "AgoraFalandoSerio",
         "title": "Agora Falando Sério",
         "artist": "Chico Buarque",
@@ -188,6 +195,13 @@ const SONGS_CATALOG = [
         "artist": "Pixinguinha",
         "composer": "",
         "chordsCount": 5
+    },
+    {
+        "id": "Blackbird",
+        "title": "Blackbird",
+        "artist": "The Beatles",
+        "composer": "Paul Mccartney / Beatles (The)",
+        "chordsCount": 0
     },
     {
         "id": "BoaViagem",
@@ -365,6 +379,13 @@ const SONGS_CATALOG = [
         "chordsCount": 4
     },
     {
+        "id": "DayTripper",
+        "title": "Day Tripper",
+        "artist": "The Beatles",
+        "composer": "Paul Mccartney / Beatles (The)",
+        "chordsCount": 13
+    },
+    {
         "id": "DeixaClarear",
         "title": "Deixa Clarear",
         "artist": "Zeca Pagodinho",
@@ -391,6 +412,13 @@ const SONGS_CATALOG = [
         "artist": "Luiz Tatit",
         "composer": "Luiz Tatit / Itamar Assumpcao",
         "chordsCount": 9
+    },
+    {
+        "id": "EleanorRigby",
+        "title": "Eleanor Rigby",
+        "artist": "The Beatles",
+        "composer": "Paul Mccartney / Beatles (The)",
+        "chordsCount": 5
     },
     {
         "id": "Elegia",
@@ -538,6 +566,20 @@ const SONGS_CATALOG = [
         "artist": "Blondie",
         "composer": "Debbie Harry / Chris Stein",
         "chordsCount": 7
+    },
+    {
+        "id": "HereComesTheSun",
+        "title": "Here Comes The Sun",
+        "artist": "The Beatles",
+        "composer": "George Harrison",
+        "chordsCount": 8
+    },
+    {
+        "id": "HeyJude",
+        "title": "Hey Jude",
+        "artist": "The Beatles",
+        "composer": "Paul McCartney / John Lennon",
+        "chordsCount": 9
     },
     {
         "id": "HomemComH",
@@ -692,6 +734,13 @@ const SONGS_CATALOG = [
         "artist": "Wilson Batista",
         "composer": "Wilson Batista",
         "chordsCount": 10
+    },
+    {
+        "id": "LetItBe",
+        "title": "Let It Be",
+        "artist": "The Beatles",
+        "composer": "Paul McCartney / John Lennon",
+        "chordsCount": 9
     },
     {
         "id": "LetItBleed",
@@ -1205,6 +1254,13 @@ const SONGS_CATALOG = [
         "chordsCount": 3
     },
     {
+        "id": "Something",
+        "title": "Something",
+        "artist": "The Beatles",
+        "composer": "George Harrison",
+        "chordsCount": 26
+    },
+    {
         "id": "SoulRebel",
         "title": "Soul Rebel",
         "artist": "Bob Marley",
@@ -1268,11 +1324,25 @@ const SONGS_CATALOG = [
         "chordsCount": 2
     },
     {
+        "id": "TheLongAndWindingRoad",
+        "title": "The Long And Winding Road",
+        "artist": "The Beatles",
+        "composer": "Paul Mccartney / Beatles (The)",
+        "chordsCount": 11
+    },
+    {
         "id": "TheManWhoSoldTheWorld",
         "title": "The Man Who Sold The World",
         "artist": "David Bowie",
         "composer": "David Bowie",
         "chordsCount": 7
+    },
+    {
+        "id": "TheTideIsHigh",
+        "title": "The Tide Is High",
+        "artist": "Blondie",
+        "composer": "Evans (Gb) Don / Howard Anthony Barrett / John Holt",
+        "chordsCount": 4
     },
     {
         "id": "TheWindCriesMary",
@@ -1441,6 +1511,13 @@ const SONGS_CATALOG = [
         "artist": "Bob Marley",
         "composer": "Carleton Barrett / Johnny Adams / Allan Cole",
         "chordsCount": 5
+    },
+    {
+        "id": "WhileMyGuitarGentlyWeeps",
+        "title": "While My Guitar Gently Weeps",
+        "artist": "The Beatles",
+        "composer": "George Harrison",
+        "chordsCount": 12
     },
     {
         "id": "WildHorses",

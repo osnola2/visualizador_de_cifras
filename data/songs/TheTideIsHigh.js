@@ -1,0 +1,83 @@
+window.SONG_DATA = {
+    "title": "The Tide Is High",
+    "artist": "Blondie",
+    "composer": "Evans (Gb) Don / Howard Anthony Barrett / John Holt",
+    "lyricsHtml": "\n .    <span class=\"chord\" data-chord=\"A\">A</span>                    <span class=\"chord\" data-chord=\"D\">D</span>       <span class=\"chord\" data-chord=\"E\">E</span>     <span class=\"chord\" data-chord=\"A\">A</span>                    <span class=\"chord\" data-chord=\"D\">D</span>       <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\"> The Tide is high but I'm  holdin' on,   I'm gonna be your    number one.</span>\n .   <span class=\"chord\" data-chord=\"A\">A</span>                      <span class=\"chord\" data-chord=\"D\">D</span>            <span class=\"chord\" data-chord=\"E\">E</span>         <span class=\"chord\" data-chord=\"A\">A</span>        <span class=\"chord\" data-chord=\"D\">D</span>       <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\"> .   I'm not the kinda girl who gives up just like that, oh no____</span>\n .    <span class=\"chord\" data-chord=\"A\">A</span>                                       <span class=\"chord\" data-chord=\"D\">D</span>       <span class=\"chord\" data-chord=\"E\">E</span> '\n<span class=\"lyric-line\"> It's not the things you do that tease and   hurt me bad,</span>\n .    <span class=\"chord\" data-chord=\"A\">A</span>                                       <span class=\"chord\" data-chord=\"D\">D</span>       <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\"> .    but it's the way you do the things you  do  to  me,</span>\n .    <span class=\"chord\" data-chord=\"A\">A</span>                      <span class=\"chord\" data-chord=\"D\">D</span>            <span class=\"chord\" data-chord=\"E\">E</span>         <span class=\"chord\" data-chord=\"A\">A</span>        <span class=\"chord\" data-chord=\"D\">D</span>       <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\"> .   I'm not the kinda girl who gives up just like that, oh no____</span>\n .    <span class=\"chord\" data-chord=\"A\">A</span>                    <span class=\"chord\" data-chord=\"D\">D</span>       <span class=\"chord\" data-chord=\"E\">E</span>     <span class=\"chord\" data-chord=\"A\">A</span>                    <span class=\"chord\" data-chord=\"D\">D</span>       <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\"> The tide is high but I'm  holdin' on,   I'm gonna be your    number one.</span>\n<span class=\"lyric-line\"> D             E   (first riff?)</span>\n<span class=\"lyric-line\"> Num  -  ber   one.</span>\n<span class=\"lyric-line\"> _</span>\n <span class=\"chord\" data-chord=\"A\">A</span>                       <span class=\"chord\" data-chord=\"D\">D</span>      <span class=\"chord\" data-chord=\"E\">E</span>    <span class=\"chord\" data-chord=\"A\">A</span>                                <span class=\"chord\" data-chord=\"D\">D</span>  <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\"> Ev'ry girl wants you to be her man, but I'll wait my dear, till it's my turn,</span>\n .   <span class=\"chord\" data-chord=\"A\">A</span>                      <span class=\"chord\" data-chord=\"D\">D</span>            <span class=\"chord\" data-chord=\"E\">E</span>         <span class=\"chord\" data-chord=\"A\">A</span>        <span class=\"chord\" data-chord=\"D\">D</span>       <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\"> .   I'm not the kinda girl who gives up just like that, oh no____</span>\n .    <span class=\"chord\" data-chord=\"A\">A</span>                    <span class=\"chord\" data-chord=\"D\">D</span>       <span class=\"chord\" data-chord=\"E\">E</span>     <span class=\"chord\" data-chord=\"A\">A</span>                    <span class=\"chord\" data-chord=\"D\">D</span>      <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\"> The tide is high but I'm  holdin' on,   I'm gonna be your    number one.</span>\n <span class=\"chord\" data-chord=\"D\">D</span>             <span class=\"chord\" data-chord=\"E\">E</span>       <span class=\"chord\" data-chord=\"D\">D</span>             <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\"> Num  -  ber   one.    Num  -  ber   one.       (instrumental)</span>\n<span class=\"lyric-line\"> _</span>\n <span class=\"chord\" data-chord=\"A\">A</span>                       <span class=\"chord\" data-chord=\"D\">D</span>      <span class=\"chord\" data-chord=\"E\">E</span>    <span class=\"chord\" data-chord=\"A\">A</span>                                <span class=\"chord\" data-chord=\"D\">D</span>  <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\"> Ev'ry girl wants you to be her man, but I'll wait my dear, till it's my turn,</span>\n .   <span class=\"chord\" data-chord=\"A\">A</span>                      <span class=\"chord\" data-chord=\"D\">D</span>            <span class=\"chord\" data-chord=\"E\">E</span>         <span class=\"chord\" data-chord=\"A\">A</span>        <span class=\"chord\" data-chord=\"D\">D</span>       <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\"> .   I'm not the kinda girl who gives up just like that, oh no____</span>\n .    <span class=\"chord\" data-chord=\"A\">A</span>                    <span class=\"chord\" data-chord=\"D\">D</span>       <span class=\"chord\" data-chord=\"E\">E</span>     <span class=\"chord\" data-chord=\"A\">A</span>                    <span class=\"chord\" data-chord=\"D\">D</span>      <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\"> The tide is high but I'm  holdin' on,   I'm gonna be your    number one.</span>\n <span class=\"chord\" data-chord=\"D\">D</span>             <span class=\"chord\" data-chord=\"E\">E</span>       <span class=\"chord\" data-chord=\"D\">D</span>             <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\"> Num  -  ber   one.    Num  -  ber   one.</span>\n<span class=\"lyric-line\"> _</span>\n<span class=\"lyric-line\"> repeat and fade:                                (end  on A)</span>\n .    <span class=\"chord\" data-chord=\"A\">A</span>                    <span class=\"chord\" data-chord=\"D\">D</span>       <span class=\"chord\" data-chord=\"E\">E</span>     <span class=\"chord\" data-chord=\"A\">A</span>                    <span class=\"chord\" data-chord=\"D\">D</span>      <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\"> The tide is high but I'm  holdin' on,   I'm gonna be your    number one.</span>\n<span class=\"lyric-line\"> _</span>\n<span class=\"lyric-line\"> Chord chart:                          (SIMPed by Sennet)</span>\n<span class=\"lyric-line\"> string: E A D G B e                   E A D G B e                   E A D G B e</span>\n <span class=\"chord\" data-chord=\"A\">A</span>       - 0 2 2 2 0           <span class=\"chord\" data-chord=\"D\">D</span>       x - 0 2 3 2           <span class=\"chord\" data-chord=\"E\">E</span>       0 2 2 1 0 0\n <span class=\"chord\" data-chord=\"B7\">B7</span>      x 2 1 2 0 2\n<span class=\"lyric-line\"> _</span>\n<span class=\"lyric-line\">  Riff 1: Tab for E string</span>\n<span class=\"lyric-line\">  E string |-12--10---9---7---5---4---2---0--|</span>\n<span class=\"lyric-line\"> note:    |--E---D---C#--B---A---G#--F#--E--|</span>\n",
+    "chordData": {
+        "A": {
+            "name": "A",
+            "notes": [
+                "A3",
+                "C#4",
+                "E4"
+            ],
+            "displayNotes": [
+                "A",
+                "C#",
+                "E"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "B7": {
+            "name": "B7",
+            "notes": [
+                "B3",
+                "D#4",
+                "F#4",
+                "A4"
+            ],
+            "displayNotes": [
+                "B",
+                "D#",
+                "F#",
+                "A"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "D": {
+            "name": "D",
+            "notes": [
+                "D3",
+                "F#3",
+                "A3"
+            ],
+            "displayNotes": [
+                "D",
+                "F#",
+                "A"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "E": {
+            "name": "E",
+            "notes": [
+                "E3",
+                "G#3",
+                "B3"
+            ],
+            "displayNotes": [
+                "E",
+                "G#",
+                "B"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        }
+    }
+};

@@ -1,0 +1,107 @@
+{
+    "title": "Eleanor Rigby",
+    "artist": "The Beatles",
+    "composer": "Paul Mccartney / Beatles (The)",
+    "lyricsHtml": "\n<span class=\"lyric-line\">[Refrão]</span>\n\n<span class=\"chord\" data-chord=\"C/G\">C/G</span>                         <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Ah! Look at all the lonely people</span>\n<span class=\"chord\" data-chord=\"C/G\">C/G</span>                         <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Ah! Look at all the lonely people</span>\n\n<span class=\"lyric-line\">[Primeira Parte]</span>\n\n<span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Eleanor Rigby</span>\n                                                \n<span class=\"lyric-line\">Picks up the rice in a church</span>\n                     <span class=\"chord\" data-chord=\"C/G\">C/G</span>\n<span class=\"lyric-line\">Where a wedding has been</span>\n             <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Lives in a dream</span>\n\n <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Waits at the window</span>\n \n<span class=\"lyric-line\">Wearing the face that she keeps </span>\n                 <span class=\"chord\" data-chord=\"C/G\">C/G</span>\n<span class=\"lyric-line\">In a jar by the door</span>\n           <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Who is it for</span>\n\n<span class=\"lyric-line\">[Segunda Parte]</span>\n\n<span class=\"chord\" data-chord=\"Em7\">Em7</span>             <span class=\"chord\" data-chord=\"Em6\">Em6</span>\n<span class=\"lyric-line\">All the lonely people</span>\n       <span class=\"chord\" data-chord=\"Em5+\">Em5+</span>              <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Where do they all come from</span>\n<span class=\"chord\" data-chord=\"Em7\">Em7</span>             <span class=\"chord\" data-chord=\"Em6\">Em6</span>\n<span class=\"lyric-line\">All the lonely people</span>\n       <span class=\"chord\" data-chord=\"Em5+\">Em5+</span>          <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Where do they all belong?</span>\n\n<span class=\"lyric-line\">[Primeira Parte]</span>\n\n <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Father McKenzie</span>\n\n<span class=\"lyric-line\">Writing the words of a sermon that </span>\n             <span class=\"chord\" data-chord=\"C/G\">C/G</span>\n<span class=\"lyric-line\">No one will hear</span>\n              <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">No one comes near</span>\n\n <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Look at him working</span>\n\n<span class=\"lyric-line\">Darning his socks in the night</span>\n                      <span class=\"chord\" data-chord=\"C/G\">C/G</span>\n<span class=\"lyric-line\">When there's nobody there</span>\n              <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">What does he care</span>\n\n<span class=\"lyric-line\">[Segunda Parte]</span>\n\n\n<span class=\"chord\" data-chord=\"Em7\">Em7</span>             <span class=\"chord\" data-chord=\"Em6\">Em6</span>\n<span class=\"lyric-line\">All the lonely people</span>\n       <span class=\"chord\" data-chord=\"Em5+\">Em5+</span>              <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Where do they all come from</span>\n<span class=\"chord\" data-chord=\"Em7\">Em7</span>             <span class=\"chord\" data-chord=\"Em6\">Em6</span>\n<span class=\"lyric-line\">All the lonely people</span>\n       <span class=\"chord\" data-chord=\"Em5+\">Em5+</span>          <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Where do they all belong?</span>\n\n<span class=\"lyric-line\">[Refrão]</span>\n\n<span class=\"chord\" data-chord=\"C/G\">C/G</span>                         <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Ah! Look at all the lonely people</span>\n<span class=\"chord\" data-chord=\"C/G\">C/G</span>                         <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Ah! Look at all the lonely people</span>\n\n<span class=\"lyric-line\">[Primeira Parte]</span>\n\n<span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Eleanor Rigby</span>\n\n<span class=\"lyric-line\">Died in the church and was buried </span>\n                <span class=\"chord\" data-chord=\"C/G\">C/G</span>\n<span class=\"lyric-line\">Along with her name</span>\n        <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Nobody came</span>\n\n <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Father McKenzie</span>\n\n<span class=\"lyric-line\">Wiping the dirt from his hands</span>\n                       <span class=\"chord\" data-chord=\"C/G\">C/G</span>\n<span class=\"lyric-line\">As he walks from the grave</span>\n            <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">No one was saved</span>\n\n<span class=\"lyric-line\">[Segunda Parte]</span>\n\n<span class=\"chord\" data-chord=\"Em7\">Em7</span>             <span class=\"chord\" data-chord=\"Em6\">Em6</span>\n<span class=\"lyric-line\">All the lonely people</span>\n       <span class=\"chord\" data-chord=\"Em5+\">Em5+</span>              <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Where do they all come from</span>\n<span class=\"chord\" data-chord=\"Em7\">Em7</span>             <span class=\"chord\" data-chord=\"Em6\">Em6</span>\n<span class=\"lyric-line\">All the lonely people</span>\n       <span class=\"chord\" data-chord=\"Em5+\">Em5+</span>          <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Where do they all belong?</span>\n",
+    "chordData": {
+        "C/G": {
+            "name": "C/G",
+            "notes": [
+                "G3",
+                "C4",
+                "E4",
+                "G4"
+            ],
+            "displayNotes": [
+                "G",
+                "C",
+                "E",
+                "G"
+            ],
+            "noteTypes": [
+                "bass",
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Em": {
+            "name": "Em",
+            "notes": [
+                "E3",
+                "G3",
+                "B3"
+            ],
+            "displayNotes": [
+                "E",
+                "G",
+                "B"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Em5+": {
+            "name": "Em5+",
+            "notes": [
+                "E3",
+                "G3",
+                "C4"
+            ],
+            "displayNotes": [
+                "E",
+                "G",
+                "C"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Em6": {
+            "name": "Em6",
+            "notes": [
+                "E3",
+                "G3",
+                "B3",
+                "C#4"
+            ],
+            "displayNotes": [
+                "E",
+                "G",
+                "B",
+                "C#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "Em7": {
+            "name": "Em7",
+            "notes": [
+                "E3",
+                "G3",
+                "B3",
+                "D4"
+            ],
+            "displayNotes": [
+                "E",
+                "G",
+                "B",
+                "D"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        }
+    }
+}
