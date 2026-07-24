@@ -148,6 +148,13 @@ const SONGS_CATALOG = [
         "chordsCount": 3
     },
     {
+        "id": "Baioque",
+        "title": "Baioque",
+        "artist": "Chico Buarque",
+        "composer": "Chico Buarque",
+        "chordsCount": 12
+    },
+    {
         "id": "BamBam",
         "title": "Bam Bam",
         "artist": "Sister Nancy",
@@ -428,6 +435,13 @@ const SONGS_CATALOG = [
         "chordsCount": 8
     },
     {
+        "id": "Fantasia",
+        "title": "Fantasia",
+        "artist": "Chico Buarque",
+        "composer": "Chico Buarque",
+        "chordsCount": 27
+    },
+    {
         "id": "FarinhaDoDesprezo",
         "title": "Farinha do Desprezo",
         "artist": "Jards Macalé",
@@ -440,6 +454,13 @@ const SONGS_CATALOG = [
         "artist": "Padeirinho",
         "composer": "Padeirinho/Jorginho Pessanha",
         "chordsCount": 11
+    },
+    {
+        "id": "FestaImodesta",
+        "title": "Festa Imodesta",
+        "artist": "Chico Buarque",
+        "composer": "Caetano Veloso / Luiz Queiroga / Teresa Cristina",
+        "chordsCount": 17
     },
     {
         "id": "FiveYears",
@@ -573,6 +594,13 @@ const SONGS_CATALOG = [
         "artist": "Douglas Germano",
         "composer": "Douglas Germano",
         "chordsCount": 9
+    },
+    {
+        "id": "JorgeMaravilha",
+        "title": "Jorge Maravilha",
+        "artist": "Chico Buarque",
+        "composer": "Chico Buarque",
+        "chordsCount": 10
     },
     {
         "id": "Jura",
