@@ -580,6 +580,8 @@ function initViewer() {
                 {from: 'dim7', to: 'º'},
                 {from: 'dim', to: 'º'},
                 {from: 'm7(b5)', to: 'm7b5'},
+                {from: 'm7(b5)', to: 'm7(5-)'},
+                {from: 'm7(b5)', to: 'm7(-5)'},
                 {from: 'm(maj7)', to: 'm7M'},
                 {from: 'm(maj7)', to: 'm7m'},
                 {from: 'm(maj7)', to: 'mM7'},
