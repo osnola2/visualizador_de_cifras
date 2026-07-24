@@ -225,6 +225,13 @@ const SONGS_CATALOG = [
         "chordsCount": 10
     },
     {
+        "id": "CallMe",
+        "title": "Call Me",
+        "artist": "Blondie",
+        "composer": "Giorgio Moroder (De 1) / Debbie Harry",
+        "chordsCount": 11
+    },
+    {
         "id": "CamaraoQueDormeAOndaLeva",
         "title": "Camarão que dorme a onda Leva",
         "artist": "Zeca Pagodinho",
@@ -321,6 +328,13 @@ const SONGS_CATALOG = [
         "artist": "Cartola",
         "composer": "Cartola / Dalmo Castello",
         "chordsCount": 14
+    },
+    {
+        "id": "CouldYouBeLoved",
+        "title": "Could You Be Loved",
+        "artist": "Bob Marley",
+        "composer": "Bob Marley",
+        "chordsCount": 6
     },
     {
         "id": "Cruel",
@@ -498,6 +512,13 @@ const SONGS_CATALOG = [
         "chordsCount": 7
     },
     {
+        "id": "GetUpStandUp",
+        "title": "Get Up Stand Up",
+        "artist": "Bob Marley",
+        "composer": "Mac Intosh Winston / Bob Marley",
+        "chordsCount": 0
+    },
+    {
         "id": "GotMyMojoWorking",
         "title": "Got My Mojo Working",
         "artist": "Muddy Waters",
@@ -510,6 +531,13 @@ const SONGS_CATALOG = [
         "artist": "Jards Macalé",
         "composer": "Capinan / Jards Macale",
         "chordsCount": 3
+    },
+    {
+        "id": "HeartOfGlass",
+        "title": "Heart Of Glass",
+        "artist": "Blondie",
+        "composer": "Debbie Harry / Chris Stein",
+        "chordsCount": 7
     },
     {
         "id": "HomemComH",
@@ -568,6 +596,13 @@ const SONGS_CATALOG = [
         "chordsCount": 30
     },
     {
+        "id": "IsThisLove",
+        "title": "Is This Love",
+        "artist": "Bob Marley",
+        "composer": "Bob Marley",
+        "chordsCount": 11
+    },
+    {
         "id": "ItAintEasy",
         "title": "It Aint Easy",
         "artist": "David Bowie",
@@ -594,6 +629,13 @@ const SONGS_CATALOG = [
         "artist": "Douglas Germano",
         "composer": "Douglas Germano",
         "chordsCount": 9
+    },
+    {
+        "id": "Jamming",
+        "title": "Jamming",
+        "artist": "Bob Marley",
+        "composer": "Bob Marley",
+        "chordsCount": 5
     },
     {
         "id": "JorgeMaravilha",
@@ -883,6 +925,13 @@ const SONGS_CATALOG = [
         "chordsCount": 12
     },
     {
+        "id": "OlhosNosOlhos",
+        "title": "Olhos Nos Olhos",
+        "artist": "Chico Buarque",
+        "composer": "Chico Buarque",
+        "chordsCount": 30
+    },
+    {
         "id": "Oriente",
         "title": "Oriente",
         "artist": "Gilberto Gil",
@@ -1016,6 +1065,13 @@ const SONGS_CATALOG = [
         "chordsCount": 4
     },
     {
+        "id": "RedemptionSong",
+        "title": "Redemption Song",
+        "artist": "Bob Marley",
+        "composer": "Bob Marley",
+        "chordsCount": 8
+    },
+    {
         "id": "RespeitemMeusCabelosBrancos",
         "title": "Respeitem meus cabelos, Brancos",
         "artist": "Chico César",
@@ -1063,6 +1119,13 @@ const SONGS_CATALOG = [
         "artist": "Lello Di Sarno",
         "composer": "Lello Di Sarno/Bi/Tico Macumba",
         "chordsCount": 7
+    },
+    {
+        "id": "SambaEAmor",
+        "title": "Samba e Amor",
+        "artist": "Chico Buarque",
+        "composer": "Chico Buarque",
+        "chordsCount": 21
     },
     {
         "id": "Sandra",
@@ -1140,6 +1203,13 @@ const SONGS_CATALOG = [
         "artist": "Alceu Valença",
         "composer": "Alceu Valenca",
         "chordsCount": 3
+    },
+    {
+        "id": "SoulRebel",
+        "title": "Soul Rebel",
+        "artist": "Bob Marley",
+        "composer": "Funk Ginger The / Anderson (Gb) Ross / Westergaard Mike / Rebel Mc / Bob Marley",
+        "chordsCount": 4
     },
     {
         "id": "SoyLocoPorTiAmerica",
@@ -1224,6 +1294,13 @@ const SONGS_CATALOG = [
         "artist": "Bob Dylan",
         "composer": "Bob Dylan / Marlon Mcvey / Preetesh Hirji",
         "chordsCount": 5
+    },
+    {
+        "id": "ThreeLittleBirds",
+        "title": "Three Little Birds",
+        "artist": "Bob Marley",
+        "composer": "Bob Marley",
+        "chordsCount": 3
     },
     {
         "id": "TillTheNextGoodbye",
@@ -1357,6 +1434,13 @@ const SONGS_CATALOG = [
         "artist": "Mercedes Sosa",
         "composer": "",
         "chordsCount": 9
+    },
+    {
+        "id": "War",
+        "title": "War",
+        "artist": "Bob Marley",
+        "composer": "Carleton Barrett / Johnny Adams / Allan Cole",
+        "chordsCount": 5
     },
     {
         "id": "WildHorses",

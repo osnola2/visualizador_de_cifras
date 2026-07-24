@@ -1,0 +1,230 @@
+window.SONG_DATA = {
+    "title": "Is This Love",
+    "artist": "Bob Marley",
+    "composer": "Bob Marley",
+    "lyricsHtml": "\n[Intro] <span class=\"chord\" data-chord=\"Em7\">Em7</span>  <span class=\"chord\" data-chord=\"Em\">Em</span>  <span class=\"chord\" data-chord=\"Em7\">Em7</span>  <span class=\"chord\" data-chord=\"C\">C</span>  <span class=\"chord\" data-chord=\"G\">G</span>  <span class=\"chord\" data-chord=\"F#m7(5-)\">F#m7(5-)</span>\n        <span class=\"chord\" data-chord=\"Em7\">Em7</span>  <span class=\"chord\" data-chord=\"Em\">Em</span>  <span class=\"chord\" data-chord=\"Em7\">Em7</span>  <span class=\"chord\" data-chord=\"G\">G</span>  <span class=\"chord\" data-chord=\"D/F#\">D/F#</span>  <span class=\"chord\" data-chord=\"Em\">Em</span>\n\n<span class=\"lyric-line\">[Tab - Intro]</span>\n\n<span class=\"lyric-line\">Parte 1 de 4</span>\n\n\n<span class=\"lyric-line\">Parte 2 de 4</span>\n   <span class=\"chord\" data-chord=\"Em7\">Em7</span>           <span class=\"chord\" data-chord=\"Em\">Em</span>            <span class=\"chord\" data-chord=\"Em7\">Em7</span>\n\n\n<span class=\"lyric-line\">Parte 3 de 4</span>\n   <span class=\"chord\" data-chord=\"C\">C</span>              <span class=\"chord\" data-chord=\"G\">G</span>           <span class=\"chord\" data-chord=\"F#m7(5-)\">F#m7(5-)</span>\n\n\n<span class=\"lyric-line\">Parte 2 de 4 - Variação</span>\n   <span class=\"chord\" data-chord=\"Em7\">Em7</span>             <span class=\"chord\" data-chord=\"Em\">Em</span>           <span class=\"chord\" data-chord=\"Em7\">Em7</span>\n\n\n<span class=\"lyric-line\">Parte 4 de 4 - Variação</span>\n   <span class=\"chord\" data-chord=\"G\">G</span>      <span class=\"chord\" data-chord=\"D/F#\">D/F#</span>   <span class=\"chord\" data-chord=\"Em\">Em</span>\n\n\n<span class=\"lyric-line\">[Primeira Parte]</span>\n\n<span class=\"lyric-line\">[Tab - Primeira Parte]</span>\n\n<span class=\"lyric-line\">Parte 1 de 4</span>\n  <span class=\"chord\" data-chord=\"Em7\">Em7</span>             <span class=\"chord\" data-chord=\"C\">C</span>              \n\n\n<span class=\"lyric-line\">Parte 2 de 4</span>\n   <span class=\"chord\" data-chord=\"G\">G</span>      <span class=\"chord\" data-chord=\"D/F#\">D/F#</span>   \n\n\n<span class=\"lyric-line\">Parte 3 de 4</span>\n   <span class=\"chord\" data-chord=\"Em7\">Em7</span>           <span class=\"chord\" data-chord=\"Em\">Em</span>            <span class=\"chord\" data-chord=\"Em7\">Em7</span>\n\n\n<span class=\"lyric-line\">Parte 4 de 4</span>\n   <span class=\"chord\" data-chord=\"C\">C</span>                <span class=\"chord\" data-chord=\"G\">G</span>        <span class=\"chord\" data-chord=\"D/F#\">D/F#</span>\n\n\n<span class=\"lyric-line\">Parte 4 de 4 - Variação Refrão</span>\n   <span class=\"chord\" data-chord=\"C\">C</span>                <span class=\"chord\" data-chord=\"G\">G</span>        <span class=\"chord\" data-chord=\"D/F#\">D/F#</span>\n\n\n         <span class=\"chord\" data-chord=\"Em7\">Em7</span>             \n<span class=\"lyric-line\">I wanna love you</span>\n<span class=\"chord\" data-chord=\"C\">C</span>                <span class=\"chord\" data-chord=\"G\">G</span>    <span class=\"chord\" data-chord=\"D/F#\">D/F#</span>      \n<span class=\"lyric-line\">  And treat you right</span>\n         <span class=\"chord\" data-chord=\"Em7\">Em7</span>     <span class=\"chord\" data-chord=\"Em\">Em</span>      \n<span class=\"lyric-line\">I wanna love you</span>\n <span class=\"chord\" data-chord=\"Em7\">Em7</span>   <span class=\"chord\" data-chord=\"C\">C</span>             <span class=\"chord\" data-chord=\"G\">G</span>   \n<span class=\"lyric-line\">Every day and every night</span>\n       <span class=\"chord\" data-chord=\"D/F#\">D/F#</span>  <span class=\"chord\" data-chord=\"Em7\">Em7</span>   <span class=\"chord\" data-chord=\"Em\">Em</span>  \n<span class=\"lyric-line\">We'll be  together</span>\n <span class=\"chord\" data-chord=\"Em7\">Em7</span>    <span class=\"chord\" data-chord=\"C\">C</span>                   <span class=\"chord\" data-chord=\"G\">G</span>    \n<span class=\"lyric-line\">With a roof right over our heads</span>\n        <span class=\"chord\" data-chord=\"D/F#\">D/F#</span>      <span class=\"chord\" data-chord=\"Em7\">Em7</span>   <span class=\"chord\" data-chord=\"Em\">Em</span>  <span class=\"chord\" data-chord=\"Em7\">Em7</span>\n<span class=\"lyric-line\">We'll share the shelter</span>\n<span class=\"chord\" data-chord=\"C\">C</span>             <span class=\"chord\" data-chord=\"G\">G</span>  \n<span class=\"lyric-line\">Of my single bed</span>\n        <span class=\"chord\" data-chord=\"D/F#\">D/F#</span>     <span class=\"chord\" data-chord=\"Em7\">Em7</span>            <span class=\"chord\" data-chord=\"Em\">Em</span>      <span class=\"chord\" data-chord=\"Em7\">Em7</span>\n<span class=\"lyric-line\">We'll share the same room, oooh-oh-ohhh</span>\n     <span class=\"chord\" data-chord=\"C\">C</span>                  <span class=\"chord\" data-chord=\"G\">G</span>   <span class=\"chord\" data-chord=\"D/F#\">D/F#</span> \n<span class=\"lyric-line\">But Jah, provides the bread</span>\n\n<span class=\"lyric-line\">[Refrão]</span>\n\n<span class=\"lyric-line\">[Tab - Refrão]</span>\n\n<span class=\"lyric-line\">Parte 1 de 2</span>\n   <span class=\"chord\" data-chord=\"Bm7\">Bm7</span>\n\n\n<span class=\"lyric-line\">Parte 2 de 2</span>\n   <span class=\"chord\" data-chord=\"Am7\">Am7</span>\n\n\n<span class=\"lyric-line\">Parte 1 de 2</span>\n   <span class=\"chord\" data-chord=\"Bm7\">Bm7</span>\n\n\n<span class=\"lyric-line\">Parte 2 de 2</span>\n   <span class=\"chord\" data-chord=\"Am7\">Am7</span>\n\n\n         <span class=\"chord\" data-chord=\"Bm7\">Bm7</span>\n<span class=\"lyric-line\">Is this love, is this love</span>\n\n<span class=\"lyric-line\">Is this love</span>\n               <span class=\"chord\" data-chord=\"Am7\">Am7</span>\n<span class=\"lyric-line\">Love that I'm feeling?</span>\n         <span class=\"chord\" data-chord=\"Bm7\">Bm7</span>\n<span class=\"lyric-line\">Is this love, is this love</span>\n\n<span class=\"lyric-line\">Is this love</span>\n               <span class=\"chord\" data-chord=\"Am7\">Am7</span>\n<span class=\"lyric-line\">Love that I'm feeling?</span>\n\n<span class=\"lyric-line\">[Segunda Parte]</span>\n\n<span class=\"lyric-line\">[Tab - Segunda Parte]</span>\n\n<span class=\"lyric-line\">Parte 1 de 7</span>\n   <span class=\"chord\" data-chord=\"Am7\">Am7</span>  <span class=\"chord\" data-chord=\"G/B\">G/B</span>  <span class=\"chord\" data-chord=\"C\">C</span>    <span class=\"chord\" data-chord=\"D\">D</span>\n\n\n<span class=\"lyric-line\">Parte 2 de 7</span>\n   <span class=\"chord\" data-chord=\"Am7\">Am7</span>\n\n\n<span class=\"lyric-line\">Parte 3 de 7</span>\n   <span class=\"chord\" data-chord=\"Am7\">Am7</span>  <span class=\"chord\" data-chord=\"G/B\">G/B</span>  <span class=\"chord\" data-chord=\"C\">C</span>    <span class=\"chord\" data-chord=\"D\">D</span>\n\n\n<span class=\"lyric-line\">Parte 4 de 7</span>\n   <span class=\"chord\" data-chord=\"Bm7\">Bm7</span>\n\n\n<span class=\"lyric-line\">Parte 5 de 7</span>\n                    <span class=\"chord\" data-chord=\"Bm7\">Bm7</span>\n\n\n<span class=\"lyric-line\">Parte 2 de 7</span>\n   <span class=\"chord\" data-chord=\"Am7\">Am7</span>\n\n\n<span class=\"lyric-line\">Parte 6 de 7</span>\n   <span class=\"chord\" data-chord=\"Em\">Em</span>\n\n\n<span class=\"lyric-line\">Parte 7 de 7</span>\n   <span class=\"chord\" data-chord=\"D\">D</span>    <span class=\"chord\" data-chord=\"C\">C</span>    <span class=\"chord\" data-chord=\"G/B\">G/B</span>  <span class=\"chord\" data-chord=\"Am7\">Am7</span>\n\n\n<span class=\"lyric-line\">Parte 7 de 7  (Variação Final)</span>\n<span class=\"lyric-line\">   D    C    G/B  Am7  h.n.</span>\n\n\n( <span class=\"chord\" data-chord=\"Am7\">Am7</span>  <span class=\"chord\" data-chord=\"G/B\">G/B</span>  <span class=\"chord\" data-chord=\"C\">C</span>  <span class=\"chord\" data-chord=\"D\">D</span> )\n\n<span class=\"chord\" data-chord=\"Am7\">Am7</span>\n<span class=\"lyric-line\">    I wanna know, wanna know</span>\n\n<span class=\"lyric-line\">Wanna know now</span>\n\n( <span class=\"chord\" data-chord=\"Am7\">Am7</span>  <span class=\"chord\" data-chord=\"G/B\">G/B</span>  <span class=\"chord\" data-chord=\"C\">C</span>  <span class=\"chord\" data-chord=\"D\">D</span> )\n\n<span class=\"chord\" data-chord=\"Bm7\">Bm7</span> \n<span class=\"lyric-line\">    I got to know, got to know</span>\n\n<span class=\"lyric-line\">Got to know now</span>\n                <span class=\"chord\" data-chord=\"Am7\">Am7</span>\n<span class=\"lyric-line\">I'm willing and able</span>\n   <span class=\"chord\" data-chord=\"Em\">Em</span>                        \n<span class=\"lyric-line\">So I throw my cards</span>\n         <span class=\"chord\" data-chord=\"D\">D</span>    <span class=\"chord\" data-chord=\"C\">C</span>  <span class=\"chord\" data-chord=\"G/B\">G/B</span>  <span class=\"chord\" data-chord=\"Am7\">Am7</span>\n<span class=\"lyric-line\">On your table</span>\n\n<span class=\"lyric-line\">[Primeira Parte]</span>\n\n         <span class=\"chord\" data-chord=\"Em7\">Em7</span>             \n<span class=\"lyric-line\">I wanna love you </span>\n<span class=\"chord\" data-chord=\"C\">C</span>                <span class=\"chord\" data-chord=\"G\">G</span>    <span class=\"chord\" data-chord=\"D/F#\">D/F#</span>     \n<span class=\"lyric-line\">  And treat you right</span>\n         <span class=\"chord\" data-chord=\"Em7\">Em7</span>     <span class=\"chord\" data-chord=\"Em\">Em</span>     \n<span class=\"lyric-line\">I wanna love you</span>\n  <span class=\"chord\" data-chord=\"Em7\">Em7</span>  <span class=\"chord\" data-chord=\"C\">C</span>             <span class=\"chord\" data-chord=\"G\">G</span>   \n<span class=\"lyric-line\">Every day and every night</span>\n       <span class=\"chord\" data-chord=\"D/F#\">D/F#</span>  <span class=\"chord\" data-chord=\"Em7\">Em7</span>   <span class=\"chord\" data-chord=\"Em\">Em</span>  \n<span class=\"lyric-line\">We'll be  together</span>\n <span class=\"chord\" data-chord=\"Em7\">Em7</span>    <span class=\"chord\" data-chord=\"C\">C</span>                   <span class=\"chord\" data-chord=\"G\">G</span>    \n<span class=\"lyric-line\">With a roof right over our heads</span>\n        <span class=\"chord\" data-chord=\"D/F#\">D/F#</span>      <span class=\"chord\" data-chord=\"Em7\">Em7</span>   <span class=\"chord\" data-chord=\"Em\">Em</span>  <span class=\"chord\" data-chord=\"Em7\">Em7</span>\n<span class=\"lyric-line\">We'll share the shelter</span>\n<span class=\"chord\" data-chord=\"C\">C</span>             <span class=\"chord\" data-chord=\"G\">G</span>  \n<span class=\"lyric-line\">Of my single bed</span>\n        <span class=\"chord\" data-chord=\"D/F#\">D/F#</span>     <span class=\"chord\" data-chord=\"Em7\">Em7</span>            <span class=\"chord\" data-chord=\"Em\">Em</span>      <span class=\"chord\" data-chord=\"Em7\">Em7</span>\n<span class=\"lyric-line\">We'll share the same room, oooh-oh-ohhh</span>\n     <span class=\"chord\" data-chord=\"C\">C</span>                  <span class=\"chord\" data-chord=\"G\">G</span>   <span class=\"chord\" data-chord=\"D/F#\">D/F#</span> \n<span class=\"lyric-line\">But Jah, provides the bread</span>\n\n<span class=\"lyric-line\">[Refrão]</span>\n\n         <span class=\"chord\" data-chord=\"Bm7\">Bm7</span>\n<span class=\"lyric-line\">Is this love, is this love</span>\n\n<span class=\"lyric-line\">Is this love</span>\n               <span class=\"chord\" data-chord=\"Am7\">Am7</span>\n<span class=\"lyric-line\">Love that I'm feeling?</span>\n         <span class=\"chord\" data-chord=\"Bm7\">Bm7</span>\n<span class=\"lyric-line\">Is this love, is this love</span>\n\n<span class=\"lyric-line\">Is this love</span>\n               <span class=\"chord\" data-chord=\"Am7\">Am7</span>\n<span class=\"lyric-line\">Love that I'm feeling?</span>\n\n<span class=\"lyric-line\">[Segunda Parte]</span>\n\n( <span class=\"chord\" data-chord=\"Am7\">Am7</span>  <span class=\"chord\" data-chord=\"G/B\">G/B</span>  <span class=\"chord\" data-chord=\"C\">C</span>  <span class=\"chord\" data-chord=\"D\">D</span> )\n\n<span class=\"chord\" data-chord=\"Am7\">Am7</span>\n<span class=\"lyric-line\">    Oh yes, I know, yes I know</span>\n\n<span class=\"lyric-line\">Yes I know now</span>\n\n( <span class=\"chord\" data-chord=\"Am7\">Am7</span>  <span class=\"chord\" data-chord=\"G/B\">G/B</span>  <span class=\"chord\" data-chord=\"C\">C</span>  <span class=\"chord\" data-chord=\"D\">D</span> )\n\n<span class=\"chord\" data-chord=\"Bm7\">Bm7</span> \n<span class=\"lyric-line\">Oh yes, I know, yes I know</span>\n\n<span class=\"lyric-line\">Yes I know now</span>\n                <span class=\"chord\" data-chord=\"Am7\">Am7</span>\n<span class=\"lyric-line\">I'm willing and able</span>\n   <span class=\"chord\" data-chord=\"Em\">Em</span>                        \n<span class=\"lyric-line\">So I throw my cards</span>\n         <span class=\"chord\" data-chord=\"D\">D</span>    <span class=\"chord\" data-chord=\"C\">C</span>  <span class=\"chord\" data-chord=\"G/B\">G/B</span>  <span class=\"chord\" data-chord=\"Am7\">Am7</span>\n<span class=\"lyric-line\">On your table</span>\n\n[Final] <span class=\"chord\" data-chord=\"Em7\">Em7</span>  <span class=\"chord\" data-chord=\"Em\">Em</span>  <span class=\"chord\" data-chord=\"Em7\">Em7</span>  <span class=\"chord\" data-chord=\"C\">C</span>  <span class=\"chord\" data-chord=\"G\">G</span>  <span class=\"chord\" data-chord=\"F#m7(5-)\">F#m7(5-)</span>\n        <span class=\"chord\" data-chord=\"Em7\">Em7</span>  <span class=\"chord\" data-chord=\"Em\">Em</span>  <span class=\"chord\" data-chord=\"Em7\">Em7</span>  <span class=\"chord\" data-chord=\"G\">G</span>  <span class=\"chord\" data-chord=\"D/F#\">D/F#</span>  <span class=\"chord\" data-chord=\"Em7(9)\">Em7(9)</span>\n\n<span class=\"lyric-line\">[Tab - Final]</span>\n\n   <span class=\"chord\" data-chord=\"G\">G</span>      <span class=\"chord\" data-chord=\"D/F#\">D/F#</span>         <span class=\"chord\" data-chord=\"Em7(9)\">Em7(9)</span>\n\n<span class=\"lyric-line\">E|-3-3-3--2-2-2--0-0-0-0--~-----------------|</span>\n",
+    "chordData": {
+        "Am7": {
+            "name": "Am7",
+            "notes": [
+                "A3",
+                "C4",
+                "E4",
+                "G4"
+            ],
+            "displayNotes": [
+                "A",
+                "C",
+                "E",
+                "G"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "Bm7": {
+            "name": "Bm7",
+            "notes": [
+                "B3",
+                "D4",
+                "F#4",
+                "A4"
+            ],
+            "displayNotes": [
+                "B",
+                "D",
+                "F#",
+                "A"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "C": {
+            "name": "C",
+            "notes": [
+                "C3",
+                "E3",
+                "G3"
+            ],
+            "displayNotes": [
+                "C",
+                "E",
+                "G"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "D": {
+            "name": "D",
+            "notes": [
+                "D3",
+                "F#3",
+                "A3"
+            ],
+            "displayNotes": [
+                "D",
+                "F#",
+                "A"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "D/F#": {
+            "name": "D/F#",
+            "notes": [
+                "F#3",
+                "D4",
+                "F#4",
+                "A4"
+            ],
+            "displayNotes": [
+                "F#",
+                "D",
+                "F#",
+                "A"
+            ],
+            "noteTypes": [
+                "bass",
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Em": {
+            "name": "Em",
+            "notes": [
+                "E3",
+                "G3",
+                "B3"
+            ],
+            "displayNotes": [
+                "E",
+                "G",
+                "B"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Em7": {
+            "name": "Em7",
+            "notes": [
+                "E3",
+                "G3",
+                "B3",
+                "D4"
+            ],
+            "displayNotes": [
+                "E",
+                "G",
+                "B",
+                "D"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "Em7(9)": {
+            "name": "Em7(9)",
+            "notes": [
+                "E3",
+                "G3",
+                "B3",
+                "D4",
+                "F#4"
+            ],
+            "displayNotes": [
+                "E",
+                "G",
+                "B",
+                "D",
+                "F#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh",
+                "ninth"
+            ]
+        },
+        "F#m7(5-)": {
+            "name": "F#m7(5-)",
+            "notes": [
+                "F#3",
+                "A3",
+                "C4",
+                "E4"
+            ],
+            "displayNotes": [
+                "F#",
+                "A",
+                "C",
+                "E"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "G": {
+            "name": "G",
+            "notes": [
+                "G3",
+                "B3",
+                "D4"
+            ],
+            "displayNotes": [
+                "G",
+                "B",
+                "D"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "G/B": {
+            "name": "G/B",
+            "notes": [
+                "B3",
+                "G4",
+                "B4",
+                "D5"
+            ],
+            "displayNotes": [
+                "B",
+                "G",
+                "B",
+                "D"
+            ],
+            "noteTypes": [
+                "bass",
+                "root",
+                "triad",
+                "triad"
+            ]
+        }
+    }
+};

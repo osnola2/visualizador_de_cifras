@@ -1,0 +1,80 @@
+window.SONG_DATA = {
+    "title": "Soul Rebel",
+    "artist": "Bob Marley",
+    "composer": "Funk Ginger The / Anderson (Gb) Ross / Westergaard Mike / Rebel Mc / Bob Marley",
+    "lyricsHtml": "\n<span class=\"chord\" data-chord=\"C#m\">C#m</span>,<span class=\"chord\" data-chord=\"C#m\">C#m</span>,<span class=\"chord\" data-chord=\"B\">B</span>,<span class=\"chord\" data-chord=\"B\">B</span>\n\n      <span class=\"chord\" data-chord=\"C#m\">C#m</span>\n<span class=\"lyric-line\">I'm a rebel</span>\n     <span class=\"chord\" data-chord=\"B\">B</span>  \n<span class=\"lyric-line\">Soul rebel</span>\n      <span class=\"chord\" data-chord=\"C#m\">C#m</span>\n<span class=\"lyric-line\">I'm a capturer</span>\n       <span class=\"chord\" data-chord=\"B\">B</span>\n<span class=\"lyric-line\">Soul adventurer</span>\n<span class=\"chord\" data-chord=\"B\">B</span>                   <span class=\"chord\" data-chord=\"C#m\">C#m</span>\n<span class=\"lyric-line\">See the mornig sun  ah ah ah on the hill side</span>\n<span class=\"chord\" data-chord=\"E\">E</span>    <span class=\"chord\" data-chord=\"F#\">F#</span>          <span class=\"chord\" data-chord=\"B\">B</span>\n<span class=\"lyric-line\"> Not living good travel wide</span>\n<span class=\"chord\" data-chord=\"B\">B</span>        \n<span class=\"lyric-line\">Said I'm a living man</span>\n            <span class=\"chord\" data-chord=\"C#m\">C#m</span>\n<span class=\"lyric-line\">Ah Ah Ah Ah Ah I got work to do</span>\n<span class=\"chord\" data-chord=\"E\">E</span>               <span class=\"chord\" data-chord=\"F#\">F#</span>\n<span class=\"lyric-line\"> If you are not happy children</span>\n         <span class=\"chord\" data-chord=\"B\">B</span>\n<span class=\"lyric-line\">Then you must be blue</span>\n",
+    "chordData": {
+        "B": {
+            "name": "B",
+            "notes": [
+                "B3",
+                "D#4",
+                "F#4"
+            ],
+            "displayNotes": [
+                "B",
+                "D#",
+                "F#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "C#m": {
+            "name": "C#m",
+            "notes": [
+                "C#3",
+                "E3",
+                "G#3"
+            ],
+            "displayNotes": [
+                "C#",
+                "E",
+                "G#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "E": {
+            "name": "E",
+            "notes": [
+                "E3",
+                "G#3",
+                "B3"
+            ],
+            "displayNotes": [
+                "E",
+                "G#",
+                "B"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "F#": {
+            "name": "F#",
+            "notes": [
+                "F#3",
+                "A#3",
+                "C#4"
+            ],
+            "displayNotes": [
+                "F#",
+                "A#",
+                "C#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        }
+    }
+};

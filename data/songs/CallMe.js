@@ -1,0 +1,215 @@
+window.SONG_DATA = {
+    "title": "Call Me",
+    "artist": "Blondie",
+    "composer": "Giorgio Moroder (De 1) / Debbie Harry",
+    "lyricsHtml": "\n[Intro] <span class=\"chord\" data-chord=\"Dm\">Dm</span>  <span class=\"chord\" data-chord=\"G/F\">G/F</span>  <span class=\"chord\" data-chord=\"Dm\">Dm</span>  <span class=\"chord\" data-chord=\"F/C\">F/C</span>\n        <span class=\"chord\" data-chord=\"Dm\">Dm</span>  <span class=\"chord\" data-chord=\"G/F\">G/F</span>  <span class=\"chord\" data-chord=\"Dm\">Dm</span>  <span class=\"chord\" data-chord=\"F/C\">F/C</span>\n\n<span class=\"lyric-line\">[Primeira Parte]</span>\n\n <span class=\"chord\" data-chord=\"Dm\">Dm</span>\n<span class=\"lyric-line\">Color me your color, baby</span>\n <span class=\"chord\" data-chord=\"Bb\">Bb</span>\n<span class=\"lyric-line\">Color me your car</span>\n <span class=\"chord\" data-chord=\"Dm\">Dm</span>\n<span class=\"lyric-line\">Color me your color, darling</span>\n<span class=\"chord\" data-chord=\"Bb\">Bb</span>\n<span class=\"lyric-line\">I know who you are</span>\n <span class=\"chord\" data-chord=\"Gm\">Gm</span>               <span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">Come up off your color chart</span>\n<span class=\"chord\" data-chord=\"Gm\">Gm</span>                   <span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">I know where you're coming from</span>\n\n<span class=\"lyric-line\">[Refrão]</span>\n\n      <span class=\"chord\" data-chord=\"Dm\">Dm</span>          <span class=\"chord\" data-chord=\"F\">F</span>\n<span class=\"lyric-line\">Call me (call me) on the line</span>\n      <span class=\"chord\" data-chord=\"Gm\">Gm</span>         <span class=\"chord\" data-chord=\"Bb\">Bb</span>\n<span class=\"lyric-line\">Call me, call me any anytime</span>\n      <span class=\"chord\" data-chord=\"Dm\">Dm</span>        <span class=\"chord\" data-chord=\"F\">F</span>\n<span class=\"lyric-line\">Call me(call me)I'll arrive</span>\n <span class=\"chord\" data-chord=\"Gm\">Gm</span>                  <span class=\"chord\" data-chord=\"Bb\">Bb</span>\n<span class=\"lyric-line\">You can call me any day or night</span>\n      <span class=\"chord\" data-chord=\"Dm\">Dm</span>\n<span class=\"lyric-line\">Call me!</span>\n\n( <span class=\"chord\" data-chord=\"Dm\">Dm</span>  <span class=\"chord\" data-chord=\"G/F\">G/F</span>  <span class=\"chord\" data-chord=\"Dm\">Dm</span>  <span class=\"chord\" data-chord=\"F/C\">F/C</span> )\n\n<span class=\"lyric-line\">[Segunda Parte]</span>\n\n <span class=\"chord\" data-chord=\"Dm\">Dm</span>\n<span class=\"lyric-line\">Cover me with kisses, baby</span>\n <span class=\"chord\" data-chord=\"Bb\">Bb</span>\n<span class=\"lyric-line\">Cover me with love</span>\n <span class=\"chord\" data-chord=\"Dm\">Dm</span>\n<span class=\"lyric-line\">Roll me in designer sheets</span>\n<span class=\"chord\" data-chord=\"Bb\">Bb</span>\n<span class=\"lyric-line\">I'll never get enough</span>\n  <span class=\"chord\" data-chord=\"Gm\">Gm</span>              <span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">Emotions come, I don't know why</span>\n <span class=\"chord\" data-chord=\"Gm\">Gm</span>             <span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">Cover up love's alibi</span>\n\n<span class=\"lyric-line\">[Refrão]</span>\n\n      <span class=\"chord\" data-chord=\"Dm\">Dm</span>          <span class=\"chord\" data-chord=\"F\">F</span>\n<span class=\"lyric-line\">Call me (call me) on the line</span>\n      <span class=\"chord\" data-chord=\"Gm\">Gm</span>         <span class=\"chord\" data-chord=\"Bb\">Bb</span>\n<span class=\"lyric-line\">Call me, call me any anytime</span>\n      <span class=\"chord\" data-chord=\"Dm\">Dm</span>        <span class=\"chord\" data-chord=\"F\">F</span>\n<span class=\"lyric-line\">Call me(call me)I'll arrive</span>\n  <span class=\"chord\" data-chord=\"Gm\">Gm</span>                       <span class=\"chord\" data-chord=\"Bb\">Bb</span>\n<span class=\"lyric-line\">When you're ready we can share the wine</span>\n      <span class=\"chord\" data-chord=\"Dm\">Dm</span>\n<span class=\"lyric-line\">Call me</span>\n\n( <span class=\"chord\" data-chord=\"Dm\">Dm</span>  <span class=\"chord\" data-chord=\"G/F\">G/F</span>  <span class=\"chord\" data-chord=\"Em\">Em</span>  <span class=\"chord\" data-chord=\"A/G\">A/G</span> )\n\n<span class=\"lyric-line\">[Ponte]</span>\n\n<span class=\"chord\" data-chord=\"Em\">Em</span>                  <span class=\"chord\" data-chord=\"Bm\">Bm</span>\n<span class=\"lyric-line\">Ooh, he speaks the languages of love</span>\n<span class=\"chord\" data-chord=\"Em\">Em</span>            <span class=\"chord\" data-chord=\"Bm\">Bm</span>\n<span class=\"lyric-line\">Ooh, amore, chiamami (chiamami)</span>\n<span class=\"chord\" data-chord=\"F\">F</span>                  <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">Ooh, appelle-moi, mon cheri (appelle-moi)</span>\n    <span class=\"chord\" data-chord=\"Dm\">Dm</span>                           <span class=\"chord\" data-chord=\"Bb\">Bb</span>\n<span class=\"lyric-line\">Anytime, anyplace, anywhere, anyway!</span>\n    <span class=\"chord\" data-chord=\"Gm\">Gm</span>                            <span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">Anytime, anyplace, anywhere, any day!</span>\n\n( <span class=\"chord\" data-chord=\"Em\">Em</span>  <span class=\"chord\" data-chord=\"Bm\">Bm</span>  <span class=\"chord\" data-chord=\"Em\">Em</span>  <span class=\"chord\" data-chord=\"Bm\">Bm</span>  <span class=\"chord\" data-chord=\"F\">F</span>  <span class=\"chord\" data-chord=\"C\">C</span>  <span class=\"chord\" data-chord=\"Dm\">Dm</span>  <span class=\"chord\" data-chord=\"Bb\">Bb</span>  <span class=\"chord\" data-chord=\"Gm\">Gm</span>  <span class=\"chord\" data-chord=\"A\">A</span> )\n\n<span class=\"lyric-line\">[Refrão]</span>\n\n      <span class=\"chord\" data-chord=\"Dm\">Dm</span>          <span class=\"chord\" data-chord=\"F\">F</span>\n<span class=\"lyric-line\">Call me (call me) in my life</span>\n      <span class=\"chord\" data-chord=\"Gm\">Gm</span>           <span class=\"chord\" data-chord=\"Bb\">Bb</span>\n<span class=\"lyric-line\">Call me, call me any anytime</span>\n      <span class=\"chord\" data-chord=\"Dm\">Dm</span>           <span class=\"chord\" data-chord=\"F\">F</span>\n<span class=\"lyric-line\">Call me (call me) au revoir</span>\n <span class=\"chord\" data-chord=\"Gm\">Gm</span>                       <span class=\"chord\" data-chord=\"Bb\">Bb</span>\n<span class=\"lyric-line\">Call me, call me for some overtime</span>\n\n      <span class=\"chord\" data-chord=\"Dm\">Dm</span>          <span class=\"chord\" data-chord=\"F\">F</span>\n<span class=\"lyric-line\">Call me (call me) in my life</span>\n      <span class=\"chord\" data-chord=\"Gm\">Gm</span>         <span class=\"chord\" data-chord=\"Bb\">Bb</span>\n<span class=\"lyric-line\">Call me, call me any sweet desire</span>\n <span class=\"chord\" data-chord=\"Gm\">Gm</span>                \n<span class=\"lyric-line\">Call me, call me for your </span>\n                  <span class=\"chord\" data-chord=\"Bb\">Bb</span>\n<span class=\"lyric-line\">lover's lover's alibi</span>\n      <span class=\"chord\" data-chord=\"Dm\">Dm</span>          <span class=\"chord\" data-chord=\"F\">F</span>\n<span class=\"lyric-line\">Call me (call me) inner line</span>\n      <span class=\"chord\" data-chord=\"Gm\">Gm</span>         <span class=\"chord\" data-chord=\"Bb\">Bb</span>\n<span class=\"lyric-line\">Call me, call me any anytime</span>\n      <span class=\"chord\" data-chord=\"Dm\">Dm</span>\n<span class=\"lyric-line\">Call me</span>\n\n<span class=\"chord\" data-chord=\"F\">F</span>         <span class=\"chord\" data-chord=\"Dm\">Dm</span>         <span class=\"chord\" data-chord=\"Bb\">Bb</span>\n<span class=\"lyric-line\">Oh, call me, ooh ooh ah</span>\n",
+    "chordData": {
+        "A": {
+            "name": "A",
+            "notes": [
+                "A3",
+                "C#4",
+                "E4"
+            ],
+            "displayNotes": [
+                "A",
+                "C#",
+                "E"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "A/G": {
+            "name": "A/G",
+            "notes": [
+                "G3",
+                "A3",
+                "C#4",
+                "E4"
+            ],
+            "displayNotes": [
+                "G",
+                "A",
+                "C#",
+                "E"
+            ],
+            "noteTypes": [
+                "bass",
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Bb": {
+            "name": "Bb",
+            "notes": [
+                "A#3",
+                "D4",
+                "F4"
+            ],
+            "displayNotes": [
+                "Bb",
+                "D",
+                "F"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Bm": {
+            "name": "Bm",
+            "notes": [
+                "B3",
+                "D4",
+                "F#4"
+            ],
+            "displayNotes": [
+                "B",
+                "D",
+                "F#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "C": {
+            "name": "C",
+            "notes": [
+                "C3",
+                "E3",
+                "G3"
+            ],
+            "displayNotes": [
+                "C",
+                "E",
+                "G"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Dm": {
+            "name": "Dm",
+            "notes": [
+                "D3",
+                "F3",
+                "A3"
+            ],
+            "displayNotes": [
+                "D",
+                "F",
+                "A"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Em": {
+            "name": "Em",
+            "notes": [
+                "E3",
+                "G3",
+                "B3"
+            ],
+            "displayNotes": [
+                "E",
+                "G",
+                "B"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "F": {
+            "name": "F",
+            "notes": [
+                "F3",
+                "A3",
+                "C4"
+            ],
+            "displayNotes": [
+                "F",
+                "A",
+                "C"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "F/C": {
+            "name": "F/C",
+            "notes": [
+                "C3",
+                "F3",
+                "A3",
+                "C4"
+            ],
+            "displayNotes": [
+                "C",
+                "F",
+                "A",
+                "C"
+            ],
+            "noteTypes": [
+                "bass",
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "G/F": {
+            "name": "G/F",
+            "notes": [
+                "F3",
+                "G3",
+                "B3",
+                "D4"
+            ],
+            "displayNotes": [
+                "F",
+                "G",
+                "B",
+                "D"
+            ],
+            "noteTypes": [
+                "bass",
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Gm": {
+            "name": "Gm",
+            "notes": [
+                "G3",
+                "A#3",
+                "D4"
+            ],
+            "displayNotes": [
+                "G",
+                "A#",
+                "D"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        }
+    }
+};

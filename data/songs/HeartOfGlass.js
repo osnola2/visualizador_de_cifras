@@ -1,0 +1,134 @@
+window.SONG_DATA = {
+    "title": "Heart Of Glass",
+    "artist": "Blondie",
+    "composer": "Debbie Harry / Chris Stein",
+    "lyricsHtml": "\n[Intro] <span class=\"chord\" data-chord=\"E5\">E5</span>\n\n<span class=\"lyric-line\">[Primeira Parte]</span>\n\n<span class=\"chord\" data-chord=\"E\">E</span>                                 <span class=\"chord\" data-chord=\"C#m\">C#m</span>\n<span class=\"lyric-line\">   Once I had a love and it was a gas</span>\n                                 <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\">Soon turned out had a heart of glass</span>\n                                     <span class=\"chord\" data-chord=\"C#m\">C#m</span>\n<span class=\"lyric-line\">Seemed like the real thing, only to find</span>\n                               <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\">Mucho mistrust, love's gone behind</span>\n\n                                <span class=\"chord\" data-chord=\"C#m\">C#m</span>\n<span class=\"lyric-line\">Once I had a love and it was divine</span>\n                                <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\">Soon found out I was losing my mind</span>\n                                             <span class=\"chord\" data-chord=\"C#m\">C#m</span>\n<span class=\"lyric-line\">It seemed like the real thing but I was so blind</span>\n                               <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\">Mucho mistrust, love's gone behind</span>\n\n( <span class=\"chord\" data-chord=\"E\">E</span>  <span class=\"chord\" data-chord=\"F#\">F#</span>  <span class=\"chord\" data-chord=\"B\">B</span> )\n\n<span class=\"lyric-line\">[Segunda Parte]</span>\n\n<span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">In between</span>\n                                 <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\">What I find is pleasing and I'm feeling fine</span>\n                                  <span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">Love is so confusing, there's no peace of mind</span>\n                               <span class=\"chord\" data-chord=\"F#\">F#</span>\n<span class=\"lyric-line\">If I fear I'm losing you it's just no good</span>\n     <span class=\"chord\" data-chord=\"B\">B</span>\n<span class=\"lyric-line\">You teasing like you do</span>\n\n( <span class=\"chord\" data-chord=\"E\">E</span> )\n\n<span class=\"lyric-line\">[Primeira Parte]</span>\n\n<span class=\"chord\" data-chord=\"E\">E</span>                                 <span class=\"chord\" data-chord=\"C#m\">C#m</span>\n<span class=\"lyric-line\">   Once I had a love and it was a gas</span>\n                                 <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\">Soon turned out had a heart of glass</span>\n                                     <span class=\"chord\" data-chord=\"C#m\">C#m</span>\n<span class=\"lyric-line\">Seemed like the real thing, only to find</span>\n                               <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\">Mucho mistrust, love's gone behind</span>\n\n( <span class=\"chord\" data-chord=\"E\">E</span>  <span class=\"chord\" data-chord=\"F#\">F#</span>  <span class=\"chord\" data-chord=\"B\">B</span> )\n\n<span class=\"lyric-line\">[Refrão]</span>\n\n <span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">Lost inside</span>\n                         <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\">Adorable illusion and I cannot hide</span>\n                                        <span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">I'm the one you're using, please don't push me aside</span>\n                                 <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\">We coulda made it cruising, yeah</span>\n\n( <span class=\"chord\" data-chord=\"E\">E</span>  <span class=\"chord\" data-chord=\"F#\">F#</span>  <span class=\"chord\" data-chord=\"B\">B</span> )\n\n[Solo] <span class=\"chord\" data-chord=\"A\">A</span>  <span class=\"chord\" data-chord=\"E\">E</span>  <span class=\"chord\" data-chord=\"A\">A</span>  <span class=\"chord\" data-chord=\"E\">E</span>\n\n<span class=\"lyric-line\">[Tab - Solo]</span>\n\n<span class=\"lyric-line\">Parte 1 de 4</span>\n\n\n\n\n<span class=\"lyric-line\">Parte 2 de 4</span>\n\n\n\n\n<span class=\"lyric-line\">Parte 3 de 4</span>\n\n\n\n\n<span class=\"lyric-line\">Parte 4 de 4</span>\n\n\n\n<span class=\"lyric-line\">[Ponte]</span>\n\n  <span class=\"chord\" data-chord=\"F#\">F#</span>                 <span class=\"chord\" data-chord=\"B\">B</span>           <span class=\"chord\" data-chord=\"C#m\">C#m</span>   <span class=\"chord\" data-chord=\"D\">D</span>   <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\">Yeah, riding high on love's true bluish light</span>\n\n<span class=\"lyric-line\">Ooh, oh, ooh, oh</span>\n\n<span class=\"lyric-line\">Ooh, oh, ooh, oh</span>\n\n<span class=\"lyric-line\">[Refrão Final]</span>\n\n<span class=\"chord\" data-chord=\"E\">E</span>                              <span class=\"chord\" data-chord=\"C#m\">C#m</span>\n<span class=\"lyric-line\">Once I had a love and it was a gas</span>\n                                    <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\">Soon turned out to be a pain in the ass</span>\n                                    <span class=\"chord\" data-chord=\"C#m\">C#m</span>\n<span class=\"lyric-line\">Seemed like the real thing only to find</span>\n                               <span class=\"chord\" data-chord=\"E\">E</span>\n<span class=\"lyric-line\">Mucho mistrust, love's gone behind</span>\n\n<span class=\"lyric-line\">Ooh, oh, ooh, oh</span>\n\n<span class=\"lyric-line\">Ooh, oh, ooh, oh</span>\n",
+    "chordData": {
+        "A": {
+            "name": "A",
+            "notes": [
+                "A3",
+                "C#4",
+                "E4"
+            ],
+            "displayNotes": [
+                "A",
+                "C#",
+                "E"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "B": {
+            "name": "B",
+            "notes": [
+                "B3",
+                "D#4",
+                "F#4"
+            ],
+            "displayNotes": [
+                "B",
+                "D#",
+                "F#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "C#m": {
+            "name": "C#m",
+            "notes": [
+                "C#3",
+                "E3",
+                "G#3"
+            ],
+            "displayNotes": [
+                "C#",
+                "E",
+                "G#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "D": {
+            "name": "D",
+            "notes": [
+                "D3",
+                "F#3",
+                "A3"
+            ],
+            "displayNotes": [
+                "D",
+                "F#",
+                "A"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "E": {
+            "name": "E",
+            "notes": [
+                "E3",
+                "G#3",
+                "B3"
+            ],
+            "displayNotes": [
+                "E",
+                "G#",
+                "B"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "E5": {
+            "name": "E5",
+            "notes": [
+                "E3",
+                "G#3",
+                "B3"
+            ],
+            "displayNotes": [
+                "E",
+                "G#",
+                "B"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "F#": {
+            "name": "F#",
+            "notes": [
+                "F#3",
+                "A#3",
+                "C#4"
+            ],
+            "displayNotes": [
+                "F#",
+                "A#",
+                "C#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        }
+    }
+};
