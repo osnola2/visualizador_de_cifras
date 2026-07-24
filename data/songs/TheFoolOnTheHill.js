@@ -1,0 +1,140 @@
+window.SONG_DATA = {
+    "title": "The Fool On The Hill",
+    "artist": "The Beatles",
+    "composer": "Paul Mccartney / Beatles (The)",
+    "lyricsHtml": "\n <span class=\"chord\" data-chord=\"D\">D</span>             <span class=\"chord\" data-chord=\"Em\">Em</span>\r\n<span class=\"lyric-line\">Day after day alone on a hill the\r</span>\n <span class=\"chord\" data-chord=\"D\">D</span>                                   <span class=\"chord\" data-chord=\"Em\">Em</span>\r\n<span class=\"lyric-line\">The man with the foolish grin is keeping perfectly still, But\r</span>\n<span class=\"chord\" data-chord=\"Em\">Em</span>              <span class=\"chord\" data-chord=\"A7\">A7</span>                  <span class=\"chord\" data-chord=\"D\">D</span>                  <span class=\"chord\" data-chord=\"Bm7\">Bm7</span>\r\n<span class=\"lyric-line\">Nobody wants to know him, they can see that he's just a fool and\r</span>\n<span class=\"chord\" data-chord=\"Em\">Em</span>                 <span class=\"chord\" data-chord=\"A7\">A7</span>\r\n<span class=\"lyric-line\">He never gives an answer\r</span>\n\r\n         <span class=\"chord\" data-chord=\"Dm\">Dm</span>   <span class=\"chord\" data-chord=\"Bb\">Bb</span>     <span class=\"chord\" data-chord=\"Dm\">Dm</span>            <span class=\"chord\" data-chord=\"Bb\">Bb</span>\r\n<span class=\"lyric-line\">But the fool on the hill, sees the sun going down and the\r</span>\n<span class=\"chord\" data-chord=\"C\">C</span>                       <span class=\"chord\" data-chord=\"Dm\">Dm</span>              <span class=\"chord\" data-chord=\"Dm\">Dm</span>     <span class=\"chord\" data-chord=\"D\">D</span>\r\n<span class=\"lyric-line\">Eyes in his head see the world spinning round\r</span>\n\r\n  <span class=\"chord\" data-chord=\"D\">D</span>              <span class=\"chord\" data-chord=\"Em\">Em</span>\r\n<span class=\"lyric-line\">Well on the way head in a cloud, the\r</span>\n <span class=\"chord\" data-chord=\"D\">D</span>                                 <span class=\"chord\" data-chord=\"Em\">Em</span>\r\n<span class=\"lyric-line\">Man of thousand voices talking perfectly loud, But\r</span>\n<span class=\"chord\" data-chord=\"Em\">Em</span>              <span class=\"chord\" data-chord=\"A7\">A7</span>              <span class=\"chord\" data-chord=\"D\">D</span>                  <span class=\"chord\" data-chord=\"Bm7\">Bm7</span>\r\n<span class=\"lyric-line\">Nobody ever hears him, or the sound he appears to make and\r</span>\n<span class=\"chord\" data-chord=\"Em\">Em</span>                 <span class=\"chord\" data-chord=\"A7\">A7</span>\r\n<span class=\"lyric-line\">He never seems to notice\r</span>\n\r\n         <span class=\"chord\" data-chord=\"Dm\">Dm</span>   <span class=\"chord\" data-chord=\"Bb\">Bb</span>    <span class=\"chord\" data-chord=\"Dm\">Dm</span>            <span class=\"chord\" data-chord=\"Bb\">Bb</span>\r\n<span class=\"lyric-line\">But the fool on the hill sees the sun going down and the\r</span>\n<span class=\"chord\" data-chord=\"C\">C</span>                        <span class=\"chord\" data-chord=\"Dm\">Dm</span>             <span class=\"chord\" data-chord=\"Dm\">Dm</span>     <span class=\"chord\" data-chord=\"D\">D</span>\r\n<span class=\"lyric-line\">Eyes in his head see the world spinning round\r</span>\n\r\n <span class=\"chord\" data-chord=\"D\">D</span>  <span class=\"chord\" data-chord=\"Em\">Em</span>  <span class=\"chord\" data-chord=\"D\">D</span>  <span class=\"chord\" data-chord=\"Em\">Em</span>\r\n\r\n\n\r\n<span class=\"chord\" data-chord=\"Em\">Em</span>              <span class=\"chord\" data-chord=\"A7\">A7</span>                 <span class=\"chord\" data-chord=\"D\">D</span>                     <span class=\"chord\" data-chord=\"Bm7\">Bm7</span>\r\n<span class=\"lyric-line\">Nobody seems to like him, they can tell what he wants to do and\r</span>\n    <span class=\"chord\" data-chord=\"Em\">Em</span>              <span class=\"chord\" data-chord=\"A7\">A7</span>\r\n<span class=\"lyric-line\">He never shows his feelings\r</span>\n\r\n         <span class=\"chord\" data-chord=\"Dm\">Dm</span>  <span class=\"chord\" data-chord=\"Bb\">Bb</span>       <span class=\"chord\" data-chord=\"Dm\">Dm</span>          <span class=\"chord\" data-chord=\"Bb\">Bb</span>\r\n<span class=\"lyric-line\">But the fool on the hill sees the sun going down and the\r</span>\n<span class=\"chord\" data-chord=\"C\">C</span>                        <span class=\"chord\" data-chord=\"Dm\">Dm</span>              <span class=\"chord\" data-chord=\"Dm\">Dm</span>    <span class=\"chord\" data-chord=\"D\">D</span>\r\n<span class=\"lyric-line\">Eyes in his head see the world spinning round\r</span>\n\r\n <span class=\"chord\" data-chord=\"D\">D</span>             <span class=\"chord\" data-chord=\"Em\">Em</span>        <span class=\"chord\" data-chord=\"D\">D</span>                 <span class=\"chord\" data-chord=\"Em\">Em</span>\r\n<span class=\"lyric-line\">Oohh, oohh, oohh!       Round, round, round, round, round\r</span>\n\r\n\n\r\n<span class=\"chord\" data-chord=\"Em\">Em</span>              <span class=\"chord\" data-chord=\"A7\">A7</span>         <span class=\"chord\" data-chord=\"D\">D</span>                      <span class=\"chord\" data-chord=\"Bm7\">Bm7</span>\r\n<span class=\"lyric-line\">He never listen to them he knows that they're the fools\r</span>\n<span class=\"chord\" data-chord=\"Em\">Em</span>              <span class=\"chord\" data-chord=\"A7\">A7</span>\r\n<span class=\"lyric-line\">    They don't like him\r</span>\n\r\n     <span class=\"chord\" data-chord=\"Dm\">Dm</span>   <span class=\"chord\" data-chord=\"Bb\">Bb</span>       <span class=\"chord\" data-chord=\"Dm\">Dm</span>           <span class=\"chord\" data-chord=\"Bb\">Bb</span>\r\n<span class=\"lyric-line\">The fool on the hill sees the sun going down and the\r</span>\n<span class=\"chord\" data-chord=\"C\">C</span>                        <span class=\"chord\" data-chord=\"Dm\">Dm</span>             <span class=\"chord\" data-chord=\"Dm\">Dm</span>     <span class=\"chord\" data-chord=\"D\">D</span>\r\n<span class=\"lyric-line\">Eyes in his head see the world spinning round\r</span>\n\r\n   <span class=\"chord\" data-chord=\"D\">D</span>        <span class=\"chord\" data-chord=\"Em\">Em</span>     <span class=\"chord\" data-chord=\"D\">D</span>      <span class=\"chord\" data-chord=\"Em\">Em</span>\r\n<span class=\"lyric-line\">Oohh, round.. round..   ooohh\r</span>\n\r\n\n",
+    "chordData": {
+        "A7": {
+            "name": "A7",
+            "notes": [
+                "A3",
+                "C#4",
+                "E4",
+                "G4"
+            ],
+            "displayNotes": [
+                "A",
+                "C#",
+                "E",
+                "G"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "Bb": {
+            "name": "Bb",
+            "notes": [
+                "A#3",
+                "D4",
+                "F4"
+            ],
+            "displayNotes": [
+                "Bb",
+                "D",
+                "F"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Bm7": {
+            "name": "Bm7",
+            "notes": [
+                "B3",
+                "D4",
+                "F#4",
+                "A4"
+            ],
+            "displayNotes": [
+                "B",
+                "D",
+                "F#",
+                "A"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "C": {
+            "name": "C",
+            "notes": [
+                "C3",
+                "E3",
+                "G3"
+            ],
+            "displayNotes": [
+                "C",
+                "E",
+                "G"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "D": {
+            "name": "D",
+            "notes": [
+                "D3",
+                "F#3",
+                "A3"
+            ],
+            "displayNotes": [
+                "D",
+                "F#",
+                "A"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Dm": {
+            "name": "Dm",
+            "notes": [
+                "D3",
+                "F3",
+                "A3"
+            ],
+            "displayNotes": [
+                "D",
+                "F",
+                "A"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Em": {
+            "name": "Em",
+            "notes": [
+                "E3",
+                "G3",
+                "B3"
+            ],
+            "displayNotes": [
+                "E",
+                "G",
+                "B"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        }
+    }
+};

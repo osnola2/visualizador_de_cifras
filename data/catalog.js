@@ -92,6 +92,13 @@ const SONGS_CATALOG = [
         "chordsCount": 3
     },
     {
+        "id": "AllYouNeedIsLove",
+        "title": "All You Need Is Love",
+        "artist": "The Beatles",
+        "composer": "Paul Mccartney / Beatles (The)",
+        "chordsCount": 12
+    },
+    {
         "id": "Antonico",
         "title": "Antonico",
         "artist": "Ismael Silva",
@@ -302,11 +309,25 @@ const SONGS_CATALOG = [
         "chordsCount": 4
     },
     {
+        "id": "CodinomeBeijaflor",
+        "title": "Codinome Beija-flor",
+        "artist": "Luiz Melodia",
+        "composer": "Cazuza / Ezequiel Neves / Reinaldo Arias",
+        "chordsCount": 16
+    },
+    {
         "id": "ComQueRoupa",
         "title": "Com que roupa?",
         "artist": "Noel Rosa",
         "composer": "Noel Rosa",
         "chordsCount": 34
+    },
+    {
+        "id": "Congenito",
+        "title": "Congênito",
+        "artist": "Luiz Melodia",
+        "composer": "Luíz Melodia",
+        "chordsCount": 12
     },
     {
         "id": "Conselheiro",
@@ -384,6 +405,13 @@ const SONGS_CATALOG = [
         "artist": "The Beatles",
         "composer": "Paul Mccartney / Beatles (The)",
         "chordsCount": 13
+    },
+    {
+        "id": "DearPrudence",
+        "title": "Dear Prudence",
+        "artist": "The Beatles",
+        "composer": "Paul Mccartney / Beatles (The)",
+        "chordsCount": 7
     },
     {
         "id": "DeixaClarear",
@@ -491,6 +519,13 @@ const SONGS_CATALOG = [
         "chordsCount": 11
     },
     {
+        "id": "FarrapoHumano",
+        "title": "Farrapo Humano",
+        "artist": "Luiz Melodia",
+        "composer": "Luíz Melodia",
+        "chordsCount": 10
+    },
+    {
         "id": "Favela",
         "title": "Favela",
         "artist": "Padeirinho",
@@ -524,6 +559,13 @@ const SONGS_CATALOG = [
         "artist": "sessa",
         "composer": "Sessa",
         "chordsCount": 9
+    },
+    {
+        "id": "ForNoOne",
+        "title": "For No One",
+        "artist": "The Beatles",
+        "composer": "John Lennon / Paul McCartney",
+        "chordsCount": 10
     },
     {
         "id": "GagoApaixonado",
@@ -617,6 +659,20 @@ const SONGS_CATALOG = [
         "chordsCount": 6
     },
     {
+        "id": "IAmTheWalrus",
+        "title": "I Am The Walrus",
+        "artist": "The Beatles",
+        "composer": "Paul Mccartney / Beatles (The)",
+        "chordsCount": 15
+    },
+    {
+        "id": "IMeMine",
+        "title": "I Me Mine",
+        "artist": "The Beatles",
+        "composer": "George Harrison",
+        "chordsCount": 10
+    },
+    {
         "id": "Iarinhas",
         "title": "Iarinhas",
         "artist": "Luiza Lian",
@@ -692,6 +748,13 @@ const SONGS_CATALOG = [
         "artist": "Zeca Pagodinho",
         "composer": "Sinhô / José Barbosa Da Silva",
         "chordsCount": 10
+    },
+    {
+        "id": "JuventudeTransviada",
+        "title": "Juventude Transviada",
+        "artist": "Luiz Melodia",
+        "composer": "Luíz Melodia",
+        "chordsCount": 13
     },
     {
         "id": "LadeiraDaMemoria",
@@ -1247,6 +1310,13 @@ const SONGS_CATALOG = [
         "chordsCount": 12
     },
     {
+        "id": "SgtPeppersLonelyHeartsClubBand",
+        "title": "Sgt. Pepper's Lonely Hearts Club Band",
+        "artist": "The Beatles",
+        "composer": "Paul Mccartney / Beatles (The)",
+        "chordsCount": 7
+    },
+    {
         "id": "Solidao",
         "title": "Solidão",
         "artist": "Alceu Valença",
@@ -1324,6 +1394,13 @@ const SONGS_CATALOG = [
         "chordsCount": 2
     },
     {
+        "id": "TheFoolOnTheHill",
+        "title": "The Fool On The Hill",
+        "artist": "The Beatles",
+        "composer": "Paul Mccartney / Beatles (The)",
+        "chordsCount": 7
+    },
+    {
         "id": "TheLongAndWindingRoad",
         "title": "The Long And Winding Road",
         "artist": "The Beatles",
@@ -1371,6 +1448,13 @@ const SONGS_CATALOG = [
         "artist": "Bob Marley",
         "composer": "Bob Marley",
         "chordsCount": 3
+    },
+    {
+        "id": "TicketToRide",
+        "title": "Ticket To Ride",
+        "artist": "The Beatles",
+        "composer": "Paul Mccartney / Beatles (The)",
+        "chordsCount": 9
     },
     {
         "id": "TillTheNextGoodbye",
@@ -1527,6 +1611,13 @@ const SONGS_CATALOG = [
         "chordsCount": 6
     },
     {
+        "id": "WithALittleHelpFromMyFriends",
+        "title": "With A Little Help From My Friends",
+        "artist": "The Beatles",
+        "composer": "Paul Mccartney / Beatles (The)",
+        "chordsCount": 10
+    },
+    {
         "id": "XoteDasMeninas",
         "title": "Xote Das Meninas",
         "artist": "Alceu Valença",
@@ -1546,6 +1637,13 @@ const SONGS_CATALOG = [
         "artist": "The Rolling Stones",
         "composer": "",
         "chordsCount": 4
+    },
+    {
+        "id": "YouveGotToHideYourLoveAway",
+        "title": "You've Got To Hide Your Love Away",
+        "artist": "The Beatles",
+        "composer": "Paul Mccartney / Beatles (The)",
+        "chordsCount": 11
     },
     {
         "id": "ZDaQuestao",
