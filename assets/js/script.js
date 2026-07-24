@@ -380,54 +380,73 @@ function initViewer() {
     }
 
     let currentPlayingChordEl = null;
+    function updateActiveChordUI(activeChordData) {
+        if (!activeChordData || activeChordData.element === currentPlayingChordEl) return;
+        
+        currentPlayingChordEl = activeChordData.element;
+        resetPiano();
+        const idxInSong = allChords.indexOf(activeChordData);
+        const nextItem = (idxInSong >= 0 && idxInSong < allChords.length - 1) ? allChords[idxInSong + 1] : null;
+        const nextData = nextItem ? nextItem.chordName : null;
+        const nextLyric = nextItem ? getLyricForChordElement(nextItem.element) : null;
+        showChord(activeChordData.chordName, nextData, nextLyric);
+        if (window.chordSynth && window.chordSynth.isAudioEnabled && chordData[activeChordData.chordName]) {
+            window.chordSynth.triggerChord(chordData[activeChordData.chordName]);
+        }
+        
+        document.querySelectorAll('.chord.active-chord').forEach(c => c.classList.remove('active-chord'));
+        activeChordData.element.classList.add('active-chord');
+
+        // Note: the old code was targeting .chord.active, we should also maintain that if necessary
+        document.querySelectorAll('.chord.active').forEach(c => c.classList.remove('active'));
+        activeChordData.element.classList.add('active');
+
+        document.querySelectorAll('.lyric-line.active-line').forEach(el => el.classList.remove('active-line'));
+        let curr = activeChordData.element.nextSibling;
+        while (curr) {
+            if (curr.nodeType === 1 && curr.classList.contains('lyric-line')) {
+                curr.classList.add('active-line');
+                break;
+            }
+            curr = curr.nextSibling;
+        }
+
+        highlightRightPanelLyric(activeChordData.element);
+    }
+
     window.addEventListener('scroll', () => {
         if (allChords.length === 0) return;
         
-        let activeChordData = null;
+        let bestChord = null;
         if (window.scrollY < 40) {
-            activeChordData = allChords[0];
+            bestChord = allChords[0];
         } else {
             const readingY = window.scrollY + 320;
             for (let i = 0; i < allChords.length; i++) {
                 if (readingY >= allChords[i].effectiveY) {
-                    activeChordData = allChords[i];
+                    bestChord = allChords[i];
                 } else {
                     break;
                 }
             }
         }
         
-        if (!activeChordData && allChords.length > 0) {
-            activeChordData = allChords[0];
+        if (!bestChord && allChords.length > 0) {
+            bestChord = allChords[0];
+        }
+
+        let activeChordData = bestChord;
+        // Correção para acordes na mesma linha: 
+        // Se a rolagem encontrar um acorde na mesma linha do que já está ativo, 
+        // não pule para o último acorde da linha automaticamente.
+        if (bestChord && currentPlayingChordEl) {
+            const currentData = allChords.find(c => c.element === currentPlayingChordEl);
+            if (currentData && Math.abs(currentData.effectiveY - bestChord.effectiveY) < 10) {
+                activeChordData = currentData;
+            }
         }
         
-        if (activeChordData && activeChordData.element !== currentPlayingChordEl) {
-            currentPlayingChordEl = activeChordData.element;
-            resetPiano();
-            const idxInSong = allChords.indexOf(activeChordData);
-            const nextItem = (idxInSong >= 0 && idxInSong < allChords.length - 1) ? allChords[idxInSong + 1] : null;
-            const nextData = nextItem ? nextItem.chordName : null;
-            const nextLyric = nextItem ? getLyricForChordElement(nextItem.element) : null;
-            showChord(activeChordData.chordName, nextData, nextLyric);
-            if (window.chordSynth && window.chordSynth.isAudioEnabled && chordData[activeChordData.chordName]) {
-                window.chordSynth.triggerChord(chordData[activeChordData.chordName]);
-            }
-            
-            document.querySelectorAll('.chord.active-chord').forEach(c => c.classList.remove('active-chord'));
-            activeChordData.element.classList.add('active-chord');
-
-            document.querySelectorAll('.lyric-line.active-line').forEach(el => el.classList.remove('active-line'));
-            let curr = activeChordData.element.nextSibling;
-            while (curr) {
-                if (curr.nodeType === 1 && curr.classList.contains('lyric-line')) {
-                    curr.classList.add('active-line');
-                    break;
-                }
-                curr = curr.nextSibling;
-            }
-
-            highlightRightPanelLyric(activeChordData.element);
-        }
+        updateActiveChordUI(activeChordData);
     });
 
 
@@ -516,20 +535,124 @@ function initViewer() {
         }
     });
 
-    const audioSynthBtn = document.getElementById('audio-synth-btn');
-    if (audioSynthBtn && window.chordSynth) {
-        window.chordSynth.setTimbre('piano');
-        audioSynthBtn.addEventListener('click', () => {
-            const enabled = window.chordSynth.toggleAudio();
-            if (enabled) {
-                audioSynthBtn.classList.add('active');
-                audioSynthBtn.innerHTML = '<span class="icon">🔊</span> Áudio: ON';
-                if (currentDisplayedChordId && chordData[currentDisplayedChordId]) {
-                    window.chordSynth.triggerChord(chordData[currentDisplayedChordId]);
-                }
+    // MIDI Sync Logic
+    const midiSyncBtn = document.getElementById('midi-sync-btn');
+    let isMidiSyncActive = false;
+    let expectedChordIndex = 0;
+
+    if (midiSyncBtn && window.MidiDetector) {
+        midiSyncBtn.addEventListener('click', () => {
+            isMidiSyncActive = !isMidiSyncActive;
+            if (isMidiSyncActive) {
+                window.MidiDetector.init();
+                midiSyncBtn.classList.add('active');
+                midiSyncBtn.innerHTML = '<span class="icon">🎹</span> Scroll por Demanda: ON';
+                
+                // Sincroniza o index inicial com o acorde atualmente visível
+                const chords = Array.from(document.querySelectorAll('.chord'));
+                const activeEl = document.querySelector('.chord.active');
+                expectedChordIndex = activeEl ? Math.max(0, chords.indexOf(activeEl)) : 0;
             } else {
-                audioSynthBtn.classList.remove('active');
-                audioSynthBtn.innerHTML = '<span class="icon">🔇</span> Áudio: OFF';
+                midiSyncBtn.classList.remove('active');
+                midiSyncBtn.innerHTML = '<span class="icon">🎹</span> Scroll por Demanda: OFF';
+            }
+        });
+
+        function getEquivalents(chordStr) {
+            if (!chordStr) return [];
+            
+            const SHARPS_TO_FLATS = {'C#': 'Db', 'D#': 'Eb', 'F#': 'Gb', 'G#': 'Ab', 'A#': 'Bb'};
+            const FLATS_TO_SHARPS = {'Db': 'C#', 'Eb': 'D#', 'Gb': 'F#', 'Ab': 'G#', 'Bb': 'A#'};
+            
+            let alt1 = chordStr;
+            let alt2 = chordStr;
+            
+            if (/^[A-G]#/.test(chordStr)) alt1 = chordStr.replace(/^[A-G]#/, m => SHARPS_TO_FLATS[m]);
+            if (/^[A-G]b/.test(chordStr)) alt2 = chordStr.replace(/^[A-G]b/, m => FLATS_TO_SHARPS[m]);
+            
+            let result = new Set([chordStr, alt1, alt2]);
+            
+            const aliases = [
+                {from: 'maj7', to: '7M'},
+                {from: 'maj7', to: 'M7'},
+                {from: 'dim7', to: '°'},
+                {from: 'dim', to: '°'},
+                {from: 'm7(b5)', to: 'm7b5'}
+            ];
+            
+            let expanded = new Set(result);
+            for (let r of result) {
+                for (let alias of aliases) {
+                    if (r.includes(alias.from)) expanded.add(r.replace(alias.from, alias.to));
+                    if (r.includes(alias.to)) expanded.add(r.replace(alias.to, alias.from));
+                }
+            }
+            
+            return Array.from(expanded);
+        }
+
+        window.MidiDetector.addListener((sortedNotes, chordName, changedNote, isNoteOn) => {
+            if (!isMidiSyncActive || !isNoteOn || !chordName) return;
+
+            // Atualiza a caixa na tela exibindo as opções enarmônicas
+            const playedDisplay = document.getElementById('midi-played-chord-name');
+            if (playedDisplay) {
+                const SHARPS_TO_FLATS = {'C#': 'Db', 'D#': 'Eb', 'F#': 'Gb', 'G#': 'Ab', 'A#': 'Bb'};
+                let displayStr = chordName;
+                if (/^[A-G]#/.test(chordName)) {
+                    let flat = chordName.replace(/^[A-G]#/, m => SHARPS_TO_FLATS[m]);
+                    displayStr = `${chordName} / ${flat}`;
+                }
+                playedDisplay.textContent = displayStr;
+            }
+
+            const chords = Array.from(document.querySelectorAll('.chord'));
+            if (chords.length === 0) return;
+
+            // Tenta encontrar o índice do acorde ativo na tela
+            const activeEl = document.querySelector('.chord.active');
+            let currentIdx = -1;
+            if (activeEl) {
+                currentIdx = chords.indexOf(activeEl);
+                // Se a tela se deslocou muito do que o script esperava, ressincroniza.
+                // O expectedChordIndex deve sempre apontar para o PRÓXIMO acorde (currentIdx + 1).
+                if (currentIdx > expectedChordIndex || currentIdx < expectedChordIndex - 2) {
+                    expectedChordIndex = currentIdx + 1;
+                }
+            }
+
+            let targetChordEl = null;
+            let equivalents = getEquivalents(chordName);
+
+            // 1. Tenta dar match no PRÓXIMO acorde (Avança a música)
+            if (expectedChordIndex < chords.length) {
+                let nextName = chords[expectedChordIndex].textContent.trim();
+                if (equivalents.includes(nextName)) {
+                    targetChordEl = chords[expectedChordIndex];
+                    expectedChordIndex++; // Avançou! O próximo passa a ser o seguinte
+                }
+            }
+
+            // 2. Se não era o próximo, tenta dar match no acorde ATUAL 
+            // (Isso permite que o usuário "bombe" o acorde atual repetidas vezes sem avançar acidentalmente)
+            if (!targetChordEl && currentIdx >= 0 && currentIdx < chords.length) {
+                let currentName = chords[currentIdx].textContent.trim();
+                if (equivalents.includes(currentName)) {
+                    targetChordEl = chords[currentIdx];
+                    // Não incrementamos o expectedChordIndex, pois ele continua no atual
+                }
+            }
+
+            if (targetChordEl) {
+                // Atualiza a UI imediatamente, não depende apenas do scroll (crucial para acordes na mesma linha)
+                const targetData = allChords.find(c => c.element === targetChordEl);
+                if (targetData) {
+                    updateActiveChordUI(targetData);
+                }
+                
+                const rect = targetChordEl.getBoundingClientRect();
+                const targetY = rect.top + window.scrollY - 300; 
+                window.scrollTo({ top: targetY, behavior: 'smooth' });
             }
         });
     }

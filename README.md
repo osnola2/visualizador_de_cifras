@@ -15,6 +15,7 @@ Um ecossistema interativo e automatizado para visualização, análise harmônic
   - **Violão (`viewer.html` / `viewer-violao.html`):** Diagramas harmônicos e transposição.
   - **Cavaquinho (`viewer-cavaquinho.html`):** Digitações e diagramas específicos para cavaquinho em afinação padrão (D-G-B-D).
   - **Piano / Teclado (`viewer-piano.html`):** Teclado virtual que destaca visualmente as notas que compõem cada acorde na transposição ativa.
+- **Scroll por Demanda (Sincronização MIDI):** Integração com a API Web MIDI. Ao conectar um teclado controlador, o visualizador acompanha o seu ritmo, avançando a letra e destacando o próximo acorde apenas quando você toca a harmonia exata no instrumento.
 - **Análise Harmônica (`chord_parser.py`):** Motor de cálculo capaz de decompor acordes complexos, identificar tônicas, qualidades e extensões de notas.
 - **Pipeline Automatizado CLI (`tools/gerar_musica.py`):** Importação direta via terminal a partir de portais como Cifra Club e Ultimate Guitar, convertendo o HTML/Markdown em arquivos estruturados (`.json` / `.js`) e regerando o índice automaticamente.
 

@@ -40,8 +40,8 @@
         <button id="autoscroll-btn" class="glass-btn">
             <span class="icon">▶</span> Auto-scroll
         </button>
-        <button id="audio-synth-btn" class="glass-btn" title="Ativar/Desativar Áudio dos Acordes no Scroll">
-            <span class="icon">🔇</span> Áudio: OFF
+        <button id="midi-sync-btn" class="glass-btn" title="Rolar a tela tocando os acordes no MIDI">
+            <span class="icon">🎹</span> Scroll por Demanda: OFF
         </button>
         <div class="speed-control glass-panel" style="display: flex; align-items: center; gap: 6px; padding: 0.35rem 0.6rem; border-radius: 12px; border: 1px solid var(--glass-border);">
             <label for="speed-slider" id="speed-label" style="font-size: 0.85rem; font-weight: 700; color: #cbd5e1;">Ajuste: 1.0x</label>
@@ -112,8 +112,15 @@
 
             <!-- 2. Módulo Próximo Acorde (NextChordVisualizer) -->
             <div id="next-chord-section" style="width: 100%; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 0.3rem; margin-top: 0.3rem;"></div>
+            
+            <!-- 3. Acorde Tocado via MIDI -->
+            <div id="midi-played-section" style="width: 100%; border-top: 1px solid rgba(255,255,255,0.08); border-bottom: 1px solid rgba(255,255,255,0.08); padding: 0.5rem 0; margin-top: 0.3rem; text-align: center; background: rgba(0,0,0,0.2); border-radius: 8px;">
+                <span style="font-size: 0.75rem; font-weight: 700; color: #facc15; letter-spacing: 0.5px; text-transform: uppercase;">🎹 Tocado agora:</span>
+                <div id="midi-played-chord-name" style="font-size: 1.6rem; color: #fff; margin-top: 0.2rem; font-weight: 800; min-height: 2.2rem; display: flex; align-items: center; justify-content: center;">---</div>
+            </div>
     </aside>
 
+    <script src="assets/modules/MidiDetector.js"></script>
     <script src="assets/modules/ChordSynth.js?v=1"></script>
     <script src="assets/modules/NextChordVisualizer.js?v=35"></script>
     <script src="assets/js/script.js?v=35"></script>
