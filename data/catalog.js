@@ -15,6 +15,13 @@ const SONGS_CATALOG = [
         "chordsCount": 11
     },
     {
+        "id": "AMorteDoVaqueiro",
+        "title": "A Morte do Vaqueiro",
+        "artist": "Luiz Gonzaga",
+        "composer": "Luiz Gonzaga / Nelson Barbalho",
+        "chordsCount": 7
+    },
+    {
         "id": "ANivelDe",
         "title": "A Nível De...",
         "artist": "João Bosco",
@@ -99,6 +106,13 @@ const SONGS_CATALOG = [
         "chordsCount": 12
     },
     {
+        "id": "AmanhaEuVou",
+        "title": "Amanhã Eu Vou",
+        "artist": "Luiz Gonzaga",
+        "composer": "Luiz Gonzaga / Beduino",
+        "chordsCount": 6
+    },
+    {
         "id": "Antonico",
         "title": "Antonico",
         "artist": "Ismael Silva",
@@ -118,6 +132,13 @@ const SONGS_CATALOG = [
         "artist": "Adoniran Barbosa",
         "composer": "Adoniran Barbosa",
         "chordsCount": 7
+    },
+    {
+        "id": "ApologiaAoJumento",
+        "title": "Apologia Ao Jumento",
+        "artist": "Luiz Gonzaga",
+        "composer": "Luiz Gonzaga / José Clementino",
+        "chordsCount": 4
     },
     {
         "id": "AsRosasNaoFalam",
@@ -159,6 +180,13 @@ const SONGS_CATALOG = [
         "title": "Back In Bahia",
         "artist": "Gilberto Gil",
         "composer": "Gilberto Gil",
+        "chordsCount": 3
+    },
+    {
+        "id": "BaiaoDaPenha",
+        "title": "Baião da Penha",
+        "artist": "Luiz Gonzaga",
+        "composer": "Luiz Gonzaga / David Nasser / Guio De Morais",
         "chordsCount": 3
     },
     {
@@ -293,6 +321,13 @@ const SONGS_CATALOG = [
         "artist": "Zé Ramalho",
         "composer": "Ze Ramalho",
         "chordsCount": 9
+    },
+    {
+        "id": "CigarroDePaia",
+        "title": "Cigarro de Paia",
+        "artist": "Luiz Gonzaga",
+        "composer": "Armando Cavalcanti / Klecius Caldas",
+        "chordsCount": 5
     },
     {
         "id": "CirandaParaJanaina",
@@ -743,6 +778,13 @@ const SONGS_CATALOG = [
         "chordsCount": 10
     },
     {
+        "id": "Juazeiro",
+        "title": "Juazeiro",
+        "artist": "Luiz Gonzaga",
+        "composer": "Humberto Teixeira / Luiz Gonzaga",
+        "chordsCount": 6
+    },
+    {
         "id": "Jura",
         "title": "Jura",
         "artist": "Zeca Pagodinho",
@@ -981,6 +1023,13 @@ const SONGS_CATALOG = [
         "chordsCount": 3
     },
     {
+        "id": "NumaSalaDeReboco",
+        "title": "Numa Sala de Reboco",
+        "artist": "Luiz Gonzaga",
+        "composer": "Jose Marcolino / Gonzagao",
+        "chordsCount": 6
+    },
+    {
         "id": "NuvemNegra",
         "title": "Nuvem Negra",
         "artist": "Gal Costa",
@@ -1000,6 +1049,13 @@ const SONGS_CATALOG = [
         "artist": "Wilson Batista",
         "composer": "Ataulfo Alves/Wilson Batista",
         "chordsCount": 9
+    },
+    {
+        "id": "OCheiroDaCarolina",
+        "title": "O Cheiro da Carolina",
+        "artist": "Luiz Gonzaga",
+        "composer": "Zé Gonzaga / Amorim Roxo",
+        "chordsCount": 3
     },
     {
         "id": "OHomemDeuNomeATodosAnimais",
@@ -1184,11 +1240,32 @@ const SONGS_CATALOG = [
         "chordsCount": 8
     },
     {
+        "id": "RespeitaJanuario",
+        "title": "Respeita Januário",
+        "artist": "Luiz Gonzaga",
+        "composer": "Humberto Teixeira / Luiz Gonzaga",
+        "chordsCount": 8
+    },
+    {
         "id": "RespeitemMeusCabelosBrancos",
         "title": "Respeitem meus cabelos, Brancos",
         "artist": "Chico César",
         "composer": "Chico Cesar",
         "chordsCount": 14
+    },
+    {
+        "id": "RiachoDoNavio",
+        "title": "Riacho do Navio",
+        "artist": "Luiz Gonzaga",
+        "composer": "Ze Dantas / Gonzagao",
+        "chordsCount": 4
+    },
+    {
+        "id": "RoendoUnha",
+        "title": "Roendo Unha",
+        "artist": "Luiz Gonzaga",
+        "composer": "Luiz Santa Fe / Gonzagao",
+        "chordsCount": 4
     },
     {
         "id": "Rosalina",
@@ -1247,6 +1324,13 @@ const SONGS_CATALOG = [
         "chordsCount": 7
     },
     {
+        "id": "SanfonaSentida",
+        "title": "Sanfona Sentida",
+        "artist": "Luiz Gonzaga",
+        "composer": "Anastacia / Dominguinhos",
+        "chordsCount": 6
+    },
+    {
         "id": "SangueLatino",
         "title": "Sangue Latino",
         "artist": "Ney Matogrosso",
@@ -1266,6 +1350,13 @@ const SONGS_CATALOG = [
         "artist": "Ceumar",
         "composer": "Tata Fernandes",
         "chordsCount": 3
+    },
+    {
+        "id": "SaoJoaoDoCarneirinho",
+        "title": "São João do Carneirinho",
+        "artist": "Luiz Gonzaga",
+        "composer": "Gonzagao / Guio De Moraes / Isabela Moraes",
+        "chordsCount": 5
     },
     {
         "id": "SeAcasoVoceChegasse",
@@ -1620,9 +1711,9 @@ const SONGS_CATALOG = [
     {
         "id": "XoteDasMeninas",
         "title": "Xote Das Meninas",
-        "artist": "Alceu Valença",
+        "artist": "Luiz Gonzaga",
         "composer": "Luiz Gonzaga / Zé Dantas",
-        "chordsCount": 15
+        "chordsCount": 11
     },
     {
         "id": "Yao",

@@ -1,0 +1,128 @@
+window.SONG_DATA = {
+    "title": "Numa Sala de Reboco",
+    "artist": "Luiz Gonzaga",
+    "composer": "Jose Marcolino / Gonzagao",
+    "lyricsHtml": "\n<span class=\"lyric-line\">[Intro]</span>\n\n\n\n\n\n<span class=\"lyric-line\">[Refrão]</span>\n\n<span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">   Todo tempo quanto houver</span>\n           <span class=\"chord\" data-chord=\"B7\">B7</span>\n<span class=\"lyric-line\">Pra mim é pouco</span>\n\n<span class=\"lyric-line\">Pra dançar com meu benzinho</span>\n                <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Numa sala de reboco</span>\n\n<span class=\"lyric-line\">Todo tempo quanto houver</span>\n           <span class=\"chord\" data-chord=\"B7\">B7</span>\n<span class=\"lyric-line\">Pra mim é pouco</span>\n\n<span class=\"lyric-line\">Pra dançar com meu benzinho</span>\n                <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Numa sala de reboco</span>\n\n<span class=\"lyric-line\">[Primeira Parte]</span>\n\n            <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">Enquanto o fole</span>\n       <span class=\"chord\" data-chord=\"D7\">D7</span>          <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">Tá fungando, tá gemendo</span>\n                       <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">Vou dançando e vou dizendo</span>\n        <span class=\"chord\" data-chord=\"D7\">D7</span>          <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">Meu sofrer pra ela só</span>\n           <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">E ninguém nota</span>\n        <span class=\"chord\" data-chord=\"B7\">B7</span>           <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Que eu tô lhe conversando</span>\n                       <span class=\"chord\" data-chord=\"F#m7(5-)\">F#m7(5-)</span>\n<span class=\"lyric-line\">E nosso amor vai aumentando</span>\n       <span class=\"chord\" data-chord=\"B7\">B7</span>            <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Pra que coisa mais miô</span>\n\n<span class=\"lyric-line\">[Refrão]</span>\n\n\n<span class=\"lyric-line\">Todo tempo quanto houver</span>\n           <span class=\"chord\" data-chord=\"B7\">B7</span>\n<span class=\"lyric-line\">Pra mim é pouco</span>\n\n<span class=\"lyric-line\">Pra dançar com meu benzinho</span>\n                <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Numa sala de reboco</span>\n\n<span class=\"lyric-line\">Todo tempo quanto houver</span>\n           <span class=\"chord\" data-chord=\"B7\">B7</span>\n<span class=\"lyric-line\">Pra mim é pouco</span>\n\n<span class=\"lyric-line\">Pra dançar com meu benzinho</span>\n                <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Numa sala de reboco</span>\n\n<span class=\"lyric-line\">[Segunda Parte]</span>\n\n          <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">Só fico triste</span>\n          <span class=\"chord\" data-chord=\"D7\">D7</span>      <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">Quando o dia amanhece</span>\n                      <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">Ai, meu Deus se eu pudesse</span>\n    <span class=\"chord\" data-chord=\"D7\">D7</span>          <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">Acabar a separação</span>\n           <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">Pra nós viver</span>\n      <span class=\"chord\" data-chord=\"B7\">B7</span>            <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Igual a dois sanguessuga</span>\n                        <span class=\"chord\" data-chord=\"F#m7(5-)\">F#m7(5-)</span>\n<span class=\"lyric-line\">E nosso amor pede mais fuga</span>\n        <span class=\"chord\" data-chord=\"B7\">B7</span>           <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Do que essa que nos dão</span>\n\n<span class=\"lyric-line\">[Refrão]</span>\n\n<span class=\"lyric-line\">Todo tempo quanto houver</span>\n           <span class=\"chord\" data-chord=\"B7\">B7</span>\n<span class=\"lyric-line\">Pra mim é pouco</span>\n\n<span class=\"lyric-line\">Pra dançar com meu benzinho</span>\n                <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Numa sala de reboco</span>\n\n<span class=\"lyric-line\">Todo tempo quanto houver</span>\n           <span class=\"chord\" data-chord=\"B7\">B7</span>\n<span class=\"lyric-line\">Pra mim é pouco</span>\n\n<span class=\"lyric-line\">Pra dançar com meu benzinho</span>\n                <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Numa sala de reboco</span>\n\n<span class=\"lyric-line\">[Primeira Parte]</span>\n\n            <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">Enquanto o fole</span>\n       <span class=\"chord\" data-chord=\"D7\">D7</span>          <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">Tá fungando, tá gemendo</span>\n                       <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">Vou dançando e vou dizendo</span>\n        <span class=\"chord\" data-chord=\"D7\">D7</span>          <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">Meu sofrer pra ela só</span>\n           <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">E ninguém nota</span>\n        <span class=\"chord\" data-chord=\"B7\">B7</span>           <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Que eu tô lhe conversando</span>\n                       <span class=\"chord\" data-chord=\"F#m7(5-)\">F#m7(5-)</span>\n<span class=\"lyric-line\">E nosso amor vai aumentando</span>\n        <span class=\"chord\" data-chord=\"B7\">B7</span>           <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Pra que coisa mais miô</span>\n\n<span class=\"lyric-line\">[Refrão]</span>\n\n<span class=\"lyric-line\">Todo tempo quanto houver</span>\n           <span class=\"chord\" data-chord=\"B7\">B7</span>\n<span class=\"lyric-line\">Pra mim é pouco</span>\n\n<span class=\"lyric-line\">Pra dançar com meu benzinho</span>\n                <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Numa sala de reboco</span>\n\n<span class=\"lyric-line\">Todo tempo quanto houver</span>\n           <span class=\"chord\" data-chord=\"B7\">B7</span>\n<span class=\"lyric-line\">Pra mim é pouco</span>\n\n<span class=\"lyric-line\">Pra dançar com meu benzinho</span>\n                <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Numa sala de reboco</span>\n\n( <span class=\"chord\" data-chord=\"A7\">A7</span>  <span class=\"chord\" data-chord=\"D7\">D7</span>  <span class=\"chord\" data-chord=\"G\">G</span>  <span class=\"chord\" data-chord=\"A7\">A7</span>  <span class=\"chord\" data-chord=\"D7\">D7</span>  <span class=\"chord\" data-chord=\"G\">G</span> )\n( <span class=\"chord\" data-chord=\"A7\">A7</span>  <span class=\"chord\" data-chord=\"B7\">B7</span>  <span class=\"chord\" data-chord=\"Em\">Em</span>  <span class=\"chord\" data-chord=\"B7\">B7</span>  <span class=\"chord\" data-chord=\"Em\">Em</span> )\n\n<span class=\"lyric-line\">[Refrão]</span>\n\n<span class=\"lyric-line\">Todo tempo quanto houver</span>\n           <span class=\"chord\" data-chord=\"B7\">B7</span>\n<span class=\"lyric-line\">Pra mim é pouco</span>\n\n<span class=\"lyric-line\">Pra dançar com meu benzinho</span>\n                <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Numa sala de reboco</span>\n\n<span class=\"lyric-line\">Todo tempo quanto houver</span>\n           <span class=\"chord\" data-chord=\"B7\">B7</span>\n<span class=\"lyric-line\">Pra mim é pouco</span>\n\n<span class=\"lyric-line\">Pra dançar com meu benzinho</span>\n                <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Numa sala de reboco</span>\n\n<span class=\"lyric-line\">Todo tempo quanto houver</span>\n           <span class=\"chord\" data-chord=\"B7\">B7</span>\n<span class=\"lyric-line\">Pra mim é pouco</span>\n\n<span class=\"lyric-line\">Pra dançar com meu benzinho</span>\n                <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Numa sala de reboco</span>\n\n<span class=\"lyric-line\">Todo tempo quanto houver</span>\n           <span class=\"chord\" data-chord=\"B7\">B7</span>\n<span class=\"lyric-line\">Pra mim é pouco</span>\n\n<span class=\"lyric-line\">Pra dançar com meu benzinho</span>\n                <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Numa sala de reboco</span>\n",
+    "chordData": {
+        "A7": {
+            "name": "A7",
+            "notes": [
+                "A3",
+                "C#4",
+                "E4",
+                "G4"
+            ],
+            "displayNotes": [
+                "A",
+                "C#",
+                "E",
+                "G"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "B7": {
+            "name": "B7",
+            "notes": [
+                "B3",
+                "D#4",
+                "F#4",
+                "A4"
+            ],
+            "displayNotes": [
+                "B",
+                "D#",
+                "F#",
+                "A"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "D7": {
+            "name": "D7",
+            "notes": [
+                "D3",
+                "F#3",
+                "A3",
+                "C4"
+            ],
+            "displayNotes": [
+                "D",
+                "F#",
+                "A",
+                "C"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "Em": {
+            "name": "Em",
+            "notes": [
+                "E3",
+                "G3",
+                "B3"
+            ],
+            "displayNotes": [
+                "E",
+                "G",
+                "B"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "F#m7(5-)": {
+            "name": "F#m7(5-)",
+            "notes": [
+                "F#3",
+                "A3",
+                "C4",
+                "E4"
+            ],
+            "displayNotes": [
+                "F#",
+                "A",
+                "C",
+                "E"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        },
+        "G": {
+            "name": "G",
+            "notes": [
+                "G3",
+                "B3",
+                "D4"
+            ],
+            "displayNotes": [
+                "G",
+                "B",
+                "D"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        }
+    }
+};

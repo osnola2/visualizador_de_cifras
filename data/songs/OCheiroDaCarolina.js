@@ -1,0 +1,65 @@
+window.SONG_DATA = {
+    "title": "O Cheiro da Carolina",
+    "artist": "Luiz Gonzaga",
+    "composer": "Zé Gonzaga / Amorim Roxo",
+    "lyricsHtml": "\n   <span class=\"chord\" data-chord=\"Em\">Em</span>    <span class=\"chord\" data-chord=\"F#7\">F#7</span>   <span class=\"chord\" data-chord=\"Bm\">Bm</span>         <span class=\"chord\" data-chord=\"Em\">Em</span>    <span class=\"chord\" data-chord=\"F#7\">F#7</span>       <span class=\"chord\" data-chord=\"Bm\">Bm</span>\n<span class=\"lyric-line\">   Hum, hum, hum Carolina, hum,    hum    hum, Carolina</span>\n  <span class=\"chord\" data-chord=\"Bm\">Bm</span>                             <span class=\"chord\" data-chord=\"Em\">Em</span>      <span class=\"chord\" data-chord=\"F#7\">F#7</span>            <span class=\"chord\" data-chord=\"Bm\">Bm</span>\n<span class=\"lyric-line\">Carolina foi pro samba Carolina   Pra dançá o xenhenhém Carolina</span>\n  <span class=\"chord\" data-chord=\"Em\">Em</span>    <span class=\"chord\" data-chord=\"F#7\">F#7</span>        <span class=\"chord\" data-chord=\"Bm\">Bm</span>          <span class=\"chord\" data-chord=\"Em\">Em</span>      <span class=\"chord\" data-chord=\"F#7\">F#7</span>           <span class=\"chord\" data-chord=\"Bm\">Bm</span>\n<span class=\"lyric-line\">Todo mundo é caidinho Carolina   Pelo cheiro que ela tem Carolina</span>\n  <span class=\"chord\" data-chord=\"Em\">Em</span>    <span class=\"chord\" data-chord=\"F#7\">F#7</span>   <span class=\"chord\" data-chord=\"Bm\">Bm</span>      <span class=\"chord\" data-chord=\"Em\">Em</span>    <span class=\"chord\" data-chord=\"F#7\">F#7</span>       <span class=\"chord\" data-chord=\"Bm\">Bm</span>\n<span class=\"lyric-line\">Hum, hum, hum Carolina,  hum,  hum,   hum Carolina</span>\n  <span class=\"chord\" data-chord=\"Em\">Em</span>    <span class=\"chord\" data-chord=\"F#7\">F#7</span>   <span class=\"chord\" data-chord=\"Bm\">Bm</span>       <span class=\"chord\" data-chord=\"Em\">Em</span>       <span class=\"chord\" data-chord=\"F#7\">F#7</span>           <span class=\"chord\" data-chord=\"Bm\">Bm</span>\n<span class=\"lyric-line\">Hum, hum,  hum Carolina    Pelo cheiro que ela tem Carolina</span>\n  <span class=\"chord\" data-chord=\"Bm\">Bm</span>                           <span class=\"chord\" data-chord=\"Em\">Em</span>        <span class=\"chord\" data-chord=\"F#7\">F#7</span>          <span class=\"chord\" data-chord=\"Bm\">Bm</span>\n<span class=\"lyric-line\">Gente que nunca dançou Carolina    Nesse dia quis dançá Carolina</span>\n  <span class=\"chord\" data-chord=\"Em\">Em</span>    <span class=\"chord\" data-chord=\"F#7\">F#7</span>         <span class=\"chord\" data-chord=\"Bm\">Bm</span>          <span class=\"chord\" data-chord=\"Em\">Em</span>     <span class=\"chord\" data-chord=\"F#7\">F#7</span>         <span class=\"chord\" data-chord=\"Bm\">Bm</span>\n<span class=\"lyric-line\">Só por causa do cheirinho Carolina   Todo mundo tava lá Carolina</span>\n  <span class=\"chord\" data-chord=\"Em\">Em</span>    <span class=\"chord\" data-chord=\"F#7\">F#7</span>   <span class=\"chord\" data-chord=\"Bm\">Bm</span>     <span class=\"chord\" data-chord=\"Em\">Em</span>    <span class=\"chord\" data-chord=\"F#7\">F#7</span>    <span class=\"chord\" data-chord=\"Bm\">Bm</span>\n<span class=\"lyric-line\">Hum, hum, hum Carolina, hum, hum, hum Carolina</span>\n  <span class=\"chord\" data-chord=\"Em\">Em</span>    <span class=\"chord\" data-chord=\"F#7\">F#7</span>   <span class=\"chord\" data-chord=\"Bm\">Bm</span>        <span class=\"chord\" data-chord=\"Em\">Em</span>    <span class=\"chord\" data-chord=\"F#7\">F#7</span>    <span class=\"chord\" data-chord=\"Bm\">Bm</span>\n<span class=\"lyric-line\">Hum, hum, hum Carolina Todo mundo tava lá Carolina</span>\n  <span class=\"chord\" data-chord=\"Bm\">Bm</span>                    <span class=\"chord\" data-chord=\"Em\">Em</span>     <span class=\"chord\" data-chord=\"F#7\">F#7</span>        <span class=\"chord\" data-chord=\"Bm\">Bm</span>\n<span class=\"lyric-line\">Foi chegando o Delegado      Pra oiá os que dançava Carolina</span>\n  <span class=\"chord\" data-chord=\"Em\">Em</span>    <span class=\"chord\" data-chord=\"F#7\">F#7</span>         <span class=\"chord\" data-chord=\"Bm\">Bm</span>             <span class=\"chord\" data-chord=\"Em\">Em</span>      <span class=\"chord\" data-chord=\"F#7\">F#7</span>          <span class=\"chord\" data-chord=\"Bm\">Bm</span>\n<span class=\"lyric-line\"> O   Xerife entrou na dança Carolina   E no fim também cheirava Carolina</span>\n  <span class=\"chord\" data-chord=\"Em\">Em</span>    <span class=\"chord\" data-chord=\"F#7\">F#7</span>   <span class=\"chord\" data-chord=\"Bm\">Bm</span>      <span class=\"chord\" data-chord=\"Em\">Em</span>    <span class=\"chord\" data-chord=\"F#7\">F#7</span>    <span class=\"chord\" data-chord=\"Bm\">Bm</span>\n<span class=\"lyric-line\">Hum, hum, hum Carolina, hum, hum, hum Carolina</span>\n  <span class=\"chord\" data-chord=\"Em\">Em</span>    <span class=\"chord\" data-chord=\"F#7\">F#7</span>   <span class=\"chord\" data-chord=\"Bm\">Bm</span>       <span class=\"chord\" data-chord=\"Em\">Em</span>    <span class=\"chord\" data-chord=\"F#7\">F#7</span>             <span class=\"chord\" data-chord=\"Bm\">Bm</span>\n<span class=\"lyric-line\">Hum, hum, hum Carolina    E no fim também cheirava Carolina</span>\n  <span class=\"chord\" data-chord=\"Bm\">Bm</span>                            <span class=\"chord\" data-chord=\"Em\">Em</span>      <span class=\"chord\" data-chord=\"F#7\">F#7</span>        <span class=\"chord\" data-chord=\"Bm\">Bm</span>\n<span class=\"lyric-line\">Eu quisera está por lá Carolina   Pra dançar contigo o xote Carolina</span>\n  <span class=\"chord\" data-chord=\"Em\">Em</span>    <span class=\"chord\" data-chord=\"F#7\">F#7</span>       <span class=\"chord\" data-chord=\"Bm\">Bm</span>               <span class=\"chord\" data-chord=\"Em\">Em</span>    <span class=\"chord\" data-chord=\"F#7\">F#7</span>           <span class=\"chord\" data-chord=\"Bm\">Bm</span>\n<span class=\"lyric-line\">Pra também dá um cheirinho Carolina    E fungar no teu cangote Carolina</span>\n  <span class=\"chord\" data-chord=\"Em\">Em</span>    <span class=\"chord\" data-chord=\"F#7\">F#7</span>   <span class=\"chord\" data-chord=\"Bm\">Bm</span>      <span class=\"chord\" data-chord=\"Em\">Em</span>    <span class=\"chord\" data-chord=\"F#7\">F#7</span>    <span class=\"chord\" data-chord=\"Bm\">Bm</span>\n<span class=\"lyric-line\">Hum, hum, hum Carolina, hum, hum, hum Carolina</span>\n  <span class=\"chord\" data-chord=\"Em\">Em</span>    <span class=\"chord\" data-chord=\"F#7\">F#7</span>   <span class=\"chord\" data-chord=\"Bm\">Bm</span>      <span class=\"chord\" data-chord=\"Em\">Em</span>    <span class=\"chord\" data-chord=\"F#7\">F#7</span>            <span class=\"chord\" data-chord=\"Bm\">Bm</span>\n<span class=\"lyric-line\">Hum, hum, hum Carolina    E fungá no teu cangote Carolina</span>\n",
+    "chordData": {
+        "Bm": {
+            "name": "Bm",
+            "notes": [
+                "B3",
+                "D4",
+                "F#4"
+            ],
+            "displayNotes": [
+                "B",
+                "D",
+                "F#"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "Em": {
+            "name": "Em",
+            "notes": [
+                "E3",
+                "G3",
+                "B3"
+            ],
+            "displayNotes": [
+                "E",
+                "G",
+                "B"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "F#7": {
+            "name": "F#7",
+            "notes": [
+                "F#3",
+                "A#3",
+                "C#4",
+                "E4"
+            ],
+            "displayNotes": [
+                "F#",
+                "A#",
+                "C#",
+                "E"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad",
+                "seventh"
+            ]
+        }
+    }
+};

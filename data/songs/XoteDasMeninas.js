@@ -1,27 +1,9 @@
 window.SONG_DATA = {
     "title": "Xote Das Meninas",
-    "artist": "Alceu Valença",
+    "artist": "Luiz Gonzaga",
     "composer": "Luiz Gonzaga / Zé Dantas",
-    "lyricsHtml": "\n[Intro] <span class=\"chord\" data-chord=\"Bm7\">Bm7</span>  <span class=\"chord\" data-chord=\"F#m7\">F#m7</span>  <span class=\"chord\" data-chord=\"C#7\">C#7</span>  <span class=\"chord\" data-chord=\"F#m7\">F#m7</span>\n        <span class=\"chord\" data-chord=\"E7\">E7</span>  <span class=\"chord\" data-chord=\"A\">A</span>  <span class=\"chord\" data-chord=\"B7\">B7</span>  <span class=\"chord\" data-chord=\"E\">E</span>  <span class=\"chord\" data-chord=\"A\">A</span>\n\n<span class=\"lyric-line\">[Primeira Parte]</span>\n\n        <span class=\"chord\" data-chord=\"A\">A</span>           <span class=\"chord\" data-chord=\"E7\">E7</span>         <span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">Mandacaru, quando \"fulóra\" na seca</span>\n       <span class=\"chord\" data-chord=\"Em7\">Em7</span>              <span class=\"chord\" data-chord=\"A7\">A7</span>         <span class=\"chord\" data-chord=\"D\">D</span>\n<span class=\"lyric-line\">É o sinal que a chuva chega no sertão</span>\n\n        <span class=\"chord\" data-chord=\"Dm\">Dm</span>                  <span class=\"chord\" data-chord=\"C#m7\">C#m7</span>\n<span class=\"lyric-line\">Toda menina que enjoa da boneca</span>\n     <span class=\"chord\" data-chord=\"F#m7\">F#m7</span>          <span class=\"chord\" data-chord=\"Bm\">Bm</span>\n<span class=\"lyric-line\">É sinal de que o amor</span>\n       <span class=\"chord\" data-chord=\"E7\">E7</span>         <span class=\"chord\" data-chord=\"A\">A</span>  <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">Já chegou no coração</span>\n\n          <span class=\"chord\" data-chord=\"D\">D</span>\n<span class=\"lyric-line\">Meia comprida</span>\n          <span class=\"chord\" data-chord=\"E7\">E7</span>          <span class=\"chord\" data-chord=\"C#m7\">C#m7</span>\n<span class=\"lyric-line\">Não quer mais sapato baixo</span>\n    <span class=\"chord\" data-chord=\"F#m7\">F#m7</span>        <span class=\"chord\" data-chord=\"Bm\">Bm</span>\n<span class=\"lyric-line\">Vestido bem cintado</span>\n          <span class=\"chord\" data-chord=\"E7\">E7</span>          <span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">Não quer mais vestir timão</span>\n\n<span class=\"lyric-line\">[Refrão]</span>\n\n         <span class=\"chord\" data-chord=\"G#m7(5-)\">G#m7(5-)</span>  <span class=\"chord\" data-chord=\"C#7\">C#7</span>          <span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">Ela só quer, só   pensa em namorar</span>\n  <span class=\"chord\" data-chord=\"A\">A</span>      <span class=\"chord\" data-chord=\"G#m7(5-)\">G#m7(5-)</span>  <span class=\"chord\" data-chord=\"C#7\">C#7</span>          <span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">Ela só quer, só   pensa em namorar</span>\n  <span class=\"chord\" data-chord=\"A\">A</span>      <span class=\"chord\" data-chord=\"G#m7(5-)\">G#m7(5-)</span>     <span class=\"chord\" data-chord=\"C#7\">C#7</span>     <span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">Ela só quer, só pensa em namorar</span>\n  <span class=\"chord\" data-chord=\"A\">A</span>      <span class=\"chord\" data-chord=\"G#m7(5-)\">G#m7(5-)</span>     <span class=\"chord\" data-chord=\"C#7\">C#7</span>     <span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">Ela só quer, só pensa em namorar</span>\n\n<span class=\"lyric-line\">[Segunda Parte]</span>\n\n          <span class=\"chord\" data-chord=\"Bm\">Bm</span>    <span class=\"chord\" data-chord=\"E7\">E7</span>     <span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">De manhã cedo já esta pintada</span>\n                      <span class=\"chord\" data-chord=\"G#m7(5-)\">G#m7(5-)</span>\n<span class=\"lyric-line\">Só vive suspirando, sonhando acordada</span>\n   <span class=\"chord\" data-chord=\"C#7\">C#7</span>        <span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">O pai leva ao doutor</span>\n              <span class=\"chord\" data-chord=\"G#m7(5-)\">G#m7(5-)</span>\n<span class=\"lyric-line\">A filha adoentada</span>\n      <span class=\"chord\" data-chord=\"C#7\">C#7</span>      <span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">Não come não estuda</span>\n                 <span class=\"chord\" data-chord=\"G#m7(5-)\">G#m7(5-)</span>\n<span class=\"lyric-line\">Não dorme não quer nada</span>\n\n<span class=\"lyric-line\">[Refrão]</span>\n\n         <span class=\"chord\" data-chord=\"G#m7(5-)\">G#m7(5-)</span>  <span class=\"chord\" data-chord=\"C#7\">C#7</span>          <span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">Ela só quer, só   pensa em namorar</span>\n  <span class=\"chord\" data-chord=\"A\">A</span>      <span class=\"chord\" data-chord=\"G#m7(5-)\">G#m7(5-)</span>  <span class=\"chord\" data-chord=\"C#7\">C#7</span>          <span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">Ela só quer, só   pensa em namorar</span>\n  <span class=\"chord\" data-chord=\"A\">A</span>      <span class=\"chord\" data-chord=\"G#m7(5-)\">G#m7(5-)</span>     <span class=\"chord\" data-chord=\"C#7\">C#7</span>     <span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">Ela só quer, só pensa em namorar</span>\n  <span class=\"chord\" data-chord=\"A\">A</span>      <span class=\"chord\" data-chord=\"G#m7(5-)\">G#m7(5-)</span>     <span class=\"chord\" data-chord=\"C#7\">C#7</span>     <span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">Ela só quer, só pensa em namorar</span>\n\n          <span class=\"chord\" data-chord=\"Bm\">Bm</span>    <span class=\"chord\" data-chord=\"E7\">E7</span>  <span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">Mas o doutô nem examina</span>\n                      <span class=\"chord\" data-chord=\"G#m7(5-)\">G#m7(5-)</span>\n<span class=\"lyric-line\">Chamando o pai de um lado</span>\n     <span class=\"chord\" data-chord=\"C#7\">C#7</span>            <span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">Lhe diz logo em surdina</span>\n                 <span class=\"chord\" data-chord=\"G#m7(5-)\">G#m7(5-)</span>\n<span class=\"lyric-line\">Que o mal é da idade</span>\n      <span class=\"chord\" data-chord=\"C#7\">C#7</span>      <span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">Que tem essa  menina</span>\n                 <span class=\"chord\" data-chord=\"G#m7(5-)\">G#m7(5-)</span>\n<span class=\"lyric-line\">Não há um só remédio</span>\n    <span class=\"chord\" data-chord=\"C#7\">C#7</span>      <span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">Em toda medicina</span>\n<span class=\"lyric-line\">[Refrão]</span>\n\n         <span class=\"chord\" data-chord=\"G#m7(5-)\">G#m7(5-)</span>  <span class=\"chord\" data-chord=\"C#7\">C#7</span>          <span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">Ela só quer, só   pensa em namorar</span>\n  <span class=\"chord\" data-chord=\"A\">A</span>      <span class=\"chord\" data-chord=\"G#m7(5-)\">G#m7(5-)</span>  <span class=\"chord\" data-chord=\"C#7\">C#7</span>          <span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">Ela só quer, só   pensa em namorar</span>\n  <span class=\"chord\" data-chord=\"A\">A</span>      <span class=\"chord\" data-chord=\"G#m7(5-)\">G#m7(5-)</span>     <span class=\"chord\" data-chord=\"C#7\">C#7</span>     <span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">Ela só quer, só pensa em namorar</span>\n  <span class=\"chord\" data-chord=\"A\">A</span>      <span class=\"chord\" data-chord=\"G#m7(5-)\">G#m7(5-)</span>     <span class=\"chord\" data-chord=\"C#7\">C#7</span>     <span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">Ela só quer, só pensa em namorar</span>\n\n[Solo] <span class=\"chord\" data-chord=\"Bm7\">Bm7</span>  <span class=\"chord\" data-chord=\"F#m7\">F#m7</span>  <span class=\"chord\" data-chord=\"C#7\">C#7</span>  <span class=\"chord\" data-chord=\"F#m7\">F#m7</span>\n       <span class=\"chord\" data-chord=\"E7\">E7</span>  <span class=\"chord\" data-chord=\"A\">A</span>  <span class=\"chord\" data-chord=\"B7\">B7</span>  <span class=\"chord\" data-chord=\"E\">E</span>  <span class=\"chord\" data-chord=\"A\">A</span>\n\n        <span class=\"chord\" data-chord=\"A\">A</span>           <span class=\"chord\" data-chord=\"E7\">E7</span>         <span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">Mandacaru, quando \"fulóra\" na seca</span>\n       <span class=\"chord\" data-chord=\"Em7\">Em7</span>              <span class=\"chord\" data-chord=\"A7\">A7</span>         <span class=\"chord\" data-chord=\"D\">D</span>\n<span class=\"lyric-line\">É o sinal que a chuva chega no sertão</span>\n\n        <span class=\"chord\" data-chord=\"Dm\">Dm</span>                  <span class=\"chord\" data-chord=\"C#m7\">C#m7</span>\n<span class=\"lyric-line\">Toda menina que enjoa da boneca</span>\n     <span class=\"chord\" data-chord=\"F#m7\">F#m7</span>          <span class=\"chord\" data-chord=\"Bm\">Bm</span>\n<span class=\"lyric-line\">É sinal de que o amor</span>\n       <span class=\"chord\" data-chord=\"E7\">E7</span>         <span class=\"chord\" data-chord=\"A\">A</span>  <span class=\"chord\" data-chord=\"A7\">A7</span>\n<span class=\"lyric-line\">Já chegou no coração</span>\n\n          <span class=\"chord\" data-chord=\"D\">D</span>\n<span class=\"lyric-line\">Meia comprida</span>\n          <span class=\"chord\" data-chord=\"E7\">E7</span>          <span class=\"chord\" data-chord=\"C#m7\">C#m7</span>\n<span class=\"lyric-line\">Não quer mais sapato baixo</span>\n    <span class=\"chord\" data-chord=\"F#m7\">F#m7</span>        <span class=\"chord\" data-chord=\"Bm\">Bm</span>\n<span class=\"lyric-line\">Vestido bem cintado</span>\n          <span class=\"chord\" data-chord=\"E7\">E7</span>          <span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">Não quer mais vestir timão</span>\n\n<span class=\"lyric-line\">[Refrão]</span>\n\n         <span class=\"chord\" data-chord=\"G#m7(5-)\">G#m7(5-)</span>  <span class=\"chord\" data-chord=\"C#7\">C#7</span>          <span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">Ela só quer, só   pensa em namorar</span>\n  <span class=\"chord\" data-chord=\"A\">A</span>      <span class=\"chord\" data-chord=\"G#m7(5-)\">G#m7(5-)</span>  <span class=\"chord\" data-chord=\"C#7\">C#7</span>          <span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">Ela só quer, só   pensa em namorar</span>\n  <span class=\"chord\" data-chord=\"A\">A</span>      <span class=\"chord\" data-chord=\"G#m7(5-)\">G#m7(5-)</span>     <span class=\"chord\" data-chord=\"C#7\">C#7</span>     <span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">Ela só quer, só pensa em namorar</span>\n  <span class=\"chord\" data-chord=\"A\">A</span>      <span class=\"chord\" data-chord=\"G#m7(5-)\">G#m7(5-)</span>     <span class=\"chord\" data-chord=\"C#7\">C#7</span>     <span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">Ela só quer, só pensa em namorar</span>\n\n          <span class=\"chord\" data-chord=\"Bm\">Bm</span>    <span class=\"chord\" data-chord=\"E7\">E7</span>     <span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">De manhã cedo já esta pintada</span>\n                      <span class=\"chord\" data-chord=\"G#m7(5-)\">G#m7(5-)</span>\n<span class=\"lyric-line\">Só vive suspirando, sonhando acordada</span>\n   <span class=\"chord\" data-chord=\"C#7\">C#7</span>        <span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">O pai leva ao doutor</span>\n              <span class=\"chord\" data-chord=\"G#m7(5-)\">G#m7(5-)</span>\n<span class=\"lyric-line\">A filha adoentada</span>\n      <span class=\"chord\" data-chord=\"C#7\">C#7</span>      <span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">Não come não estuda</span>\n                 <span class=\"chord\" data-chord=\"G#m7(5-)\">G#m7(5-)</span>\n<span class=\"lyric-line\">Não dorme não quer nada</span>\n\n<span class=\"lyric-line\">[Refrão]</span>\n\n         <span class=\"chord\" data-chord=\"G#m7(5-)\">G#m7(5-)</span>  <span class=\"chord\" data-chord=\"C#7\">C#7</span>          <span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">Ela só quer, só   pensa em namorar</span>\n  <span class=\"chord\" data-chord=\"A\">A</span>      <span class=\"chord\" data-chord=\"G#m7(5-)\">G#m7(5-)</span>  <span class=\"chord\" data-chord=\"C#7\">C#7</span>          <span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">Ela só quer, só   pensa em namorar</span>\n  <span class=\"chord\" data-chord=\"A\">A</span>      <span class=\"chord\" data-chord=\"G#m7(5-)\">G#m7(5-)</span>     <span class=\"chord\" data-chord=\"C#7\">C#7</span>     <span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">Ela só quer, só pensa em namorar</span>\n  <span class=\"chord\" data-chord=\"A\">A</span>      <span class=\"chord\" data-chord=\"G#m7(5-)\">G#m7(5-)</span>     <span class=\"chord\" data-chord=\"C#7\">C#7</span>     <span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">Ela só quer, só pensa em namorar</span>\n\n  <span class=\"chord\" data-chord=\"Bm\">Bm</span>    <span class=\"chord\" data-chord=\"E7\">E7</span>  <span class=\"chord\" data-chord=\"A\">A</span>\n<span class=\"lyric-line\">Mas o doutô nem examina</span>\n                      <span class=\"chord\" data-chord=\"G#m7(5-)\">G#m7(5-)</span>\n<span class=\"lyric-line\">Chamando o pai de um lado</span>\n     <span class=\"chord\" data-chord=\"C#7\">C#7</span>            <span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">Lhe diz logo em surdina</span>\n                 <span class=\"chord\" data-chord=\"G#m7(5-)\">G#m7(5-)</span>\n<span class=\"lyric-line\">Que o mal é da idade</span>\n      <span class=\"chord\" data-chord=\"C#7\">C#7</span>      <span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">Que tem essa menina</span>\n                 <span class=\"chord\" data-chord=\"G#m7(5-)\">G#m7(5-)</span>\n<span class=\"lyric-line\">Não há um só remédio</span>\n    <span class=\"chord\" data-chord=\"C#7\">C#7</span>      <span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">Em toda medicina</span>\n\n<span class=\"lyric-line\">[Refrão]</span>\n\n         <span class=\"chord\" data-chord=\"G#m7(5-)\">G#m7(5-)</span>  <span class=\"chord\" data-chord=\"C#7\">C#7</span>          <span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">Ela só quer, só   pensa em namorar</span>\n  <span class=\"chord\" data-chord=\"A\">A</span>      <span class=\"chord\" data-chord=\"G#m7(5-)\">G#m7(5-)</span>  <span class=\"chord\" data-chord=\"C#7\">C#7</span>          <span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">Ela só quer, só   pensa em namorar</span>\n  <span class=\"chord\" data-chord=\"A\">A</span>      <span class=\"chord\" data-chord=\"G#m7(5-)\">G#m7(5-)</span>     <span class=\"chord\" data-chord=\"C#7\">C#7</span>     <span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">Ela só quer, só pensa em namorar</span>\n  <span class=\"chord\" data-chord=\"A\">A</span>      <span class=\"chord\" data-chord=\"G#m7(5-)\">G#m7(5-)</span>     <span class=\"chord\" data-chord=\"C#7\">C#7</span>     <span class=\"chord\" data-chord=\"F#m\">F#m</span>\n<span class=\"lyric-line\">Ela só quer, só pensa em namorar</span>\n\n[Final] <span class=\"chord\" data-chord=\"Bm7\">Bm7</span>  <span class=\"chord\" data-chord=\"F#m7\">F#m7</span>  <span class=\"chord\" data-chord=\"C#7\">C#7</span>  <span class=\"chord\" data-chord=\"F#m7\">F#m7</span>\n        <span class=\"chord\" data-chord=\"E7\">E7</span>  <span class=\"chord\" data-chord=\"A\">A</span>  <span class=\"chord\" data-chord=\"B7\">B7</span>  <span class=\"chord\" data-chord=\"E\">E</span>  <span class=\"chord\" data-chord=\"A\">A</span>\n",
+    "lyricsHtml": "\n[Intro] <span class=\"chord\" data-chord=\"Am\">Am</span>  <span class=\"chord\" data-chord=\"Em\">Em</span>  <span class=\"chord\" data-chord=\"B7\">B7</span>  <span class=\"chord\" data-chord=\"Em\">Em</span>  <span class=\"chord\" data-chord=\"E7\">E7</span>\n        <span class=\"chord\" data-chord=\"D\">D</span>  <span class=\"chord\" data-chord=\"G\">G</span>  <span class=\"chord\" data-chord=\"A7\">A7</span>  <span class=\"chord\" data-chord=\"D7\">D7</span>  <span class=\"chord\" data-chord=\"G\">G</span>\n\n<span class=\"lyric-line\">[Primeira Parte]</span>\n\n        <span class=\"chord\" data-chord=\"G\">G</span>           <span class=\"chord\" data-chord=\"D7\">D7</span>         <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">Mandacaru, quando \"fulóra\" na seca</span>\n       <span class=\"chord\" data-chord=\"G7\">G7</span>                          <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">É o sinal que a chuva chega no sertão</span>\n                   <span class=\"chord\" data-chord=\"D7\">D7</span>       <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">Toda menina que enjoa da boneca</span>\n     <span class=\"chord\" data-chord=\"Em\">Em</span>            <span class=\"chord\" data-chord=\"Am\">Am</span>\n<span class=\"lyric-line\">É sinal de que o amor</span>\n       <span class=\"chord\" data-chord=\"D7\">D7</span>         <span class=\"chord\" data-chord=\"G\">G</span>  <span class=\"chord\" data-chord=\"G7\">G7</span> \n<span class=\"lyric-line\">Já chegou no coração</span>\n\n          <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">Meia comprida</span>\n          <span class=\"chord\" data-chord=\"D7\">D7</span>          <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">Não quer mais sapato baixo</span>\n    <span class=\"chord\" data-chord=\"Em\">Em</span>          <span class=\"chord\" data-chord=\"Am\">Am</span>\n<span class=\"lyric-line\">Vestido bem cintado</span>\n          <span class=\"chord\" data-chord=\"D7\">D7</span>            <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">Não quer mais vestir timão</span>\n\n<span class=\"lyric-line\">[Refrão]</span>\n\n         <span class=\"chord\" data-chord=\"F#m7(5-)\">F#m7(5-)</span> \n<span class=\"lyric-line\">Ela só quer</span>\n    <span class=\"chord\" data-chord=\"B7\">B7</span>           <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Só pensa em namorar</span>\n         <span class=\"chord\" data-chord=\"F#m7(5-)\">F#m7(5-)</span>\n<span class=\"lyric-line\">Ela só quer</span>\n    <span class=\"chord\" data-chord=\"B7\">B7</span>           <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Só pensa em namorar</span>\n\n<span class=\"lyric-line\">[Segunda Parte]</span>\n\n          <span class=\"chord\" data-chord=\"Am\">Am</span>      <span class=\"chord\" data-chord=\"D7\">D7</span>    <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">De manhã cedo já tá pintada</span>\n              <span class=\"chord\" data-chord=\"F#m7(5-)\">F#m7(5-)</span>\n<span class=\"lyric-line\">Só vive suspirando</span>\n    <span class=\"chord\" data-chord=\"B7\">B7</span>        <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Sonhando acordada</span>\n                  <span class=\"chord\" data-chord=\"F#m7(5-)\">F#m7(5-)</span>\n<span class=\"lyric-line\">O pai leva ao doutô</span>\n   <span class=\"chord\" data-chord=\"B7\">B7</span>         <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">A filha adoentada</span>\n                <span class=\"chord\" data-chord=\"F#m7(5-)\">F#m7(5-)</span>\n<span class=\"lyric-line\">Não come nem estuda</span>\n     <span class=\"chord\" data-chord=\"B7\">B7</span>              <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Não dorme, não quer nada</span>\n\n<span class=\"lyric-line\">[Refrão]</span>\n\n         <span class=\"chord\" data-chord=\"F#m7(5-)\">F#m7(5-)</span>\n<span class=\"lyric-line\">Ela só quer</span>\n    <span class=\"chord\" data-chord=\"B7\">B7</span>           <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Só pensa em namorar</span>\n         <span class=\"chord\" data-chord=\"F#m7(5-)\">F#m7(5-)</span>\n<span class=\"lyric-line\">Ela só quer</span>\n    <span class=\"chord\" data-chord=\"B7\">B7</span>           <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Só pensa em namorar</span>\n\n<span class=\"lyric-line\">[Terceira Parte]</span>\n\n          <span class=\"chord\" data-chord=\"Am\">Am</span>    <span class=\"chord\" data-chord=\"D7\">D7</span>  <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">Mas o doutô nem examina</span>\n                      <span class=\"chord\" data-chord=\"F#m7(5-)\">F#m7(5-)</span>\n<span class=\"lyric-line\">Chamando o pai de um lado</span>\n     <span class=\"chord\" data-chord=\"B7\">B7</span>             <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Lhe diz logo em surdina</span>\n                 <span class=\"chord\" data-chord=\"F#m7(5-)\">F#m7(5-)</span>\n<span class=\"lyric-line\">Que o mal é da idade</span>\n  <span class=\"chord\" data-chord=\"B7\">B7</span>           <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Que pra tal menina</span>\n                 <span class=\"chord\" data-chord=\"F#m7(5-)\">F#m7(5-)</span>\n<span class=\"lyric-line\">Não tem um só remédio</span>\n    <span class=\"chord\" data-chord=\"B7\">B7</span>       <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Em toda medicina</span>\n\n<span class=\"lyric-line\">[Refrão]</span>\n\n         <span class=\"chord\" data-chord=\"F#m7(5-)\">F#m7(5-)</span>\n<span class=\"lyric-line\">Ela só quer</span>\n    <span class=\"chord\" data-chord=\"B7\">B7</span>           <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Só pensa em namorar</span>\n         <span class=\"chord\" data-chord=\"F#m7(5-)\">F#m7(5-)</span>\n<span class=\"lyric-line\">Ela só quer</span>\n    <span class=\"chord\" data-chord=\"B7\">B7</span>           <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Só pensa em namorar</span>\n\n( <span class=\"chord\" data-chord=\"Am\">Am</span>  <span class=\"chord\" data-chord=\"Em\">Em</span>  <span class=\"chord\" data-chord=\"B7\">B7</span>  <span class=\"chord\" data-chord=\"Em\">Em</span> <span class=\"chord\" data-chord=\"E7\">E7</span> )\n( <span class=\"chord\" data-chord=\"D7\">D7</span>  <span class=\"chord\" data-chord=\"G\">G</span>  <span class=\"chord\" data-chord=\"A7\">A7</span>  <span class=\"chord\" data-chord=\"D7\">D7</span>  <span class=\"chord\" data-chord=\"G\">G</span> )\n\n<span class=\"lyric-line\">[Primeira Parte]</span>\n\n        <span class=\"chord\" data-chord=\"G\">G</span>           <span class=\"chord\" data-chord=\"D7\">D7</span>         <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">Mandacaru, quando \"fulóra\" na seca</span>\n       <span class=\"chord\" data-chord=\"G7\">G7</span>                          <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">É o sinal que a chuva chega no sertão</span>\n        <span class=\"chord\" data-chord=\"C\">C</span>          <span class=\"chord\" data-chord=\"D7\">D7</span>       <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">Toda menina que enjoa da boneca</span>\n     <span class=\"chord\" data-chord=\"Em\">Em</span>            <span class=\"chord\" data-chord=\"Am\">Am</span>\n<span class=\"lyric-line\">É sinal de que o amor</span>\n       <span class=\"chord\" data-chord=\"D7\">D7</span>         <span class=\"chord\" data-chord=\"G\">G</span>  <span class=\"chord\" data-chord=\"G7\">G7</span>\n<span class=\"lyric-line\">Já chegou no coração</span>\n          <span class=\"chord\" data-chord=\"C\">C</span>\n<span class=\"lyric-line\">Meia comprida</span>\n          <span class=\"chord\" data-chord=\"D7\">D7</span>          <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">Não quer mais sapato baixo</span>\n    <span class=\"chord\" data-chord=\"Em\">Em</span>          <span class=\"chord\" data-chord=\"Am\">Am</span>\n<span class=\"lyric-line\">Vestido bem cintado</span>\n          <span class=\"chord\" data-chord=\"D7\">D7</span>            <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">Não quer mais vestir timão</span>\n\n<span class=\"lyric-line\">[Refrão]</span>\n\n         <span class=\"chord\" data-chord=\"F#m7(5-)\">F#m7(5-)</span>\n<span class=\"lyric-line\">Ela só quer</span>\n    <span class=\"chord\" data-chord=\"B7\">B7</span>           <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Só pensa em namorar</span>\n         <span class=\"chord\" data-chord=\"F#m7(5-)\">F#m7(5-)</span>\n<span class=\"lyric-line\">Ela só quer</span>\n    <span class=\"chord\" data-chord=\"B7\">B7</span>           <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Só pensa em namorar</span>\n\n<span class=\"lyric-line\">[Segunda Parte]</span>\n\n          <span class=\"chord\" data-chord=\"Am\">Am</span>      <span class=\"chord\" data-chord=\"D7\">D7</span>    <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">De manhã cedo já tá pintada</span>\n              <span class=\"chord\" data-chord=\"F#m7(5-)\">F#m7(5-)</span>\n<span class=\"lyric-line\">Só vive suspirando</span>\n    <span class=\"chord\" data-chord=\"B7\">B7</span>        <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Sonhando acordada</span>\n                  <span class=\"chord\" data-chord=\"F#m7(5-)\">F#m7(5-)</span>\n<span class=\"lyric-line\">O pai leva ao doutô</span>\n   <span class=\"chord\" data-chord=\"B7\">B7</span>         <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">A filha adoentada</span>\n                <span class=\"chord\" data-chord=\"F#m7(5-)\">F#m7(5-)</span>\n<span class=\"lyric-line\">Não come nem estuda</span>\n     <span class=\"chord\" data-chord=\"B7\">B7</span>              <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Não dorme, não quer nada</span>\n\n<span class=\"lyric-line\">[Refrão]</span>\n\n         <span class=\"chord\" data-chord=\"F#m7(5-)\">F#m7(5-)</span>\n<span class=\"lyric-line\">Ela só quer</span>\n    <span class=\"chord\" data-chord=\"B7\">B7</span>           <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Só pensa em namorar</span>\n         <span class=\"chord\" data-chord=\"F#m7(5-)\">F#m7(5-)</span>\n<span class=\"lyric-line\">Ela só quer</span>\n    <span class=\"chord\" data-chord=\"B7\">B7</span>           <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Só pensa em namorar</span>\n\n<span class=\"lyric-line\">[Terceira Parte]</span>\n\n          <span class=\"chord\" data-chord=\"Am\">Am</span>    <span class=\"chord\" data-chord=\"D7\">D7</span>  <span class=\"chord\" data-chord=\"G\">G</span>\n<span class=\"lyric-line\">Mas o doutô nem examina</span>\n                      <span class=\"chord\" data-chord=\"F#m7(5-)\">F#m7(5-)</span>\n<span class=\"lyric-line\">Chamando o pai de um lado</span>\n     <span class=\"chord\" data-chord=\"B7\">B7</span>             <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Lhe diz logo em surdina</span>\n                 <span class=\"chord\" data-chord=\"F#m7(5-)\">F#m7(5-)</span>\n<span class=\"lyric-line\">Que o mal é da idade</span>\n  <span class=\"chord\" data-chord=\"B7\">B7</span>           <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Que pra tal menina</span>\n                 <span class=\"chord\" data-chord=\"F#m7(5-)\">F#m7(5-)</span>\n<span class=\"lyric-line\">Não tem um só remédio</span>\n    <span class=\"chord\" data-chord=\"B7\">B7</span>       <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Em toda medicina</span>\n\n<span class=\"lyric-line\">[Refrão]</span>\n\n         <span class=\"chord\" data-chord=\"F#m7(5-)\">F#m7(5-)</span>\n<span class=\"lyric-line\">Ela só quer</span>\n    <span class=\"chord\" data-chord=\"B7\">B7</span>           <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Só pensa em namorar</span>\n         <span class=\"chord\" data-chord=\"F#m7(5-)\">F#m7(5-)</span>\n<span class=\"lyric-line\">Ela só quer</span>\n    <span class=\"chord\" data-chord=\"B7\">B7</span>           <span class=\"chord\" data-chord=\"Em\">Em</span>\n<span class=\"lyric-line\">Só pensa em namorar</span>\n\n[Final] <span class=\"chord\" data-chord=\"Am\">Am</span>  <span class=\"chord\" data-chord=\"Em\">Em</span>  <span class=\"chord\" data-chord=\"B7\">B7</span>  <span class=\"chord\" data-chord=\"Em\">Em</span> <span class=\"chord\" data-chord=\"E7\">E7</span>\n        <span class=\"chord\" data-chord=\"D\">D</span>  <span class=\"chord\" data-chord=\"G\">G</span>  <span class=\"chord\" data-chord=\"A7\">A7</span>  <span class=\"chord\" data-chord=\"D7\">D7</span>  <span class=\"chord\" data-chord=\"G\">G</span>\n",
     "chordData": {
-        "A": {
-            "name": "A",
-            "notes": [
-                "A3",
-                "C#4",
-                "E4"
-            ],
-            "displayNotes": [
-                "A",
-                "C#",
-                "E"
-            ],
-            "noteTypes": [
-                "root",
-                "triad",
-                "triad"
-            ]
-        },
         "A7": {
             "name": "A7",
             "notes": [
@@ -41,6 +23,24 @@ window.SONG_DATA = {
                 "triad",
                 "triad",
                 "seventh"
+            ]
+        },
+        "Am": {
+            "name": "Am",
+            "notes": [
+                "A3",
+                "C4",
+                "E4"
+            ],
+            "displayNotes": [
+                "A",
+                "C",
+                "E"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
             ]
         },
         "B7": {
@@ -64,85 +64,22 @@ window.SONG_DATA = {
                 "seventh"
             ]
         },
-        "Bm": {
-            "name": "Bm",
+        "C": {
+            "name": "C",
             "notes": [
-                "B3",
-                "D4",
-                "F#4"
+                "C3",
+                "E3",
+                "G3"
             ],
             "displayNotes": [
-                "B",
-                "D",
-                "F#"
+                "C",
+                "E",
+                "G"
             ],
             "noteTypes": [
                 "root",
                 "triad",
                 "triad"
-            ]
-        },
-        "Bm7": {
-            "name": "Bm7",
-            "notes": [
-                "B3",
-                "D4",
-                "F#4",
-                "A4"
-            ],
-            "displayNotes": [
-                "B",
-                "D",
-                "F#",
-                "A"
-            ],
-            "noteTypes": [
-                "root",
-                "triad",
-                "triad",
-                "seventh"
-            ]
-        },
-        "C#7": {
-            "name": "C#7",
-            "notes": [
-                "C#3",
-                "F3",
-                "G#3",
-                "B3"
-            ],
-            "displayNotes": [
-                "C#",
-                "F",
-                "G#",
-                "B"
-            ],
-            "noteTypes": [
-                "root",
-                "triad",
-                "triad",
-                "seventh"
-            ]
-        },
-        "C#m7": {
-            "name": "C#m7",
-            "notes": [
-                "C#3",
-                "E3",
-                "G#3",
-                "B3"
-            ],
-            "displayNotes": [
-                "C#",
-                "E",
-                "G#",
-                "B"
-            ],
-            "noteTypes": [
-                "root",
-                "triad",
-                "triad",
-                "seventh"
             ]
         },
         "D": {
@@ -163,40 +100,25 @@ window.SONG_DATA = {
                 "triad"
             ]
         },
-        "Dm": {
-            "name": "Dm",
+        "D7": {
+            "name": "D7",
             "notes": [
                 "D3",
-                "F3",
-                "A3"
+                "F#3",
+                "A3",
+                "C4"
             ],
             "displayNotes": [
                 "D",
-                "F",
-                "A"
+                "F#",
+                "A",
+                "C"
             ],
             "noteTypes": [
                 "root",
                 "triad",
-                "triad"
-            ]
-        },
-        "E": {
-            "name": "E",
-            "notes": [
-                "E3",
-                "G#3",
-                "B3"
-            ],
-            "displayNotes": [
-                "E",
-                "G#",
-                "B"
-            ],
-            "noteTypes": [
-                "root",
                 "triad",
-                "triad"
+                "seventh"
             ]
         },
         "E7": {
@@ -220,38 +142,17 @@ window.SONG_DATA = {
                 "seventh"
             ]
         },
-        "Em7": {
-            "name": "Em7",
+        "Em": {
+            "name": "Em",
             "notes": [
                 "E3",
                 "G3",
-                "B3",
-                "D4"
+                "B3"
             ],
             "displayNotes": [
                 "E",
                 "G",
-                "B",
-                "D"
-            ],
-            "noteTypes": [
-                "root",
-                "triad",
-                "triad",
-                "seventh"
-            ]
-        },
-        "F#m": {
-            "name": "F#m",
-            "notes": [
-                "F#3",
-                "A3",
-                "C#4"
-            ],
-            "displayNotes": [
-                "F#",
-                "A",
-                "C#"
+                "B"
             ],
             "noteTypes": [
                 "root",
@@ -259,18 +160,18 @@ window.SONG_DATA = {
                 "triad"
             ]
         },
-        "F#m7": {
-            "name": "F#m7",
+        "F#m7(5-)": {
+            "name": "F#m7(5-)",
             "notes": [
                 "F#3",
                 "A3",
-                "C#4",
+                "C4",
                 "E4"
             ],
             "displayNotes": [
                 "F#",
                 "A",
-                "C#",
+                "C",
                 "E"
             ],
             "noteTypes": [
@@ -280,19 +181,37 @@ window.SONG_DATA = {
                 "seventh"
             ]
         },
-        "G#m7(5-)": {
-            "name": "G#m7(5-)",
+        "G": {
+            "name": "G",
             "notes": [
-                "G#3",
+                "G3",
                 "B3",
-                "D4",
-                "F#4"
+                "D4"
             ],
             "displayNotes": [
-                "G#",
+                "G",
+                "B",
+                "D"
+            ],
+            "noteTypes": [
+                "root",
+                "triad",
+                "triad"
+            ]
+        },
+        "G7": {
+            "name": "G7",
+            "notes": [
+                "G3",
+                "B3",
+                "D4",
+                "F4"
+            ],
+            "displayNotes": [
+                "G",
                 "B",
                 "D",
-                "F#"
+                "F"
             ],
             "noteTypes": [
                 "root",
