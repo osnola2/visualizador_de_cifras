@@ -577,7 +577,20 @@ function initViewer() {
                 {from: 'maj7', to: 'M7'},
                 {from: 'dim7', to: '°'},
                 {from: 'dim', to: '°'},
-                {from: 'm7(b5)', to: 'm7b5'}
+                {from: 'dim7', to: 'º'},
+                {from: 'dim', to: 'º'},
+                {from: 'm7(b5)', to: 'm7b5'},
+                {from: 'm(maj7)', to: 'm7M'},
+                {from: 'm(maj7)', to: 'm7m'},
+                {from: 'm(maj7)', to: 'mM7'},
+                // Tolerâncias para baixos invertidos
+                // Permite que acordes mais complexos detectados no MIDI batam com versões mais simples na cifra
+                {from: 'm7/', to: 'm/'},
+                {from: 'm6/', to: 'm/'},
+                {from: 'maj7/', to: '/'},
+                {from: '7M/', to: '/'},
+                {from: '7/', to: '/'},
+                {from: '6/', to: '/'}
             ];
             
             let expanded = new Set(result);
